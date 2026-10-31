@@ -1,2 +1,3 @@
 scan_id,started_at,finished_at,version,rules,weather,n_tokens,n_liquid,n_deep,n_candidates,n_unverified,n_rejected,errors,gap_min_before
 20261031T193543,2026-10-31T19:35:43+00:00,2026-10-31T19:40:09+00:00,1.5.0,1.5.0-e42f07,NEUTRAL,64,27,8,0,6,49,,
+20261031T204011,2026-10-31T20:40:11+00:00,2026-10-31T20:44:49+00:00,1.5.0,1.5.0-e42f07,NEUTRAL,64,25,8,0,5,48,,64
