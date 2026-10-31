@@ -8,3 +8,4 @@
 - `concept_scorer_v1_4.py` is unchanged: it is the frozen baseline.
 - Output: `data_v15/` (scans, sightings, labels). Old v1.4 files are never touched.
 - PAPER ONLY. No wallet, keys or trading code. Probabilities are not shown until validated.
+- Helius key added 31 Oct
