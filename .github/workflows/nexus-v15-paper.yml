@@ -1,19 +1,19 @@
-name: Nexus v1.5 paper test (dev branch only)
+name: Nexus v1.5 paper test
 
-# Runs ONLY from the v15-dev (or V15-dev) branch. It never touches main or the hourly v1.4.2 workflow.
-# Uploading files to v15-dev starts it: tests -> Telegram test -> scans every hour for ~5.5 hours.
-# PAPER ONLY: this code has no wallet, no keys and no way to place a trade.
+# PAPER ONLY: no wallet, no keys, no trading. On main: one scan every hour.
 on:
+  schedule:
+    - cron: "17 * * * *"
   push:
-    branches: [v15-dev, V15-dev]      # GitHub branch names are case-sensitive
-    paths-ignore: ["data_v15/**"]      # the bot's own log saves never restart it
-  workflow_dispatch:                   # appears in the Actions tab only once this file is on main (needs approval)
+    branches: [v15-dev, V15-dev]
+    paths-ignore: ["data_v15/**"]
+  workflow_dispatch:
 
 permissions:
-  contents: write                      # saves data_v15/ back to the v15-dev branch only
+  contents: write
 
 concurrency:
-  group: nexus-v15
+  group: nexus-v15-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
       RUGCHECK_API_KEY: ${{ secrets.RUGCHECK_API_KEY }}
-      SESSION_SCANS: "6"               # one scan now, then one every 60 minutes
+      SESSION_SCANS: ${{ github.event_name == 'schedule' && '1' || '6' }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -37,15 +37,17 @@ jobs:
           python concept_scorer_v1_4.py --selftest > legacy_selftest.log 2>&1 || (tail -30 legacy_selftest.log; exit 1)
           python -m unittest test_nexus_v15 -v
 
-      - name: 2. Telegram test notification
+      - name: 2. Telegram test notification (not on hourly runs)
+        if: github.event_name != 'schedule'
         run: python nexus_v15.py --telegram-test
 
-      - name: 3. Paper scans (hourly inside this run) + save after each
+      - name: 3. Paper scans + save after each
         run: |
           [ -n "$SOLANA_RPC_URL" ] || unset SOLANA_RPC_URL
           [ -n "$RUGCHECK_API_KEY" ] || unset RUGCHECK_API_KEY
           for i in $(seq 1 "$SESSION_SCANS"); do
             echo "=== scan $i of $SESSION_SCANS at $(date -u +%H:%M) UTC ==="
+            bash scripts/sync_data.sh
             python nexus_v15.py || echo "scan $i failed (reported to Telegram if possible)"
             bash scripts/save_logs.sh "v1.5 paper scan $(date -u +'%Y-%m-%d %H:%M') UTC" data_v15 || echo "save failed"
             if [ "$i" -lt "$SESSION_SCANS" ]; then sleep 3600; fi
