@@ -326,3 +326,143 @@ class TestIntegrationOffline(Base):
         self.assertFalse(any("PAPER CANDIDATE" in m for m in self.sent))
         self.assertEqual(len(nx.load_rows(nx.LABELS)), len(nx.HORIZONS))
         self.assertTrue(any("/latest/dex/tokens/" in c for c in calls))
+
+
+class TestReview(Base):
+    """The monitoring scorecard must be deterministic and must never count unknown outcomes."""
+
+    def make_history(self):
+        import random
+        rng = random.Random(3)
+        for h in range(0, 72, 3):
+            now = T0 + timedelta(hours=h)
+            pairs = [pair(f"m{h}_{i}", liq=rng.choice([20_000, 60_000, 5_000]), age_h=rng.choice([1, 5, 30]))
+                     for i in range(4)]
+            self.run_scan(pairs, now=now)
+        def candles(url):
+            before = int(url.split("before_timestamp=")[1].split("&")[0])
+            start = before - (nx.ENTRY_DELAY_MIN + 250) * 60
+            r = random.Random(before)
+            drift = r.choice([0.002, -0.004, 0.0, -0.02])
+            cs, px = [], 1.0
+            for i in range(250):
+                px *= 1 + drift + r.uniform(-0.003, 0.003)
+                cs.append([start + 60 * i, px, px * 1.002, px * 0.998, px, 1])
+            return {"data": {"attributes": {"ohlcv_list": cs}}}
+        nx.label_pending(T0 + timedelta(hours=80), getter=candles, dead_lookup=lambda r, d, t: False)
+
+    def test_scorecard_deterministic_and_counts(self):
+        import nexus_review as rv
+        self.make_history()
+        now = T0 + timedelta(hours=80)
+        a, b = rv.weekly([nx.DATA_DIR], now), rv.weekly([nx.DATA_DIR], now)
+        self.assertEqual(a, b)
+        self.assertIn("B0 liquid baseline", a)
+        labels = nx.load_rows(nx.LABELS)
+        n60 = sum(1 for r in labels if r["horizon_min"] == "60" and r["b0_liquid"] == "1" and r["status"] == "labelled")
+        self.assertIn(f"| B0 liquid baseline | {n60} |", a)
+        d, worst = rv.daily([nx.DATA_DIR], now)
+        self.assertIn(worst, ("OK", "WARN", "ALERT"))
+
+    def test_unknown_never_counted_as_loss(self):
+        import nexus_review as rv
+        rows = [{"status": "unknown", "net_pct": "", "t0": "2026-10-31T00:00:00+00:00"}] * 5 + \
+               [{"status": "labelled", "net_pct": "10", "t0": "2026-10-31T00:00:00+00:00"}]
+        g = rv.group_stats(rows)
+        self.assertEqual((g["n"], g["unknown"], g["wins"]), (1, 5, 1))
+
+    def test_empty_data_does_not_crash(self):
+        import nexus_review as rv
+        nx.ensure_files()
+        self.assertIn("ALERT", rv.daily([nx.DATA_DIR], T0)[0])
+        self.assertIn("COLLECTING", rv.weekly([nx.DATA_DIR], T0))
+
+
+class TestSaveAfterStaleStart(unittest.TestCase):
+    """Overnight 31 Oct/1 Nov: run 2 started from an old commit; every save conflicted and was lost.
+    sync_data.sh before each scan must make the save succeed."""
+
+    def test_stale_runner_saves_after_sync(self):
+        tmp = tempfile.mkdtemp()
+        try:
+            sh = lambda cwd, *a: subprocess.run(a, cwd=cwd, capture_output=True, text=True)
+            remote = os.path.join(tmp, "remote.git")
+            sh(tmp, "git", "init", "-q", "--bare", "-b", "dev", remote)
+            a, b = os.path.join(tmp, "a"), os.path.join(tmp, "b")
+            sh(tmp, "git", "clone", "-q", remote, a)
+            for c in (a,):
+                sh(c, "git", "config", "user.email", "t@t"); sh(c, "git", "config", "user.name", "t")
+                sh(c, "git", "checkout", "-q", "-b", "dev")
+            os.makedirs(os.path.join(a, "data_v15"))
+            with open(os.path.join(a, "data_v15", "scans.csv"), "w") as fh:
+                fh.write("scan_id\n1\n")
+            sh(a, "git", "add", "."); sh(a, "git", "commit", "-qm", "base"); sh(a, "git", "push", "-q", "origin", "dev")
+            sh(tmp, "git", "clone", "-q", "-b", "dev", remote, b)                      # runner B starts here (stale soon)
+            with open(os.path.join(a, "data_v15", "scans.csv"), "a") as fh:            # runner A saves newer data
+                fh.write("2\n")
+            sh(a, "git", "commit", "-qam", "newer"); sh(a, "git", "push", "-q", "origin", "dev")
+            env = {**os.environ, "GITHUB_REF_NAME": "dev", "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t",
+                   "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t"}
+            r = subprocess.run(["bash", os.path.join(HERE, "scripts", "sync_data.sh")], cwd=b, env=env,
+                               capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            with open(os.path.join(b, "data_v15", "scans.csv"), "a") as fh:            # B's scan appends
+                fh.write("3\n")
+            r = subprocess.run(["bash", os.path.join(HERE, "scripts", "save_logs.sh"), "scan", "data_v15"],
+                               cwd=b, env=env, capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            sh(a, "git", "pull", "-q", "origin", "dev")
+            with open(os.path.join(a, "data_v15", "scans.csv")) as fh:
+                self.assertEqual(fh.read(), "scan_id\n1\n2\n3\n")
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+
+class TestSecrets(Base):
+    """1 Nov: a bare Helius key saved as SOLANA_RPC_URL broke every on-chain check, and part of the key
+    was written to the public log inside an error message."""
+
+    def setUp(self):
+        super().setUp()
+        self.env = {k: os.environ.get(k) for k in ("SOLANA_RPC_URL", "TELEGRAM_BOT_TOKEN")}
+        self.rpc = legacy.RPC_URL
+
+    def tearDown(self):
+        for k, v in self.env.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+        legacy.RPC_URL = self.rpc
+        super().tearDown()
+
+    def test_bare_key_becomes_helius_url(self):
+        os.environ["SOLANA_RPC_URL"] = "7900aaaa-bbbb-cccc-dddd-eeeeffff0000"
+        self.assertEqual(nx.fix_rpc_url(), nx.HELIUS_RPC + "7900aaaa-bbbb-cccc-dddd-eeeeffff0000")
+
+    def test_full_url_left_alone(self):
+        os.environ["SOLANA_RPC_URL"] = "https://example-rpc.test/?api-key=SECRET123"
+        legacy.RPC_URL = os.environ["SOLANA_RPC_URL"]
+        self.assertEqual(nx.fix_rpc_url(), "https://example-rpc.test/?api-key=SECRET123")
+
+    def test_secrets_never_reach_logs(self):
+        key = "7900aaaa-bbbb-cccc-dddd-eeeeffff0000"
+        os.environ["SOLANA_RPC_URL"] = key
+        os.environ["TELEGRAM_BOT_TOKEN"] = "123456:ABCDEF-token"
+        msg = nx.redact(f"unknown url type: '{key}' and https://x/?api-key=OTHERKEY9 and 123456:ABCDEF-token")
+        for leak in (key, key[:20], "OTHERKEY9", "ABCDEF-token"):
+            self.assertNotIn(leak, msg)
+
+    def test_rpc_failure_text_in_saved_log_is_redacted(self):
+        key = "7900aaaa-bbbb-cccc-dddd-eeeeffff0000"
+        os.environ["SOLANA_RPC_URL"] = key
+        def checks(_p):
+            c = passing_checks(_p)
+            c["rpc"] = lambda m: (_ for _ in ()).throw(ValueError(f"unknown url type: '{key}'"))
+            return c
+        nx.run(now=T0, sender=self.sender, deps={"gather": lambda: ([pair("good")], {}), "weather": lambda: "NEUTRAL",
+                                                 "deep_checks": checks, "dead_lookup": lambda r, d, t: False})
+        with open(os.path.join(nx.DATA_DIR, "sightings.csv")) as fh:
+            saved = fh.read()
+        self.assertNotIn(key[:8], saved)
+        self.assertTrue(all(key[:8] not in m for m in self.sent))

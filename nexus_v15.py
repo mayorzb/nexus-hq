@@ -61,6 +61,33 @@ RULE_KEYS = ["MIN_LIQ_USD", "MIN_AGE_H", "MAX_ONE_WAY_IMPACT_PCT", "MAX_SELL_LOS
              "HORIZONS", "DEAD_LIQ_USD", "DEAD_CONFIRM_GAP_MIN"]
 
 
+# ---------------------------------------------------------------- secrets hygiene
+HELIUS_RPC = "https://mainnet.helius-rpc.com/?api-key="
+
+
+def fix_rpc_url():
+    """If SOLANA_RPC_URL holds a bare API key instead of a URL, build the Helius URL from it.
+       (1 Nov: a bare key was saved as the secret; every on-chain check failed and the error text,
+       which included part of the key, was written to the public log.)"""
+    v = (os.environ.get("SOLANA_RPC_URL") or "").strip()
+    if v and "://" not in v:
+        legacy.RPC_URL = HELIUS_RPC + v
+    return legacy.RPC_URL
+
+
+def redact(text):
+    """Removes every secret value (and anything after api-key=) from text before it is logged or sent."""
+    text = str(text)
+    for name in ("SOLANA_RPC_URL", "RUGCHECK_API_KEY", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"):
+        v = (os.environ.get(name) or "").strip()
+        if len(v) >= 6:
+            text = text.replace(v, "***")
+    if legacy.RPC_URL and "api-key" in legacy.RPC_URL:
+        text = text.replace(legacy.RPC_URL, "***")
+    import re
+    return re.sub(r"(api[-_]?key=)[^&\s'\")]+", r"\1***", text, flags=re.I)
+
+
 def rules_version():
     blob = json.dumps({k: globals()[k] for k in RULE_KEYS}, sort_keys=True, default=str)
     return f"{VERSION}-{hashlib.sha1(blob.encode()).hexdigest()[:6]}"
@@ -360,23 +387,23 @@ def deep_check(p, checks=None):
     try:
         rpc_d = checks["rpc"](mint)
     except Exception as e:
-        unknown.append(f"on-chain check failed ({str(e)[:50]})")
+        unknown.append(f"on-chain check failed ({redact(e)[:50]})")
     try:
         rug_d = checks["rug"](mint)
     except Exception as e:
-        unknown.append(f"RugCheck failed ({str(e)[:50]})")
+        unknown.append(f"RugCheck failed ({redact(e)[:50]})")
     if rpc_d is not None:
         try:
             sell_d = checks["sell"](mint, rpc_d.get("decimals"), p.get("priceUsd"))
         except Exception as e:
-            unknown.append(f"sell quote failed ({str(e)[:50]})")
+            unknown.append(f"sell quote failed ({redact(e)[:50]})")
     else:
         unknown.append("sell quote not tried (no on-chain data)")
     if p.get("pairAddress"):
         try:
             pool_d = checks["pool"](p["pairAddress"])
         except Exception as e:
-            unknown.append(f"pool check failed ({str(e)[:50]})")
+            unknown.append(f"pool check failed ({redact(e)[:50]})")
     verdict, fails, warns = legacy.judge(rpc_d, rug_d, pool_d, sell_d)
     if verdict == "UNVERIFIED":
         unknown += fails
@@ -548,6 +575,7 @@ def run(now=None, deps=None, sender=None):
     state, pools = load_json(STATE_FILE), load_json(POOLS)
     scan_id = now.strftime("%Y%m%dT%H%M%S")
     errors = []
+    fix_rpc_url()
 
     prev = state.get("last_scan_finished")
     gap = (now - parse(prev)).total_seconds() / 60 if prev else None
@@ -601,7 +629,7 @@ def run(now=None, deps=None, sender=None):
         try:
             deep_results[s["sighting_id"]] = deep_check(s["_p"], deep_fn(s["_p"]) if deep_fn else None)
         except Exception as e:
-            errors.append(f"deep check crashed for {s['symbol']}: {e}")
+            errors.append(f"deep check crashed for {s['symbol']}: {redact(e)}")
     candidates, rejected = [], []
     for s in sightings:
         deep = deep_results.get(s["sighting_id"])
@@ -647,11 +675,12 @@ def run(now=None, deps=None, sender=None):
             "n_liquid": sum(1 for s in sightings if s["b0_liquid"] == "1"), "n_deep": len(deep_results),
             "n_candidates": len(candidates), "n_unverified": sum(1 for s in sightings if s["decision"] == "UNVERIFIED"),
             "n_rejected": sum(1 for s in sightings if s["decision"] == "REJECT"),
-            "errors": " | ".join(errors)[:500], "gap_min_before": f"{gap:.0f}" if gap is not None else ""}
+            "errors": redact(" | ".join(errors))[:500], "gap_min_before": f"{gap:.0f}" if gap is not None else ""}
     append_rows(SCANS, SCAN_COLS, [scan])
     tg(summary_message(scan, [s for s in rejected if s["decision"] != "NOT_CHECKED"]), sender)
     for e in errors:
         error_alert(state, e, now, sender)
+    errors = [redact(e) for e in errors]
     if not pairs:
         error_alert(state, "no tokens returned by any feed this run", now, sender)
     today = now.strftime("%Y-%m-%d")
