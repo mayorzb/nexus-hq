@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 7/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 8/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 7 |
-| sightings | 421 |
-| liquid sightings | 179 |
-| first liquid sightings = unique tokens with an outcome row | 49 |
-|   young | 37 |
-|   mature | 8 |
+| eval-2 scans | 8 |
+| sightings | 483 |
+| liquid sightings | 204 |
+| first liquid sightings = unique tokens with an outcome row | 56 |
+|   young | 42 |
+|   mature | 10 |
 |   other | 4 |
-| young with a comparator (cap 2) | 6 |
-| young without a comparator | 31 |
+| young with a comparator (cap 2) | 9 |
+| young without a comparator | 33 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 4 |
+|   pairs: young or mature outcome not yet usable | 7 |
 | complete pairs (both 60m outcomes labelled) | 2 |
 | scans contributing a complete pair | 1 |
 
 ## 60m outcome status by group
 
-- young: labelled 24/37, no_valid_entry 2/37, pending 8/37, unknown 2/37, unreliable 1/37
-- mature: labelled 6/8, pending 1/8, unknown 1/8
-- no valid entry: young 2/37, mature 0/8
+- young: labelled 25/42, no_valid_entry 2/42, pending 10/42, unknown 2/42, unreliable 3/42
+- mature: labelled 7/10, pending 2/10, unknown 1/10
+- no valid entry: young 2/42, mature 0/10
 
 ## Effect (after costs; unit = scan)
 
@@ -37,6 +37,7 @@
 - 20261106T170022-Gb7gExpw: FI (20261106T170022), Chicxu (20261106T170022)
 - 20261106T180021-BNpRagRS: GRUB (20261106T180021), HODL (20261106T180021)
 - 20261106T210020-4iTZ574d: Democat (20261106T210020), sexcoin (20261106T210020)
+- 20261106T230019-Bmhp8nat: VETO (20261106T230019), STM (20261106T230019)
 
 ## Every pair
 
@@ -72,10 +73,15 @@
 | 20261106T190021 | NEUTRAL | CHROME | 16035.03 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261106T200020 | NEUTRAL | FUSE | 16844.14 | labelled | 36.62 |  |  |  | None | no eligible comparator |
-| 20261106T210020 | NEUTRAL | Lukaflm | 109781.17 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T210020 | NEUTRAL | FUSE | 74573.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T210020 | NEUTRAL | Democat | 30628.52 | pending | None | fart | 17906.48 | pending | None |  |
-| 20261106T210020 | NEUTRAL | sexcoin | 17747.93 | pending | None | fart | 17906.48 | pending | None |  |
+| 20261106T210020 | NEUTRAL | Lukaflm | 109781.17 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261106T210020 | NEUTRAL | FUSE | 74573.32 | labelled | 37.53 |  |  |  | None | no eligible comparator |
+| 20261106T210020 | NEUTRAL | Democat | 30628.52 | unreliable | None | fart | 17906.48 | labelled | -3.62 |  |
+| 20261106T210020 | NEUTRAL | sexcoin | 17747.93 | pending | None | fart | 17906.48 | labelled | -3.62 |  |
 | 20261106T220019 | NEUTRAL | Leonida | 24905.19 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T220019 | NEUTRAL | HEDGE | 19597.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T230019 | NEUTRAL | PI | 100223.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T230019 | NEUTRAL | José | 50976.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | pending | None |  |
+| 20261106T230019 | NEUTRAL | STM | 18822.61 | pending | None | TIRED | 21356.31 | pending | None |  |
+| 20261106T230019 | NEUTRAL | MOOH | 15734.13 | pending | None | OIF | 16089.19 | pending | None |  |
