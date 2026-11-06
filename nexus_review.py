@@ -5,6 +5,7 @@ Nexus review: the FIXED scorecard used for every monitoring review. Read-only: i
   python nexus_review.py --weekly [--data DIR ...] [--now ISO]
   python nexus_review.py --sensitivity [--data DIR ...]   (price-validity thresholds, from archived candles)
   python nexus_review.py --sample-size [--data DIR ...]   (Round 3 sample sizes, every input computed from data)
+  python nexus_review.py --bounds [--data DIR ...]        (each group's mean with exclusions left out / counted as -100)
 
 Same script + same data = same numbers. If a metric definition ever changes, REVIEW_VERSION changes and the
 monitoring log notes it. Several --data folders (e.g. main and V15-dev) are merged; duplicates are dropped.
@@ -17,7 +18,7 @@ import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 
-REVIEW_VERSION = "review-1.2"
+REVIEW_VERSION = "review-1.4"
 HORIZONS = [5, 15, 30, 60, 240]
 MIN_N = 30                      # below this a group/horizon is "insufficient", no verdict
 BOOT = 2000
@@ -26,6 +27,7 @@ SEED = 15                       # fixed seed: the same data always gives the sam
 # health thresholds (daily)
 COVERAGE_OK, COVERAGE_WARN = 0.95, 0.80      # share of the last 24 hours with at least one scan
 GAP_ALERT_MIN = 90
+MIN_GAP_ALERT_MIN = 50                       # review-1.4: two scans closer than this = duplicate/back-to-back scans
 UNVERIFIED_ALERT = 0.30                      # share of deep-checked coins that ended UNVERIFIED
 NOT_CHECKED_ALERT = 0.20                     # share of gate-passers the deep-check budget skipped
 UNKNOWN_ALERT = 0.10                         # share of finished labels that are UNKNOWN
@@ -140,6 +142,34 @@ def status(ok, warn=None):
     return "OK" if ok else ("WARN" if warn else "ALERT")
 
 
+def code_tag_problems(dirs, sc):
+    """Counts last-24h scans whose code_commit is blank or names a commit that changed only data_v15 files.
+       Needs git and full history next to the data folder; otherwise returns (None, reason)."""
+    import subprocess
+    tagged = [s for s in sc if "code_commit" in s and s.get("version", "") >= "1.5.1"]
+    if not tagged:
+        return None, "no scans with code tags"
+    repo = os.path.dirname(os.path.abspath(dirs[0]))
+    seen, bad = {}, 0
+    for s in tagged:
+        c = s.get("code_commit", "")
+        if not c:
+            bad += 1
+            continue
+        if c not in seen:
+            try:
+                files = subprocess.run(["git", "-C", repo, "show", "--name-only", "--format=", c], capture_output=True,
+                                       text=True, timeout=20)
+            except Exception:
+                return None, "git not available here"
+            if files.returncode != 0:
+                return None, f"commit {c} not in this checkout's history"
+            paths = [x for x in files.stdout.splitlines() if x.strip()]
+            seen[c] = bool(paths) and all(x.startswith("data_v15/") for x in paths)
+        bad += seen[c]
+    return bad, f"{bad} of {len(tagged)}"
+
+
 def daily(dirs, now):
     scans, sights, labels = load(dirs)
     since = now - timedelta(hours=24)
@@ -151,6 +181,9 @@ def daily(dirs, now):
     if times:
         gaps.append((now - times[-1]).total_seconds() / 60)
     max_gap = max(gaps) if gaps else float("inf")
+    pair_gaps = [((b - a).total_seconds() / 60, a) for a, b in zip(times, times[1:]) if b >= since]
+    min_gap, min_at = min(pair_gaps) if pair_gaps else (float("inf"), None)
+    bad_tags, tag_note = code_tag_problems(dirs, sc)
     errs = [s for s in sc if s["errors"]]
     ids = {s["scan_id"] for s in sc}
     sg = [s for s in sights if s["scan_id"] in ids]
@@ -173,6 +206,11 @@ def daily(dirs, now):
          "OK" if coverage >= COVERAGE_OK else ("WARN" if coverage >= COVERAGE_WARN else "ALERT")),
         ("Longest gap between scans", "none" if max_gap == float("inf") else f"{max_gap:.0f} min",
          status(max_gap <= GAP_ALERT_MIN)),
+        ("Shortest gap between scans (last 24h)",
+         "none" if min_gap == float("inf") else f"{min_gap:.0f} min" + (f" (at {min_at:%H:%M} UTC)" if min_at else ""),
+         status(min_gap >= MIN_GAP_ALERT_MIN)),
+        ("Scans tagged with a data-only or missing code commit", tag_note,
+         "INFO" if bad_tags is None else status(bad_tags == 0)),
         ("Scans with errors", f"{len(errs)} of {len(sc)}", status(not errs, warn=len(errs) <= 2)),
         ("Tokens seen / liquid (median per scan)",
          f"{med([f(s['n_tokens']) for s in sc])} / {med([f(s['n_liquid']) for s in sc])}", status(bool(sc))),
@@ -318,6 +356,30 @@ def sensitivity(dirs):
     return "\n".join(out)
 
 
+def bounds(dirs):
+    """Results that cannot be scored are mostly dead pools or unreliable prices, i.e. likely losses, so a mean
+       that leaves them out is flattered. Shows three readings: as reported; dead + unreliable as -100;
+       every unscored result as -100 (worst case). Pending labels are not finished and are not included."""
+    _, _, labels = load(dirs)
+    out = [f"RESULT BOUNDS ({REVIEW_VERSION}) - net % after costs; pending labels excluded", "",
+           "| Group | Horizon | Scored | Dead or unreliable | Other unknown | Mean as reported | Mean, dead as -100 | "
+           "Mean, all unscored as -100 | Median as reported |", "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for name, keep in GROUPS.items():
+        for h in HORIZONS:
+            sel = [r for r in labels if r["horizon_min"] == str(h) and keep(r)]
+            nets = [f(r["net_pct"]) for r in sel if r["status"] == "labelled" and f(r["net_pct"]) is not None]
+            dead = sum(1 for r in sel if r["status"] == "unreliable" or
+                       (r["status"] == "unknown" and "pool dead" in r.get("note", "")))
+            other = sum(1 for r in sel if r["status"] == "unknown" and "pool dead" not in r.get("note", ""))
+            if not nets and not dead and not other:
+                out.append(f"| {name} | {h} | 0 | 0 | 0 | - | - | - | - |")
+                continue
+            m = lambda xs: num(sum(xs) / len(xs)) if xs else "-"
+            out.append(f"| {name} | {h} | {len(nets)} | {dead} | {other} | {m(nets)} | {m(nets + [-100.0] * dead)} | "
+                       f"{m(nets + [-100.0] * (dead + other))} | {num(sorted(nets)[len(nets) // 2]) if nets else '-'} |")
+    return "\n".join(out)
+
+
 def sample_size(dirs, mus=(5.0, 10.0), rhos=(0.0, 0.02, 0.05, 0.10), rates=(0.2, 0.5), ks=(5, 2), power=0.80):
     """Round 3 sample sizes. Every input is printed with its source so the table can be reproduced by hand.
        Unit: one SELECTED token (a token the hypothesis picks from the eligible set E), counted once, at its first
@@ -365,7 +427,9 @@ def main():
     args = sys.argv[1:]
     dirs = [args[i + 1] for i, a in enumerate(args) if a == "--data"] or ["data_v15"]
     now = next((parse(args[i + 1]) for i, a in enumerate(args) if a == "--now"), datetime.now(timezone.utc))
-    if "--sample-size" in args:
+    if "--bounds" in args:
+        print(bounds(dirs))
+    elif "--sample-size" in args:
         print(sample_size(dirs))
     elif "--sensitivity" in args:
         print(sensitivity(dirs))

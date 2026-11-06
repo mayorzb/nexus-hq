@@ -31,7 +31,7 @@ concurrency:
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 300                      # hard stop: 5 hours per session
+    timeout-minutes: 345                      # hard stop: up to 60 min pacing wait + 5 hourly scans
     env:
       MODE: ${{ github.event.inputs.mode || 'scan' }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -44,6 +44,8 @@ jobs:
       NEXUS_CODE_COMMIT: ${{ github.sha }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0                        # full history: code_commit must find the last CODE commit
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -60,7 +62,12 @@ jobs:
         if: steps.guard.outputs.skip != 'true'
         run: |
           python concept_scorer_v1_4.py --selftest > legacy_selftest.log 2>&1 || (tail -30 legacy_selftest.log; exit 1)
-          python -m unittest test_nexus_v15 -v
+          set +e
+          { echo "Tests for commit $GITHUB_SHA, run $GITHUB_RUN_ID, $(date -u +%Y-%m-%dT%H:%M:%SZ)"; \
+            python -m unittest test_nexus_v15 test_eval2 -v 2>&1; echo "exit code $?"; } > "$RUNNER_TEMP/tests.log"
+          set -e
+          cat "$RUNNER_TEMP/tests.log"
+          tail -1 "$RUNNER_TEMP/tests.log" | grep -qx "exit code 0"
 
       - name: 2. Telegram test notification (manual runs only)
         if: steps.guard.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.chain != 'true' && env.MODE == 'scan'
@@ -78,7 +85,7 @@ jobs:
         run: |
           [ -n "$SOLANA_RPC_URL" ] || unset SOLANA_RPC_URL
           [ -n "$RUGCHECK_API_KEY" ] || unset RUGCHECK_API_KEY
-          bash scripts/run_session.sh "$SESSION_SCANS"
+          NEXUS_TESTS_LOG="$RUNNER_TEMP/tests.log" bash scripts/run_session.sh "$SESSION_SCANS"
 
       - name: 4. Chain - request the next session (main only; never after failed tests)
         id: chain

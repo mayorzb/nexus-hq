@@ -458,7 +458,7 @@ class TestRound1Defects(Base):
         self.assertEqual(nx.label_from_candles(crash, T0.timestamp(), 60, 40, -25, 2)["reason"], "rug")
         self.assertEqual((nx.PRICE_CHECK_VERSION, nx.PRICE_WICK_MAX, nx.PRICE_JUMP_MAX, nx.PRICE_REVERT),
                          ("price-1", 5.0, 10.0, 2.0))
-        self.assertEqual(nx.MEASUREMENT_VERSION, "label-1.5.1b+price-1")
+        self.assertEqual(nx.MEASUREMENT_VERSION, "label-1.5.3+price-1")
 
     def test_D8_no_checks_mode_scores_raw_prices_for_sensitivity(self):
         s, flat = self._flat()
@@ -554,8 +554,8 @@ class TestRound1Defects(Base):
 
     def _session(self, scan_cmd, save_cmd="true"):
         env = dict(os.environ, NEXUS_SCAN_CMD=scan_cmd, NEXUS_SAVE_CMD=save_cmd, NEXUS_SYNC_CMD="true",
-                   NEXUS_SLEEP_S="0")
-        return subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "2"], env=env,
+                   NEXUS_SLEEP_CMD="true", NEXUS_REVIEW_CMD="true")
+        return subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "2"], env=env, cwd=self.tmp,
                               capture_output=True, text=True)
 
     def test_D6_workflow_session_turns_red_on_scan_or_save_failure_and_still_runs_every_scan(self):
@@ -594,7 +594,7 @@ class TestRound1Defects(Base):
         scan = os.path.join(repo, "scan.sh")
         open(scan, "w").write(f'echo "$NEXUS_CODE_COMMIT" >> {out}\n')
         env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true",
-                   NEXUS_SYNC_CMD="true", NEXUS_SLEEP_S="0")
+                   NEXUS_SYNC_CMD="true", NEXUS_SLEEP_CMD="true", NEXUS_REVIEW_CMD="true")
         p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "2"], cwd=repo, env=env,
                            capture_output=True, text=True)
         self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
@@ -609,13 +609,145 @@ class TestRound1Defects(Base):
         open(sync, "w").write(f"[ -f {out} ] && {{ echo v2 > code.py; git -c user.name=t -c user.email=t@t commit -qam new; }}; true\n")
         open(scan, "w").write(f"echo scan >> {out}\n")
         env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true",
-                   NEXUS_SYNC_CMD=f"bash {sync}", NEXUS_SLEEP_S="0")
+                   NEXUS_SYNC_CMD=f"bash {sync}", NEXUS_SLEEP_CMD="true", NEXUS_REVIEW_CMD="true")
         p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "3"], cwd=repo, env=env,
                            capture_output=True, text=True)
         self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
         self.assertEqual(open(out).read().split(), ["scan"])                    # scans 2-3 not run on untested code
         self.assertIn("Code on main changed", p.stdout)
         shutil.rmtree(repo, ignore_errors=True)
+
+    # ---------------------------------------------------------------- v1.5.2 (6 Nov 2026)
+    def test_v152_shallow_checkout_records_code_commit_not_data_commit(self):
+        repo, g, code = self._git_repo()                                        # origin: code commit, then data
+        clone = tempfile.mkdtemp()
+        subprocess.run(["git", "clone", "-q", "--depth", "1", "file://" + repo, clone], check=True)
+        out = os.path.join(clone, "seen.txt")
+        scan = os.path.join(clone, "scan.sh")
+        open(scan, "w").write(f'echo "$NEXUS_CODE_COMMIT" >> {out}\n')
+        env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true", NEXUS_SYNC_CMD="true",
+                   NEXUS_SLEEP_CMD="true", NEXUS_REVIEW_CMD="true")
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "1"], cwd=clone, env=env,
+                           capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertEqual(open(out).read().split(), [code])                     # not the newer data commit
+        shutil.rmtree(repo, ignore_errors=True); shutil.rmtree(clone, ignore_errors=True)
+
+    def test_v152_workflow_fetches_full_history_and_publishes_test_log(self):
+        y = open(os.path.join(HERE, ".github", "workflows", "nexus-v15-paper.yml")).read()
+        for must in ("fetch-depth: 0", 'NEXUS_TESTS_LOG="$RUNNER_TEMP/tests.log"', 'grep -qx "exit code 0"',
+                     "timeout-minutes: 345"):
+            self.assertIn(must, y, must)
+
+    def _paced_session(self, last_started_min_ago, n=1):
+        d = tempfile.mkdtemp()
+        os.makedirs(os.path.join(d, "data_v15"))
+        t = datetime.now(timezone.utc) - timedelta(minutes=last_started_min_ago)
+        with open(os.path.join(d, "data_v15", "scans.csv"), "w") as fh:
+            fh.write("scan_id,started_at\nx," + t.isoformat() + "\n")
+        slept, scan = os.path.join(d, "slept.txt"), os.path.join(d, "scan.sh")
+        open(scan, "w").write("python3 -c \"import datetime;print('y,'+datetime.datetime.now(datetime.timezone.utc)"
+                              ".isoformat())\" >> data_v15/scans.csv\n")
+        sl = os.path.join(d, "sleep.sh")
+        open(sl, "w").write(f'echo "$1" >> {slept}\n')
+        env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true", NEXUS_SYNC_CMD="true",
+                   NEXUS_SLEEP_CMD=f"bash {sl}", NEXUS_REVIEW_CMD="true", NEXUS_INTERVAL_S="3600")
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), str(n)], cwd=d, env=env,
+                           capture_output=True, text=True)
+        waits = [int(x) for x in open(slept).read().split()] if os.path.exists(slept) else []
+        shutil.rmtree(d, ignore_errors=True)
+        return p, waits
+
+    def test_v152_session_start_waits_for_the_hour_instead_of_scanning_back_to_back(self):
+        p, waits = self._paced_session(5)                                      # previous session scanned 5 min ago
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertEqual(len(waits), 1)
+        self.assertTrue(3240 <= waits[0] <= 3300, waits)                       # about 55 min
+
+    def test_v152_no_wait_after_a_long_gap_and_hourly_spacing_is_start_to_start(self):
+        p, waits = self._paced_session(120, n=2)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertEqual(len(waits), 1)                                        # scan 1 at once, scan 2 waits
+        self.assertTrue(3540 <= waits[0] <= 3600, waits)                       # a full hour from scan 1's start
+
+    def test_v152_thin_window_settles_as_unknown_once_finished_not_after_72h(self):
+        self._pending_label(15)
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        thin = [[s, 1, 1.01, .99, 1, 5], [s + 60, 1, 1.01, .99, 1, 5],      # nothing near the window end...
+                [s + 20 * 60, 1, 1.01, .99, 1, 5]]                             # ...but trades after it: data complete
+        get = lambda u: {"data": {"attributes": {"ohlcv_list": thin}}}
+        nx.label_pending(T0 + timedelta(minutes=40), getter=get, dead_lookup=lambda r, d, n: False)
+        self.assertEqual(nx.load_rows(nx.LABELS)[0]["status"], "pending")     # window + 30 min not yet passed
+        nx.label_pending(T0 + timedelta(hours=5), getter=get, dead_lookup=lambda r, d, n: False)
+        r = nx.load_rows(nx.LABELS)[0]
+        self.assertEqual((r["status"], r["net_pct"]), ("unknown", ""))
+        self.assertIn("thin trading", r["note"])
+        import nexus_review as rv
+        self.assertIn("| Labels overdue (> 6h past due) | 0 |", rv.daily([nx.DATA_DIR], T0 + timedelta(hours=12))[0])
+
+    def test_v152_empty_api_reply_is_not_settled_early_but_is_settled_before_overdue(self):
+        self._pending_label(240)
+        empty = lambda u: {"data": {"attributes": {"ohlcv_list": []}}}
+        nx.label_pending(T0 + timedelta(minutes=242 + 60), getter=empty, dead_lookup=lambda r, d, n: False)
+        self.assertEqual(nx.load_rows(nx.LABELS)[0]["status"], "pending")     # could be a lagging API: wait
+        nx.label_pending(T0 + timedelta(minutes=242 + 4 * 60 + 5), getter=empty, dead_lookup=lambda r, d, n: False)
+        self.assertEqual(nx.load_rows(nx.LABELS)[0]["status"], "unknown")     # before the 6h overdue line
+        self.assertLess(242 + 4 * 60 + 5, 247 + 6 * 60)
+
+    def test_review14_flags_back_to_back_scans(self):
+        import nexus_review as rv
+        self.run_scan([pair("a")], now=T0)
+        self.run_scan([pair("b")], now=T0 + timedelta(minutes=60))
+        self.run_scan([pair("c")], now=T0 + timedelta(minutes=65))            # 5 min after the previous scan
+        out, worst = rv.daily([nx.DATA_DIR], T0 + timedelta(minutes=70))
+        self.assertIn("| Shortest gap between scans (last 24h) | 5 min (at 21:00 UTC) | ALERT |", out)
+        self.assertEqual(worst, "ALERT")
+
+    def test_review14_flags_scans_tagged_with_a_data_only_commit(self):
+        import nexus_review as rv
+        repo, g, code = self._git_repo()                                       # code commit, then data commit
+        data_commit = g("rev-parse", "HEAD")
+        d = os.path.join(repo, "data_v15")
+        os.remove(os.path.join(d, "scans.csv"))
+        old = nx.DATA_DIR
+        try:
+            nx.DATA_DIR = d
+            nx.ensure_files()
+            nx.append_rows(nx.SCANS, nx.SCAN_COLS, [
+                {"scan_id": "1", "started_at": nx.iso(T0), "version": nx.VERSION, "rules": "r", "code_commit": code},
+                {"scan_id": "2", "started_at": nx.iso(T0 + timedelta(minutes=60)), "version": nx.VERSION, "rules": "r",
+                 "code_commit": data_commit}])
+            out, _ = rv.daily([d], T0 + timedelta(minutes=70))
+        finally:
+            nx.DATA_DIR = old
+        self.assertIn("| Scans tagged with a data-only or missing code commit | 1 of 2 | ALERT |", out)
+        shutil.rmtree(repo, ignore_errors=True)
+
+    def test_v152_bounds_report_counts_dead_and_unreliable_as_losses(self):
+        nx.ensure_files()
+        base = {"mint": "m", "pool": "p", "t0": nx.iso(T0), "horizon_min": 60, "cost_pct": "2", "attempts": "1",
+                "b0_liquid": "1", "legacy_gate": "0", "h1_mature": "0", "decision": "REJECT"}
+        nx.append_rows(nx.LABELS, nx.LABEL_COLS, [
+            dict(base, sighting_id="a", status="labelled", net_pct="10.0"),
+            dict(base, sighting_id="b", status="unknown", note="pool dead, first seen x after the window"),
+            dict(base, sighting_id="c", status="unreliable", exit_reason="unreliable:jump_up"),
+            dict(base, sighting_id="d", status="unknown", note="thin trading")])
+        import nexus_review as rv
+        line = [l for l in rv.bounds([nx.DATA_DIR]).splitlines() if l.startswith("| B0 liquid baseline | 60 |")][0]
+        self.assertEqual(line, "| B0 liquid baseline | 60 | 1 | 2 | 1 | +10.0% | -63.3% | -72.5% | +10.0% |")
+
+    def test_v152_session_writes_reports_and_test_log_and_tolerates_review_failure(self):
+        d = tempfile.mkdtemp()
+        log = os.path.join(d, "tests.log")
+        open(log, "w").write("Tests for commit abc\nOK\nexit code 0\n")
+        env = dict(os.environ, NEXUS_SCAN_CMD="true", NEXUS_SAVE_CMD="true", NEXUS_SYNC_CMD="true",
+                   NEXUS_SLEEP_CMD="true", NEXUS_REVIEW_CMD="false", NEXUS_TESTS_LOG=log)
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "1"], cwd=d, env=env,
+                           capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)                 # report failure never fails scans
+        self.assertIn("review reports could not be written", p.stdout)
+        self.assertIn("exit code 0", open(os.path.join(d, "data_v15", "reports", "tests_latest.txt")).read())
+        shutil.rmtree(d, ignore_errors=True)
 
     def test_relabel_keeps_originals_and_records_every_change(self):
         before = self._orig()
@@ -652,7 +784,7 @@ class TestRound1Defects(Base):
     def test_D11_workflow_guards_chain_alerts_and_limits(self):
         y = open(os.path.join(HERE, ".github", "workflows", "nexus-v15-paper.yml")).read()
         for must in ("actions: write", "contents: write", "bash scripts/chain.sh guard", "bash scripts/chain.sh next",
-                     "steps.tests.outcome == 'success'", "github.ref_name == 'main'", "timeout-minutes: 300",
+                     "steps.tests.outcome == 'success'", "github.ref_name == 'main'", "timeout-minutes: 345",
                      "if: failure() || cancelled()", "api.telegram.org", "cancel-in-progress: false",
                      "REPO_PRIVATE: ${{ github.event.repository.private }}", "NEXUS_CODE_COMMIT: ${{ github.sha }}",
                      "bash scripts/run_session.sh"):
@@ -790,11 +922,6 @@ class TestReview(Base):
     def make_history(self):
         import random
         rng = random.Random(3)
-        for h in range(0, 72, 3):
-            now = T0 + timedelta(hours=h)
-            pairs = [pair(f"m{h}_{i}", liq=rng.choice([20_000, 60_000, 5_000]), age_h=rng.choice([1, 5, 30]))
-                     for i in range(4)]
-            self.run_scan(pairs, now=now)
         def candles(url):
             before = int(url.split("before_timestamp=")[1].split("&")[0])
             start = before - (nx.ENTRY_DELAY_MIN + 250) * 60
@@ -805,6 +932,11 @@ class TestReview(Base):
                 px *= 1 + drift + r.uniform(-0.003, 0.003)
                 cs.append([start + 60 * i, px, px * 1.002, px * 0.998, px, 1])
             return {"data": {"attributes": {"ohlcv_list": cs}}}
+        for h in range(0, 72, 3):
+            now = T0 + timedelta(hours=h)
+            pairs = [pair(f"m{h}_{i}", liq=rng.choice([20_000, 60_000, 5_000]), age_h=rng.choice([1, 5, 30]))
+                     for i in range(4)]
+            self.run_scan(pairs, now=now, getter=candles)
         nx.label_pending(T0 + timedelta(hours=80), getter=candles, dead_lookup=lambda r, d, t: False)
 
     def test_scorecard_deterministic_and_counts(self):
