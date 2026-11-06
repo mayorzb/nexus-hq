@@ -20,6 +20,7 @@ borrows its data fetchers and safety checks, and records the old verdict for com
 """
 import csv
 import hashlib
+import io
 import json
 import math
 import os
@@ -29,7 +30,7 @@ from datetime import datetime, timedelta, timezone
 
 import concept_scorer_v1_4 as legacy
 
-VERSION = "1.5.0"
+VERSION = "1.5.1"   # 1.5.1 (5 Nov 2026): defect fixes D1-D6; new version = new test period
 DATA_DIR = os.environ.get("NEXUS_V15_DATA", "data_v15")
 
 # ---------------------------------------------------------------- tunable rules (frozen for the test)
@@ -49,7 +50,16 @@ LABEL_AFTER_MIN = 240 + ENTRY_DELAY_MIN + 5   # all horizons are labelled in one
 LABEL_GIVE_UP_H = 72            # after this, a label that still has no data is UNKNOWN for good
 DEAD_LIQ_USD = 500
 DEAD_CONFIRM_GAP_MIN = 30       # "dead" needs two readings at least this far apart (one blip is not death)
+# ---- price-validity rules, FROZEN as "price-1" (6 Nov 2026). Applied by the one labeller to every label, so every
+# comparison group (B0, legacy, H1, candidates, random) is treated identically. Changing any value = new version.
+PRICE_CHECK_VERSION = "price-1"
+PRICE_WICK_MAX = 5.0            # high above 5x the candle's open/close body, or low below 1/5 of it = bad print
+PRICE_JUMP_MAX = 10.0           # one-minute close-to-close move above 10x (up) or below 1/10 (down)
+PRICE_REVERT = 2.0              # ...that comes back within 2x of the previous close next minute = transient glitch
+MEASUREMENT_VERSION = "label-1.5.1b+" + PRICE_CHECK_VERSION
 ALERT_COOLDOWN_H = 24           # the same token is not alerted twice within this
+CANARY_CHECKS = 2               # safety-layer self-test: when no coin reached deep checks (e.g. RED market), deep-check
+                                # the 2 most liquid coins anyway. Recorded per scan; NEVER changes any decision.
 SCAN_GAP_ALERT_MIN = 90         # warn on Telegram if scans stopped for this long
 ERROR_ALERT_COOLDOWN_H = 6
 REPORT_HOUR_UTC = 8             # daily performance report at the first scan after this hour
@@ -102,7 +112,8 @@ STATE_FILE = "state.json"
 DEAD_FILE = "dead_checks.json"
 
 SCAN_COLS = ["scan_id", "started_at", "finished_at", "version", "rules", "weather", "n_tokens", "n_liquid",
-             "n_deep", "n_candidates", "n_unverified", "n_rejected", "errors", "gap_min_before"]
+             "n_deep", "n_candidates", "n_unverified", "n_rejected", "errors", "gap_min_before",
+             "canary_n", "canary_unverified", "canary_onchain_err", "code_commit"]
 SIGHT_COLS = ["sighting_id", "scan_id", "seen_at", "mint", "symbol", "pool", "source", "price_usd", "liq_usd",
               "liq_known", "mcap_usd", "age_h", "ch_h1", "weather", "rt_cost_pct", "b0_liquid",
               "legacy_gate", "legacy_score", "legacy_deep", "deep_checked", "decision", "reasons", "h1_mature",
@@ -122,21 +133,55 @@ def ensure_files():
         if not os.path.exists(path(name)):
             with open(path(name), "w", newline="") as f:
                 csv.writer(f).writerow(cols)
+    for name, cols in ((SCANS, SCAN_COLS), (SIGHTINGS, SIGHT_COLS), (LABELS, LABEL_COLS)):
+        upgrade_header(name, cols)
     for name in (POOLS, STATE_FILE, DEAD_FILE):
         if not os.path.exists(path(name)):
             save_json(name, {})
 
 
-def load_rows(name):
+def upgrade_header(name, cols):
+    """Adds new columns to an existing file (old rows keep blank values) so appended rows never misalign."""
     with open(path(name), newline="") as f:
-        return list(csv.DictReader(f))
+        header = next(csv.reader(f), [])
+    if header and header != cols and set(header) <= set(cols):
+        write_rows(name, cols, load_rows(name))
+
+
+TORN_LOG = "torn_rows.log"
+
+
+def load_rows(name):
+    """Short rows (written before a column was added) read as blanks. Rows with EXTRA fields cannot be trusted
+       and are skipped (count via load_rows.skipped)."""
+    with open(path(name), newline="") as f:
+        rows = list(csv.DictReader(f, restval=""))
+    good = [r for r in rows if None not in r]
+    load_rows.skipped[name] = len(rows) - len(good)
+    return good
+
+
+load_rows.skipped = {}
 
 
 def append_rows(name, cols, rows):
-    with open(path(name), "a", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
-        for r in rows:
-            w.writerow(r)
+    """Atomic append: the new file is written beside the old one and swapped in, so an interruption leaves the
+       previous file intact. A half line left by an older, non-atomic writer is removed and logged first."""
+    p = path(name)
+    with open(p, "rb") as f:
+        data = f.read()
+    if data and not data.endswith(b"\n"):
+        cut = data.rfind(b"\n") + 1
+        with open(path(TORN_LOG), "ab") as log:
+            log.write(f"{iso(datetime.now(timezone.utc))} {name}: removed torn line: ".encode() + data[cut:] + b"\n")
+        data = data[:cut]
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=cols, extrasaction="ignore")
+    for r in rows:
+        w.writerow(r)
+    with open(p + ".tmp", "wb") as f:
+        f.write(data + buf.getvalue().encode())
+    os.replace(p + ".tmp", p)
 
 
 def write_rows(name, cols, rows):
@@ -218,7 +263,7 @@ def dead_check(dead, mint, liq, now):
     return (now - parse(rec["first_low"])).total_seconds() / 60 >= DEAD_CONFIRM_GAP_MIN
 
 
-def label_from_candles(candles, t0, horizon, tp_pct, stop_pct, cost_pct):
+def label_from_candles(candles, t0, horizon, tp_pct, stop_pct, cost_pct, checks=(PRICE_WICK_MAX, PRICE_JUMP_MAX)):
     """Triple-barrier paper label from 1-minute candles [(ts_sec, o, h, l, c), ...] (any order).
        Entry: the first candle starting at or after t0 + ENTRY_DELAY_MIN, filled at that candle's HIGH.
        Exit: first barrier touched. A candle touching both = stop first (pessimistic). Stop fills at the
@@ -235,9 +280,13 @@ def label_from_candles(candles, t0, horizon, tp_pct, stop_pct, cost_pct):
     entry = entry_c[2]
     if not entry or entry <= 0:
         return None
+    if checks is not None:                    # D8: unreliable prices are flagged, never scored (checks=None: raw)
+        code, detail = price_problem([c for c in cs if c[0] < end], *checks)
+        if code:
+            return {"unreliable": code, "detail": detail}
     tp, stop = entry * (1 + tp_pct / 100), entry * (1 + stop_pct / 100)
     exit_px, reason = None, None
-    for c in cs:
+    for c in cs[1:]:                          # D4: the entry candle's own low/high may come before the fill
         if c[0] >= end:
             break
         lo, hi = c[3], c[2]
@@ -246,17 +295,45 @@ def label_from_candles(candles, t0, horizon, tp_pct, stop_pct, cost_pct):
         if lo <= stop:
             exit_px, reason = lo, "stop"
             break
-        if hi >= tp and c is not entry_c:
+        if hi >= tp:
             exit_px, reason = tp, "take_profit"
             break
     if exit_px is None:
         inside = [c for c in cs if c[0] < end]
         last = inside[-1]
-        if end - last[0] > 15 * 60 and horizon >= 30:   # no trades in the last 15 min of a long window
+        tol = min(15, max(2, horizon // 3))    # D3: every horizon needs trades near its end (5m: 2, 15m: 5 min)
+        if len(inside) < 2 or end - last[0] > (tol + 1) * 60:
             return None
         exit_px, reason = last[4], "time"
     gross = 100 * (exit_px - entry) / entry
     return {"entry": entry, "exit": exit_px, "reason": reason, "gross": gross, "net": net_return(gross, cost_pct)}
+
+
+def price_problem(cs, wick=PRICE_WICK_MAX, jump=PRICE_JUMP_MAX, revert=PRICE_REVERT):
+    """Returns (reason_code, detail) for the first implausible print in the window, else ("", "").
+       Codes: invalid | wick_high | wick_low | jump_transient (either direction, reverts next minute) | jump_up.
+       A persistent one-minute fall of 10x is NOT flagged: that is how a liquidity pull (rug) looks, it is the
+       documented failure mode in this market, it is consistent with later candles, and the scanner already
+       fills stops at the candle low. Its mirror image, a persistent 10x rise in one minute on a $15k+ pool, has
+       no comparable mechanism we can verify, and a gain is capped at the take-profit anyway, so excluding it can
+       remove at most one take-profit win per case (measured by --sensitivity)."""
+    for i, (ts, o, h, lo, c) in enumerate(cs):
+        if min(o, h, lo, c) <= 0 or h < max(o, c) or lo > min(o, c):
+            return "invalid", f"invalid candle at {ts}"
+        if h > wick * max(o, c):
+            return "wick_high", f"high {h / max(o, c):.1f}x the body at {ts}"
+        if lo * wick < min(o, c):
+            return "wick_low", f"low {min(o, c) / lo:.1f}x below the body at {ts}"
+        if i:
+            prev = cs[i - 1][4]
+            up, down = c > jump * prev, c * jump < prev
+            if up or down:
+                nxt = cs[i + 1][4] if i + 1 < len(cs) else None
+                if nxt is not None and prev / revert <= nxt <= prev * revert:
+                    return "jump_transient", f"{c / prev:.3g}x move reverted next minute at {ts}"
+                if up:
+                    return "jump_up", f"one-minute rise {c / prev:.1f}x at {ts}"
+    return "", ""
 
 
 def fetch_candles(pool, t0, getter=None):
@@ -294,6 +371,7 @@ def label_pending(now, getter=None, dead_lookup=None):
     rows = load_rows(LABELS)
     dead = load_json(DEAD_FILE)
     done = 0
+    archive = []                                 # raw candles behind every label, kept for audit and --sensitivity
     by_sight = {}
     for r in rows:
         if r["status"] == "pending":
@@ -310,17 +388,29 @@ def label_pending(now, getter=None, dead_lookup=None):
                 r["attempts"] = str(int(r["attempts"] or 0) + 1)
                 r["note"] = f"lookup failed, will retry ({str(e)[:60]})"
             continue
+        archive.append({"sighting_id": sid, "pool": group[0]["pool"], "t0": group[0]["t0"], "fetched_at": iso(now),
+                        "candles": candles})
         for r in group:
             h = int(r["horizon_min"])
             tp, st = HORIZONS[h]
             res = label_from_candles(candles, t0.timestamp(), h, tp, st, f2(r["cost_pct"]) or 0.0)
             r["attempts"] = str(int(r["attempts"] or 0) + 1)
+            if res is not None and "unreliable" in res:
+                r.update(status="unreliable", exit_reason="unreliable:" + res["unreliable"], labelled_at=iso(now),
+                         note=f"{PRICE_CHECK_VERSION}: {res['detail'][:80]}; NOT counted")
+                continue
             if res is None:
                 confirmed_dead = dead_lookup(r, dead, now) if dead_lookup else False
-                if confirmed_dead:
+                window_end = t0 + timedelta(minutes=ENTRY_DELAY_MIN + h)
+                first_low = (dead.get(r["pool"]) or {}).get("first_low")
+                died_in_window = confirmed_dead and first_low and parse(first_low) <= window_end
+                if died_in_window:
                     r.update(status="labelled", exit_reason="rug_confirmed", gross_pct="-100.0",
-                             net_pct="-100.0", labelled_at=iso(now), note="pool confirmed dead twice")
+                             net_pct="-100.0", labelled_at=iso(now), note="pool confirmed dead inside the window")
                     done += 1
+                elif confirmed_dead:                   # D5: death seen only after the window: outcome unknowable
+                    r.update(status="unknown", labelled_at=iso(now),
+                             note=f"pool dead, first seen {first_low} after the window; NOT counted as a loss")
                 elif age_min > LABEL_GIVE_UP_H * 60:
                     r.update(status="unknown", labelled_at=iso(now), note="no candle data; NOT counted as a loss")
                 else:
@@ -330,9 +420,24 @@ def label_pending(now, getter=None, dead_lookup=None):
                      exit_reason=res["reason"], gross_pct=f"{res['gross']:.2f}", net_pct=f"{res['net']:.2f}",
                      labelled_at=iso(now), note="")
             done += 1
+    archive_candles(archive, now)
     write_rows(LABELS, LABEL_COLS, rows)
     save_json(DEAD_FILE, dead)
     return done
+
+
+def archive_candles(items, now, prefix=""):
+    """Write-once file per labelling run: data_v15/candles/<prefix><UTC time>.jsonl.gz (never rewritten)."""
+    if not items:
+        return None
+    import gzip
+    os.makedirs(path("candles"), exist_ok=True)
+    name = os.path.join("candles", f"{prefix}{now.strftime('%Y%m%dT%H%M%S')}.jsonl.gz")
+    with gzip.open(path(name) + ".tmp", "wt") as f:
+        for it in items:
+            f.write(json.dumps(it, separators=(",", ":")) + "\n")
+    os.replace(path(name) + ".tmp", path(name))
+    return name
 
 
 # ---------------------------------------------------------------- risk-first decision
@@ -630,6 +735,14 @@ def run(now=None, deps=None, sender=None):
             deep_results[s["sighting_id"]] = deep_check(s["_p"], deep_fn(s["_p"]) if deep_fn else None)
         except Exception as e:
             errors.append(f"deep check crashed for {s['symbol']}: {redact(e)}")
+    canary = []
+    if not deep_results:                                   # safety-layer self-test; decisions untouched
+        liquid = sorted((s for s in sightings if s["b0_liquid"] == "1"), key=lambda s: -(f2(s["liq_usd"]) or 0))
+        for s in liquid[:CANARY_CHECKS]:
+            try:
+                canary.append(deep_check(s["_p"], deep_fn(s["_p"]) if deep_fn else None))
+            except Exception as e:
+                errors.append(f"safety canary crashed for {s['symbol']}: {redact(e)}")
     candidates, rejected = [], []
     for s in sightings:
         deep = deep_results.get(s["sighting_id"])
@@ -675,7 +788,10 @@ def run(now=None, deps=None, sender=None):
             "n_liquid": sum(1 for s in sightings if s["b0_liquid"] == "1"), "n_deep": len(deep_results),
             "n_candidates": len(candidates), "n_unverified": sum(1 for s in sightings if s["decision"] == "UNVERIFIED"),
             "n_rejected": sum(1 for s in sightings if s["decision"] == "REJECT"),
-            "errors": redact(" | ".join(errors))[:500], "gap_min_before": f"{gap:.0f}" if gap is not None else ""}
+            "errors": redact(" | ".join(errors))[:500], "gap_min_before": f"{gap:.0f}" if gap is not None else "",
+            "canary_n": len(canary), "canary_unverified": sum(1 for c in canary if not c[1] and c[2]),
+            "canary_onchain_err": sum(1 for c in canary if any("on-chain check failed" in u for u in c[2])),
+            "code_commit": os.environ.get("NEXUS_CODE_COMMIT", "")[:12]}
     append_rows(SCANS, SCAN_COLS, [scan])
     tg(summary_message(scan, [s for s in rejected if s["decision"] != "NOT_CHECKED"]), sender)
     for e in errors:
@@ -693,6 +809,72 @@ def run(now=None, deps=None, sender=None):
     return scan
 
 
+MONEY_FIELDS = ("entry_px", "exit_px", "exit_reason", "gross_pct", "net_pct")
+AUDIT_FIELDS = ("status",) + MONEY_FIELDS
+
+
+def relabel_corrected(now, getter=None):
+    """Round 1: re-scores every finished ORIGINAL label with the current labeller. The original labels.csv is
+       never touched. Corrected rows go to corrected/labels_v151.csv (with the measurement version); every row
+       whose status, prices, exit reason or returns differ gets one audit row holding old AND new values."""
+    os.makedirs(path("corrected"), exist_ok=True)
+    rows, dead = load_rows(LABELS), load_json(DEAD_FILE)
+    out, changes, cache = [], [], {}
+    cleared = {k: "" for k in MONEY_FIELDS}
+    for r in rows:
+        new = dict(r, measurement_version=MEASUREMENT_VERSION)
+        if r["status"] in ("labelled", "unknown", "unreliable"):
+            t0 = parse(r["t0"])
+            key = (r["sighting_id"], r["t0"], r["pool"])
+            if key not in cache:
+                try:
+                    cache[key] = fetch_candles(r["pool"], t0.timestamp(), getter)
+                except Exception as e:
+                    cache[key] = e
+            h = int(r["horizon_min"])
+            tp, st = HORIZONS[h]
+            if isinstance(cache[key], Exception):
+                new.update(cleared, status="unknown", note=f"relabel lookup failed ({str(cache[key])[:50]})")
+            else:
+                res = label_from_candles(cache[key], t0.timestamp(), h, tp, st, f2(r["cost_pct"]) or 0.0)
+                if res is None:
+                    fl = (dead.get(r["pool"]) or {}).get("first_low")
+                    in_win = r["exit_reason"] == "rug_confirmed" and fl and \
+                        parse(fl) <= t0 + timedelta(minutes=ENTRY_DELAY_MIN + h)
+                    new.update(cleared)
+                    if in_win:
+                        new.update(status="labelled", exit_reason="rug_confirmed", gross_pct="-100.0",
+                                   net_pct="-100.0", note="relabel: pool dead inside the window")
+                    else:
+                        new.update(status="unknown", note="relabel: data cannot decide")
+                elif "unreliable" in res:
+                    new.update(cleared, status="unreliable", exit_reason="unreliable:" + res["unreliable"],
+                               note=f"relabel {PRICE_CHECK_VERSION}: {res['detail'][:80]}")
+                else:
+                    new.update(status="labelled", entry_px=f"{res['entry']:.12g}", exit_px=f"{res['exit']:.12g}",
+                               exit_reason=res["reason"], gross_pct=f"{res['gross']:.2f}",
+                               net_pct=f"{res['net']:.2f}", note="relabel")
+            new["labelled_at"] = iso(now)
+            diff = [k for k in AUDIT_FIELDS if (new.get(k) or "") != (r.get(k) or "")]
+            if diff:
+                ch = {"sighting_id": r["sighting_id"], "horizon_min": r["horizon_min"],
+                      "changed_fields": "|".join(diff), "relabelled_at": iso(now),
+                      "measurement_version": MEASUREMENT_VERSION, "code_version": VERSION}
+                for k in AUDIT_FIELDS:
+                    ch["old_" + k], ch["new_" + k] = r.get(k) or "", new.get(k) or ""
+                changes.append(ch)
+        out.append(new)
+    archive_candles([{"sighting_id": k[0], "pool": k[2], "t0": k[1], "fetched_at": iso(now), "candles": v}
+                     for k, v in cache.items() if not isinstance(v, Exception)], now, prefix="relabel_")
+    write_rows(os.path.join("corrected", "labels_v151.csv"), LABEL_COLS + ["measurement_version"], out)
+    ch_cols = ["sighting_id", "horizon_min", "changed_fields"] + \
+        [f"{w}_{k}" for k in AUDIT_FIELDS for w in ("old", "new")] + \
+        ["relabelled_at", "measurement_version", "code_version"]
+    write_rows(os.path.join("corrected", "changes_v151.csv"), ch_cols, changes)
+    n = sum(1 for r in rows if r["status"] in ("labelled", "unknown", "unreliable"))
+    return f"relabelled {n} labels; {len(changes)} changed; originals untouched ({MEASUREMENT_VERSION})"
+
+
 def main():
     args = sys.argv[1:]
     if "--selftest" in args:
@@ -708,8 +890,13 @@ def main():
         ensure_files()
         print(performance_report(datetime.now(timezone.utc)))
         return
+    if "--relabel" in args:
+        print(relabel_corrected(datetime.now(timezone.utc)))
+        return
     scan = run()
     print(json.dumps(scan, indent=1))
+    if scan.get("errors") or not scan.get("n_tokens"):   # D6: a failed scan must fail the run, not stay green
+        sys.exit(1)
 
 
 if __name__ == "__main__":

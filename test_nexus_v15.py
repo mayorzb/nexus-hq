@@ -237,7 +237,7 @@ class TestLaunchChecks(Base):
 
     def test_summary_errors_and_daily_report_sent(self):
         self.run_scan([pair("good"), pair("thin", liq=5_000)], now=T0)
-        self.assertTrue(any(m.startswith("Nexus v1.5.0 scan 20:00 UTC: 2 tokens") for m in self.sent))
+        self.assertTrue(any(m.startswith(f"Nexus v{nx.VERSION} scan 20:00 UTC: 2 tokens") for m in self.sent))
         self.assertTrue(any("daily paper report" in m for m in self.sent))
         self.sent.clear()
         nx.run(now=T0 + timedelta(hours=1), sender=self.sender,
@@ -277,7 +277,463 @@ class TestLaunchChecks(Base):
 
     def test_rules_version_is_stable(self):
         self.assertEqual(nx.rules_version(), nx.rules_version())
-        self.assertTrue(nx.rules_version().startswith("1.5.0-"))
+        self.assertTrue(nx.rules_version().startswith(nx.VERSION + "-"))
+
+
+class TestSafetyCanary(Base):
+    def test_canary_runs_when_market_blocks_everything_and_changes_no_decision(self):
+        pairs = [pair("big", liq=90_000), pair("mid", liq=40_000), pair("small", liq=20_000)]
+        self.run_scan(pairs, weather="DEEP_RED")
+        rows = nx.load_rows(nx.SIGHTINGS)
+        self.assertTrue(all(r["decision"] == "REJECT" for r in rows))
+        self.assertTrue(all(r["deep_checked"] == "0" for r in rows))
+        scan = nx.load_rows(nx.SCANS)[-1]
+        self.assertEqual((scan["canary_n"], scan["canary_unverified"], scan["canary_onchain_err"]), ("2", "0", "0"))
+        self.assertEqual(scan["rules"], nx.rules_version())
+
+    def test_canary_counts_onchain_failures(self):
+        def broken(_p):
+            c = passing_checks(_p)
+            c["rpc"] = lambda m: (_ for _ in ()).throw(RuntimeError("rpc down"))
+            return c
+        deps = {"gather": lambda: ([pair("big", liq=90_000)], {}), "weather": lambda: "RED", "deep_checks": broken,
+                "candles_getter": lambda url: {"data": {"attributes": {"ohlcv_list": []}}},
+                "dead_lookup": lambda r, d, t: False}
+        nx.run(now=T0, deps=deps, sender=self.sender)
+        scan = nx.load_rows(nx.SCANS)[-1]
+        self.assertEqual((scan["canary_n"], scan["canary_unverified"], scan["canary_onchain_err"]), ("1", "1", "1"))
+
+    def test_no_canary_when_normal_deep_checks_ran(self):
+        self.run_scan([pair("good", liq=60_000, age_h=8)])
+        self.assertEqual(nx.load_rows(nx.SCANS)[-1]["canary_n"], "0")
+
+    def test_old_scans_file_gets_new_columns_without_misalignment(self):
+        os.makedirs(nx.DATA_DIR, exist_ok=True)
+        old_cols = nx.SCAN_COLS[:-3]
+        with open(os.path.join(nx.DATA_DIR, nx.SCANS), "w") as f:
+            f.write(",".join(old_cols) + "\n" + ",".join(["old"] + [""] * (len(old_cols) - 1)) + "\n")
+        self.run_scan([pair("big", liq=90_000)], weather="DEEP_RED")
+        rows = nx.load_rows(nx.SCANS)
+        self.assertEqual(rows[0]["scan_id"], "old")
+        self.assertEqual(rows[1]["canary_n"], "1")
+        self.assertTrue(all(None not in r for r in rows))
+
+
+# ---------------------------------------------------------------- Round 1 (5 Nov 2026): defects D1-D8
+def fake_rpc(accts, owners, prog="11111111111111111111111111111111", parsed_override=None, progs_override=None):
+    """Real-shaped Solana RPC responses (jsonParsed token accounts; owner accounts with dataSlice)."""
+    def rpc(method, params=None, **k):
+        if method == "getAccountInfo":
+            return {"context": {"slot": 1}, "value": {"owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "data": {"parsed": {"info": {"mintAuthority": None, "freezeAuthority": None, "decimals": 6},
+                                        "type": "mint"}, "program": "spl-token"}}}
+        if method == "getTokenSupply":
+            return {"context": {"slot": 1}, "value": {"amount": "100000000", "decimals": 6, "uiAmountString": "100"}}
+        if method == "getTokenLargestAccounts":
+            return {"context": {"slot": 1}, "value": [{"address": a, "uiAmountString": str(v), "decimals": 6}
+                                                       for a, v in accts]}
+        if method == "getMultipleAccounts" and params[1]["encoding"] == "jsonParsed":
+            if parsed_override is not None:
+                return {"context": {"slot": 1}, "value": parsed_override}
+            return {"context": {"slot": 1}, "value": [None if o is None else
+                    {"data": {"parsed": {"info": {"owner": o}, "type": "account"}}} for o in owners]}
+        if progs_override is not None:
+            return {"context": {"slot": 1}, "value": None if progs_override == "null" else progs_override}
+        return {"context": {"slot": 1}, "value": [{"owner": prog, "lamports": 1} for _ in params[0]]}
+    return rpc
+
+
+class TestRound1Defects(Base):
+    def test_sample_size_is_reproducible_from_data(self):
+        import nexus_review as rv
+        self.run_scan([pair("a", liq=60_000)])
+        self.run_scan([pair("b", liq=60_000)], now=T0 + timedelta(minutes=60))
+        out = rv.sample_size([nx.DATA_DIR])
+        self.assertIn("n = (z[1 - alpha] + z[power])^2", rv.sample_size.__doc__)
+        self.assertIn("eligible tokens per day: 24.0", out)                    # 1 new eligible token per hourly scan
+        self.assertIn("power 80%", out)
+
+    def setUp(self):
+        super().setUp()
+        self.old_rpc = legacy.rpc
+
+    def tearDown(self):
+        legacy.rpc = self.old_rpc
+        super().tearDown()
+
+    def test_D1_missing_owner_data_is_unknown_not_zero_concentration(self):
+        legacy.rpc = fake_rpc([(f"A{i}", 9) for i in range(10)], [None] * 10)
+        d = legacy.check_rpc("MINT")
+        self.assertFalse(d["holders_read"])
+        self.assertIsNone(d["top10_wallets_pct"])
+
+    def test_D1_empty_owner_lookup_and_partial_owner_data_are_unknown(self):
+        legacy.rpc = fake_rpc([(f"A{i}", 9) for i in range(10)], [], parsed_override=[])
+        self.assertFalse(legacy.check_rpc("MINT")["holders_read"])
+        legacy.rpc = fake_rpc([(f"A{i}", 9) for i in range(3)], ["w1", None, "w3"])
+        self.assertFalse(legacy.check_rpc("MINT")["holders_read"])
+
+    def test_D1_unknown_holders_make_the_coin_unverified_never_a_candidate(self):
+        legacy.rpc = fake_rpc([(f"A{i}", 9) for i in range(10)], [None] * 10)
+        verdict, _, _ = legacy.judge(legacy.check_rpc("MINT"), {"risks": [], "lp_locked_pct": 100}, {"drawdown_pct": 5})
+        self.assertEqual(verdict, "UNVERIFIED")
+
+    def test_D2_accounts_of_one_wallet_are_added_together(self):
+        accts = [("W1", 5), ("W2", 5)] + [(f"O{i}", 4) for i in range(10)]
+        owners = ["W", "W"] + [f"o{i}" for i in range(10)]
+        legacy.rpc = fake_rpc(accts, owners)
+        self.assertAlmostEqual(legacy.check_rpc("MINT")["top10_wallets_pct"], 46.0)
+
+    def test_D3_one_candle_cannot_settle_a_short_window(self):
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        for h in (5, 15):
+            self.assertIsNone(nx.label_from_candles([(s, 1, 1.05, .99, 1)], T0.timestamp(), h, 20, -12, 2))
+
+    def test_D3_thin_trading_with_no_trades_near_the_window_end_is_unknown(self):
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        thin = [(s, 1, 1.01, .99, 1), (s + 60, 1, 1.01, .99, 1.01)]          # nothing in the last 13 minutes
+        self.assertIsNone(nx.label_from_candles(thin, T0.timestamp(), 15, 20, -12, 2))
+        dense = [(s + 60 * i, 1, 1.01, .99, 1.0) for i in range(15)]
+        self.assertEqual(nx.label_from_candles(dense, T0.timestamp(), 15, 20, -12, 2)["reason"], "time")
+
+    def test_D4_entry_candle_low_does_not_trigger_the_stop(self):
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        cs = [(s, 1.0, 1.0, 0.85, 1.0)] + [(s + 60 * i, 1, 1.01 + .02 * i, .99, 1.0 + .02 * i) for i in range(1, 15)]
+        res = nx.label_from_candles(cs, T0.timestamp(), 15, 20, -12, 2)
+        self.assertEqual(res["reason"], "take_profit")
+
+    def _pending_label(self, h):
+        nx.ensure_files()
+        nx.append_rows(nx.LABELS, nx.LABEL_COLS, [{"sighting_id": "s", "mint": "m", "pool": "p", "t0": nx.iso(T0),
+                       "horizon_min": h, "status": "pending", "cost_pct": "2", "attempts": "0"}])
+
+    def test_D5_death_seen_after_the_window_is_unknown_not_minus_100(self):
+        self._pending_label(5)
+        nx.save_json(nx.DEAD_FILE, {"p": {"first_low": nx.iso(T0 + timedelta(hours=9))}})
+        nx.label_pending(T0 + timedelta(hours=10), getter=lambda u: {"data": {"attributes": {"ohlcv_list": []}}},
+                         dead_lookup=lambda r, d, now: True)
+        r = nx.load_rows(nx.LABELS)[0]
+        self.assertEqual((r["status"], r["net_pct"]), ("unknown", ""))
+
+    def test_D5_death_inside_the_window_is_still_minus_100(self):
+        self._pending_label(240)
+        nx.save_json(nx.DEAD_FILE, {"p": {"first_low": nx.iso(T0 + timedelta(hours=1))}})
+        nx.label_pending(T0 + timedelta(hours=10), getter=lambda u: {"data": {"attributes": {"ohlcv_list": []}}},
+                         dead_lookup=lambda r, d, now: True)
+        r = nx.load_rows(nx.LABELS)[0]
+        self.assertEqual((r["status"], r["net_pct"], r["exit_reason"]), ("labelled", "-100.0", "rug_confirmed"))
+
+    def test_D1_stage2_missing_owner_program_lookup_is_unknown_not_zero(self):
+        """Owners readable, but the second lookup (who owns each owner) returns nothing / nulls / too few."""
+        for progs in ([], [None], "null"):
+            legacy.rpc = fake_rpc([("A0", 90)], ["holder"], progs_override=progs)
+            d = legacy.check_rpc("MINT")
+            self.assertFalse(d["holders_read"], progs)
+            self.assertIsNone(d["top10_wallets_pct"], progs)
+        legacy.rpc = fake_rpc([("A0", 90)], ["holder"])                         # readable: 90% is reported
+        self.assertAlmostEqual(legacy.check_rpc("MINT")["top10_wallets_pct"], 90.0)
+
+    def _flat(self, n=61):
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        return s, [(s + 60 * i, 1.0, 1.01, 0.99, 1.0) for i in range(n)]
+
+    def test_D8_bad_price_prints_are_unreliable_not_wins(self):
+        s, flat = self._flat()
+        cases = {"wick_high": {10: (s + 600, 1.0, 50.0, 0.99, 1.0)},
+                 "wick_low": {10: (s + 600, 1.0, 1.01, 0.01, 1.0)},
+                 "jump_transient": {10: (s + 600, 1.0, 30.0, 1.0, 30.0)},          # up 30x, back next minute
+                 "invalid": {10: (s + 600, 1.0, 1.01, 0.0, 1.0)}}
+        for code, patch in cases.items():
+            cs = [patch.get(i, c) for i, c in enumerate(flat)]
+            self.assertEqual(nx.label_from_candles(cs, T0.timestamp(), 60, 40, -25, 2).get("unreliable"), code, code)
+        up = flat[:10] + [(s + 60 * i, 20.0, 20.2, 19.8, 20.0) for i in range(10, 61)]          # stays 20x higher
+        self.assertEqual(nx.label_from_candles(up, T0.timestamp(), 60, 40, -25, 2)["unreliable"], "jump_up")
+        down_glitch = flat[:10] + [(s + 600, 1.0, 1.0, 0.05, 0.05)] + flat[11:]                  # 20x down, back
+        self.assertEqual(nx.label_from_candles(down_glitch, T0.timestamp(), 60, 40, -25, 2)["unreliable"],
+                         "jump_transient")
+
+    def test_D8_persistent_crash_is_a_valid_rug_and_rules_are_frozen(self):
+        s, flat = self._flat()
+        crash = flat[:10] + [(s + 600, 1.0, 1.0, 0.05, 0.05)] + [(s + 60 * i, .05, .05, .05, .05) for i in range(11, 61)]
+        self.assertEqual(nx.label_from_candles(crash, T0.timestamp(), 60, 40, -25, 2)["reason"], "rug")
+        self.assertEqual((nx.PRICE_CHECK_VERSION, nx.PRICE_WICK_MAX, nx.PRICE_JUMP_MAX, nx.PRICE_REVERT),
+                         ("price-1", 5.0, 10.0, 2.0))
+        self.assertEqual(nx.MEASUREMENT_VERSION, "label-1.5.1b+price-1")
+
+    def test_D8_no_checks_mode_scores_raw_prices_for_sensitivity(self):
+        s, flat = self._flat()
+        cs = [(s + 600, 1.0, 50.0, 0.99, 1.0) if i == 10 else c for i, c in enumerate(flat)]
+        self.assertEqual(nx.label_from_candles(cs, T0.timestamp(), 60, 40, -25, 2, checks=None)["reason"], "take_profit")
+
+    def test_D8_unreliable_label_is_recorded_and_never_counted(self):
+        self._pending_label(60)
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        rows = [[s + 60 * i, 1, 1.01, .99, 1, 5] for i in range(61)]
+        rows[5] = [s + 300, 1, 60, .99, 1, 5]
+        nx.label_pending(T0 + timedelta(hours=5), getter=lambda u: {"data": {"attributes": {"ohlcv_list": rows}}})
+        r = nx.load_rows(nx.LABELS)[0]
+        self.assertEqual((r["status"], r["net_pct"], r["exit_reason"]), ("unreliable", "", "unreliable:wick_high"))
+        import nexus_review as rv
+        g = rv.group_stats([r])
+        self.assertEqual((g["n"], g["unknown"]), (0, 1))
+        import glob, gzip, json
+        files = glob.glob(nx.path(os.path.join("candles", "*.jsonl.gz")))
+        self.assertEqual(len(files), 1)                                         # raw candles archived
+        with gzip.open(files[0], "rt") as fh:
+            self.assertEqual(len(json.loads(fh.readline())["candles"]), 61)
+
+    def test_sensitivity_and_exclusion_tables_cover_every_group(self):
+        self._pending_label(60)
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        rows = [[s + 60 * i, 1, 1.01, .99, 1, 5] for i in range(61)]
+        rows[5] = [s + 300, 1, 60, .99, 1, 5]
+        nx.label_pending(T0 + timedelta(hours=5), getter=lambda u: {"data": {"attributes": {"ohlcv_list": rows}}})
+        import nexus_review as rv
+        out = rv.sensitivity([nx.DATA_DIR])
+        for setting in ("strict 3x / 5x", "FROZEN 5x / 10x", "loose 10x / 20x", "no price checks"):
+            self.assertIn(setting, out)
+        wk = rv.weekly([nx.DATA_DIR], T0 + timedelta(hours=6))
+        self.assertIn("Excluded as UNRELIABLE at 60 minutes, by reason", wk)
+
+    def test_api_shapes_real_geckoterminal_rows_and_empty_pool_reply(self):
+        rows = [[1800000120, "1.0", "1.1", "0.9", "1.05", "1234.5"]]            # 6 fields, numbers as strings
+        got = nx.fetch_candles("P", 1800000000, getter=lambda u: {"data": {"attributes": {"ohlcv_list": rows}}})
+        self.assertEqual(got, [(1800000120, 1.0, 1.1, 0.9, 1.05)])
+        self.assertEqual(nx.fetch_candles("P", 0, getter=lambda u: {"errors": [{"status": "404"}]}), [])
+        self.assertIsNone(nx.pool_liquidity("P", getter=lambda u: {"schemaVersion": "1.0.0", "pairs": None}))
+
+    def test_interrupted_write_by_old_writer_is_removed_logged_and_next_row_is_clean(self):
+        nx.ensure_files()
+        with open(nx.path(nx.SCANS), "a") as f:
+            f.write("20261105T000000,2026-11-05T00:00:00+00:00,2026-11-")       # cut off part-way
+        nx.append_rows(nx.SCANS, nx.SCAN_COLS, [{"scan_id": "next", "n_tokens": 5}])
+        self.assertEqual([r["scan_id"] for r in nx.load_rows(nx.SCANS)], ["next"])
+        self.assertIn("removed torn line: 20261105T000000", open(nx.path(nx.TORN_LOG)).read())
+
+    def test_append_interrupted_before_swap_leaves_the_file_untouched(self):
+        nx.ensure_files()
+        nx.append_rows(nx.SCANS, nx.SCAN_COLS, [{"scan_id": "a", "n_tokens": 1}])
+        before = open(nx.path(nx.SCANS)).read()
+        real = os.replace
+        try:
+            os.replace = lambda *a: (_ for _ in ()).throw(KeyboardInterrupt())
+            with self.assertRaises(KeyboardInterrupt):
+                nx.append_rows(nx.SCANS, nx.SCAN_COLS, [{"scan_id": "b", "n_tokens": 1}])
+        finally:
+            os.replace = real
+        self.assertEqual(open(nx.path(nx.SCANS)).read(), before)
+
+    def test_rows_written_before_a_column_existed_read_as_blank_not_dropped(self):
+        nx.ensure_files()
+        with open(nx.path(nx.SCANS), "a") as f:
+            f.write("old_short_row,2026-11-05T00:00:00+00:00\n")
+        self.assertEqual(nx.load_rows(nx.SCANS)[0]["code_commit"], "")
+
+    def test_scan_records_the_code_commit(self):
+        os.environ["NEXUS_CODE_COMMIT"] = "abc123def4567890"
+        try:
+            self.run_scan([pair("good")])
+        finally:
+            del os.environ["NEXUS_CODE_COMMIT"]
+        self.assertEqual(nx.load_rows(nx.SCANS)[-1]["code_commit"], "abc123def456")
+
+    def test_D6_failed_scan_exits_non_zero(self):
+        old = nx.run
+        try:
+            nx.run = lambda: {"errors": "feeds failed: timeout", "n_tokens": 0}
+            with self.assertRaises(SystemExit) as e:
+                import sys
+                argv, sys.argv = sys.argv, ["nexus_v15.py"]
+                try:
+                    nx.main()
+                finally:
+                    sys.argv = argv
+            self.assertEqual(e.exception.code, 1)
+        finally:
+            nx.run = old
+
+    def _session(self, scan_cmd, save_cmd="true"):
+        env = dict(os.environ, NEXUS_SCAN_CMD=scan_cmd, NEXUS_SAVE_CMD=save_cmd, NEXUS_SYNC_CMD="true",
+                   NEXUS_SLEEP_S="0")
+        return subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "2"], env=env,
+                              capture_output=True, text=True)
+
+    def test_D6_workflow_session_turns_red_on_scan_or_save_failure_and_still_runs_every_scan(self):
+        ok = self._session("true")
+        self.assertEqual(ok.returncode, 0)
+        bad_scan = self._session("false")
+        self.assertEqual(bad_scan.returncode, 1)
+        self.assertIn("scan 2 failed", bad_scan.stdout)                       # second scan still attempted
+        self.assertEqual(self._session("true", save_cmd="false").returncode, 1)
+
+    def _orig(self, **kw):
+        nx.ensure_files()
+        row = {"sighting_id": "s", "mint": "m", "pool": "p", "t0": nx.iso(T0), "horizon_min": 15,
+               "status": "labelled", "entry_px": "1.05", "exit_px": "1", "net_pct": "-6.76", "gross_pct": "-4.76",
+               "exit_reason": "time", "cost_pct": "2", "attempts": "1"}
+        row.update(kw)
+        nx.append_rows(nx.LABELS, nx.LABEL_COLS, [row])
+        return open(nx.path(nx.LABELS)).read()
+
+    def _git_repo(self):
+        repo = tempfile.mkdtemp()
+        g = lambda *a: subprocess.run(["git", "-C", repo, "-c", "user.name=t", "-c", "user.email=t@t", *a],
+                                      capture_output=True, text=True, check=True).stdout.strip()
+        g("init", "-q")
+        open(os.path.join(repo, "code.py"), "w").write("v1")
+        g("add", "."); g("commit", "-qm", "code")
+        code = g("rev-parse", "HEAD")
+        os.makedirs(os.path.join(repo, "data_v15"))
+        open(os.path.join(repo, "data_v15", "scans.csv"), "w").write("x")
+        g("add", "."); g("commit", "-qm", "data")
+        return repo, g, code
+
+    def test_session_records_the_code_commit_not_the_latest_data_commit(self):
+        repo, g, code = self._git_repo()
+        out = os.path.join(repo, "seen.txt")
+        scan = os.path.join(repo, "scan.sh")
+        open(scan, "w").write(f'echo "$NEXUS_CODE_COMMIT" >> {out}\n')
+        env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true",
+                   NEXUS_SYNC_CMD="true", NEXUS_SLEEP_S="0")
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "2"], cwd=repo, env=env,
+                           capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertEqual(open(out).read().split(), [code, code])
+        shutil.rmtree(repo, ignore_errors=True)
+
+    def test_session_stops_cleanly_when_code_changes_mid_session(self):
+        repo, g, code = self._git_repo()
+        out = os.path.join(repo, "seen.txt")
+        # the "sync" of scan 2 brings in a code change, as git reset --hard origin/main would
+        sync, scan = os.path.join(repo, "sync.sh"), os.path.join(repo, "scan.sh")
+        open(sync, "w").write(f"[ -f {out} ] && {{ echo v2 > code.py; git -c user.name=t -c user.email=t@t commit -qam new; }}; true\n")
+        open(scan, "w").write(f"echo scan >> {out}\n")
+        env = dict(os.environ, NEXUS_SCAN_CMD=f"bash {scan}", NEXUS_SAVE_CMD="true",
+                   NEXUS_SYNC_CMD=f"bash {sync}", NEXUS_SLEEP_S="0")
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "run_session.sh"), "3"], cwd=repo, env=env,
+                           capture_output=True, text=True)
+        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
+        self.assertEqual(open(out).read().split(), ["scan"])                    # scans 2-3 not run on untested code
+        self.assertIn("Code on main changed", p.stdout)
+        shutil.rmtree(repo, ignore_errors=True)
+
+    def test_relabel_keeps_originals_and_records_every_change(self):
+        before = self._orig()
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        msg = nx.relabel_corrected(T0 + timedelta(days=1),
+                                   getter=lambda u: {"data": {"attributes": {"ohlcv_list": [[s, 1, 1.05, .99, 1, 1]]}}})
+        self.assertEqual(open(nx.path(nx.LABELS)).read(), before)
+        ch = nx.load_rows(os.path.join("corrected", "changes_v151.csv"))[0]
+        self.assertEqual((ch["old_status"], ch["new_status"], ch["old_entry_px"], ch["new_entry_px"]),
+                         ("labelled", "unknown", "1.05", ""))
+        self.assertEqual(ch["measurement_version"], nx.MEASUREMENT_VERSION)
+        self.assertIn("1 changed", msg)
+
+    def test_relabel_logs_changes_to_prices_and_exit_reason_even_when_return_is_equal(self):
+        s = int(T0.timestamp()) + nx.ENTRY_DELAY_MIN * 60
+        cs = [[s + 60 * i, 1, 1.0, 1.0, 1.0, 1] for i in range(16)]
+        res = nx.label_from_candles([tuple(c[:5]) for c in cs], T0.timestamp(), 15, 20, -12, 2)
+        self._orig(entry_px="0.99", exit_px="0.99", exit_reason="stop", net_pct=f"{res['net']:.2f}",
+                   gross_pct=f"{res['gross']:.2f}")
+        nx.relabel_corrected(T0 + timedelta(days=1), getter=lambda u: {"data": {"attributes": {"ohlcv_list": cs}}})
+        ch = nx.load_rows(os.path.join("corrected", "changes_v151.csv"))[0]
+        self.assertEqual(ch["changed_fields"], "entry_px|exit_px|exit_reason")
+        self.assertEqual((ch["old_exit_reason"], ch["new_exit_reason"]), ("stop", "time"))
+
+    def test_relabel_fetch_failure_clears_stale_values_and_keeps_them_in_the_audit(self):
+        self._orig()
+        nx.relabel_corrected(T0 + timedelta(days=1), getter=lambda u: (_ for _ in ()).throw(OSError("timeout")))
+        new = nx.load_rows(os.path.join("corrected", "labels_v151.csv"))[0]
+        self.assertEqual([new[k] for k in nx.MONEY_FIELDS], [""] * 5)
+        self.assertEqual((new["status"], new["measurement_version"]), ("unknown", nx.MEASUREMENT_VERSION))
+        ch = nx.load_rows(os.path.join("corrected", "changes_v151.csv"))[0]
+        self.assertEqual((ch["old_net_pct"], ch["old_entry_px"], ch["old_exit_reason"]), ("-6.76", "1.05", "time"))
+
+    def test_D11_workflow_guards_chain_alerts_and_limits(self):
+        y = open(os.path.join(HERE, ".github", "workflows", "nexus-v15-paper.yml")).read()
+        for must in ("actions: write", "contents: write", "bash scripts/chain.sh guard", "bash scripts/chain.sh next",
+                     "steps.tests.outcome == 'success'", "github.ref_name == 'main'", "timeout-minutes: 300",
+                     "if: failure() || cancelled()", "api.telegram.org", "cancel-in-progress: false",
+                     "REPO_PRIVATE: ${{ github.event.repository.private }}", "NEXUS_CODE_COMMIT: ${{ github.sha }}",
+                     "bash scripts/run_session.sh"):
+            self.assertIn(must, y, must)
+        self.assertNotIn("V15-dev", y.split("jobs:")[0])                       # V15-dev kept, never triggered
+
+    def _chain(self, cmd, runs, private="false", dispatch_rc=0, max_day="6", run_id="100", fail_list=""):
+        """runs: one list of runs, or a list of lists = successive answers to 'gh run list' (last one repeats)."""
+        bindir = tempfile.mkdtemp()
+        log = os.path.join(bindir, "dispatched.log")
+        seq_dir = os.path.join(bindir, "seq")
+        os.makedirs(seq_dir)
+        for i, rs in enumerate(runs if runs and isinstance(runs[0], list) else [runs]):
+            open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
+        with open(os.path.join(bindir, "gh"), "w") as f:
+            f.write("""#!/usr/bin/env bash
+if [ "$1 $2" = "run list" ]; then
+  [ -n "$FAKE_FAIL_LIST" ] && exit 1
+  c=$(cat "$FAKE_SEQ/count" 2>/dev/null || echo 0); echo $((c+1)) > "$FAKE_SEQ/count"
+  last=$(ls "$FAKE_SEQ"/*.json | wc -l); i=$c; [ "$i" -ge "$last" ] && i=$((last-1))
+  q=""; while [ $# -gt 0 ]; do [ "$1" = "--jq" ] && q="$2"; shift; done
+  jq -c "$q" < "$FAKE_SEQ/$i.json"; exit 0; fi
+if [ "$1 $2" = "workflow run" ]; then echo "$@" >> "$FAKE_LOG"; exit "$FAKE_RC"; fi
+exit 9
+""")
+        os.chmod(os.path.join(bindir, "gh"), 0o755)
+        env = dict(os.environ, PATH=bindir + os.pathsep + os.environ["PATH"], FAKE_SEQ=seq_dir,
+                   FAKE_LOG=log, FAKE_RC=str(dispatch_rc), REPO_PRIVATE=private, GITHUB_RUN_ID=run_id,
+                   MAX_SESSIONS_PER_DAY=max_day, GUARD_RECHECKS="3", GUARD_WAIT_S="0", FAKE_FAIL_LIST=fail_list)
+        p = subprocess.run(["bash", os.path.join(HERE, "scripts", "chain.sh"), cmd], env=env, capture_output=True, text=True)
+        n = len(open(log).read().splitlines()) if os.path.exists(log) else 0
+        shutil.rmtree(bindir, ignore_errors=True)
+        return p.returncode, n, p.stdout
+
+    def _run(self, i, status, created=None):
+        return {"databaseId": i, "status": status,
+                "createdAt": created or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+
+    def test_chain_dispatches_exactly_once_when_nothing_else_is_active(self):
+        rc, n, _ = self._chain("next", [self._run(100, "in_progress")])
+        self.assertEqual((rc, n), (0, 1))
+
+    def test_chain_never_duplicates_when_a_session_is_queued_or_running(self):
+        for st in ("queued", "in_progress", "waiting", "pending"):
+            rc, n, _ = self._chain("next", [self._run(100, "in_progress"), self._run(101, st)])
+            self.assertEqual((rc, n), (0, 0), st)
+
+    def test_chain_refuses_private_repo_daily_cap_and_reports_dispatch_failure(self):
+        self.assertEqual(self._chain("next", [self._run(100, "in_progress")], private="true")[:2], (4, 0))
+        self.assertEqual(self._chain("next", [self._run(100, "in_progress")], private="")[:2], (4, 0))
+        today = [self._run(i, "completed") for i in range(90, 96)] + [self._run(100, "in_progress")]
+        self.assertEqual(self._chain("next", today)[:2], (5, 0))
+        self.assertEqual(self._chain("next", [self._run(100, "in_progress")], dispatch_rc=1)[0], 1)
+
+    def test_guard_never_counts_its_own_run(self):
+        self.assertEqual(self._chain("guard", [self._run(100, "in_progress")])[0], 0)
+        self.assertEqual(self._chain("guard", [self._run(100, "in_progress"), self._run(101, "queued")])[0], 0)
+
+    def test_guard_waits_out_a_just_finished_run_instead_of_breaking_the_chain(self):
+        stale = [self._run(100, "in_progress"), self._run(99, "in_progress")]     # list lags behind reality
+        done = [self._run(100, "in_progress"), self._run(99, "completed")]
+        self.assertEqual(self._chain("guard", [stale, stale, done])[0], 0)
+
+    def test_guard_skips_only_when_another_run_stays_in_progress(self):
+        other = [self._run(100, "in_progress"), self._run(99, "in_progress")]
+        rc, _, out = self._chain("guard", [other])
+        self.assertEqual(rc, 3)
+        self.assertIn("check 3 of 3", out)
+
+    def test_guard_fails_open_when_run_id_missing_or_listing_fails(self):
+        both = [self._run(100, "in_progress"), self._run(99, "in_progress")]
+        self.assertEqual(self._chain("guard", both, run_id="")[0], 0)
+        self.assertEqual(self._chain("guard", both, fail_list="1")[0], 0)
+
+    def test_D7_legacy_workflow_is_retired_no_schedule_no_secrets(self):
+        raw = open(os.path.join(HERE, ".github", "workflows", "nexus-scan.yml")).read()
+        y = "\n".join(line.split("#")[0] for line in raw.splitlines())          # code only, not comments
+        self.assertIn("RETIRED", raw)
+        self.assertNotIn("schedule", y)
+        self.assertNotIn("secrets.", y)
+        self.assertNotIn("git add", y)
 
 
 if __name__ == "__main__":

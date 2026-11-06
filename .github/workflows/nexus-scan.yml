@@ -1,74 +1,24 @@
-name: Nexus Scan
+name: Nexus Scan (v1.4.2) - RETIRED
 
+# RETIRED 6 Nov 2026 (defect D7). This workflow ran every hour but saved nothing: its save step staged
+# five files in one `git add ... || true`, and four of them never existed in this repo, so nothing was
+# committed and the run still showed green. It also had Telegram access, so it could send alerts that were
+# recorded nowhere. Its scanning job is replaced by "Nexus v1.5 paper test".
+#
+# Preserved v1.4.2 records (unchanged, not deleted):
+#   - github.com/mayorzb/nexus-scanner at commit 1118b3c (29 Oct 2026): shadow_log.csv, paper_trades.csv,
+#     concept_log_v1_4.csv
+#   - nexus-bundle.zip in this repo (15-16 Oct 2026 snapshot)
+#
+# No schedule, no secrets: it can only be started by hand, and then it only prints this notice.
 on:
-  schedule:
-    - cron: "7 * * * *"          # every hour at :07 (avoids the busy :00 slot)
-  workflow_dispatch:              # "Run workflow" button
-    inputs:
-      mode:
-        description: "What to run"
-        type: choice
-        default: scan
-        options:
-          - scan
-          - telegram-setup
-          - telegram-test
-          - report
+  workflow_dispatch:
 
 permissions:
-  contents: write                 # lets the run save the CSV logs back to the repo
-
-concurrency:
-  group: nexus-scan               # never two runs at once (protects the CSV files)
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  run:
+  retired:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
-      RUGCHECK_API_KEY: ${{ secrets.RUGCHECK_API_KEY }}
-      MODE: ${{ github.event.inputs.mode || 'scan' }}
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Self-test
-        run: python concept_scorer_v1_4.py --selftest > selftest.log 2>&1 || (tail -40 selftest.log; exit 1)
-
-      - name: Telegram setup (prints your chat ID)
-        if: env.MODE == 'telegram-setup'
-        run: python concept_scorer_v1_4.py --telegram-setup
-
-      - name: Telegram test message
-        if: env.MODE == 'telegram-test'
-        run: python concept_scorer_v1_4.py --telegram-test
-
-      - name: Report
-        if: env.MODE == 'report'
-        run: python concept_scorer_v1_4.py --report
-
-      - name: Recheck prices, then scan
-        if: env.MODE == 'scan'
-        run: |
-          [ -n "$SOLANA_RPC_URL" ] || unset SOLANA_RPC_URL
-          [ -n "$RUGCHECK_API_KEY" ] || unset RUGCHECK_API_KEY
-          python concept_scorer_v1_4.py --recheck
-          python concept_scorer_v1_4.py
-
-      - name: Save logs to the repo
-        if: env.MODE == 'scan'
-        run: |
-          git config user.name  "nexus-bot"
-          git config user.email "nexus-bot@users.noreply.github.com"
-          git add -f shadow_log.csv paper_trades.csv concept_log_v1_4.csv scan_health.csv spot_cache_v142.json 2>/dev/null || true
-          git diff --cached --quiet && { echo "Nothing new to save."; exit 0; }
-          git commit -m "scan $(date -u +'%Y-%m-%d %H:%M') UTC"
-          for i in 1 2 3; do git pull --rebase --quiet && git push && exit 0; sleep 5; done
-          echo "Could not push the logs after 3 tries."; exit 1
+      - run: echo "Nexus Scan v1.4.2 is retired (6 Nov 2026). Use the 'Nexus v1.5 paper test' workflow."

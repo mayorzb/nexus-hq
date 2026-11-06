@@ -1,54 +1,94 @@
 name: Nexus v1.5 paper test
 
-# PAPER ONLY: no wallet, no keys, no trading. On main: one scan every hour.
+# PAPER ONLY: no wallet, no keys, no trading.
+# Continuity (D11): GitHub's hourly schedule proved unreliable (old "Nexus Scan": 18 runs in 5 days), so each
+# session runs 5 hourly scans and then requests the next session itself. Safety limits are in scripts/chain.sh:
+# no duplicate or repeated sessions, no chaining on a private repo (cost), at most 6 sessions per UTC day,
+# no chaining after failed tests. The hourly schedule restarts a broken chain. Every failure sends a Telegram alert.
 on:
   schedule:
     - cron: "17 * * * *"
-  push:
-    branches: [v15-dev, V15-dev]
-    paths-ignore: ["data_v15/**"]
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "scan (normal), relabel (corrected copy next to the originals) or test (tests only, nothing saved)"
+        type: choice
+        default: scan
+        options: [scan, relabel, test]
+      chain:
+        description: "Started by the previous session (skips the Telegram test)"
+        type: boolean
+        default: false
 
 permissions:
-  contents: write
+  contents: write       # save scan records
+  actions: write        # list runs and request the next session
 
 concurrency:
-  group: nexus-v15-${{ github.ref_name }}
+  group: nexus-v15-${{ github.ref_name }}   # one session at a time per branch; at most one waiting
   cancel-in-progress: false
 
 jobs:
   paper:
     runs-on: ubuntu-latest
-    timeout-minutes: 355
+    timeout-minutes: 300                      # hard stop: 5 hours per session
     env:
+      MODE: ${{ github.event.inputs.mode || 'scan' }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
       RUGCHECK_API_KEY: ${{ secrets.RUGCHECK_API_KEY }}
-      SESSION_SCANS: ${{ github.event_name == 'schedule' && '1' || '6' }}
+      GH_TOKEN: ${{ github.token }}
+      REPO_PRIVATE: ${{ github.event.repository.private }}
+      SESSION_SCANS: "5"
+      NEXUS_CODE_COMMIT: ${{ github.sha }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
+      - name: 0. Session guard (skip if another session is already running)
+        id: guard
+        if: env.MODE != 'test'
+        run: |
+          set +e; bash scripts/chain.sh guard; rc=$?; set -e
+          if [ "$rc" = "3" ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; else echo "skip=false" >> "$GITHUB_OUTPUT"; fi
+
       - name: 1. Automated tests (stop here if anything fails)
+        id: tests
+        if: steps.guard.outputs.skip != 'true'
         run: |
           python concept_scorer_v1_4.py --selftest > legacy_selftest.log 2>&1 || (tail -30 legacy_selftest.log; exit 1)
           python -m unittest test_nexus_v15 -v
 
-      - name: 2. Telegram test notification (not on hourly runs)
-        if: github.event_name != 'schedule'
+      - name: 2. Telegram test notification (manual runs only)
+        if: steps.guard.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.chain != 'true' && env.MODE == 'scan'
         run: python nexus_v15.py --telegram-test
 
-      - name: 3. Paper scans + save after each
+      - name: Relabel (corrected copy only; originals untouched)
+        if: steps.guard.outputs.skip != 'true' && env.MODE == 'relabel'
+        run: |
+          bash scripts/sync_data.sh
+          python nexus_v15.py --relabel
+          bash scripts/save_logs.sh "v1.5.1b corrected relabel $(date -u +'%Y-%m-%d %H:%M') UTC" data_v15/corrected
+
+      - name: 3. Paper scans + save after each (fails the run if any scan or save failed)
+        if: steps.guard.outputs.skip != 'true' && env.MODE == 'scan'
         run: |
           [ -n "$SOLANA_RPC_URL" ] || unset SOLANA_RPC_URL
           [ -n "$RUGCHECK_API_KEY" ] || unset RUGCHECK_API_KEY
-          for i in $(seq 1 "$SESSION_SCANS"); do
-            echo "=== scan $i of $SESSION_SCANS at $(date -u +%H:%M) UTC ==="
-            bash scripts/sync_data.sh
-            python nexus_v15.py || echo "scan $i failed (reported to Telegram if possible)"
-            bash scripts/save_logs.sh "v1.5 paper scan $(date -u +'%Y-%m-%d %H:%M') UTC" data_v15 || echo "save failed"
-            if [ "$i" -lt "$SESSION_SCANS" ]; then sleep 3600; fi
-          done
+          bash scripts/run_session.sh "$SESSION_SCANS"
+
+      - name: 4. Chain - request the next session (main only; never after failed tests)
+        id: chain
+        if: always() && steps.guard.outputs.skip != 'true' && steps.tests.outcome == 'success' && github.ref_name == 'main' && env.MODE == 'scan'
+        run: bash scripts/chain.sh next
+
+      - name: 5. Alert on any failure (Telegram, independent of the Python code)
+        if: failure() || cancelled()
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ] || { echo "::error::no Telegram secrets for the alert"; exit 0; }
+          msg="Nexus ALERT: '${{ github.workflow }}' run ${{ github.run_number }} ${{ job.status }} (tests: ${{ steps.tests.outcome }}, chain: ${{ steps.chain.outcome }}). ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -sS -m 20 -o /dev/null -w "telegram http %{http_code}\n" "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" --data-urlencode "text=${msg}" || true
