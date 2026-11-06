@@ -1,34 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 0/50 complete pairs, 0/20 scans, 3/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 4/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 3 |
-| sightings | 188 |
-| liquid sightings | 85 |
-| first liquid sightings = unique tokens with an outcome row | 29 |
-|   young | 22 |
-|   mature | 5 |
+| eval-2 scans | 4 |
+| sightings | 244 |
+| liquid sightings | 113 |
+| first liquid sightings = unique tokens with an outcome row | 38 |
+|   young | 29 |
+|   mature | 7 |
 |   other | 2 |
 | young with a comparator (cap 2) | 4 |
-| young without a comparator | 18 |
+| young without a comparator | 25 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 4 |
-| complete pairs (both 60m outcomes labelled) | 0 |
-| scans contributing a complete pair | 0 |
+|   pairs: young or mature outcome not yet usable | 2 |
+| complete pairs (both 60m outcomes labelled) | 2 |
+| scans contributing a complete pair | 1 |
 
 ## 60m outcome status by group
 
-- young: labelled 6/22, pending 16/22
-- mature: labelled 1/5, pending 4/5
-- no valid entry: young 0/22, mature 0/5
+- young: labelled 12/29, pending 16/29, unreliable 1/29
+- mature: labelled 3/7, pending 4/7
+- no valid entry: young 0/29, mature 0/7
 
 ## Effect (after costs; unit = scan)
 
-- No complete pairs yet.
+- Scan-level mean difference (young - mature): 2.28 points, 95% interval None; scans with young worse 0/1
+- Pairs with young worse: 1/2 (50.0%); pair mean 2.28, median 2.28
+- Big loss (<= -20%): young 1/2, mature 0/2
 
 ## Comparator reuse (cap 2)
 
@@ -45,13 +47,13 @@
 | 20261106T160023 | NEUTRAL | POKEMON | 24597.75 | labelled | -54.71 |  |  |  | None | no eligible comparator |
 | 20261106T160023 | NEUTRAL | ZEC | 16264.48 | labelled | -70.42 |  |  |  | None | no eligible comparator |
 | 20261106T160023 | NEUTRAL | POPO | 15783.56 | labelled | -49.86 |  |  |  | None | no eligible comparator |
-| 20261106T170022 | NEUTRAL | FI | 108252.67 | pending | None | BAGEL | 77787.56 | pending | None |  |
-| 20261106T170022 | NEUTRAL | Chicxu | 67737.77 | pending | None | BAGEL | 77787.56 | pending | None |  |
-| 20261106T170022 | NEUTRAL | 401kinu | 55921.22 | pending | None |  |  |  | None | comparators used twice |
-| 20261106T170022 | NEUTRAL | KoriMu | 38953.51 | pending | None |  |  |  | None | comparators used twice |
-| 20261106T170022 | NEUTRAL | FI | 20448.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T170022 | NEUTRAL | MEOWCRAT | 18572.94 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T170022 | NEUTRAL | X | 15727.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T170022 | NEUTRAL | FI | 108252.67 | labelled | 37.62 | BAGEL | 77787.56 | labelled | -8.24 |  |
+| 20261106T170022 | NEUTRAL | Chicxu | 67737.77 | labelled | -49.55 | BAGEL | 77787.56 | labelled | -8.24 |  |
+| 20261106T170022 | NEUTRAL | 401kinu | 55921.22 | labelled | 37.44 |  |  |  | None | comparators used twice |
+| 20261106T170022 | NEUTRAL | KoriMu | 38953.51 | labelled | -34.46 |  |  |  | None | comparators used twice |
+| 20261106T170022 | NEUTRAL | FI | 20448.60 | labelled | -37.7 |  |  |  | None | no eligible comparator |
+| 20261106T170022 | NEUTRAL | MEOWCRAT | 18572.94 | labelled | -30.24 |  |  |  | None | no eligible comparator |
+| 20261106T170022 | NEUTRAL | X | 15727.41 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | GRUB | 36493.56 | pending | None | OZA | 41158.77 | pending | None |  |
 | 20261106T180021 | NEUTRAL | HODL | 30994.35 | pending | None | OZA | 41158.77 | pending | None |  |
 | 20261106T180021 | NEUTRAL | Degen | 26347.54 | pending | None |  |  |  | None | comparators used twice |
@@ -61,3 +63,10 @@
 | 20261106T180021 | NEUTRAL | CRVL | 16630.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | HABIBI | 15659.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | RIPPING | 15286.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MONEYERO | 27167.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MTA6 | 23350.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | BOYFRIEND | 19005.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | JOHN | 18275.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | BORDERLESS | 16712.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | CHROME | 16035.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | pending | None |  |  |  | None | no eligible comparator |
