@@ -851,15 +851,29 @@ def check_rpc(mint, pool=None):
         addrs = [a["address"] for a in accts if a.get("address")]
         parsed = (rpc("getMultipleAccounts", [addrs, {"encoding": "jsonParsed"}]) or {}).get("value") or []
         owners = [((((x or {}).get("data") or {}).get("parsed") or {}).get("info") or {}).get("owner") for x in parsed]
+        if not accts or len(owners) != len(accts) or not all(owners):
+            # D1 (5 Nov 2026): an unreadable owner is UNKNOWN, never "not a wallet". Missing owner data used to
+            # give 0% concentration with holders_read=True.
+            raise RuntimeError(f"owner unreadable for {sum(1 for o in owners if not o) + len(accts) - len(owners)}"
+                               f" of {len(accts)} largest accounts")
         uniq = [o for o in dict.fromkeys(owners) if o]
         progs = (rpc("getMultipleAccounts", [uniq, {"encoding": "base64", "dataSlice": {"offset": 0, "length": 0}}])
                  or {}).get("value") or []
-        owner_prog = {o: (x or {}).get("owner") for o, x in zip(uniq, progs)}
-        holdings = []
+        if len(progs) != len(uniq) or any(not (x or {}).get("owner") for x in progs):
+            # D1 stage 2 (6 Nov 2026): an owner whose program cannot be read is UNKNOWN, never "not a wallet".
+            missing = sum(1 for x in progs if not (x or {}).get("owner")) + max(0, len(uniq) - len(progs))
+            raise RuntimeError(f"owner program unreadable for {missing} of {len(uniq)} owners")
+        owner_prog = {o: x["owner"] for o, x in zip(uniq, progs)}
+        holdings, per_wallet = [], {}
         for a, o in zip(accts, owners):
             is_wallet = bool(o) and o not in BURN_OWNERS and o not in KNOWN_POOL_AUTHORITIES and o != pool \
                 and owner_prog.get(o) == SYSTEM_PROGRAM      # program-owned / PDA / missing = pool, curve, vault
-            holdings.append((to_float(a.get("uiAmountString")) or 0, is_wallet))
+            amt = to_float(a.get("uiAmountString")) or 0
+            if is_wallet:                                    # D2: one wallet's accounts are added together
+                per_wallet[o] = per_wallet.get(o, 0) + amt
+            else:
+                holdings.append((amt, False))
+        holdings += [(amt, True) for amt in per_wallet.values()]
         out["top10_pct"], out["top10_wallets_pct"] = concentration(holdings, supply)
         out["holders_read"] = out["top10_wallets_pct"] is not None
     except Exception as e:

@@ -3,6 +3,8 @@ Nexus review: the FIXED scorecard used for every monitoring review. Read-only: i
 
   python nexus_review.py --daily  [--data DIR ...] [--now ISO]
   python nexus_review.py --weekly [--data DIR ...] [--now ISO]
+  python nexus_review.py --sensitivity [--data DIR ...]   (price-validity thresholds, from archived candles)
+  python nexus_review.py --sample-size [--data DIR ...]   (Round 3 sample sizes, every input computed from data)
 
 Same script + same data = same numbers. If a metric definition ever changes, REVIEW_VERSION changes and the
 monitoring log notes it. Several --data folders (e.g. main and V15-dev) are merged; duplicates are dropped.
@@ -15,7 +17,7 @@ import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 
-REVIEW_VERSION = "review-1.0"
+REVIEW_VERSION = "review-1.2"
 HORIZONS = [5, 15, 30, 60, 240]
 MIN_N = 30                      # below this a group/horizon is "insufficient", no verdict
 BOOT = 2000
@@ -63,7 +65,7 @@ def load(dirs):
     labels = read(dirs, "labels.csv", ["sighting_id", "horizon_min"])
     # a label can exist on two branches with different progress: keep the most finished copy
     best = {}
-    rank = {"labelled": 2, "unknown": 1, "pending": 0}
+    rank = {"labelled": 2, "unknown": 1, "unreliable": 1, "pending": 0}
     for d in dirs:
         p = os.path.join(d, "labels.csv")
         if os.path.exists(p):
@@ -113,7 +115,7 @@ GROUPS = {
 
 def group_stats(rows):
     lab = [r for r in rows if r["status"] == "labelled"]
-    unk = sum(1 for r in rows if r["status"] == "unknown")
+    unk = sum(1 for r in rows if r["status"] in ("unknown", "unreliable"))   # never counted as results
     pend = sum(1 for r in rows if r["status"] == "pending")
     nets = [f(r["net_pct"]) for r in lab]
     n = len(nets)
@@ -157,11 +159,15 @@ def daily(dirs, now):
     passers = [s for s in sg if s["decision"] in ("CANDIDATE", "UNVERIFIED", "NOT_CHECKED") or s["deep_checked"] == "1"]
     notc = sum(1 for s in sg if s["decision"] == "NOT_CHECKED")
     cands = [s for s in sg if s["decision"] == "CANDIDATE"]
-    fin = [r for r in labels if r["status"] in ("labelled", "unknown") and r["labelled_at"] and parse(r["labelled_at"]) >= since]
-    unk = sum(1 for r in fin if r["status"] == "unknown")
+    fin = [r for r in labels if r["status"] in ("labelled", "unknown", "unreliable") and r["labelled_at"]
+           and parse(r["labelled_at"]) >= since]
+    unk = sum(1 for r in fin if r["status"] in ("unknown", "unreliable"))
     overdue = sum(1 for r in labels if r["status"] == "pending"
                   and parse(r["t0"]) + timedelta(minutes=247 + 60 * OVERDUE_H) < now)
     rules = Counter(s["rules"] for s in sc)
+    can_n = sum(int(s.get("canary_n") or 0) for s in sc)
+    can_unv = sum(int(s.get("canary_unverified") or 0) for s in sc)
+    can_err = sum(int(s.get("canary_onchain_err") or 0) for s in sc)
     rows = [
         ("Scan coverage (hours with a scan, last 24h)", f"{len(hours)}/24 ({pct(coverage)})",
          "OK" if coverage >= COVERAGE_OK else ("WARN" if coverage >= COVERAGE_WARN else "ALERT")),
@@ -172,10 +178,13 @@ def daily(dirs, now):
          f"{med([f(s['n_tokens']) for s in sc])} / {med([f(s['n_liquid']) for s in sc])}", status(bool(sc))),
         ("Deep-checked coins left UNVERIFIED", f"{unv} of {len(deep)} ({pct(unv / len(deep) if deep else None)})",
          status(not deep or unv / len(deep) <= UNVERIFIED_ALERT)),
+        ("Safety canary (deep checks run when no coin reached them)",
+         f"{can_n} checked, {can_unv} unverified, {can_err} on-chain errors",
+         "INFO" if not can_n else status(can_unv / can_n <= UNVERIFIED_ALERT and not can_err, warn=True)),
         ("Gate-passers skipped by check budget", f"{notc} of {len(passers)}",
          status(not passers or notc / len(passers) <= NOT_CHECKED_ALERT, warn=True)),
         ("Paper candidates (last 24h)", str(len(cands)), "INFO"),
-        ("Labels finished / unknown (last 24h)", f"{len(fin)} / {unk}",
+        ("Labels finished / unknown or unreliable (last 24h)", f"{len(fin)} / {unk}",
          status(not fin or unk / len(fin) <= UNKNOWN_ALERT)),
         ("Labels overdue (> 6h past due)", str(overdue), status(overdue == 0, warn=overdue < 20)),
         ("Rules versions in use", ", ".join(f"{k} ({v})" for k, v in rules.items()) or "none", status(len(rules) <= 1)),
@@ -228,6 +237,18 @@ def weekly(dirs, now):
                 findings.append(f"{name} at {h} min: 90% range of mean net is above zero and above baseline "
                                 f"(n={g['n']}). Candidate for a pre-registered confirmation test, NOT a validated edge.")
         out.append("")
+    # outcomes excluded as unreliable, by reason and group (the same frozen rules apply to every group)
+    out += [f"### Excluded as UNRELIABLE at 60 minutes, by reason (price checks applied equally to all groups)", "",
+            "| Group | Finished | invalid | wick_high | wick_low | jump_transient | jump_up | Share excluded |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- |"]
+    codes = ["invalid", "wick_high", "wick_low", "jump_transient", "jump_up"]
+    for name, keep in GROUPS.items():
+        g = [r for r in lab if r["horizon_min"] == "60" and keep(r) and r["status"] in ("labelled", "unknown", "unreliable")]
+        c = Counter(r.get("exit_reason", "").split(":", 1)[1] for r in g if r["status"] == "unreliable" and ":" in r.get("exit_reason", ""))
+        ex = sum(c.values())
+        out.append(f"| {name} | {len(g)} | " + " | ".join(str(c.get(k, 0)) for k in codes) +
+                   f" | {pct(ex / len(g)) if g else '-'} |")
+    out.append("")
     # what blocks liquid coins
     liquid = [s for s in sights if s["b0_liquid"] == "1" and s["rules"] == current]
     reasons = Counter(s["reasons"].split(";")[0].split(" $")[0].split(" (")[0][:50] for s in liquid
@@ -257,11 +278,98 @@ def weekly(dirs, now):
     return "\n".join(out)
 
 
+def sensitivity(dirs):
+    """Re-labels every archived window under different price-check thresholds (and with no checks at all) to show
+       whether the frozen rules change any group's result. Reads data_v15/candles/*.jsonl.gz; never writes."""
+    import glob, gzip, json
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import nexus_v15 as nx
+    _, _, labels = load(dirs)
+    cand = {}
+    for d in dirs:
+        for fn in sorted(glob.glob(os.path.join(d, "candles", "*.jsonl.gz"))):
+            with gzip.open(fn, "rt") as fh:
+                for line in fh:
+                    it = json.loads(line)
+                    cand[it["sighting_id"]] = [tuple(c) for c in it["candles"]]
+    settings = [("strict 3x / 5x", (3.0, 5.0)), ("FROZEN 5x / 10x", (nx.PRICE_WICK_MAX, nx.PRICE_JUMP_MAX)),
+                ("loose 10x / 20x", (10.0, 20.0)), ("no price checks", None)]
+    out = [f"PRICE-CHECK SENSITIVITY ({REVIEW_VERSION}, rules {nx.PRICE_CHECK_VERSION}) - 60 minutes, net %", "",
+           f"Windows with archived candles: {len(cand)} sightings. Labels without archived candles are not included.", "",
+           "| Group | Setting | Scored | Excluded | Mean net | Median net |", "| --- | --- | --- | --- | --- | --- |"]
+    for name, keep in GROUPS.items():
+        rows = [r for r in labels if r["horizon_min"] == "60" and keep(r) and r["sighting_id"] in cand]
+        for label, chk in settings:
+            nets, excl = [], 0
+            for r in rows:
+                tp, st = nx.HORIZONS[60]
+                res = nx.label_from_candles(cand[r["sighting_id"]], parse(r["t0"]).timestamp(), 60, tp, st,
+                                            f(r["cost_pct"]) or 0.0, checks=chk)
+                if res is None:
+                    continue
+                if "unreliable" in res:
+                    excl += 1
+                    continue
+                nets.append(res["net"])
+            out.append(f"| {name} | {label} | {len(nets)} | {excl} | {num(sum(nets) / len(nets)) if nets else '-'} | "
+                       f"{num(sorted(nets)[len(nets) // 2]) if nets else '-'} |")
+    out += ["", "Read: if a group's conclusion changes between settings, the price checks are deciding the result "
+            "and the finding must be reported as sensitive to them."]
+    return "\n".join(out)
+
+
+def sample_size(dirs, mus=(5.0, 10.0), rhos=(0.0, 0.02, 0.05, 0.10), rates=(0.2, 0.5), ks=(5, 2), power=0.80):
+    """Round 3 sample sizes. Every input is printed with its source so the table can be reproduced by hand.
+       Unit: one SELECTED token (a token the hypothesis picks from the eligible set E), counted once, at its first
+       eligible sighting. Eligible token = a liquid (B0) token seen for the first time (label_this=1).
+       Formula (one-sided test that the mean 60-min net return of the selected tokens is above 0):
+         n = (z[1 - alpha] + z[power])^2 * sd^2 / mu^2 * DE,   DE = 1 + (m - 1) * rho
+         m = selected tokens per day = eligible tokens per day * selection rate;  days = n / m
+         alpha = Holm's strictest step = 0.05 / k  (k = number of confirmatory hypotheses)."""
+    from statistics import NormalDist, stdev
+    N = NormalDist()
+    scans, sights, labels = load(dirs)
+    b0 = [f(r["net_pct"]) for r in labels if r["horizon_min"] == "60" and r["status"] == "labelled"
+          and r["b0_liquid"] == "1"]
+    b0 = [x for x in b0 if x is not None]
+    sd = stdev(b0) if len(b0) > 1 else float("nan")
+    gap_ok = {s["scan_id"] for s in scans if s.get("gap_min_before") and (f(s["gap_min_before"]) or 1e9) <= GAP_ALERT_MIN}
+    new = Counter(r["scan_id"] for r in sights if r["b0_liquid"] == "1" and r.get("label_this") == "1")
+    per_scan = [new[i] for i in gap_ok]
+    per_day = 24 * sum(per_scan) / len(per_scan) if per_scan else float("nan")
+    zb = N.inv_cdf(power)
+    out = [f"SAMPLE SIZE ({REVIEW_VERSION})", "",
+           f"sd of 60-min net return, B0 labelled tokens: {sd:.2f} points (sample sd, n={len(b0)})",
+           f"eligible tokens per day: {per_day:.1f} = 24 x mean new eligible tokens per hourly scan "
+           f"({sum(per_scan)}/{len(per_scan)} scans that followed a gap of {GAP_ALERT_MIN} min or less; "
+           f"catch-up scans after outages excluded)",
+           f"power {power:.0%} (z={zb:.4f}); one-sided; alpha = 0.05/k", "",
+           "| k | alpha | z | mu | rho | rate | m/day | DE | n selected | days |",
+           "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for k in ks:
+        a = 0.05 / k
+        za = N.inv_cdf(1 - a)
+        for mu in mus:
+            for rho in rhos:
+                for rate in rates:
+                    m = per_day * rate
+                    de = 1 + (m - 1) * rho
+                    n = (za + zb) ** 2 * sd ** 2 / mu ** 2 * de
+                    ok = math.isfinite(n) and m > 0
+                    out.append(f"| {k} | {a:.3f} | {za:.4f} | +{mu:g} | {rho:g} | {rate:.0%} | {m:.1f} | {de:.2f} | "
+                               f"{math.ceil(n) if ok else '-'} | {math.ceil(n / m) if ok else '-'} |")
+    return "\n".join(out)
+
+
 def main():
     args = sys.argv[1:]
     dirs = [args[i + 1] for i, a in enumerate(args) if a == "--data"] or ["data_v15"]
     now = next((parse(args[i + 1]) for i, a in enumerate(args) if a == "--now"), datetime.now(timezone.utc))
-    if "--weekly" in args:
+    if "--sample-size" in args:
+        print(sample_size(dirs))
+    elif "--sensitivity" in args:
+        print(sensitivity(dirs))
+    elif "--weekly" in args:
         print(weekly(dirs, now))
     else:
         print(daily(dirs, now)[0])
