@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 5/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 6/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 5 |
-| sightings | 300 |
-| liquid sightings | 133 |
-| first liquid sightings = unique tokens with an outcome row | 39 |
-|   young | 30 |
-|   mature | 7 |
-|   other | 2 |
-| young with a comparator (cap 2) | 4 |
-| young without a comparator | 26 |
+| eval-2 scans | 6 |
+| sightings | 360 |
+| liquid sightings | 156 |
+| first liquid sightings = unique tokens with an outcome row | 46 |
+|   young | 34 |
+|   mature | 8 |
+|   other | 4 |
+| young with a comparator (cap 2) | 6 |
+| young without a comparator | 28 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 2 |
+|   pairs: young or mature outcome not yet usable | 4 |
 | complete pairs (both 60m outcomes labelled) | 2 |
 | scans contributing a complete pair | 1 |
 
 ## 60m outcome status by group
 
-- young: labelled 18/30, pending 11/30, unreliable 1/30
-- mature: labelled 4/7, pending 3/7
-- no valid entry: young 0/30, mature 0/7
+- young: labelled 23/34, no_valid_entry 2/34, pending 6/34, unknown 2/34, unreliable 1/34
+- mature: labelled 6/8, pending 1/8, unknown 1/8
+- no valid entry: young 2/34, mature 0/8
 
 ## Effect (after costs; unit = scan)
 
@@ -36,6 +36,7 @@
 
 - 20261106T170022-Gb7gExpw: FI (20261106T170022), Chicxu (20261106T170022)
 - 20261106T180021-BNpRagRS: GRUB (20261106T180021), HODL (20261106T180021)
+- 20261106T210020-4iTZ574d: Democat (20261106T210020), sexcoin (20261106T210020)
 
 ## Every pair
 
@@ -54,20 +55,24 @@
 | 20261106T170022 | NEUTRAL | FI | 20448.60 | labelled | -37.7 |  |  |  | None | no eligible comparator |
 | 20261106T170022 | NEUTRAL | MEOWCRAT | 18572.94 | labelled | -30.24 |  |  |  | None | no eligible comparator |
 | 20261106T170022 | NEUTRAL | X | 15727.41 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261106T180021 | NEUTRAL | GRUB | 36493.56 | pending | None | OZA | 41158.77 | pending | None |  |
-| 20261106T180021 | NEUTRAL | HODL | 30994.35 | labelled | -29.43 | OZA | 41158.77 | pending | None |  |
-| 20261106T180021 | NEUTRAL | Degen | 26347.54 | pending | None |  |  |  | None | comparators used twice |
+| 20261106T180021 | NEUTRAL | GRUB | 36493.56 | unknown | None | OZA | 41158.77 | unknown | None |  |
+| 20261106T180021 | NEUTRAL | HODL | 30994.35 | labelled | -29.43 | OZA | 41158.77 | unknown | None |  |
+| 20261106T180021 | NEUTRAL | Degen | 26347.54 | unknown | None |  |  |  | None | comparators used twice |
 | 20261106T180021 | NEUTRAL | LAURA | 22071.86 | labelled | -29.46 |  |  |  | None | comparators used twice |
 | 20261106T180021 | NEUTRAL | TTP | 18216.98 | labelled | -30.83 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | HABIBI | 17362.89 | labelled | -31.37 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | CRVL | 16630.30 | labelled | -30.03 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | HABIBI | 15659.71 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | RIPPING | 15286.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | MONEYERO | 27167.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | MTA6 | 23350.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | BOYFRIEND | 19005.62 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | JOHN | 18275.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | BORDERLESS | 16712.29 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | CHROME | 16035.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MONEYERO | 27167.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MTA6 | 23350.13 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | BOYFRIEND | 19005.62 | labelled | 36.75 |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | JOHN | 18275.98 | labelled | -1.74 |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | BORDERLESS | 16712.29 | labelled | -31.1 |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | CHROME | 16035.03 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261106T200020 | NEUTRAL | FUSE | 16844.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T210020 | NEUTRAL | Lukaflm | 109781.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T210020 | NEUTRAL | FUSE | 74573.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T210020 | NEUTRAL | Democat | 30628.52 | pending | None | fart | 17906.48 | pending | None |  |
+| 20261106T210020 | NEUTRAL | sexcoin | 17747.93 | pending | None | fart | 17906.48 | pending | None |  |
