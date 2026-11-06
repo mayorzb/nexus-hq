@@ -30,7 +30,7 @@ from datetime import datetime, timedelta, timezone
 
 import concept_scorer_v1_4 as legacy
 
-VERSION = "1.5.1"   # 1.5.1 (5 Nov 2026): defect fixes D1-D6; new version = new test period
+VERSION = "1.5.3"   # 1.5.3 (6 Nov 2026): fresh paper evaluation eval-2 (traceable outcomes); new version = new test period
 DATA_DIR = os.environ.get("NEXUS_V15_DATA", "data_v15")
 
 # ---------------------------------------------------------------- tunable rules (frozen for the test)
@@ -48,6 +48,9 @@ HORIZONS = {                    # minutes: (take profit %, stop %)  - fixed in a
     5: (10, -8), 15: (20, -12), 30: (30, -18), 60: (40, -25), 240: (80, -40)}
 LABEL_AFTER_MIN = 240 + ENTRY_DELAY_MIN + 5   # all horizons are labelled in one go after this
 LABEL_GIVE_UP_H = 72            # after this, a label that still has no data is UNKNOWN for good
+SETTLE_MIN = 30                 # v1.5.2: a window that ended this long ago, with trades seen AFTER it, and still too
+                                # few trades inside it, is FINAL (UNKNOWN now): empty minutes never get candles later
+SETTLE_NO_DATA_H = 4            # ...and with no trade at all since the window ended, it is final after this long
 DEAD_LIQ_USD = 500
 DEAD_CONFIRM_GAP_MIN = 30       # "dead" needs two readings at least this far apart (one blip is not death)
 # ---- price-validity rules, FROZEN as "price-1" (6 Nov 2026). Applied by the one labeller to every label, so every
@@ -56,7 +59,15 @@ PRICE_CHECK_VERSION = "price-1"
 PRICE_WICK_MAX = 5.0            # high above 5x the candle's open/close body, or low below 1/5 of it = bad print
 PRICE_JUMP_MAX = 10.0           # one-minute close-to-close move above 10x (up) or below 1/10 (down)
 PRICE_REVERT = 2.0              # ...that comes back within 2x of the previous close next minute = transient glitch
-MEASUREMENT_VERSION = "label-1.5.1b+" + PRICE_CHECK_VERSION
+MEASUREMENT_VERSION = "label-1.5.3+" + PRICE_CHECK_VERSION
+# ---- fresh paper evaluation eval-2 (frozen in PROTOCOL_EVAL2.md; its SHA-256 is pinned here and checked by a test)
+EVAL_PROTOCOL = "eval-2"
+PROTOCOL_FILE = "PROTOCOL_EVAL2.md"
+PROTOCOL_SHA256 = "e7ec9869b68e73dbf271726179915f6cf5d9e0ed5a56fd7dd154dbdec0c3b909"
+DUE_BUFFER_MIN = 10             # eval-2: a horizon is due ENTRY_DELAY_MIN + horizon + this many minutes after the sighting
+ATTEMPTS = "label_attempts.csv" # eval-2: every labelling attempt, successful or not, one row per horizon (append-only)
+ATTEMPT_COLS = ["attempted_at", "sighting_id", "mint", "pool", "horizon_min", "due_at", "outcome", "detail",
+                "n_candles", "candle_file", "code_version", "measurement_version"]
 ALERT_COOLDOWN_H = 24           # the same token is not alerted twice within this
 CANARY_CHECKS = 2               # safety-layer self-test: when no coin reached deep checks (e.g. RED market), deep-check
                                 # the 2 most liquid coins anyway. Recorded per scan; NEVER changes any decision.
@@ -117,10 +128,11 @@ SCAN_COLS = ["scan_id", "started_at", "finished_at", "version", "rules", "weathe
 SIGHT_COLS = ["sighting_id", "scan_id", "seen_at", "mint", "symbol", "pool", "source", "price_usd", "liq_usd",
               "liq_known", "mcap_usd", "age_h", "ch_h1", "weather", "rt_cost_pct", "b0_liquid",
               "legacy_gate", "legacy_score", "legacy_deep", "deep_checked", "decision", "reasons", "h1_mature",
-              "bucket", "label_this", "rules"]
+              "bucket", "label_this", "rules", "quote_symbol", "quote_address", "protocol"]
 LABEL_COLS = ["sighting_id", "mint", "pool", "t0", "horizon_min", "status", "entry_px", "exit_px",
               "exit_reason", "gross_pct", "net_pct", "cost_pct", "decision", "b0_liquid", "legacy_gate",
-              "legacy_deep", "h1_mature", "bucket", "labelled_at", "attempts", "note", "rules"]
+              "legacy_deep", "h1_mature", "bucket", "labelled_at", "attempts", "note", "rules",
+              "px0", "due_at", "protocol", "candle_file"]
 
 
 def path(name):
@@ -365,13 +377,75 @@ def dead_lookup_live(row, dead, now):
     return dead_check(dead, row["pool"], pool_liquidity(row["pool"]), now)
 
 
+def quote_of(p, pool):
+    """(symbol, address) of the quote token of the pool we record. Blank when the feed's pair is not that pool."""
+    if not pool or p.get("pairAddress") != pool:
+        return "", ""
+    q = p.get("quoteToken") or {}
+    return (q.get("symbol") or "")[:20], q.get("address") or ""
+
+
+def due_time(t0, horizon):
+    """eval-2: when a horizon's label is due (its window has ended plus a short buffer for late candles)."""
+    return t0 + timedelta(minutes=ENTRY_DELAY_MIN + horizon + DUE_BUFFER_MIN)
+
+
+def entry_check(candles, t0, px0):
+    """eval-2: was there a valid paper entry? Returns (code, detail):
+       "ok"             - no collapse before the entry fill
+       "no_valid_entry" - the price fell RUG_DROP or more below the sighting price (px0) before the entry fill;
+                          the outcome is NOT scored and is counted separately
+       "ref_mismatch"   - no candle in the 15 minutes before entry trades within 3x of px0, so px0 cannot be
+                          compared with this price series (e.g. base/quote reversed); the check is skipped
+       "no_px0"         - no sighting price recorded (rows made before eval-2); the check is skipped"""
+    if not px0 or px0 <= 0:
+        return "no_px0", ""
+    start = t0 + ENTRY_DELAY_MIN * 60
+    near = sorted((c for c in candles if t0 - 15 * 60 <= c[0] < start + 5 * 60), key=lambda c: c[0])
+    entry_c = next((c for c in near if c[0] >= start), None)
+    before = [c for c in near if c[0] < (entry_c[0] if entry_c else start + 5 * 60)]
+    if not any(px0 / 3 <= c[2] and c[3] <= px0 * 3 for c in before + ([entry_c] if entry_c else [])):
+        return "ref_mismatch", f"no candle within 3x of sighting price {px0:.6g} before entry"
+    floor = px0 * (1 - RUG_DROP)
+    for c in before:
+        if c[0] >= t0 - 120 and c[4] <= floor:
+            return "no_valid_entry", (f"close {c[4]:.6g} at {iso(datetime.fromtimestamp(c[0], timezone.utc))} is "
+                                      f"{100 * c[4] / px0:.1f}% of sighting price {px0:.6g}, before the entry fill")
+    if entry_c and entry_c[2] <= floor:
+        return "no_valid_entry", f"entry candle high {entry_c[2]:.6g} is {100 * entry_c[2] / px0:.1f}% of sighting price"
+    return "ok", ""
+
+
+def log_attempts(rows):
+    """Append-only attempt log (eval-2). Never rewritten, so failed attempts stay visible."""
+    if not rows:
+        return
+    if not os.path.exists(path(ATTEMPTS)):
+        with open(path(ATTEMPTS), "w", newline="") as f:
+            csv.writer(f).writerow(ATTEMPT_COLS)
+    append_rows(ATTEMPTS, ATTEMPT_COLS, [dict(r, code_version=VERSION, measurement_version=MEASUREMENT_VERSION)
+                                          for r in rows])
+
+
+def is_due(r, t0, now):
+    """eval-2 rows carry their own due time per horizon; older rows keep the old rule (all horizons after
+       LABEL_AFTER_MIN) so earlier measurements are not changed."""
+    if r.get("due_at"):
+        return now >= parse(r["due_at"])
+    return (now - t0).total_seconds() / 60 >= LABEL_AFTER_MIN
+
+
 def label_pending(now, getter=None, dead_lookup=None):
-    """Labels every horizon for sightings that are old enough. Each label is written ONCE (F03).
-       Network failure -> stays pending and is retried (F02). No data after LABEL_GIVE_UP_H -> 'unknown'."""
+    """Labels every horizon that is due. Each label is written ONCE (F03).
+       Network failure -> stays pending and is retried (F02). No data after LABEL_GIVE_UP_H -> 'unknown'.
+       eval-2: every attempt is logged (label_attempts.csv); the candle file behind each attempt is recorded;
+       a collapse before a valid entry is 'no_valid_entry' (not scored, counted separately)."""
     rows = load_rows(LABELS)
     dead = load_json(DEAD_FILE)
     done = 0
     archive = []                                 # raw candles behind every label, kept for audit and --sensitivity
+    candle_file = os.path.join("candles", f"{now.strftime('%Y%m%dT%H%M%S')}.jsonl.gz")
+    attempts = []
     by_sight = {}
     for r in rows:
         if r["status"] == "pending":
@@ -379,25 +453,45 @@ def label_pending(now, getter=None, dead_lookup=None):
     for sid, group in by_sight.items():
         t0 = parse(group[0]["t0"])
         age_min = (now - t0).total_seconds() / 60
-        if age_min < LABEL_AFTER_MIN:
+        group = [r for r in group if is_due(r, t0, now)]
+        if not group:
             continue
+
+        def note(r, outcome, detail="", n=""):
+            if r.get("protocol"):
+                attempts.append({"attempted_at": iso(now), "sighting_id": sid, "mint": r["mint"], "pool": r["pool"],
+                                 "horizon_min": r["horizon_min"], "due_at": r.get("due_at", ""), "outcome": outcome,
+                                 "detail": detail[:200], "n_candles": n,
+                                 "candle_file": candle_file if n != "" else ""})
         try:
             candles = fetch_candles(group[0]["pool"], t0.timestamp(), getter)
         except Exception as e:
             for r in group:
                 r["attempts"] = str(int(r["attempts"] or 0) + 1)
                 r["note"] = f"lookup failed, will retry ({str(e)[:60]})"
+                note(r, "failed", f"lookup failed: {redact(e)[:150]}")
             continue
         archive.append({"sighting_id": sid, "pool": group[0]["pool"], "t0": group[0]["t0"], "fetched_at": iso(now),
                         "candles": candles})
+        ec, edetail = entry_check(candles, t0.timestamp(), f2(group[0].get("px0"))) if group[0].get("protocol") \
+            else ("no_px0", "")
         for r in group:
             h = int(r["horizon_min"])
             tp, st = HORIZONS[h]
-            res = label_from_candles(candles, t0.timestamp(), h, tp, st, f2(r["cost_pct"]) or 0.0)
             r["attempts"] = str(int(r["attempts"] or 0) + 1)
+            n = len(candles)
+            if r.get("protocol"):
+                r["candle_file"] = candle_file
+            if ec == "no_valid_entry":
+                r.update(status="no_valid_entry", exit_reason="collapse_before_entry", labelled_at=iso(now),
+                         note=f"{edetail[:150]}; NOT scored")
+                note(r, "no_valid_entry", edetail, n)
+                continue
+            res = label_from_candles(candles, t0.timestamp(), h, tp, st, f2(r["cost_pct"]) or 0.0)
             if res is not None and "unreliable" in res:
                 r.update(status="unreliable", exit_reason="unreliable:" + res["unreliable"], labelled_at=iso(now),
                          note=f"{PRICE_CHECK_VERSION}: {res['detail'][:80]}; NOT counted")
+                note(r, "unreliable", res["detail"], n)
                 continue
             if res is None:
                 confirmed_dead = dead_lookup(r, dead, now) if dead_lookup else False
@@ -413,15 +507,25 @@ def label_pending(now, getter=None, dead_lookup=None):
                              note=f"pool dead, first seen {first_low} after the window; NOT counted as a loss")
                 elif age_min > LABEL_GIVE_UP_H * 60:
                     r.update(status="unknown", labelled_at=iso(now), note="no candle data; NOT counted as a loss")
+                elif now > window_end + timedelta(minutes=SETTLE_MIN) and (
+                        any(c[0] >= window_end.timestamp() for c in candles)
+                        or now > window_end + timedelta(hours=SETTLE_NO_DATA_H)):
+                    r.update(status="unknown", labelled_at=iso(now),
+                             note="thin trading: too few trades in the finished window; NOT counted as a loss")
                 else:
                     r["note"] = "not enough candle data yet"
+                note(r, r["status"] if r["status"] != "pending" else "pending", r["note"] +
+                     (f"; entry check {ec}: {edetail}" if ec == "ref_mismatch" else ""), n)
                 continue
             r.update(status="labelled", entry_px=f"{res['entry']:.12g}", exit_px=f"{res['exit']:.12g}",
                      exit_reason=res["reason"], gross_pct=f"{res['gross']:.2f}", net_pct=f"{res['net']:.2f}",
-                     labelled_at=iso(now), note="")
+                     labelled_at=iso(now), note="" if ec != "ref_mismatch" else f"entry check skipped: {edetail}")
+            note(r, "labelled", f"{res['reason']} net {res['net']:.2f}%" +
+                 (f"; entry check {ec}" if ec == "ref_mismatch" else ""), n)
             done += 1
     archive_candles(archive, now)
     write_rows(LABELS, LABEL_COLS, rows)
+    log_attempts(attempts)
     save_json(DEAD_FILE, dead)
     return done
 
@@ -722,6 +826,7 @@ def run(now=None, deps=None, sender=None):
              "legacy_score": lscore, "legacy_deep": "", "deep_checked": "0", "decision": "", "reasons": "",
              "h1_mature": "1" if age is not None and age >= MIN_AGE_H else "0",
              "bucket": bucket_of(liq, age, weather), "label_this": "0", "rules": rules_version(),
+             "quote_symbol": quote_of(p, pool)[0], "quote_address": quote_of(p, pool)[1], "protocol": EVAL_PROTOCOL,
              "_p": p, "_fails": fails, "_unknown": unknown}
         sightings.append(s)
         if not fails:
@@ -768,7 +873,9 @@ def run(now=None, deps=None, sender=None):
                                "cost_pct": s["rt_cost_pct"], "decision": s["decision"],
                                "b0_liquid": s["b0_liquid"], "legacy_gate": s["legacy_gate"],
                                "legacy_deep": s["legacy_deep"], "h1_mature": s["h1_mature"],
-                               "bucket": s["bucket"], "attempts": "0", "rules": rules_version()})
+                               "bucket": s["bucket"], "attempts": "0", "rules": rules_version(),
+                               "px0": s["price_usd"], "due_at": iso(due_time(parse(s["seen_at"]), h)),
+                               "protocol": EVAL_PROTOCOL})
     append_rows(LABELS, LABEL_COLS, new_labels)
     save_json(POOLS, pools)
 
