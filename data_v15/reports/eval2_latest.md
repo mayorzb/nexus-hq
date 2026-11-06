@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 6/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 7/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 6 |
-| sightings | 360 |
-| liquid sightings | 156 |
-| first liquid sightings = unique tokens with an outcome row | 46 |
-|   young | 34 |
+| eval-2 scans | 7 |
+| sightings | 421 |
+| liquid sightings | 179 |
+| first liquid sightings = unique tokens with an outcome row | 49 |
+|   young | 37 |
 |   mature | 8 |
 |   other | 4 |
 | young with a comparator (cap 2) | 6 |
-| young without a comparator | 28 |
+| young without a comparator | 31 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 4 |
 | complete pairs (both 60m outcomes labelled) | 2 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 23/34, no_valid_entry 2/34, pending 6/34, unknown 2/34, unreliable 1/34
+- young: labelled 24/37, no_valid_entry 2/37, pending 8/37, unknown 2/37, unreliable 1/37
 - mature: labelled 6/8, pending 1/8, unknown 1/8
-- no valid entry: young 2/34, mature 0/8
+- no valid entry: young 2/37, mature 0/8
 
 ## Effect (after costs; unit = scan)
 
@@ -71,8 +71,11 @@
 | 20261106T190021 | NEUTRAL | BORDERLESS | 16712.29 | labelled | -31.1 |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | CHROME | 16035.03 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261106T200020 | NEUTRAL | FUSE | 16844.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T200020 | NEUTRAL | FUSE | 16844.14 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261106T210020 | NEUTRAL | Lukaflm | 109781.17 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T210020 | NEUTRAL | FUSE | 74573.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T210020 | NEUTRAL | Democat | 30628.52 | pending | None | fart | 17906.48 | pending | None |  |
 | 20261106T210020 | NEUTRAL | sexcoin | 17747.93 | pending | None | fart | 17906.48 | pending | None |  |
+| 20261106T220019 | NEUTRAL | Leonida | 24905.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T220019 | NEUTRAL | HEDGE | 19597.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | pending | None |  |  |  | None | no eligible comparator |
