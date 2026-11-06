@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 4/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 5/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 4 |
-| sightings | 244 |
-| liquid sightings | 113 |
-| first liquid sightings = unique tokens with an outcome row | 38 |
-|   young | 29 |
+| eval-2 scans | 5 |
+| sightings | 300 |
+| liquid sightings | 133 |
+| first liquid sightings = unique tokens with an outcome row | 39 |
+|   young | 30 |
 |   mature | 7 |
 |   other | 2 |
 | young with a comparator (cap 2) | 4 |
-| young without a comparator | 25 |
+| young without a comparator | 26 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 2 |
 | complete pairs (both 60m outcomes labelled) | 2 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 12/29, pending 16/29, unreliable 1/29
-- mature: labelled 3/7, pending 4/7
-- no valid entry: young 0/29, mature 0/7
+- young: labelled 18/30, pending 11/30, unreliable 1/30
+- mature: labelled 4/7, pending 3/7
+- no valid entry: young 0/30, mature 0/7
 
 ## Effect (after costs; unit = scan)
 
@@ -55,13 +55,13 @@
 | 20261106T170022 | NEUTRAL | MEOWCRAT | 18572.94 | labelled | -30.24 |  |  |  | None | no eligible comparator |
 | 20261106T170022 | NEUTRAL | X | 15727.41 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | GRUB | 36493.56 | pending | None | OZA | 41158.77 | pending | None |  |
-| 20261106T180021 | NEUTRAL | HODL | 30994.35 | pending | None | OZA | 41158.77 | pending | None |  |
+| 20261106T180021 | NEUTRAL | HODL | 30994.35 | labelled | -29.43 | OZA | 41158.77 | pending | None |  |
 | 20261106T180021 | NEUTRAL | Degen | 26347.54 | pending | None |  |  |  | None | comparators used twice |
-| 20261106T180021 | NEUTRAL | LAURA | 22071.86 | pending | None |  |  |  | None | comparators used twice |
-| 20261106T180021 | NEUTRAL | TTP | 18216.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T180021 | NEUTRAL | HABIBI | 17362.89 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T180021 | NEUTRAL | CRVL | 16630.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T180021 | NEUTRAL | HABIBI | 15659.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T180021 | NEUTRAL | LAURA | 22071.86 | labelled | -29.46 |  |  |  | None | comparators used twice |
+| 20261106T180021 | NEUTRAL | TTP | 18216.98 | labelled | -30.83 |  |  |  | None | no eligible comparator |
+| 20261106T180021 | NEUTRAL | HABIBI | 17362.89 | labelled | -31.37 |  |  |  | None | no eligible comparator |
+| 20261106T180021 | NEUTRAL | CRVL | 16630.30 | labelled | -30.03 |  |  |  | None | no eligible comparator |
+| 20261106T180021 | NEUTRAL | HABIBI | 15659.71 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | RIPPING | 15286.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MONEYERO | 27167.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MTA6 | 23350.13 | pending | None |  |  |  | None | no eligible comparator |
@@ -70,3 +70,4 @@
 | 20261106T190021 | NEUTRAL | BORDERLESS | 16712.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | CHROME | 16035.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MONEYERO | 15395.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T200020 | NEUTRAL | FUSE | 16844.14 | pending | None |  |  |  | None | no eligible comparator |
