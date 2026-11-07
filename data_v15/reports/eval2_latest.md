@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 21/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 22/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 21 |
-| sightings | 1288 |
-| liquid sightings | 495 |
-| first liquid sightings = unique tokens with an outcome row | 116 |
-|   young | 84 |
-|   mature | 23 |
+| eval-2 scans | 22 |
+| sightings | 1345 |
+| liquid sightings | 517 |
+| first liquid sightings = unique tokens with an outcome row | 121 |
+|   young | 88 |
+|   mature | 24 |
 |   other | 9 |
 | young with a comparator (cap 2) | 12 |
-| young without a comparator | 72 |
+| young without a comparator | 76 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 6 |
 | complete pairs (both 60m outcomes labelled) | 6 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 59/84, no_valid_entry 3/84, pending 8/84, unknown 7/84, unreliable 7/84
-- mature: labelled 19/23, pending 3/23, unknown 1/23
-- no valid entry: young 3/84, mature 0/23
+- young: labelled 60/88, no_valid_entry 3/88, pending 10/88, unknown 8/88, unreliable 7/88
+- mature: labelled 20/24, pending 3/24, unknown 1/24
+- no valid entry: young 3/88, mature 0/24
 
 ## Effect (after costs; unit = scan)
 
@@ -112,7 +112,7 @@
 | 20261107T070014 | NEUTRAL | ZEC | 44531.30 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T070014 | NEUTRAL | BRUH | 30191.64 | labelled | -32.24 |  |  |  | None | no eligible comparator |
 | 20261107T070014 | NEUTRAL | Alice | 28325.63 | labelled | 37.1 |  |  |  | None | no eligible comparator |
-| 20261107T070014 | NEUTRAL | JOKEST | 25678.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | JOKEST | 25678.82 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | Alice | 106109.98 | labelled | 37.61 |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | trauma  | 17554.86 | labelled | -30.07 |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -122,8 +122,12 @@
 | 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | GEO | 15518.43 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261107T100012 | NEUTRAL | PODS | 44285.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261107T110011 | NEUTRAL | Joe | 33643.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T110011 | NEUTRAL | Joe | 33643.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | duge | 26366.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | CHEWS | 22910.11 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | trauma | 22675.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | meme | 15288.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | DACITY | 33799.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | xZEC | 33001.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | POKEHOOD | 26488.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | cig | 18166.54 | pending | None |  |  |  | None | no eligible comparator |
