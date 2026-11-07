@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 25/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 26/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 25 |
-| sightings | 1524 |
-| liquid sightings | 587 |
-| first liquid sightings = unique tokens with an outcome row | 134 |
-|   young | 95 |
-|   mature | 29 |
+| eval-2 scans | 26 |
+| sightings | 1586 |
+| liquid sightings | 614 |
+| first liquid sightings = unique tokens with an outcome row | 142 |
+|   young | 100 |
+|   mature | 32 |
 |   other | 10 |
-| young with a comparator (cap 2) | 14 |
-| young without a comparator | 81 |
+| young with a comparator (cap 2) | 16 |
+| young without a comparator | 84 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 8 |
+|   pairs: young or mature outcome not yet usable | 10 |
 | complete pairs (both 60m outcomes labelled) | 6 |
 | scans contributing a complete pair | 5 |
 
 ## 60m outcome status by group
 
-- young: labelled 70/95, no_valid_entry 4/95, pending 4/95, unknown 10/95, unreliable 7/95
-- mature: labelled 24/29, pending 4/29, unknown 1/29
-- no valid entry: young 4/95, mature 0/29
+- young: labelled 71/100, no_valid_entry 4/100, pending 7/100, unknown 10/100, unreliable 8/100
+- mature: labelled 25/32, pending 6/32, unknown 1/32
+- no valid entry: young 4/100, mature 0/32
 
 ## Effect (after costs; unit = scan)
 
@@ -38,6 +38,7 @@
 - 20261106T180021-BNpRagRS: GRUB (20261106T180021), HODL (20261106T180021)
 - 20261106T210020-4iTZ574d: Democat (20261106T210020), sexcoin (20261106T210020)
 - 20261106T230019-Bmhp8nat: VETO (20261106T230019), STM (20261106T230019)
+- 20261107T170007-CZRtwCDJ: shit (20261107T170007), ALON (20261107T170007)
 
 ## Every pair
 
@@ -134,7 +135,12 @@
 | 20261107T140008 | NEUTRAL | debtdog | 28636.15 | labelled | -39.68 |  |  |  | None | no eligible comparator |
 | 20261107T140008 | NEUTRAL | sherlock | 17227.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T140008 | NEUTRAL | HOPE | 16678.30 | labelled | 10.18 |  |  |  | None | no eligible comparator |
-| 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261107T160007 | NEUTRAL | IMAM | 121583.19 | pending | None | ANTS | 68401.59 | pending | None |  |
 | 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | pending | None |  |
+| 20261107T170007 | NEUTRAL | shit | 26072.74 | pending | None | BTC | 37647.55 | pending | None |  |
+| 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | pending | None |  |
+| 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | pending | None |  |  |  | None | comparators used twice |
+| 20261107T170007 | NEUTRAL | ALON | 20067.53 | pending | None |  |  |  | None | comparators used twice |
+| 20261107T170007 | NEUTRAL | piLL | 18871.57 | pending | None |  |  |  | None | comparators used twice |
