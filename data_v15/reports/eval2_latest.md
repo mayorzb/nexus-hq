@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 3/50 complete pairs, 2/20 scans, 10/40 scans used. No decision before the milestone.
+**Status:** collecting: 3/50 complete pairs, 2/20 scans, 11/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 10 |
-| sightings | 597 |
-| liquid sightings | 252 |
-| first liquid sightings = unique tokens with an outcome row | 62 |
-|   young | 46 |
-|   mature | 11 |
+| eval-2 scans | 11 |
+| sightings | 663 |
+| liquid sightings | 273 |
+| first liquid sightings = unique tokens with an outcome row | 68 |
+|   young | 51 |
+|   mature | 12 |
 |   other | 5 |
-| young with a comparator (cap 2) | 10 |
-| young without a comparator | 36 |
+| young with a comparator (cap 2) | 11 |
+| young without a comparator | 40 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 7 |
+|   pairs: young or mature outcome not yet usable | 8 |
 | complete pairs (both 60m outcomes labelled) | 3 |
 | scans contributing a complete pair | 2 |
 
 ## 60m outcome status by group
 
-- young: labelled 30/46, no_valid_entry 3/46, pending 6/46, unknown 3/46, unreliable 4/46
-- mature: labelled 9/11, pending 1/11, unknown 1/11
-- no valid entry: young 3/46, mature 0/11
+- young: labelled 33/51, no_valid_entry 3/51, pending 8/51, unknown 3/51, unreliable 4/51
+- mature: labelled 9/12, pending 2/12, unknown 1/12
+- no valid entry: young 3/51, mature 0/12
 
 ## Effect (after costs; unit = scan)
 
@@ -85,7 +85,12 @@
 | 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | labelled | -26.54 |  |
 | 20261106T230019 | NEUTRAL | STM | 18822.61 | unreliable | None | TIRED | 21356.31 | labelled | -26.54 |  |
 | 20261106T230019 | NEUTRAL | MOOH | 15734.13 | labelled | -3.42 | OIF | 16089.19 | labelled | -3.32 |  |
-| 20261107T000019 | NEUTRAL | HODL | 100668.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T000019 | NEUTRAL | DCAT | 38884.08 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T000019 | NEUTRAL | HATCH | 31422.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T000019 | NEUTRAL | HODL | 100668.80 | labelled | 37.6 |  |  |  | None | no eligible comparator |
+| 20261107T000019 | NEUTRAL | DCAT | 38884.08 | labelled | -31.01 |  |  |  | None | no eligible comparator |
+| 20261107T000019 | NEUTRAL | HATCH | 31422.98 | labelled | -41.16 |  |  |  | None | no eligible comparator |
 | 20261107T010019 | NEUTRAL | JIM | 36062.26 | pending | None | zPEPE | 29401.80 | pending | None |  |
+| 20261107T020018 | NEUTRAL | Busted | 45649.88 | pending | None | MAMESUKE | 82461.72 | pending | None |  |
+| 20261107T020018 | NEUTRAL | scamsem | 26464.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | CALL | 18882.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | LKY | 16429.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | FINNBAGS | 15702.04 | pending | None |  |  |  | None | no eligible comparator |
