@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 8/40 scans used. No decision before the milestone.
+**Status:** collecting: 2/50 complete pairs, 1/20 scans, 9/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 8 |
-| sightings | 483 |
-| liquid sightings | 204 |
-| first liquid sightings = unique tokens with an outcome row | 56 |
-|   young | 42 |
+| eval-2 scans | 9 |
+| sightings | 535 |
+| liquid sightings | 229 |
+| first liquid sightings = unique tokens with an outcome row | 60 |
+|   young | 45 |
 |   mature | 10 |
-|   other | 4 |
+|   other | 5 |
 | young with a comparator (cap 2) | 9 |
-| young without a comparator | 33 |
+| young without a comparator | 36 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 7 |
 | complete pairs (both 60m outcomes labelled) | 2 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 25/42, no_valid_entry 2/42, pending 10/42, unknown 2/42, unreliable 3/42
+- young: labelled 27/45, no_valid_entry 3/45, pending 9/45, unknown 3/45, unreliable 3/45
 - mature: labelled 7/10, pending 2/10, unknown 1/10
-- no valid entry: young 2/42, mature 0/10
+- no valid entry: young 3/45, mature 0/10
 
 ## Effect (after costs; unit = scan)
 
@@ -64,7 +64,7 @@
 | 20261106T180021 | NEUTRAL | HABIBI | 17362.89 | labelled | -31.37 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | CRVL | 16630.30 | labelled | -30.03 |  |  |  | None | no eligible comparator |
 | 20261106T180021 | NEUTRAL | HABIBI | 15659.71 | labelled | 36.53 |  |  |  | None | no eligible comparator |
-| 20261106T180021 | NEUTRAL | RIPPING | 15286.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T180021 | NEUTRAL | RIPPING | 15286.04 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MONEYERO | 27167.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | MTA6 | 23350.13 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261106T190021 | NEUTRAL | BOYFRIEND | 19005.62 | labelled | 36.75 |  |  |  | None | no eligible comparator |
@@ -77,11 +77,14 @@
 | 20261106T210020 | NEUTRAL | FUSE | 74573.32 | labelled | 37.53 |  |  |  | None | no eligible comparator |
 | 20261106T210020 | NEUTRAL | Democat | 30628.52 | unreliable | None | fart | 17906.48 | labelled | -3.62 |  |
 | 20261106T210020 | NEUTRAL | sexcoin | 17747.93 | pending | None | fart | 17906.48 | labelled | -3.62 |  |
-| 20261106T220019 | NEUTRAL | Leonida | 24905.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T220019 | NEUTRAL | HEDGE | 19597.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261106T220019 | NEUTRAL | Leonida | 24905.19 | labelled | -36.04 |  |  |  | None | no eligible comparator |
+| 20261106T220019 | NEUTRAL | HEDGE | 19597.96 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | labelled | -31.14 |  |  |  | None | no eligible comparator |
 | 20261106T230019 | NEUTRAL | PI | 100223.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T230019 | NEUTRAL | José | 50976.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | pending | None |  |
 | 20261106T230019 | NEUTRAL | STM | 18822.61 | pending | None | TIRED | 21356.31 | pending | None |  |
 | 20261106T230019 | NEUTRAL | MOOH | 15734.13 | pending | None | OIF | 16089.19 | pending | None |  |
+| 20261107T000019 | NEUTRAL | HODL | 100668.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T000019 | NEUTRAL | DCAT | 38884.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T000019 | NEUTRAL | HATCH | 31422.98 | pending | None |  |  |  | None | no eligible comparator |
