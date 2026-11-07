@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 24/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 25/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 24 |
-| sightings | 1462 |
-| liquid sightings | 563 |
-| first liquid sightings = unique tokens with an outcome row | 129 |
-|   young | 93 |
-|   mature | 26 |
+| eval-2 scans | 25 |
+| sightings | 1524 |
+| liquid sightings | 587 |
+| first liquid sightings = unique tokens with an outcome row | 134 |
+|   young | 95 |
+|   mature | 29 |
 |   other | 10 |
-| young with a comparator (cap 2) | 12 |
+| young with a comparator (cap 2) | 14 |
 | young without a comparator | 81 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 6 |
+|   pairs: young or mature outcome not yet usable | 8 |
 | complete pairs (both 60m outcomes labelled) | 6 |
 | scans contributing a complete pair | 5 |
 
 ## 60m outcome status by group
 
-- young: labelled 67/93, no_valid_entry 4/93, pending 5/93, unknown 10/93, unreliable 7/93
-- mature: labelled 23/26, pending 2/26, unknown 1/26
-- no valid entry: young 4/93, mature 0/26
+- young: labelled 70/95, no_valid_entry 4/95, pending 4/95, unknown 10/95, unreliable 7/95
+- mature: labelled 24/29, pending 4/29, unknown 1/29
+- no valid entry: young 4/95, mature 0/29
 
 ## Effect (after costs; unit = scan)
 
@@ -131,8 +131,10 @@
 | 20261107T130009 | NEUTRAL | xZEC | 33001.69 | labelled | -4.66 |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | POKEHOOD | 26488.13 | labelled | -68.65 |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | cig | 18166.54 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261107T140008 | NEUTRAL | debtdog | 28636.15 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T140008 | NEUTRAL | sherlock | 17227.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T140008 | NEUTRAL | HOPE | 16678.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | debtdog | 28636.15 | labelled | -39.68 |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | sherlock | 17227.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | HOPE | 16678.30 | labelled | 10.18 |  |  |  | None | no eligible comparator |
 | 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T160007 | NEUTRAL | IMAM | 121583.19 | pending | None | ANTS | 68401.59 | pending | None |  |
+| 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | pending | None |  |
