@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 23/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 24/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 23 |
-| sightings | 1400 |
-| liquid sightings | 539 |
-| first liquid sightings = unique tokens with an outcome row | 125 |
-|   young | 91 |
-|   mature | 25 |
-|   other | 9 |
+| eval-2 scans | 24 |
+| sightings | 1462 |
+| liquid sightings | 563 |
+| first liquid sightings = unique tokens with an outcome row | 129 |
+|   young | 93 |
+|   mature | 26 |
+|   other | 10 |
 | young with a comparator (cap 2) | 12 |
-| young without a comparator | 79 |
+| young without a comparator | 81 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 6 |
 | complete pairs (both 60m outcomes labelled) | 6 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 63/91, no_valid_entry 4/91, pending 8/91, unknown 9/91, unreliable 7/91
-- mature: labelled 22/25, pending 2/25, unknown 1/25
-- no valid entry: young 4/91, mature 0/25
+- young: labelled 67/93, no_valid_entry 4/93, pending 5/93, unknown 10/93, unreliable 7/93
+- mature: labelled 23/26, pending 2/26, unknown 1/26
+- no valid entry: young 4/93, mature 0/26
 
 ## Effect (after costs; unit = scan)
 
@@ -119,7 +119,7 @@
 | 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | labelled | -100.0 | STANK | 107736.49 | labelled | -4.53 |  |
 | 20261107T090012 | NEUTRAL | lucky | 36214.97 | labelled | -31.22 |  |  |  | None | no eligible comparator |
-| 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | MAGA | 18658.35 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | GEO | 15518.43 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261107T100012 | NEUTRAL | PODS | 44285.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T110011 | NEUTRAL | Joe | 33643.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -127,10 +127,12 @@
 | 20261107T120010 | NEUTRAL | CHEWS | 22910.11 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | trauma | 22675.52 | labelled | -30.87 |  |  |  | None | no eligible comparator |
 | 20261107T120010 | NEUTRAL | meme | 15288.21 | labelled | -37.08 |  |  |  | None | no eligible comparator |
-| 20261107T130009 | NEUTRAL | DACITY | 33799.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T130009 | NEUTRAL | xZEC | 33001.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T130009 | NEUTRAL | POKEHOOD | 26488.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T130009 | NEUTRAL | cig | 18166.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | DACITY | 33799.87 | labelled | 37.21 |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | xZEC | 33001.69 | labelled | -4.66 |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | POKEHOOD | 26488.13 | labelled | -68.65 |  |  |  | None | no eligible comparator |
+| 20261107T130009 | NEUTRAL | cig | 18166.54 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T140008 | NEUTRAL | debtdog | 28636.15 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T140008 | NEUTRAL | sherlock | 17227.13 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T140008 | NEUTRAL | HOPE | 16678.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | pending | None |  |  |  | None | no eligible comparator |
