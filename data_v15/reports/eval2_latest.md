@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 2/50 complete pairs, 1/20 scans, 9/40 scans used. No decision before the milestone.
+**Status:** collecting: 3/50 complete pairs, 2/20 scans, 10/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 9 |
-| sightings | 535 |
-| liquid sightings | 229 |
-| first liquid sightings = unique tokens with an outcome row | 60 |
-|   young | 45 |
-|   mature | 10 |
+| eval-2 scans | 10 |
+| sightings | 597 |
+| liquid sightings | 252 |
+| first liquid sightings = unique tokens with an outcome row | 62 |
+|   young | 46 |
+|   mature | 11 |
 |   other | 5 |
-| young with a comparator (cap 2) | 9 |
+| young with a comparator (cap 2) | 10 |
 | young without a comparator | 36 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 7 |
-| complete pairs (both 60m outcomes labelled) | 2 |
-| scans contributing a complete pair | 1 |
+| complete pairs (both 60m outcomes labelled) | 3 |
+| scans contributing a complete pair | 2 |
 
 ## 60m outcome status by group
 
-- young: labelled 27/45, no_valid_entry 3/45, pending 9/45, unknown 3/45, unreliable 3/45
-- mature: labelled 7/10, pending 2/10, unknown 1/10
-- no valid entry: young 3/45, mature 0/10
+- young: labelled 30/46, no_valid_entry 3/46, pending 6/46, unknown 3/46, unreliable 4/46
+- mature: labelled 9/11, pending 1/11, unknown 1/11
+- no valid entry: young 3/46, mature 0/11
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): 2.28 points, 95% interval None; scans with young worse 0/1
-- Pairs with young worse: 1/2 (50.0%); pair mean 2.28, median 2.28
-- Big loss (<= -20%): young 1/2, mature 0/2
+- Scan-level mean difference (young - mature): 1.09 points, 95% interval (-0.1, 2.28); scans with young worse 1/2
+- Pairs with young worse: 2/3 (66.7%); pair mean 1.48, median -0.1
+- Big loss (<= -20%): young 1/3, mature 0/3
 
 ## Comparator reuse (cap 2)
 
@@ -80,11 +80,12 @@
 | 20261106T220019 | NEUTRAL | Leonida | 24905.19 | labelled | -36.04 |  |  |  | None | no eligible comparator |
 | 20261106T220019 | NEUTRAL | HEDGE | 19597.96 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | labelled | -31.14 |  |  |  | None | no eligible comparator |
-| 20261106T230019 | NEUTRAL | PI | 100223.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T230019 | NEUTRAL | José | 50976.91 | pending | None |  |  |  | None | no eligible comparator |
-| 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | pending | None |  |
-| 20261106T230019 | NEUTRAL | STM | 18822.61 | pending | None | TIRED | 21356.31 | pending | None |  |
-| 20261106T230019 | NEUTRAL | MOOH | 15734.13 | pending | None | OIF | 16089.19 | pending | None |  |
+| 20261106T230019 | NEUTRAL | PI | 100223.99 | labelled | -2.48 |  |  |  | None | no eligible comparator |
+| 20261106T230019 | NEUTRAL | José | 50976.91 | labelled | -28.13 |  |  |  | None | no eligible comparator |
+| 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | labelled | -26.54 |  |
+| 20261106T230019 | NEUTRAL | STM | 18822.61 | unreliable | None | TIRED | 21356.31 | labelled | -26.54 |  |
+| 20261106T230019 | NEUTRAL | MOOH | 15734.13 | labelled | -3.42 | OIF | 16089.19 | labelled | -3.32 |  |
 | 20261107T000019 | NEUTRAL | HODL | 100668.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T000019 | NEUTRAL | DCAT | 38884.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T000019 | NEUTRAL | HATCH | 31422.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T010019 | NEUTRAL | JIM | 36062.26 | pending | None | zPEPE | 29401.80 | pending | None |  |
