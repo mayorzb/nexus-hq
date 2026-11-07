@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 22/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 23/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 22 |
-| sightings | 1345 |
-| liquid sightings | 517 |
-| first liquid sightings = unique tokens with an outcome row | 121 |
-|   young | 88 |
-|   mature | 24 |
+| eval-2 scans | 23 |
+| sightings | 1400 |
+| liquid sightings | 539 |
+| first liquid sightings = unique tokens with an outcome row | 125 |
+|   young | 91 |
+|   mature | 25 |
 |   other | 9 |
 | young with a comparator (cap 2) | 12 |
-| young without a comparator | 76 |
+| young without a comparator | 79 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 6 |
 | complete pairs (both 60m outcomes labelled) | 6 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 60/88, no_valid_entry 3/88, pending 10/88, unknown 8/88, unreliable 7/88
-- mature: labelled 20/24, pending 3/24, unknown 1/24
-- no valid entry: young 3/88, mature 0/24
+- young: labelled 63/91, no_valid_entry 4/91, pending 8/91, unknown 9/91, unreliable 7/91
+- mature: labelled 22/25, pending 2/25, unknown 1/25
+- no valid entry: young 4/91, mature 0/25
 
 ## Effect (after costs; unit = scan)
 
@@ -116,18 +116,21 @@
 | 20261107T080013 | NEUTRAL | Alice | 106109.98 | labelled | 37.61 |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | trauma  | 17554.86 | labelled | -30.07 |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | labelled | -100.0 | STANK | 107736.49 | labelled | -4.53 |  |
 | 20261107T090012 | NEUTRAL | lucky | 36214.97 | labelled | -31.22 |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | GEO | 15518.43 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261107T100012 | NEUTRAL | PODS | 44285.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T110011 | NEUTRAL | Joe | 33643.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261107T120010 | NEUTRAL | duge | 26366.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T120010 | NEUTRAL | CHEWS | 22910.11 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T120010 | NEUTRAL | trauma | 22675.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T120010 | NEUTRAL | meme | 15288.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T120010 | NEUTRAL | duge | 26366.99 | labelled | 37.04 |  |  |  | None | no eligible comparator |
+| 20261107T120010 | NEUTRAL | CHEWS | 22910.11 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261107T120010 | NEUTRAL | trauma | 22675.52 | labelled | -30.87 |  |  |  | None | no eligible comparator |
+| 20261107T120010 | NEUTRAL | meme | 15288.21 | labelled | -37.08 |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | DACITY | 33799.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | xZEC | 33001.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | POKEHOOD | 26488.13 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T130009 | NEUTRAL | cig | 18166.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | debtdog | 28636.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | sherlock | 17227.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T140008 | NEUTRAL | HOPE | 16678.30 | pending | None |  |  |  | None | no eligible comparator |
