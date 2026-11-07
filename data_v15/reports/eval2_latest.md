@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 5/50 complete pairs, 4/20 scans, 15/40 scans used. No decision before the milestone.
+**Status:** collecting: 5/50 complete pairs, 4/20 scans, 16/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 15 |
-| sightings | 907 |
-| liquid sightings | 367 |
-| first liquid sightings = unique tokens with an outcome row | 87 |
-|   young | 66 |
-|   mature | 14 |
+| eval-2 scans | 16 |
+| sightings | 970 |
+| liquid sightings | 390 |
+| first liquid sightings = unique tokens with an outcome row | 92 |
+|   young | 70 |
+|   mature | 15 |
 |   other | 7 |
 | young with a comparator (cap 2) | 11 |
-| young without a comparator | 55 |
+| young without a comparator | 59 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 6 |
 | complete pairs (both 60m outcomes labelled) | 5 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 44/66, no_valid_entry 3/66, pending 9/66, unknown 5/66, unreliable 5/66
-- mature: labelled 12/14, pending 1/14, unknown 1/14
-- no valid entry: young 3/66, mature 0/14
+- young: labelled 48/70, no_valid_entry 3/70, pending 9/70, unknown 5/70, unreliable 5/70
+- mature: labelled 12/15, pending 2/15, unknown 1/15
+- no valid entry: young 3/70, mature 0/15
 
 ## Effect (after costs; unit = scan)
 
@@ -100,12 +100,16 @@
 | 20261107T030017 | NEUTRAL | STM | 16306.87 | labelled | -50.76 |  |  |  | None | no eligible comparator |
 | 20261107T040017 | NEUTRAL | Alice | 39454.21 | labelled | -40.43 |  |  |  | None | no eligible comparator |
 | 20261107T040017 | NEUTRAL | Alice | 15446.31 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261107T050016 | NEUTRAL | T&A | 26731.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T050016 | NEUTRAL | Twizter | 22256.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T050016 | NEUTRAL | PALICO | 18732.47 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T050016 | NEUTRAL | Capiboo | 18050.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | T&A | 26731.31 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | Twizter | 22256.95 | labelled | 36.91 |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | PALICO | 18732.47 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | Capiboo | 18050.93 | labelled | -28.88 |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | SAVE | 28076.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | meme | 27398.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | SLINGFOLIO | 24479.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | Hakutaku | 21155.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | STONKA | 15420.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | ZEC | 44531.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | BRUH | 30191.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | Alice | 28325.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | JOKEST | 25678.82 | pending | None |  |  |  | None | no eligible comparator |
