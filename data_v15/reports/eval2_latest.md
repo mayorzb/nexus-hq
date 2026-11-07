@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 5/50 complete pairs, 4/20 scans, 13/40 scans used. No decision before the milestone.
+**Status:** collecting: 5/50 complete pairs, 4/20 scans, 14/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 13 |
-| sightings | 789 |
-| liquid sightings | 317 |
-| first liquid sightings = unique tokens with an outcome row | 76 |
-|   young | 57 |
+| eval-2 scans | 14 |
+| sightings | 851 |
+| liquid sightings | 342 |
+| first liquid sightings = unique tokens with an outcome row | 81 |
+|   young | 61 |
 |   mature | 13 |
-|   other | 6 |
+|   other | 7 |
 | young with a comparator (cap 2) | 11 |
-| young without a comparator | 46 |
+| young without a comparator | 50 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 6 |
 | complete pairs (both 60m outcomes labelled) | 5 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 39/57, no_valid_entry 3/57, pending 7/57, unknown 4/57, unreliable 4/57
+- young: labelled 43/61, no_valid_entry 3/61, pending 6/61, unknown 5/61, unreliable 4/61
 - mature: labelled 11/13, pending 1/13, unknown 1/13
-- no valid entry: young 3/57, mature 0/13
+- no valid entry: young 3/61, mature 0/13
 
 ## Effect (after costs; unit = scan)
 
@@ -82,7 +82,7 @@
 | 20261106T220019 | NEUTRAL | LEAPCAT | 16062.01 | labelled | -31.14 |  |  |  | None | no eligible comparator |
 | 20261106T230019 | NEUTRAL | PI | 100223.99 | labelled | -2.48 |  |  |  | None | no eligible comparator |
 | 20261106T230019 | NEUTRAL | José | 50976.91 | labelled | -28.13 |  |  |  | None | no eligible comparator |
-| 20261106T230019 | NEUTRAL | VETO | 29380.68 | pending | None | TIRED | 21356.31 | labelled | -26.54 |  |
+| 20261106T230019 | NEUTRAL | VETO | 29380.68 | unknown | None | TIRED | 21356.31 | labelled | -26.54 |  |
 | 20261106T230019 | NEUTRAL | STM | 18822.61 | unreliable | None | TIRED | 21356.31 | labelled | -26.54 |  |
 | 20261106T230019 | NEUTRAL | MOOH | 15734.13 | labelled | -3.42 | OIF | 16089.19 | labelled | -3.32 |  |
 | 20261107T000019 | NEUTRAL | HODL | 100668.80 | labelled | 37.6 |  |  |  | None | no eligible comparator |
@@ -94,9 +94,13 @@
 | 20261107T020018 | NEUTRAL | CALL | 18882.16 | labelled | -36.02 |  |  |  | None | no eligible comparator |
 | 20261107T020018 | NEUTRAL | LKY | 16429.86 | labelled | -59.02 |  |  |  | None | no eligible comparator |
 | 20261107T020018 | NEUTRAL | FINNBAGS | 15702.04 | labelled | -41.96 |  |  |  | None | no eligible comparator |
-| 20261107T030017 | NEUTRAL | scamsem | 92926.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T030017 | NEUTRAL | BTC | 30706.62 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T030017 | NEUTRAL | SCAMCHI | 23398.10 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T030017 | NEUTRAL | STM | 16306.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T030017 | NEUTRAL | scamsem | 92926.39 | labelled | -30.83 |  |  |  | None | no eligible comparator |
+| 20261107T030017 | NEUTRAL | BTC | 30706.62 | labelled | 11.19 |  |  |  | None | no eligible comparator |
+| 20261107T030017 | NEUTRAL | SCAMCHI | 23398.10 | labelled | 36.95 |  |  |  | None | no eligible comparator |
+| 20261107T030017 | NEUTRAL | STM | 16306.87 | labelled | -50.76 |  |  |  | None | no eligible comparator |
 | 20261107T040017 | NEUTRAL | Alice | 39454.21 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T040017 | NEUTRAL | Alice | 15446.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | T&A | 26731.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | Twizter | 22256.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | PALICO | 18732.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T050016 | NEUTRAL | Capiboo | 18050.93 | pending | None |  |  |  | None | no eligible comparator |
