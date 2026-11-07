@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 5/50 complete pairs, 4/20 scans, 19/40 scans used. No decision before the milestone.
+**Status:** collecting: 6/50 complete pairs, 5/20 scans, 20/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 19 |
-| sightings | 1164 |
-| liquid sightings | 456 |
-| first liquid sightings = unique tokens with an outcome row | 108 |
-|   young | 79 |
-|   mature | 20 |
+| eval-2 scans | 20 |
+| sightings | 1227 |
+| liquid sightings | 474 |
+| first liquid sightings = unique tokens with an outcome row | 110 |
+|   young | 80 |
+|   mature | 21 |
 |   other | 9 |
 | young with a comparator (cap 2) | 12 |
-| young without a comparator | 67 |
+| young without a comparator | 68 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 7 |
-| complete pairs (both 60m outcomes labelled) | 5 |
-| scans contributing a complete pair | 4 |
+|   pairs: young or mature outcome not yet usable | 6 |
+| complete pairs (both 60m outcomes labelled) | 6 |
+| scans contributing a complete pair | 5 |
 
 ## 60m outcome status by group
 
-- young: labelled 55/79, no_valid_entry 3/79, pending 9/79, unknown 5/79, unreliable 7/79
-- mature: labelled 15/20, pending 4/20, unknown 1/20
-- no valid entry: young 3/79, mature 0/20
+- young: labelled 58/80, no_valid_entry 3/80, pending 7/80, unknown 5/80, unreliable 7/80
+- mature: labelled 18/21, pending 2/21, unknown 1/21
+- no valid entry: young 3/80, mature 0/21
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -34.99 points, 95% interval (-71.06, 1.09); scans with young worse 3/4
-- Pairs with young worse: 4/5 (80.0%); pair mean -27.53, median -41.31
-- Big loss (<= -20%): young 3/5, mature 0/5
+- Scan-level mean difference (young - mature): -47.08 points, 95% interval (-76.4, -8.77); scans with young worse 4/5
+- Pairs with young worse: 5/6 (83.3%); pair mean -38.86, median -44.74
+- Big loss (<= -20%): young 4/6, mature 0/6
 
 ## Comparator reuse (cap 2)
 
@@ -117,8 +117,9 @@
 | 20261107T080013 | NEUTRAL | trauma  | 17554.86 | labelled | -30.07 |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | pending | None | STANK | 107736.49 | pending | None |  |
-| 20261107T090012 | NEUTRAL | lucky | 36214.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | labelled | -100.0 | STANK | 107736.49 | labelled | -4.53 |  |
+| 20261107T090012 | NEUTRAL | lucky | 36214.97 | labelled | -31.22 |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T090012 | NEUTRAL | GEO | 15518.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | GEO | 15518.43 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261107T100012 | NEUTRAL | PODS | 44285.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T110011 | NEUTRAL | Joe | 33643.84 | pending | None |  |  |  | None | no eligible comparator |
