@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 5/50 complete pairs, 4/20 scans, 17/40 scans used. No decision before the milestone.
+**Status:** collecting: 5/50 complete pairs, 4/20 scans, 18/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 17 |
-| sightings | 1034 |
-| liquid sightings | 415 |
-| first liquid sightings = unique tokens with an outcome row | 98 |
-|   young | 74 |
-|   mature | 16 |
-|   other | 8 |
-| young with a comparator (cap 2) | 11 |
-| young without a comparator | 63 |
+| eval-2 scans | 18 |
+| sightings | 1100 |
+| liquid sightings | 437 |
+| first liquid sightings = unique tokens with an outcome row | 106 |
+|   young | 78 |
+|   mature | 19 |
+|   other | 9 |
+| young with a comparator (cap 2) | 12 |
+| young without a comparator | 66 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 6 |
+|   pairs: young or mature outcome not yet usable | 7 |
 | complete pairs (both 60m outcomes labelled) | 5 |
 | scans contributing a complete pair | 4 |
 
 ## 60m outcome status by group
 
-- young: labelled 51/74, no_valid_entry 3/74, pending 10/74, unknown 5/74, unreliable 5/74
-- mature: labelled 13/16, pending 2/16, unknown 1/16
-- no valid entry: young 3/74, mature 0/16
+- young: labelled 53/78, no_valid_entry 3/78, pending 11/78, unknown 5/78, unreliable 6/78
+- mature: labelled 14/19, pending 4/19, unknown 1/19
+- no valid entry: young 3/78, mature 0/19
 
 ## Effect (after costs; unit = scan)
 
@@ -109,11 +109,15 @@
 | 20261107T060015 | NEUTRAL | SLINGFOLIO | 24479.07 | labelled | -32.3 |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | Hakutaku | 21155.53 | labelled | -28.69 |  |  |  | None | no eligible comparator |
 | 20261107T060015 | NEUTRAL | STONKA | 15420.14 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T070014 | NEUTRAL | ZEC | 44531.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T070014 | NEUTRAL | BRUH | 30191.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T070014 | NEUTRAL | Alice | 28325.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | ZEC | 44531.30 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | BRUH | 30191.64 | labelled | -32.24 |  |  |  | None | no eligible comparator |
+| 20261107T070014 | NEUTRAL | Alice | 28325.63 | labelled | 37.1 |  |  |  | None | no eligible comparator |
 | 20261107T070014 | NEUTRAL | JOKEST | 25678.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | Alice | 106109.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | trauma  | 17554.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | pending | None | STANK | 107736.49 | pending | None |  |
+| 20261107T090012 | NEUTRAL | lucky | 36214.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T090012 | NEUTRAL | GEO | 15518.43 | pending | None |  |  |  | None | no eligible comparator |
