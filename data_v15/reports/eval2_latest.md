@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 6/50 complete pairs, 5/20 scans, 26/40 scans used. No decision before the milestone.
+**Status:** collecting: 7/50 complete pairs, 6/20 scans, 27/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 26 |
-| sightings | 1586 |
-| liquid sightings | 614 |
-| first liquid sightings = unique tokens with an outcome row | 142 |
-|   young | 100 |
-|   mature | 32 |
-|   other | 10 |
+| eval-2 scans | 27 |
+| sightings | 1645 |
+| liquid sightings | 638 |
+| first liquid sightings = unique tokens with an outcome row | 149 |
+|   young | 104 |
+|   mature | 34 |
+|   other | 11 |
 | young with a comparator (cap 2) | 16 |
-| young without a comparator | 84 |
+| young without a comparator | 88 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 10 |
-| complete pairs (both 60m outcomes labelled) | 6 |
-| scans contributing a complete pair | 5 |
+|   pairs: young or mature outcome not yet usable | 9 |
+| complete pairs (both 60m outcomes labelled) | 7 |
+| scans contributing a complete pair | 6 |
 
 ## 60m outcome status by group
 
-- young: labelled 71/100, no_valid_entry 4/100, pending 7/100, unknown 10/100, unreliable 8/100
-- mature: labelled 25/32, pending 6/32, unknown 1/32
-- no valid entry: young 4/100, mature 0/32
+- young: labelled 72/104, no_valid_entry 4/104, pending 10/104, unknown 10/104, unreliable 8/104
+- mature: labelled 28/34, pending 5/34, unknown 1/34
+- no valid entry: young 4/104, mature 0/34
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -47.08 points, 95% interval (-76.4, -8.77); scans with young worse 4/5
-- Pairs with young worse: 5/6 (83.3%); pair mean -38.86, median -44.74
-- Big loss (<= -20%): young 4/6, mature 0/6
+- Scan-level mean difference (young - mature): -44.59 points, 95% interval (-73.85, -14.41); scans with young worse 5/6
+- Pairs with young worse: 6/7 (85.7%); pair mean -37.9, median -41.31
+- Big loss (<= -20%): young 5/7, mature 0/7
 
 ## Comparator reuse (cap 2)
 
@@ -137,10 +137,14 @@
 | 20261107T140008 | NEUTRAL | HOPE | 16678.30 | labelled | 10.18 |  |  |  | None | no eligible comparator |
 | 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | labelled | -32.73 |  |  |  | None | no eligible comparator |
-| 20261107T160007 | NEUTRAL | IMAM | 121583.19 | pending | None | ANTS | 68401.59 | pending | None |  |
-| 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | pending | None |  |
+| 20261107T160007 | NEUTRAL | IMAM | 121583.19 | labelled | -31.65 | ANTS | 68401.59 | labelled | 0.48 |  |
+| 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | labelled | 37.21 |  |
 | 20261107T170007 | NEUTRAL | shit | 26072.74 | pending | None | BTC | 37647.55 | pending | None |  |
 | 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | pending | None |  |
 | 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | pending | None |  |  |  | None | comparators used twice |
 | 20261107T170007 | NEUTRAL | ALON | 20067.53 | pending | None |  |  |  | None | comparators used twice |
 | 20261107T170007 | NEUTRAL | piLL | 18871.57 | pending | None |  |  |  | None | comparators used twice |
+| 20261107T180006 | NEUTRAL | HERO | 68139.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T180006 | NEUTRAL | LUCIA | 33625.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T180006 | NEUTRAL | ECAT | 32778.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T180006 | NEUTRAL | puter | 30444.64 | pending | None |  |  |  | None | no eligible comparator |
