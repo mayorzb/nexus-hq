@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 7/50 complete pairs, 6/20 scans, 27/40 scans used. No decision before the milestone.
+**Status:** collecting: 8/50 complete pairs, 7/20 scans, 28/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 27 |
-| sightings | 1645 |
-| liquid sightings | 638 |
-| first liquid sightings = unique tokens with an outcome row | 149 |
-|   young | 104 |
-|   mature | 34 |
+| eval-2 scans | 28 |
+| sightings | 1706 |
+| liquid sightings | 663 |
+| first liquid sightings = unique tokens with an outcome row | 156 |
+|   young | 110 |
+|   mature | 35 |
 |   other | 11 |
 | young with a comparator (cap 2) | 16 |
-| young without a comparator | 88 |
+| young without a comparator | 94 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 9 |
-| complete pairs (both 60m outcomes labelled) | 7 |
-| scans contributing a complete pair | 6 |
+|   pairs: young or mature outcome not yet usable | 8 |
+| complete pairs (both 60m outcomes labelled) | 8 |
+| scans contributing a complete pair | 7 |
 
 ## 60m outcome status by group
 
-- young: labelled 72/104, no_valid_entry 4/104, pending 10/104, unknown 10/104, unreliable 8/104
-- mature: labelled 28/34, pending 5/34, unknown 1/34
-- no valid entry: young 4/104, mature 0/34
+- young: labelled 76/110, no_valid_entry 4/110, pending 12/110, unknown 10/110, unreliable 8/110
+- mature: labelled 31/35, pending 3/35, unknown 1/35
+- no valid entry: young 4/110, mature 0/35
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -44.59 points, 95% interval (-73.85, -14.41); scans with young worse 5/6
-- Pairs with young worse: 6/7 (85.7%); pair mean -37.9, median -41.31
-- Big loss (<= -20%): young 5/7, mature 0/7
+- Scan-level mean difference (young - mature): -40.67 points, 95% interval (-67.9, -13.78); scans with young worse 6/7
+- Pairs with young worse: 7/8 (87.5%); pair mean -35.3, median -36.72
+- Big loss (<= -20%): young 6/8, mature 1/8
 
 ## Comparator reuse (cap 2)
 
@@ -139,12 +139,18 @@
 | 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261107T160007 | NEUTRAL | IMAM | 121583.19 | labelled | -31.65 | ANTS | 68401.59 | labelled | 0.48 |  |
 | 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | labelled | 37.21 |  |
-| 20261107T170007 | NEUTRAL | shit | 26072.74 | pending | None | BTC | 37647.55 | pending | None |  |
-| 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | pending | None |  |
-| 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | pending | None |  |  |  | None | comparators used twice |
-| 20261107T170007 | NEUTRAL | ALON | 20067.53 | pending | None |  |  |  | None | comparators used twice |
-| 20261107T170007 | NEUTRAL | piLL | 18871.57 | pending | None |  |  |  | None | comparators used twice |
+| 20261107T170007 | NEUTRAL | shit | 26072.74 | labelled | -37.31 | BTC | 37647.55 | labelled | -20.18 |  |
+| 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | labelled | -20.18 |  |
+| 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | labelled | -37.73 |  |  |  | None | comparators used twice |
+| 20261107T170007 | NEUTRAL | ALON | 20067.53 | labelled | 36.81 |  |  |  | None | comparators used twice |
+| 20261107T170007 | NEUTRAL | piLL | 18871.57 | labelled | -34.66 |  |  |  | None | comparators used twice |
 | 20261107T180006 | NEUTRAL | HERO | 68139.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T180006 | NEUTRAL | LUCIA | 33625.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T180006 | NEUTRAL | ECAT | 32778.28 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T180006 | NEUTRAL | puter | 30444.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | Memele | 107585.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | GTA6COP | 18691.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | POOKIE | 18690.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | $TRUMPMIAO | 17491.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | José | 15353.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | MACCA | 15050.86 | pending | None |  |  |  | None | no eligible comparator |
