@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 8/50 complete pairs, 7/20 scans, 30/40 scans used. No decision before the milestone.
+**Status:** collecting: 8/50 complete pairs, 7/20 scans, 31/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 30 |
-| sightings | 1820 |
-| liquid sightings | 707 |
-| first liquid sightings = unique tokens with an outcome row | 168 |
-|   young | 116 |
-|   mature | 39 |
+| eval-2 scans | 31 |
+| sightings | 1883 |
+| liquid sightings | 729 |
+| first liquid sightings = unique tokens with an outcome row | 175 |
+|   young | 120 |
+|   mature | 42 |
 |   other | 13 |
-| young with a comparator (cap 2) | 16 |
-| young without a comparator | 100 |
+| young with a comparator (cap 2) | 18 |
+| young without a comparator | 102 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 8 |
+|   pairs: young or mature outcome not yet usable | 10 |
 | complete pairs (both 60m outcomes labelled) | 8 |
 | scans contributing a complete pair | 7 |
 
 ## 60m outcome status by group
 
-- young: labelled 83/116, no_valid_entry 4/116, pending 9/116, unknown 12/116, unreliable 8/116
-- mature: labelled 34/39, pending 4/39, unknown 1/39
-- no valid entry: young 4/116, mature 0/39
+- young: labelled 84/120, no_valid_entry 4/120, pending 10/120, unknown 14/120, unreliable 8/120
+- mature: labelled 37/42, pending 4/42, unknown 1/42
+- no valid entry: young 4/120, mature 0/42
 
 ## Effect (after costs; unit = scan)
 
@@ -39,6 +39,7 @@
 - 20261106T210020-4iTZ574d: Democat (20261106T210020), sexcoin (20261106T210020)
 - 20261106T230019-Bmhp8nat: VETO (20261106T230019), STM (20261106T230019)
 - 20261107T170007-CZRtwCDJ: shit (20261107T170007), ALON (20261107T170007)
+- 20261107T220004-5tCju6YN: GIGAHUG (20261107T220004), GOOBLO (20261107T220004)
 
 ## Every pair
 
@@ -138,7 +139,7 @@
 | 20261107T150008 | NEUTRAL | Intel AI | 39577.78 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T150008 | NEUTRAL | PROPFUN | 17410.35 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261107T160007 | NEUTRAL | IMAM | 121583.19 | labelled | -31.65 | ANTS | 68401.59 | labelled | 0.48 |  |
-| 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | pending | None | THUG | 34057.61 | labelled | 37.21 |  |
+| 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | unknown | None | THUG | 34057.61 | labelled | 37.21 |  |
 | 20261107T170007 | NEUTRAL | shit | 26072.74 | labelled | -37.31 | BTC | 37647.55 | labelled | -20.18 |  |
 | 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | labelled | -20.18 |  |
 | 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | labelled | -37.73 |  |  |  | None | comparators used twice |
@@ -151,12 +152,16 @@
 | 20261107T190005 | NEUTRAL | Memele | 107585.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | GTA6COP | 18691.64 | labelled | -20.28 |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | POOKIE | 18690.87 | labelled | -4.93 |  |  |  | None | no eligible comparator |
-| 20261107T190005 | NEUTRAL | $TRUMPMIAO | 17491.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T190005 | NEUTRAL | $TRUMPMIAO | 17491.42 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | José | 15353.74 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | MACCA | 15050.86 | labelled | 36.48 |  |  |  | None | no eligible comparator |
 | 20261107T200005 | NEUTRAL | Whitehouse | 33457.10 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T200005 | NEUTRAL | DEMWOJAK | 23475.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T200005 | NEUTRAL | DEMWOJAK | 23475.90 | labelled | 36.95 |  |  |  | None | no eligible comparator |
 | 20261107T200005 | NEUTRAL | Settler | 17120.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | NEX Ai | 36292.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | José | 34534.11 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | FRODO | 20541.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T220004 | NEUTRAL | GIGAHUG | 89960.35 | pending | None | swordcat | 147281.48 | pending | None |  |
+| 20261107T220004 | NEUTRAL | GOOBLO | 75090.20 | pending | None | swordcat | 147281.48 | pending | None |  |
+| 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | pending | None |  |  |  | None | no eligible comparator |
