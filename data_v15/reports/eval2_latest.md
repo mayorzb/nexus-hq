@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 5/50 complete pairs, 4/20 scans, 18/40 scans used. No decision before the milestone.
+**Status:** collecting: 5/50 complete pairs, 4/20 scans, 19/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 18 |
-| sightings | 1100 |
-| liquid sightings | 437 |
-| first liquid sightings = unique tokens with an outcome row | 106 |
-|   young | 78 |
-|   mature | 19 |
+| eval-2 scans | 19 |
+| sightings | 1164 |
+| liquid sightings | 456 |
+| first liquid sightings = unique tokens with an outcome row | 108 |
+|   young | 79 |
+|   mature | 20 |
 |   other | 9 |
 | young with a comparator (cap 2) | 12 |
-| young without a comparator | 66 |
+| young without a comparator | 67 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 7 |
 | complete pairs (both 60m outcomes labelled) | 5 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 53/78, no_valid_entry 3/78, pending 11/78, unknown 5/78, unreliable 6/78
-- mature: labelled 14/19, pending 4/19, unknown 1/19
-- no valid entry: young 3/78, mature 0/19
+- young: labelled 55/79, no_valid_entry 3/79, pending 9/79, unknown 5/79, unreliable 7/79
+- mature: labelled 15/20, pending 4/20, unknown 1/20
+- no valid entry: young 3/79, mature 0/20
 
 ## Effect (after costs; unit = scan)
 
@@ -113,11 +113,12 @@
 | 20261107T070014 | NEUTRAL | BRUH | 30191.64 | labelled | -32.24 |  |  |  | None | no eligible comparator |
 | 20261107T070014 | NEUTRAL | Alice | 28325.63 | labelled | 37.1 |  |  |  | None | no eligible comparator |
 | 20261107T070014 | NEUTRAL | JOKEST | 25678.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T080013 | NEUTRAL | Alice | 106109.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T080013 | NEUTRAL | trauma  | 17554.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T080013 | NEUTRAL | Alice | 106109.98 | labelled | 37.61 |  |  |  | None | no eligible comparator |
+| 20261107T080013 | NEUTRAL | trauma  | 17554.86 | labelled | -30.07 |  |  |  | None | no eligible comparator |
+| 20261107T080013 | NEUTRAL | NETWORK | 15849.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T080013 | NEUTRAL | BaiBai | 15470.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | Pygavel | 110894.17 | pending | None | STANK | 107736.49 | pending | None |  |
 | 20261107T090012 | NEUTRAL | lucky | 36214.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | MAGA | 18658.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T090012 | NEUTRAL | GEO | 15518.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T100012 | NEUTRAL | PODS | 44285.70 | pending | None |  |  |  | None | no eligible comparator |
