@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-07 03:08 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-07 04:08 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-07 03:08 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 5 min (at 06:04 UTC) | ALERT |
 | Scans tagged with a data-only or missing code commit | 11 of 26 | ALERT |
 | Scans with errors | 0 of 26 | OK |
-| Tokens seen / liquid (median per scan) | 62 / 24 | OK |
-| Deep-checked coins left UNVERIFIED | 14 of 96 (15%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 28 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 124 of 220 | WARN |
-| Paper candidates (last 24h) | 2 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 698 / 202 | ALERT |
+| Tokens seen / liquid (median per scan) | 62 / 23 | OK |
+| Deep-checked coins left UNVERIFIED | 14 of 104 (13%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 26 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 133 of 237 | WARN |
+| Paper candidates (last 24h) | 3 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 706 / 206 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
-| Rules versions in use | 1.5.1-e42f07 (14), 1.5.3-e42f07 (12) | ALERT |
+| Rules versions in use | 1.5.1-e42f07 (13), 1.5.3-e42f07 (13) | ALERT |
 
-Candidates: CATE (16:00), TROLL (17:00)
+Candidates: CATE (16:00), TROLL (17:00), STONK (04:00)

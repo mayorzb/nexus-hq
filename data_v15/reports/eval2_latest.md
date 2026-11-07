@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 4/50 complete pairs, 3/20 scans, 12/40 scans used. No decision before the milestone.
+**Status:** collecting: 5/50 complete pairs, 4/20 scans, 13/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 12 |
-| sightings | 727 |
-| liquid sightings | 294 |
-| first liquid sightings = unique tokens with an outcome row | 73 |
-|   young | 55 |
-|   mature | 12 |
+| eval-2 scans | 13 |
+| sightings | 789 |
+| liquid sightings | 317 |
+| first liquid sightings = unique tokens with an outcome row | 76 |
+|   young | 57 |
+|   mature | 13 |
 |   other | 6 |
 | young with a comparator (cap 2) | 11 |
-| young without a comparator | 44 |
+| young without a comparator | 46 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 7 |
-| complete pairs (both 60m outcomes labelled) | 4 |
-| scans contributing a complete pair | 3 |
+|   pairs: young or mature outcome not yet usable | 6 |
+| complete pairs (both 60m outcomes labelled) | 5 |
+| scans contributing a complete pair | 4 |
 
 ## 60m outcome status by group
 
-- young: labelled 34/55, no_valid_entry 3/55, pending 10/55, unknown 4/55, unreliable 4/55
-- mature: labelled 10/12, pending 1/12, unknown 1/12
-- no valid entry: young 3/55, mature 0/12
+- young: labelled 39/57, no_valid_entry 3/57, pending 7/57, unknown 4/57, unreliable 4/57
+- mature: labelled 11/13, pending 1/13, unknown 1/13
+- no valid entry: young 3/57, mature 0/13
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -15.33 points, 95% interval (-48.18, 2.28); scans with young worse 2/3
-- Pairs with young worse: 3/4 (75.0%); pair mean -10.93, median -20.7
-- Big loss (<= -20%): young 2/4, mature 0/4
+- Scan-level mean difference (young - mature): -34.99 points, 95% interval (-71.06, 1.09); scans with young worse 3/4
+- Pairs with young worse: 4/5 (80.0%); pair mean -27.53, median -41.31
+- Big loss (<= -20%): young 3/5, mature 0/5
 
 ## Comparator reuse (cap 2)
 
@@ -89,12 +89,14 @@
 | 20261107T000019 | NEUTRAL | DCAT | 38884.08 | labelled | -31.01 |  |  |  | None | no eligible comparator |
 | 20261107T000019 | NEUTRAL | HATCH | 31422.98 | labelled | -41.16 |  |  |  | None | no eligible comparator |
 | 20261107T010019 | NEUTRAL | JIM | 36062.26 | labelled | -48.22 | zPEPE | 29401.80 | labelled | -0.04 |  |
-| 20261107T020018 | NEUTRAL | Busted | 45649.88 | pending | None | MAMESUKE | 82461.72 | pending | None |  |
-| 20261107T020018 | NEUTRAL | scamsem | 26464.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T020018 | NEUTRAL | CALL | 18882.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T020018 | NEUTRAL | LKY | 16429.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T020018 | NEUTRAL | FINNBAGS | 15702.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | Busted | 45649.88 | labelled | -100.0 | MAMESUKE | 82461.72 | labelled | -6.06 |  |
+| 20261107T020018 | NEUTRAL | scamsem | 26464.26 | labelled | 37.05 |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | CALL | 18882.16 | labelled | -36.02 |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | LKY | 16429.86 | labelled | -59.02 |  |  |  | None | no eligible comparator |
+| 20261107T020018 | NEUTRAL | FINNBAGS | 15702.04 | labelled | -41.96 |  |  |  | None | no eligible comparator |
 | 20261107T030017 | NEUTRAL | scamsem | 92926.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T030017 | NEUTRAL | BTC | 30706.62 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T030017 | NEUTRAL | SCAMCHI | 23398.10 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T030017 | NEUTRAL | STM | 16306.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T040017 | NEUTRAL | Alice | 39454.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T040017 | NEUTRAL | Alice | 15446.31 | pending | None |  |  |  | None | no eligible comparator |
