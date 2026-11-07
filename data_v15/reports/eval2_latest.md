@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 8/50 complete pairs, 7/20 scans, 31/40 scans used. No decision before the milestone.
+**Status:** collecting: 8/50 complete pairs, 7/20 scans, 32/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 31 |
-| sightings | 1883 |
-| liquid sightings | 729 |
-| first liquid sightings = unique tokens with an outcome row | 175 |
-|   young | 120 |
-|   mature | 42 |
-|   other | 13 |
-| young with a comparator (cap 2) | 18 |
-| young without a comparator | 102 |
+| eval-2 scans | 32 |
+| sightings | 1945 |
+| liquid sightings | 752 |
+| first liquid sightings = unique tokens with an outcome row | 185 |
+|   young | 125 |
+|   mature | 46 |
+|   other | 14 |
+| young with a comparator (cap 2) | 21 |
+| young without a comparator | 104 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 10 |
+|   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 8 |
 | scans contributing a complete pair | 7 |
 
 ## 60m outcome status by group
 
-- young: labelled 84/120, no_valid_entry 4/120, pending 10/120, unknown 14/120, unreliable 8/120
-- mature: labelled 37/42, pending 4/42, unknown 1/42
-- no valid entry: young 4/120, mature 0/42
+- young: labelled 86/125, no_valid_entry 4/125, pending 11/125, unknown 15/125, unreliable 9/125
+- mature: labelled 38/46, pending 7/46, unknown 1/46
+- no valid entry: young 4/125, mature 0/46
 
 ## Effect (after costs; unit = scan)
 
@@ -40,6 +40,7 @@
 - 20261106T230019-Bmhp8nat: VETO (20261106T230019), STM (20261106T230019)
 - 20261107T170007-CZRtwCDJ: shit (20261107T170007), ALON (20261107T170007)
 - 20261107T220004-5tCju6YN: GIGAHUG (20261107T220004), GOOBLO (20261107T220004)
+- 20261107T230003-9PPMpwdu: PMURT (20261107T230003), ABTC (20261107T230003)
 
 ## Every pair
 
@@ -141,7 +142,7 @@
 | 20261107T160007 | NEUTRAL | IMAM | 121583.19 | labelled | -31.65 | ANTS | 68401.59 | labelled | 0.48 |  |
 | 20261107T160007 | NEUTRAL | Elysion Pad | 26669.84 | unknown | None | THUG | 34057.61 | labelled | 37.21 |  |
 | 20261107T170007 | NEUTRAL | shit | 26072.74 | labelled | -37.31 | BTC | 37647.55 | labelled | -20.18 |  |
-| 20261107T170007 | NEUTRAL | ALON | 25727.17 | pending | None | BTC | 37647.55 | labelled | -20.18 |  |
+| 20261107T170007 | NEUTRAL | ALON | 25727.17 | unknown | None | BTC | 37647.55 | labelled | -20.18 |  |
 | 20261107T170007 | NEUTRAL | PEPE69 | 25564.75 | labelled | -37.73 |  |  |  | None | comparators used twice |
 | 20261107T170007 | NEUTRAL | ALON | 20067.53 | labelled | 36.81 |  |  |  | None | comparators used twice |
 | 20261107T170007 | NEUTRAL | piLL | 18871.57 | labelled | -34.66 |  |  |  | None | comparators used twice |
@@ -158,10 +159,15 @@
 | 20261107T200005 | NEUTRAL | Whitehouse | 33457.10 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T200005 | NEUTRAL | DEMWOJAK | 23475.90 | labelled | 36.95 |  |  |  | None | no eligible comparator |
 | 20261107T200005 | NEUTRAL | Settler | 17120.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T210005 | NEUTRAL | NEX Ai | 36292.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T210005 | NEUTRAL | José | 34534.11 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T210005 | NEUTRAL | FRODO | 20541.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T210005 | NEUTRAL | NEX Ai | 36292.55 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261107T210005 | NEUTRAL | José | 34534.11 | labelled | -35.93 |  |  |  | None | no eligible comparator |
+| 20261107T210005 | NEUTRAL | FRODO | 20541.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261107T220004 | NEUTRAL | GIGAHUG | 89960.35 | pending | None | swordcat | 147281.48 | pending | None |  |
 | 20261107T220004 | NEUTRAL | GOOBLO | 75090.20 | pending | None | swordcat | 147281.48 | pending | None |  |
 | 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T230003 | NEUTRAL | TAOLF | 128131.70 | pending | None | swordcat | 150871.44 | pending | None |  |
+| 20261107T230003 | NEUTRAL | PMURT | 56166.82 | pending | None | :3 | 31865.51 | pending | None |  |
+| 20261107T230003 | NEUTRAL | ABTC | 47700.98 | pending | None | :3 | 31865.51 | pending | None |  |
+| 20261107T230003 | NEUTRAL | SIZE | 30899.47 | pending | None |  |  |  | None | comparators used twice |
+| 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | pending | None |  |  |  | None | no eligible comparator |
