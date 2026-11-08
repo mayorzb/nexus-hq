@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 53 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 54 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 53 |
-| sightings | 3160 |
-| liquid sightings | 1238 |
-| first liquid sightings = unique tokens with an outcome row | 332 |
-|   young | 209 |
-|   mature | 105 |
+| eval-2 scans | 54 |
+| sightings | 3220 |
+| liquid sightings | 1264 |
+| first liquid sightings = unique tokens with an outcome row | 339 |
+|   young | 213 |
+|   mature | 108 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 182 |
+| young without a comparator | 186 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 150/209, no_valid_entry 7/209, pending 13/209, unknown 25/209, unreliable 14/209
-- mature: labelled 96/105, pending 6/105, unknown 3/105
-- no valid entry: young 7/209, mature 0/105
+- young: labelled 151/213, no_valid_entry 7/213, pending 15/213, unknown 26/213, unreliable 14/213
+- mature: labelled 99/108, pending 6/108, unknown 3/108
+- no valid entry: young 7/213, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -248,8 +248,8 @@
 | 20261108T175953 | NEUTRAL | BTC | 143042.02 | labelled | 37.66 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | SAFU | 35570.45 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T185952 | NEUTRAL | STOKE | 40586.88 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T185952 | NEUTRAL | STOKE | 40586.88 | labelled | -30.43 |  |  |  | None | no eligible comparator |
+| 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | ARTCOIN | 52526.16 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | JUMP | 35819.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | GROKIA | 35200.48 | pending | None |  |  |  | None | no eligible comparator |
@@ -257,3 +257,7 @@
 | 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | Whashy | 19183.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | Heat | 15584.14 | pending | None |  |  |  | None | no eligible comparator |
