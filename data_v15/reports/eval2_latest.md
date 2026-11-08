@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 49 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 50 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 49 |
-| sightings | 2930 |
-| liquid sightings | 1144 |
-| first liquid sightings = unique tokens with an outcome row | 307 |
-|   young | 195 |
-|   mature | 94 |
+| eval-2 scans | 50 |
+| sightings | 2984 |
+| liquid sightings | 1167 |
+| first liquid sightings = unique tokens with an outcome row | 311 |
+|   young | 197 |
+|   mature | 96 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 168 |
+| young without a comparator | 170 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 139/195, no_valid_entry 7/195, pending 11/195, unknown 24/195, unreliable 14/195
-- mature: labelled 88/94, pending 3/94, unknown 3/94
-- no valid entry: young 7/195, mature 0/94
+- young: labelled 141/197, no_valid_entry 7/197, pending 11/197, unknown 24/197, unreliable 14/197
+- mature: labelled 90/96, pending 3/96, unknown 3/96
+- no valid entry: young 7/197, mature 0/96
 
 ## Effect (after costs; unit = scan)
 
@@ -233,8 +233,8 @@
 | 20261108T135954 | NEUTRAL | wApe | 29548.10 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | JASON | 26617.37 | labelled | 37.05 |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | FLOAT | 25269.18 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261108T145954 | NEUTRAL | SAFU | 36354.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T145954 | NEUTRAL | forg | 20238.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T145954 | NEUTRAL | SAFU | 36354.01 | labelled | 37.25 |  |  |  | None | no eligible comparator |
+| 20261108T145954 | NEUTRAL | forg | 20238.67 | labelled | 1.0 |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | ELYSION | 108955.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | TAOLF | 101499.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | BHS | 40620.96 | pending | None |  |  |  | None | no eligible comparator |
@@ -243,3 +243,5 @@
 | 20261108T155954 | NEUTRAL | manlet | 23850.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | shroom | 16635.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | pending | None |  |  |  | None | no eligible comparator |
