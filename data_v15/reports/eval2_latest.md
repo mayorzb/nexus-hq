@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 42 scans: 36 pairs and 8 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 43 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 42 |
-| sightings | 2545 |
-| liquid sightings | 989 |
-| first liquid sightings = unique tokens with an outcome row | 264 |
-|   young | 166 |
-|   mature | 81 |
+| eval-2 scans | 43 |
+| sightings | 2602 |
+| liquid sightings | 1011 |
+| first liquid sightings = unique tokens with an outcome row | 269 |
+|   young | 170 |
+|   mature | 82 |
 |   other | 17 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 139 |
+| young without a comparator | 143 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 13 |
-| complete pairs (both 60m outcomes labelled) | 14 |
-| scans contributing a complete pair | 12 |
+|   pairs: young or mature outcome not yet usable | 12 |
+| complete pairs (both 60m outcomes labelled) | 15 |
+| scans contributing a complete pair | 13 |
 
 ## 60m outcome status by group
 
-- young: labelled 123/166, no_valid_entry 6/166, pending 6/166, unknown 20/166, unreliable 11/166
-- mature: labelled 73/81, pending 5/81, unknown 3/81
-- no valid entry: young 6/166, mature 0/81
+- young: labelled 124/170, no_valid_entry 6/170, pending 8/170, unknown 20/170, unreliable 12/170
+- mature: labelled 76/82, pending 3/82, unknown 3/82
+- no valid entry: young 6/170, mature 0/82
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -23.89 points, 95% interval (-48.44, -0.15); scans with young worse 9/12
-- Pairs with young worse: 11/14 (78.6%); pair mean -21.77, median -26.61
-- Big loss (<= -20%): young 8/14, mature 1/14
+- Scan-level mean difference (young - mature): -28.4 points, 95% interval (-51.5, -5.1); scans with young worse 10/13
+- Pairs with young worse: 12/15 (80.0%); pair mean -25.82, median -29.72
+- Big loss (<= -20%): young 9/15, mature 1/15
 
 ## Comparator reuse (cap 2)
 
@@ -208,9 +208,13 @@
 | 20261108T065957 | NEUTRAL | GATOGLITCH | 102929.40 | labelled | -32.07 |  |  |  | None | no eligible comparator |
 | 20261108T065957 | NEUTRAL | MARTIAN | 17188.64 | labelled | -43.95 |  |  |  | None | no eligible comparator |
 | 20261108T065957 | NEUTRAL | PADSI | 16979.50 | labelled | -52.71 |  |  |  | None | no eligible comparator |
-| 20261108T075957 | NEUTRAL | GATOGLITCH | 38655.16 | pending | None | nuLL | 43666.33 | pending | None |  |
-| 20261108T075957 | NEUTRAL | CALLCAT | 22818.85 | pending | None | nuLL | 43666.33 | pending | None |  |
-| 20261108T075957 | NEUTRAL | HABIBI | 17268.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T075957 | NEUTRAL | GATOGLITCH | 38655.16 | labelled | -100.0 | nuLL | 43666.33 | labelled | -17.48 |  |
+| 20261108T075957 | NEUTRAL | CALLCAT | 22818.85 | pending | None | nuLL | 43666.33 | labelled | -17.48 |  |
+| 20261108T075957 | NEUTRAL | HABIBI | 17268.96 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261108T085957 | NEUTRAL | Horned cat | 37444.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T085957 | NEUTRAL | yarl | 30252.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T085957 | NEUTRAL | yarl | 27519.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T095956 | NEUTRAL | NEX Ai | 36610.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T095956 | NEUTRAL | Puddgy | 34271.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T095956 | NEUTRAL | StonksPair | 22014.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T095956 | NEUTRAL | ZOOM | 20308.22 | pending | None |  |  |  | None | no eligible comparator |
