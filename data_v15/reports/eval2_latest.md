@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 8/50 complete pairs, 7/20 scans, 32/40 scans used. No decision before the milestone.
+**Status:** collecting: 10/50 complete pairs, 8/20 scans, 33/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 32 |
-| sightings | 1945 |
-| liquid sightings | 752 |
-| first liquid sightings = unique tokens with an outcome row | 185 |
-|   young | 125 |
-|   mature | 46 |
+| eval-2 scans | 33 |
+| sightings | 2008 |
+| liquid sightings | 776 |
+| first liquid sightings = unique tokens with an outcome row | 193 |
+|   young | 129 |
+|   mature | 50 |
 |   other | 14 |
-| young with a comparator (cap 2) | 21 |
-| young without a comparator | 104 |
+| young with a comparator (cap 2) | 23 |
+| young without a comparator | 106 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
-| complete pairs (both 60m outcomes labelled) | 8 |
-| scans contributing a complete pair | 7 |
+| complete pairs (both 60m outcomes labelled) | 10 |
+| scans contributing a complete pair | 8 |
 
 ## 60m outcome status by group
 
-- young: labelled 86/125, no_valid_entry 4/125, pending 11/125, unknown 15/125, unreliable 9/125
-- mature: labelled 38/46, pending 7/46, unknown 1/46
-- no valid entry: young 4/125, mature 0/46
+- young: labelled 89/129, no_valid_entry 5/129, pending 11/129, unknown 15/129, unreliable 9/129
+- mature: labelled 41/50, pending 8/50, unknown 1/50
+- no valid entry: young 5/129, mature 0/50
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -40.67 points, 95% interval (-67.9, -13.78); scans with young worse 6/7
-- Pairs with young worse: 7/8 (87.5%); pair mean -35.3, median -36.72
-- Big loss (<= -20%): young 6/8, mature 1/8
+- Scan-level mean difference (young - mature): -38.13 points, 95% interval (-65.04, -14.47); scans with young worse 7/8
+- Pairs with young worse: 9/10 (90.0%); pair mean -32.31, median -30.92
+- Big loss (<= -20%): young 7/10, mature 1/10
 
 ## Comparator reuse (cap 2)
 
@@ -41,6 +41,7 @@
 - 20261107T170007-CZRtwCDJ: shit (20261107T170007), ALON (20261107T170007)
 - 20261107T220004-5tCju6YN: GIGAHUG (20261107T220004), GOOBLO (20261107T220004)
 - 20261107T230003-9PPMpwdu: PMURT (20261107T230003), ABTC (20261107T230003)
+- 20261108T000003-5tCju6YN: APU (20261108T000003), FOMOCAT (20261108T000003)
 
 ## Every pair
 
@@ -162,12 +163,16 @@
 | 20261107T210005 | NEUTRAL | NEX Ai | 36292.55 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | José | 34534.11 | labelled | -35.93 |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | FRODO | 20541.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261107T220004 | NEUTRAL | GIGAHUG | 89960.35 | pending | None | swordcat | 147281.48 | pending | None |  |
-| 20261107T220004 | NEUTRAL | GOOBLO | 75090.20 | pending | None | swordcat | 147281.48 | pending | None |  |
-| 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | pending | None |  |  |  | None | no eligible comparator |
-| 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T220004 | NEUTRAL | GIGAHUG | 89960.35 | labelled | -9.88 | swordcat | 147281.48 | labelled | 1.06 |  |
+| 20261107T220004 | NEUTRAL | GOOBLO | 75090.20 | labelled | -28.66 | swordcat | 147281.48 | labelled | 1.06 |  |
+| 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | labelled | -33.28 |  |  |  | None | no eligible comparator |
 | 20261107T230003 | NEUTRAL | TAOLF | 128131.70 | pending | None | swordcat | 150871.44 | pending | None |  |
 | 20261107T230003 | NEUTRAL | PMURT | 56166.82 | pending | None | :3 | 31865.51 | pending | None |  |
 | 20261107T230003 | NEUTRAL | ABTC | 47700.98 | pending | None | :3 | 31865.51 | pending | None |  |
 | 20261107T230003 | NEUTRAL | SIZE | 30899.47 | pending | None |  |  |  | None | comparators used twice |
 | 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T000003 | NEUTRAL | APU | 114783.32 | pending | None | swordcat | 146176.16 | pending | None |  |
+| 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | pending | None |  |
+| 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | pending | None |  |  |  | None | no eligible comparator |
