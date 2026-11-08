@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 12/50 complete pairs, 10/20 scans, 35/40 scans used. No decision before the milestone.
+**Status:** collecting: 12/50 complete pairs, 10/20 scans, 36/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 35 |
-| sightings | 2128 |
-| liquid sightings | 824 |
-| first liquid sightings = unique tokens with an outcome row | 211 |
-|   young | 140 |
-|   mature | 56 |
-|   other | 15 |
+| eval-2 scans | 36 |
+| sightings | 2189 |
+| liquid sightings | 853 |
+| first liquid sightings = unique tokens with an outcome row | 222 |
+|   young | 146 |
+|   mature | 60 |
+|   other | 16 |
 | young with a comparator (cap 2) | 23 |
-| young without a comparator | 117 |
+| young without a comparator | 123 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 11 |
 | complete pairs (both 60m outcomes labelled) | 12 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 96/140, no_valid_entry 5/140, pending 13/140, unknown 17/140, unreliable 9/140
-- mature: labelled 48/56, pending 7/56, unknown 1/56
-- no valid entry: young 5/140, mature 0/56
+- young: labelled 99/146, no_valid_entry 5/146, pending 16/146, unknown 17/146, unreliable 9/146
+- mature: labelled 51/60, pending 8/60, unknown 1/60
+- no valid entry: young 5/146, mature 0/60
 
 ## Effect (after costs; unit = scan)
 
@@ -176,9 +176,9 @@
 | 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | labelled | -9.11 |  |
 | 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | labelled | -28.42 |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | labelled | -31.92 |  |  |  | None | no eligible comparator |
-| 20261108T010002 | NEUTRAL | MAGGIE | 30434.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T010002 | NEUTRAL | Job | 20812.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T010002 | NEUTRAL | PURRPS | 15540.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | MAGGIE | 30434.02 | labelled | 37.14 |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | Job | 20812.26 | labelled | -38.76 |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | PURRPS | 15540.27 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | ORBIT | 61359.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | FLOAT | 50643.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | Respect | 46202.21 | pending | None |  |  |  | None | no eligible comparator |
@@ -187,3 +187,9 @@
 | 20261108T020001 | NEUTRAL | Tungmas | 19399.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | TikTok | 16219.62 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | HABIBI | 16163.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | FLOATCAT | 41292.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | SINK | 36025.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | HABIBI | 33974.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | EVE | 30202.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | HIJAB | 27793.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | Habibi | 15120.07 | pending | None |  |  |  | None | no eligible comparator |
