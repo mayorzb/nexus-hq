@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 12/50 complete pairs, 10/20 scans, 37/40 scans used. No decision before the milestone.
+**Status:** collecting: 12/50 complete pairs, 10/20 scans, 38/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 37 |
-| sightings | 2250 |
-| liquid sightings | 879 |
-| first liquid sightings = unique tokens with an outcome row | 230 |
-|   young | 150 |
-|   mature | 64 |
+| eval-2 scans | 38 |
+| sightings | 2309 |
+| liquid sightings | 901 |
+| first liquid sightings = unique tokens with an outcome row | 237 |
+|   young | 153 |
+|   mature | 68 |
 |   other | 16 |
 | young with a comparator (cap 2) | 24 |
-| young without a comparator | 126 |
+| young without a comparator | 129 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 12 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 106/150, no_valid_entry 5/150, pending 13/150, unknown 17/150, unreliable 9/150
-- mature: labelled 54/64, pending 9/64, unknown 1/64
-- no valid entry: young 5/150, mature 0/64
+- young: labelled 111/153, no_valid_entry 5/153, pending 9/153, unknown 18/153, unreliable 10/153
+- mature: labelled 58/68, pending 8/68, unknown 2/68
+- no valid entry: young 5/153, mature 0/68
 
 ## Effect (after costs; unit = scan)
 
@@ -168,8 +168,8 @@
 | 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | labelled | -33.28 |  |  |  | None | no eligible comparator |
 | 20261107T230003 | NEUTRAL | TAOLF | 128131.70 | labelled | 37.64 | swordcat | 150871.44 | labelled | -6.94 |  |
-| 20261107T230003 | NEUTRAL | PMURT | 56166.82 | labelled | 16.09 | :3 | 31865.51 | pending | None |  |
-| 20261107T230003 | NEUTRAL | ABTC | 47700.98 | pending | None | :3 | 31865.51 | pending | None |  |
+| 20261107T230003 | NEUTRAL | PMURT | 56166.82 | labelled | 16.09 | :3 | 31865.51 | unknown | None |  |
+| 20261107T230003 | NEUTRAL | ABTC | 47700.98 | unknown | None | :3 | 31865.51 | unknown | None |  |
 | 20261107T230003 | NEUTRAL | SIZE | 30899.47 | labelled | -27.86 |  |  |  | None | comparators used twice |
 | 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | APU | 114783.32 | labelled | -48.33 | swordcat | 146176.16 | labelled | -9.11 |  |
@@ -187,13 +187,16 @@
 | 20261108T020001 | NEUTRAL | Tungmas | 19399.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | TikTok | 16219.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | HABIBI | 16163.41 | labelled | -37.67 |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | FLOATCAT | 41292.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | SINK | 36025.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | HABIBI | 33974.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | EVE | 30202.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | HIJAB | 27793.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T030000 | NEUTRAL | Habibi | 15120.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | FLOATCAT | 41292.75 | labelled | 1.39 |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | SINK | 36025.74 | labelled | 37.25 |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | HABIBI | 33974.84 | labelled | -33.08 |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | EVE | 30202.98 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | HIJAB | 27793.78 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261108T030000 | NEUTRAL | Habibi | 15120.07 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261108T035959 | NEUTRAL | HEREWEGO | 93792.46 | pending | None | swordcat | 147282.99 | pending | None |  |
 | 20261108T035959 | NEUTRAL | HABIBI | 27886.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T035959 | NEUTRAL | fomo | 24203.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T035959 | NEUTRAL | p402 | 20998.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | GM | 35784.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | DОG™ | 17031.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | GIGANTOR | 16527.98 | pending | None |  |  |  | None | no eligible comparator |
