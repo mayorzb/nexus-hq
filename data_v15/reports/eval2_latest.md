@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 52 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 53 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 52 |
-| sightings | 3100 |
-| liquid sightings | 1211 |
-| first liquid sightings = unique tokens with an outcome row | 322 |
-|   young | 202 |
-|   mature | 102 |
+| eval-2 scans | 53 |
+| sightings | 3160 |
+| liquid sightings | 1238 |
+| first liquid sightings = unique tokens with an outcome row | 332 |
+|   young | 209 |
+|   mature | 105 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 175 |
+| young without a comparator | 182 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 148/202, no_valid_entry 7/202, pending 9/202, unknown 24/202, unreliable 14/202
-- mature: labelled 93/102, pending 6/102, unknown 3/102
-- no valid entry: young 7/202, mature 0/102
+- young: labelled 150/209, no_valid_entry 7/209, pending 13/209, unknown 25/209, unreliable 14/209
+- mature: labelled 96/105, pending 6/105, unknown 3/105
+- no valid entry: young 7/209, mature 0/105
 
 ## Effect (after costs; unit = scan)
 
@@ -230,7 +230,7 @@
 | 20261108T125955 | NEUTRAL | Percolator | 23967.37 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | AODF | 256720.07 | labelled | -0.77 |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | MELT | 60120.17 | labelled | -30.05 |  |  |  | None | no eligible comparator |
-| 20261108T135954 | NEUTRAL | wApe | 29548.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T135954 | NEUTRAL | wApe | 29548.10 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | JASON | 26617.37 | labelled | 37.05 |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | FLOAT | 25269.18 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T145954 | NEUTRAL | SAFU | 36354.01 | labelled | 37.25 |  |  |  | None | no eligible comparator |
@@ -245,8 +245,15 @@
 | 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | labelled | 37.07 |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | labelled | 36.54 |  |  |  | None | no eligible comparator |
-| 20261108T175953 | NEUTRAL | BTC | 143042.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T175953 | NEUTRAL | SAFU | 35570.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | BTC | 143042.02 | labelled | 37.66 |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | SAFU | 35570.45 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | STOKE | 40586.88 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | ARTCOIN | 52526.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | JUMP | 35819.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | GROKIA | 35200.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | Neurofly | 25206.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | Whashy | 19183.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | pending | None |  |  |  | None | no eligible comparator |
