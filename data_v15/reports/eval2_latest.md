@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 13/50 complete pairs, 11/20 scans, 39/40 scans used. No decision before the milestone.
+**Status:** SHORTFALL after 40 scans: 37 pairs and 9 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 39 |
-| sightings | 2372 |
-| liquid sightings | 924 |
-| first liquid sightings = unique tokens with an outcome row | 246 |
-|   young | 157 |
-|   mature | 73 |
-|   other | 16 |
+| eval-2 scans | 40 |
+| sightings | 2432 |
+| liquid sightings | 946 |
+| first liquid sightings = unique tokens with an outcome row | 253 |
+|   young | 160 |
+|   mature | 76 |
+|   other | 17 |
 | young with a comparator (cap 2) | 25 |
-| young without a comparator | 132 |
+| young without a comparator | 135 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 13 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 114/157, no_valid_entry 6/157, pending 8/157, unknown 19/157, unreliable 10/157
-- mature: labelled 61/73, pending 9/73, unknown 3/73
-- no valid entry: young 6/157, mature 0/73
+- young: labelled 116/160, no_valid_entry 6/160, pending 8/160, unknown 19/160, unreliable 11/160
+- mature: labelled 65/76, pending 8/76, unknown 3/76
+- no valid entry: young 6/160, mature 0/76
 
 ## Effect (after costs; unit = scan)
 
@@ -197,10 +197,13 @@
 | 20261108T035959 | NEUTRAL | HABIBI | 27886.81 | labelled | -33.27 |  |  |  | None | no eligible comparator |
 | 20261108T035959 | NEUTRAL | fomo | 24203.90 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261108T035959 | NEUTRAL | p402 | 20998.64 | labelled | -42.35 |  |  |  | None | no eligible comparator |
-| 20261108T045958 | NEUTRAL | GM | 35784.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T045958 | NEUTRAL | DОG™ | 17031.56 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T045958 | NEUTRAL | GIGANTOR | 16527.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | GM | 35784.66 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | DОG™ | 17031.56 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261108T045958 | NEUTRAL | GIGANTOR | 16527.98 | labelled | -35.14 |  |  |  | None | no eligible comparator |
 | 20261108T055958 | NEUTRAL | PEAK | 34981.30 | pending | None | BRUH | 68085.43 | pending | None |  |
 | 20261108T055958 | NEUTRAL | MARS | 20921.89 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T055958 | NEUTRAL | MARS | 18839.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T055958 | NEUTRAL | CLAUDIA | 15251.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | GATOGLITCH | 102929.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | MARTIAN | 17188.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | PADSI | 16979.50 | pending | None |  |  |  | None | no eligible comparator |
