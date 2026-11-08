@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 10/50 complete pairs, 8/20 scans, 33/40 scans used. No decision before the milestone.
+**Status:** collecting: 11/50 complete pairs, 9/20 scans, 34/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 33 |
-| sightings | 2008 |
-| liquid sightings | 776 |
-| first liquid sightings = unique tokens with an outcome row | 193 |
-|   young | 129 |
-|   mature | 50 |
+| eval-2 scans | 34 |
+| sightings | 2067 |
+| liquid sightings | 797 |
+| first liquid sightings = unique tokens with an outcome row | 199 |
+|   young | 132 |
+|   mature | 53 |
 |   other | 14 |
 | young with a comparator (cap 2) | 23 |
-| young without a comparator | 106 |
+| young without a comparator | 109 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 13 |
-| complete pairs (both 60m outcomes labelled) | 10 |
-| scans contributing a complete pair | 8 |
+|   pairs: young or mature outcome not yet usable | 12 |
+| complete pairs (both 60m outcomes labelled) | 11 |
+| scans contributing a complete pair | 9 |
 
 ## 60m outcome status by group
 
-- young: labelled 89/129, no_valid_entry 5/129, pending 11/129, unknown 15/129, unreliable 9/129
-- mature: labelled 41/50, pending 8/50, unknown 1/50
-- no valid entry: young 5/129, mature 0/50
+- young: labelled 93/132, no_valid_entry 5/132, pending 10/132, unknown 15/132, unreliable 9/132
+- mature: labelled 44/53, pending 8/53, unknown 1/53
+- no valid entry: young 5/132, mature 0/53
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -38.13 points, 95% interval (-65.04, -14.47); scans with young worse 7/8
-- Pairs with young worse: 9/10 (90.0%); pair mean -32.31, median -30.92
-- Big loss (<= -20%): young 7/10, mature 1/10
+- Scan-level mean difference (young - mature): -28.94 points, 95% interval (-56.33, -2.19); scans with young worse 7/9
+- Pairs with young worse: 9/11 (81.8%); pair mean -25.32, median -29.72
+- Big loss (<= -20%): young 7/11, mature 1/11
 
 ## Comparator reuse (cap 2)
 
@@ -167,12 +167,15 @@
 | 20261107T220004 | NEUTRAL | GOOBLO | 75090.20 | labelled | -28.66 | swordcat | 147281.48 | labelled | 1.06 |  |
 | 20261107T220004 | NEUTRAL | HABIBI | 29114.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261107T220004 | NEUTRAL | STOCKZ | 17167.76 | labelled | -33.28 |  |  |  | None | no eligible comparator |
-| 20261107T230003 | NEUTRAL | TAOLF | 128131.70 | pending | None | swordcat | 150871.44 | pending | None |  |
-| 20261107T230003 | NEUTRAL | PMURT | 56166.82 | pending | None | :3 | 31865.51 | pending | None |  |
+| 20261107T230003 | NEUTRAL | TAOLF | 128131.70 | labelled | 37.64 | swordcat | 150871.44 | labelled | -6.94 |  |
+| 20261107T230003 | NEUTRAL | PMURT | 56166.82 | labelled | 16.09 | :3 | 31865.51 | pending | None |  |
 | 20261107T230003 | NEUTRAL | ABTC | 47700.98 | pending | None | :3 | 31865.51 | pending | None |  |
-| 20261107T230003 | NEUTRAL | SIZE | 30899.47 | pending | None |  |  |  | None | comparators used twice |
-| 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T230003 | NEUTRAL | SIZE | 30899.47 | labelled | -27.86 |  |  |  | None | comparators used twice |
+| 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | APU | 114783.32 | pending | None | swordcat | 146176.16 | pending | None |  |
 | 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | pending | None |  |
 | 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | MAGGIE | 30434.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | Job | 20812.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T010002 | NEUTRAL | PURRPS | 15540.27 | pending | None |  |  |  | None | no eligible comparator |
