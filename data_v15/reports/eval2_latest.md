@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 50 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 51 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 50 |
-| sightings | 2984 |
-| liquid sightings | 1167 |
-| first liquid sightings = unique tokens with an outcome row | 311 |
-|   young | 197 |
-|   mature | 96 |
+| eval-2 scans | 51 |
+| sightings | 3040 |
+| liquid sightings | 1189 |
+| first liquid sightings = unique tokens with an outcome row | 317 |
+|   young | 200 |
+|   mature | 99 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 170 |
+| young without a comparator | 173 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 141/197, no_valid_entry 7/197, pending 11/197, unknown 24/197, unreliable 14/197
-- mature: labelled 90/96, pending 3/96, unknown 3/96
-- no valid entry: young 7/197, mature 0/96
+- young: labelled 146/200, no_valid_entry 7/200, pending 9/200, unknown 24/200, unreliable 14/200
+- mature: labelled 91/99, pending 5/99, unknown 3/99
+- no valid entry: young 7/200, mature 0/99
 
 ## Effect (after costs; unit = scan)
 
@@ -235,13 +235,16 @@
 | 20261108T135954 | NEUTRAL | FLOAT | 25269.18 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T145954 | NEUTRAL | SAFU | 36354.01 | labelled | 37.25 |  |  |  | None | no eligible comparator |
 | 20261108T145954 | NEUTRAL | forg | 20238.67 | labelled | 1.0 |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | ELYSION | 108955.08 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | TAOLF | 101499.12 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | BHS | 40620.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | ELYSION | 108955.08 | labelled | -29.21 |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | TAOLF | 101499.12 | labelled | -51.0 |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | BHS | 40620.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | Hobbes | 37078.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | CLAUDIA | 28869.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | CLAUDIA | 28869.47 | labelled | -38.03 |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | manlet | 23850.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | shroom | 16635.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | BTC | 143042.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | SAFU | 35570.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
