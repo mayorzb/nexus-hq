@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 51 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 52 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 51 |
-| sightings | 3040 |
-| liquid sightings | 1189 |
-| first liquid sightings = unique tokens with an outcome row | 317 |
-|   young | 200 |
-|   mature | 99 |
+| eval-2 scans | 52 |
+| sightings | 3100 |
+| liquid sightings | 1211 |
+| first liquid sightings = unique tokens with an outcome row | 322 |
+|   young | 202 |
+|   mature | 102 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 173 |
+| young without a comparator | 175 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 146/200, no_valid_entry 7/200, pending 9/200, unknown 24/200, unreliable 14/200
-- mature: labelled 91/99, pending 5/99, unknown 3/99
-- no valid entry: young 7/200, mature 0/99
+- young: labelled 148/202, no_valid_entry 7/202, pending 9/202, unknown 24/202, unreliable 14/202
+- mature: labelled 93/102, pending 6/102, unknown 3/102
+- no valid entry: young 7/202, mature 0/102
 
 ## Effect (after costs; unit = scan)
 
@@ -243,8 +243,10 @@
 | 20261108T155954 | NEUTRAL | manlet | 23850.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | shroom | 16635.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | labelled | 37.07 |  |  |  | None | no eligible comparator |
+| 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | labelled | 36.54 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | BTC | 143042.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | SAFU | 35570.45 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T185952 | NEUTRAL | STOKE | 40586.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | pending | None |  |  |  | None | no eligible comparator |
