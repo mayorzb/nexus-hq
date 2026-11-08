@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 55 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 56 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 55 |
-| sightings | 3279 |
-| liquid sightings | 1289 |
-| first liquid sightings = unique tokens with an outcome row | 346 |
-|   young | 220 |
+| eval-2 scans | 56 |
+| sightings | 3337 |
+| liquid sightings | 1310 |
+| first liquid sightings = unique tokens with an outcome row | 348 |
+|   young | 221 |
 |   mature | 108 |
-|   other | 18 |
+|   other | 19 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 193 |
+| young without a comparator | 194 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 156/220, no_valid_entry 7/220, pending 13/220, unknown 30/220, unreliable 14/220
-- mature: labelled 102/108, pending 3/108, unknown 3/108
-- no valid entry: young 7/220, mature 0/108
+- young: labelled 158/221, no_valid_entry 7/221, pending 12/221, unknown 30/221, unreliable 14/221
+- mature: labelled 105/108, unknown 3/108
+- no valid entry: young 7/221, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -257,9 +257,9 @@
 | 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | Whashy | 19183.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | labelled | 36.81 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | labelled | 36.61 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | Heat | 15584.14 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | PUSSY | 249813.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | DOOROC | 82082.15 | pending | None |  |  |  | None | no eligible comparator |
@@ -268,3 +268,4 @@
 | 20261108T215950 | RED | EARN | 26553.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | GPU | 25429.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | NVIDIH | 25412.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T225949 | RED | ZUCK | 17728.88 | pending | None |  |  |  | None | no eligible comparator |
