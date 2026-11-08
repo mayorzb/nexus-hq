@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 43 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 44 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 43 |
-| sightings | 2602 |
-| liquid sightings | 1011 |
-| first liquid sightings = unique tokens with an outcome row | 269 |
-|   young | 170 |
-|   mature | 82 |
+| eval-2 scans | 44 |
+| sightings | 2654 |
+| liquid sightings | 1032 |
+| first liquid sightings = unique tokens with an outcome row | 275 |
+|   young | 174 |
+|   mature | 84 |
 |   other | 17 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 143 |
+| young without a comparator | 147 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 124/170, no_valid_entry 6/170, pending 8/170, unknown 20/170, unreliable 12/170
-- mature: labelled 76/82, pending 3/82, unknown 3/82
-- no valid entry: young 6/170, mature 0/82
+- young: labelled 125/174, no_valid_entry 6/174, pending 10/174, unknown 20/174, unreliable 13/174
+- mature: labelled 78/84, pending 3/84, unknown 3/84
+- no valid entry: young 6/174, mature 0/84
 
 ## Effect (after costs; unit = scan)
 
@@ -211,10 +211,14 @@
 | 20261108T075957 | NEUTRAL | GATOGLITCH | 38655.16 | labelled | -100.0 | nuLL | 43666.33 | labelled | -17.48 |  |
 | 20261108T075957 | NEUTRAL | CALLCAT | 22818.85 | pending | None | nuLL | 43666.33 | labelled | -17.48 |  |
 | 20261108T075957 | NEUTRAL | HABIBI | 17268.96 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261108T085957 | NEUTRAL | Horned cat | 37444.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T085957 | NEUTRAL | Horned cat | 37444.35 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261108T085957 | NEUTRAL | yarl | 30252.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T085957 | NEUTRAL | yarl | 27519.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T085957 | NEUTRAL | yarl | 27519.83 | labelled | -32.44 |  |  |  | None | no eligible comparator |
 | 20261108T095956 | NEUTRAL | NEX Ai | 36610.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T095956 | NEUTRAL | Puddgy | 34271.89 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T095956 | NEUTRAL | StonksPair | 22014.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T095956 | NEUTRAL | ZOOM | 20308.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T105956 | NEUTRAL | FLOAT | 30242.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T105956 | NEUTRAL | PMUSI | 26028.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T105956 | NEUTRAL | fiat | 20101.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T105956 | NEUTRAL | MarsX | 17812.96 | pending | None |  |  |  | None | no eligible comparator |
