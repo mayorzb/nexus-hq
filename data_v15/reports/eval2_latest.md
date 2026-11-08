@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 40 scans: 37 pairs and 9 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 41 scans: 36 pairs and 8 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 40 |
-| sightings | 2432 |
-| liquid sightings | 946 |
-| first liquid sightings = unique tokens with an outcome row | 253 |
-|   young | 160 |
-|   mature | 76 |
+| eval-2 scans | 41 |
+| sightings | 2489 |
+| liquid sightings | 968 |
+| first liquid sightings = unique tokens with an outcome row | 259 |
+|   young | 163 |
+|   mature | 79 |
 |   other | 17 |
-| young with a comparator (cap 2) | 25 |
-| young without a comparator | 135 |
+| young with a comparator (cap 2) | 27 |
+| young without a comparator | 136 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 12 |
-| complete pairs (both 60m outcomes labelled) | 13 |
-| scans contributing a complete pair | 11 |
+|   pairs: young or mature outcome not yet usable | 13 |
+| complete pairs (both 60m outcomes labelled) | 14 |
+| scans contributing a complete pair | 12 |
 
 ## 60m outcome status by group
 
-- young: labelled 116/160, no_valid_entry 6/160, pending 8/160, unknown 19/160, unreliable 11/160
-- mature: labelled 65/76, pending 8/76, unknown 3/76
-- no valid entry: young 6/160, mature 0/76
+- young: labelled 120/163, no_valid_entry 6/163, pending 6/163, unknown 20/163, unreliable 11/163
+- mature: labelled 70/79, pending 6/79, unknown 3/79
+- no valid entry: young 6/163, mature 0/79
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.38 points, 95% interval (-52.67, -7.01); scans with young worse 9/11
-- Pairs with young worse: 11/13 (84.6%); pair mean -26.25, median -29.72
-- Big loss (<= -20%): young 8/13, mature 1/13
+- Scan-level mean difference (young - mature): -23.89 points, 95% interval (-48.44, -0.15); scans with young worse 9/12
+- Pairs with young worse: 11/14 (78.6%); pair mean -21.77, median -26.61
+- Big loss (<= -20%): young 8/14, mature 1/14
 
 ## Comparator reuse (cap 2)
 
@@ -42,6 +42,7 @@
 - 20261107T220004-5tCju6YN: GIGAHUG (20261107T220004), GOOBLO (20261107T220004)
 - 20261107T230003-9PPMpwdu: PMURT (20261107T230003), ABTC (20261107T230003)
 - 20261108T000003-5tCju6YN: APU (20261108T000003), FOMOCAT (20261108T000003)
+- 20261108T075957-A72sK9mP: GATOGLITCH (20261108T075957), CALLCAT (20261108T075957)
 
 ## Every pair
 
@@ -184,7 +185,7 @@
 | 20261108T020001 | NEUTRAL | Respect | 46202.21 | labelled | 17.7 |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | EVE | 46113.01 | labelled | -50.91 |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | invest | 29358.46 | labelled | -29.95 |  |  |  | None | no eligible comparator |
-| 20261108T020001 | NEUTRAL | Tungmas | 19399.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | Tungmas | 19399.83 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | TikTok | 16219.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T020001 | NEUTRAL | HABIBI | 16163.41 | labelled | -37.67 |  |  |  | None | no eligible comparator |
 | 20261108T030000 | NEUTRAL | FLOATCAT | 41292.75 | labelled | 1.39 |  |  |  | None | no eligible comparator |
@@ -200,10 +201,13 @@
 | 20261108T045958 | NEUTRAL | GM | 35784.66 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261108T045958 | NEUTRAL | DОG™ | 17031.56 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T045958 | NEUTRAL | GIGANTOR | 16527.98 | labelled | -35.14 |  |  |  | None | no eligible comparator |
-| 20261108T055958 | NEUTRAL | PEAK | 34981.30 | pending | None | BRUH | 68085.43 | pending | None |  |
-| 20261108T055958 | NEUTRAL | MARS | 20921.89 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T055958 | NEUTRAL | MARS | 18839.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T055958 | NEUTRAL | CLAUDIA | 15251.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | PEAK | 34981.30 | labelled | 37.23 | BRUH | 68085.43 | labelled | 0.75 |  |
+| 20261108T055958 | NEUTRAL | MARS | 20921.89 | labelled | -61.41 |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | MARS | 18839.35 | labelled | -42.76 |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | CLAUDIA | 15251.10 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261108T065957 | NEUTRAL | GATOGLITCH | 102929.40 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T065957 | NEUTRAL | MARTIAN | 17188.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T065957 | NEUTRAL | PADSI | 16979.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T075957 | NEUTRAL | GATOGLITCH | 38655.16 | pending | None | nuLL | 43666.33 | pending | None |  |
+| 20261108T075957 | NEUTRAL | CALLCAT | 22818.85 | pending | None | nuLL | 43666.33 | pending | None |  |
+| 20261108T075957 | NEUTRAL | HABIBI | 17268.96 | pending | None |  |  |  | None | no eligible comparator |
