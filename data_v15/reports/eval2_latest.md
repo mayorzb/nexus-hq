@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 47 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 48 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 47 |
-| sightings | 2816 |
-| liquid sightings | 1094 |
-| first liquid sightings = unique tokens with an outcome row | 294 |
-|   young | 185 |
-|   mature | 91 |
+| eval-2 scans | 48 |
+| sightings | 2872 |
+| liquid sightings | 1116 |
+| first liquid sightings = unique tokens with an outcome row | 298 |
+|   young | 187 |
+|   mature | 93 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 158 |
+| young without a comparator | 160 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 134/185, no_valid_entry 7/185, pending 7/185, unknown 23/185, unreliable 14/185
-- mature: labelled 83/91, pending 5/91, unknown 3/91
-- no valid entry: young 7/185, mature 0/91
+- young: labelled 135/187, no_valid_entry 7/187, pending 8/187, unknown 23/187, unreliable 14/187
+- mature: labelled 86/93, pending 4/93, unknown 3/93
+- no valid entry: young 7/187, mature 0/93
 
 ## Effect (after costs; unit = scan)
 
@@ -227,9 +227,11 @@
 | 20261108T115956 | NEUTRAL | Larp | 21401.09 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T115956 | NEUTRAL | UNEMPLOYED | 19802.39 | labelled | 36.8 |  |  |  | None | no eligible comparator |
 | 20261108T115956 | NEUTRAL | SKULL | 15606.74 | labelled | 36.53 |  |  |  | None | no eligible comparator |
-| 20261108T125955 | NEUTRAL | Percolator | 23967.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T125955 | NEUTRAL | Percolator | 23967.37 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | AODF | 256720.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | MELT | 60120.17 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | wApe | 29548.10 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | JASON | 26617.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T135954 | NEUTRAL | FLOAT | 25269.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T145954 | NEUTRAL | SAFU | 36354.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T145954 | NEUTRAL | forg | 20238.67 | pending | None |  |  |  | None | no eligible comparator |
