@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 41 scans: 36 pairs and 8 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 42 scans: 36 pairs and 8 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 41 |
-| sightings | 2489 |
-| liquid sightings | 968 |
-| first liquid sightings = unique tokens with an outcome row | 259 |
-|   young | 163 |
-|   mature | 79 |
+| eval-2 scans | 42 |
+| sightings | 2545 |
+| liquid sightings | 989 |
+| first liquid sightings = unique tokens with an outcome row | 264 |
+|   young | 166 |
+|   mature | 81 |
 |   other | 17 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 136 |
+| young without a comparator | 139 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 14 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 120/163, no_valid_entry 6/163, pending 6/163, unknown 20/163, unreliable 11/163
-- mature: labelled 70/79, pending 6/79, unknown 3/79
-- no valid entry: young 6/163, mature 0/79
+- young: labelled 123/166, no_valid_entry 6/166, pending 6/166, unknown 20/166, unreliable 11/166
+- mature: labelled 73/81, pending 5/81, unknown 3/81
+- no valid entry: young 6/166, mature 0/81
 
 ## Effect (after costs; unit = scan)
 
@@ -205,9 +205,12 @@
 | 20261108T055958 | NEUTRAL | MARS | 20921.89 | labelled | -61.41 |  |  |  | None | no eligible comparator |
 | 20261108T055958 | NEUTRAL | MARS | 18839.35 | labelled | -42.76 |  |  |  | None | no eligible comparator |
 | 20261108T055958 | NEUTRAL | CLAUDIA | 15251.10 | labelled | 36.5 |  |  |  | None | no eligible comparator |
-| 20261108T065957 | NEUTRAL | GATOGLITCH | 102929.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T065957 | NEUTRAL | MARTIAN | 17188.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T065957 | NEUTRAL | PADSI | 16979.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | GATOGLITCH | 102929.40 | labelled | -32.07 |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | MARTIAN | 17188.64 | labelled | -43.95 |  |  |  | None | no eligible comparator |
+| 20261108T065957 | NEUTRAL | PADSI | 16979.50 | labelled | -52.71 |  |  |  | None | no eligible comparator |
 | 20261108T075957 | NEUTRAL | GATOGLITCH | 38655.16 | pending | None | nuLL | 43666.33 | pending | None |  |
 | 20261108T075957 | NEUTRAL | CALLCAT | 22818.85 | pending | None | nuLL | 43666.33 | pending | None |  |
 | 20261108T075957 | NEUTRAL | HABIBI | 17268.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T085957 | NEUTRAL | Horned cat | 37444.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T085957 | NEUTRAL | yarl | 30252.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T085957 | NEUTRAL | yarl | 27519.83 | pending | None |  |  |  | None | no eligible comparator |
