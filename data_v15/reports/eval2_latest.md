@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 11/50 complete pairs, 9/20 scans, 34/40 scans used. No decision before the milestone.
+**Status:** collecting: 12/50 complete pairs, 10/20 scans, 35/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 34 |
-| sightings | 2067 |
-| liquid sightings | 797 |
-| first liquid sightings = unique tokens with an outcome row | 199 |
-|   young | 132 |
-|   mature | 53 |
-|   other | 14 |
+| eval-2 scans | 35 |
+| sightings | 2128 |
+| liquid sightings | 824 |
+| first liquid sightings = unique tokens with an outcome row | 211 |
+|   young | 140 |
+|   mature | 56 |
+|   other | 15 |
 | young with a comparator (cap 2) | 23 |
-| young without a comparator | 109 |
+| young without a comparator | 117 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 12 |
-| complete pairs (both 60m outcomes labelled) | 11 |
-| scans contributing a complete pair | 9 |
+|   pairs: young or mature outcome not yet usable | 11 |
+| complete pairs (both 60m outcomes labelled) | 12 |
+| scans contributing a complete pair | 10 |
 
 ## 60m outcome status by group
 
-- young: labelled 93/132, no_valid_entry 5/132, pending 10/132, unknown 15/132, unreliable 9/132
-- mature: labelled 44/53, pending 8/53, unknown 1/53
-- no valid entry: young 5/132, mature 0/53
+- young: labelled 96/140, no_valid_entry 5/140, pending 13/140, unknown 17/140, unreliable 9/140
+- mature: labelled 48/56, pending 7/56, unknown 1/56
+- no valid entry: young 5/140, mature 0/56
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.94 points, 95% interval (-56.33, -2.19); scans with young worse 7/9
-- Pairs with young worse: 9/11 (81.8%); pair mean -25.32, median -29.72
-- Big loss (<= -20%): young 7/11, mature 1/11
+- Scan-level mean difference (young - mature): -29.96 points, 95% interval (-55.73, -5.18); scans with young worse 8/10
+- Pairs with young worse: 10/12 (83.3%); pair mean -26.47, median -30.92
+- Big loss (<= -20%): young 8/12, mature 1/12
 
 ## Comparator reuse (cap 2)
 
@@ -157,9 +157,9 @@
 | 20261107T190005 | NEUTRAL | $TRUMPMIAO | 17491.42 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | José | 15353.74 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261107T190005 | NEUTRAL | MACCA | 15050.86 | labelled | 36.48 |  |  |  | None | no eligible comparator |
-| 20261107T200005 | NEUTRAL | Whitehouse | 33457.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T200005 | NEUTRAL | Whitehouse | 33457.10 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T200005 | NEUTRAL | DEMWOJAK | 23475.90 | labelled | 36.95 |  |  |  | None | no eligible comparator |
-| 20261107T200005 | NEUTRAL | Settler | 17120.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261107T200005 | NEUTRAL | Settler | 17120.43 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | NEX Ai | 36292.55 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | José | 34534.11 | labelled | -35.93 |  |  |  | None | no eligible comparator |
 | 20261107T210005 | NEUTRAL | FRODO | 20541.81 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -172,10 +172,18 @@
 | 20261107T230003 | NEUTRAL | ABTC | 47700.98 | pending | None | :3 | 31865.51 | pending | None |  |
 | 20261107T230003 | NEUTRAL | SIZE | 30899.47 | labelled | -27.86 |  |  |  | None | comparators used twice |
 | 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | labelled | 36.5 |  |  |  | None | no eligible comparator |
-| 20261108T000003 | NEUTRAL | APU | 114783.32 | pending | None | swordcat | 146176.16 | pending | None |  |
-| 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | pending | None |  |
-| 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T000003 | NEUTRAL | APU | 114783.32 | labelled | -48.33 | swordcat | 146176.16 | labelled | -9.11 |  |
+| 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | labelled | -9.11 |  |
+| 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | labelled | -28.42 |  |  |  | None | no eligible comparator |
+| 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | labelled | -31.92 |  |  |  | None | no eligible comparator |
 | 20261108T010002 | NEUTRAL | MAGGIE | 30434.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T010002 | NEUTRAL | Job | 20812.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T010002 | NEUTRAL | PURRPS | 15540.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | ORBIT | 61359.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | FLOAT | 50643.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | Respect | 46202.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | EVE | 46113.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | invest | 29358.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | Tungmas | 19399.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | TikTok | 16219.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T020001 | NEUTRAL | HABIBI | 16163.41 | pending | None |  |  |  | None | no eligible comparator |
