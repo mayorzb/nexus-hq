@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** collecting: 12/50 complete pairs, 10/20 scans, 38/40 scans used. No decision before the milestone.
+**Status:** collecting: 13/50 complete pairs, 11/20 scans, 39/40 scans used. No decision before the milestone.
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 38 |
-| sightings | 2309 |
-| liquid sightings | 901 |
-| first liquid sightings = unique tokens with an outcome row | 237 |
-|   young | 153 |
-|   mature | 68 |
+| eval-2 scans | 39 |
+| sightings | 2372 |
+| liquid sightings | 924 |
+| first liquid sightings = unique tokens with an outcome row | 246 |
+|   young | 157 |
+|   mature | 73 |
 |   other | 16 |
-| young with a comparator (cap 2) | 24 |
-| young without a comparator | 129 |
+| young with a comparator (cap 2) | 25 |
+| young without a comparator | 132 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
-| complete pairs (both 60m outcomes labelled) | 12 |
-| scans contributing a complete pair | 10 |
+| complete pairs (both 60m outcomes labelled) | 13 |
+| scans contributing a complete pair | 11 |
 
 ## 60m outcome status by group
 
-- young: labelled 111/153, no_valid_entry 5/153, pending 9/153, unknown 18/153, unreliable 10/153
-- mature: labelled 58/68, pending 8/68, unknown 2/68
-- no valid entry: young 5/153, mature 0/68
+- young: labelled 114/157, no_valid_entry 6/157, pending 8/157, unknown 19/157, unreliable 10/157
+- mature: labelled 61/73, pending 9/73, unknown 3/73
+- no valid entry: young 6/157, mature 0/73
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.96 points, 95% interval (-55.73, -5.18); scans with young worse 8/10
-- Pairs with young worse: 10/12 (83.3%); pair mean -26.47, median -30.92
-- Big loss (<= -20%): young 8/12, mature 1/12
+- Scan-level mean difference (young - mature): -29.38 points, 95% interval (-52.67, -7.01); scans with young worse 9/11
+- Pairs with young worse: 11/13 (84.6%); pair mean -26.25, median -29.72
+- Big loss (<= -20%): young 8/13, mature 1/13
 
 ## Comparator reuse (cap 2)
 
@@ -173,7 +173,7 @@
 | 20261107T230003 | NEUTRAL | SIZE | 30899.47 | labelled | -27.86 |  |  |  | None | comparators used twice |
 | 20261107T230003 | NEUTRAL | IMBUE | 15250.98 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | APU | 114783.32 | labelled | -48.33 | swordcat | 146176.16 | labelled | -9.11 |  |
-| 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | pending | None | swordcat | 146176.16 | labelled | -9.11 |  |
+| 20261108T000003 | NEUTRAL | FOMOCAT | 86426.45 | unknown | None | swordcat | 146176.16 | labelled | -9.11 |  |
 | 20261108T000003 | NEUTRAL | ClaudiaGI | 55024.67 | labelled | -28.42 |  |  |  | None | no eligible comparator |
 | 20261108T000003 | NEUTRAL | CLAUDIA | 39907.86 | labelled | -31.92 |  |  |  | None | no eligible comparator |
 | 20261108T010002 | NEUTRAL | MAGGIE | 30434.02 | labelled | 37.14 |  |  |  | None | no eligible comparator |
@@ -193,10 +193,14 @@
 | 20261108T030000 | NEUTRAL | EVE | 30202.98 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T030000 | NEUTRAL | HIJAB | 27793.78 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T030000 | NEUTRAL | Habibi | 15120.07 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261108T035959 | NEUTRAL | HEREWEGO | 93792.46 | pending | None | swordcat | 147282.99 | pending | None |  |
-| 20261108T035959 | NEUTRAL | HABIBI | 27886.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T035959 | NEUTRAL | fomo | 24203.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T035959 | NEUTRAL | p402 | 20998.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T035959 | NEUTRAL | HEREWEGO | 93792.46 | labelled | -17.82 | swordcat | 147282.99 | labelled | 5.67 |  |
+| 20261108T035959 | NEUTRAL | HABIBI | 27886.81 | labelled | -33.27 |  |  |  | None | no eligible comparator |
+| 20261108T035959 | NEUTRAL | fomo | 24203.90 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261108T035959 | NEUTRAL | p402 | 20998.64 | labelled | -42.35 |  |  |  | None | no eligible comparator |
 | 20261108T045958 | NEUTRAL | GM | 35784.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T045958 | NEUTRAL | DОG™ | 17031.56 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T045958 | NEUTRAL | GIGANTOR | 16527.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | PEAK | 34981.30 | pending | None | BRUH | 68085.43 | pending | None |  |
+| 20261108T055958 | NEUTRAL | MARS | 20921.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | MARS | 18839.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T055958 | NEUTRAL | CLAUDIA | 15251.10 | pending | None |  |  |  | None | no eligible comparator |
