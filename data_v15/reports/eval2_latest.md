@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 54 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 55 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 54 |
-| sightings | 3220 |
-| liquid sightings | 1264 |
-| first liquid sightings = unique tokens with an outcome row | 339 |
-|   young | 213 |
+| eval-2 scans | 55 |
+| sightings | 3279 |
+| liquid sightings | 1289 |
+| first liquid sightings = unique tokens with an outcome row | 346 |
+|   young | 220 |
 |   mature | 108 |
 |   other | 18 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 186 |
+| young without a comparator | 193 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 151/213, no_valid_entry 7/213, pending 15/213, unknown 26/213, unreliable 14/213
-- mature: labelled 99/108, pending 6/108, unknown 3/108
-- no valid entry: young 7/213, mature 0/108
+- young: labelled 156/220, no_valid_entry 7/220, pending 13/220, unknown 30/220, unreliable 14/220
+- mature: labelled 102/108, pending 3/108, unknown 3/108
+- no valid entry: young 7/220, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -238,10 +238,10 @@
 | 20261108T155954 | NEUTRAL | ELYSION | 108955.08 | labelled | -29.21 |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | TAOLF | 101499.12 | labelled | -51.0 |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | BHS | 40620.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | Hobbes | 37078.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | Hobbes | 37078.18 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | CLAUDIA | 28869.47 | labelled | -38.03 |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | manlet | 23850.97 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T155954 | NEUTRAL | shroom | 16635.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | manlet | 23850.97 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261108T155954 | NEUTRAL | shroom | 16635.18 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T155954 | NEUTRAL | FLOAT | 15305.65 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | LUCIA | 27240.76 | labelled | 37.07 |  |  |  | None | no eligible comparator |
 | 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | labelled | 36.54 |  |  |  | None | no eligible comparator |
@@ -250,14 +250,21 @@
 | 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | STOKE | 40586.88 | labelled | -30.43 |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | ARTCOIN | 52526.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | JUMP | 35819.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | GROKIA | 35200.48 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | Neurofly | 25206.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | ARTCOIN | 52526.16 | labelled | -34.77 |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | JUMP | 35819.73 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | GROKIA | 35200.48 | labelled | -53.22 |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | Neurofly | 25206.35 | labelled | -60.71 |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | Whashy | 19183.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | Whashy | 19183.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | Heat | 15584.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | PUSSY | 249813.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | DOOROC | 82082.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | chud | 74207.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | JensenAlice | 50578.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | EARN | 26553.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | GPU | 25429.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | NVIDIH | 25412.52 | pending | None |  |  |  | None | no eligible comparator |
