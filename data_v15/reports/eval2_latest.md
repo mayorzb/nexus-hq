@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 71 scans: 30 pairs and 4 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 72 scans: 30 pairs and 4 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 71 |
-| sightings | 4174 |
-| liquid sightings | 1662 |
-| first liquid sightings = unique tokens with an outcome row | 422 |
-|   young | 285 |
-|   mature | 116 |
+| eval-2 scans | 72 |
+| sightings | 4226 |
+| liquid sightings | 1683 |
+| first liquid sightings = unique tokens with an outcome row | 425 |
+|   young | 287 |
+|   mature | 117 |
 |   other | 21 |
-| young with a comparator (cap 2) | 33 |
-| young without a comparator | 252 |
+| young with a comparator (cap 2) | 34 |
+| young without a comparator | 253 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 13 |
+|   pairs: young or mature outcome not yet usable | 14 |
 | complete pairs (both 60m outcomes labelled) | 20 |
 | scans contributing a complete pair | 16 |
 
 ## 60m outcome status by group
 
-- young: labelled 205/285, no_valid_entry 8/285, pending 12/285, unknown 43/285, unreliable 17/285
-- mature: labelled 113/116, unknown 3/116
-- no valid entry: young 8/285, mature 0/116
+- young: labelled 209/287, no_valid_entry 8/287, pending 10/287, unknown 43/287, unreliable 17/287
+- mature: labelled 113/117, pending 1/117, unknown 3/117
+- no valid entry: young 8/287, mature 0/117
 
 ## Effect (after costs; unit = scan)
 
@@ -326,13 +326,15 @@
 | 20261109T115941 | RED | BANK | 25551.80 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261109T115941 | RED | iNu | 25090.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | UGOBI | 137216.91 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T125940 | RED | 牛逼 | 37161.45 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T125940 | RED | MILES | 24227.88 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T125940 | RED | shiken | 22314.45 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T125940 | RED | 真诚 | 15227.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | 牛逼 | 37161.45 | labelled | 37.26 |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | MILES | 24227.88 | labelled | -35.79 |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | shiken | 22314.45 | labelled | -28.96 |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | 真诚 | 15227.05 | labelled | -30.89 |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | GINGATO | 48730.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | POLARIS | 34682.34 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | Bruce | 29518.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | Elysium | 27280.45 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | BARKET | 19106.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | 牛逼 | 16049.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T145938 | RED | MILES | 58970.84 | pending | None | MYWAY | 69070.18 | pending | None |  |
+| 20261109T145938 | RED | SI6900 | 18752.53 | pending | None |  |  |  | None | no eligible comparator |
