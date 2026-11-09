@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-09 10:02 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-09 11:02 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-09 10:02 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 57 / 23 | OK |
-| Deep-checked coins left UNVERIFIED | 43 of 96 (45%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 24 checked, 1 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 105 of 201 | WARN |
-| Paper candidates (last 24h) | 28 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 672 / 152 | ALERT |
+| Deep-checked coins left UNVERIFIED | 40 of 88 (45%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 26 checked, 2 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 98 of 186 | WARN |
+| Paper candidates (last 24h) | 26 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 657 / 154 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: FLOAT (10:59), STONK (10:59), FLOAT (11:59), STONK (11:59), FLOAT (12:59), STONK (12:59), CATE (12:59), FLOAT (13:59), CATE (13:59), CATE (14:59), CATE (15:59), FLOAT (16:59), CATE (16:59), FLOAT (17:59), STONK (17:59), CATE (17:59), FLOAT (18:59), STONK (18:59), CATE (18:59), FLOAT (19:59), STONK (19:59), CATE (19:59), FLOAT (20:59), STONK (20:59), CATE (20:59), STONK (02:59), CATE (02:59), DESSA (02:59)
+Candidates: FLOAT (11:59), STONK (11:59), FLOAT (12:59), STONK (12:59), CATE (12:59), FLOAT (13:59), CATE (13:59), CATE (14:59), CATE (15:59), FLOAT (16:59), CATE (16:59), FLOAT (17:59), STONK (17:59), CATE (17:59), FLOAT (18:59), STONK (18:59), CATE (18:59), FLOAT (19:59), STONK (19:59), CATE (19:59), FLOAT (20:59), STONK (20:59), CATE (20:59), STONK (02:59), CATE (02:59), DESSA (02:59)

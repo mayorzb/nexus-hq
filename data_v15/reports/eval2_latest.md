@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 67 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 68 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 67 |
-| sightings | 3968 |
-| liquid sightings | 1565 |
-| first liquid sightings = unique tokens with an outcome row | 398 |
-|   young | 264 |
-|   mature | 114 |
+| eval-2 scans | 68 |
+| sightings | 4020 |
+| liquid sightings | 1589 |
+| first liquid sightings = unique tokens with an outcome row | 405 |
+|   young | 270 |
+|   mature | 115 |
 |   other | 20 |
-| young with a comparator (cap 2) | 31 |
-| young without a comparator | 233 |
+| young with a comparator (cap 2) | 33 |
+| young without a comparator | 237 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 13 |
+|   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 18 |
 | scans contributing a complete pair | 15 |
 
 ## 60m outcome status by group
 
-- young: labelled 196/264, no_valid_entry 8/264, pending 4/264, unknown 41/264, unreliable 15/264
-- mature: labelled 110/114, pending 1/114, unknown 3/114
-- no valid entry: young 8/264, mature 0/114
+- young: labelled 197/270, no_valid_entry 8/270, pending 8/270, unknown 42/270, unreliable 15/270
+- mature: labelled 111/115, pending 1/115, unknown 3/115
+- no valid entry: young 8/270, mature 0/115
 
 ## Effect (after costs; unit = scan)
 
@@ -45,6 +45,7 @@
 - 20261108T075957-A72sK9mP: GATOGLITCH (20261108T075957), CALLCAT (20261108T075957)
 - 20261109T025946-5xcEFpzK: S&P500up (20261109T025946), JENSEN (20261109T025946)
 - 20261109T035946-5wQn3vMR: PIRATE (20261109T035946), GPU (20261109T035946)
+- 20261109T105941-Ao6rgPZB: 牛逼 (20261109T105941), cap (20261109T105941)
 
 ## Every pair
 
@@ -302,7 +303,7 @@
 | 20261109T035946 | RED | FELIX | 18780.98 | unknown | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | GPU | 16884.04 | labelled | -31.55 |  |  |  | None | comparators used twice |
 | 20261109T045945 | RED | USNR | 25066.94 | labelled | -2.88 |  |  |  | None | no eligible comparator |
-| 20261109T045945 | RED | SKYHOOK | 15372.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T045945 | RED | SKYHOOK | 15372.28 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | BUIDL | 34501.38 | labelled | -30.41 |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | LIMEKUMA | 24879.24 | labelled | -28.87 |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | 牛逼 | 23745.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -312,5 +313,11 @@
 | 20261109T065943 | RED | hoss | 20701.08 | labelled | -30.92 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T075943 | RED | BTC | 24512.34 | labelled | -29.33 |  |  |  | None | no eligible comparator |
-| 20261109T085942 | RED | Robinhood | 24557.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T085942 | RED | Robinhood | 24557.81 | labelled | 36.99 |  |  |  | None | no eligible comparator |
 | 20261109T095941 | RED | ANCHOR | 26824.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T105941 | RED | HODLER | 100159.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T105941 | RED | 牛逼 | 34993.99 | pending | None | PTY | 26800.02 | pending | None |  |
+| 20261109T105941 | RED | cap | 26190.57 | pending | None | PTY | 26800.02 | pending | None |  |
+| 20261109T105941 | RED | Sheep | 17225.13 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T105941 | RED | SOLGATO | 17114.40 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T105941 | RED | SHF | 16103.95 | pending | None |  |  |  | None | comparators used twice |
