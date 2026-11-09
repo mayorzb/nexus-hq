@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 64 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 65 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 64 |
-| sightings | 3800 |
-| liquid sightings | 1506 |
-| first liquid sightings = unique tokens with an outcome row | 394 |
-|   young | 261 |
+| eval-2 scans | 65 |
+| sightings | 3857 |
+| liquid sightings | 1526 |
+| first liquid sightings = unique tokens with an outcome row | 395 |
+|   young | 262 |
 |   mature | 113 |
 |   other | 20 |
 | young with a comparator (cap 2) | 31 |
-| young without a comparator | 230 |
+| young without a comparator | 231 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 18 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 189/261, no_valid_entry 7/261, pending 11/261, unknown 39/261, unreliable 15/261
+- young: labelled 193/262, no_valid_entry 8/262, pending 7/262, unknown 39/262, unreliable 15/262
 - mature: labelled 110/113, unknown 3/113
-- no valid entry: young 7/261, mature 0/113
+- no valid entry: young 8/262, mature 0/113
 
 ## Effect (after costs; unit = scan)
 
@@ -303,11 +303,12 @@
 | 20261109T035946 | RED | GPU | 16884.04 | labelled | -31.55 |  |  |  | None | comparators used twice |
 | 20261109T045945 | RED | USNR | 25066.94 | labelled | -2.88 |  |  |  | None | no eligible comparator |
 | 20261109T045945 | RED | SKYHOOK | 15372.28 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T055944 | RED | BUIDL | 34501.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T055944 | RED | LIMEKUMA | 24879.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T055944 | RED | 牛逼 | 23745.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T055944 | RED | HUNG | 23448.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T055944 | RED | 牛逼 | 16353.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T055944 | RED | BUIDL | 34501.38 | labelled | -30.41 |  |  |  | None | no eligible comparator |
+| 20261109T055944 | RED | LIMEKUMA | 24879.24 | labelled | -28.87 |  |  |  | None | no eligible comparator |
+| 20261109T055944 | RED | 牛逼 | 23745.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T055944 | RED | HUNG | 23448.82 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261109T055944 | RED | 牛逼 | 16353.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | CACHE | 21335.21 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | hoss | 20701.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T075943 | RED | BTC | 24512.34 | pending | None |  |  |  | None | no eligible comparator |
