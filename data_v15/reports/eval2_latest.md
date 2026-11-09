@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 70 scans: 30 pairs and 4 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 71 scans: 30 pairs and 4 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 70 |
-| sightings | 4122 |
-| liquid sightings | 1639 |
-| first liquid sightings = unique tokens with an outcome row | 416 |
-|   young | 279 |
+| eval-2 scans | 71 |
+| sightings | 4174 |
+| liquid sightings | 1662 |
+| first liquid sightings = unique tokens with an outcome row | 422 |
+|   young | 285 |
 |   mature | 116 |
 |   other | 21 |
 | young with a comparator (cap 2) | 33 |
-| young without a comparator | 246 |
+| young without a comparator | 252 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 20 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 201/279, no_valid_entry 8/279, pending 10/279, unknown 43/279, unreliable 17/279
-- mature: labelled 112/116, pending 1/116, unknown 3/116
-- no valid entry: young 8/279, mature 0/116
+- young: labelled 205/285, no_valid_entry 8/285, pending 12/285, unknown 43/285, unreliable 17/285
+- mature: labelled 113/116, unknown 3/116
+- no valid entry: young 8/285, mature 0/116
 
 ## Effect (after costs; unit = scan)
 
@@ -321,12 +321,18 @@
 | 20261109T105941 | RED | Sheep | 17225.13 | labelled | -37.97 |  |  |  | None | comparators used twice |
 | 20261109T105941 | RED | SOLGATO | 17114.40 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261109T105941 | RED | SHF | 16103.95 | unreliable | None |  |  |  | None | comparators used twice |
-| 20261109T115941 | RED | PAD | 131295.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T115941 | RED | USRP | 97632.44 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T115941 | RED | BANK | 25551.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T115941 | RED | iNu | 25090.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | PAD | 131295.50 | labelled | -0.97 |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | USRP | 97632.44 | labelled | 2.36 |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | BANK | 25551.80 | labelled | 37.02 |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | iNu | 25090.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | UGOBI | 137216.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | 牛逼 | 37161.45 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | MILES | 24227.88 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | shiken | 22314.45 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T125940 | RED | 真诚 | 15227.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | GINGATO | 48730.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | POLARIS | 34682.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | Bruce | 29518.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | Elysium | 27280.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | BARKET | 19106.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T135939 | RED | 牛逼 | 16049.74 | pending | None |  |  |  | None | no eligible comparator |
