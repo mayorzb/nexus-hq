@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 65 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 66 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 65 |
-| sightings | 3857 |
-| liquid sightings | 1526 |
-| first liquid sightings = unique tokens with an outcome row | 395 |
-|   young | 262 |
-|   mature | 113 |
+| eval-2 scans | 66 |
+| sightings | 3914 |
+| liquid sightings | 1546 |
+| first liquid sightings = unique tokens with an outcome row | 397 |
+|   young | 263 |
+|   mature | 114 |
 |   other | 20 |
 | young with a comparator (cap 2) | 31 |
-| young without a comparator | 231 |
+| young without a comparator | 232 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 18 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 193/262, no_valid_entry 8/262, pending 7/262, unknown 39/262, unreliable 15/262
-- mature: labelled 110/113, unknown 3/113
-- no valid entry: young 8/262, mature 0/113
+- young: labelled 195/263, no_valid_entry 8/263, pending 5/263, unknown 40/263, unreliable 15/263
+- mature: labelled 110/114, pending 1/114, unknown 3/114
+- no valid entry: young 8/263, mature 0/114
 
 ## Effect (after costs; unit = scan)
 
@@ -295,7 +295,7 @@
 | 20261109T025946 | NEUTRAL | JENSEN | 32801.54 | labelled | -35.66 | chest | 19482.21 | labelled | -45.18 |  |
 | 20261109T025946 | NEUTRAL | SIGNS | 23613.37 | labelled | -30.76 |  |  |  | None | comparators used twice |
 | 20261109T025946 | NEUTRAL | DUE | 17436.51 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261109T025946 | NEUTRAL | ELYS | 17330.64 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T025946 | NEUTRAL | ELYS | 17330.64 | unknown | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | Kypat | 114949.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T035946 | RED | PIRATE | 36583.59 | labelled | -100.0 | SOLV | 21180.21 | labelled | 0.19 |  |
 | 20261109T035946 | RED | GPU | 30814.78 | labelled | -35.52 | SOLV | 21180.21 | labelled | 0.19 |  |
@@ -308,7 +308,8 @@
 | 20261109T055944 | RED | 牛逼 | 23745.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | HUNG | 23448.82 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | 牛逼 | 16353.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261109T065943 | RED | CACHE | 21335.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T065943 | RED | hoss | 20701.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | CACHE | 21335.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | hoss | 20701.08 | labelled | -30.92 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T075943 | RED | BTC | 24512.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T085942 | RED | Robinhood | 24557.81 | pending | None |  |  |  | None | no eligible comparator |
