@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 76 scans: 30 pairs and 4 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 77 scans: 30 pairs and 4 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 76 |
-| sightings | 4437 |
-| liquid sightings | 1775 |
-| first liquid sightings = unique tokens with an outcome row | 443 |
-|   young | 302 |
-|   mature | 118 |
-|   other | 23 |
-| young with a comparator (cap 2) | 36 |
-| young without a comparator | 266 |
+| eval-2 scans | 77 |
+| sightings | 4491 |
+| liquid sightings | 1799 |
+| first liquid sightings = unique tokens with an outcome row | 449 |
+|   young | 305 |
+|   mature | 119 |
+|   other | 25 |
+| young with a comparator (cap 2) | 38 |
+| young without a comparator | 267 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 16 |
+|   pairs: young or mature outcome not yet usable | 18 |
 | complete pairs (both 60m outcomes labelled) | 20 |
 | scans contributing a complete pair | 16 |
 
 ## 60m outcome status by group
 
-- young: labelled 218/302, no_valid_entry 9/302, pending 10/302, unknown 45/302, unreliable 20/302
-- mature: labelled 114/118, pending 1/118, unknown 3/118
-- no valid entry: young 9/302, mature 0/118
+- young: labelled 219/305, no_valid_entry 9/305, pending 12/305, unknown 45/305, unreliable 20/305
+- mature: labelled 114/119, pending 2/119, unknown 3/119
+- no valid entry: young 9/305, mature 0/119
 
 ## Effect (after costs; unit = scan)
 
@@ -47,6 +47,7 @@
 - 20261109T035946-5wQn3vMR: PIRATE (20261109T035946), GPU (20261109T035946)
 - 20261109T105941-Ao6rgPZB: 牛逼 (20261109T105941), cap (20261109T105941)
 - 20261109T185935-34DXEU2t: BEAUTY (20261109T185935), GTA (20261109T185935)
+- 20261109T195934-FZcbX6uB: TJR (20261109T195934), ORBIT (20261109T195934)
 
 ## Every pair
 
@@ -347,10 +348,13 @@
 | 20261109T165936 | RED | GTA | 27534.87 | labelled | -33.98 |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | LASTTRUCK | 25352.30 | labelled | -47.53 |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | cupsey | 20334.34 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261109T175936 | RED | Cupsey | 35821.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T175936 | RED | Cupsey | 35821.77 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261109T185935 | RED | Ageowl | 102761.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T185935 | RED | SINU | 90297.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T185935 | RED | BEAUTY | 37931.38 | pending | None | BIG | 37854.76 | pending | None |  |
 | 20261109T185935 | RED | GTA | 32431.02 | pending | None | BIG | 37854.76 | pending | None |  |
 | 20261109T185935 | RED | TTWO | 25656.80 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T185935 | RED | GIGAINU | 15210.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T195934 | RED | TJR | 79294.58 | pending | None | UCI | 79669.59 | pending | None |  |
+| 20261109T195934 | RED | ORBIT | 42784.53 | pending | None | UCI | 79669.59 | pending | None |  |
+| 20261109T195934 | RED | Crypticum | 17372.52 | pending | None |  |  |  | None | no eligible comparator |
