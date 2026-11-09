@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 60 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 61 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 60 |
-| sightings | 3565 |
-| liquid sightings | 1411 |
-| first liquid sightings = unique tokens with an outcome row | 378 |
-|   young | 246 |
-|   mature | 112 |
+| eval-2 scans | 61 |
+| sightings | 3622 |
+| liquid sightings | 1437 |
+| first liquid sightings = unique tokens with an outcome row | 384 |
+|   young | 251 |
+|   mature | 113 |
 |   other | 20 |
-| young with a comparator (cap 2) | 29 |
-| young without a comparator | 217 |
+| young with a comparator (cap 2) | 31 |
+| young without a comparator | 220 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 14 |
+|   pairs: young or mature outcome not yet usable | 16 |
 | complete pairs (both 60m outcomes labelled) | 15 |
 | scans contributing a complete pair | 13 |
 
 ## 60m outcome status by group
 
-- young: labelled 174/246, no_valid_entry 7/246, pending 17/246, unknown 34/246, unreliable 14/246
-- mature: labelled 105/112, pending 4/112, unknown 3/112
-- no valid entry: young 7/246, mature 0/112
+- young: labelled 181/251, no_valid_entry 7/251, pending 14/251, unknown 35/251, unreliable 14/251
+- mature: labelled 105/113, pending 5/113, unknown 3/113
+- no valid entry: young 7/251, mature 0/113
 
 ## Effect (after costs; unit = scan)
 
@@ -44,6 +44,7 @@
 - 20261108T000003-5tCju6YN: APU (20261108T000003), FOMOCAT (20261108T000003)
 - 20261108T075957-A72sK9mP: GATOGLITCH (20261108T075957), CALLCAT (20261108T075957)
 - 20261109T025946-5xcEFpzK: S&P500up (20261109T025946), JENSEN (20261109T025946)
+- 20261109T035946-5wQn3vMR: PIRATE (20261109T035946), GPU (20261109T035946)
 
 ## Every pair
 
@@ -263,7 +264,7 @@
 | 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | labelled | 36.61 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | Heat | 15584.14 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | PUSSY | 249813.08 | labelled | -1.31 |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | DOOROC | 82082.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | DOOROC | 82082.15 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | chud | 74207.95 | labelled | -23.6 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | JensenAlice | 50578.95 | labelled | -31.7 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | EARN | 26553.63 | labelled | -40.76 |  |  |  | None | no eligible comparator |
@@ -283,15 +284,20 @@
 | 20261109T005947 | RED | GTA6KODAK | 15688.78 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | $MFRG | 15494.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | Pumpatars | 15289.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | JENSPY | 115582.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | BAWSAQ | 69586.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | ANT | 63799.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | QUINN | 31336.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | TITTYVERSE | 29516.47 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | Nvidiass | 28947.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T015946 | RED | BUFFER CAT | 23652.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | JENSPY | 115582.07 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | BAWSAQ | 69586.69 | labelled | 0.32 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | ANT | 63799.46 | labelled | -7.34 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | QUINN | 31336.66 | labelled | -35.5 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | TITTYVERSE | 29516.47 | labelled | 37.12 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | Nvidiass | 28947.81 | labelled | -28.81 |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | BUFFER CAT | 23652.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T025946 | NEUTRAL | S&P500up | 32910.82 | pending | None | chest | 19482.21 | pending | None |  |
 | 20261109T025946 | NEUTRAL | JENSEN | 32801.54 | pending | None | chest | 19482.21 | pending | None |  |
 | 20261109T025946 | NEUTRAL | SIGNS | 23613.37 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T025946 | NEUTRAL | DUE | 17436.51 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T025946 | NEUTRAL | ELYS | 17330.64 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T035946 | RED | Kypat | 114949.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T035946 | RED | PIRATE | 36583.59 | pending | None | SOLV | 21180.21 | pending | None |  |
+| 20261109T035946 | RED | GPU | 30814.78 | pending | None | SOLV | 21180.21 | pending | None |  |
+| 20261109T035946 | RED | FELIX | 18780.98 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T035946 | RED | GPU | 16884.04 | pending | None |  |  |  | None | comparators used twice |
