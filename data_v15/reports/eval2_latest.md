@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 59 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 60 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 59 |
-| sightings | 3509 |
-| liquid sightings | 1387 |
-| first liquid sightings = unique tokens with an outcome row | 369 |
-|   young | 241 |
-|   mature | 108 |
+| eval-2 scans | 60 |
+| sightings | 3565 |
+| liquid sightings | 1411 |
+| first liquid sightings = unique tokens with an outcome row | 378 |
+|   young | 246 |
+|   mature | 112 |
 |   other | 20 |
-| young with a comparator (cap 2) | 27 |
-| young without a comparator | 214 |
+| young with a comparator (cap 2) | 29 |
+| young without a comparator | 217 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 12 |
+|   pairs: young or mature outcome not yet usable | 14 |
 | complete pairs (both 60m outcomes labelled) | 15 |
 | scans contributing a complete pair | 13 |
 
 ## 60m outcome status by group
 
-- young: labelled 167/241, no_valid_entry 7/241, pending 21/241, unknown 32/241, unreliable 14/241
-- mature: labelled 105/108, unknown 3/108
-- no valid entry: young 7/241, mature 0/108
+- young: labelled 174/246, no_valid_entry 7/246, pending 17/246, unknown 34/246, unreliable 14/246
+- mature: labelled 105/112, pending 4/112, unknown 3/112
+- no valid entry: young 7/246, mature 0/112
 
 ## Effect (after costs; unit = scan)
 
@@ -43,6 +43,7 @@
 - 20261107T230003-9PPMpwdu: PMURT (20261107T230003), ABTC (20261107T230003)
 - 20261108T000003-5tCju6YN: APU (20261108T000003), FOMOCAT (20261108T000003)
 - 20261108T075957-A72sK9mP: GATOGLITCH (20261108T075957), CALLCAT (20261108T075957)
+- 20261109T025946-5xcEFpzK: S&P500up (20261109T025946), JENSEN (20261109T025946)
 
 ## Every pair
 
@@ -258,9 +259,9 @@
 | 20261108T195951 | NEUTRAL | Whashy | 19183.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | labelled | 36.81 |  |  |  | None | no eligible comparator |
-| 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | labelled | 36.61 |  |  |  | None | no eligible comparator |
-| 20261108T205950 | NEUTRAL | Heat | 15584.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T205950 | NEUTRAL | Heat | 15584.14 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | PUSSY | 249813.08 | labelled | -1.31 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | DOOROC | 82082.15 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | chud | 74207.95 | labelled | -23.6 |  |  |  | None | no eligible comparator |
@@ -273,13 +274,13 @@
 | 20261108T235948 | RED | NIVI | 27927.75 | labelled | -38.88 |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | ASS | 20506.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | BabyAnsem | 15891.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | PUSSY | 117383.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | Satan-Cat | 37858.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | NVIDIH | 37335.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | NVIDIA | 26985.88 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | SPY | 20708.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | VICECITY | 17180.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | GTA6KODAK | 15688.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | PUSSY | 117383.30 | labelled | 37.63 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | Satan-Cat | 37858.43 | labelled | 37.27 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | NVIDIH | 37335.93 | labelled | 37.27 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | NVIDIA | 26985.88 | labelled | -45.74 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | SPY | 20708.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | VICECITY | 17180.05 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | GTA6KODAK | 15688.78 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | $MFRG | 15494.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | Pumpatars | 15289.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | JENSPY | 115582.07 | pending | None |  |  |  | None | no eligible comparator |
@@ -289,3 +290,8 @@
 | 20261109T015946 | RED | TITTYVERSE | 29516.47 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | Nvidiass | 28947.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | BUFFER CAT | 23652.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T025946 | NEUTRAL | S&P500up | 32910.82 | pending | None | chest | 19482.21 | pending | None |  |
+| 20261109T025946 | NEUTRAL | JENSEN | 32801.54 | pending | None | chest | 19482.21 | pending | None |  |
+| 20261109T025946 | NEUTRAL | SIGNS | 23613.37 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T025946 | NEUTRAL | DUE | 17436.51 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T025946 | NEUTRAL | ELYS | 17330.64 | pending | None |  |  |  | None | comparators used twice |
