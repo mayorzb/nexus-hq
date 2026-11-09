@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 58 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 59 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 58 |
-| sightings | 3451 |
-| liquid sightings | 1361 |
-| first liquid sightings = unique tokens with an outcome row | 362 |
-|   young | 234 |
+| eval-2 scans | 59 |
+| sightings | 3509 |
+| liquid sightings | 1387 |
+| first liquid sightings = unique tokens with an outcome row | 369 |
+|   young | 241 |
 |   mature | 108 |
 |   other | 20 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 207 |
+| young without a comparator | 214 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 164/234, no_valid_entry 7/234, pending 18/234, unknown 31/234, unreliable 14/234
+- young: labelled 167/241, no_valid_entry 7/241, pending 21/241, unknown 32/241, unreliable 14/241
 - mature: labelled 105/108, unknown 3/108
-- no valid entry: young 7/234, mature 0/108
+- no valid entry: young 7/241, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -254,7 +254,7 @@
 | 20261108T195951 | NEUTRAL | JUMP | 35819.73 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | GROKIA | 35200.48 | labelled | -53.22 |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | Neurofly | 25206.35 | labelled | -60.71 |  |  |  | None | no eligible comparator |
-| 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T195951 | NEUTRAL | GROKIA | 21135.66 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | Whashy | 19183.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | SLINGOOR | 15359.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | PUSSY | 20126.95 | labelled | 36.81 |  |  |  | None | no eligible comparator |
@@ -269,9 +269,9 @@
 | 20261108T215950 | RED | GPU | 25429.59 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | NVIDIH | 25412.52 | labelled | -33.36 |  |  |  | None | no eligible comparator |
 | 20261108T225949 | RED | ZUCK | 17728.88 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T235948 | RED | S&P500 | 31286.44 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T235948 | RED | NIVI | 27927.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T235948 | RED | ASS | 20506.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | S&P500 | 31286.44 | labelled | -28.45 |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | NIVI | 27927.75 | labelled | -38.88 |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | ASS | 20506.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | BabyAnsem | 15891.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | PUSSY | 117383.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | Satan-Cat | 37858.43 | pending | None |  |  |  | None | no eligible comparator |
@@ -282,3 +282,10 @@
 | 20261109T005947 | RED | GTA6KODAK | 15688.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | $MFRG | 15494.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | Pumpatars | 15289.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | JENSPY | 115582.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | BAWSAQ | 69586.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | ANT | 63799.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | QUINN | 31336.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | TITTYVERSE | 29516.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | Nvidiass | 28947.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T015946 | RED | BUFFER CAT | 23652.63 | pending | None |  |  |  | None | no eligible comparator |
