@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 63 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 64 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 63 |
-| sightings | 3737 |
-| liquid sightings | 1483 |
-| first liquid sightings = unique tokens with an outcome row | 391 |
-|   young | 258 |
+| eval-2 scans | 64 |
+| sightings | 3800 |
+| liquid sightings | 1506 |
+| first liquid sightings = unique tokens with an outcome row | 394 |
+|   young | 261 |
 |   mature | 113 |
 |   other | 20 |
 | young with a comparator (cap 2) | 31 |
-| young without a comparator | 227 |
+| young without a comparator | 230 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 18 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 188/258, no_valid_entry 7/258, pending 11/258, unknown 37/258, unreliable 15/258
+- young: labelled 189/261, no_valid_entry 7/261, pending 11/261, unknown 39/261, unreliable 15/261
 - mature: labelled 110/113, unknown 3/113
-- no valid entry: young 7/258, mature 0/113
+- no valid entry: young 7/261, mature 0/113
 
 ## Effect (after costs; unit = scan)
 
@@ -282,8 +282,8 @@
 | 20261109T005947 | RED | SPY | 20708.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | VICECITY | 17180.05 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T005947 | RED | GTA6KODAK | 15688.78 | labelled | 36.53 |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | $MFRG | 15494.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T005947 | RED | Pumpatars | 15289.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | $MFRG | 15494.63 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | Pumpatars | 15289.93 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | JENSPY | 115582.07 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | BAWSAQ | 69586.69 | labelled | 0.32 |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | ANT | 63799.46 | labelled | -7.34 |  |  |  | None | no eligible comparator |
@@ -301,10 +301,13 @@
 | 20261109T035946 | RED | GPU | 30814.78 | labelled | -35.52 | SOLV | 21180.21 | labelled | 0.19 |  |
 | 20261109T035946 | RED | FELIX | 18780.98 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | GPU | 16884.04 | labelled | -31.55 |  |  |  | None | comparators used twice |
-| 20261109T045945 | RED | USNR | 25066.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T045945 | RED | USNR | 25066.94 | labelled | -2.88 |  |  |  | None | no eligible comparator |
 | 20261109T045945 | RED | SKYHOOK | 15372.28 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | BUIDL | 34501.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | LIMEKUMA | 24879.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | 牛逼 | 23745.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | HUNG | 23448.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T055944 | RED | 牛逼 | 16353.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | CACHE | 21335.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | hoss | 20701.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
