@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 61 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 62 scans: 34 pairs and 6 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 61 |
-| sightings | 3622 |
-| liquid sightings | 1437 |
-| first liquid sightings = unique tokens with an outcome row | 384 |
-|   young | 251 |
+| eval-2 scans | 62 |
+| sightings | 3680 |
+| liquid sightings | 1459 |
+| first liquid sightings = unique tokens with an outcome row | 386 |
+|   young | 253 |
 |   mature | 113 |
 |   other | 20 |
 | young with a comparator (cap 2) | 31 |
-| young without a comparator | 220 |
+| young without a comparator | 222 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 16 |
-| complete pairs (both 60m outcomes labelled) | 15 |
-| scans contributing a complete pair | 13 |
+|   pairs: young or mature outcome not yet usable | 15 |
+| complete pairs (both 60m outcomes labelled) | 16 |
+| scans contributing a complete pair | 14 |
 
 ## 60m outcome status by group
 
-- young: labelled 181/251, no_valid_entry 7/251, pending 14/251, unknown 35/251, unreliable 14/251
-- mature: labelled 105/113, pending 5/113, unknown 3/113
-- no valid entry: young 7/251, mature 0/113
+- young: labelled 184/253, no_valid_entry 7/253, pending 11/253, unknown 36/253, unreliable 15/253
+- mature: labelled 109/113, pending 1/113, unknown 3/113
+- no valid entry: young 7/253, mature 0/113
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.4 points, 95% interval (-51.5, -5.1); scans with young worse 10/13
-- Pairs with young worse: 12/15 (80.0%); pair mean -25.82, median -29.72
-- Big loss (<= -20%): young 9/15, mature 1/15
+- Scan-level mean difference (young - mature): -25.69 points, 95% interval (-48.3, -3.78); scans with young worse 10/14
+- Pairs with young worse: 12/16 (75.0%); pair mean -23.61, median -26.61
+- Big loss (<= -20%): young 10/16, mature 2/16
 
 ## Comparator reuse (cap 2)
 
@@ -270,7 +270,7 @@
 | 20261108T215950 | RED | EARN | 26553.63 | labelled | -40.76 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | GPU | 25429.59 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | NVIDIH | 25412.52 | labelled | -33.36 |  |  |  | None | no eligible comparator |
-| 20261108T225949 | RED | ZUCK | 17728.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T225949 | RED | ZUCK | 17728.88 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | S&P500 | 31286.44 | labelled | -28.45 |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | NIVI | 27927.75 | labelled | -38.88 |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | ASS | 20506.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -291,13 +291,15 @@
 | 20261109T015946 | RED | TITTYVERSE | 29516.47 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | Nvidiass | 28947.81 | labelled | -28.81 |  |  |  | None | no eligible comparator |
 | 20261109T015946 | RED | BUFFER CAT | 23652.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261109T025946 | NEUTRAL | S&P500up | 32910.82 | pending | None | chest | 19482.21 | pending | None |  |
-| 20261109T025946 | NEUTRAL | JENSEN | 32801.54 | pending | None | chest | 19482.21 | pending | None |  |
-| 20261109T025946 | NEUTRAL | SIGNS | 23613.37 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T025946 | NEUTRAL | DUE | 17436.51 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T025946 | NEUTRAL | S&P500up | 32910.82 | unreliable | None | chest | 19482.21 | labelled | -45.18 |  |
+| 20261109T025946 | NEUTRAL | JENSEN | 32801.54 | labelled | -35.66 | chest | 19482.21 | labelled | -45.18 |  |
+| 20261109T025946 | NEUTRAL | SIGNS | 23613.37 | labelled | -30.76 |  |  |  | None | comparators used twice |
+| 20261109T025946 | NEUTRAL | DUE | 17436.51 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261109T025946 | NEUTRAL | ELYS | 17330.64 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | Kypat | 114949.28 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T035946 | RED | PIRATE | 36583.59 | pending | None | SOLV | 21180.21 | pending | None |  |
 | 20261109T035946 | RED | GPU | 30814.78 | pending | None | SOLV | 21180.21 | pending | None |  |
 | 20261109T035946 | RED | FELIX | 18780.98 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | GPU | 16884.04 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T045945 | RED | USNR | 25066.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T045945 | RED | SKYHOOK | 15372.28 | pending | None |  |  |  | None | no eligible comparator |
