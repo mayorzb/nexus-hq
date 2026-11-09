@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 68 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 69 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 68 |
-| sightings | 4020 |
-| liquid sightings | 1589 |
-| first liquid sightings = unique tokens with an outcome row | 405 |
-|   young | 270 |
-|   mature | 115 |
-|   other | 20 |
+| eval-2 scans | 69 |
+| sightings | 4069 |
+| liquid sightings | 1614 |
+| first liquid sightings = unique tokens with an outcome row | 411 |
+|   young | 274 |
+|   mature | 116 |
+|   other | 21 |
 | young with a comparator (cap 2) | 33 |
-| young without a comparator | 237 |
+| young without a comparator | 241 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 18 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 197/270, no_valid_entry 8/270, pending 8/270, unknown 42/270, unreliable 15/270
-- mature: labelled 111/115, pending 1/115, unknown 3/115
-- no valid entry: young 8/270, mature 0/115
+- young: labelled 197/274, no_valid_entry 8/274, pending 11/274, unknown 42/274, unreliable 16/274
+- mature: labelled 111/116, pending 2/116, unknown 3/116
+- no valid entry: young 8/274, mature 0/116
 
 ## Effect (after costs; unit = scan)
 
@@ -314,10 +314,14 @@
 | 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T075943 | RED | BTC | 24512.34 | labelled | -29.33 |  |  |  | None | no eligible comparator |
 | 20261109T085942 | RED | Robinhood | 24557.81 | labelled | 36.99 |  |  |  | None | no eligible comparator |
-| 20261109T095941 | RED | ANCHOR | 26824.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T095941 | RED | ANCHOR | 26824.75 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T105941 | RED | HODLER | 100159.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T105941 | RED | 牛逼 | 34993.99 | pending | None | PTY | 26800.02 | pending | None |  |
 | 20261109T105941 | RED | cap | 26190.57 | pending | None | PTY | 26800.02 | pending | None |  |
 | 20261109T105941 | RED | Sheep | 17225.13 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T105941 | RED | SOLGATO | 17114.40 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T105941 | RED | SHF | 16103.95 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T115941 | RED | PAD | 131295.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | USRP | 97632.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | BANK | 25551.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T115941 | RED | iNu | 25090.00 | pending | None |  |  |  | None | no eligible comparator |
