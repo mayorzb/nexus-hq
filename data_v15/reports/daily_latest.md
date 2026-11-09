@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-09 15:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-09 16:04 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-09 15:03 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 16:59 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 57 / 24 | OK |
-| Deep-checked coins left UNVERIFIED | 22 of 56 (39%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 34 checked, 6 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 65 of 121 | WARN |
-| Paper candidates (last 24h) | 18 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 633 / 149 | ALERT |
+| Tokens seen / liquid (median per scan) | 57 / 23 | OK |
+| Deep-checked coins left UNVERIFIED | 17 of 48 (35%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 36 checked, 7 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 56 of 104 | WARN |
+| Paper candidates (last 24h) | 17 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 630 / 158 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (15:59), FLOAT (16:59), CATE (16:59), FLOAT (17:59), STONK (17:59), CATE (17:59), FLOAT (18:59), STONK (18:59), CATE (18:59), FLOAT (19:59), STONK (19:59), CATE (19:59), FLOAT (20:59), STONK (20:59), CATE (20:59), STONK (02:59), CATE (02:59), DESSA (02:59)
+Candidates: FLOAT (16:59), CATE (16:59), FLOAT (17:59), STONK (17:59), CATE (17:59), FLOAT (18:59), STONK (18:59), CATE (18:59), FLOAT (19:59), STONK (19:59), CATE (19:59), FLOAT (20:59), STONK (20:59), CATE (20:59), STONK (02:59), CATE (02:59), DESSA (02:59)
