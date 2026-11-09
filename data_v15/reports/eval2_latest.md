@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 69 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 70 scans: 30 pairs and 4 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 69 |
-| sightings | 4069 |
-| liquid sightings | 1614 |
-| first liquid sightings = unique tokens with an outcome row | 411 |
-|   young | 274 |
+| eval-2 scans | 70 |
+| sightings | 4122 |
+| liquid sightings | 1639 |
+| first liquid sightings = unique tokens with an outcome row | 416 |
+|   young | 279 |
 |   mature | 116 |
 |   other | 21 |
 | young with a comparator (cap 2) | 33 |
-| young without a comparator | 241 |
+| young without a comparator | 246 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 15 |
-| complete pairs (both 60m outcomes labelled) | 18 |
-| scans contributing a complete pair | 15 |
+|   pairs: young or mature outcome not yet usable | 13 |
+| complete pairs (both 60m outcomes labelled) | 20 |
+| scans contributing a complete pair | 16 |
 
 ## 60m outcome status by group
 
-- young: labelled 197/274, no_valid_entry 8/274, pending 11/274, unknown 42/274, unreliable 16/274
-- mature: labelled 111/116, pending 2/116, unknown 3/116
-- no valid entry: young 8/274, mature 0/116
+- young: labelled 201/279, no_valid_entry 8/279, pending 10/279, unknown 43/279, unreliable 17/279
+- mature: labelled 112/116, pending 1/116, unknown 3/116
+- no valid entry: young 8/279, mature 0/116
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.51 points, 95% interval (-49.76, -7.05); scans with young worse 11/15
-- Pairs with young worse: 14/18 (77.8%); pair mean -28.53, median -30.92
-- Big loss (<= -20%): young 12/18, mature 2/18
+- Scan-level mean difference (young - mature): -26.72 points, 95% interval (-47.24, -7.3); scans with young worse 11/16
+- Pairs with young worse: 14/20 (70.0%); pair mean -25.67, median -26.61
+- Big loss (<= -20%): young 12/20, mature 2/20
 
 ## Comparator reuse (cap 2)
 
@@ -311,17 +311,22 @@
 | 20261109T055944 | RED | 牛逼 | 16353.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | CACHE | 21335.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | hoss | 20701.08 | labelled | -30.92 |  |  |  | None | no eligible comparator |
-| 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T065943 | RED | BEAR | 18767.98 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261109T075943 | RED | BTC | 24512.34 | labelled | -29.33 |  |  |  | None | no eligible comparator |
 | 20261109T085942 | RED | Robinhood | 24557.81 | labelled | 36.99 |  |  |  | None | no eligible comparator |
 | 20261109T095941 | RED | ANCHOR | 26824.75 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T105941 | RED | HODLER | 100159.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T105941 | RED | 牛逼 | 34993.99 | pending | None | PTY | 26800.02 | pending | None |  |
-| 20261109T105941 | RED | cap | 26190.57 | pending | None | PTY | 26800.02 | pending | None |  |
-| 20261109T105941 | RED | Sheep | 17225.13 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T105941 | RED | SOLGATO | 17114.40 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T105941 | RED | SHF | 16103.95 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T105941 | RED | 牛逼 | 34993.99 | labelled | 37.23 | PTY | 26800.02 | labelled | 36.99 |  |
+| 20261109T105941 | RED | cap | 26190.57 | labelled | 37.04 | PTY | 26800.02 | labelled | 36.99 |  |
+| 20261109T105941 | RED | Sheep | 17225.13 | labelled | -37.97 |  |  |  | None | comparators used twice |
+| 20261109T105941 | RED | SOLGATO | 17114.40 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261109T105941 | RED | SHF | 16103.95 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261109T115941 | RED | PAD | 131295.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T115941 | RED | USRP | 97632.44 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T115941 | RED | BANK | 25551.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T115941 | RED | iNu | 25090.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | UGOBI | 137216.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | 牛逼 | 37161.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | MILES | 24227.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | shiken | 22314.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T125940 | RED | 真诚 | 15227.05 | pending | None |  |  |  | None | no eligible comparator |
