@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 57 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 58 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 57 |
-| sightings | 3395 |
-| liquid sightings | 1333 |
-| first liquid sightings = unique tokens with an outcome row | 353 |
-|   young | 225 |
+| eval-2 scans | 58 |
+| sightings | 3451 |
+| liquid sightings | 1361 |
+| first liquid sightings = unique tokens with an outcome row | 362 |
+|   young | 234 |
 |   mature | 108 |
 |   other | 20 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 198 |
+| young without a comparator | 207 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 164/225, no_valid_entry 7/225, pending 9/225, unknown 31/225, unreliable 14/225
+- young: labelled 164/234, no_valid_entry 7/234, pending 18/234, unknown 31/234, unreliable 14/234
 - mature: labelled 105/108, unknown 3/108
-- no valid entry: young 7/225, mature 0/108
+- no valid entry: young 7/234, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -273,3 +273,12 @@
 | 20261108T235948 | RED | NIVI | 27927.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | ASS | 20506.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T235948 | RED | BabyAnsem | 15891.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | PUSSY | 117383.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | Satan-Cat | 37858.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | NVIDIH | 37335.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | NVIDIA | 26985.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | SPY | 20708.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | VICECITY | 17180.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | GTA6KODAK | 15688.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | $MFRG | 15494.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T005947 | RED | Pumpatars | 15289.93 | pending | None |  |  |  | None | no eligible comparator |
