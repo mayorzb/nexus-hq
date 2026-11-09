@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 77 scans: 30 pairs and 4 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 78 scans: 28 pairs and 3 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 77 |
-| sightings | 4491 |
-| liquid sightings | 1799 |
-| first liquid sightings = unique tokens with an outcome row | 449 |
-|   young | 305 |
-|   mature | 119 |
+| eval-2 scans | 78 |
+| sightings | 4545 |
+| liquid sightings | 1827 |
+| first liquid sightings = unique tokens with an outcome row | 460 |
+|   young | 313 |
+|   mature | 122 |
 |   other | 25 |
-| young with a comparator (cap 2) | 38 |
-| young without a comparator | 267 |
+| young with a comparator (cap 2) | 42 |
+| young without a comparator | 271 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 18 |
-| complete pairs (both 60m outcomes labelled) | 20 |
-| scans contributing a complete pair | 16 |
+|   pairs: young or mature outcome not yet usable | 20 |
+| complete pairs (both 60m outcomes labelled) | 22 |
+| scans contributing a complete pair | 17 |
 
 ## 60m outcome status by group
 
-- young: labelled 219/305, no_valid_entry 9/305, pending 12/305, unknown 45/305, unreliable 20/305
-- mature: labelled 114/119, pending 2/119, unknown 3/119
-- no valid entry: young 9/305, mature 0/119
+- young: labelled 225/313, no_valid_entry 9/313, pending 12/313, unknown 47/313, unreliable 20/313
+- mature: labelled 115/122, pending 4/122, unknown 3/122
+- no valid entry: young 9/313, mature 0/122
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.72 points, 95% interval (-47.24, -7.3); scans with young worse 11/16
-- Pairs with young worse: 14/20 (70.0%); pair mean -25.67, median -26.61
-- Big loss (<= -20%): young 12/20, mature 2/20
+- Scan-level mean difference (young - mature): -27.08 points, 95% interval (-46.0, -8.34); scans with young worse 12/17
+- Pairs with young worse: 16/22 (72.7%); pair mean -26.32, median -29.96
+- Big loss (<= -20%): young 14/22, mature 2/22
 
 ## Comparator reuse (cap 2)
 
@@ -48,6 +48,8 @@
 - 20261109T105941-Ao6rgPZB: 牛逼 (20261109T105941), cap (20261109T105941)
 - 20261109T185935-34DXEU2t: BEAUTY (20261109T185935), GTA (20261109T185935)
 - 20261109T195934-FZcbX6uB: TJR (20261109T195934), ORBIT (20261109T195934)
+- 20261109T205934-22JKmY9Y: MAYA (20261109T205934), HWAN (20261109T205934)
+- 20261109T205934-XeaWBDDB: tagcat (20261109T205934), CAT (20261109T205934)
 
 ## Every pair
 
@@ -338,8 +340,8 @@
 | 20261109T135939 | RED | Elysium | 27280.45 | labelled | -30.48 |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | BARKET | 19106.24 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T135939 | RED | 牛逼 | 16049.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261109T145938 | RED | MILES | 58970.84 | pending | None | MYWAY | 69070.18 | labelled | -15.63 |  |
-| 20261109T145938 | RED | SI6900 | 18752.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T145938 | RED | MILES | 58970.84 | unknown | None | MYWAY | 69070.18 | labelled | -15.63 |  |
+| 20261109T145938 | RED | SI6900 | 18752.53 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261109T155937 | RED | MAX | 87992.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T155937 | RED | OpenClaw | 18650.55 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | FMCROWN | 97256.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -349,12 +351,20 @@
 | 20261109T165936 | RED | LASTTRUCK | 25352.30 | labelled | -47.53 |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | cupsey | 20334.34 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261109T175936 | RED | Cupsey | 35821.77 | labelled | 37.24 |  |  |  | None | no eligible comparator |
-| 20261109T185935 | RED | Ageowl | 102761.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T185935 | RED | SINU | 90297.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T185935 | RED | BEAUTY | 37931.38 | pending | None | BIG | 37854.76 | pending | None |  |
-| 20261109T185935 | RED | GTA | 32431.02 | pending | None | BIG | 37854.76 | pending | None |  |
-| 20261109T185935 | RED | TTWO | 25656.80 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T185935 | RED | GIGAINU | 15210.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T185935 | RED | Ageowl | 102761.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T185935 | RED | SINU | 90297.78 | labelled | 37.58 |  |  |  | None | no eligible comparator |
+| 20261109T185935 | RED | BEAUTY | 37931.38 | labelled | -38.48 | BIG | 37854.76 | labelled | -2.9 |  |
+| 20261109T185935 | RED | GTA | 32431.02 | labelled | -33.11 | BIG | 37854.76 | labelled | -2.9 |  |
+| 20261109T185935 | RED | TTWO | 25656.80 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261109T185935 | RED | GIGAINU | 15210.46 | labelled | -22.18 |  |  |  | None | no eligible comparator |
 | 20261109T195934 | RED | TJR | 79294.58 | pending | None | UCI | 79669.59 | pending | None |  |
 | 20261109T195934 | RED | ORBIT | 42784.53 | pending | None | UCI | 79669.59 | pending | None |  |
 | 20261109T195934 | RED | Crypticum | 17372.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T205934 | RED | MAYA | 82123.45 | pending | None | Pepetide | 53083.95 | pending | None |  |
+| 20261109T205934 | RED | HWAN | 47634.00 | pending | None | Pepetide | 53083.95 | pending | None |  |
+| 20261109T205934 | RED | ITSOVER9K | 40820.22 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | tagcat | 29445.61 | pending | None | MERLYN | 18695.26 | pending | None |  |
+| 20261109T205934 | RED | CAT | 24211.74 | pending | None | MERLYN | 18695.26 | pending | None |  |
+| 20261109T205934 | RED | TAPCAT | 24100.80 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | TAXCAT | 21806.42 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | TAPCAT | 17035.10 | pending | None |  |  |  | None | comparators used twice |
