@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 79 scans: 26 pairs and 2 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 80 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 79 |
-| sightings | 4596 |
-| liquid sightings | 1847 |
-| first liquid sightings = unique tokens with an outcome row | 463 |
-|   young | 314 |
-|   mature | 124 |
+| eval-2 scans | 80 |
+| sightings | 4652 |
+| liquid sightings | 1868 |
+| first liquid sightings = unique tokens with an outcome row | 468 |
+|   young | 317 |
+|   mature | 126 |
 |   other | 25 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 272 |
+| young without a comparator | 275 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 18 |
-| complete pairs (both 60m outcomes labelled) | 24 |
-| scans contributing a complete pair | 18 |
+|   pairs: young or mature outcome not yet usable | 15 |
+| complete pairs (both 60m outcomes labelled) | 27 |
+| scans contributing a complete pair | 19 |
 
 ## 60m outcome status by group
 
-- young: labelled 228/314, no_valid_entry 9/314, pending 10/314, unknown 47/314, unreliable 20/314
-- mature: labelled 116/124, pending 5/124, unknown 3/124
-- no valid entry: young 9/314, mature 0/124
+- young: labelled 233/317, no_valid_entry 10/317, pending 6/317, unknown 48/317, unreliable 20/317
+- mature: labelled 119/126, pending 4/126, unknown 3/126
+- no valid entry: young 10/317, mature 0/126
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.15 points, 95% interval (-44.06, -7.43); scans with young worse 12/18
-- Pairs with young worse: 17/24 (70.8%); pair mean -23.5, median -27.63
-- Big loss (<= -20%): young 15/24, mature 2/24
+- Scan-level mean difference (young - mature): -25.46 points, 95% interval (-42.85, -8.68); scans with young worse 13/19
+- Pairs with young worse: 20/27 (74.1%); pair mean -24.33, median -25.55
+- Big loss (<= -20%): young 18/27, mature 4/27
 
 ## Comparator reuse (cap 2)
 
@@ -345,7 +345,7 @@
 | 20261109T155937 | RED | MAX | 87992.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T155937 | RED | OpenClaw | 18650.55 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | FMCROWN | 97256.62 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261109T165936 | RED | HODL | 66498.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T165936 | RED | HODL | 66498.12 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | QUAKE | 42916.37 | labelled | -37.19 |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | GTA | 27534.87 | labelled | -33.98 |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | LASTTRUCK | 25352.30 | labelled | -47.53 |  |  |  | None | no eligible comparator |
@@ -360,12 +360,15 @@
 | 20261109T195934 | RED | TJR | 79294.58 | labelled | -28.94 | UCI | 79669.59 | labelled | -3.39 |  |
 | 20261109T195934 | RED | ORBIT | 42784.53 | labelled | 37.33 | UCI | 79669.59 | labelled | -3.39 |  |
 | 20261109T195934 | RED | Crypticum | 17372.52 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261109T205934 | RED | MAYA | 82123.45 | pending | None | Pepetide | 53083.95 | pending | None |  |
-| 20261109T205934 | RED | HWAN | 47634.00 | pending | None | Pepetide | 53083.95 | pending | None |  |
-| 20261109T205934 | RED | ITSOVER9K | 40820.22 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T205934 | RED | tagcat | 29445.61 | pending | None | MERLYN | 18695.26 | pending | None |  |
-| 20261109T205934 | RED | CAT | 24211.74 | pending | None | MERLYN | 18695.26 | pending | None |  |
-| 20261109T205934 | RED | TAPCAT | 24100.80 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | MAYA | 82123.45 | labelled | -36.7 | Pepetide | 53083.95 | labelled | -28.35 |  |
+| 20261109T205934 | RED | HWAN | 47634.00 | labelled | -31.99 | Pepetide | 53083.95 | labelled | -28.35 |  |
+| 20261109T205934 | RED | ITSOVER9K | 40820.22 | no_valid_entry | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | tagcat | 29445.61 | pending | None | MERLYN | 18695.26 | labelled | -9.35 |  |
+| 20261109T205934 | RED | CAT | 24211.74 | labelled | -90.2 | MERLYN | 18695.26 | labelled | -9.35 |  |
+| 20261109T205934 | RED | TAPCAT | 24100.80 | labelled | -30.95 |  |  |  | None | comparators used twice |
 | 20261109T205934 | RED | TAXCAT | 21806.42 | pending | None |  |  |  | None | comparators used twice |
-| 20261109T205934 | RED | TAPCAT | 17035.10 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | TAPCAT | 17035.10 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261109T215934 | NEUTRAL | SYGNAL | 20274.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | PMURT | 138298.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | GPU | 42366.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | BTC | 41680.30 | pending | None |  |  |  | None | no eligible comparator |
