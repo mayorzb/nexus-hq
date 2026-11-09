@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 66 scans: 32 pairs and 5 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 67 scans: 32 pairs and 5 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 66 |
-| sightings | 3914 |
-| liquid sightings | 1546 |
-| first liquid sightings = unique tokens with an outcome row | 397 |
-|   young | 263 |
+| eval-2 scans | 67 |
+| sightings | 3968 |
+| liquid sightings | 1565 |
+| first liquid sightings = unique tokens with an outcome row | 398 |
+|   young | 264 |
 |   mature | 114 |
 |   other | 20 |
 | young with a comparator (cap 2) | 31 |
-| young without a comparator | 232 |
+| young without a comparator | 233 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 13 |
 | complete pairs (both 60m outcomes labelled) | 18 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 195/263, no_valid_entry 8/263, pending 5/263, unknown 40/263, unreliable 15/263
+- young: labelled 196/264, no_valid_entry 8/264, pending 4/264, unknown 41/264, unreliable 15/264
 - mature: labelled 110/114, pending 1/114, unknown 3/114
-- no valid entry: young 8/263, mature 0/114
+- no valid entry: young 8/264, mature 0/114
 
 ## Effect (after costs; unit = scan)
 
@@ -299,7 +299,7 @@
 | 20261109T035946 | RED | Kypat | 114949.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T035946 | RED | PIRATE | 36583.59 | labelled | -100.0 | SOLV | 21180.21 | labelled | 0.19 |  |
 | 20261109T035946 | RED | GPU | 30814.78 | labelled | -35.52 | SOLV | 21180.21 | labelled | 0.19 |  |
-| 20261109T035946 | RED | FELIX | 18780.98 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T035946 | RED | FELIX | 18780.98 | unknown | None |  |  |  | None | comparators used twice |
 | 20261109T035946 | RED | GPU | 16884.04 | labelled | -31.55 |  |  |  | None | comparators used twice |
 | 20261109T045945 | RED | USNR | 25066.94 | labelled | -2.88 |  |  |  | None | no eligible comparator |
 | 20261109T045945 | RED | SKYHOOK | 15372.28 | pending | None |  |  |  | None | no eligible comparator |
@@ -311,5 +311,6 @@
 | 20261109T065943 | RED | CACHE | 21335.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | hoss | 20701.08 | labelled | -30.92 |  |  |  | None | no eligible comparator |
 | 20261109T065943 | RED | BEAR | 18767.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T075943 | RED | BTC | 24512.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T075943 | RED | BTC | 24512.34 | labelled | -29.33 |  |  |  | None | no eligible comparator |
 | 20261109T085942 | RED | Robinhood | 24557.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T095941 | RED | ANCHOR | 26824.75 | pending | None |  |  |  | None | no eligible comparator |
