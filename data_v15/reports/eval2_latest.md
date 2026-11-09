@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 56 scans: 35 pairs and 7 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 57 scans: 35 pairs and 7 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 56 |
-| sightings | 3337 |
-| liquid sightings | 1310 |
-| first liquid sightings = unique tokens with an outcome row | 348 |
-|   young | 221 |
+| eval-2 scans | 57 |
+| sightings | 3395 |
+| liquid sightings | 1333 |
+| first liquid sightings = unique tokens with an outcome row | 353 |
+|   young | 225 |
 |   mature | 108 |
-|   other | 19 |
+|   other | 20 |
 | young with a comparator (cap 2) | 27 |
-| young without a comparator | 194 |
+| young without a comparator | 198 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 12 |
 | complete pairs (both 60m outcomes labelled) | 15 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 158/221, no_valid_entry 7/221, pending 12/221, unknown 30/221, unreliable 14/221
+- young: labelled 164/225, no_valid_entry 7/225, pending 9/225, unknown 31/225, unreliable 14/225
 - mature: labelled 105/108, unknown 3/108
-- no valid entry: young 7/221, mature 0/108
+- no valid entry: young 7/225, mature 0/108
 
 ## Effect (after costs; unit = scan)
 
@@ -247,7 +247,7 @@
 | 20261108T165954 | NEUTRAL | Slinguur | 15719.63 | labelled | 36.54 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | BTC | 143042.02 | labelled | 37.66 |  |  |  | None | no eligible comparator |
 | 20261108T175953 | NEUTRAL | SAFU | 35570.45 | labelled | 37.24 |  |  |  | None | no eligible comparator |
-| 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T175953 | NEUTRAL | Scamgoor | 21511.79 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | STOKE | 40586.88 | labelled | -30.43 |  |  |  | None | no eligible comparator |
 | 20261108T185952 | NEUTRAL | SLINGOOR | 40026.98 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261108T195951 | NEUTRAL | ARTCOIN | 52526.16 | labelled | -34.77 |  |  |  | None | no eligible comparator |
@@ -261,11 +261,15 @@
 | 20261108T205950 | NEUTRAL | ANSEM | 16913.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | DOGWIF | 16693.33 | labelled | 36.61 |  |  |  | None | no eligible comparator |
 | 20261108T205950 | NEUTRAL | Heat | 15584.14 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | PUSSY | 249813.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | PUSSY | 249813.08 | labelled | -1.31 |  |  |  | None | no eligible comparator |
 | 20261108T215950 | RED | DOOROC | 82082.15 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | chud | 74207.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | JensenAlice | 50578.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | EARN | 26553.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | GPU | 25429.59 | pending | None |  |  |  | None | no eligible comparator |
-| 20261108T215950 | RED | NVIDIH | 25412.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | chud | 74207.95 | labelled | -23.6 |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | JensenAlice | 50578.95 | labelled | -31.7 |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | EARN | 26553.63 | labelled | -40.76 |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | GPU | 25429.59 | labelled | 37.02 |  |  |  | None | no eligible comparator |
+| 20261108T215950 | RED | NVIDIH | 25412.52 | labelled | -33.36 |  |  |  | None | no eligible comparator |
 | 20261108T225949 | RED | ZUCK | 17728.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | S&P500 | 31286.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | NIVI | 27927.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | ASS | 20506.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261108T235948 | RED | BabyAnsem | 15891.66 | pending | None |  |  |  | None | no eligible comparator |
