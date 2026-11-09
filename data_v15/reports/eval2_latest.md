@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 74 scans: 30 pairs and 4 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 75 scans: 30 pairs and 4 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 74 |
-| sightings | 4333 |
-| liquid sightings | 1728 |
-| first liquid sightings = unique tokens with an outcome row | 434 |
-|   young | 295 |
+| eval-2 scans | 75 |
+| sightings | 4385 |
+| liquid sightings | 1750 |
+| first liquid sightings = unique tokens with an outcome row | 436 |
+|   young | 296 |
 |   mature | 117 |
-|   other | 22 |
+|   other | 23 |
 | young with a comparator (cap 2) | 34 |
-| young without a comparator | 261 |
+| young without a comparator | 262 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 14 |
 | complete pairs (both 60m outcomes labelled) | 20 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 213/295, no_valid_entry 8/295, pending 11/295, unknown 44/295, unreliable 19/295
+- young: labelled 214/296, no_valid_entry 8/296, pending 10/296, unknown 44/296, unreliable 20/296
 - mature: labelled 114/117, unknown 3/117
-- no valid entry: young 8/295, mature 0/117
+- no valid entry: young 8/296, mature 0/117
 
 ## Effect (after costs; unit = scan)
 
@@ -338,11 +338,12 @@
 | 20261109T135939 | RED | 牛逼 | 16049.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T145938 | RED | MILES | 58970.84 | pending | None | MYWAY | 69070.18 | labelled | -15.63 |  |
 | 20261109T145938 | RED | SI6900 | 18752.53 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T155937 | RED | MAX | 87992.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T155937 | RED | OpenClaw | 18650.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T155937 | RED | MAX | 87992.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T155937 | RED | OpenClaw | 18650.55 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | FMCROWN | 97256.62 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | HODL | 66498.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | QUAKE | 42916.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | GTA | 27534.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | LASTTRUCK | 25352.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T165936 | RED | cupsey | 20334.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T175936 | RED | Cupsey | 35821.77 | pending | None |  |  |  | None | no eligible comparator |
