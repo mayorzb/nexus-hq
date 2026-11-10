@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 82 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 83 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 82 |
-| sightings | 4760 |
-| liquid sightings | 1915 |
-| first liquid sightings = unique tokens with an outcome row | 480 |
-|   young | 323 |
-|   mature | 130 |
+| eval-2 scans | 83 |
+| sightings | 4812 |
+| liquid sightings | 1940 |
+| first liquid sightings = unique tokens with an outcome row | 486 |
+|   young | 328 |
+|   mature | 131 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 281 |
+| young without a comparator | 286 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 237/323, no_valid_entry 10/323, pending 7/323, unknown 49/323, unreliable 20/323
-- mature: labelled 123/130, pending 4/130, unknown 3/130
-- no valid entry: young 10/323, mature 0/130
+- young: labelled 238/328, no_valid_entry 10/328, pending 11/328, unknown 49/328, unreliable 20/328
+- mature: labelled 125/131, pending 3/131, unknown 3/131
+- no valid entry: young 10/328, mature 0/131
 
 ## Effect (after costs; unit = scan)
 
@@ -372,9 +372,14 @@
 | 20261109T225933 | NEUTRAL | PMURT | 138298.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | GPU | 42366.86 | labelled | -27.84 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | BTC | 41680.30 | labelled | -38.1 |  |  |  | None | no eligible comparator |
-| 20261109T235932 | NEUTRAL | BORLY | 59158.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T235932 | NEUTRAL | BORLY | 59158.91 | labelled | 37.46 |  |  |  | None | no eligible comparator |
 | 20261109T235932 | NEUTRAL | ANSEM | 38486.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | MONTRA | 87345.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | OnlyCats | 78019.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | CUTLINE | 21439.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | NVIDIOT | 21173.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | MEOW | 48737.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | UODF | 33868.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | HABIBI | 23612.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | MANK | 15389.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | Billie | 15133.62 | pending | None |  |  |  | None | no eligible comparator |
