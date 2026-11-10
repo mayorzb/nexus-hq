@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 84 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 85 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 84 |
-| sightings | 4866 |
-| liquid sightings | 1961 |
-| first liquid sightings = unique tokens with an outcome row | 489 |
-|   young | 329 |
-|   mature | 133 |
+| eval-2 scans | 85 |
+| sightings | 4919 |
+| liquid sightings | 1983 |
+| first liquid sightings = unique tokens with an outcome row | 494 |
+|   young | 332 |
+|   mature | 135 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 287 |
+| young without a comparator | 290 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 242/329, no_valid_entry 10/329, pending 6/329, unknown 51/329, unreliable 20/329
-- mature: labelled 127/133, pending 3/133, unknown 3/133
-- no valid entry: young 10/329, mature 0/133
+- young: labelled 246/332, no_valid_entry 10/332, pending 4/332, unknown 51/332, unreliable 21/332
+- mature: labelled 128/135, pending 4/135, unknown 3/135
+- no valid entry: young 10/332, mature 0/135
 
 ## Effect (after costs; unit = scan)
 
@@ -378,9 +378,12 @@
 | 20261110T005931 | NEUTRAL | OnlyCats | 78019.31 | labelled | -1.22 |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | CUTLINE | 21439.41 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T005931 | NEUTRAL | NVIDIOT | 21173.37 | labelled | -28.57 |  |  |  | None | no eligible comparator |
-| 20261110T015930 | NEUTRAL | MEOW | 48737.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T015930 | NEUTRAL | UODF | 33868.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T015930 | NEUTRAL | HABIBI | 23612.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T015930 | NEUTRAL | MANK | 15389.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T015930 | NEUTRAL | Billie | 15133.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | MEOW | 48737.70 | labelled | -28.28 |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | UODF | 33868.37 | labelled | 37.21 |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | HABIBI | 23612.73 | labelled | -37.66 |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | MANK | 15389.73 | labelled | -28.53 |  |  |  | None | no eligible comparator |
+| 20261110T015930 | NEUTRAL | Billie | 15133.62 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261110T025929 | NEUTRAL | 牛逼 | 112145.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T035928 | NEUTRAL | POCKET | 35918.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T035928 | NEUTRAL | MarsCoin | 25739.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T035928 | NEUTRAL | AICoin | 25350.57 | pending | None |  |  |  | None | no eligible comparator |
