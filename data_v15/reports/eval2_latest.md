@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 88 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 89 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 88 |
-| sightings | 5089 |
-| liquid sightings | 2053 |
-| first liquid sightings = unique tokens with an outcome row | 510 |
-|   young | 342 |
-|   mature | 141 |
+| eval-2 scans | 89 |
+| sightings | 5143 |
+| liquid sightings | 2073 |
+| first liquid sightings = unique tokens with an outcome row | 513 |
+|   young | 343 |
+|   mature | 143 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 300 |
+| young without a comparator | 301 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 253/342, no_valid_entry 11/342, pending 5/342, unknown 52/342, unreliable 21/342
-- mature: labelled 134/141, pending 4/141, unknown 3/141
-- no valid entry: young 11/342, mature 0/141
+- young: labelled 256/343, no_valid_entry 11/343, pending 3/343, unknown 52/343, unreliable 21/343
+- mature: labelled 136/143, pending 4/143, unknown 3/143
+- no valid entry: young 11/343, mature 0/143
 
 ## Effect (after costs; unit = scan)
 
@@ -393,7 +393,8 @@
 | 20261110T045928 | NEUTRAL | RWO | 17289.14 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | DINGA | 17286.37 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | BREW | 15961.82 | labelled | -29.01 |  |  |  | None | no eligible comparator |
-| 20261110T055928 | NEUTRAL | MUBBO | 23000.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T055928 | NEUTRAL | PERPULATOR | 22637.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T055928 | NEUTRAL | CLASSICS | 18566.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T055928 | NEUTRAL | MUBBO | 23000.82 | labelled | -28.19 |  |  |  | None | no eligible comparator |
+| 20261110T055928 | NEUTRAL | PERPULATOR | 22637.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T055928 | NEUTRAL | CLASSICS | 18566.03 | labelled | 36.73 |  |  |  | None | no eligible comparator |
 | 20261110T065927 | NEUTRAL | Grok | 36897.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T075927 | NEUTRAL | HAMWS | 68293.20 | pending | None |  |  |  | None | no eligible comparator |
