@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 103 scans: 20 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 104 scans: 20 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 103 |
-| sightings | 5904 |
-| liquid sightings | 2399 |
-| first liquid sightings = unique tokens with an outcome row | 574 |
-|   young | 388 |
-|   mature | 158 |
+| eval-2 scans | 104 |
+| sightings | 5959 |
+| liquid sightings | 2421 |
+| first liquid sightings = unique tokens with an outcome row | 578 |
+|   young | 390 |
+|   mature | 160 |
 |   other | 28 |
 | young with a comparator (cap 2) | 47 |
-| young without a comparator | 341 |
+| young without a comparator | 343 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 17 |
 | complete pairs (both 60m outcomes labelled) | 30 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 289/388, no_valid_entry 12/388, pending 8/388, unknown 58/388, unreliable 21/388
-- mature: labelled 153/158, pending 1/158, unknown 4/158
-- no valid entry: young 12/388, mature 0/158
+- young: labelled 294/390, no_valid_entry 12/390, pending 5/390, unknown 58/390, unreliable 21/390
+- mature: labelled 153/160, pending 3/160, unknown 4/160
+- no valid entry: young 12/390, mature 0/160
 
 ## Effect (after costs; unit = scan)
 
@@ -439,9 +439,11 @@
 | 20261110T195920 | RED | DACITY | 77181.34 | labelled | 37.54 | WASTED | 109108.79 | labelled | -3.79 |  |
 | 20261110T195920 | RED | Catcity | 26291.32 | labelled | 37.04 |  |  |  | None | no eligible comparator |
 | 20261110T195920 | RED | Rings | 15229.18 | labelled | -28.53 |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | ARUVIS | 104137.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | FME | 36800.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | GTAX | 29772.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | HOLD | 24796.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | ARUVIS | 104137.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | FME | 36800.93 | labelled | -79.89 |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | GTAX | 29772.64 | labelled | -40.94 |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | HOLD | 24796.11 | labelled | 37.0 |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | Looby | 19524.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | XCAT | 15404.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | XCAT | 15404.26 | labelled | 36.51 |  |  |  | None | no eligible comparator |
+| 20261110T225919 | RED | HOLD | 41232.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T225919 | RED | WHF | 26471.04 | pending | None |  |  |  | None | no eligible comparator |
