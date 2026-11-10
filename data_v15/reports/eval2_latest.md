@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 100 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 101 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 100 |
-| sightings | 5733 |
-| liquid sightings | 2325 |
-| first liquid sightings = unique tokens with an outcome row | 561 |
-|   young | 378 |
-|   mature | 155 |
+| eval-2 scans | 101 |
+| sightings | 5790 |
+| liquid sightings | 2350 |
+| first liquid sightings = unique tokens with an outcome row | 567 |
+|   young | 382 |
+|   mature | 157 |
 |   other | 28 |
-| young with a comparator (cap 2) | 45 |
-| young without a comparator | 333 |
+| young with a comparator (cap 2) | 47 |
+| young without a comparator | 335 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 18 |
+|   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 27 |
 | scans contributing a complete pair | 19 |
 
 ## 60m outcome status by group
 
-- young: labelled 282/378, no_valid_entry 12/378, pending 7/378, unknown 56/378, unreliable 21/378
-- mature: labelled 149/155, pending 3/155, unknown 3/155
-- no valid entry: young 12/378, mature 0/155
+- young: labelled 283/382, no_valid_entry 12/382, pending 9/382, unknown 57/382, unreliable 21/382
+- mature: labelled 150/157, pending 3/157, unknown 4/157
+- no valid entry: young 12/382, mature 0/157
 
 ## Effect (after costs; unit = scan)
 
@@ -51,6 +51,7 @@
 - 20261109T205934-22JKmY9Y: MAYA (20261109T205934), HWAN (20261109T205934)
 - 20261109T205934-XeaWBDDB: tagcat (20261109T205934), CAT (20261109T205934)
 - 20261110T185920-8riMEL1o: PPP (20261110T185920), VC (20261110T185920)
+- 20261110T195920-GexThZHg: LEONIDA (20261110T195920), DACITY (20261110T195920)
 
 ## Every pair
 
@@ -416,7 +417,7 @@
 | 20261110T125924 | NEUTRAL | Goma | 20386.25 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | GOMA | 17149.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T135923 | RED | Inuployed | 36876.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261110T135923 | RED | ELONJONG | 15974.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | ELONJONG | 15974.60 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T135923 | RED | PokéMeal | 15625.83 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | WRL | 28473.73 | labelled | -35.04 |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | X | 24437.93 | labelled | -28.05 |  |  |  | None | no eligible comparator |
@@ -428,9 +429,13 @@
 | 20261110T165921 | RED | DacityCoin | 38981.55 | labelled | 37.29 |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | DAKITTY | 30817.83 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | GALVANI | 18680.65 | labelled | -48.89 |  |  |  | None | no eligible comparator |
-| 20261110T175920 | RED | EDMUND | 18690.71 | pending | None | CB | 21386.92 | pending | None |  |
+| 20261110T175920 | RED | EDMUND | 18690.71 | labelled | -100.0 | CB | 21386.92 | unknown | None |  |
 | 20261110T185920 | RED | HCAT | 67428.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T185920 | RED | PPP | 25987.94 | pending | None | miaoudame | 25245.81 | pending | None |  |
 | 20261110T185920 | RED | VC | 25434.87 | pending | None | miaoudame | 25245.81 | pending | None |  |
 | 20261110T185920 | RED | 奶蛙 | 16728.45 | pending | None |  |  |  | None | comparators used twice |
 | 20261110T185920 | RED | up | 15981.73 | pending | None |  |  |  | None | comparators used twice |
+| 20261110T195920 | RED | LEONIDA | 90155.48 | pending | None | WASTED | 109108.79 | pending | None |  |
+| 20261110T195920 | RED | DACITY | 77181.34 | pending | None | WASTED | 109108.79 | pending | None |  |
+| 20261110T195920 | RED | Catcity | 26291.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T195920 | RED | Rings | 15229.18 | pending | None |  |  |  | None | no eligible comparator |
