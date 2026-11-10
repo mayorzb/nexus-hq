@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 92 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 93 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 92 |
-| sightings | 5306 |
-| liquid sightings | 2139 |
-| first liquid sightings = unique tokens with an outcome row | 528 |
-|   young | 353 |
-|   mature | 148 |
+| eval-2 scans | 93 |
+| sightings | 5362 |
+| liquid sightings | 2161 |
+| first liquid sightings = unique tokens with an outcome row | 533 |
+|   young | 356 |
+|   mature | 150 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 311 |
+| young without a comparator | 314 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 263/353, no_valid_entry 11/353, pending 5/353, unknown 53/353, unreliable 21/353
-- mature: labelled 142/148, pending 3/148, unknown 3/148
-- no valid entry: young 11/353, mature 0/148
+- young: labelled 264/356, no_valid_entry 11/356, pending 7/356, unknown 53/356, unreliable 21/356
+- mature: labelled 143/150, pending 4/150, unknown 3/150
+- no valid entry: young 11/356, mature 0/150
 
 ## Effect (after costs; unit = scan)
 
@@ -403,8 +403,11 @@
 | 20261110T085927 | NEUTRAL | X | 27305.58 | labelled | 37.07 |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | AMPED | 25381.60 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | X | 19716.04 | labelled | 36.79 |  |  |  | None | no eligible comparator |
-| 20261110T095926 | NEUTRAL | DERP404 | 105109.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | DERP404 | 105109.16 | labelled | 37.61 |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | WILL | 23008.14 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | CHOO | 34430.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | MLC | 25038.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | TRUMP | 20277.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | CHAINCHOMP131 | 16298.76 | pending | None |  |  |  | None | no eligible comparator |
