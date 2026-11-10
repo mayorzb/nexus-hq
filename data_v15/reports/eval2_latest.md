@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 96 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 97 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 96 |
-| sightings | 5521 |
-| liquid sightings | 2232 |
-| first liquid sightings = unique tokens with an outcome row | 546 |
-|   young | 366 |
+| eval-2 scans | 97 |
+| sightings | 5567 |
+| liquid sightings | 2255 |
+| first liquid sightings = unique tokens with an outcome row | 549 |
+|   young | 369 |
 |   mature | 152 |
 |   other | 28 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 324 |
+| young without a comparator | 327 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 270/366, no_valid_entry 12/366, pending 10/366, unknown 53/366, unreliable 21/366
+- young: labelled 272/369, no_valid_entry 12/369, pending 9/369, unknown 55/369, unreliable 21/369
 - mature: labelled 149/152, unknown 3/152
-- no valid entry: young 12/366, mature 0/152
+- no valid entry: young 12/369, mature 0/152
 
 ## Effect (after costs; unit = scan)
 
@@ -404,8 +404,8 @@
 | 20261110T085927 | NEUTRAL | AMPED | 25381.60 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | X | 19716.04 | labelled | 36.79 |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | DERP404 | 105109.16 | labelled | 37.61 |  |  |  | None | no eligible comparator |
-| 20261110T095926 | NEUTRAL | WILL | 23008.14 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | WILL | 23008.14 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | CHOO | 34430.74 | labelled | 37.22 |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T115925 | NEUTRAL | MLC | 25038.79 | labelled | 37.0 |  |  |  | None | no eligible comparator |
@@ -414,10 +414,13 @@
 | 20261110T125924 | NEUTRAL | 1 | 33900.99 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | Goma | 20386.25 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | GOMA | 17149.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261110T135923 | RED | Inuployed | 36876.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | Inuployed | 36876.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T135923 | RED | ELONJONG | 15974.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T135923 | RED | PokéMeal | 15625.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | PokéMeal | 15625.83 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | WRL | 28473.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | X | 24437.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | HEPE | 18247.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | CASINO | 16224.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | Nearg | 108993.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | ansem | 24538.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | If | 20273.84 | pending | None |  |  |  | None | no eligible comparator |
