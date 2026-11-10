@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 94 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 95 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 94 |
-| sightings | 5417 |
-| liquid sightings | 2184 |
-| first liquid sightings = unique tokens with an outcome row | 538 |
-|   young | 359 |
+| eval-2 scans | 95 |
+| sightings | 5468 |
+| liquid sightings | 2207 |
+| first liquid sightings = unique tokens with an outcome row | 541 |
+|   young | 362 |
 |   mature | 152 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 317 |
+| young without a comparator | 320 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 265/359, no_valid_entry 11/359, pending 9/359, unknown 53/359, unreliable 21/359
-- mature: labelled 145/152, pending 4/152, unknown 3/152
-- no valid entry: young 11/359, mature 0/152
+- young: labelled 268/362, no_valid_entry 11/362, pending 9/362, unknown 53/362, unreliable 21/362
+- mature: labelled 147/152, pending 2/152, unknown 3/152
+- no valid entry: young 11/362, mature 0/152
 
 ## Effect (after costs; unit = scan)
 
@@ -408,9 +408,12 @@
 | 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | CHOO | 34430.74 | labelled | 37.22 |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T115925 | NEUTRAL | MLC | 25038.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T115925 | NEUTRAL | TRUMP | 20277.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T115925 | NEUTRAL | CHAINCHOMP131 | 16298.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | MLC | 25038.79 | labelled | 37.0 |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | TRUMP | 20277.40 | labelled | -44.88 |  |  |  | None | no eligible comparator |
+| 20261110T115925 | NEUTRAL | CHAINCHOMP131 | 16298.76 | labelled | 36.58 |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | 1 | 33900.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | Goma | 20386.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T125924 | NEUTRAL | GOMA | 17149.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | Inuployed | 36876.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | ELONJONG | 15974.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T135923 | RED | PokéMeal | 15625.83 | pending | None |  |  |  | None | no eligible comparator |
