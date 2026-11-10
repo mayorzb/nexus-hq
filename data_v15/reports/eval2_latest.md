@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 99 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 100 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 99 |
-| sightings | 5678 |
-| liquid sightings | 2300 |
-| first liquid sightings = unique tokens with an outcome row | 555 |
-|   young | 373 |
-|   mature | 154 |
+| eval-2 scans | 100 |
+| sightings | 5733 |
+| liquid sightings | 2325 |
+| first liquid sightings = unique tokens with an outcome row | 561 |
+|   young | 378 |
+|   mature | 155 |
 |   other | 28 |
-| young with a comparator (cap 2) | 43 |
-| young without a comparator | 330 |
+| young with a comparator (cap 2) | 45 |
+| young without a comparator | 333 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 16 |
+|   pairs: young or mature outcome not yet usable | 18 |
 | complete pairs (both 60m outcomes labelled) | 27 |
 | scans contributing a complete pair | 19 |
 
 ## 60m outcome status by group
 
-- young: labelled 279/373, no_valid_entry 12/373, pending 5/373, unknown 56/373, unreliable 21/373
-- mature: labelled 149/154, pending 2/154, unknown 3/154
-- no valid entry: young 12/373, mature 0/154
+- young: labelled 282/378, no_valid_entry 12/378, pending 7/378, unknown 56/378, unreliable 21/378
+- mature: labelled 149/155, pending 3/155, unknown 3/155
+- no valid entry: young 12/378, mature 0/155
 
 ## Effect (after costs; unit = scan)
 
@@ -50,6 +50,7 @@
 - 20261109T195934-FZcbX6uB: TJR (20261109T195934), ORBIT (20261109T195934)
 - 20261109T205934-22JKmY9Y: MAYA (20261109T205934), HWAN (20261109T205934)
 - 20261109T205934-XeaWBDDB: tagcat (20261109T205934), CAT (20261109T205934)
+- 20261110T185920-8riMEL1o: PPP (20261110T185920), VC (20261110T185920)
 
 ## Every pair
 
@@ -424,7 +425,12 @@
 | 20261110T155922 | DEEP_RED | Nearg | 108993.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T155922 | DEEP_RED | ansem | 24538.64 | labelled | -35.03 |  |  |  | None | no eligible comparator |
 | 20261110T155922 | DEEP_RED | If | 20273.84 | labelled | 36.82 |  |  |  | None | no eligible comparator |
-| 20261110T165921 | RED | DacityCoin | 38981.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T165921 | RED | DAKITTY | 30817.83 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T165921 | RED | GALVANI | 18680.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | DacityCoin | 38981.55 | labelled | 37.29 |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | DAKITTY | 30817.83 | labelled | 37.15 |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | GALVANI | 18680.65 | labelled | -48.89 |  |  |  | None | no eligible comparator |
 | 20261110T175920 | RED | EDMUND | 18690.71 | pending | None | CB | 21386.92 | pending | None |  |
+| 20261110T185920 | RED | HCAT | 67428.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T185920 | RED | PPP | 25987.94 | pending | None | miaoudame | 25245.81 | pending | None |  |
+| 20261110T185920 | RED | VC | 25434.87 | pending | None | miaoudame | 25245.81 | pending | None |  |
+| 20261110T185920 | RED | 奶蛙 | 16728.45 | pending | None |  |  |  | None | comparators used twice |
+| 20261110T185920 | RED | up | 15981.73 | pending | None |  |  |  | None | comparators used twice |
