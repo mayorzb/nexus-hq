@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 87 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 88 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 87 |
-| sightings | 5031 |
-| liquid sightings | 2032 |
-| first liquid sightings = unique tokens with an outcome row | 507 |
-|   young | 341 |
-|   mature | 139 |
+| eval-2 scans | 88 |
+| sightings | 5089 |
+| liquid sightings | 2053 |
+| first liquid sightings = unique tokens with an outcome row | 510 |
+|   young | 342 |
+|   mature | 141 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 299 |
+| young without a comparator | 300 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 248/341, no_valid_entry 11/341, pending 9/341, unknown 52/341, unreliable 21/341
-- mature: labelled 132/139, pending 4/139, unknown 3/139
-- no valid entry: young 11/341, mature 0/139
+- young: labelled 253/342, no_valid_entry 11/342, pending 5/342, unknown 52/342, unreliable 21/342
+- mature: labelled 134/141, pending 4/141, unknown 3/141
+- no valid entry: young 11/342, mature 0/141
 
 ## Effect (after costs; unit = scan)
 
@@ -387,12 +387,13 @@
 | 20261110T035928 | NEUTRAL | POCKET | 35918.94 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261110T035928 | NEUTRAL | MarsCoin | 25739.77 | labelled | 37.03 |  |  |  | None | no eligible comparator |
 | 20261110T035928 | NEUTRAL | AICoin | 25350.57 | labelled | -33.11 |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | AICoin | 89577.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | KAWAENE | 32400.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | Baibo | 19250.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | AICoin | 89577.32 | labelled | 37.58 |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | KAWAENE | 32400.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | Baibo | 19250.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | RWO | 17289.14 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | DINGA | 17286.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | BREW | 15961.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | DINGA | 17286.37 | labelled | 36.65 |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | BREW | 15961.82 | labelled | -29.01 |  |  |  | None | no eligible comparator |
 | 20261110T055928 | NEUTRAL | MUBBO | 23000.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T055928 | NEUTRAL | PERPULATOR | 22637.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T055928 | NEUTRAL | CLASSICS | 18566.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T065927 | NEUTRAL | Grok | 36897.14 | pending | None |  |  |  | None | no eligible comparator |
