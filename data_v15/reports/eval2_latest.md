@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 90 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 91 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 90 |
-| sightings | 5197 |
-| liquid sightings | 2095 |
-| first liquid sightings = unique tokens with an outcome row | 520 |
-|   young | 348 |
-|   mature | 145 |
+| eval-2 scans | 91 |
+| sightings | 5251 |
+| liquid sightings | 2116 |
+| first liquid sightings = unique tokens with an outcome row | 524 |
+|   young | 351 |
+|   mature | 146 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 306 |
+| young without a comparator | 309 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 257/348, no_valid_entry 11/348, pending 7/348, unknown 52/348, unreliable 21/348
-- mature: labelled 138/145, pending 4/145, unknown 3/145
-- no valid entry: young 11/348, mature 0/145
+- young: labelled 258/351, no_valid_entry 11/351, pending 9/351, unknown 52/351, unreliable 21/351
+- mature: labelled 140/146, pending 3/146, unknown 3/146
+- no valid entry: young 11/351, mature 0/146
 
 ## Effect (after costs; unit = scan)
 
@@ -397,9 +397,12 @@
 | 20261110T055928 | NEUTRAL | PERPULATOR | 22637.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T055928 | NEUTRAL | CLASSICS | 18566.03 | labelled | 36.73 |  |  |  | None | no eligible comparator |
 | 20261110T065927 | NEUTRAL | Grok | 36897.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261110T075927 | NEUTRAL | HAMWS | 68293.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T075927 | NEUTRAL | HAMWS | 68293.20 | labelled | -39.86 |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | FABLE | 114731.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | BabyTrump | 37675.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | X | 27305.58 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | AMPED | 25381.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T085927 | NEUTRAL | X | 19716.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | DERP404 | 105109.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | WILL | 23008.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | pending | None |  |  |  | None | no eligible comparator |
