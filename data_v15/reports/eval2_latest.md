@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 80 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 81 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 80 |
-| sightings | 4652 |
-| liquid sightings | 1868 |
-| first liquid sightings = unique tokens with an outcome row | 468 |
-|   young | 317 |
-|   mature | 126 |
-|   other | 25 |
+| eval-2 scans | 81 |
+| sightings | 4706 |
+| liquid sightings | 1891 |
+| first liquid sightings = unique tokens with an outcome row | 473 |
+|   young | 319 |
+|   mature | 128 |
+|   other | 26 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 275 |
+| young without a comparator | 277 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 233/317, no_valid_entry 10/317, pending 6/317, unknown 48/317, unreliable 20/317
-- mature: labelled 119/126, pending 4/126, unknown 3/126
-- no valid entry: young 10/317, mature 0/126
+- young: labelled 234/319, no_valid_entry 10/319, pending 6/319, unknown 49/319, unreliable 20/319
+- mature: labelled 121/128, pending 4/128, unknown 3/128
+- no valid entry: young 10/319, mature 0/128
 
 ## Effect (after costs; unit = scan)
 
@@ -363,12 +363,14 @@
 | 20261109T205934 | RED | MAYA | 82123.45 | labelled | -36.7 | Pepetide | 53083.95 | labelled | -28.35 |  |
 | 20261109T205934 | RED | HWAN | 47634.00 | labelled | -31.99 | Pepetide | 53083.95 | labelled | -28.35 |  |
 | 20261109T205934 | RED | ITSOVER9K | 40820.22 | no_valid_entry | None |  |  |  | None | comparators used twice |
-| 20261109T205934 | RED | tagcat | 29445.61 | pending | None | MERLYN | 18695.26 | labelled | -9.35 |  |
+| 20261109T205934 | RED | tagcat | 29445.61 | unknown | None | MERLYN | 18695.26 | labelled | -9.35 |  |
 | 20261109T205934 | RED | CAT | 24211.74 | labelled | -90.2 | MERLYN | 18695.26 | labelled | -9.35 |  |
 | 20261109T205934 | RED | TAPCAT | 24100.80 | labelled | -30.95 |  |  |  | None | comparators used twice |
 | 20261109T205934 | RED | TAXCAT | 21806.42 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T205934 | RED | TAPCAT | 17035.10 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261109T215934 | NEUTRAL | SYGNAL | 20274.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T215934 | NEUTRAL | SYGNAL | 20274.86 | labelled | 36.82 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | PMURT | 138298.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | GPU | 42366.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | BTC | 41680.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T235932 | NEUTRAL | BORLY | 59158.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T235932 | NEUTRAL | ANSEM | 38486.75 | pending | None |  |  |  | None | no eligible comparator |
