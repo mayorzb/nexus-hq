@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 81 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 82 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 81 |
-| sightings | 4706 |
-| liquid sightings | 1891 |
-| first liquid sightings = unique tokens with an outcome row | 473 |
-|   young | 319 |
-|   mature | 128 |
-|   other | 26 |
+| eval-2 scans | 82 |
+| sightings | 4760 |
+| liquid sightings | 1915 |
+| first liquid sightings = unique tokens with an outcome row | 480 |
+|   young | 323 |
+|   mature | 130 |
+|   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 277 |
+| young without a comparator | 281 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 234/319, no_valid_entry 10/319, pending 6/319, unknown 49/319, unreliable 20/319
-- mature: labelled 121/128, pending 4/128, unknown 3/128
-- no valid entry: young 10/319, mature 0/128
+- young: labelled 237/323, no_valid_entry 10/323, pending 7/323, unknown 49/323, unreliable 20/323
+- mature: labelled 123/130, pending 4/130, unknown 3/130
+- no valid entry: young 10/323, mature 0/130
 
 ## Effect (after costs; unit = scan)
 
@@ -369,8 +369,12 @@
 | 20261109T205934 | RED | TAXCAT | 21806.42 | pending | None |  |  |  | None | comparators used twice |
 | 20261109T205934 | RED | TAPCAT | 17035.10 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261109T215934 | NEUTRAL | SYGNAL | 20274.86 | labelled | 36.82 |  |  |  | None | no eligible comparator |
-| 20261109T225933 | NEUTRAL | PMURT | 138298.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T225933 | NEUTRAL | GPU | 42366.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261109T225933 | NEUTRAL | BTC | 41680.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | PMURT | 138298.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | GPU | 42366.86 | labelled | -27.84 |  |  |  | None | no eligible comparator |
+| 20261109T225933 | NEUTRAL | BTC | 41680.30 | labelled | -38.1 |  |  |  | None | no eligible comparator |
 | 20261109T235932 | NEUTRAL | BORLY | 59158.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261109T235932 | NEUTRAL | ANSEM | 38486.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | MONTRA | 87345.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | OnlyCats | 78019.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | CUTLINE | 21439.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | NVIDIOT | 21173.37 | pending | None |  |  |  | None | no eligible comparator |
