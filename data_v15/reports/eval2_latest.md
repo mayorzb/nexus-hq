@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 97 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 98 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 97 |
-| sightings | 5567 |
-| liquid sightings | 2255 |
-| first liquid sightings = unique tokens with an outcome row | 549 |
-|   young | 369 |
+| eval-2 scans | 98 |
+| sightings | 5624 |
+| liquid sightings | 2278 |
+| first liquid sightings = unique tokens with an outcome row | 552 |
+|   young | 372 |
 |   mature | 152 |
 |   other | 28 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 327 |
+| young without a comparator | 330 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 272/369, no_valid_entry 12/369, pending 9/369, unknown 55/369, unreliable 21/369
+- young: labelled 276/372, no_valid_entry 12/372, pending 7/372, unknown 56/372, unreliable 21/372
 - mature: labelled 149/152, unknown 3/152
-- no valid entry: young 12/369, mature 0/152
+- no valid entry: young 12/372, mature 0/152
 
 ## Effect (after costs; unit = scan)
 
@@ -407,7 +407,7 @@
 | 20261110T095926 | NEUTRAL | WILL | 23008.14 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T105926 | NEUTRAL | CHOO | 34430.74 | labelled | 37.22 |  |  |  | None | no eligible comparator |
-| 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T115925 | NEUTRAL | MLC | 25038.79 | labelled | 37.0 |  |  |  | None | no eligible comparator |
 | 20261110T115925 | NEUTRAL | TRUMP | 20277.40 | labelled | -44.88 |  |  |  | None | no eligible comparator |
 | 20261110T115925 | NEUTRAL | CHAINCHOMP131 | 16298.76 | labelled | 36.58 |  |  |  | None | no eligible comparator |
@@ -417,10 +417,13 @@
 | 20261110T135923 | RED | Inuployed | 36876.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T135923 | RED | ELONJONG | 15974.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T135923 | RED | PokéMeal | 15625.83 | labelled | 36.53 |  |  |  | None | no eligible comparator |
-| 20261110T145922 | RED | WRL | 28473.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T145922 | RED | X | 24437.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T145922 | RED | HEPE | 18247.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T145922 | RED | CASINO | 16224.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T145922 | RED | WRL | 28473.73 | labelled | -35.04 |  |  |  | None | no eligible comparator |
+| 20261110T145922 | RED | X | 24437.93 | labelled | -28.05 |  |  |  | None | no eligible comparator |
+| 20261110T145922 | RED | HEPE | 18247.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T145922 | RED | CASINO | 16224.04 | labelled | -28.75 |  |  |  | None | no eligible comparator |
 | 20261110T155922 | DEEP_RED | Nearg | 108993.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T155922 | DEEP_RED | ansem | 24538.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T155922 | DEEP_RED | If | 20273.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | DacityCoin | 38981.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | DAKITTY | 30817.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T165921 | RED | GALVANI | 18680.65 | pending | None |  |  |  | None | no eligible comparator |
