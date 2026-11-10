@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-10 02:08 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-10 03:07 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-10 02:08 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 03:59 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 54 / 24 | OK |
-| Deep-checked coins left UNVERIFIED | 15 of 48 (31%) | ALERT |
+| Tokens seen / liquid (median per scan) | 54 / 23 | OK |
+| Deep-checked coins left UNVERIFIED | 14 of 48 (29%) | OK |
 | Safety canary (deep checks run when no coin reached them) | 36 checked, 12 unverified, 0 on-chain errors | WARN |
-| Gate-passers skipped by check budget | 59 of 107 | WARN |
-| Paper candidates (last 24h) | 12 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 597 / 140 | ALERT |
+| Gate-passers skipped by check budget | 60 of 108 | WARN |
+| Paper candidates (last 24h) | 11 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 598 / 143 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: STONK (02:59), CATE (02:59), DESSA (02:59), CATE (21:59), HODL (21:59), CATE (22:59), HODL (22:59), CATE (23:59), HODL (23:59), CATE (00:59), HODL (00:59), CATE (01:59)
+Candidates: CATE (21:59), HODL (21:59), CATE (22:59), HODL (22:59), CATE (23:59), HODL (23:59), CATE (00:59), HODL (00:59), CATE (01:59), CATE (02:59), HODL (02:59)

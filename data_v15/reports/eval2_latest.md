@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 83 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 84 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 83 |
-| sightings | 4812 |
-| liquid sightings | 1940 |
-| first liquid sightings = unique tokens with an outcome row | 486 |
-|   young | 328 |
-|   mature | 131 |
+| eval-2 scans | 84 |
+| sightings | 4866 |
+| liquid sightings | 1961 |
+| first liquid sightings = unique tokens with an outcome row | 489 |
+|   young | 329 |
+|   mature | 133 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 286 |
+| young without a comparator | 287 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 238/328, no_valid_entry 10/328, pending 11/328, unknown 49/328, unreliable 20/328
-- mature: labelled 125/131, pending 3/131, unknown 3/131
-- no valid entry: young 10/328, mature 0/131
+- young: labelled 242/329, no_valid_entry 10/329, pending 6/329, unknown 51/329, unreliable 20/329
+- mature: labelled 127/133, pending 3/133, unknown 3/133
+- no valid entry: young 10/329, mature 0/133
 
 ## Effect (after costs; unit = scan)
 
@@ -366,20 +366,21 @@
 | 20261109T205934 | RED | tagcat | 29445.61 | unknown | None | MERLYN | 18695.26 | labelled | -9.35 |  |
 | 20261109T205934 | RED | CAT | 24211.74 | labelled | -90.2 | MERLYN | 18695.26 | labelled | -9.35 |  |
 | 20261109T205934 | RED | TAPCAT | 24100.80 | labelled | -30.95 |  |  |  | None | comparators used twice |
-| 20261109T205934 | RED | TAXCAT | 21806.42 | pending | None |  |  |  | None | comparators used twice |
+| 20261109T205934 | RED | TAXCAT | 21806.42 | unknown | None |  |  |  | None | comparators used twice |
 | 20261109T205934 | RED | TAPCAT | 17035.10 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261109T215934 | NEUTRAL | SYGNAL | 20274.86 | labelled | 36.82 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | PMURT | 138298.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | GPU | 42366.86 | labelled | -27.84 |  |  |  | None | no eligible comparator |
 | 20261109T225933 | NEUTRAL | BTC | 41680.30 | labelled | -38.1 |  |  |  | None | no eligible comparator |
 | 20261109T235932 | NEUTRAL | BORLY | 59158.91 | labelled | 37.46 |  |  |  | None | no eligible comparator |
-| 20261109T235932 | NEUTRAL | ANSEM | 38486.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T005931 | NEUTRAL | MONTRA | 87345.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T005931 | NEUTRAL | OnlyCats | 78019.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T005931 | NEUTRAL | CUTLINE | 21439.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T005931 | NEUTRAL | NVIDIOT | 21173.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261109T235932 | NEUTRAL | ANSEM | 38486.75 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | MONTRA | 87345.03 | labelled | 37.57 |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | OnlyCats | 78019.31 | labelled | -1.22 |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | CUTLINE | 21439.41 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T005931 | NEUTRAL | NVIDIOT | 21173.37 | labelled | -28.57 |  |  |  | None | no eligible comparator |
 | 20261110T015930 | NEUTRAL | MEOW | 48737.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T015930 | NEUTRAL | UODF | 33868.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T015930 | NEUTRAL | HABIBI | 23612.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T015930 | NEUTRAL | MANK | 15389.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T015930 | NEUTRAL | Billie | 15133.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T025929 | NEUTRAL | 牛逼 | 112145.76 | pending | None |  |  |  | None | no eligible comparator |
