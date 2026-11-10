@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 91 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 92 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 91 |
-| sightings | 5251 |
-| liquid sightings | 2116 |
-| first liquid sightings = unique tokens with an outcome row | 524 |
-|   young | 351 |
-|   mature | 146 |
+| eval-2 scans | 92 |
+| sightings | 5306 |
+| liquid sightings | 2139 |
+| first liquid sightings = unique tokens with an outcome row | 528 |
+|   young | 353 |
+|   mature | 148 |
 |   other | 27 |
 | young with a comparator (cap 2) | 42 |
-| young without a comparator | 309 |
+| young without a comparator | 311 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 15 |
 | complete pairs (both 60m outcomes labelled) | 27 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 258/351, no_valid_entry 11/351, pending 9/351, unknown 52/351, unreliable 21/351
-- mature: labelled 140/146, pending 3/146, unknown 3/146
-- no valid entry: young 11/351, mature 0/146
+- young: labelled 263/353, no_valid_entry 11/353, pending 5/353, unknown 53/353, unreliable 21/353
+- mature: labelled 142/148, pending 3/148, unknown 3/148
+- no valid entry: young 11/353, mature 0/148
 
 ## Effect (after costs; unit = scan)
 
@@ -390,7 +390,7 @@
 | 20261110T045928 | NEUTRAL | AICoin | 89577.32 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | KAWAENE | 32400.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | Baibo | 19250.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261110T045928 | NEUTRAL | RWO | 17289.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T045928 | NEUTRAL | RWO | 17289.14 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | DINGA | 17286.37 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261110T045928 | NEUTRAL | BREW | 15961.82 | labelled | -29.01 |  |  |  | None | no eligible comparator |
 | 20261110T055928 | NEUTRAL | MUBBO | 23000.82 | labelled | -28.19 |  |  |  | None | no eligible comparator |
@@ -398,11 +398,13 @@
 | 20261110T055928 | NEUTRAL | CLASSICS | 18566.03 | labelled | 36.73 |  |  |  | None | no eligible comparator |
 | 20261110T065927 | NEUTRAL | Grok | 36897.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T075927 | NEUTRAL | HAMWS | 68293.20 | labelled | -39.86 |  |  |  | None | no eligible comparator |
-| 20261110T085927 | NEUTRAL | FABLE | 114731.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T085927 | NEUTRAL | BabyTrump | 37675.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T085927 | NEUTRAL | X | 27305.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T085927 | NEUTRAL | AMPED | 25381.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T085927 | NEUTRAL | X | 19716.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T085927 | NEUTRAL | FABLE | 114731.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T085927 | NEUTRAL | BabyTrump | 37675.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T085927 | NEUTRAL | X | 27305.58 | labelled | 37.07 |  |  |  | None | no eligible comparator |
+| 20261110T085927 | NEUTRAL | AMPED | 25381.60 | labelled | 37.02 |  |  |  | None | no eligible comparator |
+| 20261110T085927 | NEUTRAL | X | 19716.04 | labelled | 36.79 |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | DERP404 | 105109.16 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | WILL | 23008.14 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T095926 | NEUTRAL | GROK5 | 16414.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T105926 | NEUTRAL | CHOO | 34430.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T105926 | NEUTRAL | $SLJK | 17218.05 | pending | None |  |  |  | None | no eligible comparator |
