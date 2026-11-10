@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-10 21:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-10 22:04 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-10 21:03 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 54 / 23 | OK |
-| Deep-checked coins left UNVERIFIED | 33 of 128 (26%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 16 checked, 4 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 166 of 294 | WARN |
-| Paper candidates (last 24h) | 30 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 576 / 86 | ALERT |
+| Deep-checked coins left UNVERIFIED | 31 of 120 (26%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 18 checked, 5 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 155 of 275 | WARN |
+| Paper candidates (last 24h) | 28 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 561 / 83 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (21:59), HODL (21:59), CATE (22:59), HODL (22:59), CATE (23:59), HODL (23:59), CATE (00:59), HODL (00:59), CATE (01:59), CATE (02:59), HODL (02:59), CATE (03:59), HODL (03:59), CATE (04:59), HODL (04:59), CATE (05:59), HODL (05:59), CATE (06:59), HODL (06:59), CATE (07:59), HODL (07:59), CATE (08:59), HODL (08:59), CATE (09:59), CATE (10:59), HODL (10:59), CATE (11:59), HODL (11:59), CATE (12:59), HODL (12:59)
+Candidates: CATE (22:59), HODL (22:59), CATE (23:59), HODL (23:59), CATE (00:59), HODL (00:59), CATE (01:59), CATE (02:59), HODL (02:59), CATE (03:59), HODL (03:59), CATE (04:59), HODL (04:59), CATE (05:59), HODL (05:59), CATE (06:59), HODL (06:59), CATE (07:59), HODL (07:59), CATE (08:59), HODL (08:59), CATE (09:59), CATE (10:59), HODL (10:59), CATE (11:59), HODL (11:59), CATE (12:59), HODL (12:59)

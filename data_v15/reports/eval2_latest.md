@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 102 scans: 22 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 103 scans: 20 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 102 |
-| sightings | 5851 |
-| liquid sightings | 2377 |
-| first liquid sightings = unique tokens with an outcome row | 573 |
+| eval-2 scans | 103 |
+| sightings | 5904 |
+| liquid sightings | 2399 |
+| first liquid sightings = unique tokens with an outcome row | 574 |
 |   young | 388 |
-|   mature | 157 |
+|   mature | 158 |
 |   other | 28 |
 | young with a comparator (cap 2) | 47 |
 | young without a comparator | 341 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 19 |
-| complete pairs (both 60m outcomes labelled) | 28 |
-| scans contributing a complete pair | 20 |
+|   pairs: young or mature outcome not yet usable | 17 |
+| complete pairs (both 60m outcomes labelled) | 30 |
+| scans contributing a complete pair | 21 |
 
 ## 60m outcome status by group
 
-- young: labelled 285/388, no_valid_entry 12/388, pending 13/388, unknown 57/388, unreliable 21/388
-- mature: labelled 151/157, pending 2/157, unknown 4/157
-- no valid entry: young 12/388, mature 0/157
+- young: labelled 289/388, no_valid_entry 12/388, pending 8/388, unknown 58/388, unreliable 21/388
+- mature: labelled 153/158, pending 1/158, unknown 4/158
+- no valid entry: young 12/388, mature 0/158
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.55 points, 95% interval (-42.33, -9.24); scans with young worse 14/20
-- Pairs with young worse: 21/28 (75.0%); pair mean -24.43, median -26.42
-- Big loss (<= -20%): young 19/28, mature 4/28
+- Scan-level mean difference (young - mature): -24.48 points, 95% interval (-40.52, -8.82); scans with young worse 15/21
+- Pairs with young worse: 22/30 (73.3%); pair mean -23.01, median -26.42
+- Big loss (<= -20%): young 20/30, mature 4/30
 
 ## Comparator reuse (cap 2)
 
@@ -430,15 +430,15 @@
 | 20261110T165921 | RED | DAKITTY | 30817.83 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | GALVANI | 18680.65 | labelled | -48.89 |  |  |  | None | no eligible comparator |
 | 20261110T175920 | RED | EDMUND | 18690.71 | labelled | -100.0 | CB | 21386.92 | unknown | None |  |
-| 20261110T185920 | RED | HCAT | 67428.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T185920 | RED | HCAT | 67428.59 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T185920 | RED | PPP | 25987.94 | labelled | -33.58 | miaoudame | 25245.81 | labelled | -6.29 |  |
 | 20261110T185920 | RED | VC | 25434.87 | pending | None | miaoudame | 25245.81 | labelled | -6.29 |  |
 | 20261110T185920 | RED | 奶蛙 | 16728.45 | labelled | 36.61 |  |  |  | None | comparators used twice |
 | 20261110T185920 | RED | up | 15981.73 | pending | None |  |  |  | None | comparators used twice |
-| 20261110T195920 | RED | LEONIDA | 90155.48 | pending | None | WASTED | 109108.79 | pending | None |  |
-| 20261110T195920 | RED | DACITY | 77181.34 | pending | None | WASTED | 109108.79 | pending | None |  |
-| 20261110T195920 | RED | Catcity | 26291.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T195920 | RED | Rings | 15229.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T195920 | RED | LEONIDA | 90155.48 | labelled | -51.42 | WASTED | 109108.79 | labelled | -3.79 |  |
+| 20261110T195920 | RED | DACITY | 77181.34 | labelled | 37.54 | WASTED | 109108.79 | labelled | -3.79 |  |
+| 20261110T195920 | RED | Catcity | 26291.32 | labelled | 37.04 |  |  |  | None | no eligible comparator |
+| 20261110T195920 | RED | Rings | 15229.18 | labelled | -28.53 |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | ARUVIS | 104137.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | FME | 36800.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | GTAX | 29772.64 | pending | None |  |  |  | None | no eligible comparator |
