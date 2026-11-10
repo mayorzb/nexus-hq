@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 98 scans: 23 pairs and 1 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 99 scans: 23 pairs and 1 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 98 |
-| sightings | 5624 |
-| liquid sightings | 2278 |
-| first liquid sightings = unique tokens with an outcome row | 552 |
-|   young | 372 |
-|   mature | 152 |
+| eval-2 scans | 99 |
+| sightings | 5678 |
+| liquid sightings | 2300 |
+| first liquid sightings = unique tokens with an outcome row | 555 |
+|   young | 373 |
+|   mature | 154 |
 |   other | 28 |
-| young with a comparator (cap 2) | 42 |
+| young with a comparator (cap 2) | 43 |
 | young without a comparator | 330 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 15 |
+|   pairs: young or mature outcome not yet usable | 16 |
 | complete pairs (both 60m outcomes labelled) | 27 |
 | scans contributing a complete pair | 19 |
 
 ## 60m outcome status by group
 
-- young: labelled 276/372, no_valid_entry 12/372, pending 7/372, unknown 56/372, unreliable 21/372
-- mature: labelled 149/152, unknown 3/152
-- no valid entry: young 12/372, mature 0/152
+- young: labelled 279/373, no_valid_entry 12/373, pending 5/373, unknown 56/373, unreliable 21/373
+- mature: labelled 149/154, pending 2/154, unknown 3/154
+- no valid entry: young 12/373, mature 0/154
 
 ## Effect (after costs; unit = scan)
 
@@ -421,9 +421,10 @@
 | 20261110T145922 | RED | X | 24437.93 | labelled | -28.05 |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | HEPE | 18247.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T145922 | RED | CASINO | 16224.04 | labelled | -28.75 |  |  |  | None | no eligible comparator |
-| 20261110T155922 | DEEP_RED | Nearg | 108993.12 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T155922 | DEEP_RED | ansem | 24538.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T155922 | DEEP_RED | If | 20273.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | Nearg | 108993.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | ansem | 24538.64 | labelled | -35.03 |  |  |  | None | no eligible comparator |
+| 20261110T155922 | DEEP_RED | If | 20273.84 | labelled | 36.82 |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | DacityCoin | 38981.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | DAKITTY | 30817.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T165921 | RED | GALVANI | 18680.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T175920 | RED | EDMUND | 18690.71 | pending | None | CB | 21386.92 | pending | None |  |
