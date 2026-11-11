@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 107 scans: 18 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 108 scans: 18 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 107 |
-| sightings | 6139 |
-| liquid sightings | 2503 |
-| first liquid sightings = unique tokens with an outcome row | 595 |
-|   young | 405 |
+| eval-2 scans | 108 |
+| sightings | 6200 |
+| liquid sightings | 2529 |
+| first liquid sightings = unique tokens with an outcome row | 596 |
+|   young | 406 |
 |   mature | 162 |
 |   other | 28 |
 | young with a comparator (cap 2) | 51 |
-| young without a comparator | 354 |
+| young without a comparator | 355 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 19 |
 | complete pairs (both 60m outcomes labelled) | 32 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 300/405, no_valid_entry 12/405, pending 12/405, unknown 60/405, unreliable 21/405
+- young: labelled 304/406, no_valid_entry 12/406, pending 8/406, unknown 61/406, unreliable 21/406
 - mature: labelled 157/162, pending 1/162, unknown 4/162
-- no valid entry: young 12/405, mature 0/162
+- no valid entry: young 12/406, mature 0/162
 
 ## Effect (after costs; unit = scan)
 
@@ -445,7 +445,7 @@
 | 20261110T205920 | RED | FME | 36800.93 | labelled | -79.89 |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | GTAX | 29772.64 | labelled | -40.94 |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | HOLD | 24796.11 | labelled | 37.0 |  |  |  | None | no eligible comparator |
-| 20261110T205920 | RED | Looby | 19524.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T205920 | RED | Looby | 19524.38 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | XCAT | 15404.26 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261110T225919 | RED | HOLD | 41232.85 | labelled | -33.98 |  |  |  | None | no eligible comparator |
 | 20261110T225919 | RED | WHF | 26471.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -455,12 +455,13 @@
 | 20261110T235918 | RED | vibeshift | 31923.59 | pending | None |  |  |  | None | comparators used twice |
 | 20261110T235918 | RED | RWA | 22508.91 | labelled | 36.92 |  |  |  | None | no eligible comparator |
 | 20261110T235918 | RED | vibeshift | 16621.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T005917 | RED | NIHAO | 161319.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T005917 | RED | BABYMINHAO | 76013.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T005917 | RED | mihao | 28242.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T005917 | RED | Wine | 26715.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | NIHAO | 161319.69 | labelled | -2.49 |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | BABYMINHAO | 76013.66 | labelled | 37.54 |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | mihao | 28242.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | Wine | 26715.72 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | ANAL | 15047.36 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T015917 | RED | 咪好 | 49780.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T015917 | RED | NOBUSHIBA | 29317.58 | pending | None | APOGEE | 16998.75 | pending | None |  |
 | 20261111T015917 | RED | pepe | 23040.50 | pending | None | APOGEE | 16998.75 | pending | None |  |
 | 20261111T015917 | RED | 💎 | 22338.20 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T025916 | RED | mihao | 28180.22 | pending | None |  |  |  | None | no eligible comparator |
