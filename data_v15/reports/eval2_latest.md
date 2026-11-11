@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 115 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 116 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 115 |
-| sightings | 6630 |
-| liquid sightings | 2710 |
-| first liquid sightings = unique tokens with an outcome row | 626 |
-|   young | 431 |
-|   mature | 165 |
+| eval-2 scans | 116 |
+| sightings | 6689 |
+| liquid sightings | 2733 |
+| first liquid sightings = unique tokens with an outcome row | 630 |
+|   young | 433 |
+|   mature | 167 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 376 |
+| young without a comparator | 378 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 327/431, no_valid_entry 13/431, pending 4/431, unknown 66/431, unreliable 21/431
-- mature: labelled 158/165, pending 2/165, unknown 5/165
-- no valid entry: young 13/431, mature 0/165
+- young: labelled 327/433, no_valid_entry 13/433, pending 5/433, unknown 67/433, unreliable 21/433
+- mature: labelled 158/167, pending 3/167, unknown 6/167
+- no valid entry: young 13/433, mature 0/167
 
 ## Effect (after costs; unit = scan)
 
@@ -474,9 +474,9 @@
 | 20261111T035915 | RED | Bublublu | 23238.46 | labelled | 4.92 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | GTA 6 Coin | 22759.66 | labelled | -89.87 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | Wong | 17655.47 | unknown | None |  |  |  | None | comparators used twice |
-| 20261111T045914 | RED | ORVIX | 32772.62 | labelled | -35.19 | GTA6MAS | 16453.99 | pending | None |  |
-| 20261111T045914 | RED | PHCAT | 26320.31 | no_valid_entry | None | GTA6MAS | 16453.99 | pending | None |  |
-| 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T045914 | RED | ORVIX | 32772.62 | labelled | -35.19 | GTA6MAS | 16453.99 | unknown | None |  |
+| 20261111T045914 | RED | PHCAT | 26320.31 | no_valid_entry | None | GTA6MAS | 16453.99 | unknown | None |  |
+| 20261111T045914 | RED | 34% | 18218.50 | unknown | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | FOMO | 17645.58 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261111T055913 | RED | CALBEAR | 102665.37 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T055913 | RED | Billions  | 37679.24 | pending | None |  |  |  | None | no eligible comparator |
@@ -492,3 +492,5 @@
 | 20261111T075911 | RED | みらじ | 15387.71 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T095910 | NEUTRAL | BabyTrump | 27828.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T095910 | NEUTRAL | TI | 25002.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T105910 | NEUTRAL | woohao | 17224.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T105910 | NEUTRAL | MCAT | 15842.88 | pending | None |  |  |  | None | no eligible comparator |
