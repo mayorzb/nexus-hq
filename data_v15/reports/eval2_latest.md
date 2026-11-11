@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 109 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 110 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 109 |
-| sightings | 6262 |
-| liquid sightings | 2558 |
-| first liquid sightings = unique tokens with an outcome row | 605 |
-|   young | 413 |
-|   mature | 163 |
-|   other | 29 |
-| young with a comparator (cap 2) | 53 |
-| young without a comparator | 360 |
+| eval-2 scans | 110 |
+| sightings | 6325 |
+| liquid sightings | 2589 |
+| first liquid sightings = unique tokens with an outcome row | 611 |
+|   young | 417 |
+|   mature | 164 |
+|   other | 30 |
+| young with a comparator (cap 2) | 55 |
+| young without a comparator | 362 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 19 |
+|   pairs: young or mature outcome not yet usable | 21 |
 | complete pairs (both 60m outcomes labelled) | 34 |
 | scans contributing a complete pair | 23 |
 
 ## 60m outcome status by group
 
-- young: labelled 308/413, no_valid_entry 12/413, pending 11/413, unknown 61/413, unreliable 21/413
-- mature: labelled 158/163, pending 1/163, unknown 4/163
-- no valid entry: young 12/413, mature 0/163
+- young: labelled 308/417, no_valid_entry 12/417, pending 15/417, unknown 61/417, unreliable 21/417
+- mature: labelled 158/164, pending 2/164, unknown 4/164
+- no valid entry: young 12/417, mature 0/164
 
 ## Effect (after costs; unit = scan)
 
@@ -55,6 +55,7 @@
 - 20261110T235918-6mwuYnY3: KoriMu (20261110T235918), 中国人牛逼 (20261110T235918)
 - 20261111T015917-6f27mW2d: NOBUSHIBA (20261111T015917), pepe (20261111T015917)
 - 20261111T035915-BLrKuqTC: SKELETON☠️ (20261111T035915), HAOBIBI (20261111T035915)
+- 20261111T045914-4aB266Xc: ORVIX (20261111T045914), PHCAT (20261111T045914)
 
 ## Every pair
 
@@ -473,3 +474,7 @@
 | 20261111T035915 | RED | Bublublu | 23238.46 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | GTA 6 Coin | 22759.66 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | Wong | 17655.47 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T045914 | RED | ORVIX | 32772.62 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
+| 20261111T045914 | RED | PHCAT | 26320.31 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
+| 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T045914 | RED | FOMO | 17645.58 | pending | None |  |  |  | None | comparators used twice |
