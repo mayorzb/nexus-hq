@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 120 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 121 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 120 |
-| sightings | 6934 |
-| liquid sightings | 2825 |
-| first liquid sightings = unique tokens with an outcome row | 648 |
-|   young | 442 |
-|   mature | 175 |
+| eval-2 scans | 121 |
+| sightings | 6995 |
+| liquid sightings | 2847 |
+| first liquid sightings = unique tokens with an outcome row | 651 |
+|   young | 444 |
+|   mature | 176 |
 |   other | 31 |
 | young with a comparator (cap 2) | 57 |
-| young without a comparator | 385 |
+| young without a comparator | 387 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 22 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 333/442, no_valid_entry 14/442, pending 6/442, unknown 68/442, unreliable 21/442
-- mature: labelled 164/175, pending 4/175, unknown 7/175
-- no valid entry: young 14/442, mature 0/175
+- young: labelled 334/444, no_valid_entry 14/444, pending 6/444, unknown 68/444, unreliable 22/444
+- mature: labelled 165/176, pending 4/176, unknown 7/176
+- no valid entry: young 14/444, mature 0/176
 
 ## Effect (after costs; unit = scan)
 
@@ -499,8 +499,10 @@
 | 20261111T125909 | NEUTRAL | NOT | 18026.39 | labelled | -36.75 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | tgcat | 17478.49 | labelled | -71.29 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T135908 | NEUTRAL | catni hao | 33126.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | catni hao | 33126.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T135908 | NEUTRAL | ape hao | 17288.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | ape hao | 17288.17 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261111T145907 | NEUTRAL | SuperAlice | 22879.68 | pending | None | Allin | 24983.21 | pending | None |  |
 | 20261111T145907 | NEUTRAL | Boris | 21105.34 | pending | None | Allin | 24983.21 | pending | None |  |
+| 20261111T155906 | GREEN | Māo | 25091.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T155906 | GREEN | DANIELA | 18929.68 | pending | None |  |  |  | None | no eligible comparator |
