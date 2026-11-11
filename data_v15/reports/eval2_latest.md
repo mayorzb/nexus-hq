@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 114 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 115 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 114 |
-| sightings | 6569 |
-| liquid sightings | 2688 |
-| first liquid sightings = unique tokens with an outcome row | 623 |
-|   young | 429 |
-|   mature | 164 |
+| eval-2 scans | 115 |
+| sightings | 6630 |
+| liquid sightings | 2710 |
+| first liquid sightings = unique tokens with an outcome row | 626 |
+|   young | 431 |
+|   mature | 165 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 374 |
+| young without a comparator | 376 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 322/429, no_valid_entry 13/429, pending 8/429, unknown 65/429, unreliable 21/429
-- mature: labelled 158/164, pending 2/164, unknown 4/164
-- no valid entry: young 13/429, mature 0/164
+- young: labelled 327/431, no_valid_entry 13/431, pending 4/431, unknown 66/431, unreliable 21/431
+- mature: labelled 158/165, pending 2/165, unknown 5/165
+- no valid entry: young 13/431, mature 0/165
 
 ## Effect (after costs; unit = scan)
 
@@ -467,13 +467,13 @@
 | 20261111T015917 | RED | pepe | 23040.50 | labelled | -100.0 | APOGEE | 16998.75 | labelled | -7.96 |  |
 | 20261111T015917 | RED | 💎 | 22338.20 | labelled | -30.83 |  |  |  | None | comparators used twice |
 | 20261111T025916 | RED | mihao | 28180.22 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261111T035915 | RED | SKELETON☠️ | 35648.55 | labelled | 37.24 | RaRa | 26173.18 | pending | None |  |
-| 20261111T035915 | RED | HAOBIBI | 32248.58 | labelled | -28.23 | RaRa | 26173.18 | pending | None |  |
+| 20261111T035915 | RED | SKELETON☠️ | 35648.55 | labelled | 37.24 | RaRa | 26173.18 | unknown | None |  |
+| 20261111T035915 | RED | HAOBIBI | 32248.58 | labelled | -28.23 | RaRa | 26173.18 | unknown | None |  |
 | 20261111T035915 | RED | VEYL | 31418.32 | labelled | 37.17 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | BUZZ | 30592.96 | labelled | -30.76 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | Bublublu | 23238.46 | labelled | 4.92 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | GTA 6 Coin | 22759.66 | labelled | -89.87 |  |  |  | None | comparators used twice |
-| 20261111T035915 | RED | Wong | 17655.47 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | Wong | 17655.47 | unknown | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | ORVIX | 32772.62 | labelled | -35.19 | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | PHCAT | 26320.31 | no_valid_entry | None | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
@@ -485,8 +485,10 @@
 | 20261111T065912 | RED | PayCat | 33025.65 | labelled | -32.56 |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | MJ | 28100.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | FOMOCAT | 17249.39 | labelled | 36.65 |  |  |  | None | no eligible comparator |
-| 20261111T075911 | RED | MOCHI | 46436.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T075911 | RED | CASHTAG | 37899.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T075911 | RED | SpaceX | 28162.59 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T075911 | RED | 月薪喵 | 16541.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T075911 | RED | みらじ | 15387.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | MOCHI | 46436.37 | labelled | -86.96 |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | CASHTAG | 37899.07 | labelled | 37.27 |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | SpaceX | 28162.59 | labelled | -60.46 |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | 月薪喵 | 16541.34 | labelled | -37.93 |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | みらじ | 15387.71 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261111T095910 | NEUTRAL | BabyTrump | 27828.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T095910 | NEUTRAL | TI | 25002.28 | pending | None |  |  |  | None | no eligible comparator |
