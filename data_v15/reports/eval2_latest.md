@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 105 scans: 20 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 106 scans: 20 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 105 |
-| sightings | 6017 |
-| liquid sightings | 2449 |
-| first liquid sightings = unique tokens with an outcome row | 585 |
-|   young | 396 |
+| eval-2 scans | 106 |
+| sightings | 6076 |
+| liquid sightings | 2476 |
+| first liquid sightings = unique tokens with an outcome row | 590 |
+|   young | 401 |
 |   mature | 161 |
 |   other | 28 |
 | young with a comparator (cap 2) | 49 |
-| young without a comparator | 347 |
+| young without a comparator | 352 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 19 |
 | complete pairs (both 60m outcomes labelled) | 30 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 294/396, no_valid_entry 12/396, pending 11/396, unknown 58/396, unreliable 21/396
-- mature: labelled 154/161, pending 3/161, unknown 4/161
-- no valid entry: young 12/396, mature 0/161
+- young: labelled 296/401, no_valid_entry 12/401, pending 12/401, unknown 60/401, unreliable 21/401
+- mature: labelled 156/161, pending 1/161, unknown 4/161
+- no valid entry: young 12/401, mature 0/161
 
 ## Effect (after costs; unit = scan)
 
@@ -433,9 +433,9 @@
 | 20261110T175920 | RED | EDMUND | 18690.71 | labelled | -100.0 | CB | 21386.92 | unknown | None |  |
 | 20261110T185920 | RED | HCAT | 67428.59 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261110T185920 | RED | PPP | 25987.94 | labelled | -33.58 | miaoudame | 25245.81 | labelled | -6.29 |  |
-| 20261110T185920 | RED | VC | 25434.87 | pending | None | miaoudame | 25245.81 | labelled | -6.29 |  |
+| 20261110T185920 | RED | VC | 25434.87 | unknown | None | miaoudame | 25245.81 | labelled | -6.29 |  |
 | 20261110T185920 | RED | 奶蛙 | 16728.45 | labelled | 36.61 |  |  |  | None | comparators used twice |
-| 20261110T185920 | RED | up | 15981.73 | pending | None |  |  |  | None | comparators used twice |
+| 20261110T185920 | RED | up | 15981.73 | unknown | None |  |  |  | None | comparators used twice |
 | 20261110T195920 | RED | LEONIDA | 90155.48 | labelled | -51.42 | WASTED | 109108.79 | labelled | -3.79 |  |
 | 20261110T195920 | RED | DACITY | 77181.34 | labelled | 37.54 | WASTED | 109108.79 | labelled | -3.79 |  |
 | 20261110T195920 | RED | Catcity | 26291.32 | labelled | 37.04 |  |  |  | None | no eligible comparator |
@@ -446,11 +446,16 @@
 | 20261110T205920 | RED | HOLD | 24796.11 | labelled | 37.0 |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | Looby | 19524.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T205920 | RED | XCAT | 15404.26 | labelled | 36.51 |  |  |  | None | no eligible comparator |
-| 20261110T225919 | RED | HOLD | 41232.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261110T225919 | RED | WHF | 26471.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T225919 | RED | HOLD | 41232.85 | labelled | -33.98 |  |  |  | None | no eligible comparator |
+| 20261110T225919 | RED | WHF | 26471.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261110T235918 | RED | vibeshift | 107568.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T235918 | RED | KoriMu | 35852.72 | pending | None | BULLHARIS | 53218.90 | pending | None |  |
 | 20261110T235918 | RED | 中国人牛逼 | 33356.26 | pending | None | BULLHARIS | 53218.90 | pending | None |  |
 | 20261110T235918 | RED | vibeshift | 31923.59 | pending | None |  |  |  | None | comparators used twice |
 | 20261110T235918 | RED | RWA | 22508.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T235918 | RED | vibeshift | 16621.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | NIHAO | 161319.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | BABYMINHAO | 76013.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | mihao | 28242.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | Wine | 26715.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | ANAL | 15047.36 | pending | None |  |  |  | None | no eligible comparator |
