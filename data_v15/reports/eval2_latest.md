@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 121 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 122 scans: 14 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 121 |
-| sightings | 6995 |
-| liquid sightings | 2847 |
-| first liquid sightings = unique tokens with an outcome row | 651 |
-|   young | 444 |
-|   mature | 176 |
-|   other | 31 |
-| young with a comparator (cap 2) | 57 |
-| young without a comparator | 387 |
+| eval-2 scans | 122 |
+| sightings | 7055 |
+| liquid sightings | 2873 |
+| first liquid sightings = unique tokens with an outcome row | 659 |
+|   young | 448 |
+|   mature | 179 |
+|   other | 32 |
+| young with a comparator (cap 2) | 58 |
+| young without a comparator | 390 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
-|   pairs: young or mature outcome not yet usable | 22 |
-| complete pairs (both 60m outcomes labelled) | 34 |
-| scans contributing a complete pair | 23 |
+|   pairs: young or mature outcome not yet usable | 21 |
+| complete pairs (both 60m outcomes labelled) | 36 |
+| scans contributing a complete pair | 24 |
 
 ## 60m outcome status by group
 
-- young: labelled 334/444, no_valid_entry 14/444, pending 6/444, unknown 68/444, unreliable 22/444
-- mature: labelled 165/176, pending 4/176, unknown 7/176
-- no valid entry: young 14/444, mature 0/176
+- young: labelled 336/448, no_valid_entry 14/448, pending 8/448, unknown 68/448, unreliable 22/448
+- mature: labelled 168/179, pending 4/179, unknown 7/179
+- no valid entry: young 14/448, mature 0/179
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -21.47 points, 95% interval (-36.55, -6.54); scans with young worse 16/23
-- Pairs with young worse: 23/34 (67.6%); pair mean -19.11, median -24.52
-- Big loss (<= -20%): young 21/34, mature 4/34
+- Scan-level mean difference (young - mature): -25.23 points, 95% interval (-42.4, -9.49); scans with young worse 17/24
+- Pairs with young worse: 25/36 (69.4%); pair mean -24.25, median -26.42
+- Big loss (<= -20%): young 23/36, mature 4/36
 
 ## Comparator reuse (cap 2)
 
@@ -502,7 +502,11 @@
 | 20261111T135908 | NEUTRAL | catni hao | 33126.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | ape hao | 17288.17 | labelled | 36.65 |  |  |  | None | no eligible comparator |
-| 20261111T145907 | NEUTRAL | SuperAlice | 22879.68 | pending | None | Allin | 24983.21 | pending | None |  |
-| 20261111T145907 | NEUTRAL | Boris | 21105.34 | pending | None | Allin | 24983.21 | pending | None |  |
+| 20261111T145907 | NEUTRAL | SuperAlice | 22879.68 | labelled | -100.0 | Allin | 24983.21 | labelled | 11.6 |  |
+| 20261111T145907 | NEUTRAL | Boris | 21105.34 | labelled | -100.0 | Allin | 24983.21 | labelled | 11.6 |  |
 | 20261111T155906 | GREEN | Māo | 25091.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T155906 | GREEN | DANIELA | 18929.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | VIKIRK | 109050.66 | pending | None | swordcat | 130425.51 | pending | None |  |
+| 20261111T165905 | GREEN | WONDER | 31036.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | DDOIL | 21758.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | GIFs | 19804.74 | pending | None |  |  |  | None | no eligible comparator |
