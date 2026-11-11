@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 124 scans: 13 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 125 scans: 13 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 124 |
-| sightings | 7178 |
-| liquid sightings | 2924 |
-| first liquid sightings = unique tokens with an outcome row | 677 |
-|   young | 459 |
-|   mature | 186 |
-|   other | 32 |
-| young with a comparator (cap 2) | 63 |
-| young without a comparator | 396 |
+| eval-2 scans | 125 |
+| sightings | 7239 |
+| liquid sightings | 2952 |
+| first liquid sightings = unique tokens with an outcome row | 688 |
+|   young | 466 |
+|   mature | 189 |
+|   other | 33 |
+| young with a comparator (cap 2) | 67 |
+| young without a comparator | 399 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
-|   pairs: young or mature outcome not yet usable | 25 |
+|   pairs: young or mature outcome not yet usable | 29 |
 | complete pairs (both 60m outcomes labelled) | 37 |
 | scans contributing a complete pair | 25 |
 
 ## 60m outcome status by group
 
-- young: labelled 341/459, no_valid_entry 14/459, pending 13/459, unknown 69/459, unreliable 22/459
-- mature: labelled 172/186, pending 7/186, unknown 7/186
-- no valid entry: young 14/459, mature 0/186
+- young: labelled 347/466, no_valid_entry 14/466, pending 13/466, unknown 70/466, unreliable 22/466
+- mature: labelled 174/189, pending 8/189, unknown 7/189
+- no valid entry: young 14/466, mature 0/189
 
 ## Effect (after costs; unit = scan)
 
@@ -59,6 +59,8 @@
 - 20261111T145907-C493YhUF: SuperAlice (20261111T145907), Boris (20261111T145907)
 - 20261111T175905-uHMWNFjU: LuckyCoin (20261111T175905), CHICAT (20261111T175905)
 - 20261111T185904-FSkyjfqB: HAOGPT (20261111T185904), MihaoWif (20261111T185904)
+- 20261111T195903-5tCju6YN: Meashld (20261111T195903), Quacky (20261111T195903)
+- 20261111T195903-3Tkm68ny: NEVERDOOM (20261111T195903), BERNIAO (20261111T195903)
 
 ## Every pair
 
@@ -502,7 +504,7 @@
 | 20261111T125909 | NEUTRAL | tgcat | 17478.49 | labelled | -71.29 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | catni hao | 33126.72 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | bro | 22035.41 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | ape hao | 17288.17 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261111T145907 | NEUTRAL | SuperAlice | 22879.68 | labelled | -100.0 | Allin | 24983.21 | labelled | 11.6 |  |
 | 20261111T145907 | NEUTRAL | Boris | 21105.34 | labelled | -100.0 | Allin | 24983.21 | labelled | 11.6 |  |
@@ -512,14 +514,21 @@
 | 20261111T165905 | GREEN | WONDER | 31036.84 | labelled | -33.07 |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | DDOIL | 21758.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | GIFs | 19804.74 | labelled | -48.92 |  |  |  | None | no eligible comparator |
-| 20261111T175905 | GREEN | LuckyCoin | 46125.85 | pending | None | PAYDAY | 36640.64 | pending | None |  |
-| 20261111T175905 | GREEN | CHICAT | 31683.65 | pending | None | PAYDAY | 36640.64 | pending | None |  |
-| 20261111T175905 | GREEN | FOMO | 30822.82 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T175905 | GREEN | MEOWLAND | 30811.27 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T175905 | GREEN | mihao | 21247.19 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T175905 | GREEN | BURN | 18973.88 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T175905 | GREEN | LuckyCoin | 46125.85 | labelled | 37.37 | PAYDAY | 36640.64 | pending | None |  |
+| 20261111T175905 | GREEN | CHICAT | 31683.65 | labelled | -28.89 | PAYDAY | 36640.64 | pending | None |  |
+| 20261111T175905 | GREEN | FOMO | 30822.82 | labelled | -52.92 |  |  |  | None | comparators used twice |
+| 20261111T175905 | GREEN | MEOWLAND | 30811.27 | labelled | 37.15 |  |  |  | None | comparators used twice |
+| 20261111T175905 | GREEN | mihao | 21247.19 | labelled | 7.55 |  |  |  | None | comparators used twice |
+| 20261111T175905 | GREEN | BURN | 18973.88 | labelled | -66.56 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | GTA$ | 15950.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T185904 | NEUTRAL | Penthouse | 42916.06 | pending | None | timmy | 56545.35 | pending | None |  |
 | 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | pending | None | :3 | 25723.38 | pending | None |  |
 | 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | pending | None | :3 | 25723.38 | pending | None |  |
 | 20261111T185904 | NEUTRAL | TOPBLAST | 19476.31 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | Meashld | 97408.15 | pending | None | swordcat | 141203.58 | pending | None |  |
+| 20261111T195903 | NEUTRAL | Quacky | 86697.40 | pending | None | swordcat | 141203.58 | pending | None |  |
+| 20261111T195903 | NEUTRAL | NEVERDOOM | 49633.00 | pending | None | GTA6TRUMP | 26254.87 | pending | None |  |
+| 20261111T195903 | NEUTRAL | BERNIAO | 27334.66 | pending | None | GTA6TRUMP | 26254.87 | pending | None |  |
+| 20261111T195903 | NEUTRAL | BERNIE | 23088.20 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | TnD | 17507.40 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | updog | 15153.23 | pending | None |  |  |  | None | comparators used twice |

@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-11 19:08 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-11 20:09 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-11 19:08 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 21:59 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 61 / 25 | OK |
-| Deep-checked coins left UNVERIFIED | 33 of 80 (41%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 28 checked, 13 unverified, 0 on-chain errors | WARN |
-| Gate-passers skipped by check budget | 116 of 196 | WARN |
-| Paper candidates (last 24h) | 15 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 532 / 117 | ALERT |
+| Tokens seen / liquid (median per scan) | 61 / 26 | OK |
+| Deep-checked coins left UNVERIFIED | 36 of 88 (41%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 26 checked, 12 unverified, 0 on-chain errors | WARN |
+| Gate-passers skipped by check budget | 128 of 216 | WARN |
+| Paper candidates (last 24h) | 17 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 540 / 109 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: swordcat (09:59), CATE (10:59), swordcat (10:59), CATE (11:59), swordcat (11:59), CATE (12:59), swordcat (12:59), CATE (13:59), CATE (14:59), swordcat (14:59), CATE (15:59), CATE (16:59), swordcat (16:59), CATE (17:59), swordcat (18:59)
+Candidates: swordcat (09:59), CATE (10:59), swordcat (10:59), CATE (11:59), swordcat (11:59), CATE (12:59), swordcat (12:59), CATE (13:59), CATE (14:59), swordcat (14:59), CATE (15:59), CATE (16:59), swordcat (16:59), CATE (17:59), swordcat (18:59), CATE (19:59), swordcat (19:59)
