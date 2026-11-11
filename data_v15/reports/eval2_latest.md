@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 119 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 120 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 119 |
-| sightings | 6871 |
-| liquid sightings | 2802 |
-| first liquid sightings = unique tokens with an outcome row | 643 |
-|   young | 440 |
-|   mature | 172 |
+| eval-2 scans | 120 |
+| sightings | 6934 |
+| liquid sightings | 2825 |
+| first liquid sightings = unique tokens with an outcome row | 648 |
+|   young | 442 |
+|   mature | 175 |
 |   other | 31 |
-| young with a comparator (cap 2) | 55 |
+| young with a comparator (cap 2) | 57 |
 | young without a comparator | 385 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
-|   pairs: young or mature outcome not yet usable | 20 |
+|   pairs: young or mature outcome not yet usable | 22 |
 | complete pairs (both 60m outcomes labelled) | 34 |
 | scans contributing a complete pair | 23 |
 
 ## 60m outcome status by group
 
-- young: labelled 331/440, no_valid_entry 14/440, pending 6/440, unknown 68/440, unreliable 21/440
-- mature: labelled 162/172, pending 3/172, unknown 7/172
-- no valid entry: young 14/440, mature 0/172
+- young: labelled 333/442, no_valid_entry 14/442, pending 6/442, unknown 68/442, unreliable 21/442
+- mature: labelled 164/175, pending 4/175, unknown 7/175
+- no valid entry: young 14/442, mature 0/175
 
 ## Effect (after costs; unit = scan)
 
@@ -56,6 +56,7 @@
 - 20261111T015917-6f27mW2d: NOBUSHIBA (20261111T015917), pepe (20261111T015917)
 - 20261111T035915-BLrKuqTC: SKELETON☠️ (20261111T035915), HAOBIBI (20261111T035915)
 - 20261111T045914-4aB266Xc: ORVIX (20261111T045914), PHCAT (20261111T045914)
+- 20261111T145907-C493YhUF: SuperAlice (20261111T145907), Boris (20261111T145907)
 
 ## Every pair
 
@@ -495,9 +496,11 @@
 | 20261111T105910 | NEUTRAL | woohao | 17224.24 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261111T105910 | NEUTRAL | MCAT | 15842.88 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261111T115910 | NEUTRAL | OldCat | 37239.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261111T125909 | NEUTRAL | NOT | 18026.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T125909 | NEUTRAL | tgcat | 17478.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | NOT | 18026.39 | labelled | -36.75 |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | tgcat | 17478.49 | labelled | -71.29 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | catni hao | 33126.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | ape hao | 17288.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T145907 | NEUTRAL | SuperAlice | 22879.68 | pending | None | Allin | 24983.21 | pending | None |  |
+| 20261111T145907 | NEUTRAL | Boris | 21105.34 | pending | None | Allin | 24983.21 | pending | None |  |
