@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 127 scans: 7 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 128 scans: 5 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 127 |
-| sightings | 7362 |
-| liquid sightings | 3002 |
-| first liquid sightings = unique tokens with an outcome row | 699 |
-|   young | 473 |
-|   mature | 192 |
+| eval-2 scans | 128 |
+| sightings | 7416 |
+| liquid sightings | 3025 |
+| first liquid sightings = unique tokens with an outcome row | 702 |
+|   young | 475 |
+|   mature | 193 |
 |   other | 34 |
 | young with a comparator (cap 2) | 69 |
-| young without a comparator | 404 |
+| young without a comparator | 406 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 24 |
-| complete pairs (both 60m outcomes labelled) | 43 |
-| scans contributing a complete pair | 27 |
+|   pairs: young or mature outcome not yet usable | 22 |
+| complete pairs (both 60m outcomes labelled) | 45 |
+| scans contributing a complete pair | 28 |
 
 ## 60m outcome status by group
 
-- young: labelled 357/473, no_valid_entry 15/473, pending 9/473, unknown 70/473, unreliable 22/473
-- mature: labelled 181/192, pending 4/192, unknown 7/192
-- no valid entry: young 15/473, mature 0/192
+- young: labelled 360/475, no_valid_entry 15/475, pending 7/475, unknown 71/475, unreliable 22/475
+- mature: labelled 183/193, pending 3/193, unknown 7/193
+- no valid entry: young 15/475, mature 0/193
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -31.53 points, 95% interval (-48.94, -15.53); scans with young worse 20/27
-- Pairs with young worse: 32/43 (74.4%); pair mean -31.69, median -30.21
-- Big loss (<= -20%): young 30/43, mature 5/43
+- Scan-level mean difference (young - mature): -29.94 points, 95% interval (-47.03, -13.34); scans with young worse 20/28
+- Pairs with young worse: 33/45 (73.3%); pair mean -29.71, median -29.72
+- Big loss (<= -20%): young 31/45, mature 5/45
 
 ## Comparator reuse (cap 2)
 
@@ -513,7 +513,7 @@
 | 20261111T155906 | GREEN | DANIELA | 18929.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | VIKIRK | 109050.66 | labelled | -100.0 | swordcat | 130425.51 | labelled | 37.65 |  |
 | 20261111T165905 | GREEN | WONDER | 31036.84 | labelled | -33.07 |  |  |  | None | no eligible comparator |
-| 20261111T165905 | GREEN | DDOIL | 21758.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | DDOIL | 21758.04 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | GIFs | 19804.74 | labelled | -48.92 |  |  |  | None | no eligible comparator |
 | 20261111T175905 | GREEN | LuckyCoin | 46125.85 | labelled | 37.37 | PAYDAY | 36640.64 | pending | None |  |
 | 20261111T175905 | GREEN | CHICAT | 31683.65 | labelled | -28.89 | PAYDAY | 36640.64 | pending | None |  |
@@ -533,10 +533,12 @@
 | 20261111T195903 | NEUTRAL | BERNIE | 23088.20 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261111T195903 | NEUTRAL | TnD | 17507.40 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261111T195903 | NEUTRAL | updog | 15153.23 | labelled | -51.57 |  |  |  | None | comparators used twice |
-| 20261111T205902 | NEUTRAL | AIB | 43139.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T205902 | NEUTRAL | MIHAO VI | 31556.99 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
-| 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
+| 20261111T205902 | NEUTRAL | AIB | 43139.30 | labelled | -35.64 |  |  |  | None | no eligible comparator |
+| 20261111T205902 | NEUTRAL | MIHAO VI | 31556.99 | labelled | 37.17 | SICKNOTE | 16925.81 | labelled | -8.94 |  |
+| 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | labelled | -29.33 | SICKNOTE | 16925.81 | labelled | -8.94 |  |
 | 20261111T215901 | NEUTRAL | Max | 301133.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | SAXON | 16019.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | STINK | 15967.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T225900 | NEUTRAL | TILLY | 35425.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | pending | None |  |  |  | None | no eligible comparator |
