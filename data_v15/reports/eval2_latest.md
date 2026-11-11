@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 123 scans: 14 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 124 scans: 13 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 123 |
-| sightings | 7116 |
-| liquid sightings | 2900 |
-| first liquid sightings = unique tokens with an outcome row | 669 |
-|   young | 455 |
-|   mature | 182 |
+| eval-2 scans | 124 |
+| sightings | 7178 |
+| liquid sightings | 2924 |
+| first liquid sightings = unique tokens with an outcome row | 677 |
+|   young | 459 |
+|   mature | 186 |
 |   other | 32 |
-| young with a comparator (cap 2) | 60 |
-| young without a comparator | 395 |
+| young with a comparator (cap 2) | 63 |
+| young without a comparator | 396 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
-|   pairs: young or mature outcome not yet usable | 23 |
-| complete pairs (both 60m outcomes labelled) | 36 |
-| scans contributing a complete pair | 24 |
+|   pairs: young or mature outcome not yet usable | 25 |
+| complete pairs (both 60m outcomes labelled) | 37 |
+| scans contributing a complete pair | 25 |
 
 ## 60m outcome status by group
 
-- young: labelled 338/455, no_valid_entry 14/455, pending 13/455, unknown 68/455, unreliable 22/455
-- mature: labelled 169/182, pending 6/182, unknown 7/182
-- no valid entry: young 14/455, mature 0/182
+- young: labelled 341/459, no_valid_entry 14/459, pending 13/459, unknown 69/459, unreliable 22/459
+- mature: labelled 172/186, pending 7/186, unknown 7/186
+- no valid entry: young 14/459, mature 0/186
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.23 points, 95% interval (-42.4, -9.49); scans with young worse 17/24
-- Pairs with young worse: 25/36 (69.4%); pair mean -24.25, median -26.42
-- Big loss (<= -20%): young 23/36, mature 4/36
+- Scan-level mean difference (young - mature): -29.73 points, 95% interval (-48.34, -12.39); scans with young worse 18/25
+- Pairs with young worse: 26/37 (70.3%); pair mean -27.32, median -27.29
+- Big loss (<= -20%): young 24/37, mature 4/37
 
 ## Comparator reuse (cap 2)
 
@@ -58,6 +58,7 @@
 - 20261111T045914-4aB266Xc: ORVIX (20261111T045914), PHCAT (20261111T045914)
 - 20261111T145907-C493YhUF: SuperAlice (20261111T145907), Boris (20261111T145907)
 - 20261111T175905-uHMWNFjU: LuckyCoin (20261111T175905), CHICAT (20261111T175905)
+- 20261111T185904-FSkyjfqB: HAOGPT (20261111T185904), MihaoWif (20261111T185904)
 
 ## Every pair
 
@@ -499,7 +500,7 @@
 | 20261111T115910 | NEUTRAL | OldCat | 37239.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | NOT | 18026.39 | labelled | -36.75 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | tgcat | 17478.49 | labelled | -71.29 |  |  |  | None | no eligible comparator |
-| 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | catni hao | 33126.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T135908 | NEUTRAL | ape hao | 17288.17 | labelled | 36.65 |  |  |  | None | no eligible comparator |
@@ -507,10 +508,10 @@
 | 20261111T145907 | NEUTRAL | Boris | 21105.34 | labelled | -100.0 | Allin | 24983.21 | labelled | 11.6 |  |
 | 20261111T155906 | GREEN | Māo | 25091.93 | labelled | 37.01 |  |  |  | None | no eligible comparator |
 | 20261111T155906 | GREEN | DANIELA | 18929.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261111T165905 | GREEN | VIKIRK | 109050.66 | pending | None | swordcat | 130425.51 | pending | None |  |
-| 20261111T165905 | GREEN | WONDER | 31036.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | VIKIRK | 109050.66 | labelled | -100.0 | swordcat | 130425.51 | labelled | 37.65 |  |
+| 20261111T165905 | GREEN | WONDER | 31036.84 | labelled | -33.07 |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | DDOIL | 21758.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T165905 | GREEN | GIFs | 19804.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T165905 | GREEN | GIFs | 19804.74 | labelled | -48.92 |  |  |  | None | no eligible comparator |
 | 20261111T175905 | GREEN | LuckyCoin | 46125.85 | pending | None | PAYDAY | 36640.64 | pending | None |  |
 | 20261111T175905 | GREEN | CHICAT | 31683.65 | pending | None | PAYDAY | 36640.64 | pending | None |  |
 | 20261111T175905 | GREEN | FOMO | 30822.82 | pending | None |  |  |  | None | comparators used twice |
@@ -518,3 +519,7 @@
 | 20261111T175905 | GREEN | mihao | 21247.19 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | BURN | 18973.88 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | GTA$ | 15950.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T185904 | NEUTRAL | Penthouse | 42916.06 | pending | None | timmy | 56545.35 | pending | None |  |
+| 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | pending | None | :3 | 25723.38 | pending | None |  |
+| 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | pending | None | :3 | 25723.38 | pending | None |  |
+| 20261111T185904 | NEUTRAL | TOPBLAST | 19476.31 | pending | None |  |  |  | None | comparators used twice |
