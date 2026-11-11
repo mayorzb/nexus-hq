@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 116 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 117 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 116 |
-| sightings | 6689 |
-| liquid sightings | 2733 |
-| first liquid sightings = unique tokens with an outcome row | 630 |
-|   young | 433 |
-|   mature | 167 |
+| eval-2 scans | 117 |
+| sightings | 6753 |
+| liquid sightings | 2756 |
+| first liquid sightings = unique tokens with an outcome row | 633 |
+|   young | 434 |
+|   mature | 169 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 378 |
+| young without a comparator | 379 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 327/433, no_valid_entry 13/433, pending 5/433, unknown 67/433, unreliable 21/433
-- mature: labelled 158/167, pending 3/167, unknown 6/167
-- no valid entry: young 13/433, mature 0/167
+- young: labelled 329/434, no_valid_entry 13/434, pending 3/434, unknown 68/434, unreliable 21/434
+- mature: labelled 158/169, pending 4/169, unknown 7/169
+- no valid entry: young 13/434, mature 0/169
 
 ## Effect (after costs; unit = scan)
 
@@ -479,7 +479,7 @@
 | 20261111T045914 | RED | 34% | 18218.50 | unknown | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | FOMO | 17645.58 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261111T055913 | RED | CALBEAR | 102665.37 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261111T055913 | RED | Billions  | 37679.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T055913 | RED | Billions  | 37679.24 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T055913 | RED | mihao | 28710.34 | labelled | -9.16 |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | PayCat | 102989.74 | labelled | 37.61 |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | PayCat | 33025.65 | labelled | -32.56 |  |  |  | None | no eligible comparator |
@@ -490,7 +490,8 @@
 | 20261111T075911 | RED | SpaceX | 28162.59 | labelled | -60.46 |  |  |  | None | no eligible comparator |
 | 20261111T075911 | RED | 月薪喵 | 16541.34 | labelled | -37.93 |  |  |  | None | no eligible comparator |
 | 20261111T075911 | RED | みらじ | 15387.71 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261111T095910 | NEUTRAL | BabyTrump | 27828.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T095910 | NEUTRAL | TI | 25002.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T095910 | NEUTRAL | BabyTrump | 27828.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261111T095910 | NEUTRAL | TI | 25002.28 | labelled | -36.05 |  |  |  | None | no eligible comparator |
 | 20261111T105910 | NEUTRAL | woohao | 17224.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T105910 | NEUTRAL | MCAT | 15842.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T115910 | NEUTRAL | OldCat | 37239.68 | pending | None |  |  |  | None | no eligible comparator |
