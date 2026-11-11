@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 104 scans: 20 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 105 scans: 20 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 104 |
-| sightings | 5959 |
-| liquid sightings | 2421 |
-| first liquid sightings = unique tokens with an outcome row | 578 |
-|   young | 390 |
-|   mature | 160 |
+| eval-2 scans | 105 |
+| sightings | 6017 |
+| liquid sightings | 2449 |
+| first liquid sightings = unique tokens with an outcome row | 585 |
+|   young | 396 |
+|   mature | 161 |
 |   other | 28 |
-| young with a comparator (cap 2) | 47 |
-| young without a comparator | 343 |
+| young with a comparator (cap 2) | 49 |
+| young without a comparator | 347 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 17 |
+|   pairs: young or mature outcome not yet usable | 19 |
 | complete pairs (both 60m outcomes labelled) | 30 |
 | scans contributing a complete pair | 21 |
 
 ## 60m outcome status by group
 
-- young: labelled 294/390, no_valid_entry 12/390, pending 5/390, unknown 58/390, unreliable 21/390
-- mature: labelled 153/160, pending 3/160, unknown 4/160
-- no valid entry: young 12/390, mature 0/160
+- young: labelled 294/396, no_valid_entry 12/396, pending 11/396, unknown 58/396, unreliable 21/396
+- mature: labelled 154/161, pending 3/161, unknown 4/161
+- no valid entry: young 12/396, mature 0/161
 
 ## Effect (after costs; unit = scan)
 
@@ -52,6 +52,7 @@
 - 20261109T205934-XeaWBDDB: tagcat (20261109T205934), CAT (20261109T205934)
 - 20261110T185920-8riMEL1o: PPP (20261110T185920), VC (20261110T185920)
 - 20261110T195920-GexThZHg: LEONIDA (20261110T195920), DACITY (20261110T195920)
+- 20261110T235918-6mwuYnY3: KoriMu (20261110T235918), 中国人牛逼 (20261110T235918)
 
 ## Every pair
 
@@ -447,3 +448,9 @@
 | 20261110T205920 | RED | XCAT | 15404.26 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261110T225919 | RED | HOLD | 41232.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261110T225919 | RED | WHF | 26471.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T235918 | RED | vibeshift | 107568.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T235918 | RED | KoriMu | 35852.72 | pending | None | BULLHARIS | 53218.90 | pending | None |  |
+| 20261110T235918 | RED | 中国人牛逼 | 33356.26 | pending | None | BULLHARIS | 53218.90 | pending | None |  |
+| 20261110T235918 | RED | vibeshift | 31923.59 | pending | None |  |  |  | None | comparators used twice |
+| 20261110T235918 | RED | RWA | 22508.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T235918 | RED | vibeshift | 16621.16 | pending | None |  |  |  | None | no eligible comparator |
