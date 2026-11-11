@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 112 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 113 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 112 |
-| sightings | 6448 |
-| liquid sightings | 2640 |
-| first liquid sightings = unique tokens with an outcome row | 618 |
-|   young | 424 |
+| eval-2 scans | 113 |
+| sightings | 6510 |
+| liquid sightings | 2666 |
+| first liquid sightings = unique tokens with an outcome row | 623 |
+|   young | 429 |
 |   mature | 164 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 369 |
+| young without a comparator | 374 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 316/424, no_valid_entry 13/424, pending 9/424, unknown 65/424, unreliable 21/424
+- young: labelled 318/429, no_valid_entry 13/429, pending 12/429, unknown 65/429, unreliable 21/429
 - mature: labelled 158/164, pending 2/164, unknown 4/164
-- no valid entry: young 13/424, mature 0/164
+- no valid entry: young 13/429, mature 0/164
 
 ## Effect (after costs; unit = scan)
 
@@ -478,10 +478,15 @@
 | 20261111T045914 | RED | PHCAT | 26320.31 | no_valid_entry | None | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | FOMO | 17645.58 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261111T055913 | RED | CALBEAR | 102665.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T055913 | RED | CALBEAR | 102665.37 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T055913 | RED | Billions  | 37679.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T055913 | RED | mihao | 28710.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T055913 | RED | mihao | 28710.34 | labelled | -9.16 |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | PayCat | 102989.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | PayCat | 33025.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | MJ | 28100.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T065912 | RED | FOMOCAT | 17249.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | MOCHI | 46436.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | CASHTAG | 37899.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | SpaceX | 28162.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | 月薪喵 | 16541.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T075911 | RED | みらじ | 15387.71 | pending | None |  |  |  | None | no eligible comparator |
