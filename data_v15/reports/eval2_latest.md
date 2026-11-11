@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 117 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 118 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 117 |
-| sightings | 6753 |
-| liquid sightings | 2756 |
-| first liquid sightings = unique tokens with an outcome row | 633 |
-|   young | 434 |
-|   mature | 169 |
+| eval-2 scans | 118 |
+| sightings | 6814 |
+| liquid sightings | 2779 |
+| first liquid sightings = unique tokens with an outcome row | 638 |
+|   young | 437 |
+|   mature | 171 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 379 |
+| young without a comparator | 382 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 329/434, no_valid_entry 13/434, pending 3/434, unknown 68/434, unreliable 21/434
-- mature: labelled 158/169, pending 4/169, unknown 7/169
-- no valid entry: young 13/434, mature 0/169
+- young: labelled 330/437, no_valid_entry 14/437, pending 4/437, unknown 68/437, unreliable 21/437
+- mature: labelled 160/171, pending 4/171, unknown 7/171
+- no valid entry: young 14/437, mature 0/171
 
 ## Effect (after costs; unit = scan)
 
@@ -492,6 +492,9 @@
 | 20261111T075911 | RED | みらじ | 15387.71 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T095910 | NEUTRAL | BabyTrump | 27828.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T095910 | NEUTRAL | TI | 25002.28 | labelled | -36.05 |  |  |  | None | no eligible comparator |
-| 20261111T105910 | NEUTRAL | woohao | 17224.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T105910 | NEUTRAL | MCAT | 15842.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T105910 | NEUTRAL | woohao | 17224.24 | labelled | 36.65 |  |  |  | None | no eligible comparator |
+| 20261111T105910 | NEUTRAL | MCAT | 15842.88 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261111T115910 | NEUTRAL | OldCat | 37239.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | NOT | 18026.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | tgcat | 17478.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | pending | None |  |  |  | None | no eligible comparator |
