@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 125 scans: 13 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 126 scans: 11 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 125 |
-| sightings | 7239 |
-| liquid sightings | 2952 |
-| first liquid sightings = unique tokens with an outcome row | 688 |
-|   young | 466 |
-|   mature | 189 |
+| eval-2 scans | 126 |
+| sightings | 7306 |
+| liquid sightings | 2976 |
+| first liquid sightings = unique tokens with an outcome row | 693 |
+|   young | 469 |
+|   mature | 191 |
 |   other | 33 |
-| young with a comparator (cap 2) | 67 |
-| young without a comparator | 399 |
-|   pairs: young had no valid entry (counted, not scored) | 1 |
-|   pairs: young or mature outcome not yet usable | 29 |
-| complete pairs (both 60m outcomes labelled) | 37 |
-| scans contributing a complete pair | 25 |
+| young with a comparator (cap 2) | 69 |
+| young without a comparator | 400 |
+|   pairs: young had no valid entry (counted, not scored) | 2 |
+|   pairs: young or mature outcome not yet usable | 28 |
+| complete pairs (both 60m outcomes labelled) | 39 |
+| scans contributing a complete pair | 26 |
 
 ## 60m outcome status by group
 
-- young: labelled 347/466, no_valid_entry 14/466, pending 13/466, unknown 70/466, unreliable 22/466
-- mature: labelled 174/189, pending 8/189, unknown 7/189
-- no valid entry: young 14/466, mature 0/189
+- young: labelled 350/469, no_valid_entry 15/469, pending 12/469, unknown 70/469, unreliable 22/469
+- mature: labelled 178/191, pending 6/191, unknown 7/191
+- no valid entry: young 15/469, mature 0/191
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.73 points, 95% interval (-48.34, -12.39); scans with young worse 18/25
-- Pairs with young worse: 26/37 (70.3%); pair mean -27.32, median -27.29
-- Big loss (<= -20%): young 24/37, mature 4/37
+- Scan-level mean difference (young - mature): -30.13 points, 95% interval (-47.4, -12.88); scans with young worse 19/26
+- Pairs with young worse: 28/39 (71.8%); pair mean -27.97, median -27.29
+- Big loss (<= -20%): young 26/39, mature 5/39
 
 ## Comparator reuse (cap 2)
 
@@ -61,6 +61,7 @@
 - 20261111T185904-FSkyjfqB: HAOGPT (20261111T185904), MihaoWif (20261111T185904)
 - 20261111T195903-5tCju6YN: Meashld (20261111T195903), Quacky (20261111T195903)
 - 20261111T195903-3Tkm68ny: NEVERDOOM (20261111T195903), BERNIAO (20261111T195903)
+- 20261111T205902-9GgsHTYt: MIHAO VI (20261111T205902), MANEKI (20261111T205902)
 
 ## Every pair
 
@@ -521,10 +522,10 @@
 | 20261111T175905 | GREEN | mihao | 21247.19 | labelled | 7.55 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | BURN | 18973.88 | labelled | -66.56 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | GTA$ | 15950.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T185904 | NEUTRAL | Penthouse | 42916.06 | pending | None | timmy | 56545.35 | pending | None |  |
-| 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | pending | None | :3 | 25723.38 | pending | None |  |
-| 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | pending | None | :3 | 25723.38 | pending | None |  |
-| 20261111T185904 | NEUTRAL | TOPBLAST | 19476.31 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T185904 | NEUTRAL | Penthouse | 42916.06 | labelled | -84.0 | timmy | 56545.35 | labelled | -5.65 |  |
+| 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | labelled | -32.13 | :3 | 25723.38 | labelled | -30.21 |  |
+| 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | no_valid_entry | None | :3 | 25723.38 | labelled | -30.21 |  |
+| 20261111T185904 | NEUTRAL | TOPBLAST | 19476.31 | labelled | -43.38 |  |  |  | None | comparators used twice |
 | 20261111T195903 | NEUTRAL | Meashld | 97408.15 | pending | None | swordcat | 141203.58 | pending | None |  |
 | 20261111T195903 | NEUTRAL | Quacky | 86697.40 | pending | None | swordcat | 141203.58 | pending | None |  |
 | 20261111T195903 | NEUTRAL | NEVERDOOM | 49633.00 | pending | None | GTA6TRUMP | 26254.87 | pending | None |  |
@@ -532,3 +533,6 @@
 | 20261111T195903 | NEUTRAL | BERNIE | 23088.20 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T195903 | NEUTRAL | TnD | 17507.40 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T195903 | NEUTRAL | updog | 15153.23 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T205902 | NEUTRAL | AIB | 43139.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T205902 | NEUTRAL | MIHAO VI | 31556.99 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
+| 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
