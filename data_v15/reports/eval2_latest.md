@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 118 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 119 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 118 |
-| sightings | 6814 |
-| liquid sightings | 2779 |
-| first liquid sightings = unique tokens with an outcome row | 638 |
-|   young | 437 |
-|   mature | 171 |
-|   other | 30 |
+| eval-2 scans | 119 |
+| sightings | 6871 |
+| liquid sightings | 2802 |
+| first liquid sightings = unique tokens with an outcome row | 643 |
+|   young | 440 |
+|   mature | 172 |
+|   other | 31 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 382 |
+| young without a comparator | 385 |
 |   pairs: young had no valid entry (counted, not scored) | 1 |
 |   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 330/437, no_valid_entry 14/437, pending 4/437, unknown 68/437, unreliable 21/437
-- mature: labelled 160/171, pending 4/171, unknown 7/171
-- no valid entry: young 14/437, mature 0/171
+- young: labelled 331/440, no_valid_entry 14/440, pending 6/440, unknown 68/440, unreliable 21/440
+- mature: labelled 162/172, pending 3/172, unknown 7/172
+- no valid entry: young 14/440, mature 0/172
 
 ## Effect (after costs; unit = scan)
 
@@ -494,7 +494,10 @@
 | 20261111T095910 | NEUTRAL | TI | 25002.28 | labelled | -36.05 |  |  |  | None | no eligible comparator |
 | 20261111T105910 | NEUTRAL | woohao | 17224.24 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261111T105910 | NEUTRAL | MCAT | 15842.88 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261111T115910 | NEUTRAL | OldCat | 37239.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T115910 | NEUTRAL | OldCat | 37239.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | NOT | 18026.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | tgcat | 17478.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T125909 | NEUTRAL | FLIPIF | 15040.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | catni hao | 33126.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | bro | 22035.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T135908 | NEUTRAL | ape hao | 17288.17 | pending | None |  |  |  | None | no eligible comparator |
