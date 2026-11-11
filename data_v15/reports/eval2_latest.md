@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 108 scans: 18 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 109 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 108 |
-| sightings | 6200 |
-| liquid sightings | 2529 |
-| first liquid sightings = unique tokens with an outcome row | 596 |
-|   young | 406 |
-|   mature | 162 |
-|   other | 28 |
-| young with a comparator (cap 2) | 51 |
-| young without a comparator | 355 |
+| eval-2 scans | 109 |
+| sightings | 6262 |
+| liquid sightings | 2558 |
+| first liquid sightings = unique tokens with an outcome row | 605 |
+|   young | 413 |
+|   mature | 163 |
+|   other | 29 |
+| young with a comparator (cap 2) | 53 |
+| young without a comparator | 360 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 19 |
-| complete pairs (both 60m outcomes labelled) | 32 |
-| scans contributing a complete pair | 22 |
+| complete pairs (both 60m outcomes labelled) | 34 |
+| scans contributing a complete pair | 23 |
 
 ## 60m outcome status by group
 
-- young: labelled 304/406, no_valid_entry 12/406, pending 8/406, unknown 61/406, unreliable 21/406
-- mature: labelled 157/162, pending 1/162, unknown 4/162
-- no valid entry: young 12/406, mature 0/162
+- young: labelled 308/413, no_valid_entry 12/413, pending 11/413, unknown 61/413, unreliable 21/413
+- mature: labelled 158/163, pending 1/163, unknown 4/163
+- no valid entry: young 12/413, mature 0/163
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -21.38 points, 95% interval (-37.69, -5.48); scans with young worse 15/22
-- Pairs with young worse: 22/32 (68.8%); pair mean -18.84, median -24.52
-- Big loss (<= -20%): young 20/32, mature 4/32
+- Scan-level mean difference (young - mature): -21.47 points, 95% interval (-36.55, -6.54); scans with young worse 16/23
+- Pairs with young worse: 23/34 (67.6%); pair mean -19.11, median -24.52
+- Big loss (<= -20%): young 21/34, mature 4/34
 
 ## Comparator reuse (cap 2)
 
@@ -54,6 +54,7 @@
 - 20261110T195920-GexThZHg: LEONIDA (20261110T195920), DACITY (20261110T195920)
 - 20261110T235918-6mwuYnY3: KoriMu (20261110T235918), 中国人牛逼 (20261110T235918)
 - 20261111T015917-6f27mW2d: NOBUSHIBA (20261111T015917), pepe (20261111T015917)
+- 20261111T035915-BLrKuqTC: SKELETON☠️ (20261111T035915), HAOBIBI (20261111T035915)
 
 ## Every pair
 
@@ -460,8 +461,15 @@
 | 20261111T005917 | RED | mihao | 28242.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | Wine | 26715.72 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | ANAL | 15047.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T015917 | RED | 咪好 | 49780.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T015917 | RED | NOBUSHIBA | 29317.58 | pending | None | APOGEE | 16998.75 | pending | None |  |
-| 20261111T015917 | RED | pepe | 23040.50 | pending | None | APOGEE | 16998.75 | pending | None |  |
-| 20261111T015917 | RED | 💎 | 22338.20 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T015917 | RED | 咪好 | 49780.27 | labelled | -13.28 |  |  |  | None | no eligible comparator |
+| 20261111T015917 | RED | NOBUSHIBA | 29317.58 | labelled | 37.12 | APOGEE | 16998.75 | labelled | -7.96 |  |
+| 20261111T015917 | RED | pepe | 23040.50 | labelled | -100.0 | APOGEE | 16998.75 | labelled | -7.96 |  |
+| 20261111T015917 | RED | 💎 | 22338.20 | labelled | -30.83 |  |  |  | None | comparators used twice |
 | 20261111T025916 | RED | mihao | 28180.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T035915 | RED | SKELETON☠️ | 35648.55 | pending | None | RaRa | 26173.18 | pending | None |  |
+| 20261111T035915 | RED | HAOBIBI | 32248.58 | pending | None | RaRa | 26173.18 | pending | None |  |
+| 20261111T035915 | RED | VEYL | 31418.32 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | BUZZ | 30592.96 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | Bublublu | 23238.46 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | GTA 6 Coin | 22759.66 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | Wong | 17655.47 | pending | None |  |  |  | None | comparators used twice |
