@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 126 scans: 11 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 127 scans: 7 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 126 |
-| sightings | 7306 |
-| liquid sightings | 2976 |
-| first liquid sightings = unique tokens with an outcome row | 693 |
-|   young | 469 |
-|   mature | 191 |
-|   other | 33 |
+| eval-2 scans | 127 |
+| sightings | 7362 |
+| liquid sightings | 3002 |
+| first liquid sightings = unique tokens with an outcome row | 699 |
+|   young | 473 |
+|   mature | 192 |
+|   other | 34 |
 | young with a comparator (cap 2) | 69 |
-| young without a comparator | 400 |
+| young without a comparator | 404 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 39 |
-| scans contributing a complete pair | 26 |
+|   pairs: young or mature outcome not yet usable | 24 |
+| complete pairs (both 60m outcomes labelled) | 43 |
+| scans contributing a complete pair | 27 |
 
 ## 60m outcome status by group
 
-- young: labelled 350/469, no_valid_entry 15/469, pending 12/469, unknown 70/469, unreliable 22/469
-- mature: labelled 178/191, pending 6/191, unknown 7/191
-- no valid entry: young 15/469, mature 0/191
+- young: labelled 357/473, no_valid_entry 15/473, pending 9/473, unknown 70/473, unreliable 22/473
+- mature: labelled 181/192, pending 4/192, unknown 7/192
+- no valid entry: young 15/473, mature 0/192
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -30.13 points, 95% interval (-47.4, -12.88); scans with young worse 19/26
-- Pairs with young worse: 28/39 (71.8%); pair mean -27.97, median -27.29
-- Big loss (<= -20%): young 26/39, mature 5/39
+- Scan-level mean difference (young - mature): -31.53 points, 95% interval (-48.94, -15.53); scans with young worse 20/27
+- Pairs with young worse: 32/43 (74.4%); pair mean -31.69, median -30.21
+- Big loss (<= -20%): young 30/43, mature 5/43
 
 ## Comparator reuse (cap 2)
 
@@ -526,13 +526,17 @@
 | 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | labelled | -32.13 | :3 | 25723.38 | labelled | -30.21 |  |
 | 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | no_valid_entry | None | :3 | 25723.38 | labelled | -30.21 |  |
 | 20261111T185904 | NEUTRAL | TOPBLAST | 19476.31 | labelled | -43.38 |  |  |  | None | comparators used twice |
-| 20261111T195903 | NEUTRAL | Meashld | 97408.15 | pending | None | swordcat | 141203.58 | pending | None |  |
-| 20261111T195903 | NEUTRAL | Quacky | 86697.40 | pending | None | swordcat | 141203.58 | pending | None |  |
-| 20261111T195903 | NEUTRAL | NEVERDOOM | 49633.00 | pending | None | GTA6TRUMP | 26254.87 | pending | None |  |
-| 20261111T195903 | NEUTRAL | BERNIAO | 27334.66 | pending | None | GTA6TRUMP | 26254.87 | pending | None |  |
-| 20261111T195903 | NEUTRAL | BERNIE | 23088.20 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T195903 | NEUTRAL | TnD | 17507.40 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T195903 | NEUTRAL | updog | 15153.23 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | Meashld | 97408.15 | labelled | -100.0 | swordcat | 141203.58 | labelled | -2.93 |  |
+| 20261111T195903 | NEUTRAL | Quacky | 86697.40 | labelled | -100.0 | swordcat | 141203.58 | labelled | -2.93 |  |
+| 20261111T195903 | NEUTRAL | NEVERDOOM | 49633.00 | labelled | -37.25 | GTA6TRUMP | 26254.87 | labelled | -3.66 |  |
+| 20261111T195903 | NEUTRAL | BERNIAO | 27334.66 | labelled | -47.69 | GTA6TRUMP | 26254.87 | labelled | -3.66 |  |
+| 20261111T195903 | NEUTRAL | BERNIE | 23088.20 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | TnD | 17507.40 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261111T195903 | NEUTRAL | updog | 15153.23 | labelled | -51.57 |  |  |  | None | comparators used twice |
 | 20261111T205902 | NEUTRAL | AIB | 43139.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T205902 | NEUTRAL | MIHAO VI | 31556.99 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
 | 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | pending | None | SICKNOTE | 16925.81 | pending | None |  |
+| 20261111T215901 | NEUTRAL | Max | 301133.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | SAXON | 16019.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | STINK | 15967.49 | pending | None |  |  |  | None | no eligible comparator |
