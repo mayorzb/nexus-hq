@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 110 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 111 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 110 |
-| sightings | 6325 |
-| liquid sightings | 2589 |
-| first liquid sightings = unique tokens with an outcome row | 611 |
-|   young | 417 |
+| eval-2 scans | 111 |
+| sightings | 6386 |
+| liquid sightings | 2614 |
+| first liquid sightings = unique tokens with an outcome row | 614 |
+|   young | 420 |
 |   mature | 164 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 362 |
+| young without a comparator | 365 |
 |   pairs: young had no valid entry (counted, not scored) | 0 |
 |   pairs: young or mature outcome not yet usable | 21 |
 | complete pairs (both 60m outcomes labelled) | 34 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 308/417, no_valid_entry 12/417, pending 15/417, unknown 61/417, unreliable 21/417
+- young: labelled 314/420, no_valid_entry 12/420, pending 9/420, unknown 64/420, unreliable 21/420
 - mature: labelled 158/164, pending 2/164, unknown 4/164
-- no valid entry: young 12/417, mature 0/164
+- no valid entry: young 12/420, mature 0/164
 
 ## Effect (after costs; unit = scan)
 
@@ -454,9 +454,9 @@
 | 20261110T235918 | RED | vibeshift | 107568.77 | labelled | 37.61 |  |  |  | None | no eligible comparator |
 | 20261110T235918 | RED | KoriMu | 35852.72 | labelled | 37.24 | BULLHARIS | 53218.90 | labelled | -6.52 |  |
 | 20261110T235918 | RED | 中国人牛逼 | 33356.26 | labelled | 37.2 | BULLHARIS | 53218.90 | labelled | -6.52 |  |
-| 20261110T235918 | RED | vibeshift | 31923.59 | pending | None |  |  |  | None | comparators used twice |
+| 20261110T235918 | RED | vibeshift | 31923.59 | unknown | None |  |  |  | None | comparators used twice |
 | 20261110T235918 | RED | RWA | 22508.91 | labelled | 36.92 |  |  |  | None | no eligible comparator |
-| 20261110T235918 | RED | vibeshift | 16621.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261110T235918 | RED | vibeshift | 16621.16 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | NIHAO | 161319.69 | labelled | -2.49 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | BABYMINHAO | 76013.66 | labelled | 37.54 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | mihao | 28242.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -466,15 +466,18 @@
 | 20261111T015917 | RED | NOBUSHIBA | 29317.58 | labelled | 37.12 | APOGEE | 16998.75 | labelled | -7.96 |  |
 | 20261111T015917 | RED | pepe | 23040.50 | labelled | -100.0 | APOGEE | 16998.75 | labelled | -7.96 |  |
 | 20261111T015917 | RED | 💎 | 22338.20 | labelled | -30.83 |  |  |  | None | comparators used twice |
-| 20261111T025916 | RED | mihao | 28180.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T035915 | RED | SKELETON☠️ | 35648.55 | pending | None | RaRa | 26173.18 | pending | None |  |
-| 20261111T035915 | RED | HAOBIBI | 32248.58 | pending | None | RaRa | 26173.18 | pending | None |  |
-| 20261111T035915 | RED | VEYL | 31418.32 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T035915 | RED | BUZZ | 30592.96 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T035915 | RED | Bublublu | 23238.46 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T035915 | RED | GTA 6 Coin | 22759.66 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T025916 | RED | mihao | 28180.22 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261111T035915 | RED | SKELETON☠️ | 35648.55 | labelled | 37.24 | RaRa | 26173.18 | pending | None |  |
+| 20261111T035915 | RED | HAOBIBI | 32248.58 | labelled | -28.23 | RaRa | 26173.18 | pending | None |  |
+| 20261111T035915 | RED | VEYL | 31418.32 | labelled | 37.17 |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | BUZZ | 30592.96 | labelled | -30.76 |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | Bublublu | 23238.46 | labelled | 4.92 |  |  |  | None | comparators used twice |
+| 20261111T035915 | RED | GTA 6 Coin | 22759.66 | labelled | -89.87 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | Wong | 17655.47 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | ORVIX | 32772.62 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | PHCAT | 26320.31 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
 | 20261111T045914 | RED | FOMO | 17645.58 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T055913 | RED | CALBEAR | 102665.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T055913 | RED | Billions  | 37679.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T055913 | RED | mihao | 28710.34 | pending | None |  |  |  | None | no eligible comparator |
