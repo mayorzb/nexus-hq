@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 111 scans: 16 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 112 scans: 16 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 111 |
-| sightings | 6386 |
-| liquid sightings | 2614 |
-| first liquid sightings = unique tokens with an outcome row | 614 |
-|   young | 420 |
+| eval-2 scans | 112 |
+| sightings | 6448 |
+| liquid sightings | 2640 |
+| first liquid sightings = unique tokens with an outcome row | 618 |
+|   young | 424 |
 |   mature | 164 |
 |   other | 30 |
 | young with a comparator (cap 2) | 55 |
-| young without a comparator | 365 |
-|   pairs: young had no valid entry (counted, not scored) | 0 |
-|   pairs: young or mature outcome not yet usable | 21 |
+| young without a comparator | 369 |
+|   pairs: young had no valid entry (counted, not scored) | 1 |
+|   pairs: young or mature outcome not yet usable | 20 |
 | complete pairs (both 60m outcomes labelled) | 34 |
 | scans contributing a complete pair | 23 |
 
 ## 60m outcome status by group
 
-- young: labelled 314/420, no_valid_entry 12/420, pending 9/420, unknown 64/420, unreliable 21/420
+- young: labelled 316/424, no_valid_entry 13/424, pending 9/424, unknown 65/424, unreliable 21/424
 - mature: labelled 158/164, pending 2/164, unknown 4/164
-- no valid entry: young 12/420, mature 0/164
+- no valid entry: young 13/424, mature 0/164
 
 ## Effect (after costs; unit = scan)
 
@@ -461,7 +461,7 @@
 | 20261111T005917 | RED | BABYMINHAO | 76013.66 | labelled | 37.54 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | mihao | 28242.76 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261111T005917 | RED | Wine | 26715.72 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261111T005917 | RED | ANAL | 15047.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T005917 | RED | ANAL | 15047.36 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T015917 | RED | 咪好 | 49780.27 | labelled | -13.28 |  |  |  | None | no eligible comparator |
 | 20261111T015917 | RED | NOBUSHIBA | 29317.58 | labelled | 37.12 | APOGEE | 16998.75 | labelled | -7.96 |  |
 | 20261111T015917 | RED | pepe | 23040.50 | labelled | -100.0 | APOGEE | 16998.75 | labelled | -7.96 |  |
@@ -474,10 +474,14 @@
 | 20261111T035915 | RED | Bublublu | 23238.46 | labelled | 4.92 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | GTA 6 Coin | 22759.66 | labelled | -89.87 |  |  |  | None | comparators used twice |
 | 20261111T035915 | RED | Wong | 17655.47 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T045914 | RED | ORVIX | 32772.62 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
-| 20261111T045914 | RED | PHCAT | 26320.31 | pending | None | GTA6MAS | 16453.99 | pending | None |  |
+| 20261111T045914 | RED | ORVIX | 32772.62 | labelled | -35.19 | GTA6MAS | 16453.99 | pending | None |  |
+| 20261111T045914 | RED | PHCAT | 26320.31 | no_valid_entry | None | GTA6MAS | 16453.99 | pending | None |  |
 | 20261111T045914 | RED | 34% | 18218.50 | pending | None |  |  |  | None | comparators used twice |
-| 20261111T045914 | RED | FOMO | 17645.58 | pending | None |  |  |  | None | comparators used twice |
+| 20261111T045914 | RED | FOMO | 17645.58 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261111T055913 | RED | CALBEAR | 102665.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T055913 | RED | Billions  | 37679.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T055913 | RED | mihao | 28710.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T065912 | RED | PayCat | 102989.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T065912 | RED | PayCat | 33025.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T065912 | RED | MJ | 28100.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T065912 | RED | FOMOCAT | 17249.39 | pending | None |  |  |  | None | no eligible comparator |
