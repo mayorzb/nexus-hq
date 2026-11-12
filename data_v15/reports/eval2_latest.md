@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 132 scans: 5 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 133 scans: 4 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 132 |
-| sightings | 7652 |
-| liquid sightings | 3130 |
-| first liquid sightings = unique tokens with an outcome row | 728 |
-|   young | 489 |
-|   mature | 201 |
+| eval-2 scans | 133 |
+| sightings | 7714 |
+| liquid sightings | 3158 |
+| first liquid sightings = unique tokens with an outcome row | 736 |
+|   young | 494 |
+|   mature | 204 |
 |   other | 38 |
-| young with a comparator (cap 2) | 72 |
-| young without a comparator | 417 |
+| young with a comparator (cap 2) | 74 |
+| young without a comparator | 420 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 25 |
-| complete pairs (both 60m outcomes labelled) | 45 |
-| scans contributing a complete pair | 28 |
+|   pairs: young or mature outcome not yet usable | 26 |
+| complete pairs (both 60m outcomes labelled) | 46 |
+| scans contributing a complete pair | 29 |
 
 ## 60m outcome status by group
 
-- young: labelled 370/489, no_valid_entry 15/489, pending 10/489, unknown 72/489, unreliable 22/489
-- mature: labelled 188/201, pending 5/201, unknown 8/201
-- no valid entry: young 15/489, mature 0/201
+- young: labelled 375/494, no_valid_entry 15/494, pending 9/494, unknown 73/494, unreliable 22/494
+- mature: labelled 190/204, pending 6/204, unknown 8/204
+- no valid entry: young 15/494, mature 0/204
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.94 points, 95% interval (-47.03, -13.34); scans with young worse 20/28
-- Pairs with young worse: 33/45 (73.3%); pair mean -29.71, median -29.72
-- Big loss (<= -20%): young 31/45, mature 5/45
+- Scan-level mean difference (young - mature): -27.44 points, 95% interval (-44.46, -11.31); scans with young worse 20/29
+- Pairs with young worse: 33/46 (71.7%); pair mean -28.14, median -28.5
+- Big loss (<= -20%): young 31/46, mature 5/46
 
 ## Comparator reuse (cap 2)
 
@@ -63,6 +63,7 @@
 - 20261111T195903-3Tkm68ny: NEVERDOOM (20261111T195903), BERNIAO (20261111T195903)
 - 20261111T205902-9GgsHTYt: MIHAO VI (20261111T205902), MANEKI (20261111T205902)
 - 20261112T005859-HtKSi76B: WYLIE (20261112T005859), CHRISTMAX (20261112T005859)
+- 20261112T035858-Tm2iqbxY: Max (20261112T035858), mihao (20261112T035858)
 
 ## Every pair
 
@@ -539,7 +540,7 @@
 | 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | labelled | -29.33 | SICKNOTE | 16925.81 | labelled | -8.94 |  |
 | 20261111T215901 | NEUTRAL | Max | 301133.67 | labelled | -30.79 |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | labelled | -28.64 |  |  |  | None | no eligible comparator |
-| 20261111T215901 | NEUTRAL | SAXON | 16019.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | SAXON | 16019.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | STINK | 15967.49 | labelled | -28.73 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | TILLY | 35425.49 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | labelled | -31.92 |  |  |  | None | no eligible comparator |
@@ -548,12 +549,17 @@
 | 20261112T005859 | NEUTRAL | CHRISTMAX | 24757.05 | labelled | -33.34 | CELON | 15259.71 | pending | None |  |
 | 20261112T005859 | NEUTRAL | GROKIE | 15853.65 | labelled | 25.54 |  |  |  | None | comparators used twice |
 | 20261112T005859 | NEUTRAL | REX | 15263.30 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261112T015858 | NEUTRAL | Rex | 63664.58 | pending | None | swordcat | 125781.34 | pending | None |  |
-| 20261112T015858 | NEUTRAL | AIB | 57657.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T015858 | NEUTRAL | MetaMask | 37155.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T015858 | NEUTRAL | X | 23939.47 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T015858 | NEUTRAL | WYRM | 16417.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | Rex | 63664.58 | labelled | 37.49 | swordcat | 125781.34 | labelled | -5.23 |  |
+| 20261112T015858 | NEUTRAL | AIB | 57657.65 | labelled | -28.47 |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | MetaMask | 37155.54 | labelled | 37.26 |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | X | 23939.47 | labelled | -30.42 |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | WYRM | 16417.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T025858 | NEUTRAL | MAX | 31573.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T025858 | NEUTRAL | FORKYU | 30854.46 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T025858 | NEUTRAL | X | 30476.11 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T025858 | NEUTRAL | SCAMSON | 23191.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T035858 | NEUTRAL | Max | 28760.12 | pending | None | Chinese | 42416.32 | pending | None |  |
+| 20261112T035858 | NEUTRAL | mihao | 22634.41 | pending | None | Chinese | 42416.32 | pending | None |  |
+| 20261112T035858 | NEUTRAL | POPVAX | 20423.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T035858 | NEUTRAL | SAXON | 15896.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T035858 | NEUTRAL | POPVAX | 15795.00 | pending | None |  |  |  | None | no eligible comparator |
