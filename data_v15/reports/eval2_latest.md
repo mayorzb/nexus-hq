@@ -1,20 +1,20 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 128 scans: 5 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 129 scans: 5 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 128 |
-| sightings | 7416 |
-| liquid sightings | 3025 |
-| first liquid sightings = unique tokens with an outcome row | 702 |
-|   young | 475 |
-|   mature | 193 |
-|   other | 34 |
+| eval-2 scans | 129 |
+| sightings | 7478 |
+| liquid sightings | 3049 |
+| first liquid sightings = unique tokens with an outcome row | 706 |
+|   young | 476 |
+|   mature | 194 |
+|   other | 36 |
 | young with a comparator (cap 2) | 69 |
-| young without a comparator | 406 |
+| young without a comparator | 407 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
 |   pairs: young or mature outcome not yet usable | 22 |
 | complete pairs (both 60m outcomes labelled) | 45 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 360/475, no_valid_entry 15/475, pending 7/475, unknown 71/475, unreliable 22/475
-- mature: labelled 183/193, pending 3/193, unknown 7/193
-- no valid entry: young 15/475, mature 0/193
+- young: labelled 363/476, no_valid_entry 15/476, pending 4/476, unknown 72/476, unreliable 22/476
+- mature: labelled 184/194, pending 2/194, unknown 8/194
+- no valid entry: young 15/476, mature 0/194
 
 ## Effect (after costs; unit = scan)
 
@@ -515,13 +515,13 @@
 | 20261111T165905 | GREEN | WONDER | 31036.84 | labelled | -33.07 |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | DDOIL | 21758.04 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T165905 | GREEN | GIFs | 19804.74 | labelled | -48.92 |  |  |  | None | no eligible comparator |
-| 20261111T175905 | GREEN | LuckyCoin | 46125.85 | labelled | 37.37 | PAYDAY | 36640.64 | pending | None |  |
-| 20261111T175905 | GREEN | CHICAT | 31683.65 | labelled | -28.89 | PAYDAY | 36640.64 | pending | None |  |
+| 20261111T175905 | GREEN | LuckyCoin | 46125.85 | labelled | 37.37 | PAYDAY | 36640.64 | unknown | None |  |
+| 20261111T175905 | GREEN | CHICAT | 31683.65 | labelled | -28.89 | PAYDAY | 36640.64 | unknown | None |  |
 | 20261111T175905 | GREEN | FOMO | 30822.82 | labelled | -52.92 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | MEOWLAND | 30811.27 | labelled | 37.15 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | mihao | 21247.19 | labelled | 7.55 |  |  |  | None | comparators used twice |
 | 20261111T175905 | GREEN | BURN | 18973.88 | labelled | -66.56 |  |  |  | None | comparators used twice |
-| 20261111T175905 | GREEN | GTA$ | 15950.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T175905 | GREEN | GTA$ | 15950.02 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261111T185904 | NEUTRAL | Penthouse | 42916.06 | labelled | -84.0 | timmy | 56545.35 | labelled | -5.65 |  |
 | 20261111T185904 | NEUTRAL | HAOGPT | 26142.15 | labelled | -32.13 | :3 | 25723.38 | labelled | -30.21 |  |
 | 20261111T185904 | NEUTRAL | MihaoWif | 23703.81 | no_valid_entry | None | :3 | 25723.38 | labelled | -30.21 |  |
@@ -536,9 +536,10 @@
 | 20261111T205902 | NEUTRAL | AIB | 43139.30 | labelled | -35.64 |  |  |  | None | no eligible comparator |
 | 20261111T205902 | NEUTRAL | MIHAO VI | 31556.99 | labelled | 37.17 | SICKNOTE | 16925.81 | labelled | -8.94 |  |
 | 20261111T205902 | NEUTRAL | MANEKI | 28659.43 | labelled | -29.33 | SICKNOTE | 16925.81 | labelled | -8.94 |  |
-| 20261111T215901 | NEUTRAL | Max | 301133.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | Max | 301133.67 | labelled | -30.79 |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | labelled | -28.64 |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | SAXON | 16019.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T215901 | NEUTRAL | STINK | 15967.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T215901 | NEUTRAL | STINK | 15967.49 | labelled | -28.73 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | TILLY | 35425.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T235859 | NEUTRAL | COOK | 15268.96 | pending | None |  |  |  | None | no eligible comparator |
