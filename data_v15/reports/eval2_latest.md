@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 142 |
-| sightings | 8259 |
-| liquid sightings | 3372 |
-| first liquid sightings = unique tokens with an outcome row | 777 |
-|   young | 519 |
-|   mature | 218 |
+| eval-2 scans | 143 |
+| sightings | 8316 |
+| liquid sightings | 3397 |
+| first liquid sightings = unique tokens with an outcome row | 782 |
+|   young | 523 |
+|   mature | 219 |
 |   other | 40 |
-| young with a comparator (cap 2) | 82 |
-| young without a comparator | 437 |
+| young with a comparator (cap 2) | 84 |
+| young without a comparator | 439 |
 |   pairs: young had no valid entry (counted, not scored) | 3 |
-|   pairs: young or mature outcome not yet usable | 26 |
+|   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 53 |
 | scans contributing a complete pair | 33 |
 
 ## 60m outcome status by group
 
-- young: labelled 398/519, no_valid_entry 16/519, pending 5/519, unknown 75/519, unreliable 25/519
-- mature: labelled 204/218, pending 3/218, unknown 11/218
-- no valid entry: young 16/519, mature 0/218
+- young: labelled 400/523, no_valid_entry 16/523, pending 7/523, unknown 75/523, unreliable 25/523
+- mature: labelled 205/219, pending 3/219, unknown 11/219
+- no valid entry: young 16/523, mature 0/219
 
 ## Effect (after costs; unit = scan)
 
@@ -67,6 +67,7 @@
 - 20261112T045857-Tm2iqbxY: NEX Ai (20261112T045857), would (20261112T045857)
 - 20261112T055856-Tm2iqbxY: BITCOINU (20261112T055856), LARPMASS (20261112T055856)
 - 20261112T105854-Tm2iqbxY: RTX (20261112T105854), 中国人牛逼 (20261112T105854)
+- 20261112T135852-4eiNbSrX: mihao (20261112T135852), GONE (20261112T135852)
 
 ## Every pair
 
@@ -588,6 +589,10 @@
 | 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | labelled | -100.0 | Chinese | 47898.32 | labelled | -7.22 |  |
 | 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | pending | None |  |  |  | None | comparators used twice |
-| 20261112T115853 | NEUTRAL | MING | 18859.47 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T115853 | NEUTRAL | MING | 18859.47 | labelled | -31.95 |  |  |  | None | no eligible comparator |
+| 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | labelled | -39.88 |  |  |  | None | no eligible comparator |
 | 20261112T125853 | NEUTRAL | ANTHROPE | 21484.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T135852 | RED | mihao | 35107.33 | pending | None | files | 24844.00 | pending | None |  |
+| 20261112T135852 | RED | GONE | 17608.47 | pending | None | files | 24844.00 | pending | None |  |
+| 20261112T135852 | RED | PAUL | 16751.96 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T135852 | RED | nihaomax | 15755.49 | pending | None |  |  |  | None | comparators used twice |
