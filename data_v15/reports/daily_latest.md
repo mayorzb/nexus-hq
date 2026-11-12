@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-12 10:06 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-12 11:06 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -11,9 +11,9 @@ DAILY HEALTH 2026-11-12 10:06 UTC (review-1.4) - overall: ALERT
 | Deep-checked coins left UNVERIFIED | 90 of 192 (47%) | ALERT |
 | Safety canary (deep checks run when no coin reached them) | 0 checked, 0 unverified, 0 on-chain errors | INFO |
 | Gate-passers skipped by check budget | 273 of 465 | WARN |
-| Paper candidates (last 24h) | 38 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 663 / 111 | ALERT |
+| Paper candidates (last 24h) | 37 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 667 / 106 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (10:59), swordcat (10:59), CATE (11:59), swordcat (11:59), CATE (12:59), swordcat (12:59), CATE (13:59), CATE (14:59), swordcat (14:59), CATE (15:59), CATE (16:59), swordcat (16:59), CATE (17:59), swordcat (18:59), CATE (19:59), swordcat (19:59), CATE (20:59), CATE (21:59), CATE (22:59), CATE (23:58), CATE (00:58), swordcat (00:58), CATE (01:58), swordcat (01:58), CATE (02:58), swordcat (02:58), CATE (03:58), Chinese (03:58), Chinese (04:58), CATE (05:58), Chinese (05:58), CATE (06:58), Chinese (06:58), CATE (07:58), Chinese (07:58), Chinese (08:58), CATE (09:58), Chinese (09:58)
+Candidates: CATE (11:59), swordcat (11:59), CATE (12:59), swordcat (12:59), CATE (13:59), CATE (14:59), swordcat (14:59), CATE (15:59), CATE (16:59), swordcat (16:59), CATE (17:59), swordcat (18:59), CATE (19:59), swordcat (19:59), CATE (20:59), CATE (21:59), CATE (22:59), CATE (23:58), CATE (00:58), swordcat (00:58), CATE (01:58), swordcat (01:58), CATE (02:58), swordcat (02:58), CATE (03:58), Chinese (03:58), Chinese (04:58), CATE (05:58), Chinese (05:58), CATE (06:58), Chinese (06:58), CATE (07:58), Chinese (07:58), Chinese (08:58), CATE (09:58), Chinese (09:58), Chinese (10:58)

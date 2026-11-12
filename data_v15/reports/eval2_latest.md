@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 139 |
-| sightings | 8081 |
-| liquid sightings | 3301 |
-| first liquid sightings = unique tokens with an outcome row | 765 |
-|   young | 512 |
-|   mature | 214 |
+| eval-2 scans | 140 |
+| sightings | 8140 |
+| liquid sightings | 3327 |
+| first liquid sightings = unique tokens with an outcome row | 770 |
+|   young | 516 |
+|   mature | 215 |
 |   other | 39 |
-| young with a comparator (cap 2) | 80 |
-| young without a comparator | 432 |
+| young with a comparator (cap 2) | 82 |
+| young without a comparator | 434 |
 |   pairs: young had no valid entry (counted, not scored) | 3 |
-|   pairs: young or mature outcome not yet usable | 26 |
+|   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 51 |
 | scans contributing a complete pair | 32 |
 
 ## 60m outcome status by group
 
-- young: labelled 394/512, no_valid_entry 16/512, pending 4/512, unknown 74/512, unreliable 24/512
-- mature: labelled 201/214, pending 3/214, unknown 10/214
-- no valid entry: young 16/512, mature 0/214
+- young: labelled 395/516, no_valid_entry 16/516, pending 7/516, unknown 74/516, unreliable 24/516
+- mature: labelled 202/215, pending 3/215, unknown 10/215
+- no valid entry: young 16/516, mature 0/215
 
 ## Effect (after costs; unit = scan)
 
@@ -66,6 +66,7 @@
 - 20261112T035858-Tm2iqbxY: Max (20261112T035858), mihao (20261112T035858)
 - 20261112T045857-Tm2iqbxY: NEX Ai (20261112T045857), would (20261112T045857)
 - 20261112T055856-Tm2iqbxY: BITCOINU (20261112T055856), LARPMASS (20261112T055856)
+- 20261112T105854-Tm2iqbxY: RTX (20261112T105854), 中国人牛逼 (20261112T105854)
 
 ## Every pair
 
@@ -580,6 +581,10 @@
 | 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | なな | 15186.66 | labelled | -40.51 |  |  |  | None | no eligible comparator |
 | 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | unreliable | None | Chinese | 47915.97 | labelled | 3.24 |  |
-| 20261112T085854 | NEUTRAL | GTI | 16919.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T085854 | NEUTRAL | GTI | 16919.98 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261112T085854 | NEUTRAL | MRPENIS | 16113.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T095854 | NEUTRAL | Shiqi | 19733.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T105854 | NEUTRAL | RTX | 36787.52 | pending | None | Chinese | 47898.32 | pending | None |  |
+| 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | pending | None | Chinese | 47898.32 | pending | None |  |
+| 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | pending | None |  |  |  | None | comparators used twice |
