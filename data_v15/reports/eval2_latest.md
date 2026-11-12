@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 144 |
-| sightings | 8373 |
-| liquid sightings | 3422 |
-| first liquid sightings = unique tokens with an outcome row | 785 |
-|   young | 526 |
+| eval-2 scans | 145 |
+| sightings | 8434 |
+| liquid sightings | 3447 |
+| first liquid sightings = unique tokens with an outcome row | 788 |
+|   young | 529 |
 |   mature | 219 |
 |   other | 40 |
 | young with a comparator (cap 2) | 84 |
-| young without a comparator | 442 |
-|   pairs: young had no valid entry (counted, not scored) | 3 |
-|   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 53 |
-| scans contributing a complete pair | 33 |
+| young without a comparator | 445 |
+|   pairs: young had no valid entry (counted, not scored) | 4 |
+|   pairs: young or mature outcome not yet usable | 26 |
+| complete pairs (both 60m outcomes labelled) | 54 |
+| scans contributing a complete pair | 34 |
 
 ## 60m outcome status by group
 
-- young: labelled 400/526, no_valid_entry 16/526, pending 8/526, unknown 76/526, unreliable 26/526
-- mature: labelled 207/219, pending 1/219, unknown 11/219
-- no valid entry: young 16/526, mature 0/219
+- young: labelled 402/529, no_valid_entry 17/529, pending 8/529, unknown 76/529, unreliable 26/529
+- mature: labelled 208/219, unknown 11/219
+- no valid entry: young 17/529, mature 0/219
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.58 points, 95% interval (-41.69, -11.99); scans with young worse 23/33
-- Pairs with young worse: 37/53 (69.8%); pair mean -26.93, median -27.66
-- Big loss (<= -20%): young 35/53, mature 5/53
+- Scan-level mean difference (young - mature): -28.65 points, 95% interval (-43.63, -14.52); scans with young worse 24/34
+- Pairs with young worse: 38/54 (70.4%); pair mean -28.23, median -28.69
+- Big loss (<= -20%): young 36/54, mature 5/54
 
 ## Comparator reuse (cap 2)
 
@@ -592,10 +592,13 @@
 | 20261112T115853 | NEUTRAL | MING | 18859.47 | labelled | -31.95 |  |  |  | None | no eligible comparator |
 | 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | labelled | -39.88 |  |  |  | None | no eligible comparator |
 | 20261112T125853 | NEUTRAL | ANTHROPE | 21484.19 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261112T135852 | RED | mihao | 35107.33 | pending | None | files | 24844.00 | pending | None |  |
-| 20261112T135852 | RED | GONE | 17608.47 | pending | None | files | 24844.00 | pending | None |  |
+| 20261112T135852 | RED | mihao | 35107.33 | no_valid_entry | None | files | 24844.00 | labelled | 37.0 |  |
+| 20261112T135852 | RED | GONE | 17608.47 | labelled | -60.14 | files | 24844.00 | labelled | 37.0 |  |
 | 20261112T135852 | RED | PAUL | 16751.96 | pending | None |  |  |  | None | comparators used twice |
-| 20261112T135852 | RED | nihaomax | 15755.49 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T135852 | RED | nihaomax | 15755.49 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T145851 | RED | KRESS | 22900.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T145851 | RED | Huang | 22109.92 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T145851 | RED | VETO | 18961.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | Musk | 35759.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | HUANG | 23447.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | HEPE | 20835.85 | pending | None |  |  |  | None | no eligible comparator |
