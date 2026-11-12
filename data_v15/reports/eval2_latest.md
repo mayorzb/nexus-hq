@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 148 |
-| sightings | 8619 |
-| liquid sightings | 3531 |
-| first liquid sightings = unique tokens with an outcome row | 810 |
-|   young | 550 |
+| eval-2 scans | 149 |
+| sightings | 8683 |
+| liquid sightings | 3557 |
+| first liquid sightings = unique tokens with an outcome row | 813 |
+|   young | 553 |
 |   mature | 220 |
 |   other | 40 |
 | young with a comparator (cap 2) | 86 |
-| young without a comparator | 464 |
+| young without a comparator | 467 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
 |   pairs: young or mature outcome not yet usable | 26 |
 | complete pairs (both 60m outcomes labelled) | 56 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 413/550, no_valid_entry 17/550, pending 16/550, unknown 77/550, unreliable 27/550
+- young: labelled 417/553, no_valid_entry 18/553, pending 13/553, unknown 78/553, unreliable 27/553
 - mature: labelled 209/220, unknown 11/220
-- no valid entry: young 17/550, mature 0/220
+- no valid entry: young 18/553, mature 0/220
 
 ## Effect (after costs; unit = scan)
 
@@ -595,7 +595,7 @@
 | 20261112T125853 | NEUTRAL | ANTHROPE | 21484.19 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261112T135852 | RED | mihao | 35107.33 | no_valid_entry | None | files | 24844.00 | labelled | 37.0 |  |
 | 20261112T135852 | RED | GONE | 17608.47 | labelled | -60.14 | files | 24844.00 | labelled | 37.0 |  |
-| 20261112T135852 | RED | PAUL | 16751.96 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T135852 | RED | PAUL | 16751.96 | unknown | None |  |  |  | None | comparators used twice |
 | 20261112T135852 | RED | nihaomax | 15755.49 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T145851 | RED | KRESS | 22900.07 | labelled | -41.3 |  |  |  | None | no eligible comparator |
 | 20261112T145851 | RED | Huang | 22109.92 | labelled | 36.9 |  |  |  | None | no eligible comparator |
@@ -610,11 +610,11 @@
 | 20261112T165849 | RED | AMD | 18838.71 | labelled | -47.54 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | HUANG | 17134.35 | labelled | -37.93 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | jjaemu | 15757.94 | labelled | -28.58 |  |  |  | None | no eligible comparator |
-| 20261112T175848 | RED | ZER0 | 49358.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T175848 | RED | GTA | 36084.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T175848 | RED | MaxWif | 29288.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T175848 | RED | Elon Huang | 25345.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T175848 | RED | DEAD | 23774.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | ZER0 | 49358.06 | labelled | -29.89 |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | GTA | 36084.40 | labelled | -28.12 |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | MaxWif | 29288.37 | labelled | 37.12 |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | Elon Huang | 25345.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | DEAD | 23774.62 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | DOGGLE | 55633.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | MORNING | 34630.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | HENSEN | 34276.58 | pending | None |  |  |  | None | no eligible comparator |
@@ -624,3 +624,6 @@
 | 20261112T185847 | RED | CAPY | 18838.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | GOAT | 16759.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | SPAMCAT | 16163.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | JENSEN | 56892.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | 1JENSEN | 34613.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | GREENDILDO | 15610.65 | pending | None |  |  |  | None | no eligible comparator |
