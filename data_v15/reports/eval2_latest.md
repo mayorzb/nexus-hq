@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 129 scans: 5 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 130 scans: 5 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 129 |
-| sightings | 7478 |
-| liquid sightings | 3049 |
-| first liquid sightings = unique tokens with an outcome row | 706 |
-|   young | 476 |
-|   mature | 194 |
-|   other | 36 |
-| young with a comparator (cap 2) | 69 |
-| young without a comparator | 407 |
+| eval-2 scans | 130 |
+| sightings | 7540 |
+| liquid sightings | 3075 |
+| first liquid sightings = unique tokens with an outcome row | 715 |
+|   young | 480 |
+|   mature | 197 |
+|   other | 38 |
+| young with a comparator (cap 2) | 71 |
+| young without a comparator | 409 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 22 |
+|   pairs: young or mature outcome not yet usable | 24 |
 | complete pairs (both 60m outcomes labelled) | 45 |
 | scans contributing a complete pair | 28 |
 
 ## 60m outcome status by group
 
-- young: labelled 363/476, no_valid_entry 15/476, pending 4/476, unknown 72/476, unreliable 22/476
-- mature: labelled 184/194, pending 2/194, unknown 8/194
-- no valid entry: young 15/476, mature 0/194
+- young: labelled 365/480, no_valid_entry 15/480, pending 6/480, unknown 72/480, unreliable 22/480
+- mature: labelled 185/197, pending 4/197, unknown 8/197
+- no valid entry: young 15/480, mature 0/197
 
 ## Effect (after costs; unit = scan)
 
@@ -62,6 +62,7 @@
 - 20261111T195903-5tCju6YN: Meashld (20261111T195903), Quacky (20261111T195903)
 - 20261111T195903-3Tkm68ny: NEVERDOOM (20261111T195903), BERNIAO (20261111T195903)
 - 20261111T205902-9GgsHTYt: MIHAO VI (20261111T205902), MANEKI (20261111T205902)
+- 20261112T005859-HtKSi76B: WYLIE (20261112T005859), CHRISTMAX (20261112T005859)
 
 ## Every pair
 
@@ -540,6 +541,10 @@
 | 20261111T215901 | NEUTRAL | NIHAONOON | 31307.09 | labelled | -28.64 |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | SAXON | 16019.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261111T215901 | NEUTRAL | STINK | 15967.49 | labelled | -28.73 |  |  |  | None | no eligible comparator |
-| 20261111T225900 | NEUTRAL | TILLY | 35425.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T225900 | NEUTRAL | TILLY | 35425.49 | labelled | -43.34 |  |  |  | None | no eligible comparator |
+| 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | labelled | -31.92 |  |  |  | None | no eligible comparator |
 | 20261111T235859 | NEUTRAL | COOK | 15268.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T005859 | NEUTRAL | WYLIE | 29714.36 | pending | None | CELON | 15259.71 | pending | None |  |
+| 20261112T005859 | NEUTRAL | CHRISTMAX | 24757.05 | pending | None | CELON | 15259.71 | pending | None |  |
+| 20261112T005859 | NEUTRAL | GROKIE | 15853.65 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T005859 | NEUTRAL | REX | 15263.30 | pending | None |  |  |  | None | comparators used twice |
