@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 136 scans: 1 pairs and 0 scans short of the milestone; collection continues
+**Status:** REVIEW MILESTONE REACHED: read the result against PROTOCOL_EVAL2.md section 7
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 136 |
-| sightings | 7901 |
-| liquid sightings | 3235 |
-| first liquid sightings = unique tokens with an outcome row | 755 |
-|   young | 508 |
-|   mature | 209 |
+| eval-2 scans | 137 |
+| sightings | 7961 |
+| liquid sightings | 3256 |
+| first liquid sightings = unique tokens with an outcome row | 758 |
+|   young | 509 |
+|   mature | 211 |
 |   other | 38 |
-| young with a comparator (cap 2) | 79 |
+| young with a comparator (cap 2) | 80 |
 | young without a comparator | 429 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 49 |
-| scans contributing a complete pair | 31 |
+|   pairs: young or mature outcome not yet usable | 27 |
+| complete pairs (both 60m outcomes labelled) | 51 |
+| scans contributing a complete pair | 32 |
 
 ## 60m outcome status by group
 
-- young: labelled 388/508, no_valid_entry 15/508, pending 9/508, unknown 73/508, unreliable 23/508
-- mature: labelled 195/209, pending 5/209, unknown 9/209
-- no valid entry: young 15/508, mature 0/209
+- young: labelled 392/509, no_valid_entry 15/509, pending 6/509, unknown 73/509, unreliable 23/509
+- mature: labelled 197/211, pending 5/211, unknown 9/211
+- no valid entry: young 15/509, mature 0/211
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.74 points, 95% interval (-43.65, -12.36); scans with young worse 22/31
-- Pairs with young worse: 35/49 (71.4%); pair mean -28.42, median -29.72
-- Big loss (<= -20%): young 33/49, mature 5/49
+- Scan-level mean difference (young - mature): -26.66 points, 95% interval (-41.94, -11.55); scans with young worse 22/32
+- Pairs with young worse: 36/51 (70.6%); pair mean -27.04, median -27.66
+- Big loss (<= -20%): young 34/51, mature 5/51
 
 ## Comparator reuse (cap 2)
 
@@ -571,11 +571,12 @@
 | 20261112T045857 | NEUTRAL | GABOON | 29109.79 | labelled | -28.39 |  |  |  | None | comparators used twice |
 | 20261112T045857 | NEUTRAL | LILY | 25374.03 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T045857 | NEUTRAL | GTA 6 Coin | 22675.09 | labelled | -67.44 |  |  |  | None | comparators used twice |
-| 20261112T055856 | NEUTRAL | BITCOINU | 60541.62 | pending | None | Chinese | 42661.18 | pending | None |  |
-| 20261112T055856 | NEUTRAL | LARPMASS | 22515.78 | pending | None | Chinese | 42661.18 | pending | None |  |
-| 20261112T055856 | NEUTRAL | DacityCoin | 17078.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T055856 | NEUTRAL | FLC | 16191.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T055856 | NEUTRAL | BITCOINU | 60541.62 | labelled | -32.13 | Chinese | 42661.18 | labelled | -4.47 |  |
+| 20261112T055856 | NEUTRAL | LARPMASS | 22515.78 | labelled | 36.92 | Chinese | 42661.18 | labelled | -4.47 |  |
+| 20261112T055856 | NEUTRAL | DacityCoin | 17078.82 | labelled | -29.19 |  |  |  | None | no eligible comparator |
+| 20261112T055856 | NEUTRAL | FLC | 16191.23 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | up | 51273.70 | pending | None | Chinese | 42625.81 | pending | None |  |
 | 20261112T065856 | NEUTRAL | RICO | 16543.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | なな | 15186.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | pending | None | Chinese | 47915.97 | pending | None |  |
