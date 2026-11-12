@@ -1,4 +1,4 @@
-Tests for commit 90b899b2084d193616b6dcddeb37b9df9d245e95, run 43093854317, 2026-11-11T20:09:49Z
+Tests for commit 2c2fbf2e7d4123adad623af50e737a2a3d5313e1, run 43107278466, 2026-11-12T01:08:48Z
 test_F01_unverified_is_never_a_candidate (test_nexus_v15.TestDefects.test_F01_unverified_is_never_a_candidate) ... ok
 test_F02_failed_lookup_is_retried_not_a_loss (test_nexus_v15.TestDefects.test_F02_failed_lookup_is_retried_not_a_loss) ... ok
 test_F03_label_written_once_never_repriced (test_nexus_v15.TestDefects.test_F03_label_written_once_never_repriced) ... ok
@@ -6,13 +6,13 @@ test_F04_one_total_loss_convention (test_nexus_v15.TestDefects.test_F04_one_tota
 test_F05_scan_gap_is_reported (test_nexus_v15.TestDefects.test_F05_scan_gap_is_reported) ... ok
 test_F06_verdict_recorded_as_of_each_sighting (test_nexus_v15.TestDefects.test_F06_verdict_recorded_as_of_each_sighting) ... ok
 test_F07_one_low_reading_is_not_death (test_nexus_v15.TestDefects.test_F07_one_low_reading_is_not_death) ... ok
-test_N1_save_step_saves_other_files_when_one_is_missing (test_nexus_v15.TestDefects.test_N1_save_step_saves_other_files_when_one_is_missing) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:144: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp341yniuf/repo/a.csv' mode='w' encoding='UTF-8'>
+test_N1_save_step_saves_other_files_when_one_is_missing (test_nexus_v15.TestDefects.test_N1_save_step_saves_other_files_when_one_is_missing) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:144: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9fxpbag8/repo/a.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "a.csv"), "w").write("x\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:146: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp341yniuf/repo/a.csv' mode='a' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:146: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9fxpbag8/repo/a.csv' mode='a' encoding='UTF-8'>
   open(os.path.join(repo, "a.csv"), "a").write("y\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:147: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp341yniuf/repo/b.csv' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:147: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9fxpbag8/repo/b.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "b.csv"), "w").write("z\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
@@ -68,101 +68,101 @@ test_D8_no_checks_mode_scores_raw_prices_for_sensitivity (test_nexus_v15.TestRou
 test_D8_persistent_crash_is_a_valid_rug_and_rules_are_frozen (test_nexus_v15.TestRound1Defects.test_D8_persistent_crash_is_a_valid_rug_and_rules_are_frozen) ... ok
 test_D8_unreliable_label_is_recorded_and_never_counted (test_nexus_v15.TestRound1Defects.test_D8_unreliable_label_is_recorded_and_never_counted) ... ok
 test_api_shapes_real_geckoterminal_rows_and_empty_pool_reply (test_nexus_v15.TestRound1Defects.test_api_shapes_real_geckoterminal_rows_and_empty_pool_reply) ... ok
-test_append_interrupted_before_swap_leaves_the_file_untouched (test_nexus_v15.TestRound1Defects.test_append_interrupted_before_swap_leaves_the_file_untouched) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:516: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp79gceb8w/data_v15/scans.csv' mode='r' encoding='UTF-8'>
+test_append_interrupted_before_swap_leaves_the_file_untouched (test_nexus_v15.TestRound1Defects.test_append_interrupted_before_swap_leaves_the_file_untouched) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:516: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp7pafvwvb/data_v15/scans.csv' mode='r' encoding='UTF-8'>
   before = open(nx.path(nx.SCANS)).read()
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:524: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp79gceb8w/data_v15/scans.csv' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:524: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp7pafvwvb/data_v15/scans.csv' mode='r' encoding='UTF-8'>
   self.assertEqual(open(nx.path(nx.SCANS)).read(), before)
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_chain_dispatches_exactly_once_when_nothing_else_is_active (test_nexus_v15.TestRound1Defects.test_chain_dispatches_exactly_once_when_nothing_else_is_active) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9zo1vgad/seq/0.json' mode='w' encoding='UTF-8'>
+test_chain_dispatches_exactly_once_when_nothing_else_is_active (test_nexus_v15.TestRound1Defects.test_chain_dispatches_exactly_once_when_nothing_else_is_active) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9plz0ya5/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:818: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9zo1vgad/dispatched.log' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:818: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9plz0ya5/dispatched.log' mode='r' encoding='UTF-8'>
   n = len(open(log).read().splitlines()) if os.path.exists(log) else 0
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_chain_never_duplicates_when_a_session_is_queued_or_running (test_nexus_v15.TestRound1Defects.test_chain_never_duplicates_when_a_session_is_queued_or_running) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpeh8048m6/seq/0.json' mode='w' encoding='UTF-8'>
+test_chain_never_duplicates_when_a_session_is_queued_or_running (test_nexus_v15.TestRound1Defects.test_chain_never_duplicates_when_a_session_is_queued_or_running) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpe3ro34sr/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp7w0pvfgx/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpe7a2udmc/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmproiu5cnu/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpseggm6ys/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpwtt083_w/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjaafmpkc/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_chain_refuses_private_repo_daily_cap_and_reports_dispatch_failure (test_nexus_v15.TestRound1Defects.test_chain_refuses_private_repo_daily_cap_and_reports_dispatch_failure) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp4kfjr37l/seq/0.json' mode='w' encoding='UTF-8'>
+test_chain_refuses_private_repo_daily_cap_and_reports_dispatch_failure (test_nexus_v15.TestRound1Defects.test_chain_refuses_private_repo_daily_cap_and_reports_dispatch_failure) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpna060irm/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpa__hfh2e/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpyn9o4a5q/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp52utowv3/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpy322pt48/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjpr0pfpu/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpem6pqv1q/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:818: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjpr0pfpu/dispatched.log' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:818: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpem6pqv1q/dispatched.log' mode='r' encoding='UTF-8'>
   n = len(open(log).read().splitlines()) if os.path.exists(log) else 0
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_guard_fails_open_when_run_id_missing_or_listing_fails (test_nexus_v15.TestRound1Defects.test_guard_fails_open_when_run_id_missing_or_listing_fails) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmphyh_f1e4/seq/0.json' mode='w' encoding='UTF-8'>
+test_guard_fails_open_when_run_id_missing_or_listing_fails (test_nexus_v15.TestRound1Defects.test_guard_fails_open_when_run_id_missing_or_listing_fails) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpotp56jhi/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpsoxnk6if/seq/0.json' mode='w' encoding='UTF-8'>
-  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-ok
-test_guard_never_counts_its_own_run (test_nexus_v15.TestRound1Defects.test_guard_never_counts_its_own_run) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_i_p9klz/seq/0.json' mode='w' encoding='UTF-8'>
-  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpu7qjcxvr/seq/0.json' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpohumaz72/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_guard_skips_only_when_another_run_stays_in_progress (test_nexus_v15.TestRound1Defects.test_guard_skips_only_when_another_run_stays_in_progress) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_yur5bs8/seq/0.json' mode='w' encoding='UTF-8'>
+test_guard_never_counts_its_own_run (test_nexus_v15.TestRound1Defects.test_guard_never_counts_its_own_run) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp74z8945p/seq/0.json' mode='w' encoding='UTF-8'>
+  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpyb_od7gc/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_guard_waits_out_a_just_finished_run_instead_of_breaking_the_chain (test_nexus_v15.TestRound1Defects.test_guard_waits_out_a_just_finished_run_instead_of_breaking_the_chain) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpf__5cyi5/seq/0.json' mode='w' encoding='UTF-8'>
-  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpf__5cyi5/seq/1.json' mode='w' encoding='UTF-8'>
-  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
-ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpf__5cyi5/seq/2.json' mode='w' encoding='UTF-8'>
+test_guard_skips_only_when_another_run_stays_in_progress (test_nexus_v15.TestRound1Defects.test_guard_skips_only_when_another_run_stays_in_progress) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp2r3b9voe/seq/0.json' mode='w' encoding='UTF-8'>
   open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_interrupted_write_by_old_writer_is_removed_logged_and_next_row_is_clean (test_nexus_v15.TestRound1Defects.test_interrupted_write_by_old_writer_is_removed_logged_and_next_row_is_clean) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:511: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpffmkn64j/data_v15/torn_rows.log' mode='r' encoding='UTF-8'>
+test_guard_waits_out_a_just_finished_run_instead_of_breaking_the_chain (test_nexus_v15.TestRound1Defects.test_guard_waits_out_a_just_finished_run_instead_of_breaking_the_chain) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpw1wtf7kw/seq/0.json' mode='w' encoding='UTF-8'>
+  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpw1wtf7kw/seq/1.json' mode='w' encoding='UTF-8'>
+  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:801: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpw1wtf7kw/seq/2.json' mode='w' encoding='UTF-8'>
+  open(os.path.join(seq_dir, f"{i}.json"), "w").write(json.dumps(rs))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_interrupted_write_by_old_writer_is_removed_logged_and_next_row_is_clean (test_nexus_v15.TestRound1Defects.test_interrupted_write_by_old_writer_is_removed_logged_and_next_row_is_clean) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:511: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpnm8cm8_b/data_v15/torn_rows.log' mode='r' encoding='UTF-8'>
   self.assertIn("removed torn line: 20261105T000000", open(nx.path(nx.TORN_LOG)).read())
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_relabel_fetch_failure_clears_stale_values_and_keeps_them_in_the_audit (test_nexus_v15.TestRound1Defects.test_relabel_fetch_failure_clears_stale_values_and_keeps_them_in_the_audit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpcafvnt08/data_v15/labels.csv' mode='r' encoding='UTF-8'>
+test_relabel_fetch_failure_clears_stale_values_and_keeps_them_in_the_audit (test_nexus_v15.TestRound1Defects.test_relabel_fetch_failure_clears_stale_values_and_keeps_them_in_the_audit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpt_gzhxrm/data_v15/labels.csv' mode='r' encoding='UTF-8'>
   return open(nx.path(nx.LABELS)).read()
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_relabel_keeps_originals_and_records_every_change (test_nexus_v15.TestRound1Defects.test_relabel_keeps_originals_and_records_every_change) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpu52wzptn/data_v15/labels.csv' mode='r' encoding='UTF-8'>
+test_relabel_keeps_originals_and_records_every_change (test_nexus_v15.TestRound1Defects.test_relabel_keeps_originals_and_records_every_change) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpufc7785v/data_v15/labels.csv' mode='r' encoding='UTF-8'>
   return open(nx.path(nx.LABELS)).read()
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:757: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpu52wzptn/data_v15/labels.csv' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:757: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpufc7785v/data_v15/labels.csv' mode='r' encoding='UTF-8'>
   self.assertEqual(open(nx.path(nx.LABELS)).read(), before)
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_relabel_logs_changes_to_prices_and_exit_reason_even_when_return_is_equal (test_nexus_v15.TestRound1Defects.test_relabel_logs_changes_to_prices_and_exit_reason_even_when_return_is_equal) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpe2brij9l/data_v15/labels.csv' mode='r' encoding='UTF-8'>
+test_relabel_logs_changes_to_prices_and_exit_reason_even_when_return_is_equal (test_nexus_v15.TestRound1Defects.test_relabel_logs_changes_to_prices_and_exit_reason_even_when_return_is_equal) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:576: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpjuu0etr3/data_v15/labels.csv' mode='r' encoding='UTF-8'>
   return open(nx.path(nx.LABELS)).read()
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
 test_review14_flags_back_to_back_scans (test_nexus_v15.TestRound1Defects.test_review14_flags_back_to_back_scans) ... ok
-test_review14_flags_scans_tagged_with_a_data_only_commit (test_nexus_v15.TestRound1Defects.test_review14_flags_scans_tagged_with_a_data_only_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpl_hnyrm0/code.py' mode='w' encoding='UTF-8'>
+test_review14_flags_scans_tagged_with_a_data_only_commit (test_nexus_v15.TestRound1Defects.test_review14_flags_scans_tagged_with_a_data_only_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp724hz8v7/code.py' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "code.py"), "w").write("v1")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpl_hnyrm0/data_v15/scans.csv' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp724hz8v7/data_v15/scans.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "data_v15", "scans.csv"), "w").write("x")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
@@ -170,74 +170,74 @@ test_rows_written_before_a_column_existed_read_as_blank_not_dropped (test_nexus_
 test_sample_size_is_reproducible_from_data (test_nexus_v15.TestRound1Defects.test_sample_size_is_reproducible_from_data) ... ok
 test_scan_records_the_code_commit (test_nexus_v15.TestRound1Defects.test_scan_records_the_code_commit) ... ok
 test_sensitivity_and_exclusion_tables_cover_every_group (test_nexus_v15.TestRound1Defects.test_sensitivity_and_exclusion_tables_cover_every_group) ... ok
-test_session_records_the_code_commit_not_the_latest_data_commit (test_nexus_v15.TestRound1Defects.test_session_records_the_code_commit_not_the_latest_data_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfrna0voy/code.py' mode='w' encoding='UTF-8'>
+test_session_records_the_code_commit_not_the_latest_data_commit (test_nexus_v15.TestRound1Defects.test_session_records_the_code_commit_not_the_latest_data_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpzoecn4sz/code.py' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "code.py"), "w").write("v1")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfrna0voy/data_v15/scans.csv' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpzoecn4sz/data_v15/scans.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "data_v15", "scans.csv"), "w").write("x")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:595: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfrna0voy/scan.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:595: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpzoecn4sz/scan.sh' mode='w' encoding='UTF-8'>
   open(scan, "w").write(f'echo "$NEXUS_CODE_COMMIT" >> {out}\n')
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfrna0voy/seen.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:601: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpzoecn4sz/seen.txt' mode='r' encoding='UTF-8'>
   self.assertEqual(open(out).read().split(), [code, code])
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_session_stops_cleanly_when_code_changes_mid_session (test_nexus_v15.TestRound1Defects.test_session_stops_cleanly_when_code_changes_mid_session) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdzjib_gj/code.py' mode='w' encoding='UTF-8'>
+test_session_stops_cleanly_when_code_changes_mid_session (test_nexus_v15.TestRound1Defects.test_session_stops_cleanly_when_code_changes_mid_session) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxll2wluk/code.py' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "code.py"), "w").write("v1")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdzjib_gj/data_v15/scans.csv' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxll2wluk/data_v15/scans.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "data_v15", "scans.csv"), "w").write("x")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:609: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdzjib_gj/sync.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:609: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxll2wluk/sync.sh' mode='w' encoding='UTF-8'>
   open(sync, "w").write(f"[ -f {out} ] && {{ echo v2 > code.py; git -c user.name=t -c user.email=t@t commit -qam new; }}; true\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:610: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdzjib_gj/scan.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:610: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxll2wluk/scan.sh' mode='w' encoding='UTF-8'>
   open(scan, "w").write(f"echo scan >> {out}\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:616: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdzjib_gj/seen.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:616: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxll2wluk/seen.txt' mode='r' encoding='UTF-8'>
   self.assertEqual(open(out).read().split(), ["scan"])                    # scans 2-3 not run on untested code
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
 test_v152_bounds_report_counts_dead_and_unreliable_as_losses (test_nexus_v15.TestRound1Defects.test_v152_bounds_report_counts_dead_and_unreliable_as_losses) ... ok
 test_v152_empty_api_reply_is_not_settled_early_but_is_settled_before_overdue (test_nexus_v15.TestRound1Defects.test_v152_empty_api_reply_is_not_settled_early_but_is_settled_before_overdue) ... ok
-test_v152_no_wait_after_a_long_gap_and_hourly_spacing_is_start_to_start (test_nexus_v15.TestRound1Defects.test_v152_no_wait_after_a_long_gap_and_hourly_spacing_is_start_to_start) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:649: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9f6c89p7/scan.sh' mode='w' encoding='UTF-8'>
+test_v152_no_wait_after_a_long_gap_and_hourly_spacing_is_start_to_start (test_nexus_v15.TestRound1Defects.test_v152_no_wait_after_a_long_gap_and_hourly_spacing_is_start_to_start) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:649: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp0vg6hfmb/scan.sh' mode='w' encoding='UTF-8'>
   open(scan, "w").write("python3 -c \"import datetime;print('y,'+datetime.datetime.now(datetime.timezone.utc)"
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:652: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9f6c89p7/sleep.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:652: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp0vg6hfmb/sleep.sh' mode='w' encoding='UTF-8'>
   open(sl, "w").write(f'echo "$1" >> {slept}\n')
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:657: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp9f6c89p7/slept.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:657: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp0vg6hfmb/slept.txt' mode='r' encoding='UTF-8'>
   waits = [int(x) for x in open(slept).read().split()] if os.path.exists(slept) else []
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_v152_session_start_waits_for_the_hour_instead_of_scanning_back_to_back (test_nexus_v15.TestRound1Defects.test_v152_session_start_waits_for_the_hour_instead_of_scanning_back_to_back) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:649: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpiopgib0t/scan.sh' mode='w' encoding='UTF-8'>
+test_v152_session_start_waits_for_the_hour_instead_of_scanning_back_to_back (test_nexus_v15.TestRound1Defects.test_v152_session_start_waits_for_the_hour_instead_of_scanning_back_to_back) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:649: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp36e6aoms/scan.sh' mode='w' encoding='UTF-8'>
   open(scan, "w").write("python3 -c \"import datetime;print('y,'+datetime.datetime.now(datetime.timezone.utc)"
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:652: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpiopgib0t/sleep.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:652: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp36e6aoms/sleep.sh' mode='w' encoding='UTF-8'>
   open(sl, "w").write(f'echo "$1" >> {slept}\n')
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:657: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpiopgib0t/slept.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:657: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp36e6aoms/slept.txt' mode='r' encoding='UTF-8'>
   waits = [int(x) for x in open(slept).read().split()] if os.path.exists(slept) else []
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_v152_session_writes_reports_and_test_log_and_tolerates_review_failure (test_nexus_v15.TestRound1Defects.test_v152_session_writes_reports_and_test_log_and_tolerates_review_failure) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:742: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdwsssh8b/tests.log' mode='w' encoding='UTF-8'>
+test_v152_session_writes_reports_and_test_log_and_tolerates_review_failure (test_nexus_v15.TestRound1Defects.test_v152_session_writes_reports_and_test_log_and_tolerates_review_failure) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:742: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpwa0pcx_t/tests.log' mode='w' encoding='UTF-8'>
   open(log, "w").write("Tests for commit abc\nOK\nexit code 0\n")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:749: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpdwsssh8b/data_v15/reports/tests_latest.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:749: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpwa0pcx_t/data_v15/reports/tests_latest.txt' mode='r' encoding='UTF-8'>
   self.assertIn("exit code 0", open(os.path.join(d, "data_v15", "reports", "tests_latest.txt")).read())
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
-test_v152_shallow_checkout_records_code_commit_not_data_commit (test_nexus_v15.TestRound1Defects.test_v152_shallow_checkout_records_code_commit_not_data_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfizwccxt/code.py' mode='w' encoding='UTF-8'>
+test_v152_shallow_checkout_records_code_commit_not_data_commit (test_nexus_v15.TestRound1Defects.test_v152_shallow_checkout_records_code_commit_not_data_commit) ... /home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:583: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmplekumz6_/code.py' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "code.py"), "w").write("v1")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpfizwccxt/data_v15/scans.csv' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:587: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmplekumz6_/data_v15/scans.csv' mode='w' encoding='UTF-8'>
   open(os.path.join(repo, "data_v15", "scans.csv"), "w").write("x")
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:627: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp419sjlbr/scan.sh' mode='w' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:627: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpqtb3rk90/scan.sh' mode='w' encoding='UTF-8'>
   open(scan, "w").write(f'echo "$NEXUS_CODE_COMMIT" >> {out}\n')
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
-/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:633: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp419sjlbr/seen.txt' mode='r' encoding='UTF-8'>
+/home/runner/work/nexus-hq/nexus-hq/test_nexus_v15.py:633: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpqtb3rk90/seen.txt' mode='r' encoding='UTF-8'>
   self.assertEqual(open(out).read().split(), [code])                     # not the newer data commit
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
@@ -271,7 +271,7 @@ test_quote_blank_when_pinned_pool_differs (test_eval2.TestTraceability.test_quot
 test_sighting_and_label_rows_carry_trace_fields (test_eval2.TestTraceability.test_sighting_and_label_rows_carry_trace_fields) ... ok
 
 ----------------------------------------------------------------------
-Ran 98 tests in 2.410s
+Ran 98 tests in 2.178s
 
 OK
   (Jupiter feed unavailable for a batch of 1: canned outage: https://lite-api.jup.ag/tokens/v2/search)

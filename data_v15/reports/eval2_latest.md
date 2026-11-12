@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 130 scans: 5 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 131 scans: 5 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 130 |
-| sightings | 7540 |
-| liquid sightings | 3075 |
-| first liquid sightings = unique tokens with an outcome row | 715 |
-|   young | 480 |
-|   mature | 197 |
+| eval-2 scans | 131 |
+| sightings | 7595 |
+| liquid sightings | 3102 |
+| first liquid sightings = unique tokens with an outcome row | 722 |
+|   young | 485 |
+|   mature | 199 |
 |   other | 38 |
-| young with a comparator (cap 2) | 71 |
-| young without a comparator | 409 |
+| young with a comparator (cap 2) | 72 |
+| young without a comparator | 413 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 24 |
+|   pairs: young or mature outcome not yet usable | 25 |
 | complete pairs (both 60m outcomes labelled) | 45 |
 | scans contributing a complete pair | 28 |
 
 ## 60m outcome status by group
 
-- young: labelled 365/480, no_valid_entry 15/480, pending 6/480, unknown 72/480, unreliable 22/480
-- mature: labelled 185/197, pending 4/197, unknown 8/197
-- no valid entry: young 15/480, mature 0/197
+- young: labelled 366/485, no_valid_entry 15/485, pending 10/485, unknown 72/485, unreliable 22/485
+- mature: labelled 186/199, pending 5/199, unknown 8/199
+- no valid entry: young 15/485, mature 0/199
 
 ## Effect (after costs; unit = scan)
 
@@ -543,8 +543,13 @@
 | 20261111T215901 | NEUTRAL | STINK | 15967.49 | labelled | -28.73 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | TILLY | 35425.49 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | labelled | -31.92 |  |  |  | None | no eligible comparator |
-| 20261111T235859 | NEUTRAL | COOK | 15268.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261111T235859 | NEUTRAL | COOK | 15268.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T005859 | NEUTRAL | WYLIE | 29714.36 | pending | None | CELON | 15259.71 | pending | None |  |
 | 20261112T005859 | NEUTRAL | CHRISTMAX | 24757.05 | pending | None | CELON | 15259.71 | pending | None |  |
 | 20261112T005859 | NEUTRAL | GROKIE | 15853.65 | pending | None |  |  |  | None | comparators used twice |
 | 20261112T005859 | NEUTRAL | REX | 15263.30 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T015858 | NEUTRAL | Rex | 63664.58 | pending | None | swordcat | 125781.34 | pending | None |  |
+| 20261112T015858 | NEUTRAL | AIB | 57657.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | MetaMask | 37155.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | X | 23939.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T015858 | NEUTRAL | WYRM | 16417.25 | pending | None |  |  |  | None | no eligible comparator |
