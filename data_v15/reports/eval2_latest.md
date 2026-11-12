@@ -1,30 +1,30 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 133 scans: 4 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 134 scans: 4 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 133 |
-| sightings | 7714 |
-| liquid sightings | 3158 |
-| first liquid sightings = unique tokens with an outcome row | 736 |
-|   young | 494 |
-|   mature | 204 |
+| eval-2 scans | 134 |
+| sightings | 7778 |
+| liquid sightings | 3186 |
+| first liquid sightings = unique tokens with an outcome row | 743 |
+|   young | 500 |
+|   mature | 205 |
 |   other | 38 |
-| young with a comparator (cap 2) | 74 |
-| young without a comparator | 420 |
+| young with a comparator (cap 2) | 76 |
+| young without a comparator | 424 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 26 |
+|   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 46 |
 | scans contributing a complete pair | 29 |
 
 ## 60m outcome status by group
 
-- young: labelled 375/494, no_valid_entry 15/494, pending 9/494, unknown 73/494, unreliable 22/494
-- mature: labelled 190/204, pending 6/204, unknown 8/204
-- no valid entry: young 15/494, mature 0/204
+- young: labelled 379/500, no_valid_entry 15/500, pending 11/500, unknown 73/500, unreliable 22/500
+- mature: labelled 192/205, pending 5/205, unknown 8/205
+- no valid entry: young 15/500, mature 0/205
 
 ## Effect (after costs; unit = scan)
 
@@ -64,6 +64,7 @@
 - 20261111T205902-9GgsHTYt: MIHAO VI (20261111T205902), MANEKI (20261111T205902)
 - 20261112T005859-HtKSi76B: WYLIE (20261112T005859), CHRISTMAX (20261112T005859)
 - 20261112T035858-Tm2iqbxY: Max (20261112T035858), mihao (20261112T035858)
+- 20261112T045857-Tm2iqbxY: NEX Ai (20261112T045857), would (20261112T045857)
 
 ## Every pair
 
@@ -554,12 +555,18 @@
 | 20261112T015858 | NEUTRAL | MetaMask | 37155.54 | labelled | 37.26 |  |  |  | None | no eligible comparator |
 | 20261112T015858 | NEUTRAL | X | 23939.47 | labelled | -30.42 |  |  |  | None | no eligible comparator |
 | 20261112T015858 | NEUTRAL | WYRM | 16417.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261112T025858 | NEUTRAL | MAX | 31573.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T025858 | NEUTRAL | FORKYU | 30854.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T025858 | NEUTRAL | X | 30476.11 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T025858 | NEUTRAL | SCAMSON | 23191.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T025858 | NEUTRAL | MAX | 31573.86 | labelled | -29.73 |  |  |  | None | no eligible comparator |
+| 20261112T025858 | NEUTRAL | FORKYU | 30854.46 | labelled | -30.5 |  |  |  | None | no eligible comparator |
+| 20261112T025858 | NEUTRAL | X | 30476.11 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261112T025858 | NEUTRAL | SCAMSON | 23191.69 | labelled | -41.01 |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | Max | 28760.12 | pending | None | Chinese | 42416.32 | pending | None |  |
 | 20261112T035858 | NEUTRAL | mihao | 22634.41 | pending | None | Chinese | 42416.32 | pending | None |  |
 | 20261112T035858 | NEUTRAL | POPVAX | 20423.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | SAXON | 15896.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | POPVAX | 15795.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T045857 | NEUTRAL | Endrick | 108128.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T045857 | NEUTRAL | NEX Ai | 35354.32 | pending | None | Chinese | 43295.96 | pending | None |  |
+| 20261112T045857 | NEUTRAL | would | 29745.30 | pending | None | Chinese | 43295.96 | pending | None |  |
+| 20261112T045857 | NEUTRAL | GABOON | 29109.79 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T045857 | NEUTRAL | LILY | 25374.03 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T045857 | NEUTRAL | GTA 6 Coin | 22675.09 | pending | None |  |  |  | None | comparators used twice |
