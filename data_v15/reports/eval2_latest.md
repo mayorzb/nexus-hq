@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 151 |
-| sightings | 8806 |
-| liquid sightings | 3610 |
-| first liquid sightings = unique tokens with an outcome row | 825 |
-|   young | 561 |
-|   mature | 224 |
+| eval-2 scans | 152 |
+| sightings | 8870 |
+| liquid sightings | 3641 |
+| first liquid sightings = unique tokens with an outcome row | 834 |
+|   young | 568 |
+|   mature | 226 |
 |   other | 40 |
-| young with a comparator (cap 2) | 92 |
-| young without a comparator | 469 |
+| young with a comparator (cap 2) | 96 |
+| young without a comparator | 472 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 32 |
-| complete pairs (both 60m outcomes labelled) | 56 |
-| scans contributing a complete pair | 35 |
+|   pairs: young or mature outcome not yet usable | 34 |
+| complete pairs (both 60m outcomes labelled) | 58 |
+| scans contributing a complete pair | 36 |
 
 ## 60m outcome status by group
 
-- young: labelled 428/561, no_valid_entry 18/561, pending 9/561, unknown 78/561, unreliable 28/561
-- mature: labelled 209/224, pending 4/224, unknown 11/224
-- no valid entry: young 18/561, mature 0/224
+- young: labelled 432/568, no_valid_entry 18/568, pending 11/568, unknown 79/568, unreliable 28/568
+- mature: labelled 211/226, pending 3/226, unknown 12/226
+- no valid entry: young 18/568, mature 0/226
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.84 points, 95% interval (-42.49, -14.05); scans with young worse 25/35
-- Pairs with young worse: 40/56 (71.4%); pair mean -27.23, median -27.48
-- Big loss (<= -20%): young 36/56, mature 5/56
+- Scan-level mean difference (young - mature): -28.51 points, 95% interval (-43.02, -14.19); scans with young worse 26/36
+- Pairs with young worse: 42/58 (72.4%); pair mean -28.08, median -28.69
+- Big loss (<= -20%): young 38/58, mature 6/58
 
 ## Comparator reuse (cap 2)
 
@@ -71,6 +71,8 @@
 - 20261112T165849-FyHakvZH: BALLS (20261112T165849), AMD (20261112T165849)
 - 20261112T205846-3xwpPXRJ: Helmiz (20261112T205846), CHRISTMAX (20261112T205846)
 - 20261112T215846-DMiBmfba: FANDEMON (20261112T215846), ANSEM (20261112T215846)
+- 20261112T225845-65q7e9mA: plumber (20261112T225845), CSI (20261112T225845)
+- 20261112T225845-6suUqBQx: EDGAR (20261112T225845), Christmax (20261112T225845)
 
 ## Every pair
 
@@ -608,7 +610,7 @@
 | 20261112T165849 | RED | BALLS | 44282.33 | labelled | 37.35 | inuhao | 68245.43 | labelled | 37.51 |  |
 | 20261112T165849 | RED | AMD | 36676.17 | labelled | 37.26 | inuhao | 68245.43 | labelled | 37.51 |  |
 | 20261112T165849 | RED | FLYCAT | 32307.63 | labelled | 37.18 |  |  |  | None | no eligible comparator |
-| 20261112T165849 | RED | $REXTON | 28263.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | $REXTON | 28263.82 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | AMD | 18838.71 | labelled | -47.54 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | HUANG | 17134.35 | labelled | -37.93 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | jjaemu | 15757.94 | labelled | -28.58 |  |  |  | None | no eligible comparator |
@@ -629,11 +631,18 @@
 | 20261112T195847 | RED | JENSEN | 56892.47 | labelled | 37.45 |  |  |  | None | no eligible comparator |
 | 20261112T195847 | RED | 1JENSEN | 34613.65 | labelled | -30.69 |  |  |  | None | no eligible comparator |
 | 20261112T195847 | RED | GREENDILDO | 15610.65 | labelled | -6.27 |  |  |  | None | no eligible comparator |
-| 20261112T205846 | RED | Hero | 35370.12 | pending | None | UODF | 19497.25 | pending | None |  |
-| 20261112T205846 | RED | Helmiz | 17965.44 | pending | None | Retardia | 17616.02 | pending | None |  |
-| 20261112T205846 | RED | CHRISTMAX | 17275.51 | pending | None | Retardia | 17616.02 | pending | None |  |
-| 20261112T205846 | RED | DODO | 16369.58 | pending | None | PUSSY | 15801.62 | pending | None |  |
+| 20261112T205846 | RED | Hero | 35370.12 | labelled | -46.48 | UODF | 19497.25 | labelled | -3.79 |  |
+| 20261112T205846 | RED | Helmiz | 17965.44 | labelled | -38.07 | Retardia | 17616.02 | unknown | None |  |
+| 20261112T205846 | RED | CHRISTMAX | 17275.51 | labelled | -57.62 | Retardia | 17616.02 | unknown | None |  |
+| 20261112T205846 | RED | DODO | 16369.58 | labelled | -100.0 | PUSSY | 15801.62 | labelled | -38.7 |  |
 | 20261112T215846 | RED | AI | 87840.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T215846 | RED | FANDEMON | 47817.11 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
 | 20261112T215846 | RED | ANSEM | 31786.99 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
 | 20261112T215846 | RED | AI | 24838.84 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T225845 | RED | UCI | 108043.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T225845 | RED | plumber | 40824.29 | pending | None | fineshyt | 21833.66 | pending | None |  |
+| 20261112T225845 | RED | CSI | 25781.60 | pending | None | fineshyt | 21833.66 | pending | None |  |
+| 20261112T225845 | RED | EDGAR | 23554.02 | pending | None | LONG | 18778.81 | pending | None |  |
+| 20261112T225845 | RED | Christmax | 19091.89 | pending | None | LONG | 18778.81 | pending | None |  |
+| 20261112T225845 | RED | rockstar | 17020.58 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T225845 | RED | CG | 15853.99 | pending | None |  |  |  | None | comparators used twice |
