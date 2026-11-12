@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 137 |
-| sightings | 7961 |
-| liquid sightings | 3256 |
-| first liquid sightings = unique tokens with an outcome row | 758 |
-|   young | 509 |
-|   mature | 211 |
+| eval-2 scans | 138 |
+| sightings | 8020 |
+| liquid sightings | 3278 |
+| first liquid sightings = unique tokens with an outcome row | 761 |
+|   young | 511 |
+|   mature | 212 |
 |   other | 38 |
 | young with a comparator (cap 2) | 80 |
-| young without a comparator | 429 |
-|   pairs: young had no valid entry (counted, not scored) | 2 |
-|   pairs: young or mature outcome not yet usable | 27 |
+| young without a comparator | 431 |
+|   pairs: young had no valid entry (counted, not scored) | 3 |
+|   pairs: young or mature outcome not yet usable | 26 |
 | complete pairs (both 60m outcomes labelled) | 51 |
 | scans contributing a complete pair | 32 |
 
 ## 60m outcome status by group
 
-- young: labelled 392/509, no_valid_entry 15/509, pending 6/509, unknown 73/509, unreliable 23/509
-- mature: labelled 197/211, pending 5/211, unknown 9/211
-- no valid entry: young 15/509, mature 0/211
+- young: labelled 394/511, no_valid_entry 16/511, pending 5/511, unknown 73/511, unreliable 23/511
+- mature: labelled 199/212, pending 4/212, unknown 9/212
+- no valid entry: young 16/511, mature 0/212
 
 ## Effect (after costs; unit = scan)
 
@@ -575,8 +575,10 @@
 | 20261112T055856 | NEUTRAL | LARPMASS | 22515.78 | labelled | 36.92 | Chinese | 42661.18 | labelled | -4.47 |  |
 | 20261112T055856 | NEUTRAL | DacityCoin | 17078.82 | labelled | -29.19 |  |  |  | None | no eligible comparator |
 | 20261112T055856 | NEUTRAL | FLC | 16191.23 | labelled | 36.57 |  |  |  | None | no eligible comparator |
-| 20261112T065856 | NEUTRAL | up | 51273.70 | pending | None | Chinese | 42625.81 | pending | None |  |
-| 20261112T065856 | NEUTRAL | RICO | 16543.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | up | 51273.70 | no_valid_entry | None | Chinese | 42625.81 | labelled | 22.46 |  |
+| 20261112T065856 | NEUTRAL | RICO | 16543.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T065856 | NEUTRAL | なな | 15186.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | なな | 15186.66 | labelled | -40.51 |  |  |  | None | no eligible comparator |
 | 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | pending | None | Chinese | 47915.97 | pending | None |  |
+| 20261112T085854 | NEUTRAL | GTI | 16919.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T085854 | NEUTRAL | MRPENIS | 16113.75 | pending | None |  |  |  | None | no eligible comparator |
