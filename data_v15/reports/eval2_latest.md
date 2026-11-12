@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 140 |
-| sightings | 8140 |
-| liquid sightings | 3327 |
-| first liquid sightings = unique tokens with an outcome row | 770 |
-|   young | 516 |
-|   mature | 215 |
+| eval-2 scans | 141 |
+| sightings | 8199 |
+| liquid sightings | 3350 |
+| first liquid sightings = unique tokens with an outcome row | 773 |
+|   young | 518 |
+|   mature | 216 |
 |   other | 39 |
 | young with a comparator (cap 2) | 82 |
-| young without a comparator | 434 |
+| young without a comparator | 436 |
 |   pairs: young had no valid entry (counted, not scored) | 3 |
 |   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 51 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 395/516, no_valid_entry 16/516, pending 7/516, unknown 74/516, unreliable 24/516
-- mature: labelled 202/215, pending 3/215, unknown 10/215
-- no valid entry: young 16/516, mature 0/215
+- young: labelled 396/518, no_valid_entry 16/518, pending 8/518, unknown 74/518, unreliable 24/518
+- mature: labelled 203/216, pending 2/216, unknown 11/216
+- no valid entry: young 16/518, mature 0/216
 
 ## Effect (after costs; unit = scan)
 
@@ -583,8 +583,10 @@
 | 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | unreliable | None | Chinese | 47915.97 | labelled | 3.24 |  |
 | 20261112T085854 | NEUTRAL | GTI | 16919.98 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261112T085854 | NEUTRAL | MRPENIS | 16113.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T095854 | NEUTRAL | Shiqi | 19733.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T095854 | NEUTRAL | Shiqi | 19733.36 | labelled | -30.89 |  |  |  | None | no eligible comparator |
 | 20261112T105854 | NEUTRAL | RTX | 36787.52 | pending | None | Chinese | 47898.32 | pending | None |  |
 | 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | pending | None | Chinese | 47898.32 | pending | None |  |
 | 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | pending | None |  |  |  | None | comparators used twice |
 | 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T115853 | NEUTRAL | MING | 18859.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | pending | None |  |  |  | None | no eligible comparator |
