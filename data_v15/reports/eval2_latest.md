@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 138 |
-| sightings | 8020 |
-| liquid sightings | 3278 |
-| first liquid sightings = unique tokens with an outcome row | 761 |
-|   young | 511 |
-|   mature | 212 |
-|   other | 38 |
+| eval-2 scans | 139 |
+| sightings | 8081 |
+| liquid sightings | 3301 |
+| first liquid sightings = unique tokens with an outcome row | 765 |
+|   young | 512 |
+|   mature | 214 |
+|   other | 39 |
 | young with a comparator (cap 2) | 80 |
-| young without a comparator | 431 |
+| young without a comparator | 432 |
 |   pairs: young had no valid entry (counted, not scored) | 3 |
 |   pairs: young or mature outcome not yet usable | 26 |
 | complete pairs (both 60m outcomes labelled) | 51 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 394/511, no_valid_entry 16/511, pending 5/511, unknown 73/511, unreliable 23/511
-- mature: labelled 199/212, pending 4/212, unknown 9/212
-- no valid entry: young 16/511, mature 0/212
+- young: labelled 394/512, no_valid_entry 16/512, pending 4/512, unknown 74/512, unreliable 24/512
+- mature: labelled 201/214, pending 3/214, unknown 10/214
+- no valid entry: young 16/512, mature 0/214
 
 ## Effect (after costs; unit = scan)
 
@@ -563,7 +563,7 @@
 | 20261112T035858 | NEUTRAL | Max | 28760.12 | labelled | 37.11 | Chinese | 42416.32 | labelled | 2.75 |  |
 | 20261112T035858 | NEUTRAL | mihao | 22634.41 | labelled | -100.0 | Chinese | 42416.32 | labelled | 2.75 |  |
 | 20261112T035858 | NEUTRAL | POPVAX | 20423.78 | labelled | -29.99 |  |  |  | None | no eligible comparator |
-| 20261112T035858 | NEUTRAL | SAXON | 15896.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T035858 | NEUTRAL | SAXON | 15896.83 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | POPVAX | 15795.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T045857 | NEUTRAL | Endrick | 108128.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T045857 | NEUTRAL | NEX Ai | 35354.32 | unreliable | None | Chinese | 43295.96 | labelled | -4.68 |  |
@@ -579,6 +579,7 @@
 | 20261112T065856 | NEUTRAL | RICO | 16543.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | なな | 15186.66 | labelled | -40.51 |  |  |  | None | no eligible comparator |
-| 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | pending | None | Chinese | 47915.97 | pending | None |  |
+| 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | unreliable | None | Chinese | 47915.97 | labelled | 3.24 |  |
 | 20261112T085854 | NEUTRAL | GTI | 16919.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T085854 | NEUTRAL | MRPENIS | 16113.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T095854 | NEUTRAL | Shiqi | 19733.36 | pending | None |  |  |  | None | no eligible comparator |
