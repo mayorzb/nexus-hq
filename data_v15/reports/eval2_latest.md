@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 146 |
-| sightings | 8495 |
-| liquid sightings | 3476 |
-| first liquid sightings = unique tokens with an outcome row | 796 |
-|   young | 536 |
+| eval-2 scans | 147 |
+| sightings | 8557 |
+| liquid sightings | 3501 |
+| first liquid sightings = unique tokens with an outcome row | 801 |
+|   young | 541 |
 |   mature | 220 |
 |   other | 40 |
 | young with a comparator (cap 2) | 86 |
-| young without a comparator | 450 |
+| young without a comparator | 455 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
 |   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 54 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 405/536, no_valid_entry 17/536, pending 11/536, unknown 77/536, unreliable 26/536
+- young: labelled 407/541, no_valid_entry 17/541, pending 13/541, unknown 77/541, unreliable 27/541
 - mature: labelled 208/220, pending 1/220, unknown 11/220
-- no valid entry: young 17/536, mature 0/220
+- no valid entry: young 17/541, mature 0/220
 
 ## Effect (after costs; unit = scan)
 
@@ -600,9 +600,9 @@
 | 20261112T145851 | RED | KRESS | 22900.07 | labelled | -41.3 |  |  |  | None | no eligible comparator |
 | 20261112T145851 | RED | Huang | 22109.92 | labelled | 36.9 |  |  |  | None | no eligible comparator |
 | 20261112T145851 | RED | VETO | 18961.44 | labelled | -56.46 |  |  |  | None | no eligible comparator |
-| 20261112T155850 | RED | Musk | 35759.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T155850 | RED | HUANG | 23447.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T155850 | RED | HEPE | 20835.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | Musk | 35759.71 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | HUANG | 23447.71 | labelled | 36.95 |  |  |  | None | no eligible comparator |
+| 20261112T155850 | RED | HEPE | 20835.85 | labelled | 36.84 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | BALLS | 44282.33 | pending | None | inuhao | 68245.43 | pending | None |  |
 | 20261112T165849 | RED | AMD | 36676.17 | pending | None | inuhao | 68245.43 | pending | None |  |
 | 20261112T165849 | RED | FLYCAT | 32307.63 | pending | None |  |  |  | None | no eligible comparator |
@@ -610,3 +610,8 @@
 | 20261112T165849 | RED | AMD | 18838.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | HUANG | 17134.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | jjaemu | 15757.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | ZER0 | 49358.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | GTA | 36084.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | MaxWif | 29288.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | Elon Huang | 25345.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T175848 | RED | DEAD | 23774.62 | pending | None |  |  |  | None | no eligible comparator |

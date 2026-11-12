@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-12 17:02 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-12 18:03 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-12 17:02 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 61 / 25 | OK |
-| Deep-checked coins left UNVERIFIED | 73 of 160 (46%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 8 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 227 of 387 | WARN |
-| Paper candidates (last 24h) | 29 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 671 / 116 | ALERT |
+| Deep-checked coins left UNVERIFIED | 69 of 152 (45%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 10 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 215 of 367 | WARN |
+| Paper candidates (last 24h) | 28 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 670 / 113 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (17:59), swordcat (18:59), CATE (19:59), swordcat (19:59), CATE (20:59), CATE (21:59), CATE (22:59), CATE (23:58), CATE (00:58), swordcat (00:58), CATE (01:58), swordcat (01:58), CATE (02:58), swordcat (02:58), CATE (03:58), Chinese (03:58), Chinese (04:58), CATE (05:58), Chinese (05:58), CATE (06:58), Chinese (06:58), CATE (07:58), Chinese (07:58), Chinese (08:58), CATE (09:58), Chinese (09:58), Chinese (10:58), CATE (11:58), CATE (12:58)
+Candidates: swordcat (18:59), CATE (19:59), swordcat (19:59), CATE (20:59), CATE (21:59), CATE (22:59), CATE (23:58), CATE (00:58), swordcat (00:58), CATE (01:58), swordcat (01:58), CATE (02:58), swordcat (02:58), CATE (03:58), Chinese (03:58), Chinese (04:58), CATE (05:58), Chinese (05:58), CATE (06:58), Chinese (06:58), CATE (07:58), Chinese (07:58), Chinese (08:58), CATE (09:58), Chinese (09:58), Chinese (10:58), CATE (11:58), CATE (12:58)
