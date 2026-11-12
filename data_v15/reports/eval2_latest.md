@@ -1,36 +1,36 @@
 # Paper evaluation eval-2 (frozen protocol: PROTOCOL_EVAL2.md)
 
-**Status:** SHORTFALL after 135 scans: 2 pairs and 0 scans short of the milestone; collection continues
+**Status:** SHORTFALL after 136 scans: 1 pairs and 0 scans short of the milestone; collection continues
 
 ## Token funnel
 
 | stage | count |
 |---|---|
-| eval-2 scans | 135 |
-| sightings | 7841 |
-| liquid sightings | 3210 |
-| first liquid sightings = unique tokens with an outcome row | 749 |
-|   young | 504 |
-|   mature | 207 |
+| eval-2 scans | 136 |
+| sightings | 7901 |
+| liquid sightings | 3235 |
+| first liquid sightings = unique tokens with an outcome row | 755 |
+|   young | 508 |
+|   mature | 209 |
 |   other | 38 |
-| young with a comparator (cap 2) | 78 |
-| young without a comparator | 426 |
+| young with a comparator (cap 2) | 79 |
+| young without a comparator | 429 |
 |   pairs: young had no valid entry (counted, not scored) | 2 |
 |   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 48 |
-| scans contributing a complete pair | 30 |
+| complete pairs (both 60m outcomes labelled) | 49 |
+| scans contributing a complete pair | 31 |
 
 ## 60m outcome status by group
 
-- young: labelled 383/504, no_valid_entry 15/504, pending 11/504, unknown 73/504, unreliable 22/504
-- mature: labelled 194/207, pending 5/207, unknown 8/207
-- no valid entry: young 15/504, mature 0/207
+- young: labelled 388/508, no_valid_entry 15/508, pending 9/508, unknown 73/508, unreliable 23/508
+- mature: labelled 195/209, pending 5/209, unknown 9/209
+- no valid entry: young 15/508, mature 0/209
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.66 points, 95% interval (-44.58, -11.15); scans with young worse 21/30
-- Pairs with young worse: 34/48 (70.8%); pair mean -28.39, median -28.5
-- Big loss (<= -20%): young 32/48, mature 5/48
+- Scan-level mean difference (young - mature): -27.74 points, 95% interval (-43.65, -12.36); scans with young worse 22/31
+- Pairs with young worse: 35/49 (71.4%); pair mean -28.42, median -29.72
+- Big loss (<= -20%): young 33/49, mature 5/49
 
 ## Comparator reuse (cap 2)
 
@@ -547,8 +547,8 @@
 | 20261111T225900 | NEUTRAL | TILLY | 35425.49 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261111T225900 | NEUTRAL | HAMSTER | 25538.67 | labelled | -31.92 |  |  |  | None | no eligible comparator |
 | 20261111T235859 | NEUTRAL | COOK | 15268.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261112T005859 | NEUTRAL | WYLIE | 29714.36 | labelled | -100.0 | CELON | 15259.71 | pending | None |  |
-| 20261112T005859 | NEUTRAL | CHRISTMAX | 24757.05 | labelled | -33.34 | CELON | 15259.71 | pending | None |  |
+| 20261112T005859 | NEUTRAL | WYLIE | 29714.36 | labelled | -100.0 | CELON | 15259.71 | unknown | None |  |
+| 20261112T005859 | NEUTRAL | CHRISTMAX | 24757.05 | labelled | -33.34 | CELON | 15259.71 | unknown | None |  |
 | 20261112T005859 | NEUTRAL | GROKIE | 15853.65 | labelled | 25.54 |  |  |  | None | comparators used twice |
 | 20261112T005859 | NEUTRAL | REX | 15263.30 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T015858 | NEUTRAL | Rex | 63664.58 | labelled | 37.49 | swordcat | 125781.34 | labelled | -5.23 |  |
@@ -565,13 +565,17 @@
 | 20261112T035858 | NEUTRAL | POPVAX | 20423.78 | labelled | -29.99 |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | SAXON | 15896.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T035858 | NEUTRAL | POPVAX | 15795.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261112T045857 | NEUTRAL | Endrick | 108128.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T045857 | NEUTRAL | NEX Ai | 35354.32 | pending | None | Chinese | 43295.96 | pending | None |  |
-| 20261112T045857 | NEUTRAL | would | 29745.30 | pending | None | Chinese | 43295.96 | pending | None |  |
-| 20261112T045857 | NEUTRAL | GABOON | 29109.79 | pending | None |  |  |  | None | comparators used twice |
-| 20261112T045857 | NEUTRAL | LILY | 25374.03 | pending | None |  |  |  | None | comparators used twice |
-| 20261112T045857 | NEUTRAL | GTA 6 Coin | 22675.09 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T045857 | NEUTRAL | Endrick | 108128.02 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261112T045857 | NEUTRAL | NEX Ai | 35354.32 | unreliable | None | Chinese | 43295.96 | labelled | -4.68 |  |
+| 20261112T045857 | NEUTRAL | would | 29745.30 | labelled | -34.67 | Chinese | 43295.96 | labelled | -4.68 |  |
+| 20261112T045857 | NEUTRAL | GABOON | 29109.79 | labelled | -28.39 |  |  |  | None | comparators used twice |
+| 20261112T045857 | NEUTRAL | LILY | 25374.03 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261112T045857 | NEUTRAL | GTA 6 Coin | 22675.09 | labelled | -67.44 |  |  |  | None | comparators used twice |
 | 20261112T055856 | NEUTRAL | BITCOINU | 60541.62 | pending | None | Chinese | 42661.18 | pending | None |  |
 | 20261112T055856 | NEUTRAL | LARPMASS | 22515.78 | pending | None | Chinese | 42661.18 | pending | None |  |
 | 20261112T055856 | NEUTRAL | DacityCoin | 17078.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T055856 | NEUTRAL | FLC | 16191.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | up | 51273.70 | pending | None | Chinese | 42625.81 | pending | None |  |
+| 20261112T065856 | NEUTRAL | RICO | 16543.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | なな | 15186.66 | pending | None |  |  |  | None | no eligible comparator |
