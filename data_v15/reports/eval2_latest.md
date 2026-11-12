@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 147 |
-| sightings | 8557 |
-| liquid sightings | 3501 |
-| first liquid sightings = unique tokens with an outcome row | 801 |
-|   young | 541 |
+| eval-2 scans | 148 |
+| sightings | 8619 |
+| liquid sightings | 3531 |
+| first liquid sightings = unique tokens with an outcome row | 810 |
+|   young | 550 |
 |   mature | 220 |
 |   other | 40 |
 | young with a comparator (cap 2) | 86 |
-| young without a comparator | 455 |
+| young without a comparator | 464 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 54 |
-| scans contributing a complete pair | 34 |
+|   pairs: young or mature outcome not yet usable | 26 |
+| complete pairs (both 60m outcomes labelled) | 56 |
+| scans contributing a complete pair | 35 |
 
 ## 60m outcome status by group
 
-- young: labelled 407/541, no_valid_entry 17/541, pending 13/541, unknown 77/541, unreliable 27/541
-- mature: labelled 208/220, pending 1/220, unknown 11/220
-- no valid entry: young 17/541, mature 0/220
+- young: labelled 413/550, no_valid_entry 17/550, pending 16/550, unknown 77/550, unreliable 27/550
+- mature: labelled 209/220, unknown 11/220
+- no valid entry: young 17/550, mature 0/220
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.65 points, 95% interval (-43.63, -14.52); scans with young worse 24/34
-- Pairs with young worse: 38/54 (70.4%); pair mean -28.23, median -28.69
-- Big loss (<= -20%): young 36/54, mature 5/54
+- Scan-level mean difference (young - mature): -27.84 points, 95% interval (-42.49, -14.05); scans with young worse 25/35
+- Pairs with young worse: 40/56 (71.4%); pair mean -27.23, median -27.48
+- Big loss (<= -20%): young 36/56, mature 5/56
 
 ## Comparator reuse (cap 2)
 
@@ -603,15 +603,24 @@
 | 20261112T155850 | RED | Musk | 35759.71 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261112T155850 | RED | HUANG | 23447.71 | labelled | 36.95 |  |  |  | None | no eligible comparator |
 | 20261112T155850 | RED | HEPE | 20835.85 | labelled | 36.84 |  |  |  | None | no eligible comparator |
-| 20261112T165849 | RED | BALLS | 44282.33 | pending | None | inuhao | 68245.43 | pending | None |  |
-| 20261112T165849 | RED | AMD | 36676.17 | pending | None | inuhao | 68245.43 | pending | None |  |
-| 20261112T165849 | RED | FLYCAT | 32307.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | BALLS | 44282.33 | labelled | 37.35 | inuhao | 68245.43 | labelled | 37.51 |  |
+| 20261112T165849 | RED | AMD | 36676.17 | labelled | 37.26 | inuhao | 68245.43 | labelled | 37.51 |  |
+| 20261112T165849 | RED | FLYCAT | 32307.63 | labelled | 37.18 |  |  |  | None | no eligible comparator |
 | 20261112T165849 | RED | $REXTON | 28263.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T165849 | RED | AMD | 18838.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T165849 | RED | HUANG | 17134.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T165849 | RED | jjaemu | 15757.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | AMD | 18838.71 | labelled | -47.54 |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | HUANG | 17134.35 | labelled | -37.93 |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | jjaemu | 15757.94 | labelled | -28.58 |  |  |  | None | no eligible comparator |
 | 20261112T175848 | RED | ZER0 | 49358.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T175848 | RED | GTA | 36084.40 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T175848 | RED | MaxWif | 29288.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T175848 | RED | Elon Huang | 25345.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T175848 | RED | DEAD | 23774.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | DOGGLE | 55633.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | MORNING | 34630.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | HENSEN | 34276.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | IMG | 32538.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | Spamcat | 28982.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | PEG | 20354.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | CAPY | 18838.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | GOAT | 16759.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T185847 | RED | SPAMCAT | 16163.73 | pending | None |  |  |  | None | no eligible comparator |
