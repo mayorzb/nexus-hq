@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 141 |
-| sightings | 8199 |
-| liquid sightings | 3350 |
-| first liquid sightings = unique tokens with an outcome row | 773 |
-|   young | 518 |
-|   mature | 216 |
-|   other | 39 |
+| eval-2 scans | 142 |
+| sightings | 8259 |
+| liquid sightings | 3372 |
+| first liquid sightings = unique tokens with an outcome row | 777 |
+|   young | 519 |
+|   mature | 218 |
+|   other | 40 |
 | young with a comparator (cap 2) | 82 |
-| young without a comparator | 436 |
+| young without a comparator | 437 |
 |   pairs: young had no valid entry (counted, not scored) | 3 |
-|   pairs: young or mature outcome not yet usable | 28 |
-| complete pairs (both 60m outcomes labelled) | 51 |
-| scans contributing a complete pair | 32 |
+|   pairs: young or mature outcome not yet usable | 26 |
+| complete pairs (both 60m outcomes labelled) | 53 |
+| scans contributing a complete pair | 33 |
 
 ## 60m outcome status by group
 
-- young: labelled 396/518, no_valid_entry 16/518, pending 8/518, unknown 74/518, unreliable 24/518
-- mature: labelled 203/216, pending 2/216, unknown 11/216
-- no valid entry: young 16/518, mature 0/216
+- young: labelled 398/519, no_valid_entry 16/519, pending 5/519, unknown 75/519, unreliable 25/519
+- mature: labelled 204/218, pending 3/218, unknown 11/218
+- no valid entry: young 16/519, mature 0/218
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.66 points, 95% interval (-41.94, -11.55); scans with young worse 22/32
-- Pairs with young worse: 36/51 (70.6%); pair mean -27.04, median -27.66
-- Big loss (<= -20%): young 34/51, mature 5/51
+- Scan-level mean difference (young - mature): -26.58 points, 95% interval (-41.69, -11.99); scans with young worse 23/33
+- Pairs with young worse: 37/53 (69.8%); pair mean -26.93, median -27.66
+- Big loss (<= -20%): young 35/53, mature 5/53
 
 ## Comparator reuse (cap 2)
 
@@ -578,15 +578,16 @@
 | 20261112T055856 | NEUTRAL | FLC | 16191.23 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | up | 51273.70 | no_valid_entry | None | Chinese | 42625.81 | labelled | 22.46 |  |
 | 20261112T065856 | NEUTRAL | RICO | 16543.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261112T065856 | NEUTRAL | arigato | 16416.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T065856 | NEUTRAL | arigato | 16416.94 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261112T065856 | NEUTRAL | なな | 15186.66 | labelled | -40.51 |  |  |  | None | no eligible comparator |
 | 20261112T075855 | NEUTRAL | 牛逼猫 | 33745.22 | unreliable | None | Chinese | 47915.97 | labelled | 3.24 |  |
 | 20261112T085854 | NEUTRAL | GTI | 16919.98 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261112T085854 | NEUTRAL | MRPENIS | 16113.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T095854 | NEUTRAL | Shiqi | 19733.36 | labelled | -30.89 |  |  |  | None | no eligible comparator |
-| 20261112T105854 | NEUTRAL | RTX | 36787.52 | pending | None | Chinese | 47898.32 | pending | None |  |
-| 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | pending | None | Chinese | 47898.32 | pending | None |  |
-| 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T105854 | NEUTRAL | RTX | 36787.52 | labelled | 37.26 | Chinese | 47898.32 | labelled | -7.22 |  |
+| 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | labelled | -100.0 | Chinese | 47898.32 | labelled | -7.22 |  |
+| 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | pending | None |  |  |  | None | comparators used twice |
 | 20261112T115853 | NEUTRAL | MING | 18859.47 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T125853 | NEUTRAL | ANTHROPE | 21484.19 | pending | None |  |  |  | None | no eligible comparator |
