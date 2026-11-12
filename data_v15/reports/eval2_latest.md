@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 145 |
-| sightings | 8434 |
-| liquid sightings | 3447 |
-| first liquid sightings = unique tokens with an outcome row | 788 |
-|   young | 529 |
-|   mature | 219 |
+| eval-2 scans | 146 |
+| sightings | 8495 |
+| liquid sightings | 3476 |
+| first liquid sightings = unique tokens with an outcome row | 796 |
+|   young | 536 |
+|   mature | 220 |
 |   other | 40 |
-| young with a comparator (cap 2) | 84 |
-| young without a comparator | 445 |
+| young with a comparator (cap 2) | 86 |
+| young without a comparator | 450 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 26 |
+|   pairs: young or mature outcome not yet usable | 28 |
 | complete pairs (both 60m outcomes labelled) | 54 |
 | scans contributing a complete pair | 34 |
 
 ## 60m outcome status by group
 
-- young: labelled 402/529, no_valid_entry 17/529, pending 8/529, unknown 76/529, unreliable 26/529
-- mature: labelled 208/219, unknown 11/219
-- no valid entry: young 17/529, mature 0/219
+- young: labelled 405/536, no_valid_entry 17/536, pending 11/536, unknown 77/536, unreliable 26/536
+- mature: labelled 208/220, pending 1/220, unknown 11/220
+- no valid entry: young 17/536, mature 0/220
 
 ## Effect (after costs; unit = scan)
 
@@ -68,6 +68,7 @@
 - 20261112T055856-Tm2iqbxY: BITCOINU (20261112T055856), LARPMASS (20261112T055856)
 - 20261112T105854-Tm2iqbxY: RTX (20261112T105854), 中国人牛逼 (20261112T105854)
 - 20261112T135852-4eiNbSrX: mihao (20261112T135852), GONE (20261112T135852)
+- 20261112T165849-FyHakvZH: BALLS (20261112T165849), AMD (20261112T165849)
 
 ## Every pair
 
@@ -588,7 +589,7 @@
 | 20261112T105854 | NEUTRAL | RTX | 36787.52 | labelled | 37.26 | Chinese | 47898.32 | labelled | -7.22 |  |
 | 20261112T105854 | NEUTRAL | 中国人牛逼 | 34224.10 | labelled | -100.0 | Chinese | 47898.32 | labelled | -7.22 |  |
 | 20261112T105854 | NEUTRAL | Democat眉眉 | 31413.87 | unreliable | None |  |  |  | None | comparators used twice |
-| 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T105854 | NEUTRAL | VIRTUAL | 25991.52 | unknown | None |  |  |  | None | comparators used twice |
 | 20261112T115853 | NEUTRAL | MING | 18859.47 | labelled | -31.95 |  |  |  | None | no eligible comparator |
 | 20261112T115853 | NEUTRAL | Shitcoin | 16918.58 | labelled | -39.88 |  |  |  | None | no eligible comparator |
 | 20261112T125853 | NEUTRAL | ANTHROPE | 21484.19 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -596,9 +597,16 @@
 | 20261112T135852 | RED | GONE | 17608.47 | labelled | -60.14 | files | 24844.00 | labelled | 37.0 |  |
 | 20261112T135852 | RED | PAUL | 16751.96 | pending | None |  |  |  | None | comparators used twice |
 | 20261112T135852 | RED | nihaomax | 15755.49 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261112T145851 | RED | KRESS | 22900.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T145851 | RED | Huang | 22109.92 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T145851 | RED | VETO | 18961.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T145851 | RED | KRESS | 22900.07 | labelled | -41.3 |  |  |  | None | no eligible comparator |
+| 20261112T145851 | RED | Huang | 22109.92 | labelled | 36.9 |  |  |  | None | no eligible comparator |
+| 20261112T145851 | RED | VETO | 18961.44 | labelled | -56.46 |  |  |  | None | no eligible comparator |
 | 20261112T155850 | RED | Musk | 35759.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T155850 | RED | HUANG | 23447.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T155850 | RED | HEPE | 20835.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | BALLS | 44282.33 | pending | None | inuhao | 68245.43 | pending | None |  |
+| 20261112T165849 | RED | AMD | 36676.17 | pending | None | inuhao | 68245.43 | pending | None |  |
+| 20261112T165849 | RED | FLYCAT | 32307.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | $REXTON | 28263.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | AMD | 18838.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | HUANG | 17134.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T165849 | RED | jjaemu | 15757.94 | pending | None |  |  |  | None | no eligible comparator |
