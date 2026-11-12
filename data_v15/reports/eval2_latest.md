@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 150 |
-| sightings | 8747 |
-| liquid sightings | 3584 |
-| first liquid sightings = unique tokens with an outcome row | 820 |
-|   young | 557 |
-|   mature | 223 |
+| eval-2 scans | 151 |
+| sightings | 8806 |
+| liquid sightings | 3610 |
+| first liquid sightings = unique tokens with an outcome row | 825 |
+|   young | 561 |
+|   mature | 224 |
 |   other | 40 |
-| young with a comparator (cap 2) | 90 |
-| young without a comparator | 467 |
+| young with a comparator (cap 2) | 92 |
+| young without a comparator | 469 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 30 |
+|   pairs: young or mature outcome not yet usable | 32 |
 | complete pairs (both 60m outcomes labelled) | 56 |
 | scans contributing a complete pair | 35 |
 
 ## 60m outcome status by group
 
-- young: labelled 425/557, no_valid_entry 18/557, pending 8/557, unknown 78/557, unreliable 28/557
-- mature: labelled 209/223, pending 3/223, unknown 11/223
-- no valid entry: young 18/557, mature 0/223
+- young: labelled 428/561, no_valid_entry 18/561, pending 9/561, unknown 78/561, unreliable 28/561
+- mature: labelled 209/224, pending 4/224, unknown 11/224
+- no valid entry: young 18/561, mature 0/224
 
 ## Effect (after costs; unit = scan)
 
@@ -70,6 +70,7 @@
 - 20261112T135852-4eiNbSrX: mihao (20261112T135852), GONE (20261112T135852)
 - 20261112T165849-FyHakvZH: BALLS (20261112T165849), AMD (20261112T165849)
 - 20261112T205846-3xwpPXRJ: Helmiz (20261112T205846), CHRISTMAX (20261112T205846)
+- 20261112T215846-DMiBmfba: FANDEMON (20261112T215846), ANSEM (20261112T215846)
 
 ## Every pair
 
@@ -625,10 +626,14 @@
 | 20261112T185847 | RED | CAPY | 18838.85 | labelled | -31.11 |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | GOAT | 16759.38 | labelled | 11.92 |  |  |  | None | no eligible comparator |
 | 20261112T185847 | RED | SPAMCAT | 16163.73 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261112T195847 | RED | JENSEN | 56892.47 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T195847 | RED | 1JENSEN | 34613.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T195847 | RED | GREENDILDO | 15610.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | JENSEN | 56892.47 | labelled | 37.45 |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | 1JENSEN | 34613.65 | labelled | -30.69 |  |  |  | None | no eligible comparator |
+| 20261112T195847 | RED | GREENDILDO | 15610.65 | labelled | -6.27 |  |  |  | None | no eligible comparator |
 | 20261112T205846 | RED | Hero | 35370.12 | pending | None | UODF | 19497.25 | pending | None |  |
 | 20261112T205846 | RED | Helmiz | 17965.44 | pending | None | Retardia | 17616.02 | pending | None |  |
 | 20261112T205846 | RED | CHRISTMAX | 17275.51 | pending | None | Retardia | 17616.02 | pending | None |  |
 | 20261112T205846 | RED | DODO | 16369.58 | pending | None | PUSSY | 15801.62 | pending | None |  |
+| 20261112T215846 | RED | AI | 87840.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T215846 | RED | FANDEMON | 47817.11 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
+| 20261112T215846 | RED | ANSEM | 31786.99 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
+| 20261112T215846 | RED | AI | 24838.84 | pending | None |  |  |  | None | comparators used twice |
