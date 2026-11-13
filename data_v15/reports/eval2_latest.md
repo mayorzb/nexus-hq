@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 165 |
-| sightings | 9671 |
-| liquid sightings | 3945 |
-| first liquid sightings = unique tokens with an outcome row | 880 |
-|   young | 608 |
-|   mature | 231 |
+| eval-2 scans | 166 |
+| sightings | 9731 |
+| liquid sightings | 3969 |
+| first liquid sightings = unique tokens with an outcome row | 884 |
+|   young | 611 |
+|   mature | 232 |
 |   other | 41 |
-| young with a comparator (cap 2) | 100 |
-| young without a comparator | 508 |
+| young with a comparator (cap 2) | 101 |
+| young without a comparator | 510 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 33 |
+|   pairs: young or mature outcome not yet usable | 34 |
 | complete pairs (both 60m outcomes labelled) | 62 |
 | scans contributing a complete pair | 38 |
 
 ## 60m outcome status by group
 
-- young: labelled 466/608, no_valid_entry 22/608, pending 4/608, unknown 86/608, unreliable 30/608
-- mature: labelled 215/231, pending 1/231, unknown 15/231
-- no valid entry: young 22/608, mature 0/231
+- young: labelled 467/611, no_valid_entry 22/611, pending 6/611, unknown 86/611, unreliable 30/611
+- mature: labelled 215/232, pending 2/232, unknown 15/232
+- no valid entry: young 22/611, mature 0/232
 
 ## Effect (after costs; unit = scan)
 
@@ -684,7 +684,10 @@
 | 20261113T085840 | DEEP_RED | Sakura | 41888.13 | labelled | 37.32 |  |  |  | None | no eligible comparator |
 | 20261113T085840 | DEEP_RED | Democat | 32075.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | labelled | -46.79 |  |  |  | None | no eligible comparator |
-| 20261113T105840 | RED | FRBASK | 104846.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | FRBASK | 104846.54 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | INUX | 78978.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T115840 | RED | FASTMOON | 34698.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T125840 | RED | Bahrad | 99445.34 | pending | None | MASK | 90335.04 | pending | None |  |
+| 20261113T125840 | RED | papercat | 37142.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T125840 | RED | USMS | 22298.11 | pending | None |  |  |  | None | no eligible comparator |
