@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 173 |
-| sightings | 10169 |
-| liquid sightings | 4157 |
-| first liquid sightings = unique tokens with an outcome row | 928 |
-|   young | 650 |
-|   mature | 236 |
+| eval-2 scans | 174 |
+| sightings | 10233 |
+| liquid sightings | 4181 |
+| first liquid sightings = unique tokens with an outcome row | 931 |
+|   young | 652 |
+|   mature | 237 |
 |   other | 42 |
-| young with a comparator (cap 2) | 104 |
+| young with a comparator (cap 2) | 106 |
 | young without a comparator | 546 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 36 |
-| complete pairs (both 60m outcomes labelled) | 63 |
-| scans contributing a complete pair | 39 |
+|   pairs: young or mature outcome not yet usable | 37 |
+| complete pairs (both 60m outcomes labelled) | 64 |
+| scans contributing a complete pair | 40 |
 
 ## 60m outcome status by group
 
-- young: labelled 494/650, no_valid_entry 24/650, pending 12/650, unknown 89/650, unreliable 31/650
-- mature: labelled 219/236, pending 2/236, unknown 15/236
-- no valid entry: young 24/650, mature 0/236
+- young: labelled 497/652, no_valid_entry 24/652, pending 9/652, unknown 91/652, unreliable 31/652
+- mature: labelled 220/237, pending 2/237, unknown 15/237
+- no valid entry: young 24/652, mature 0/237
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.57 points, 95% interval (-43.45, -14.47); scans with young worse 28/39
-- Pairs with young worse: 45/63 (71.4%); pair mean -27.21, median -29.72
-- Big loss (<= -20%): young 41/63, mature 8/63
+- Scan-level mean difference (young - mature): -28.54 points, 95% interval (-43.43, -14.65); scans with young worse 29/40
+- Pairs with young worse: 46/64 (71.9%); pair mean -27.22, median -28.69
+- Big loss (<= -20%): young 42/64, mature 8/64
 
 ## Comparator reuse (cap 2)
 
@@ -76,6 +76,7 @@
 - 20261113T005844-85EzCVHB: THRONG (20261113T005844), Timsen (20261113T005844)
 - 20261113T035842-9azVa2sx: JENSWAN (20261113T035842), AXEL (20261113T035842)
 - 20261113T195833-ANYq8tEL: LUCIA (20261113T195833), punchhao (20261113T195833)
+- 20261113T205832-7jo5Ru47: Together (20261113T205832), MIPO (20261113T205832)
 
 ## Every pair
 
@@ -700,8 +701,8 @@
 | 20261113T145838 | RED | PaperInu | 35938.39 | labelled | -41.24 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | UwU | 29102.61 | labelled | -30.96 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | Meme | 28448.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | PARANOID | 27334.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | AICoin | 23489.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | PARANOID | 27334.63 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | AICoin | 23489.24 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | Speed | 19386.65 | labelled | -51.78 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | XRP | 19309.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | UwU | 18652.02 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -721,9 +722,9 @@
 | 20261113T175835 | RED | cashduck | 27818.24 | labelled | -55.25 |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | DACAT | 25069.81 | labelled | -35.71 |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | Nigghao | 23091.84 | labelled | 9.37 |  |  |  | None | no eligible comparator |
-| 20261113T185834 | RED | BAWSAQ | 40688.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T185834 | RED | FOMO | 38795.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T185834 | RED | SIRIUS | 21729.95 | pending | None | NAGA | 17579.97 | pending | None |  |
+| 20261113T185834 | RED | BAWSAQ | 40688.26 | labelled | 37.31 |  |  |  | None | no eligible comparator |
+| 20261113T185834 | RED | FOMO | 38795.68 | labelled | -46.36 |  |  |  | None | no eligible comparator |
+| 20261113T185834 | RED | SIRIUS | 21729.95 | labelled | -30.2 | NAGA | 17579.97 | labelled | -2.73 |  |
 | 20261113T195833 | RED | AMC | 101128.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T195833 | RED | LUCIA | 26858.31 | pending | None | Sakura | 18139.00 | pending | None |  |
 | 20261113T195833 | RED | punchhao | 22413.68 | pending | None | Sakura | 18139.00 | pending | None |  |
@@ -731,3 +732,5 @@
 | 20261113T195833 | RED | POOR | 17020.45 | pending | None |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | b | 16919.93 | pending | None |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | ALO | 16880.57 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T205832 | RED | Together | 19107.34 | pending | None | DCC | 22790.67 | pending | None |  |
+| 20261113T205832 | RED | MIPO | 16824.99 | pending | None | DCC | 22790.67 | pending | None |  |
