@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 166 |
-| sightings | 9731 |
-| liquid sightings | 3969 |
-| first liquid sightings = unique tokens with an outcome row | 884 |
-|   young | 611 |
-|   mature | 232 |
+| eval-2 scans | 167 |
+| sightings | 9793 |
+| liquid sightings | 3993 |
+| first liquid sightings = unique tokens with an outcome row | 888 |
+|   young | 614 |
+|   mature | 233 |
 |   other | 41 |
 | young with a comparator (cap 2) | 101 |
-| young without a comparator | 510 |
+| young without a comparator | 513 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 34 |
 | complete pairs (both 60m outcomes labelled) | 62 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 467/611, no_valid_entry 22/611, pending 6/611, unknown 86/611, unreliable 30/611
-- mature: labelled 215/232, pending 2/232, unknown 15/232
-- no valid entry: young 22/611, mature 0/232
+- young: labelled 468/614, no_valid_entry 22/614, pending 7/614, unknown 87/614, unreliable 30/614
+- mature: labelled 216/233, pending 2/233, unknown 15/233
+- no valid entry: young 22/614, mature 0/233
 
 ## Effect (after costs; unit = scan)
 
@@ -685,9 +685,12 @@
 | 20261113T085840 | DEEP_RED | Democat | 32075.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | labelled | -46.79 |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | FRBASK | 104846.54 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261113T105840 | RED | INUX | 78978.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | INUX | 78978.76 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T115840 | RED | FASTMOON | 34698.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T115840 | RED | FASTMOON | 34698.14 | labelled | 37.23 |  |  |  | None | no eligible comparator |
 | 20261113T125840 | RED | Bahrad | 99445.34 | pending | None | MASK | 90335.04 | pending | None |  |
 | 20261113T125840 | RED | papercat | 37142.48 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T125840 | RED | USMS | 22298.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | lptp | 25636.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | Buffape | 18919.37 | pending | None |  |  |  | None | no eligible comparator |
