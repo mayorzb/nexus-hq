@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 153 |
-| sightings | 8937 |
-| liquid sightings | 3666 |
-| first liquid sightings = unique tokens with an outcome row | 837 |
-|   young | 571 |
-|   mature | 226 |
+| eval-2 scans | 154 |
+| sightings | 9003 |
+| liquid sightings | 3694 |
+| first liquid sightings = unique tokens with an outcome row | 845 |
+|   young | 578 |
+|   mature | 227 |
 |   other | 40 |
-| young with a comparator (cap 2) | 96 |
-| young without a comparator | 475 |
-|   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 32 |
+| young with a comparator (cap 2) | 98 |
+| young without a comparator | 480 |
+|   pairs: young had no valid entry (counted, not scored) | 5 |
+|   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 60 |
 | scans contributing a complete pair | 37 |
 
 ## 60m outcome status by group
 
-- young: labelled 436/571, no_valid_entry 18/571, pending 10/571, unknown 79/571, unreliable 28/571
-- mature: labelled 212/226, pending 2/226, unknown 12/226
-- no valid entry: young 18/571, mature 0/226
+- young: labelled 441/578, no_valid_entry 19/578, pending 11/578, unknown 79/578, unreliable 28/578
+- mature: labelled 212/227, pending 3/227, unknown 12/227
+- no valid entry: young 19/578, mature 0/227
 
 ## Effect (after costs; unit = scan)
 
@@ -73,6 +73,7 @@
 - 20261112T215846-DMiBmfba: FANDEMON (20261112T215846), ANSEM (20261112T215846)
 - 20261112T225845-65q7e9mA: plumber (20261112T225845), CSI (20261112T225845)
 - 20261112T225845-6suUqBQx: EDGAR (20261112T225845), Christmax (20261112T225845)
+- 20261113T005844-85EzCVHB: THRONG (20261113T005844), Timsen (20261113T005844)
 
 ## Every pair
 
@@ -640,12 +641,19 @@
 | 20261112T215846 | RED | ANSEM | 31786.99 | labelled | -100.0 | $MOONBEAR | 28326.77 | labelled | 2.74 |  |
 | 20261112T215846 | RED | AI | 24838.84 | labelled | -34.82 |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | UCI | 108043.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T225845 | RED | plumber | 40824.29 | pending | None | fineshyt | 21833.66 | pending | None |  |
-| 20261112T225845 | RED | CSI | 25781.60 | pending | None | fineshyt | 21833.66 | pending | None |  |
-| 20261112T225845 | RED | EDGAR | 23554.02 | pending | None | LONG | 18778.81 | pending | None |  |
-| 20261112T225845 | RED | Christmax | 19091.89 | pending | None | LONG | 18778.81 | pending | None |  |
-| 20261112T225845 | RED | rockstar | 17020.58 | pending | None |  |  |  | None | comparators used twice |
-| 20261112T225845 | RED | CG | 15853.99 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T225845 | RED | plumber | 40824.29 | labelled | 37.31 | fineshyt | 21833.66 | pending | None |  |
+| 20261112T225845 | RED | CSI | 25781.60 | labelled | -40.34 | fineshyt | 21833.66 | pending | None |  |
+| 20261112T225845 | RED | EDGAR | 23554.02 | no_valid_entry | None | LONG | 18778.81 | pending | None |  |
+| 20261112T225845 | RED | Christmax | 19091.89 | labelled | 36.76 | LONG | 18778.81 | pending | None |  |
+| 20261112T225845 | RED | rockstar | 17020.58 | labelled | 36.63 |  |  |  | None | comparators used twice |
+| 20261112T225845 | RED | CG | 15853.99 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T235844 | RED | Humpback | 29166.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T235844 | RED | GTA | 23853.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T235844 | RED | PUMPS | 16063.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T005844 | RED | SHARKBUX | 48501.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T005844 | RED | GTAINU | 44709.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T005844 | RED | Su | 37418.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T005844 | RED | THRONG | 34599.96 | pending | None | DCI | 17356.34 | pending | None |  |
+| 20261113T005844 | RED | Timsen | 28298.52 | pending | None | DCI | 17356.34 | pending | None |  |
+| 20261113T005844 | RED | Food Cat | 24175.90 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T005844 | RED | WASTED | 15183.59 | pending | None |  |  |  | None | comparators used twice |
