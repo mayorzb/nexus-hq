@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 152 |
-| sightings | 8870 |
-| liquid sightings | 3641 |
-| first liquid sightings = unique tokens with an outcome row | 834 |
-|   young | 568 |
+| eval-2 scans | 153 |
+| sightings | 8937 |
+| liquid sightings | 3666 |
+| first liquid sightings = unique tokens with an outcome row | 837 |
+|   young | 571 |
 |   mature | 226 |
 |   other | 40 |
 | young with a comparator (cap 2) | 96 |
-| young without a comparator | 472 |
+| young without a comparator | 475 |
 |   pairs: young had no valid entry (counted, not scored) | 4 |
-|   pairs: young or mature outcome not yet usable | 34 |
-| complete pairs (both 60m outcomes labelled) | 58 |
-| scans contributing a complete pair | 36 |
+|   pairs: young or mature outcome not yet usable | 32 |
+| complete pairs (both 60m outcomes labelled) | 60 |
+| scans contributing a complete pair | 37 |
 
 ## 60m outcome status by group
 
-- young: labelled 432/568, no_valid_entry 18/568, pending 11/568, unknown 79/568, unreliable 28/568
-- mature: labelled 211/226, pending 3/226, unknown 12/226
-- no valid entry: young 18/568, mature 0/226
+- young: labelled 436/571, no_valid_entry 18/571, pending 10/571, unknown 79/571, unreliable 28/571
+- mature: labelled 212/226, pending 2/226, unknown 12/226
+- no valid entry: young 18/571, mature 0/226
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.51 points, 95% interval (-43.02, -14.19); scans with young worse 26/36
-- Pairs with young worse: 42/58 (72.4%); pair mean -28.08, median -28.69
-- Big loss (<= -20%): young 38/58, mature 6/58
+- Scan-level mean difference (young - mature): -29.6 points, 95% interval (-43.66, -15.73); scans with young worse 27/37
+- Pairs with young worse: 44/60 (73.3%); pair mean -29.43, median -29.86
+- Big loss (<= -20%): young 40/60, mature 6/60
 
 ## Comparator reuse (cap 2)
 
@@ -635,10 +635,10 @@
 | 20261112T205846 | RED | Helmiz | 17965.44 | labelled | -38.07 | Retardia | 17616.02 | unknown | None |  |
 | 20261112T205846 | RED | CHRISTMAX | 17275.51 | labelled | -57.62 | Retardia | 17616.02 | unknown | None |  |
 | 20261112T205846 | RED | DODO | 16369.58 | labelled | -100.0 | PUSSY | 15801.62 | labelled | -38.7 |  |
-| 20261112T215846 | RED | AI | 87840.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T215846 | RED | FANDEMON | 47817.11 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
-| 20261112T215846 | RED | ANSEM | 31786.99 | pending | None | $MOONBEAR | 28326.77 | pending | None |  |
-| 20261112T215846 | RED | AI | 24838.84 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T215846 | RED | AI | 87840.63 | labelled | -37.67 |  |  |  | None | no eligible comparator |
+| 20261112T215846 | RED | FANDEMON | 47817.11 | labelled | -31.82 | $MOONBEAR | 28326.77 | labelled | 2.74 |  |
+| 20261112T215846 | RED | ANSEM | 31786.99 | labelled | -100.0 | $MOONBEAR | 28326.77 | labelled | 2.74 |  |
+| 20261112T215846 | RED | AI | 24838.84 | labelled | -34.82 |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | UCI | 108043.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261112T225845 | RED | plumber | 40824.29 | pending | None | fineshyt | 21833.66 | pending | None |  |
 | 20261112T225845 | RED | CSI | 25781.60 | pending | None | fineshyt | 21833.66 | pending | None |  |
@@ -646,3 +646,6 @@
 | 20261112T225845 | RED | Christmax | 19091.89 | pending | None | LONG | 18778.81 | pending | None |  |
 | 20261112T225845 | RED | rockstar | 17020.58 | pending | None |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | CG | 15853.99 | pending | None |  |  |  | None | comparators used twice |
+| 20261112T235844 | RED | Humpback | 29166.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T235844 | RED | GTA | 23853.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T235844 | RED | PUMPS | 16063.93 | pending | None |  |  |  | None | no eligible comparator |
