@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 158 |
-| sightings | 9240 |
-| liquid sightings | 3793 |
-| first liquid sightings = unique tokens with an outcome row | 861 |
-|   young | 593 |
-|   mature | 228 |
+| eval-2 scans | 159 |
+| sightings | 9301 |
+| liquid sightings | 3815 |
+| first liquid sightings = unique tokens with an outcome row | 864 |
+|   young | 595 |
+|   mature | 229 |
 |   other | 40 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 493 |
+| young without a comparator | 495 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 35 |
-| complete pairs (both 60m outcomes labelled) | 60 |
-| scans contributing a complete pair | 37 |
+|   pairs: young or mature outcome not yet usable | 33 |
+| complete pairs (both 60m outcomes labelled) | 62 |
+| scans contributing a complete pair | 38 |
 
 ## 60m outcome status by group
 
-- young: labelled 451/593, no_valid_entry 21/593, pending 13/593, unknown 80/593, unreliable 28/593
-- mature: labelled 212/228, pending 2/228, unknown 14/228
-- no valid entry: young 21/593, mature 0/228
+- young: labelled 454/595, no_valid_entry 21/595, pending 10/595, unknown 81/595, unreliable 29/595
+- mature: labelled 213/229, pending 2/229, unknown 14/229
+- no valid entry: young 21/595, mature 0/229
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.6 points, 95% interval (-43.66, -15.73); scans with young worse 27/37
-- Pairs with young worse: 44/60 (73.3%); pair mean -29.43, median -29.86
-- Big loss (<= -20%): young 40/60, mature 6/60
+- Scan-level mean difference (young - mature): -26.96 points, 95% interval (-41.56, -12.79); scans with young worse 27/38
+- Pairs with young worse: 44/62 (71.0%); pair mean -26.21, median -28.69
+- Big loss (<= -20%): young 40/62, mature 8/62
 
 ## Comparator reuse (cap 2)
 
@@ -649,7 +649,7 @@
 | 20261112T225845 | RED | rockstar | 17020.58 | labelled | 36.63 |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | CG | 15853.99 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T235844 | RED | Humpback | 29166.61 | labelled | -29.49 |  |  |  | None | no eligible comparator |
-| 20261112T235844 | RED | GTA | 23853.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T235844 | RED | GTA | 23853.90 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261112T235844 | RED | PUMPS | 16063.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | SHARKBUX | 48501.04 | labelled | 11.57 |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | GTAINU | 44709.84 | labelled | 37.35 |  |  |  | None | no eligible comparator |
@@ -665,11 +665,13 @@
 | 20261113T015844 | RED | ARMY | 19607.48 | labelled | -28.55 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | AMD | 51498.15 | labelled | 37.41 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | $CAT | 15452.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T035842 | DEEP_RED | JENSWAN | 33110.23 | pending | None | ODDME | 21964.75 | pending | None |  |
-| 20261113T035842 | DEEP_RED | AXEL | 19457.44 | pending | None | ODDME | 21964.75 | pending | None |  |
-| 20261113T035842 | DEEP_RED | cash | 19199.98 | pending | None |  |  |  | None | comparators used twice |
-| 20261113T035842 | DEEP_RED | APPLE | 15598.23 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T035842 | DEEP_RED | JENSWAN | 33110.23 | labelled | 37.2 | ODDME | 21964.75 | labelled | -33.63 |  |
+| 20261113T035842 | DEEP_RED | AXEL | 19457.44 | labelled | 36.78 | ODDME | 21964.75 | labelled | -33.63 |  |
+| 20261113T035842 | DEEP_RED | cash | 19199.98 | labelled | -28.76 |  |  |  | None | comparators used twice |
+| 20261113T035842 | DEEP_RED | APPLE | 15598.23 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261113T045841 | DEEP_RED | NEX Ai | 34467.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | dca | 28501.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | SEAL | 25310.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T055840 | DEEP_RED | 364 | 23878.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T055840 | DEEP_RED | USEFUL | 15319.31 | pending | None |  |  |  | None | no eligible comparator |
