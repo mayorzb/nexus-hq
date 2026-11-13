@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 161 |
-| sightings | 9430 |
-| liquid sightings | 3860 |
-| first liquid sightings = unique tokens with an outcome row | 872 |
-|   young | 601 |
+| eval-2 scans | 162 |
+| sightings | 9488 |
+| liquid sightings | 3882 |
+| first liquid sightings = unique tokens with an outcome row | 875 |
+|   young | 604 |
 |   mature | 230 |
 |   other | 41 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 501 |
+| young without a comparator | 504 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 62 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 459/601, no_valid_entry 21/601, pending 8/601, unknown 84/601, unreliable 29/601
+- young: labelled 459/604, no_valid_entry 21/604, pending 10/604, unknown 85/604, unreliable 29/604
 - mature: labelled 214/230, pending 1/230, unknown 15/230
-- no valid entry: young 21/601, mature 0/230
+- no valid entry: young 21/604, mature 0/230
 
 ## Effect (after costs; unit = scan)
 
@@ -664,7 +664,7 @@
 | 20261113T015844 | RED | zero | 21667.25 | labelled | -72.11 |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | ARMY | 19607.48 | labelled | -28.55 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | AMD | 51498.15 | labelled | 37.41 |  |  |  | None | no eligible comparator |
-| 20261113T025843 | RED | $CAT | 15452.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T025843 | RED | $CAT | 15452.25 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T035842 | DEEP_RED | JENSWAN | 33110.23 | labelled | 37.2 | ODDME | 21964.75 | labelled | -33.63 |  |
 | 20261113T035842 | DEEP_RED | AXEL | 19457.44 | labelled | 36.78 | ODDME | 21964.75 | labelled | -33.63 |  |
 | 20261113T035842 | DEEP_RED | cash | 19199.98 | labelled | -28.76 |  |  |  | None | comparators used twice |
@@ -681,3 +681,6 @@
 | 20261113T075840 | DEEP_RED | KIND | 22863.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | WRENCHP | 16521.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | HUGH | 15123.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | Sakura | 41888.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | Democat | 32075.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | pending | None |  |  |  | None | no eligible comparator |
