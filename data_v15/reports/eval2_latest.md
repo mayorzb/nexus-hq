@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 174 |
-| sightings | 10233 |
-| liquid sightings | 4181 |
-| first liquid sightings = unique tokens with an outcome row | 931 |
-|   young | 652 |
-|   mature | 237 |
-|   other | 42 |
-| young with a comparator (cap 2) | 106 |
-| young without a comparator | 546 |
+| eval-2 scans | 175 |
+| sightings | 10298 |
+| liquid sightings | 4209 |
+| first liquid sightings = unique tokens with an outcome row | 939 |
+|   young | 657 |
+|   mature | 239 |
+|   other | 43 |
+| young with a comparator (cap 2) | 110 |
+| young without a comparator | 547 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 37 |
-| complete pairs (both 60m outcomes labelled) | 64 |
-| scans contributing a complete pair | 40 |
+|   pairs: young or mature outcome not yet usable | 39 |
+| complete pairs (both 60m outcomes labelled) | 66 |
+| scans contributing a complete pair | 41 |
 
 ## 60m outcome status by group
 
-- young: labelled 497/652, no_valid_entry 24/652, pending 9/652, unknown 91/652, unreliable 31/652
-- mature: labelled 220/237, pending 2/237, unknown 15/237
-- no valid entry: young 24/652, mature 0/237
+- young: labelled 502/657, no_valid_entry 24/657, pending 9/657, unknown 91/657, unreliable 31/657
+- mature: labelled 221/239, pending 3/239, unknown 15/239
+- no valid entry: young 24/657, mature 0/239
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.54 points, 95% interval (-43.43, -14.65); scans with young worse 29/40
-- Pairs with young worse: 46/64 (71.9%); pair mean -27.22, median -28.69
-- Big loss (<= -20%): young 42/64, mature 8/64
+- Scan-level mean difference (young - mature): -28.79 points, 95% interval (-42.88, -14.5); scans with young worse 30/41
+- Pairs with young worse: 48/66 (72.7%); pair mean -27.57, median -29.86
+- Big loss (<= -20%): young 44/66, mature 10/66
 
 ## Comparator reuse (cap 2)
 
@@ -77,6 +77,8 @@
 - 20261113T035842-9azVa2sx: JENSWAN (20261113T035842), AXEL (20261113T035842)
 - 20261113T195833-ANYq8tEL: LUCIA (20261113T195833), punchhao (20261113T195833)
 - 20261113T205832-7jo5Ru47: Together (20261113T205832), MIPO (20261113T205832)
+- 20261113T215832-6d9fD5Sx: SPEED (20261113T215832), BTC2 (20261113T215832)
+- 20261113T215832-DaL9WdYD: WISHMAS (20261113T215832), securititt (20261113T215832)
 
 ## Every pair
 
@@ -725,12 +727,17 @@
 | 20261113T185834 | RED | BAWSAQ | 40688.26 | labelled | 37.31 |  |  |  | None | no eligible comparator |
 | 20261113T185834 | RED | FOMO | 38795.68 | labelled | -46.36 |  |  |  | None | no eligible comparator |
 | 20261113T185834 | RED | SIRIUS | 21729.95 | labelled | -30.2 | NAGA | 17579.97 | labelled | -2.73 |  |
-| 20261113T195833 | RED | AMC | 101128.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T195833 | RED | LUCIA | 26858.31 | pending | None | Sakura | 18139.00 | pending | None |  |
-| 20261113T195833 | RED | punchhao | 22413.68 | pending | None | Sakura | 18139.00 | pending | None |  |
+| 20261113T195833 | RED | AMC | 101128.07 | labelled | 37.6 |  |  |  | None | no eligible comparator |
+| 20261113T195833 | RED | LUCIA | 26858.31 | labelled | -66.67 | Sakura | 18139.00 | labelled | -29.59 |  |
+| 20261113T195833 | RED | punchhao | 22413.68 | labelled | -70.32 | Sakura | 18139.00 | labelled | -29.59 |  |
 | 20261113T195833 | RED | b | 17116.12 | pending | None |  |  |  | None | comparators used twice |
-| 20261113T195833 | RED | POOR | 17020.45 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | POOR | 17020.45 | labelled | 36.63 |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | b | 16919.93 | pending | None |  |  |  | None | comparators used twice |
-| 20261113T195833 | RED | ALO | 16880.57 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | ALO | 16880.57 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261113T205832 | RED | Together | 19107.34 | pending | None | DCC | 22790.67 | pending | None |  |
 | 20261113T205832 | RED | MIPO | 16824.99 | pending | None | DCC | 22790.67 | pending | None |  |
+| 20261113T215832 | RED | SPEED | 42962.22 | pending | None | PINO | 45008.13 | pending | None |  |
+| 20261113T215832 | RED | BTC2 | 36876.19 | pending | None | PINO | 45008.13 | pending | None |  |
+| 20261113T215832 | RED | WISHMAS | 26958.55 | pending | None | ADC | 21300.31 | pending | None |  |
+| 20261113T215832 | RED | securititt | 23586.91 | pending | None | ADC | 21300.31 | pending | None |  |
+| 20261113T215832 | RED | CWW | 15186.23 | pending | None |  |  |  | None | comparators used twice |
