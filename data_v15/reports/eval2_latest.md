@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 168 |
-| sightings | 9853 |
-| liquid sightings | 4026 |
-| first liquid sightings = unique tokens with an outcome row | 901 |
-|   young | 627 |
+| eval-2 scans | 169 |
+| sightings | 9914 |
+| liquid sightings | 4057 |
+| first liquid sightings = unique tokens with an outcome row | 908 |
+|   young | 633 |
 |   mature | 233 |
-|   other | 41 |
+|   other | 42 |
 | young with a comparator (cap 2) | 101 |
-| young without a comparator | 526 |
+| young without a comparator | 532 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 63 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 470/627, no_valid_entry 23/627, pending 17/627, unknown 87/627, unreliable 30/627
-- mature: labelled 217/233, pending 1/233, unknown 15/233
-- no valid entry: young 23/627, mature 0/233
+- young: labelled 472/633, no_valid_entry 23/633, pending 21/633, unknown 87/633, unreliable 30/633
+- mature: labelled 218/233, unknown 15/233
+- no valid entry: young 23/633, mature 0/233
 
 ## Effect (after costs; unit = scan)
 
@@ -691,9 +691,9 @@
 | 20261113T125840 | RED | Bahrad | 99445.34 | labelled | -100.0 | MASK | 90335.04 | labelled | -10.39 |  |
 | 20261113T125840 | RED | papercat | 37142.48 | labelled | -33.01 |  |  |  | None | no eligible comparator |
 | 20261113T125840 | RED | USMS | 22298.11 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | labelled | 37.35 |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | lptp | 25636.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T135839 | NEUTRAL | Buffape | 18919.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | Buffape | 18919.37 | labelled | -43.82 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | Speed | 38810.88 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | WANTED | 37563.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | PaperInu | 35938.39 | pending | None |  |  |  | None | no eligible comparator |
@@ -707,3 +707,9 @@
 | 20261113T145838 | RED | ONE | 18558.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | Speed | 17819.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | MAKENZI | 15684.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | GTA | 78958.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | JENSEN | 57538.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | fomo | 39371.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | JENSLA | 29539.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | Speed | 28609.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T155837 | RED | SPEED | 21759.74 | pending | None |  |  |  | None | no eligible comparator |
