@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 164 |
-| sightings | 9610 |
-| liquid sightings | 3925 |
-| first liquid sightings = unique tokens with an outcome row | 878 |
-|   young | 607 |
-|   mature | 230 |
+| eval-2 scans | 165 |
+| sightings | 9671 |
+| liquid sightings | 3945 |
+| first liquid sightings = unique tokens with an outcome row | 880 |
+|   young | 608 |
+|   mature | 231 |
 |   other | 41 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 507 |
+| young without a comparator | 508 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 62 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 466/607, no_valid_entry 22/607, pending 4/607, unknown 85/607, unreliable 30/607
-- mature: labelled 215/230, unknown 15/230
-- no valid entry: young 22/607, mature 0/230
+- young: labelled 466/608, no_valid_entry 22/608, pending 4/608, unknown 86/608, unreliable 30/608
+- mature: labelled 215/231, pending 1/231, unknown 15/231
+- no valid entry: young 22/608, mature 0/231
 
 ## Effect (after costs; unit = scan)
 
@@ -673,7 +673,7 @@
 | 20261113T045841 | DEEP_RED | dca | 28501.42 | labelled | -37.26 |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | labelled | -33.53 |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | SEAL | 25310.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261113T055840 | DEEP_RED | 364 | 23878.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T055840 | DEEP_RED | 364 | 23878.41 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T055840 | DEEP_RED | USEFUL | 15319.31 | labelled | -44.81 |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | NVJACK | 106531.34 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | MORNING | 33778.32 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -687,3 +687,4 @@
 | 20261113T105840 | RED | FRBASK | 104846.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | INUX | 78978.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T115840 | RED | FASTMOON | 34698.14 | pending | None |  |  |  | None | no eligible comparator |
