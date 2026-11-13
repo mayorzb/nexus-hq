@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 157 |
-| sightings | 9180 |
-| liquid sightings | 3768 |
-| first liquid sightings = unique tokens with an outcome row | 857 |
-|   young | 589 |
+| eval-2 scans | 158 |
+| sightings | 9240 |
+| liquid sightings | 3793 |
+| first liquid sightings = unique tokens with an outcome row | 861 |
+|   young | 593 |
 |   mature | 228 |
 |   other | 40 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 489 |
+| young without a comparator | 493 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 35 |
 | complete pairs (both 60m outcomes labelled) | 60 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 450/589, no_valid_entry 21/589, pending 11/589, unknown 79/589, unreliable 28/589
-- mature: labelled 212/228, pending 4/228, unknown 12/228
-- no valid entry: young 21/589, mature 0/228
+- young: labelled 451/593, no_valid_entry 21/593, pending 13/593, unknown 80/593, unreliable 28/593
+- mature: labelled 212/228, pending 2/228, unknown 14/228
+- no valid entry: young 21/593, mature 0/228
 
 ## Effect (after costs; unit = scan)
 
@@ -641,11 +641,11 @@
 | 20261112T215846 | RED | FANDEMON | 47817.11 | labelled | -31.82 | $MOONBEAR | 28326.77 | labelled | 2.74 |  |
 | 20261112T215846 | RED | ANSEM | 31786.99 | labelled | -100.0 | $MOONBEAR | 28326.77 | labelled | 2.74 |  |
 | 20261112T215846 | RED | AI | 24838.84 | labelled | -34.82 |  |  |  | None | comparators used twice |
-| 20261112T225845 | RED | UCI | 108043.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T225845 | RED | plumber | 40824.29 | labelled | 37.31 | fineshyt | 21833.66 | pending | None |  |
-| 20261112T225845 | RED | CSI | 25781.60 | labelled | -40.34 | fineshyt | 21833.66 | pending | None |  |
-| 20261112T225845 | RED | EDGAR | 23554.02 | no_valid_entry | None | LONG | 18778.81 | pending | None |  |
-| 20261112T225845 | RED | Christmax | 19091.89 | labelled | 36.76 | LONG | 18778.81 | pending | None |  |
+| 20261112T225845 | RED | UCI | 108043.04 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261112T225845 | RED | plumber | 40824.29 | labelled | 37.31 | fineshyt | 21833.66 | unknown | None |  |
+| 20261112T225845 | RED | CSI | 25781.60 | labelled | -40.34 | fineshyt | 21833.66 | unknown | None |  |
+| 20261112T225845 | RED | EDGAR | 23554.02 | no_valid_entry | None | LONG | 18778.81 | unknown | None |  |
+| 20261112T225845 | RED | Christmax | 19091.89 | labelled | 36.76 | LONG | 18778.81 | unknown | None |  |
 | 20261112T225845 | RED | rockstar | 17020.58 | labelled | 36.63 |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | CG | 15853.99 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261112T235844 | RED | Humpback | 29166.61 | labelled | -29.49 |  |  |  | None | no eligible comparator |
@@ -663,9 +663,13 @@
 | 20261113T015844 | RED | fap | 22776.46 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | zero | 21667.25 | labelled | -72.11 |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | ARMY | 19607.48 | labelled | -28.55 |  |  |  | None | no eligible comparator |
-| 20261113T025843 | RED | AMD | 51498.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T025843 | RED | AMD | 51498.15 | labelled | 37.41 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | $CAT | 15452.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T035842 | DEEP_RED | JENSWAN | 33110.23 | pending | None | ODDME | 21964.75 | pending | None |  |
 | 20261113T035842 | DEEP_RED | AXEL | 19457.44 | pending | None | ODDME | 21964.75 | pending | None |  |
 | 20261113T035842 | DEEP_RED | cash | 19199.98 | pending | None |  |  |  | None | comparators used twice |
 | 20261113T035842 | DEEP_RED | APPLE | 15598.23 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T045841 | DEEP_RED | NEX Ai | 34467.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | dca | 28501.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | SEAL | 25310.00 | pending | None |  |  |  | None | no eligible comparator |
