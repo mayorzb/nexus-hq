@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 169 |
-| sightings | 9914 |
-| liquid sightings | 4057 |
-| first liquid sightings = unique tokens with an outcome row | 908 |
-|   young | 633 |
+| eval-2 scans | 170 |
+| sightings | 9978 |
+| liquid sightings | 4082 |
+| first liquid sightings = unique tokens with an outcome row | 911 |
+|   young | 636 |
 |   mature | 233 |
 |   other | 42 |
 | young with a comparator (cap 2) | 101 |
-| young without a comparator | 532 |
+| young without a comparator | 535 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 63 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 472/633, no_valid_entry 23/633, pending 21/633, unknown 87/633, unreliable 30/633
+- young: labelled 482/636, no_valid_entry 23/636, pending 12/636, unknown 88/636, unreliable 31/636
 - mature: labelled 218/233, unknown 15/233
-- no valid entry: young 23/633, mature 0/233
+- no valid entry: young 23/636, mature 0/233
 
 ## Effect (after costs; unit = scan)
 
@@ -686,7 +686,7 @@
 | 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | labelled | -46.79 |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | FRBASK | 104846.54 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | INUX | 78978.76 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | OWINO | 29689.43 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T115840 | RED | FASTMOON | 34698.14 | labelled | 37.23 |  |  |  | None | no eligible comparator |
 | 20261113T125840 | RED | Bahrad | 99445.34 | labelled | -100.0 | MASK | 90335.04 | labelled | -10.39 |  |
 | 20261113T125840 | RED | papercat | 37142.48 | labelled | -33.01 |  |  |  | None | no eligible comparator |
@@ -694,22 +694,25 @@
 | 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | labelled | 37.35 |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | lptp | 25636.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | Buffape | 18919.37 | labelled | -43.82 |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | Speed | 38810.88 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | WANTED | 37563.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | PaperInu | 35938.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | UwU | 29102.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | Meme | 28448.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 38810.88 | labelled | 37.29 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | WANTED | 37563.82 | labelled | 37.27 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | PaperInu | 35938.39 | labelled | -41.24 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | UwU | 29102.61 | labelled | -30.96 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Meme | 28448.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | PARANOID | 27334.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | AICoin | 23489.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | Speed | 19386.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | XRP | 19309.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | UwU | 18652.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | ONE | 18558.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | Speed | 17819.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T145838 | RED | MAKENZI | 15684.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 19386.65 | labelled | -51.78 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | XRP | 19309.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | UwU | 18652.02 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | ONE | 18558.55 | labelled | 36.73 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 17819.99 | labelled | -34.48 |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | MAKENZI | 15684.24 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | GTA | 78958.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | JENSEN | 57538.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | fomo | 39371.89 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | JENSLA | 29539.15 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | Speed | 28609.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | SPEED | 21759.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | SI | 27753.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | SI | 23338.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | BOTNET | 20108.43 | pending | None |  |  |  | None | no eligible comparator |
