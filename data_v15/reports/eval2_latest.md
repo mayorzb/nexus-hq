@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 172 |
-| sightings | 10103 |
-| liquid sightings | 4130 |
-| first liquid sightings = unique tokens with an outcome row | 920 |
-|   young | 643 |
-|   mature | 235 |
+| eval-2 scans | 173 |
+| sightings | 10169 |
+| liquid sightings | 4157 |
+| first liquid sightings = unique tokens with an outcome row | 928 |
+|   young | 650 |
+|   mature | 236 |
 |   other | 42 |
-| young with a comparator (cap 2) | 102 |
-| young without a comparator | 541 |
+| young with a comparator (cap 2) | 104 |
+| young without a comparator | 546 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 34 |
+|   pairs: young or mature outcome not yet usable | 36 |
 | complete pairs (both 60m outcomes labelled) | 63 |
 | scans contributing a complete pair | 39 |
 
 ## 60m outcome status by group
 
-- young: labelled 490/643, no_valid_entry 24/643, pending 10/643, unknown 88/643, unreliable 31/643
-- mature: labelled 218/235, pending 2/235, unknown 15/235
-- no valid entry: young 24/643, mature 0/235
+- young: labelled 494/650, no_valid_entry 24/650, pending 12/650, unknown 89/650, unreliable 31/650
+- mature: labelled 219/236, pending 2/236, unknown 15/236
+- no valid entry: young 24/650, mature 0/236
 
 ## Effect (after costs; unit = scan)
 
@@ -75,6 +75,7 @@
 - 20261112T225845-6suUqBQx: EDGAR (20261112T225845), Christmax (20261112T225845)
 - 20261113T005844-85EzCVHB: THRONG (20261113T005844), Timsen (20261113T005844)
 - 20261113T035842-9azVa2sx: JENSWAN (20261113T035842), AXEL (20261113T035842)
+- 20261113T195833-ANYq8tEL: LUCIA (20261113T195833), punchhao (20261113T195833)
 
 ## Every pair
 
@@ -692,7 +693,7 @@
 | 20261113T125840 | RED | papercat | 37142.48 | labelled | -33.01 |  |  |  | None | no eligible comparator |
 | 20261113T125840 | RED | USMS | 22298.11 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | labelled | 37.35 |  |  |  | None | no eligible comparator |
-| 20261113T135839 | NEUTRAL | lptp | 25636.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T135839 | NEUTRAL | lptp | 25636.75 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | Buffape | 18919.37 | labelled | -43.82 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | Speed | 38810.88 | labelled | 37.29 |  |  |  | None | no eligible comparator |
 | 20261113T145838 | RED | WANTED | 37563.82 | labelled | 37.27 |  |  |  | None | no eligible comparator |
@@ -716,10 +717,17 @@
 | 20261113T165836 | RED | SI | 27753.21 | labelled | -35.95 |  |  |  | None | no eligible comparator |
 | 20261113T165836 | RED | SI | 23338.54 | labelled | -32.71 |  |  |  | None | no eligible comparator |
 | 20261113T165836 | RED | BOTNET | 20108.43 | labelled | 36.81 |  |  |  | None | no eligible comparator |
-| 20261113T175835 | RED | INU | 31436.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T175835 | RED | cashduck | 27818.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T175835 | RED | DACAT | 25069.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T175835 | RED | Nigghao | 23091.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T175835 | RED | INU | 31436.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261113T175835 | RED | cashduck | 27818.24 | labelled | -55.25 |  |  |  | None | no eligible comparator |
+| 20261113T175835 | RED | DACAT | 25069.81 | labelled | -35.71 |  |  |  | None | no eligible comparator |
+| 20261113T175835 | RED | Nigghao | 23091.84 | labelled | 9.37 |  |  |  | None | no eligible comparator |
 | 20261113T185834 | RED | BAWSAQ | 40688.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T185834 | RED | FOMO | 38795.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T185834 | RED | SIRIUS | 21729.95 | pending | None | NAGA | 17579.97 | pending | None |  |
+| 20261113T195833 | RED | AMC | 101128.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T195833 | RED | LUCIA | 26858.31 | pending | None | Sakura | 18139.00 | pending | None |  |
+| 20261113T195833 | RED | punchhao | 22413.68 | pending | None | Sakura | 18139.00 | pending | None |  |
+| 20261113T195833 | RED | b | 17116.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | POOR | 17020.45 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | b | 16919.93 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | ALO | 16880.57 | pending | None |  |  |  | None | comparators used twice |
