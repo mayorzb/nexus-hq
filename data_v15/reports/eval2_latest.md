@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 154 |
-| sightings | 9003 |
-| liquid sightings | 3694 |
-| first liquid sightings = unique tokens with an outcome row | 845 |
-|   young | 578 |
+| eval-2 scans | 155 |
+| sightings | 9065 |
+| liquid sightings | 3722 |
+| first liquid sightings = unique tokens with an outcome row | 850 |
+|   young | 583 |
 |   mature | 227 |
 |   other | 40 |
 | young with a comparator (cap 2) | 98 |
-| young without a comparator | 480 |
+| young without a comparator | 485 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 60 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 441/578, no_valid_entry 19/578, pending 11/578, unknown 79/578, unreliable 28/578
+- young: labelled 443/583, no_valid_entry 19/583, pending 14/583, unknown 79/583, unreliable 28/583
 - mature: labelled 212/227, pending 3/227, unknown 12/227
-- no valid entry: young 19/578, mature 0/227
+- no valid entry: young 19/583, mature 0/227
 
 ## Effect (after costs; unit = scan)
 
@@ -647,9 +647,9 @@
 | 20261112T225845 | RED | Christmax | 19091.89 | labelled | 36.76 | LONG | 18778.81 | pending | None |  |
 | 20261112T225845 | RED | rockstar | 17020.58 | labelled | 36.63 |  |  |  | None | comparators used twice |
 | 20261112T225845 | RED | CG | 15853.99 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261112T235844 | RED | Humpback | 29166.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T235844 | RED | Humpback | 29166.61 | labelled | -29.49 |  |  |  | None | no eligible comparator |
 | 20261112T235844 | RED | GTA | 23853.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261112T235844 | RED | PUMPS | 16063.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261112T235844 | RED | PUMPS | 16063.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | SHARKBUX | 48501.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | GTAINU | 44709.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | Su | 37418.82 | pending | None |  |  |  | None | no eligible comparator |
@@ -657,3 +657,8 @@
 | 20261113T005844 | RED | Timsen | 28298.52 | pending | None | DCI | 17356.34 | pending | None |  |
 | 20261113T005844 | RED | Food Cat | 24175.90 | pending | None |  |  |  | None | comparators used twice |
 | 20261113T005844 | RED | WASTED | 15183.59 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T015844 | RED | EVIL | 44340.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | CHICK | 26892.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | fap | 22776.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | zero | 21667.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | ARMY | 19607.48 | pending | None |  |  |  | None | no eligible comparator |
