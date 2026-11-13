@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 171 |
-| sightings | 10040 |
-| liquid sightings | 4106 |
-| first liquid sightings = unique tokens with an outcome row | 916 |
-|   young | 640 |
-|   mature | 234 |
+| eval-2 scans | 172 |
+| sightings | 10103 |
+| liquid sightings | 4130 |
+| first liquid sightings = unique tokens with an outcome row | 920 |
+|   young | 643 |
+|   mature | 235 |
 |   other | 42 |
-| young with a comparator (cap 2) | 101 |
-| young without a comparator | 539 |
+| young with a comparator (cap 2) | 102 |
+| young without a comparator | 541 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 33 |
+|   pairs: young or mature outcome not yet usable | 34 |
 | complete pairs (both 60m outcomes labelled) | 63 |
 | scans contributing a complete pair | 39 |
 
 ## 60m outcome status by group
 
-- young: labelled 487/640, no_valid_entry 24/640, pending 10/640, unknown 88/640, unreliable 31/640
-- mature: labelled 218/234, pending 1/234, unknown 15/234
-- no valid entry: young 24/640, mature 0/234
+- young: labelled 490/643, no_valid_entry 24/643, pending 10/643, unknown 88/643, unreliable 31/643
+- mature: labelled 218/235, pending 2/235, unknown 15/235
+- no valid entry: young 24/643, mature 0/235
 
 ## Effect (after costs; unit = scan)
 
@@ -713,10 +713,13 @@
 | 20261113T155837 | RED | JENSLA | 29539.15 | labelled | 37.13 |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | Speed | 28609.78 | labelled | -32.98 |  |  |  | None | no eligible comparator |
 | 20261113T155837 | RED | SPEED | 21759.74 | labelled | 36.89 |  |  |  | None | no eligible comparator |
-| 20261113T165836 | RED | SI | 27753.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T165836 | RED | SI | 23338.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T165836 | RED | BOTNET | 20108.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | SI | 27753.21 | labelled | -35.95 |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | SI | 23338.54 | labelled | -32.71 |  |  |  | None | no eligible comparator |
+| 20261113T165836 | RED | BOTNET | 20108.43 | labelled | 36.81 |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | INU | 31436.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | cashduck | 27818.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | DACAT | 25069.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T175835 | RED | Nigghao | 23091.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T185834 | RED | BAWSAQ | 40688.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T185834 | RED | FOMO | 38795.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T185834 | RED | SIRIUS | 21729.95 | pending | None | NAGA | 17579.97 | pending | None |  |
