@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 160 |
-| sightings | 9365 |
-| liquid sightings | 3835 |
-| first liquid sightings = unique tokens with an outcome row | 865 |
-|   young | 595 |
-|   mature | 229 |
+| eval-2 scans | 161 |
+| sightings | 9430 |
+| liquid sightings | 3860 |
+| first liquid sightings = unique tokens with an outcome row | 872 |
+|   young | 601 |
+|   mature | 230 |
 |   other | 41 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 495 |
+| young without a comparator | 501 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 62 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 458/595, no_valid_entry 21/595, pending 5/595, unknown 82/595, unreliable 29/595
-- mature: labelled 213/229, pending 1/229, unknown 15/229
-- no valid entry: young 21/595, mature 0/229
+- young: labelled 459/601, no_valid_entry 21/601, pending 8/601, unknown 84/601, unreliable 29/601
+- mature: labelled 214/230, pending 1/230, unknown 15/230
+- no valid entry: young 21/601, mature 0/230
 
 ## Effect (after costs; unit = scan)
 
@@ -658,9 +658,9 @@
 | 20261113T005844 | RED | Timsen | 28298.52 | labelled | -34.85 | DCI | 17356.34 | unknown | None |  |
 | 20261113T005844 | RED | Food Cat | 24175.90 | no_valid_entry | None |  |  |  | None | comparators used twice |
 | 20261113T005844 | RED | WASTED | 15183.59 | unknown | None |  |  |  | None | comparators used twice |
-| 20261113T015844 | RED | EVIL | 44340.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | EVIL | 44340.76 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | CHICK | 26892.57 | labelled | -49.99 |  |  |  | None | no eligible comparator |
-| 20261113T015844 | RED | fap | 22776.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | fap | 22776.46 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | zero | 21667.25 | labelled | -72.11 |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | ARMY | 19607.48 | labelled | -28.55 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | AMD | 51498.15 | labelled | 37.41 |  |  |  | None | no eligible comparator |
@@ -674,4 +674,10 @@
 | 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | labelled | -33.53 |  |  |  | None | no eligible comparator |
 | 20261113T045841 | DEEP_RED | SEAL | 25310.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T055840 | DEEP_RED | 364 | 23878.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T055840 | DEEP_RED | USEFUL | 15319.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T055840 | DEEP_RED | USEFUL | 15319.31 | labelled | -44.81 |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | NVJACK | 106531.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | MORNING | 33778.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | Democat | 32490.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | KIND | 22863.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | WRENCHP | 16521.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T075840 | DEEP_RED | HUGH | 15123.00 | pending | None |  |  |  | None | no eligible comparator |
