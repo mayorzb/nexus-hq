@@ -6,13 +6,13 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 159 |
-| sightings | 9301 |
-| liquid sightings | 3815 |
-| first liquid sightings = unique tokens with an outcome row | 864 |
+| eval-2 scans | 160 |
+| sightings | 9365 |
+| liquid sightings | 3835 |
+| first liquid sightings = unique tokens with an outcome row | 865 |
 |   young | 595 |
 |   mature | 229 |
-|   other | 40 |
+|   other | 41 |
 | young with a comparator (cap 2) | 100 |
 | young without a comparator | 495 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
@@ -22,8 +22,8 @@
 
 ## 60m outcome status by group
 
-- young: labelled 454/595, no_valid_entry 21/595, pending 10/595, unknown 81/595, unreliable 29/595
-- mature: labelled 213/229, pending 2/229, unknown 14/229
+- young: labelled 458/595, no_valid_entry 21/595, pending 5/595, unknown 82/595, unreliable 29/595
+- mature: labelled 213/229, pending 1/229, unknown 15/229
 - no valid entry: young 21/595, mature 0/229
 
 ## Effect (after costs; unit = scan)
@@ -654,10 +654,10 @@
 | 20261113T005844 | RED | SHARKBUX | 48501.04 | labelled | 11.57 |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | GTAINU | 44709.84 | labelled | 37.35 |  |  |  | None | no eligible comparator |
 | 20261113T005844 | RED | Su | 37418.82 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261113T005844 | RED | THRONG | 34599.96 | labelled | 7.27 | DCI | 17356.34 | pending | None |  |
-| 20261113T005844 | RED | Timsen | 28298.52 | labelled | -34.85 | DCI | 17356.34 | pending | None |  |
+| 20261113T005844 | RED | THRONG | 34599.96 | labelled | 7.27 | DCI | 17356.34 | unknown | None |  |
+| 20261113T005844 | RED | Timsen | 28298.52 | labelled | -34.85 | DCI | 17356.34 | unknown | None |  |
 | 20261113T005844 | RED | Food Cat | 24175.90 | no_valid_entry | None |  |  |  | None | comparators used twice |
-| 20261113T005844 | RED | WASTED | 15183.59 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T005844 | RED | WASTED | 15183.59 | unknown | None |  |  |  | None | comparators used twice |
 | 20261113T015844 | RED | EVIL | 44340.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | CHICK | 26892.57 | labelled | -49.99 |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | fap | 22776.46 | pending | None |  |  |  | None | no eligible comparator |
@@ -669,9 +669,9 @@
 | 20261113T035842 | DEEP_RED | AXEL | 19457.44 | labelled | 36.78 | ODDME | 21964.75 | labelled | -33.63 |  |
 | 20261113T035842 | DEEP_RED | cash | 19199.98 | labelled | -28.76 |  |  |  | None | comparators used twice |
 | 20261113T035842 | DEEP_RED | APPLE | 15598.23 | unreliable | None |  |  |  | None | comparators used twice |
-| 20261113T045841 | DEEP_RED | NEX Ai | 34467.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T045841 | DEEP_RED | dca | 28501.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T045841 | DEEP_RED | SEAL | 25310.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | NEX Ai | 34467.24 | labelled | 37.22 |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | dca | 28501.42 | labelled | -37.26 |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | ZEPHYRON | 26155.87 | labelled | -33.53 |  |  |  | None | no eligible comparator |
+| 20261113T045841 | DEEP_RED | SEAL | 25310.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T055840 | DEEP_RED | 364 | 23878.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T055840 | DEEP_RED | USEFUL | 15319.31 | pending | None |  |  |  | None | no eligible comparator |
