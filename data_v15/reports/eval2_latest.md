@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 163 |
-| sightings | 9549 |
-| liquid sightings | 3902 |
-| first liquid sightings = unique tokens with an outcome row | 875 |
-|   young | 604 |
+| eval-2 scans | 164 |
+| sightings | 9610 |
+| liquid sightings | 3925 |
+| first liquid sightings = unique tokens with an outcome row | 878 |
+|   young | 607 |
 |   mature | 230 |
 |   other | 41 |
 | young with a comparator (cap 2) | 100 |
-| young without a comparator | 504 |
+| young without a comparator | 507 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 33 |
 | complete pairs (both 60m outcomes labelled) | 62 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 463/604, no_valid_entry 22/604, pending 4/604, unknown 85/604, unreliable 30/604
+- young: labelled 466/607, no_valid_entry 22/607, pending 4/607, unknown 85/607, unreliable 30/607
 - mature: labelled 215/230, unknown 15/230
-- no valid entry: young 22/604, mature 0/230
+- no valid entry: young 22/607, mature 0/230
 
 ## Effect (after costs; unit = scan)
 
@@ -681,6 +681,9 @@
 | 20261113T075840 | DEEP_RED | KIND | 22863.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | WRENCHP | 16521.20 | labelled | 36.6 |  |  |  | None | no eligible comparator |
 | 20261113T075840 | DEEP_RED | HUGH | 15123.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261113T085840 | DEEP_RED | Sakura | 41888.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T085840 | DEEP_RED | Democat | 32075.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | Sakura | 41888.13 | labelled | 37.32 |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | Democat | 32075.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261113T085840 | DEEP_RED | OWNERS | 16531.88 | labelled | -46.79 |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | FRBASK | 104846.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | INUX | 78978.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |

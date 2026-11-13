@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-13 10:04 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-13 11:01 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-13 10:04 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 61 / 25 | OK |
-| Deep-checked coins left UNVERIFIED | 7 of 24 (29%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 42 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 36 of 60 | WARN |
-| Paper candidates (last 24h) | 3 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 542 / 129 | ALERT |
+| Deep-checked coins left UNVERIFIED | 4 of 16 (25%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 44 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 24 of 40 | WARN |
+| Paper candidates (last 24h) | 2 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 533 / 132 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: Chinese (10:58), CATE (11:58), CATE (12:58)
+Candidates: CATE (11:58), CATE (12:58)
