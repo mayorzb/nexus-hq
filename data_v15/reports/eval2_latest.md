@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 156 |
-| sightings | 9125 |
-| liquid sightings | 3743 |
-| first liquid sightings = unique tokens with an outcome row | 852 |
-|   young | 585 |
-|   mature | 227 |
+| eval-2 scans | 157 |
+| sightings | 9180 |
+| liquid sightings | 3768 |
+| first liquid sightings = unique tokens with an outcome row | 857 |
+|   young | 589 |
+|   mature | 228 |
 |   other | 40 |
-| young with a comparator (cap 2) | 98 |
-| young without a comparator | 487 |
+| young with a comparator (cap 2) | 100 |
+| young without a comparator | 489 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 33 |
+|   pairs: young or mature outcome not yet usable | 35 |
 | complete pairs (both 60m outcomes labelled) | 60 |
 | scans contributing a complete pair | 37 |
 
 ## 60m outcome status by group
 
-- young: labelled 447/585, no_valid_entry 21/585, pending 10/585, unknown 79/585, unreliable 28/585
-- mature: labelled 212/227, pending 3/227, unknown 12/227
-- no valid entry: young 21/585, mature 0/227
+- young: labelled 450/589, no_valid_entry 21/589, pending 11/589, unknown 79/589, unreliable 28/589
+- mature: labelled 212/228, pending 4/228, unknown 12/228
+- no valid entry: young 21/589, mature 0/228
 
 ## Effect (after costs; unit = scan)
 
@@ -74,6 +74,7 @@
 - 20261112T225845-65q7e9mA: plumber (20261112T225845), CSI (20261112T225845)
 - 20261112T225845-6suUqBQx: EDGAR (20261112T225845), Christmax (20261112T225845)
 - 20261113T005844-85EzCVHB: THRONG (20261113T005844), Timsen (20261113T005844)
+- 20261113T035842-9azVa2sx: JENSWAN (20261113T035842), AXEL (20261113T035842)
 
 ## Every pair
 
@@ -658,9 +659,13 @@
 | 20261113T005844 | RED | Food Cat | 24175.90 | no_valid_entry | None |  |  |  | None | comparators used twice |
 | 20261113T005844 | RED | WASTED | 15183.59 | pending | None |  |  |  | None | comparators used twice |
 | 20261113T015844 | RED | EVIL | 44340.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T015844 | RED | CHICK | 26892.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | CHICK | 26892.57 | labelled | -49.99 |  |  |  | None | no eligible comparator |
 | 20261113T015844 | RED | fap | 22776.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T015844 | RED | zero | 21667.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T015844 | RED | ARMY | 19607.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | zero | 21667.25 | labelled | -72.11 |  |  |  | None | no eligible comparator |
+| 20261113T015844 | RED | ARMY | 19607.48 | labelled | -28.55 |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | AMD | 51498.15 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T025843 | RED | $CAT | 15452.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T035842 | DEEP_RED | JENSWAN | 33110.23 | pending | None | ODDME | 21964.75 | pending | None |  |
+| 20261113T035842 | DEEP_RED | AXEL | 19457.44 | pending | None | ODDME | 21964.75 | pending | None |  |
+| 20261113T035842 | DEEP_RED | cash | 19199.98 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T035842 | DEEP_RED | APPLE | 15598.23 | pending | None |  |  |  | None | comparators used twice |
