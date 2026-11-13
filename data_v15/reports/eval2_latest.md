@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 167 |
-| sightings | 9793 |
-| liquid sightings | 3993 |
-| first liquid sightings = unique tokens with an outcome row | 888 |
-|   young | 614 |
+| eval-2 scans | 168 |
+| sightings | 9853 |
+| liquid sightings | 4026 |
+| first liquid sightings = unique tokens with an outcome row | 901 |
+|   young | 627 |
 |   mature | 233 |
 |   other | 41 |
 | young with a comparator (cap 2) | 101 |
-| young without a comparator | 513 |
+| young without a comparator | 526 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 34 |
-| complete pairs (both 60m outcomes labelled) | 62 |
-| scans contributing a complete pair | 38 |
+|   pairs: young or mature outcome not yet usable | 33 |
+| complete pairs (both 60m outcomes labelled) | 63 |
+| scans contributing a complete pair | 39 |
 
 ## 60m outcome status by group
 
-- young: labelled 468/614, no_valid_entry 22/614, pending 7/614, unknown 87/614, unreliable 30/614
-- mature: labelled 216/233, pending 2/233, unknown 15/233
-- no valid entry: young 22/614, mature 0/233
+- young: labelled 470/627, no_valid_entry 23/627, pending 17/627, unknown 87/627, unreliable 30/627
+- mature: labelled 217/233, pending 1/233, unknown 15/233
+- no valid entry: young 23/627, mature 0/233
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.96 points, 95% interval (-41.56, -12.79); scans with young worse 27/38
-- Pairs with young worse: 44/62 (71.0%); pair mean -26.21, median -28.69
-- Big loss (<= -20%): young 40/62, mature 8/62
+- Scan-level mean difference (young - mature): -28.57 points, 95% interval (-43.45, -14.47); scans with young worse 28/39
+- Pairs with young worse: 45/63 (71.4%); pair mean -27.21, median -29.72
+- Big loss (<= -20%): young 41/63, mature 8/63
 
 ## Comparator reuse (cap 2)
 
@@ -688,9 +688,22 @@
 | 20261113T105840 | RED | INUX | 78978.76 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T105840 | RED | OWINO | 29689.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T115840 | RED | FASTMOON | 34698.14 | labelled | 37.23 |  |  |  | None | no eligible comparator |
-| 20261113T125840 | RED | Bahrad | 99445.34 | pending | None | MASK | 90335.04 | pending | None |  |
-| 20261113T125840 | RED | papercat | 37142.48 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T125840 | RED | USMS | 22298.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T125840 | RED | Bahrad | 99445.34 | labelled | -100.0 | MASK | 90335.04 | labelled | -10.39 |  |
+| 20261113T125840 | RED | papercat | 37142.48 | labelled | -33.01 |  |  |  | None | no eligible comparator |
+| 20261113T125840 | RED | USMS | 22298.11 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | JENSEN | 44703.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | lptp | 25636.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T135839 | NEUTRAL | Buffape | 18919.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 38810.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | WANTED | 37563.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | PaperInu | 35938.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | UwU | 29102.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Meme | 28448.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | PARANOID | 27334.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | AICoin | 23489.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 19386.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | XRP | 19309.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | UwU | 18652.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | ONE | 18558.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | Speed | 17819.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T145838 | RED | MAKENZI | 15684.24 | pending | None |  |  |  | None | no eligible comparator |
