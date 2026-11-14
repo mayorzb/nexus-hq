@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 191 |
-| sightings | 11319 |
-| liquid sightings | 4587 |
-| first liquid sightings = unique tokens with an outcome row | 995 |
-|   young | 705 |
+| eval-2 scans | 192 |
+| sightings | 11379 |
+| liquid sightings | 4608 |
+| first liquid sightings = unique tokens with an outcome row | 997 |
+|   young | 707 |
 |   mature | 245 |
 |   other | 45 |
 | young with a comparator (cap 2) | 113 |
-| young without a comparator | 592 |
+| young without a comparator | 594 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 39 |
 | complete pairs (both 60m outcomes labelled) | 69 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 540/705, no_valid_entry 27/705, pending 9/705, unknown 98/705, unreliable 31/705
+- young: labelled 542/707, no_valid_entry 27/707, pending 8/707, unknown 99/707, unreliable 31/707
 - mature: labelled 226/245, pending 2/245, unknown 17/245
-- no valid entry: young 27/705, mature 0/245
+- no valid entry: young 27/707, mature 0/245
 
 ## Effect (after costs; unit = scan)
 
@@ -772,7 +772,7 @@
 | 20261114T075823 | RED | JENSEN | 32039.95 | labelled | 37.18 |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | SCRAP | 25774.92 | labelled | -28.09 |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | VICECITY | 26975.18 | labelled | 37.06 |  |  |  | None | no eligible comparator |
-| 20261114T085823 | RED | nCAT | 23722.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | nCAT | 23722.06 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | SCRAP | 20753.66 | labelled | -32.3 |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | FUND | 18205.88 | labelled | -33.92 |  |  |  | None | no eligible comparator |
 | 20261114T095822 | RED | Avatars | 19754.50 | labelled | -42.71 |  |  |  | None | no eligible comparator |
@@ -785,8 +785,10 @@
 | 20261114T115820 | RED | Mar1o | 33455.24 | labelled | -100.0 | GTA6 | 17107.80 | labelled | 36.64 |  |
 | 20261114T115820 | RED | DCYC | 24390.90 | pending | None | GTA6 | 17107.80 | labelled | 36.64 |  |
 | 20261114T115820 | RED | $LA BEAST | 17595.48 | pending | None |  |  |  | None | comparators used twice |
-| 20261114T125819 | RED | GTA$ | 30900.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T125819 | RED | GTA$ | 30900.18 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | INU | 22108.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T125819 | RED | DYC | 15029.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T125819 | RED | DYC | 15029.02 | labelled | -48.08 |  |  |  | None | no eligible comparator |
 | 20261114T135818 | DEEP_RED | Axiom | 31431.33 | pending | None | greg | 42241.44 | pending | None |  |
 | 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T145818 | DEEP_RED | VI | 25451.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | pending | None |  |  |  | None | no eligible comparator |
