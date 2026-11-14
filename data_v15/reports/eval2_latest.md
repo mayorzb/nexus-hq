@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 177 |
-| sightings | 10426 |
-| liquid sightings | 4265 |
+| eval-2 scans | 178 |
+| sightings | 10490 |
+| liquid sightings | 4287 |
 | first liquid sightings = unique tokens with an outcome row | 950 |
 |   young | 667 |
 |   mature | 240 |
@@ -22,7 +22,7 @@
 
 ## 60m outcome status by group
 
-- young: labelled 508/667, no_valid_entry 24/667, pending 11/667, unknown 93/667, unreliable 31/667
+- young: labelled 515/667, no_valid_entry 24/667, pending 4/667, unknown 93/667, unreliable 31/667
 - mature: labelled 222/240, pending 3/240, unknown 15/240
 - no valid entry: young 24/667, mature 0/240
 
@@ -741,13 +741,13 @@
 | 20261113T215832 | RED | WISHMAS | 26958.55 | labelled | -45.04 | ADC | 21300.31 | pending | None |  |
 | 20261113T215832 | RED | securititt | 23586.91 | unknown | None | ADC | 21300.31 | pending | None |  |
 | 20261113T215832 | RED | CWW | 15186.23 | labelled | -54.85 |  |  |  | None | comparators used twice |
-| 20261113T225831 | RED | CSI | 62184.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | PEACEFROG | 35820.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | securititty | 26567.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | KOSMIK | 24504.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | CSI | 23232.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | AURA | 21034.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T225831 | RED | WWZ | 17032.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | CSI | 62184.43 | labelled | -35.89 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | PEACEFROG | 35820.38 | labelled | -16.29 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | securititty | 26567.19 | labelled | 37.05 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | KOSMIK | 24504.24 | labelled | -39.18 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | CSI | 23232.37 | labelled | -32.53 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | AURA | 21034.04 | labelled | -33.59 |  |  |  | None | no eligible comparator |
+| 20261113T225831 | RED | WWZ | 17032.80 | labelled | -33.7 |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | NIO | 98105.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | BLACKOUT | 23155.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | SCH | 17116.96 | pending | None |  |  |  | None | no eligible comparator |
