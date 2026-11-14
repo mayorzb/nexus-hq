@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 193 |
-| sightings | 11437 |
-| liquid sightings | 4632 |
-| first liquid sightings = unique tokens with an outcome row | 1000 |
-|   young | 709 |
+| eval-2 scans | 194 |
+| sightings | 11497 |
+| liquid sightings | 4652 |
+| first liquid sightings = unique tokens with an outcome row | 1001 |
+|   young | 710 |
 |   mature | 245 |
 |   other | 46 |
 | young with a comparator (cap 2) | 113 |
-| young without a comparator | 596 |
+| young without a comparator | 597 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 38 |
 | complete pairs (both 60m outcomes labelled) | 70 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 544/709, no_valid_entry 27/709, pending 8/709, unknown 99/709, unreliable 31/709
+- young: labelled 545/710, no_valid_entry 27/710, pending 7/710, unknown 100/710, unreliable 31/710
 - mature: labelled 228/245, unknown 17/245
-- no valid entry: young 27/709, mature 0/245
+- no valid entry: young 27/710, mature 0/245
 
 ## Effect (after costs; unit = scan)
 
@@ -777,7 +777,7 @@
 | 20261114T085823 | RED | FUND | 18205.88 | labelled | -33.92 |  |  |  | None | no eligible comparator |
 | 20261114T095822 | RED | Avatars | 19754.50 | labelled | -42.71 |  |  |  | None | no eligible comparator |
 | 20261114T095822 | RED | Avatars | 18501.20 | labelled | -38.54 |  |  |  | None | no eligible comparator |
-| 20261114T105821 | RED | GTA$ | 36848.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T105821 | RED | GTA$ | 36848.92 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | LGND | 34984.35 | labelled | 5.95 |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | JENSEN | 23359.32 | labelled | 36.95 |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | MORNING | 15238.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -790,7 +790,8 @@
 | 20261114T125819 | RED | DYC | 15029.02 | labelled | -48.08 |  |  |  | None | no eligible comparator |
 | 20261114T135818 | DEEP_RED | Axiom | 31431.33 | labelled | -100.0 | greg | 42241.44 | labelled | -30.48 |  |
 | 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261114T145818 | DEEP_RED | VI | 25451.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T145818 | DEEP_RED | VI | 25451.65 | labelled | -34.68 |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T165817 | DEEP_RED | Angel | 30424.58 | pending | None |  |  |  | None | no eligible comparator |
