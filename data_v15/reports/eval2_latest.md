@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 186 |
-| sightings | 10999 |
-| liquid sightings | 4465 |
-| first liquid sightings = unique tokens with an outcome row | 976 |
-|   young | 690 |
+| eval-2 scans | 187 |
+| sightings | 11064 |
+| liquid sightings | 4486 |
+| first liquid sightings = unique tokens with an outcome row | 978 |
+|   young | 692 |
 |   mature | 242 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 580 |
+| young without a comparator | 582 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 527/690, no_valid_entry 27/690, pending 8/690, unknown 97/690, unreliable 31/690
+- young: labelled 531/692, no_valid_entry 27/692, pending 6/692, unknown 97/692, unreliable 31/692
 - mature: labelled 225/242, unknown 17/242
-- no valid entry: young 27/690, mature 0/242
+- no valid entry: young 27/692, mature 0/242
 
 ## Effect (after costs; unit = scan)
 
@@ -766,11 +766,13 @@
 | 20261114T045826 | RED | UP | 19622.05 | labelled | -30.55 |  |  |  | None | no eligible comparator |
 | 20261114T055825 | NEUTRAL | Twinothy | 22455.18 | labelled | -28.61 |  |  |  | None | no eligible comparator |
 | 20261114T065824 | RED | SAI | 15184.95 | labelled | -41.44 |  |  |  | None | no eligible comparator |
-| 20261114T075823 | RED | SAS-GSW | 34672.97 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T075823 | RED | CLIPPY | 32201.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T075823 | RED | JENSEN | 32039.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T075823 | RED | SCRAP | 25774.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | SAS-GSW | 34672.97 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | CLIPPY | 32201.98 | labelled | -54.27 |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | JENSEN | 32039.95 | labelled | 37.18 |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | SCRAP | 25774.92 | labelled | -28.09 |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | VICECITY | 26975.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | nCAT | 23722.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | SCRAP | 20753.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | FUND | 18205.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T095822 | RED | Avatars | 19754.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T095822 | RED | Avatars | 18501.20 | pending | None |  |  |  | None | no eligible comparator |
