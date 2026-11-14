@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 190 |
-| sightings | 11259 |
-| liquid sightings | 4561 |
-| first liquid sightings = unique tokens with an outcome row | 990 |
-|   young | 703 |
-|   mature | 243 |
-|   other | 44 |
-| young with a comparator (cap 2) | 112 |
-| young without a comparator | 591 |
+| eval-2 scans | 191 |
+| sightings | 11319 |
+| liquid sightings | 4587 |
+| first liquid sightings = unique tokens with an outcome row | 995 |
+|   young | 705 |
+|   mature | 245 |
+|   other | 45 |
+| young with a comparator (cap 2) | 113 |
+| young without a comparator | 592 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 39 |
-| complete pairs (both 60m outcomes labelled) | 68 |
-| scans contributing a complete pair | 42 |
+| complete pairs (both 60m outcomes labelled) | 69 |
+| scans contributing a complete pair | 43 |
 
 ## 60m outcome status by group
 
-- young: labelled 539/703, no_valid_entry 27/703, pending 9/703, unknown 97/703, unreliable 31/703
-- mature: labelled 225/243, pending 1/243, unknown 17/243
-- no valid entry: young 27/703, mature 0/243
+- young: labelled 540/705, no_valid_entry 27/705, pending 9/705, unknown 98/705, unreliable 31/705
+- mature: labelled 226/245, pending 2/245, unknown 17/245
+- no valid entry: young 27/705, mature 0/245
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.13 points, 95% interval (-41.46, -13.89); scans with young worse 30/42
-- Pairs with young worse: 48/68 (70.6%); pair mean -25.55, median -28.69
-- Big loss (<= -20%): young 44/68, mature 10/68
+- Scan-level mean difference (young - mature): -29.67 points, 95% interval (-43.79, -15.35); scans with young worse 31/43
+- Pairs with young worse: 49/69 (71.0%); pair mean -27.16, median -29.72
+- Big loss (<= -20%): young 45/69, mature 10/69
 
 ## Comparator reuse (cap 2)
 
@@ -781,10 +781,12 @@
 | 20261114T105821 | RED | LGND | 34984.35 | labelled | 5.95 |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | JENSEN | 23359.32 | labelled | 36.95 |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | MORNING | 15238.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261114T115820 | RED | GTA$ | 36750.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T115820 | RED | Mar1o | 33455.24 | pending | None | GTA6 | 17107.80 | pending | None |  |
-| 20261114T115820 | RED | DCYC | 24390.90 | pending | None | GTA6 | 17107.80 | pending | None |  |
+| 20261114T115820 | RED | GTA$ | 36750.16 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261114T115820 | RED | Mar1o | 33455.24 | labelled | -100.0 | GTA6 | 17107.80 | labelled | 36.64 |  |
+| 20261114T115820 | RED | DCYC | 24390.90 | pending | None | GTA6 | 17107.80 | labelled | 36.64 |  |
 | 20261114T115820 | RED | $LA BEAST | 17595.48 | pending | None |  |  |  | None | comparators used twice |
 | 20261114T125819 | RED | GTA$ | 30900.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | INU | 22108.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | DYC | 15029.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T135818 | DEEP_RED | Axiom | 31431.33 | pending | None | greg | 42241.44 | pending | None |  |
+| 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | pending | None |  |  |  | None | no eligible comparator |
