@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 181 |
-| sightings | 10681 |
-| liquid sightings | 4357 |
-| first liquid sightings = unique tokens with an outcome row | 961 |
-|   young | 677 |
+| eval-2 scans | 182 |
+| sightings | 10742 |
+| liquid sightings | 4380 |
+| first liquid sightings = unique tokens with an outcome row | 964 |
+|   young | 680 |
 |   mature | 240 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 567 |
+| young without a comparator | 570 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 519/677, no_valid_entry 24/677, pending 8/677, unknown 95/677, unreliable 31/677
+- young: labelled 523/680, no_valid_entry 25/680, pending 6/680, unknown 95/680, unreliable 31/680
 - mature: labelled 223/240, unknown 17/240
-- no valid entry: young 24/677, mature 0/240
+- no valid entry: young 25/680, mature 0/240
 
 ## Effect (after costs; unit = scan)
 
@@ -755,9 +755,12 @@
 | 20261114T015829 | RED | SUNBUCK | 17133.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | CHAOS | 16958.21 | labelled | -56.3 |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | COINSIDE | 15487.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T025828 | RED | Chunkee | 36665.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T025828 | RED | WOHAIHAO | 34678.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T025828 | RED | FUCK | 31614.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T025828 | RED | SWJ | 21681.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T025828 | RED | HARAMBE | 18389.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T025828 | RED | Chunkee | 36665.71 | labelled | 37.26 |  |  |  | None | no eligible comparator |
+| 20261114T025828 | RED | WOHAIHAO | 34678.67 | labelled | -32.72 |  |  |  | None | no eligible comparator |
+| 20261114T025828 | RED | FUCK | 31614.86 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261114T025828 | RED | SWJ | 21681.90 | labelled | -37.94 |  |  |  | None | no eligible comparator |
+| 20261114T025828 | RED | HARAMBE | 18389.22 | labelled | -28.85 |  |  |  | None | no eligible comparator |
 | 20261114T035827 | RED | DREW | 17374.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | Bearlock | 92691.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | ASTRALIS | 27912.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | UP | 19622.05 | pending | None |  |  |  | None | no eligible comparator |
