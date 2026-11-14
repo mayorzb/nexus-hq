@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 184 |
-| sightings | 10868 |
-| liquid sightings | 4421 |
-| first liquid sightings = unique tokens with an outcome row | 968 |
-|   young | 682 |
+| eval-2 scans | 185 |
+| sightings | 10934 |
+| liquid sightings | 4443 |
+| first liquid sightings = unique tokens with an outcome row | 972 |
+|   young | 686 |
 |   mature | 242 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 572 |
+| young without a comparator | 576 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 525/682, no_valid_entry 27/682, pending 4/682, unknown 95/682, unreliable 31/682
-- mature: labelled 223/242, pending 2/242, unknown 17/242
-- no valid entry: young 27/682, mature 0/242
+- young: labelled 526/686, no_valid_entry 27/686, pending 5/686, unknown 97/686, unreliable 31/686
+- mature: labelled 225/242, unknown 17/242
+- no valid entry: young 27/686, mature 0/242
 
 ## Effect (after costs; unit = scan)
 
@@ -752,9 +752,9 @@
 | 20261113T235830 | RED | BLACKOUT | 23155.24 | labelled | 7.99 |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | SCH | 17116.96 | labelled | -62.04 |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | JENSEN | 64723.06 | labelled | 37.49 |  |  |  | None | no eligible comparator |
-| 20261114T015829 | RED | SUNBUCK | 17133.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | SUNBUCK | 17133.30 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | CHAOS | 16958.21 | labelled | -56.3 |  |  |  | None | no eligible comparator |
-| 20261114T015829 | RED | COINSIDE | 15487.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | COINSIDE | 15487.40 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | Chunkee | 36665.71 | labelled | 37.26 |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | WOHAIHAO | 34678.67 | labelled | -32.72 |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | FUCK | 31614.86 | no_valid_entry | None |  |  |  | None | no eligible comparator |
@@ -764,5 +764,9 @@
 | 20261114T045826 | RED | Bearlock | 92691.22 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261114T045826 | RED | ASTRALIS | 27912.69 | labelled | 37.09 |  |  |  | None | no eligible comparator |
 | 20261114T045826 | RED | UP | 19622.05 | labelled | -30.55 |  |  |  | None | no eligible comparator |
-| 20261114T055825 | NEUTRAL | Twinothy | 22455.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T055825 | NEUTRAL | Twinothy | 22455.18 | labelled | -28.61 |  |  |  | None | no eligible comparator |
 | 20261114T065824 | RED | SAI | 15184.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | SAS-GSW | 34672.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | CLIPPY | 32201.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | JENSEN | 32039.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T075823 | RED | SCRAP | 25774.92 | pending | None |  |  |  | None | no eligible comparator |
