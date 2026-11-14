@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 199 |
-| sightings | 11789 |
-| liquid sightings | 4768 |
-| first liquid sightings = unique tokens with an outcome row | 1013 |
-|   young | 719 |
+| eval-2 scans | 200 |
+| sightings | 11857 |
+| liquid sightings | 4791 |
+| first liquid sightings = unique tokens with an outcome row | 1017 |
+|   young | 722 |
 |   mature | 247 |
-|   other | 47 |
+|   other | 48 |
 | young with a comparator (cap 2) | 115 |
-| young without a comparator | 604 |
+| young without a comparator | 607 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 38 |
 | complete pairs (both 60m outcomes labelled) | 72 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 552/719, no_valid_entry 27/719, pending 4/719, unknown 105/719, unreliable 31/719
+- young: labelled 552/722, no_valid_entry 27/722, pending 7/722, unknown 105/722, unreliable 31/722
 - mature: labelled 230/247, unknown 17/247
-- no valid entry: young 27/719, mature 0/247
+- no valid entry: young 27/722, mature 0/247
 
 ## Effect (after costs; unit = scan)
 
@@ -804,3 +804,6 @@
 | 20261114T215813 | DEEP_RED | SEET | 16409.46 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | SEET | 15920.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | greg | 15396.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T225812 | DEEP_RED | LUCIA | 25493.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T225812 | DEEP_RED | Grok5 | 17803.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T225812 | DEEP_RED | CYBER | 15306.16 | pending | None |  |  |  | None | no eligible comparator |
