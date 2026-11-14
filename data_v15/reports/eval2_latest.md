@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 185 |
-| sightings | 10934 |
-| liquid sightings | 4443 |
-| first liquid sightings = unique tokens with an outcome row | 972 |
-|   young | 686 |
+| eval-2 scans | 186 |
+| sightings | 10999 |
+| liquid sightings | 4465 |
+| first liquid sightings = unique tokens with an outcome row | 976 |
+|   young | 690 |
 |   mature | 242 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 576 |
+| young without a comparator | 580 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 526/686, no_valid_entry 27/686, pending 5/686, unknown 97/686, unreliable 31/686
+- young: labelled 527/690, no_valid_entry 27/690, pending 8/690, unknown 97/690, unreliable 31/690
 - mature: labelled 225/242, unknown 17/242
-- no valid entry: young 27/686, mature 0/242
+- no valid entry: young 27/690, mature 0/242
 
 ## Effect (after costs; unit = scan)
 
@@ -765,8 +765,12 @@
 | 20261114T045826 | RED | ASTRALIS | 27912.69 | labelled | 37.09 |  |  |  | None | no eligible comparator |
 | 20261114T045826 | RED | UP | 19622.05 | labelled | -30.55 |  |  |  | None | no eligible comparator |
 | 20261114T055825 | NEUTRAL | Twinothy | 22455.18 | labelled | -28.61 |  |  |  | None | no eligible comparator |
-| 20261114T065824 | RED | SAI | 15184.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T065824 | RED | SAI | 15184.95 | labelled | -41.44 |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | SAS-GSW | 34672.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | CLIPPY | 32201.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | JENSEN | 32039.95 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | SCRAP | 25774.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | VICECITY | 26975.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | nCAT | 23722.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | SCRAP | 20753.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | FUND | 18205.88 | pending | None |  |  |  | None | no eligible comparator |
