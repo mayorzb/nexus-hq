@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 180 |
-| sightings | 10621 |
-| liquid sightings | 4334 |
-| first liquid sightings = unique tokens with an outcome row | 959 |
-|   young | 676 |
+| eval-2 scans | 181 |
+| sightings | 10681 |
+| liquid sightings | 4357 |
+| first liquid sightings = unique tokens with an outcome row | 961 |
+|   young | 677 |
 |   mature | 240 |
-|   other | 43 |
+|   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 566 |
+| young without a comparator | 567 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 517/676, no_valid_entry 24/676, pending 9/676, unknown 95/676, unreliable 31/676
-- mature: labelled 223/240, pending 1/240, unknown 16/240
-- no valid entry: young 24/676, mature 0/240
+- young: labelled 519/677, no_valid_entry 24/677, pending 8/677, unknown 95/677, unreliable 31/677
+- mature: labelled 223/240, unknown 17/240
+- no valid entry: young 24/677, mature 0/240
 
 ## Effect (after costs; unit = scan)
 
@@ -738,8 +738,8 @@
 | 20261113T205832 | RED | MIPO | 16824.99 | labelled | -39.49 | DCC | 22790.67 | unknown | None |  |
 | 20261113T215832 | RED | SPEED | 42962.22 | labelled | 37.34 | PINO | 45008.13 | labelled | -3.81 |  |
 | 20261113T215832 | RED | BTC2 | 36876.19 | labelled | 37.26 | PINO | 45008.13 | labelled | -3.81 |  |
-| 20261113T215832 | RED | WISHMAS | 26958.55 | labelled | -45.04 | ADC | 21300.31 | pending | None |  |
-| 20261113T215832 | RED | securititt | 23586.91 | unknown | None | ADC | 21300.31 | pending | None |  |
+| 20261113T215832 | RED | WISHMAS | 26958.55 | labelled | -45.04 | ADC | 21300.31 | unknown | None |  |
+| 20261113T215832 | RED | securititt | 23586.91 | unknown | None | ADC | 21300.31 | unknown | None |  |
 | 20261113T215832 | RED | CWW | 15186.23 | labelled | -54.85 |  |  |  | None | comparators used twice |
 | 20261113T225831 | RED | CSI | 62184.43 | labelled | -35.89 |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | PEACEFROG | 35820.38 | labelled | -16.29 |  |  |  | None | no eligible comparator |
@@ -751,12 +751,13 @@
 | 20261113T235830 | RED | NIO | 98105.66 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | BLACKOUT | 23155.24 | labelled | 7.99 |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | SCH | 17116.96 | labelled | -62.04 |  |  |  | None | no eligible comparator |
-| 20261114T015829 | RED | JENSEN | 64723.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | JENSEN | 64723.06 | labelled | 37.49 |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | SUNBUCK | 17133.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T015829 | RED | CHAOS | 16958.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | CHAOS | 16958.21 | labelled | -56.3 |  |  |  | None | no eligible comparator |
 | 20261114T015829 | RED | COINSIDE | 15487.40 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | Chunkee | 36665.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | WOHAIHAO | 34678.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | FUCK | 31614.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | SWJ | 21681.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | HARAMBE | 18389.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T035827 | RED | DREW | 17374.21 | pending | None |  |  |  | None | no eligible comparator |
