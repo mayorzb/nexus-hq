@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 188 |
-| sightings | 11130 |
-| liquid sightings | 4510 |
-| first liquid sightings = unique tokens with an outcome row | 982 |
-|   young | 696 |
-|   mature | 242 |
+| eval-2 scans | 189 |
+| sightings | 11195 |
+| liquid sightings | 4535 |
+| first liquid sightings = unique tokens with an outcome row | 987 |
+|   young | 700 |
+|   mature | 243 |
 |   other | 44 |
-| young with a comparator (cap 2) | 110 |
-| young without a comparator | 586 |
+| young with a comparator (cap 2) | 112 |
+| young without a comparator | 588 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 37 |
+|   pairs: young or mature outcome not yet usable | 39 |
 | complete pairs (both 60m outcomes labelled) | 68 |
 | scans contributing a complete pair | 42 |
 
 ## 60m outcome status by group
 
-- young: labelled 534/696, no_valid_entry 27/696, pending 7/696, unknown 97/696, unreliable 31/696
-- mature: labelled 225/242, unknown 17/242
-- no valid entry: young 27/696, mature 0/242
+- young: labelled 536/700, no_valid_entry 27/700, pending 9/700, unknown 97/700, unreliable 31/700
+- mature: labelled 225/243, pending 1/243, unknown 17/243
+- no valid entry: young 27/700, mature 0/243
 
 ## Effect (after costs; unit = scan)
 
@@ -79,6 +79,7 @@
 - 20261113T205832-7jo5Ru47: Together (20261113T205832), MIPO (20261113T205832)
 - 20261113T215832-6d9fD5Sx: SPEED (20261113T215832), BTC2 (20261113T215832)
 - 20261113T215832-DaL9WdYD: WISHMAS (20261113T215832), securititt (20261113T215832)
+- 20261114T115820-Gta6uoek: Mar1o (20261114T115820), DCYC (20261114T115820)
 
 ## Every pair
 
@@ -774,9 +775,13 @@
 | 20261114T085823 | RED | nCAT | 23722.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | SCRAP | 20753.66 | labelled | -32.3 |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | FUND | 18205.88 | labelled | -33.92 |  |  |  | None | no eligible comparator |
-| 20261114T095822 | RED | Avatars | 19754.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T095822 | RED | Avatars | 18501.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T095822 | RED | Avatars | 19754.50 | labelled | -42.71 |  |  |  | None | no eligible comparator |
+| 20261114T095822 | RED | Avatars | 18501.20 | labelled | -38.54 |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | GTA$ | 36848.92 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | LGND | 34984.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | JENSEN | 23359.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T105821 | RED | MORNING | 15238.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T115820 | RED | GTA$ | 36750.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T115820 | RED | Mar1o | 33455.24 | pending | None | GTA6 | 17107.80 | pending | None |  |
+| 20261114T115820 | RED | DCYC | 24390.90 | pending | None | GTA6 | 17107.80 | pending | None |  |
+| 20261114T115820 | RED | $LA BEAST | 17595.48 | pending | None |  |  |  | None | comparators used twice |
