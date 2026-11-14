@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 197 |
-| sightings | 11673 |
-| liquid sightings | 4723 |
+| eval-2 scans | 198 |
+| sightings | 11727 |
+| liquid sightings | 4745 |
 | first liquid sightings = unique tokens with an outcome row | 1010 |
 |   young | 716 |
 |   mature | 247 |
@@ -22,7 +22,7 @@
 
 ## 60m outcome status by group
 
-- young: labelled 549/716, no_valid_entry 27/716, pending 5/716, unknown 104/716, unreliable 31/716
+- young: labelled 550/716, no_valid_entry 27/716, pending 3/716, unknown 105/716, unreliable 31/716
 - mature: labelled 230/247, unknown 17/247
 - no valid entry: young 27/716, mature 0/247
 
@@ -791,13 +791,13 @@
 | 20261114T135818 | DEEP_RED | Axiom | 31431.33 | labelled | -100.0 | greg | 42241.44 | labelled | -30.48 |  |
 | 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | VI | 25451.65 | labelled | -34.68 |  |  |  | None | no eligible comparator |
-| 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | labelled | -30.83 |  |  |  | None | no eligible comparator |
 | 20261114T165817 | DEEP_RED | Angel | 30424.58 | labelled | -30.38 |  |  |  | None | no eligible comparator |
 | 20261114T175816 | DEEP_RED | HUMANITY | 30887.70 | labelled | -41.25 | SHIT | 26238.76 | labelled | 37.04 |  |
 | 20261114T175816 | DEEP_RED | TRAIN | 15418.40 | labelled | 7.85 | Woodstock | 25466.81 | labelled | -100.0 |  |
-| 20261114T185816 | DEEP_RED | capy | 19208.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T185816 | DEEP_RED | capy | 19208.13 | labelled | -28.9 |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | bill | 32307.95 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | GTAification | 20241.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | pending | None |  |  |  | None | no eligible comparator |
