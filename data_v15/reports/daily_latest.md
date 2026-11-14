@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-14 06:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-14 07:01 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -9,10 +9,10 @@ DAILY HEALTH 2026-11-14 06:03 UTC (review-1.4) - overall: ALERT
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 63 / 24 | OK |
 | Deep-checked coins left UNVERIFIED | 4 of 16 (25%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 44 checked, 16 unverified, 0 on-chain errors | WARN |
+| Safety canary (deep checks run when no coin reached them) | 44 checked, 17 unverified, 0 on-chain errors | WARN |
 | Gate-passers skipped by check budget | 22 of 38 | WARN |
 | Paper candidates (last 24h) | 3 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 506 / 111 | ALERT |
+| Labels finished / unknown or unreliable (last 24h) | 502 / 107 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 

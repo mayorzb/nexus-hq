@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 183 |
-| sightings | 10805 |
-| liquid sightings | 4401 |
-| first liquid sightings = unique tokens with an outcome row | 967 |
-|   young | 681 |
+| eval-2 scans | 184 |
+| sightings | 10868 |
+| liquid sightings | 4421 |
+| first liquid sightings = unique tokens with an outcome row | 968 |
+|   young | 682 |
 |   mature | 242 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 571 |
+| young without a comparator | 572 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 523/681, no_valid_entry 26/681, pending 6/681, unknown 95/681, unreliable 31/681
+- young: labelled 525/682, no_valid_entry 27/682, pending 4/682, unknown 95/682, unreliable 31/682
 - mature: labelled 223/242, pending 2/242, unknown 17/242
-- no valid entry: young 26/681, mature 0/242
+- no valid entry: young 27/682, mature 0/242
 
 ## Effect (after costs; unit = scan)
 
@@ -761,7 +761,8 @@
 | 20261114T025828 | RED | SWJ | 21681.90 | labelled | -37.94 |  |  |  | None | no eligible comparator |
 | 20261114T025828 | RED | HARAMBE | 18389.22 | labelled | -28.85 |  |  |  | None | no eligible comparator |
 | 20261114T035827 | RED | DREW | 17374.21 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261114T045826 | RED | Bearlock | 92691.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T045826 | RED | ASTRALIS | 27912.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T045826 | RED | UP | 19622.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | Bearlock | 92691.22 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | ASTRALIS | 27912.69 | labelled | 37.09 |  |  |  | None | no eligible comparator |
+| 20261114T045826 | RED | UP | 19622.05 | labelled | -30.55 |  |  |  | None | no eligible comparator |
 | 20261114T055825 | NEUTRAL | Twinothy | 22455.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T065824 | RED | SAI | 15184.95 | pending | None |  |  |  | None | no eligible comparator |
