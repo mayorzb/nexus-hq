@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 198 |
-| sightings | 11727 |
-| liquid sightings | 4745 |
-| first liquid sightings = unique tokens with an outcome row | 1010 |
-|   young | 716 |
+| eval-2 scans | 199 |
+| sightings | 11789 |
+| liquid sightings | 4768 |
+| first liquid sightings = unique tokens with an outcome row | 1013 |
+|   young | 719 |
 |   mature | 247 |
 |   other | 47 |
 | young with a comparator (cap 2) | 115 |
-| young without a comparator | 601 |
+| young without a comparator | 604 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 38 |
 | complete pairs (both 60m outcomes labelled) | 72 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 550/716, no_valid_entry 27/716, pending 3/716, unknown 105/716, unreliable 31/716
+- young: labelled 552/719, no_valid_entry 27/719, pending 4/719, unknown 105/719, unreliable 31/719
 - mature: labelled 230/247, unknown 17/247
-- no valid entry: young 27/716, mature 0/247
+- no valid entry: young 27/719, mature 0/247
 
 ## Effect (after costs; unit = scan)
 
@@ -798,6 +798,9 @@
 | 20261114T175816 | DEEP_RED | HUMANITY | 30887.70 | labelled | -41.25 | SHIT | 26238.76 | labelled | 37.04 |  |
 | 20261114T175816 | DEEP_RED | TRAIN | 15418.40 | labelled | 7.85 | Woodstock | 25466.81 | labelled | -100.0 |  |
 | 20261114T185816 | DEEP_RED | capy | 19208.13 | labelled | -28.9 |  |  |  | None | no eligible comparator |
-| 20261114T195815 | DEEP_RED | bill | 32307.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T195815 | DEEP_RED | bill | 32307.95 | labelled | -35.22 |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | GTAification | 20241.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | labelled | 36.75 |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | SEET | 16409.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | SEET | 15920.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | greg | 15396.89 | pending | None |  |  |  | None | no eligible comparator |
