@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 194 |
-| sightings | 11497 |
-| liquid sightings | 4652 |
-| first liquid sightings = unique tokens with an outcome row | 1001 |
-|   young | 710 |
-|   mature | 245 |
-|   other | 46 |
-| young with a comparator (cap 2) | 113 |
+| eval-2 scans | 195 |
+| sightings | 11556 |
+| liquid sightings | 4677 |
+| first liquid sightings = unique tokens with an outcome row | 1006 |
+|   young | 712 |
+|   mature | 247 |
+|   other | 47 |
+| young with a comparator (cap 2) | 115 |
 | young without a comparator | 597 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 38 |
+|   pairs: young or mature outcome not yet usable | 40 |
 | complete pairs (both 60m outcomes labelled) | 70 |
 | scans contributing a complete pair | 44 |
 
 ## 60m outcome status by group
 
-- young: labelled 545/710, no_valid_entry 27/710, pending 7/710, unknown 100/710, unreliable 31/710
-- mature: labelled 228/245, unknown 17/245
-- no valid entry: young 27/710, mature 0/245
+- young: labelled 546/712, no_valid_entry 27/712, pending 5/712, unknown 103/712, unreliable 31/712
+- mature: labelled 228/247, pending 2/247, unknown 17/247
+- no valid entry: young 27/712, mature 0/247
 
 ## Effect (after costs; unit = scan)
 
@@ -783,8 +783,8 @@
 | 20261114T105821 | RED | MORNING | 15238.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T115820 | RED | GTA$ | 36750.16 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T115820 | RED | Mar1o | 33455.24 | labelled | -100.0 | GTA6 | 17107.80 | labelled | 36.64 |  |
-| 20261114T115820 | RED | DCYC | 24390.90 | pending | None | GTA6 | 17107.80 | labelled | 36.64 |  |
-| 20261114T115820 | RED | $LA BEAST | 17595.48 | pending | None |  |  |  | None | comparators used twice |
+| 20261114T115820 | RED | DCYC | 24390.90 | unknown | None | GTA6 | 17107.80 | labelled | 36.64 |  |
+| 20261114T115820 | RED | $LA BEAST | 17595.48 | unknown | None |  |  |  | None | comparators used twice |
 | 20261114T125819 | RED | GTA$ | 30900.18 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | INU | 22108.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | DYC | 15029.02 | labelled | -48.08 |  |  |  | None | no eligible comparator |
@@ -792,6 +792,8 @@
 | 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | VI | 25451.65 | labelled | -34.68 |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | labelled | -30.83 |  |  |  | None | no eligible comparator |
 | 20261114T165817 | DEEP_RED | Angel | 30424.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T175816 | DEEP_RED | HUMANITY | 30887.70 | pending | None | SHIT | 26238.76 | pending | None |  |
+| 20261114T175816 | DEEP_RED | TRAIN | 15418.40 | pending | None | Woodstock | 25466.81 | pending | None |  |
