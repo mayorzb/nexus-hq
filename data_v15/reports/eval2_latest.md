@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 176 |
-| sightings | 10361 |
-| liquid sightings | 4238 |
-| first liquid sightings = unique tokens with an outcome row | 946 |
-|   young | 664 |
-|   mature | 239 |
+| eval-2 scans | 177 |
+| sightings | 10426 |
+| liquid sightings | 4265 |
+| first liquid sightings = unique tokens with an outcome row | 950 |
+|   young | 667 |
+|   mature | 240 |
 |   other | 43 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 554 |
+| young without a comparator | 557 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 39 |
-| complete pairs (both 60m outcomes labelled) | 66 |
-| scans contributing a complete pair | 41 |
+|   pairs: young or mature outcome not yet usable | 37 |
+| complete pairs (both 60m outcomes labelled) | 68 |
+| scans contributing a complete pair | 42 |
 
 ## 60m outcome status by group
 
-- young: labelled 504/664, no_valid_entry 24/664, pending 13/664, unknown 92/664, unreliable 31/664
-- mature: labelled 221/239, pending 3/239, unknown 15/239
-- no valid entry: young 24/664, mature 0/239
+- young: labelled 508/667, no_valid_entry 24/667, pending 11/667, unknown 93/667, unreliable 31/667
+- mature: labelled 222/240, pending 3/240, unknown 15/240
+- no valid entry: young 24/667, mature 0/240
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.79 points, 95% interval (-42.88, -14.5); scans with young worse 30/41
-- Pairs with young worse: 48/66 (72.7%); pair mean -27.57, median -29.86
-- Big loss (<= -20%): young 44/66, mature 10/66
+- Scan-level mean difference (young - mature): -27.13 points, 95% interval (-41.46, -13.89); scans with young worse 30/42
+- Pairs with young worse: 48/68 (70.6%); pair mean -25.55, median -28.69
+- Big loss (<= -20%): young 44/68, mature 10/68
 
 ## Comparator reuse (cap 2)
 
@@ -736,11 +736,11 @@
 | 20261113T195833 | RED | ALO | 16880.57 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261113T205832 | RED | Together | 19107.34 | labelled | -3.57 | DCC | 22790.67 | pending | None |  |
 | 20261113T205832 | RED | MIPO | 16824.99 | labelled | -39.49 | DCC | 22790.67 | pending | None |  |
-| 20261113T215832 | RED | SPEED | 42962.22 | pending | None | PINO | 45008.13 | pending | None |  |
-| 20261113T215832 | RED | BTC2 | 36876.19 | pending | None | PINO | 45008.13 | pending | None |  |
-| 20261113T215832 | RED | WISHMAS | 26958.55 | pending | None | ADC | 21300.31 | pending | None |  |
-| 20261113T215832 | RED | securititt | 23586.91 | pending | None | ADC | 21300.31 | pending | None |  |
-| 20261113T215832 | RED | CWW | 15186.23 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T215832 | RED | SPEED | 42962.22 | labelled | 37.34 | PINO | 45008.13 | labelled | -3.81 |  |
+| 20261113T215832 | RED | BTC2 | 36876.19 | labelled | 37.26 | PINO | 45008.13 | labelled | -3.81 |  |
+| 20261113T215832 | RED | WISHMAS | 26958.55 | labelled | -45.04 | ADC | 21300.31 | pending | None |  |
+| 20261113T215832 | RED | securititt | 23586.91 | unknown | None | ADC | 21300.31 | pending | None |  |
+| 20261113T215832 | RED | CWW | 15186.23 | labelled | -54.85 |  |  |  | None | comparators used twice |
 | 20261113T225831 | RED | CSI | 62184.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | PEACEFROG | 35820.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | securititty | 26567.19 | pending | None |  |  |  | None | no eligible comparator |
@@ -748,3 +748,6 @@
 | 20261113T225831 | RED | CSI | 23232.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | AURA | 21034.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | WWZ | 17032.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T235830 | RED | NIO | 98105.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T235830 | RED | BLACKOUT | 23155.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T235830 | RED | SCH | 17116.96 | pending | None |  |  |  | None | no eligible comparator |
