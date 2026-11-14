@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 187 |
-| sightings | 11064 |
-| liquid sightings | 4486 |
-| first liquid sightings = unique tokens with an outcome row | 978 |
-|   young | 692 |
+| eval-2 scans | 188 |
+| sightings | 11130 |
+| liquid sightings | 4510 |
+| first liquid sightings = unique tokens with an outcome row | 982 |
+|   young | 696 |
 |   mature | 242 |
 |   other | 44 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 582 |
+| young without a comparator | 586 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 531/692, no_valid_entry 27/692, pending 6/692, unknown 97/692, unreliable 31/692
+- young: labelled 534/696, no_valid_entry 27/696, pending 7/696, unknown 97/696, unreliable 31/696
 - mature: labelled 225/242, unknown 17/242
-- no valid entry: young 27/692, mature 0/242
+- no valid entry: young 27/696, mature 0/242
 
 ## Effect (after costs; unit = scan)
 
@@ -770,9 +770,13 @@
 | 20261114T075823 | RED | CLIPPY | 32201.98 | labelled | -54.27 |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | JENSEN | 32039.95 | labelled | 37.18 |  |  |  | None | no eligible comparator |
 | 20261114T075823 | RED | SCRAP | 25774.92 | labelled | -28.09 |  |  |  | None | no eligible comparator |
-| 20261114T085823 | RED | VICECITY | 26975.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | VICECITY | 26975.18 | labelled | 37.06 |  |  |  | None | no eligible comparator |
 | 20261114T085823 | RED | nCAT | 23722.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T085823 | RED | SCRAP | 20753.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T085823 | RED | FUND | 18205.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | SCRAP | 20753.66 | labelled | -32.3 |  |  |  | None | no eligible comparator |
+| 20261114T085823 | RED | FUND | 18205.88 | labelled | -33.92 |  |  |  | None | no eligible comparator |
 | 20261114T095822 | RED | Avatars | 19754.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T095822 | RED | Avatars | 18501.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T105821 | RED | GTA$ | 36848.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T105821 | RED | LGND | 34984.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T105821 | RED | JENSEN | 23359.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T105821 | RED | MORNING | 15238.13 | pending | None |  |  |  | None | no eligible comparator |
