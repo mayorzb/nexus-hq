@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 178 |
-| sightings | 10490 |
-| liquid sightings | 4287 |
-| first liquid sightings = unique tokens with an outcome row | 950 |
-|   young | 667 |
+| eval-2 scans | 179 |
+| sightings | 10556 |
+| liquid sightings | 4310 |
+| first liquid sightings = unique tokens with an outcome row | 954 |
+|   young | 671 |
 |   mature | 240 |
 |   other | 43 |
 | young with a comparator (cap 2) | 110 |
-| young without a comparator | 557 |
+| young without a comparator | 561 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
 |   pairs: young or mature outcome not yet usable | 37 |
 | complete pairs (both 60m outcomes labelled) | 68 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 515/667, no_valid_entry 24/667, pending 4/667, unknown 93/667, unreliable 31/667
-- mature: labelled 222/240, pending 3/240, unknown 15/240
-- no valid entry: young 24/667, mature 0/240
+- young: labelled 517/671, no_valid_entry 24/671, pending 5/671, unknown 94/671, unreliable 31/671
+- mature: labelled 223/240, pending 2/240, unknown 15/240
+- no valid entry: young 24/671, mature 0/240
 
 ## Effect (after costs; unit = scan)
 
@@ -730,7 +730,7 @@
 | 20261113T195833 | RED | AMC | 101128.07 | labelled | 37.6 |  |  |  | None | no eligible comparator |
 | 20261113T195833 | RED | LUCIA | 26858.31 | labelled | -66.67 | Sakura | 18139.00 | labelled | -29.59 |  |
 | 20261113T195833 | RED | punchhao | 22413.68 | labelled | -70.32 | Sakura | 18139.00 | labelled | -29.59 |  |
-| 20261113T195833 | RED | b | 17116.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261113T195833 | RED | b | 17116.12 | unknown | None |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | POOR | 17020.45 | labelled | 36.63 |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | b | 16919.93 | unknown | None |  |  |  | None | comparators used twice |
 | 20261113T195833 | RED | ALO | 16880.57 | labelled | -100.0 |  |  |  | None | comparators used twice |
@@ -749,5 +749,9 @@
 | 20261113T225831 | RED | AURA | 21034.04 | labelled | -33.59 |  |  |  | None | no eligible comparator |
 | 20261113T225831 | RED | WWZ | 17032.80 | labelled | -33.7 |  |  |  | None | no eligible comparator |
 | 20261113T235830 | RED | NIO | 98105.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T235830 | RED | BLACKOUT | 23155.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261113T235830 | RED | SCH | 17116.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261113T235830 | RED | BLACKOUT | 23155.24 | labelled | 7.99 |  |  |  | None | no eligible comparator |
+| 20261113T235830 | RED | SCH | 17116.96 | labelled | -62.04 |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | JENSEN | 64723.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | SUNBUCK | 17133.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | CHAOS | 16958.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T015829 | RED | COINSIDE | 15487.40 | pending | None |  |  |  | None | no eligible comparator |
