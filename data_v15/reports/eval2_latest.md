@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 196 |
-| sightings | 11616 |
-| liquid sightings | 4699 |
-| first liquid sightings = unique tokens with an outcome row | 1007 |
-|   young | 713 |
+| eval-2 scans | 197 |
+| sightings | 11673 |
+| liquid sightings | 4723 |
+| first liquid sightings = unique tokens with an outcome row | 1010 |
+|   young | 716 |
 |   mature | 247 |
 |   other | 47 |
 | young with a comparator (cap 2) | 115 |
-| young without a comparator | 598 |
+| young without a comparator | 601 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 40 |
-| complete pairs (both 60m outcomes labelled) | 70 |
-| scans contributing a complete pair | 44 |
+|   pairs: young or mature outcome not yet usable | 38 |
+| complete pairs (both 60m outcomes labelled) | 72 |
+| scans contributing a complete pair | 45 |
 
 ## 60m outcome status by group
 
-- young: labelled 547/713, no_valid_entry 27/713, pending 4/713, unknown 104/713, unreliable 31/713
-- mature: labelled 228/247, pending 2/247, unknown 17/247
-- no valid entry: young 27/713, mature 0/247
+- young: labelled 549/716, no_valid_entry 27/716, pending 5/716, unknown 104/716, unreliable 31/716
+- mature: labelled 230/247, unknown 17/247
+- no valid entry: young 27/716, mature 0/247
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -30.58 points, 95% interval (-44.67, -16.57); scans with young worse 32/44
-- Pairs with young worse: 50/70 (71.4%); pair mean -27.77, median -29.86
-- Big loss (<= -20%): young 46/70, mature 11/70
+- Scan-level mean difference (young - mature): -29.57 points, 95% interval (-43.24, -16.23); scans with young worse 32/45
+- Pairs with young worse: 51/72 (70.8%); pair mean -26.58, median -29.86
+- Big loss (<= -20%): young 47/72, mature 12/72
 
 ## Comparator reuse (cap 2)
 
@@ -795,6 +795,9 @@
 | 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | labelled | -30.83 |  |  |  | None | no eligible comparator |
 | 20261114T165817 | DEEP_RED | Angel | 30424.58 | labelled | -30.38 |  |  |  | None | no eligible comparator |
-| 20261114T175816 | DEEP_RED | HUMANITY | 30887.70 | pending | None | SHIT | 26238.76 | pending | None |  |
-| 20261114T175816 | DEEP_RED | TRAIN | 15418.40 | pending | None | Woodstock | 25466.81 | pending | None |  |
+| 20261114T175816 | DEEP_RED | HUMANITY | 30887.70 | labelled | -41.25 | SHIT | 26238.76 | labelled | 37.04 |  |
+| 20261114T175816 | DEEP_RED | TRAIN | 15418.40 | labelled | 7.85 | Woodstock | 25466.81 | labelled | -100.0 |  |
 | 20261114T185816 | DEEP_RED | capy | 19208.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T195815 | DEEP_RED | bill | 32307.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T195815 | DEEP_RED | GTAification | 20241.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | pending | None |  |  |  | None | no eligible comparator |
