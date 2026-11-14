@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 192 |
-| sightings | 11379 |
-| liquid sightings | 4608 |
-| first liquid sightings = unique tokens with an outcome row | 997 |
-|   young | 707 |
+| eval-2 scans | 193 |
+| sightings | 11437 |
+| liquid sightings | 4632 |
+| first liquid sightings = unique tokens with an outcome row | 1000 |
+|   young | 709 |
 |   mature | 245 |
-|   other | 45 |
+|   other | 46 |
 | young with a comparator (cap 2) | 113 |
-| young without a comparator | 594 |
+| young without a comparator | 596 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 39 |
-| complete pairs (both 60m outcomes labelled) | 69 |
-| scans contributing a complete pair | 43 |
+|   pairs: young or mature outcome not yet usable | 38 |
+| complete pairs (both 60m outcomes labelled) | 70 |
+| scans contributing a complete pair | 44 |
 
 ## 60m outcome status by group
 
-- young: labelled 542/707, no_valid_entry 27/707, pending 8/707, unknown 99/707, unreliable 31/707
-- mature: labelled 226/245, pending 2/245, unknown 17/245
-- no valid entry: young 27/707, mature 0/245
+- young: labelled 544/709, no_valid_entry 27/709, pending 8/709, unknown 99/709, unreliable 31/709
+- mature: labelled 228/245, unknown 17/245
+- no valid entry: young 27/709, mature 0/245
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.67 points, 95% interval (-43.79, -15.35); scans with young worse 31/43
-- Pairs with young worse: 49/69 (71.0%); pair mean -27.16, median -29.72
-- Big loss (<= -20%): young 45/69, mature 10/69
+- Scan-level mean difference (young - mature): -30.58 points, 95% interval (-44.67, -16.57); scans with young worse 32/44
+- Pairs with young worse: 50/70 (71.4%); pair mean -27.77, median -29.86
+- Big loss (<= -20%): young 46/70, mature 11/70
 
 ## Comparator reuse (cap 2)
 
@@ -788,7 +788,9 @@
 | 20261114T125819 | RED | GTA$ | 30900.18 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | INU | 22108.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T125819 | RED | DYC | 15029.02 | labelled | -48.08 |  |  |  | None | no eligible comparator |
-| 20261114T135818 | DEEP_RED | Axiom | 31431.33 | pending | None | greg | 42241.44 | pending | None |  |
-| 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T135818 | DEEP_RED | Axiom | 31431.33 | labelled | -100.0 | greg | 42241.44 | labelled | -30.48 |  |
+| 20261114T135818 | DEEP_RED | ZAPZEKE | 19201.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | VI | 25451.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T145818 | DEEP_RED | SLIDES | 20987.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T155818 | DEEP_RED | BABYELON | 59664.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T155818 | DEEP_RED | YoungBull | 21341.10 | pending | None |  |  |  | None | no eligible comparator |
