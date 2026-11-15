@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 213 |
-| sightings | 12688 |
-| liquid sightings | 5116 |
+| eval-2 scans | 214 |
+| sightings | 12748 |
+| liquid sightings | 5135 |
 | first liquid sightings = unique tokens with an outcome row | 1061 |
 |   young | 755 |
 |   mature | 257 |
@@ -22,8 +22,8 @@
 
 ## 60m outcome status by group
 
-- young: labelled 579/755, no_valid_entry 31/755, pending 2/755, unknown 111/755, unreliable 32/755
-- mature: labelled 236/257, pending 2/257, unknown 19/257
+- young: labelled 579/755, no_valid_entry 31/755, pending 1/755, unknown 111/755, unreliable 33/755
+- mature: labelled 237/257, pending 1/257, unknown 19/257
 - no valid entry: young 31/755, mature 0/257
 
 ## Effect (after costs; unit = scan)
@@ -844,4 +844,4 @@
 | 20261115T095803 | RED | freg | 40570.99 | labelled | -51.12 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17244.49 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17103.69 | labelled | 36.64 |  |  |  | None | no eligible comparator |
-| 20261115T105802 | RED | UODF | 30591.98 | pending | None | poorcat | 18969.46 | pending | None |  |
+| 20261115T105802 | RED | UODF | 30591.98 | unreliable | None | poorcat | 18969.46 | labelled | 36.75 |  |
