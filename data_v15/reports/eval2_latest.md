@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 211 |
-| sightings | 12564 |
-| liquid sightings | 5073 |
-| first liquid sightings = unique tokens with an outcome row | 1058 |
-|   young | 754 |
-|   mature | 255 |
+| eval-2 scans | 212 |
+| sightings | 12627 |
+| liquid sightings | 5095 |
+| first liquid sightings = unique tokens with an outcome row | 1060 |
+|   young | 755 |
+|   mature | 256 |
 |   other | 49 |
-| young with a comparator (cap 2) | 125 |
+| young with a comparator (cap 2) | 126 |
 | young without a comparator | 629 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 43 |
-| complete pairs (both 60m outcomes labelled) | 76 |
-| scans contributing a complete pair | 48 |
+| complete pairs (both 60m outcomes labelled) | 77 |
+| scans contributing a complete pair | 49 |
 
 ## 60m outcome status by group
 
-- young: labelled 575/754, no_valid_entry 31/754, pending 5/754, unknown 111/754, unreliable 32/754
-- mature: labelled 234/255, pending 3/255, unknown 18/255
-- no valid entry: young 31/754, mature 0/255
+- young: labelled 576/755, no_valid_entry 31/755, pending 5/755, unknown 111/755, unreliable 32/755
+- mature: labelled 236/256, pending 2/256, unknown 18/256
+- no valid entry: young 31/755, mature 0/256
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -30.09 points, 95% interval (-43.42, -17.18); scans with young worse 34/48
-- Pairs with young worse: 54/76 (71.1%); pair mean -26.97, median -28.69
-- Big loss (<= -20%): young 50/76, mature 13/76
+- Scan-level mean difference (young - mature): -30.82 points, 95% interval (-44.27, -18.57); scans with young worse 35/49
+- Pairs with young worse: 55/77 (71.4%); pair mean -27.47, median -29.72
+- Big loss (<= -20%): young 51/77, mature 14/77
 
 ## Comparator reuse (cap 2)
 
@@ -839,8 +839,9 @@
 | 20261115T065805 | DEEP_RED | HOGE | 22394.85 | labelled | 36.91 |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | bill | 17670.66 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T075805 | DEEP_RED | ORBO | 33617.90 | labelled | 37.21 |  |  |  | None | no eligible comparator |
-| 20261115T085804 | RED | stur | 30348.46 | pending | None | FUTA | 25560.18 | pending | None |  |
-| 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | pending | None |  |
+| 20261115T085804 | RED | stur | 30348.46 | labelled | -100.0 | FUTA | 25560.18 | labelled | -34.45 |  |
+| 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | labelled | -34.45 |  |
 | 20261115T095803 | RED | freg | 40570.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17244.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17103.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T105802 | RED | UODF | 30591.98 | pending | None | poorcat | 18969.46 | pending | None |  |
