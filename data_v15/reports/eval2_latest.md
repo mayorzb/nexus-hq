@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 215 |
-| sightings | 12808 |
-| liquid sightings | 5162 |
-| first liquid sightings = unique tokens with an outcome row | 1069 |
-|   young | 762 |
+| eval-2 scans | 216 |
+| sightings | 12869 |
+| liquid sightings | 5187 |
+| first liquid sightings = unique tokens with an outcome row | 1074 |
+|   young | 767 |
 |   mature | 258 |
 |   other | 49 |
 | young with a comparator (cap 2) | 128 |
-| young without a comparator | 634 |
+| young without a comparator | 639 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 45 |
 | complete pairs (both 60m outcomes labelled) | 77 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 579/762, no_valid_entry 31/762, pending 8/762, unknown 111/762, unreliable 33/762
+- young: labelled 579/767, no_valid_entry 31/767, pending 12/767, unknown 112/767, unreliable 33/767
 - mature: labelled 238/258, pending 1/258, unknown 19/258
-- no valid entry: young 31/762, mature 0/258
+- no valid entry: young 31/767, mature 0/258
 
 ## Effect (after costs; unit = scan)
 
@@ -841,7 +841,7 @@
 | 20261115T065805 | DEEP_RED | bill | 17670.66 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T075805 | DEEP_RED | ORBO | 33617.90 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261115T085804 | RED | stur | 30348.46 | labelled | -100.0 | FUTA | 25560.18 | labelled | -34.45 |  |
-| 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | labelled | -34.45 |  |
+| 20261115T085804 | RED | PAW | 15462.28 | unknown | None | FUTA | 25560.18 | labelled | -34.45 |  |
 | 20261115T095803 | RED | freg | 40570.99 | labelled | -51.12 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17244.49 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17103.69 | labelled | 36.64 |  |  |  | None | no eligible comparator |
@@ -853,3 +853,8 @@
 | 20261115T135759 | RED | PEBL | 17975.05 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 17833.69 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | twert | 17748.34 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T145758 | RED | ANT | 33146.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | UODF | 30202.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | WANTED | 25480.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | Nyajira | 17859.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | afk | 16125.04 | pending | None |  |  |  | None | no eligible comparator |
