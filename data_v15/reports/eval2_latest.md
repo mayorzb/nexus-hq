@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 206 |
-| sightings | 12248 |
-| liquid sightings | 4952 |
-| first liquid sightings = unique tokens with an outcome row | 1042 |
-|   young | 743 |
+| eval-2 scans | 207 |
+| sightings | 12313 |
+| liquid sightings | 4975 |
+| first liquid sightings = unique tokens with an outcome row | 1043 |
+|   young | 744 |
 |   mature | 251 |
 |   other | 48 |
 | young with a comparator (cap 2) | 123 |
-| young without a comparator | 620 |
+| young without a comparator | 621 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 42 |
-| complete pairs (both 60m outcomes labelled) | 75 |
-| scans contributing a complete pair | 47 |
+|   pairs: young or mature outcome not yet usable | 41 |
+| complete pairs (both 60m outcomes labelled) | 76 |
+| scans contributing a complete pair | 48 |
 
 ## 60m outcome status by group
 
-- young: labelled 566/743, no_valid_entry 30/743, pending 8/743, unknown 108/743, unreliable 31/743
-- mature: labelled 232/251, pending 2/251, unknown 17/251
-- no valid entry: young 30/743, mature 0/251
+- young: labelled 567/744, no_valid_entry 30/744, pending 8/744, unknown 108/744, unreliable 31/744
+- mature: labelled 233/251, pending 1/251, unknown 17/251
+- no valid entry: young 30/744, mature 0/251
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.72 points, 95% interval (-42.46, -15.33); scans with young worse 33/47
-- Pairs with young worse: 53/75 (70.7%); pair mean -26.07, median -27.66
-- Big loss (<= -20%): young 49/75, mature 13/75
+- Scan-level mean difference (young - mature): -30.09 points, 95% interval (-43.42, -17.18); scans with young worse 34/48
+- Pairs with young worse: 54/76 (71.1%); pair mean -26.97, median -28.69
+- Big loss (<= -20%): young 50/76, mature 13/76
 
 ## Comparator reuse (cap 2)
 
@@ -826,9 +826,10 @@
 | 20261115T015809 | DEEP_RED | worth | 15045.52 | labelled | 36.48 |  |  |  | None | comparators used twice |
 | 20261115T025808 | DEEP_RED | FIE | 47278.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T025808 | DEEP_RED | VALOR | 30289.19 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261115T035807 | RED | JASON | 40093.54 | pending | None | SQUISHY | 24843.19 | pending | None |  |
-| 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | pending | None |  |
+| 20261115T035807 | RED | JASON | 40093.54 | labelled | -100.0 | SQUISHY | 24843.19 | labelled | -5.42 |  |
+| 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | labelled | -5.42 |  |
 | 20261115T045806 | RED | PELI | 21717.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | PANICSELL | 20473.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | upcat | 18581.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | MIL | 16726.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T055806 | DEEP_RED | DOGE | 21261.81 | pending | None |  |  |  | None | no eligible comparator |
