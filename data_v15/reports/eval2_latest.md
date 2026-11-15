@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 221 |
-| sightings | 13171 |
-| liquid sightings | 5298 |
-| first liquid sightings = unique tokens with an outcome row | 1102 |
-|   young | 787 |
-|   mature | 266 |
+| eval-2 scans | 222 |
+| sightings | 13234 |
+| liquid sightings | 5326 |
+| first liquid sightings = unique tokens with an outcome row | 1113 |
+|   young | 795 |
+|   mature | 269 |
 |   other | 49 |
-| young with a comparator (cap 2) | 132 |
-| young without a comparator | 655 |
+| young with a comparator (cap 2) | 135 |
+| young without a comparator | 660 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 48 |
-| complete pairs (both 60m outcomes labelled) | 78 |
-| scans contributing a complete pair | 50 |
+|   pairs: young or mature outcome not yet usable | 49 |
+| complete pairs (both 60m outcomes labelled) | 80 |
+| scans contributing a complete pair | 51 |
 
 ## 60m outcome status by group
 
-- young: labelled 592/787, no_valid_entry 31/787, pending 12/787, unknown 115/787, unreliable 37/787
-- mature: labelled 241/266, pending 5/266, unknown 20/266
-- no valid entry: young 31/787, mature 0/266
+- young: labelled 594/795, no_valid_entry 31/795, pending 18/795, unknown 115/795, unreliable 37/795
+- mature: labelled 245/269, pending 4/269, unknown 20/269
+- no valid entry: young 31/795, mature 0/269
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -30.12 points, 95% interval (-42.97, -17.68); scans with young worse 35/50
-- Pairs with young worse: 55/78 (70.5%); pair mean -27.07, median -28.69
-- Big loss (<= -20%): young 51/78, mature 14/78
+- Scan-level mean difference (young - mature): -30.08 points, 95% interval (-42.89, -18.01); scans with young worse 36/51
+- Pairs with young worse: 57/80 (71.2%); pair mean -27.09, median -28.69
+- Big loss (<= -20%): young 53/80, mature 15/80
 
 ## Comparator reuse (cap 2)
 
@@ -87,6 +87,7 @@
 - 20261115T085804-8JCsa61h: stur (20261115T085804), PAW (20261115T085804)
 - 20261115T135759-8UqE9m2r: BLG (20261115T135759), rockstar (20261115T135759)
 - 20261115T185755-vxG5ucic: ANSEM (20261115T185755), NINU (20261115T185755)
+- 20261115T205754-6wnMkKcJ: Jacket (20261115T205754), DYC (20261115T205754)
 
 ## Every pair
 
@@ -868,9 +869,9 @@
 | 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261115T175755 | NEUTRAL | UDTF | 104103.18 | labelled | 1.89 | swordcat | 94220.29 | labelled | -2.32 |  |
 | 20261115T175755 | NEUTRAL | BEAR | 29924.56 | labelled | 4.38 |  |  |  | None | no eligible comparator |
-| 20261115T185755 | NEUTRAL | BFS | 36064.31 | pending | None | SWJ | 57641.61 | pending | None |  |
-| 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
-| 20261115T185755 | NEUTRAL | NINU | 15831.90 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
+| 20261115T185755 | NEUTRAL | BFS | 36064.31 | labelled | -30.31 | SWJ | 57641.61 | labelled | 16.46 |  |
+| 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
+| 20261115T185755 | NEUTRAL | NINU | 15831.90 | labelled | -30.94 | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
 | 20261115T195755 | NEUTRAL | Anthropig | 60411.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T195755 | NEUTRAL | ANT | 38687.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T195755 | NEUTRAL | NEX Ai | 32627.95 | pending | None |  |  |  | None | no eligible comparator |
@@ -879,3 +880,11 @@
 | 20261115T195755 | NEUTRAL | NCAT | 18683.51 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T195755 | NEUTRAL | JENSENATOR | 15524.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T195755 | NEUTRAL | Emojis | 15083.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T205754 | NEUTRAL | Emojis | 61001.11 | pending | None | swordcat | 95122.14 | pending | None |  |
+| 20261115T205754 | NEUTRAL | Jacket | 31729.29 | pending | None | paperdog | 16278.07 | pending | None |  |
+| 20261115T205754 | NEUTRAL | DYC | 27034.93 | pending | None | paperdog | 16278.07 | pending | None |  |
+| 20261115T205754 | NEUTRAL | HENSEN | 24970.04 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T205754 | NEUTRAL | rockstar | 24557.21 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T205754 | NEUTRAL | VICE | 24384.17 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T205754 | NEUTRAL | GTA | 21977.43 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T205754 | NEUTRAL | FRANK | 18134.56 | pending | None |  |  |  | None | comparators used twice |
