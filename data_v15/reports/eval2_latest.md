@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 203 |
-| sightings | 12050 |
-| liquid sightings | 4876 |
-| first liquid sightings = unique tokens with an outcome row | 1033 |
-|   young | 735 |
+| eval-2 scans | 204 |
+| sightings | 12117 |
+| liquid sightings | 4901 |
+| first liquid sightings = unique tokens with an outcome row | 1035 |
+|   young | 737 |
 |   mature | 250 |
 |   other | 48 |
 | young with a comparator (cap 2) | 121 |
-| young without a comparator | 614 |
-|   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 42 |
-| complete pairs (both 60m outcomes labelled) | 74 |
-| scans contributing a complete pair | 46 |
+| young without a comparator | 616 |
+|   pairs: young had no valid entry (counted, not scored) | 6 |
+|   pairs: young or mature outcome not yet usable | 40 |
+| complete pairs (both 60m outcomes labelled) | 75 |
+| scans contributing a complete pair | 47 |
 
 ## 60m outcome status by group
 
-- young: labelled 560/735, no_valid_entry 28/735, pending 10/735, unknown 106/735, unreliable 31/735
-- mature: labelled 231/250, pending 2/250, unknown 17/250
-- no valid entry: young 28/735, mature 0/250
+- young: labelled 562/737, no_valid_entry 29/737, pending 9/737, unknown 106/737, unreliable 31/737
+- mature: labelled 232/250, pending 1/250, unknown 17/250
+- no valid entry: young 29/737, mature 0/250
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -29.41 points, 95% interval (-43.39, -16.43); scans with young worse 33/46
-- Pairs with young worse: 53/74 (71.6%); pair mean -26.46, median -28.69
-- Big loss (<= -20%): young 49/74, mature 12/74
+- Scan-level mean difference (young - mature): -28.72 points, 95% interval (-42.46, -15.33); scans with young worse 33/47
+- Pairs with young worse: 53/75 (70.7%); pair mean -26.07, median -27.66
+- Big loss (<= -20%): young 49/75, mature 13/75
 
 ## Comparator reuse (cap 2)
 
@@ -815,11 +815,13 @@
 | 20261114T235811 | DEEP_RED | Bear | 26123.47 | labelled | -34.73 |  |  |  | None | comparators used twice |
 | 20261114T235811 | DEEP_RED | DOJE | 24708.00 | labelled | -31.02 |  |  |  | None | comparators used twice |
 | 20261114T235811 | DEEP_RED | UM | 21195.29 | labelled | -7.15 |  |  |  | None | comparators used twice |
-| 20261115T005810 | DEEP_RED | USDC | 47159.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T005810 | DEEP_RED | HYGG | 41901.98 | pending | None | ATC | 21292.56 | pending | None |  |
-| 20261115T005810 | DEEP_RED | BUSTED | 16599.66 | pending | None | ATC | 21292.56 | pending | None |  |
+| 20261115T005810 | DEEP_RED | USDC | 47159.21 | labelled | -38.52 |  |  |  | None | no eligible comparator |
+| 20261115T005810 | DEEP_RED | HYGG | 41901.98 | labelled | -18.86 | ATC | 21292.56 | labelled | -21.59 |  |
+| 20261115T005810 | DEEP_RED | BUSTED | 16599.66 | no_valid_entry | None | ATC | 21292.56 | labelled | -21.59 |  |
 | 20261115T015809 | DEEP_RED | WANTED | 42555.68 | pending | None | nilf | 26928.87 | pending | None |  |
 | 20261115T015809 | DEEP_RED | AMS | 21529.64 | pending | None | nilf | 26928.87 | pending | None |  |
 | 20261115T015809 | DEEP_RED | DACAT | 20546.10 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | worth | 15045.52 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T025808 | DEEP_RED | FIE | 47278.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T025808 | DEEP_RED | VALOR | 30289.19 | pending | None |  |  |  | None | no eligible comparator |
