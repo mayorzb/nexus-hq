@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 209 |
-| sightings | 12440 |
-| liquid sightings | 5023 |
-| first liquid sightings = unique tokens with an outcome row | 1050 |
-|   young | 749 |
-|   mature | 253 |
-|   other | 48 |
-| young with a comparator (cap 2) | 123 |
+| eval-2 scans | 210 |
+| sightings | 12502 |
+| liquid sightings | 5049 |
+| first liquid sightings = unique tokens with an outcome row | 1055 |
+|   young | 751 |
+|   mature | 255 |
+|   other | 49 |
+| young with a comparator (cap 2) | 125 |
 | young without a comparator | 626 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 41 |
+|   pairs: young or mature outcome not yet usable | 43 |
 | complete pairs (both 60m outcomes labelled) | 76 |
 | scans contributing a complete pair | 48 |
 
 ## 60m outcome status by group
 
-- young: labelled 571/749, no_valid_entry 30/749, pending 7/749, unknown 109/749, unreliable 32/749
-- mature: labelled 233/253, pending 2/253, unknown 18/253
-- no valid entry: young 30/749, mature 0/253
+- young: labelled 574/751, no_valid_entry 31/751, pending 4/751, unknown 110/751, unreliable 32/751
+- mature: labelled 233/255, pending 4/255, unknown 18/255
+- no valid entry: young 31/751, mature 0/255
 
 ## Effect (after costs; unit = scan)
 
@@ -84,6 +84,7 @@
 - 20261115T005810-2L9RzqPS: HYGG (20261115T005810), BUSTED (20261115T005810)
 - 20261115T015809-ABgXjaJ3: WANTED (20261115T015809), AMS (20261115T015809)
 - 20261115T035807-7VQrzR5a: JASON (20261115T035807), penny (20261115T035807)
+- 20261115T085804-8JCsa61h: stur (20261115T085804), PAW (20261115T085804)
 
 ## Every pair
 
@@ -824,7 +825,7 @@
 | 20261115T015809 | DEEP_RED | DACAT | 20546.10 | labelled | -33.14 |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | labelled | -55.47 |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | worth | 15045.52 | labelled | 36.48 |  |  |  | None | comparators used twice |
-| 20261115T025808 | DEEP_RED | FIE | 47278.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T025808 | DEEP_RED | FIE | 47278.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261115T025808 | DEEP_RED | VALOR | 30289.19 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T035807 | RED | JASON | 40093.54 | labelled | -100.0 | SQUISHY | 24843.19 | labelled | -5.42 |  |
 | 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | labelled | -5.42 |  |
@@ -833,8 +834,10 @@
 | 20261115T045806 | RED | upcat | 18581.80 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | MIL | 16726.62 | labelled | -31.11 |  |  |  | None | no eligible comparator |
 | 20261115T055806 | DEEP_RED | DOGE | 21261.81 | labelled | -92.66 |  |  |  | None | no eligible comparator |
-| 20261115T065805 | DEEP_RED | GTA | 26363.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T065805 | DEEP_RED | Chick | 24302.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T065805 | DEEP_RED | HOGE | 22394.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T065805 | DEEP_RED | bill | 17670.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | GTA | 26363.27 | labelled | 11.76 |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | Chick | 24302.84 | labelled | -43.34 |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | HOGE | 22394.85 | labelled | 36.91 |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | bill | 17670.66 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T075805 | DEEP_RED | ORBO | 33617.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T085804 | RED | stur | 30348.46 | pending | None | FUTA | 25560.18 | pending | None |  |
+| 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | pending | None |  |
