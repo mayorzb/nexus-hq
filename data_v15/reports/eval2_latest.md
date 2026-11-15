@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 212 |
-| sightings | 12627 |
-| liquid sightings | 5095 |
-| first liquid sightings = unique tokens with an outcome row | 1060 |
+| eval-2 scans | 213 |
+| sightings | 12688 |
+| liquid sightings | 5116 |
+| first liquid sightings = unique tokens with an outcome row | 1061 |
 |   young | 755 |
-|   mature | 256 |
+|   mature | 257 |
 |   other | 49 |
 | young with a comparator (cap 2) | 126 |
 | young without a comparator | 629 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 576/755, no_valid_entry 31/755, pending 5/755, unknown 111/755, unreliable 32/755
-- mature: labelled 236/256, pending 2/256, unknown 18/256
-- no valid entry: young 31/755, mature 0/256
+- young: labelled 579/755, no_valid_entry 31/755, pending 2/755, unknown 111/755, unreliable 32/755
+- mature: labelled 236/257, pending 2/257, unknown 19/257
+- no valid entry: young 31/755, mature 0/257
 
 ## Effect (after costs; unit = scan)
 
@@ -841,7 +841,7 @@
 | 20261115T075805 | DEEP_RED | ORBO | 33617.90 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261115T085804 | RED | stur | 30348.46 | labelled | -100.0 | FUTA | 25560.18 | labelled | -34.45 |  |
 | 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | labelled | -34.45 |  |
-| 20261115T095803 | RED | freg | 40570.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T095803 | RED | Socks | 17244.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T095803 | RED | Socks | 17103.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T095803 | RED | freg | 40570.99 | labelled | -51.12 |  |  |  | None | no eligible comparator |
+| 20261115T095803 | RED | Socks | 17244.49 | labelled | 36.65 |  |  |  | None | no eligible comparator |
+| 20261115T095803 | RED | Socks | 17103.69 | labelled | 36.64 |  |  |  | None | no eligible comparator |
 | 20261115T105802 | RED | UODF | 30591.98 | pending | None | poorcat | 18969.46 | pending | None |  |
