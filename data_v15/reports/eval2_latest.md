@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 200 |
-| sightings | 11857 |
-| liquid sightings | 4791 |
-| first liquid sightings = unique tokens with an outcome row | 1017 |
-|   young | 722 |
-|   mature | 247 |
+| eval-2 scans | 201 |
+| sightings | 11924 |
+| liquid sightings | 4818 |
+| first liquid sightings = unique tokens with an outcome row | 1023 |
+|   young | 727 |
+|   mature | 248 |
 |   other | 48 |
-| young with a comparator (cap 2) | 115 |
-| young without a comparator | 607 |
+| young with a comparator (cap 2) | 117 |
+| young without a comparator | 610 |
 |   pairs: young had no valid entry (counted, not scored) | 5 |
-|   pairs: young or mature outcome not yet usable | 38 |
+|   pairs: young or mature outcome not yet usable | 40 |
 | complete pairs (both 60m outcomes labelled) | 72 |
 | scans contributing a complete pair | 45 |
 
 ## 60m outcome status by group
 
-- young: labelled 552/722, no_valid_entry 27/722, pending 7/722, unknown 105/722, unreliable 31/722
-- mature: labelled 230/247, unknown 17/247
-- no valid entry: young 27/722, mature 0/247
+- young: labelled 553/727, no_valid_entry 28/727, pending 10/727, unknown 105/727, unreliable 31/727
+- mature: labelled 230/248, pending 1/248, unknown 17/248
+- no valid entry: young 28/727, mature 0/248
 
 ## Effect (after costs; unit = scan)
 
@@ -80,6 +80,7 @@
 - 20261113T215832-6d9fD5Sx: SPEED (20261113T215832), BTC2 (20261113T215832)
 - 20261113T215832-DaL9WdYD: WISHMAS (20261113T215832), securititt (20261113T215832)
 - 20261114T115820-Gta6uoek: Mar1o (20261114T115820), DCYC (20261114T115820)
+- 20261114T235811-7R3RnGmp: RWA (20261114T235811), SWIF (20261114T235811)
 
 ## Every pair
 
@@ -801,9 +802,14 @@
 | 20261114T195815 | DEEP_RED | bill | 32307.95 | labelled | -35.22 |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | GTAification | 20241.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | labelled | 36.75 |  |  |  | None | no eligible comparator |
-| 20261114T215813 | DEEP_RED | SEET | 16409.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261114T215813 | DEEP_RED | SEET | 15920.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | SEET | 16409.46 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | SEET | 15920.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | greg | 15396.89 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | LUCIA | 25493.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | Grok5 | 17803.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | CYBER | 15306.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T235811 | DEEP_RED | RWA | 26745.41 | pending | None | NUREMBERG | 22194.97 | pending | None |  |
+| 20261114T235811 | DEEP_RED | SWIF | 26172.33 | pending | None | NUREMBERG | 22194.97 | pending | None |  |
+| 20261114T235811 | DEEP_RED | Bear | 26123.47 | pending | None |  |  |  | None | comparators used twice |
+| 20261114T235811 | DEEP_RED | DOJE | 24708.00 | pending | None |  |  |  | None | comparators used twice |
+| 20261114T235811 | DEEP_RED | UM | 21195.29 | pending | None |  |  |  | None | comparators used twice |
