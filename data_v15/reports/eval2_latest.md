@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 214 |
-| sightings | 12748 |
-| liquid sightings | 5135 |
-| first liquid sightings = unique tokens with an outcome row | 1061 |
-|   young | 755 |
-|   mature | 257 |
+| eval-2 scans | 215 |
+| sightings | 12808 |
+| liquid sightings | 5162 |
+| first liquid sightings = unique tokens with an outcome row | 1069 |
+|   young | 762 |
+|   mature | 258 |
 |   other | 49 |
-| young with a comparator (cap 2) | 126 |
-| young without a comparator | 629 |
+| young with a comparator (cap 2) | 128 |
+| young without a comparator | 634 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 43 |
+|   pairs: young or mature outcome not yet usable | 45 |
 | complete pairs (both 60m outcomes labelled) | 77 |
 | scans contributing a complete pair | 49 |
 
 ## 60m outcome status by group
 
-- young: labelled 579/755, no_valid_entry 31/755, pending 1/755, unknown 111/755, unreliable 33/755
-- mature: labelled 237/257, pending 1/257, unknown 19/257
-- no valid entry: young 31/755, mature 0/257
+- young: labelled 579/762, no_valid_entry 31/762, pending 8/762, unknown 111/762, unreliable 33/762
+- mature: labelled 238/258, pending 1/258, unknown 19/258
+- no valid entry: young 31/762, mature 0/258
 
 ## Effect (after costs; unit = scan)
 
@@ -85,6 +85,7 @@
 - 20261115T015809-ABgXjaJ3: WANTED (20261115T015809), AMS (20261115T015809)
 - 20261115T035807-7VQrzR5a: JASON (20261115T035807), penny (20261115T035807)
 - 20261115T085804-8JCsa61h: stur (20261115T085804), PAW (20261115T085804)
+- 20261115T135759-8UqE9m2r: BLG (20261115T135759), rockstar (20261115T135759)
 
 ## Every pair
 
@@ -845,3 +846,10 @@
 | 20261115T095803 | RED | Socks | 17244.49 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17103.69 | labelled | 36.64 |  |  |  | None | no eligible comparator |
 | 20261115T105802 | RED | UODF | 30591.98 | unreliable | None | poorcat | 18969.46 | labelled | 36.75 |  |
+| 20261115T135759 | RED | BLG | 32576.31 | pending | None | DOUG | 27455.94 | pending | None |  |
+| 20261115T135759 | RED | rockstar | 27950.95 | pending | None | DOUG | 27455.94 | pending | None |  |
+| 20261115T135759 | RED | DYC | 24666.28 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | PEBL | 19720.91 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | PEBL | 17975.05 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | PEBL | 17833.69 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | twert | 17748.34 | pending | None |  |  |  | None | comparators used twice |
