@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 205 |
-| sightings | 12184 |
-| liquid sightings | 4926 |
-| first liquid sightings = unique tokens with an outcome row | 1038 |
-|   young | 739 |
+| eval-2 scans | 206 |
+| sightings | 12248 |
+| liquid sightings | 4952 |
+| first liquid sightings = unique tokens with an outcome row | 1042 |
+|   young | 743 |
 |   mature | 251 |
 |   other | 48 |
 | young with a comparator (cap 2) | 123 |
-| young without a comparator | 616 |
+| young without a comparator | 620 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 42 |
 | complete pairs (both 60m outcomes labelled) | 75 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 566/739, no_valid_entry 29/739, pending 6/739, unknown 107/739, unreliable 31/739
+- young: labelled 566/743, no_valid_entry 30/743, pending 8/743, unknown 108/743, unreliable 31/743
 - mature: labelled 232/251, pending 2/251, unknown 17/251
-- no valid entry: young 29/739, mature 0/251
+- no valid entry: young 30/743, mature 0/251
 
 ## Effect (after costs; unit = scan)
 
@@ -809,7 +809,7 @@
 | 20261114T215813 | DEEP_RED | SEET | 15920.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | greg | 15396.89 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | LUCIA | 25493.26 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261114T225812 | DEEP_RED | Grok5 | 17803.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T225812 | DEEP_RED | Grok5 | 17803.53 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | CYBER | 15306.16 | labelled | -32.98 |  |  |  | None | no eligible comparator |
 | 20261114T235811 | DEEP_RED | RWA | 26745.41 | labelled | -32.87 | NUREMBERG | 22194.97 | labelled | -8.56 |  |
 | 20261114T235811 | DEEP_RED | SWIF | 26172.33 | labelled | -28.1 | NUREMBERG | 22194.97 | labelled | -8.56 |  |
@@ -825,6 +825,10 @@
 | 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | labelled | -55.47 |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | worth | 15045.52 | labelled | 36.48 |  |  |  | None | comparators used twice |
 | 20261115T025808 | DEEP_RED | FIE | 47278.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T025808 | DEEP_RED | VALOR | 30289.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T025808 | DEEP_RED | VALOR | 30289.19 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T035807 | RED | JASON | 40093.54 | pending | None | SQUISHY | 24843.19 | pending | None |  |
 | 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | pending | None |  |
+| 20261115T045806 | RED | PELI | 21717.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | PANICSELL | 20473.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | upcat | 18581.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | MIL | 16726.62 | pending | None |  |  |  | None | no eligible comparator |
