@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 220 |
-| sightings | 13109 |
-| liquid sightings | 5271 |
-| first liquid sightings = unique tokens with an outcome row | 1093 |
-|   young | 779 |
-|   mature | 265 |
+| eval-2 scans | 221 |
+| sightings | 13171 |
+| liquid sightings | 5298 |
+| first liquid sightings = unique tokens with an outcome row | 1102 |
+|   young | 787 |
+|   mature | 266 |
 |   other | 49 |
 | young with a comparator (cap 2) | 132 |
-| young without a comparator | 647 |
+| young without a comparator | 655 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 49 |
-| complete pairs (both 60m outcomes labelled) | 77 |
-| scans contributing a complete pair | 49 |
+|   pairs: young or mature outcome not yet usable | 48 |
+| complete pairs (both 60m outcomes labelled) | 78 |
+| scans contributing a complete pair | 50 |
 
 ## 60m outcome status by group
 
-- young: labelled 590/779, no_valid_entry 31/779, pending 8/779, unknown 113/779, unreliable 37/779
-- mature: labelled 239/265, pending 7/265, unknown 19/265
-- no valid entry: young 31/779, mature 0/265
+- young: labelled 592/787, no_valid_entry 31/787, pending 12/787, unknown 115/787, unreliable 37/787
+- mature: labelled 241/266, pending 5/266, unknown 20/266
+- no valid entry: young 31/787, mature 0/266
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -30.82 points, 95% interval (-44.27, -18.57); scans with young worse 35/49
-- Pairs with young worse: 55/77 (71.4%); pair mean -27.47, median -29.72
-- Big loss (<= -20%): young 51/77, mature 14/77
+- Scan-level mean difference (young - mature): -30.12 points, 95% interval (-42.97, -17.68); scans with young worse 35/50
+- Pairs with young worse: 55/78 (70.5%); pair mean -27.07, median -28.69
+- Big loss (<= -20%): young 51/78, mature 14/78
 
 ## Comparator reuse (cap 2)
 
@@ -847,13 +847,13 @@
 | 20261115T095803 | RED | Socks | 17244.49 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261115T095803 | RED | Socks | 17103.69 | labelled | 36.64 |  |  |  | None | no eligible comparator |
 | 20261115T105802 | RED | UODF | 30591.98 | unreliable | None | poorcat | 18969.46 | labelled | 36.75 |  |
-| 20261115T135759 | RED | BLG | 32576.31 | unreliable | None | DOUG | 27455.94 | pending | None |  |
-| 20261115T135759 | RED | rockstar | 27950.95 | pending | None | DOUG | 27455.94 | pending | None |  |
+| 20261115T135759 | RED | BLG | 32576.31 | unreliable | None | DOUG | 27455.94 | unknown | None |  |
+| 20261115T135759 | RED | rockstar | 27950.95 | unknown | None | DOUG | 27455.94 | unknown | None |  |
 | 20261115T135759 | RED | DYC | 24666.28 | unknown | None |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 19720.91 | labelled | -46.32 |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 17975.05 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 17833.69 | unreliable | None |  |  |  | None | comparators used twice |
-| 20261115T135759 | RED | twert | 17748.34 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | twert | 17748.34 | unknown | None |  |  |  | None | comparators used twice |
 | 20261115T145758 | RED | ANT | 33146.58 | labelled | 37.2 |  |  |  | None | no eligible comparator |
 | 20261115T145758 | RED | UODF | 30202.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261115T145758 | RED | WANTED | 25480.51 | labelled | -35.88 |  |  |  | None | no eligible comparator |
@@ -866,8 +866,16 @@
 | 20261115T165756 | NEUTRAL | anthropig | 29769.22 | labelled | -35.3 |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | SCRVAN | 23523.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261115T175755 | NEUTRAL | UDTF | 104103.18 | pending | None | swordcat | 94220.29 | pending | None |  |
-| 20261115T175755 | NEUTRAL | BEAR | 29924.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T175755 | NEUTRAL | UDTF | 104103.18 | labelled | 1.89 | swordcat | 94220.29 | labelled | -2.32 |  |
+| 20261115T175755 | NEUTRAL | BEAR | 29924.56 | labelled | 4.38 |  |  |  | None | no eligible comparator |
 | 20261115T185755 | NEUTRAL | BFS | 36064.31 | pending | None | SWJ | 57641.61 | pending | None |  |
 | 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
 | 20261115T185755 | NEUTRAL | NINU | 15831.90 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
+| 20261115T195755 | NEUTRAL | Anthropig | 60411.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | ANT | 38687.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | NEX Ai | 32627.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | JENSENATOR | 29859.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | ANT | 29207.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | NCAT | 18683.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | JENSENATOR | 15524.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | Emojis | 15083.60 | pending | None |  |  |  | None | no eligible comparator |
