@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 222 |
-| sightings | 13234 |
-| liquid sightings | 5326 |
-| first liquid sightings = unique tokens with an outcome row | 1113 |
-|   young | 795 |
-|   mature | 269 |
+| eval-2 scans | 223 |
+| sightings | 13299 |
+| liquid sightings | 5349 |
+| first liquid sightings = unique tokens with an outcome row | 1119 |
+|   young | 799 |
+|   mature | 271 |
 |   other | 49 |
-| young with a comparator (cap 2) | 135 |
-| young without a comparator | 660 |
+| young with a comparator (cap 2) | 136 |
+| young without a comparator | 663 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 49 |
+|   pairs: young or mature outcome not yet usable | 50 |
 | complete pairs (both 60m outcomes labelled) | 80 |
 | scans contributing a complete pair | 51 |
 
 ## 60m outcome status by group
 
-- young: labelled 594/795, no_valid_entry 31/795, pending 18/795, unknown 115/795, unreliable 37/795
-- mature: labelled 245/269, pending 4/269, unknown 20/269
-- no valid entry: young 31/795, mature 0/269
+- young: labelled 601/799, no_valid_entry 32/799, pending 14/799, unknown 115/799, unreliable 37/799
+- mature: labelled 246/271, pending 5/271, unknown 20/271
+- no valid entry: young 32/799, mature 0/271
 
 ## Effect (after costs; unit = scan)
 
@@ -872,14 +872,14 @@
 | 20261115T185755 | NEUTRAL | BFS | 36064.31 | labelled | -30.31 | SWJ | 57641.61 | labelled | 16.46 |  |
 | 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
 | 20261115T185755 | NEUTRAL | NINU | 15831.90 | labelled | -30.94 | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
-| 20261115T195755 | NEUTRAL | Anthropig | 60411.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | ANT | 38687.20 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | NEX Ai | 32627.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | JENSENATOR | 29859.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | ANT | 29207.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | NCAT | 18683.51 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | JENSENATOR | 15524.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T195755 | NEUTRAL | Emojis | 15083.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | Anthropig | 60411.93 | labelled | -12.76 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | ANT | 38687.20 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | NEX Ai | 32627.95 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | JENSENATOR | 29859.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | ANT | 29207.01 | labelled | -47.5 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | NCAT | 18683.51 | labelled | 36.74 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | JENSENATOR | 15524.32 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T195755 | NEUTRAL | Emojis | 15083.60 | labelled | 36.48 |  |  |  | None | no eligible comparator |
 | 20261115T205754 | NEUTRAL | Emojis | 61001.11 | pending | None | swordcat | 95122.14 | pending | None |  |
 | 20261115T205754 | NEUTRAL | Jacket | 31729.29 | pending | None | paperdog | 16278.07 | pending | None |  |
 | 20261115T205754 | NEUTRAL | DYC | 27034.93 | pending | None | paperdog | 16278.07 | pending | None |  |
@@ -888,3 +888,7 @@
 | 20261115T205754 | NEUTRAL | VICE | 24384.17 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T205754 | NEUTRAL | GTA | 21977.43 | pending | None |  |  |  | None | comparators used twice |
 | 20261115T205754 | NEUTRAL | FRANK | 18134.56 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T215753 | GREEN | BJB | 69644.49 | pending | None | swordcat | 94799.50 | pending | None |  |
+| 20261115T215753 | GREEN | $DILL | 37593.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T215753 | GREEN | Brian | 31578.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T215753 | GREEN | TITTYVERSE | 20439.05 | pending | None |  |  |  | None | no eligible comparator |
