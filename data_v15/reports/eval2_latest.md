@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 207 |
-| sightings | 12313 |
-| liquid sightings | 4975 |
-| first liquid sightings = unique tokens with an outcome row | 1043 |
-|   young | 744 |
+| eval-2 scans | 208 |
+| sightings | 12377 |
+| liquid sightings | 4999 |
+| first liquid sightings = unique tokens with an outcome row | 1047 |
+|   young | 748 |
 |   mature | 251 |
 |   other | 48 |
 | young with a comparator (cap 2) | 123 |
-| young without a comparator | 621 |
+| young without a comparator | 625 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 41 |
 | complete pairs (both 60m outcomes labelled) | 76 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 567/744, no_valid_entry 30/744, pending 8/744, unknown 108/744, unreliable 31/744
+- young: labelled 570/748, no_valid_entry 30/748, pending 8/748, unknown 108/748, unreliable 32/748
 - mature: labelled 233/251, pending 1/251, unknown 17/251
-- no valid entry: young 30/744, mature 0/251
+- no valid entry: young 30/748, mature 0/251
 
 ## Effect (after costs; unit = scan)
 
@@ -828,8 +828,12 @@
 | 20261115T025808 | DEEP_RED | VALOR | 30289.19 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T035807 | RED | JASON | 40093.54 | labelled | -100.0 | SQUISHY | 24843.19 | labelled | -5.42 |  |
 | 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | labelled | -5.42 |  |
-| 20261115T045806 | RED | PELI | 21717.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T045806 | RED | PANICSELL | 20473.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T045806 | RED | upcat | 18581.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T045806 | RED | MIL | 16726.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | PELI | 21717.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | PANICSELL | 20473.42 | labelled | -35.44 |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | upcat | 18581.80 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261115T045806 | RED | MIL | 16726.62 | labelled | -31.11 |  |  |  | None | no eligible comparator |
 | 20261115T055806 | DEEP_RED | DOGE | 21261.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | GTA | 26363.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | Chick | 24302.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | HOGE | 22394.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T065805 | DEEP_RED | bill | 17670.66 | pending | None |  |  |  | None | no eligible comparator |
