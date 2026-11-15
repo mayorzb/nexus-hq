@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 204 |
-| sightings | 12117 |
-| liquid sightings | 4901 |
-| first liquid sightings = unique tokens with an outcome row | 1035 |
-|   young | 737 |
-|   mature | 250 |
+| eval-2 scans | 205 |
+| sightings | 12184 |
+| liquid sightings | 4926 |
+| first liquid sightings = unique tokens with an outcome row | 1038 |
+|   young | 739 |
+|   mature | 251 |
 |   other | 48 |
-| young with a comparator (cap 2) | 121 |
+| young with a comparator (cap 2) | 123 |
 | young without a comparator | 616 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 40 |
+|   pairs: young or mature outcome not yet usable | 42 |
 | complete pairs (both 60m outcomes labelled) | 75 |
 | scans contributing a complete pair | 47 |
 
 ## 60m outcome status by group
 
-- young: labelled 562/737, no_valid_entry 29/737, pending 9/737, unknown 106/737, unreliable 31/737
-- mature: labelled 232/250, pending 1/250, unknown 17/250
-- no valid entry: young 29/737, mature 0/250
+- young: labelled 566/739, no_valid_entry 29/739, pending 6/739, unknown 107/739, unreliable 31/739
+- mature: labelled 232/251, pending 2/251, unknown 17/251
+- no valid entry: young 29/739, mature 0/251
 
 ## Effect (after costs; unit = scan)
 
@@ -83,6 +83,7 @@
 - 20261114T235811-7R3RnGmp: RWA (20261114T235811), SWIF (20261114T235811)
 - 20261115T005810-2L9RzqPS: HYGG (20261115T005810), BUSTED (20261115T005810)
 - 20261115T015809-ABgXjaJ3: WANTED (20261115T015809), AMS (20261115T015809)
+- 20261115T035807-7VQrzR5a: JASON (20261115T035807), penny (20261115T035807)
 
 ## Every pair
 
@@ -806,7 +807,7 @@
 | 20261114T195815 | DEEP_RED | DOGCOIN | 18968.66 | labelled | 36.75 |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | SEET | 16409.46 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261114T215813 | DEEP_RED | SEET | 15920.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261114T215813 | DEEP_RED | greg | 15396.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261114T215813 | DEEP_RED | greg | 15396.89 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | LUCIA | 25493.26 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | Grok5 | 17803.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261114T225812 | DEEP_RED | CYBER | 15306.16 | labelled | -32.98 |  |  |  | None | no eligible comparator |
@@ -818,10 +819,12 @@
 | 20261115T005810 | DEEP_RED | USDC | 47159.21 | labelled | -38.52 |  |  |  | None | no eligible comparator |
 | 20261115T005810 | DEEP_RED | HYGG | 41901.98 | labelled | -18.86 | ATC | 21292.56 | labelled | -21.59 |  |
 | 20261115T005810 | DEEP_RED | BUSTED | 16599.66 | no_valid_entry | None | ATC | 21292.56 | labelled | -21.59 |  |
-| 20261115T015809 | DEEP_RED | WANTED | 42555.68 | pending | None | nilf | 26928.87 | pending | None |  |
+| 20261115T015809 | DEEP_RED | WANTED | 42555.68 | labelled | -32.75 | nilf | 26928.87 | pending | None |  |
 | 20261115T015809 | DEEP_RED | AMS | 21529.64 | pending | None | nilf | 26928.87 | pending | None |  |
-| 20261115T015809 | DEEP_RED | DACAT | 20546.10 | pending | None |  |  |  | None | comparators used twice |
-| 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | pending | None |  |  |  | None | comparators used twice |
-| 20261115T015809 | DEEP_RED | worth | 15045.52 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T015809 | DEEP_RED | DACAT | 20546.10 | labelled | -33.14 |  |  |  | None | comparators used twice |
+| 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | labelled | -55.47 |  |  |  | None | comparators used twice |
+| 20261115T015809 | DEEP_RED | worth | 15045.52 | labelled | 36.48 |  |  |  | None | comparators used twice |
 | 20261115T025808 | DEEP_RED | FIE | 47278.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T025808 | DEEP_RED | VALOR | 30289.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T035807 | RED | JASON | 40093.54 | pending | None | SQUISHY | 24843.19 | pending | None |  |
+| 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | pending | None |  |
