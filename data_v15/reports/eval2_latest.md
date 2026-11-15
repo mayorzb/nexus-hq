@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 210 |
-| sightings | 12502 |
-| liquid sightings | 5049 |
-| first liquid sightings = unique tokens with an outcome row | 1055 |
-|   young | 751 |
+| eval-2 scans | 211 |
+| sightings | 12564 |
+| liquid sightings | 5073 |
+| first liquid sightings = unique tokens with an outcome row | 1058 |
+|   young | 754 |
 |   mature | 255 |
 |   other | 49 |
 | young with a comparator (cap 2) | 125 |
-| young without a comparator | 626 |
+| young without a comparator | 629 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 43 |
 | complete pairs (both 60m outcomes labelled) | 76 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 574/751, no_valid_entry 31/751, pending 4/751, unknown 110/751, unreliable 32/751
-- mature: labelled 233/255, pending 4/255, unknown 18/255
-- no valid entry: young 31/751, mature 0/255
+- young: labelled 575/754, no_valid_entry 31/754, pending 5/754, unknown 111/754, unreliable 32/754
+- mature: labelled 234/255, pending 3/255, unknown 18/255
+- no valid entry: young 31/754, mature 0/255
 
 ## Effect (after costs; unit = scan)
 
@@ -828,7 +828,7 @@
 | 20261115T025808 | DEEP_RED | FIE | 47278.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261115T025808 | DEEP_RED | VALOR | 30289.19 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T035807 | RED | JASON | 40093.54 | labelled | -100.0 | SQUISHY | 24843.19 | labelled | -5.42 |  |
-| 20261115T035807 | RED | penny | 27948.36 | pending | None | SQUISHY | 24843.19 | labelled | -5.42 |  |
+| 20261115T035807 | RED | penny | 27948.36 | unknown | None | SQUISHY | 24843.19 | labelled | -5.42 |  |
 | 20261115T045806 | RED | PELI | 21717.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | PANICSELL | 20473.42 | labelled | -35.44 |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | upcat | 18581.80 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -838,6 +838,9 @@
 | 20261115T065805 | DEEP_RED | Chick | 24302.84 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | HOGE | 22394.85 | labelled | 36.91 |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | bill | 17670.66 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261115T075805 | DEEP_RED | ORBO | 33617.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T075805 | DEEP_RED | ORBO | 33617.90 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261115T085804 | RED | stur | 30348.46 | pending | None | FUTA | 25560.18 | pending | None |  |
 | 20261115T085804 | RED | PAW | 15462.28 | pending | None | FUTA | 25560.18 | pending | None |  |
+| 20261115T095803 | RED | freg | 40570.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T095803 | RED | Socks | 17244.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T095803 | RED | Socks | 17103.69 | pending | None |  |  |  | None | no eligible comparator |
