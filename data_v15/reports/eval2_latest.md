@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 218 |
-| sightings | 12988 |
-| liquid sightings | 5230 |
-| first liquid sightings = unique tokens with an outcome row | 1082 |
-|   young | 774 |
-|   mature | 259 |
+| eval-2 scans | 219 |
+| sightings | 13049 |
+| liquid sightings | 5249 |
+| first liquid sightings = unique tokens with an outcome row | 1086 |
+|   young | 776 |
+|   mature | 261 |
 |   other | 49 |
-| young with a comparator (cap 2) | 128 |
-| young without a comparator | 646 |
+| young with a comparator (cap 2) | 129 |
+| young without a comparator | 647 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 45 |
+|   pairs: young or mature outcome not yet usable | 46 |
 | complete pairs (both 60m outcomes labelled) | 77 |
 | scans contributing a complete pair | 49 |
 
 ## 60m outcome status by group
 
-- young: labelled 585/774, no_valid_entry 31/774, pending 9/774, unknown 113/774, unreliable 36/774
-- mature: labelled 238/259, pending 2/259, unknown 19/259
-- no valid entry: young 31/774, mature 0/259
+- young: labelled 589/776, no_valid_entry 31/776, pending 7/776, unknown 113/776, unreliable 36/776
+- mature: labelled 238/261, pending 4/261, unknown 19/261
+- no valid entry: young 31/776, mature 0/261
 
 ## Effect (after costs; unit = scan)
 
@@ -858,10 +858,12 @@
 | 20261115T145758 | RED | WANTED | 25480.51 | labelled | -35.88 |  |  |  | None | no eligible comparator |
 | 20261115T145758 | RED | Nyajira | 17859.78 | labelled | -32.03 |  |  |  | None | no eligible comparator |
 | 20261115T145758 | RED | afk | 16125.04 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261115T155757 | RED | FOMOCoin | 39520.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T155757 | RED | BUTTHOLE | 27332.28 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T155757 | RED | billy | 19515.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T155757 | RED | VI | 15463.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T155757 | RED | FOMOCoin | 39520.41 | labelled | -55.22 |  |  |  | None | no eligible comparator |
+| 20261115T155757 | RED | BUTTHOLE | 27332.28 | labelled | -36.82 |  |  |  | None | no eligible comparator |
+| 20261115T155757 | RED | billy | 19515.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T155757 | RED | VI | 15463.05 | labelled | -77.66 |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | anthropig | 29769.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | SCRVAN | 23523.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T175755 | NEUTRAL | UDTF | 104103.18 | pending | None | swordcat | 94220.29 | pending | None |  |
+| 20261115T175755 | NEUTRAL | BEAR | 29924.56 | pending | None |  |  |  | None | no eligible comparator |
