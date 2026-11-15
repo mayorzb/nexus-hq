@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 208 |
-| sightings | 12377 |
-| liquid sightings | 4999 |
-| first liquid sightings = unique tokens with an outcome row | 1047 |
-|   young | 748 |
-|   mature | 251 |
+| eval-2 scans | 209 |
+| sightings | 12440 |
+| liquid sightings | 5023 |
+| first liquid sightings = unique tokens with an outcome row | 1050 |
+|   young | 749 |
+|   mature | 253 |
 |   other | 48 |
 | young with a comparator (cap 2) | 123 |
-| young without a comparator | 625 |
+| young without a comparator | 626 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 41 |
 | complete pairs (both 60m outcomes labelled) | 76 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 570/748, no_valid_entry 30/748, pending 8/748, unknown 108/748, unreliable 32/748
-- mature: labelled 233/251, pending 1/251, unknown 17/251
-- no valid entry: young 30/748, mature 0/251
+- young: labelled 571/749, no_valid_entry 30/749, pending 7/749, unknown 109/749, unreliable 32/749
+- mature: labelled 233/253, pending 2/253, unknown 18/253
+- no valid entry: young 30/749, mature 0/253
 
 ## Effect (after costs; unit = scan)
 
@@ -819,8 +819,8 @@
 | 20261115T005810 | DEEP_RED | USDC | 47159.21 | labelled | -38.52 |  |  |  | None | no eligible comparator |
 | 20261115T005810 | DEEP_RED | HYGG | 41901.98 | labelled | -18.86 | ATC | 21292.56 | labelled | -21.59 |  |
 | 20261115T005810 | DEEP_RED | BUSTED | 16599.66 | no_valid_entry | None | ATC | 21292.56 | labelled | -21.59 |  |
-| 20261115T015809 | DEEP_RED | WANTED | 42555.68 | labelled | -32.75 | nilf | 26928.87 | pending | None |  |
-| 20261115T015809 | DEEP_RED | AMS | 21529.64 | pending | None | nilf | 26928.87 | pending | None |  |
+| 20261115T015809 | DEEP_RED | WANTED | 42555.68 | labelled | -32.75 | nilf | 26928.87 | unknown | None |  |
+| 20261115T015809 | DEEP_RED | AMS | 21529.64 | unknown | None | nilf | 26928.87 | unknown | None |  |
 | 20261115T015809 | DEEP_RED | DACAT | 20546.10 | labelled | -33.14 |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | DUVAL | 15198.15 | labelled | -55.47 |  |  |  | None | comparators used twice |
 | 20261115T015809 | DEEP_RED | worth | 15045.52 | labelled | 36.48 |  |  |  | None | comparators used twice |
@@ -832,8 +832,9 @@
 | 20261115T045806 | RED | PANICSELL | 20473.42 | labelled | -35.44 |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | upcat | 18581.80 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261115T045806 | RED | MIL | 16726.62 | labelled | -31.11 |  |  |  | None | no eligible comparator |
-| 20261115T055806 | DEEP_RED | DOGE | 21261.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T055806 | DEEP_RED | DOGE | 21261.81 | labelled | -92.66 |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | GTA | 26363.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | Chick | 24302.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | HOGE | 22394.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T065805 | DEEP_RED | bill | 17670.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T075805 | DEEP_RED | ORBO | 33617.90 | pending | None |  |  |  | None | no eligible comparator |
