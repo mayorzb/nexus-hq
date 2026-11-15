@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 217 |
-| sightings | 12928 |
-| liquid sightings | 5209 |
-| first liquid sightings = unique tokens with an outcome row | 1078 |
-|   young | 771 |
-|   mature | 258 |
+| eval-2 scans | 218 |
+| sightings | 12988 |
+| liquid sightings | 5230 |
+| first liquid sightings = unique tokens with an outcome row | 1082 |
+|   young | 774 |
+|   mature | 259 |
 |   other | 49 |
 | young with a comparator (cap 2) | 128 |
-| young without a comparator | 643 |
+| young without a comparator | 646 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 45 |
 | complete pairs (both 60m outcomes labelled) | 77 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 581/771, no_valid_entry 31/771, pending 12/771, unknown 112/771, unreliable 35/771
-- mature: labelled 238/258, pending 1/258, unknown 19/258
-- no valid entry: young 31/771, mature 0/258
+- young: labelled 585/774, no_valid_entry 31/774, pending 9/774, unknown 113/774, unreliable 36/774
+- mature: labelled 238/259, pending 2/259, unknown 19/259
+- no valid entry: young 31/774, mature 0/259
 
 ## Effect (after costs; unit = scan)
 
@@ -848,17 +848,20 @@
 | 20261115T105802 | RED | UODF | 30591.98 | unreliable | None | poorcat | 18969.46 | labelled | 36.75 |  |
 | 20261115T135759 | RED | BLG | 32576.31 | unreliable | None | DOUG | 27455.94 | pending | None |  |
 | 20261115T135759 | RED | rockstar | 27950.95 | pending | None | DOUG | 27455.94 | pending | None |  |
-| 20261115T135759 | RED | DYC | 24666.28 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T135759 | RED | DYC | 24666.28 | unknown | None |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 19720.91 | labelled | -46.32 |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 17975.05 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | PEBL | 17833.69 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261115T135759 | RED | twert | 17748.34 | pending | None |  |  |  | None | comparators used twice |
-| 20261115T145758 | RED | ANT | 33146.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T145758 | RED | UODF | 30202.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T145758 | RED | WANTED | 25480.51 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T145758 | RED | Nyajira | 17859.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T145758 | RED | afk | 16125.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | ANT | 33146.58 | labelled | 37.2 |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | UODF | 30202.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | WANTED | 25480.51 | labelled | -35.88 |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | Nyajira | 17859.78 | labelled | -32.03 |  |  |  | None | no eligible comparator |
+| 20261115T145758 | RED | afk | 16125.04 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | FOMOCoin | 39520.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | BUTTHOLE | 27332.28 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | billy | 19515.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | VI | 15463.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T165756 | NEUTRAL | anthropig | 29769.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T165756 | NEUTRAL | SCRVAN | 23523.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | pending | None |  |  |  | None | no eligible comparator |
