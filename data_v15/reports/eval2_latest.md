@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 219 |
-| sightings | 13049 |
-| liquid sightings | 5249 |
-| first liquid sightings = unique tokens with an outcome row | 1086 |
-|   young | 776 |
-|   mature | 261 |
+| eval-2 scans | 220 |
+| sightings | 13109 |
+| liquid sightings | 5271 |
+| first liquid sightings = unique tokens with an outcome row | 1093 |
+|   young | 779 |
+|   mature | 265 |
 |   other | 49 |
-| young with a comparator (cap 2) | 129 |
+| young with a comparator (cap 2) | 132 |
 | young without a comparator | 647 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 46 |
+|   pairs: young or mature outcome not yet usable | 49 |
 | complete pairs (both 60m outcomes labelled) | 77 |
 | scans contributing a complete pair | 49 |
 
 ## 60m outcome status by group
 
-- young: labelled 589/776, no_valid_entry 31/776, pending 7/776, unknown 113/776, unreliable 36/776
-- mature: labelled 238/261, pending 4/261, unknown 19/261
-- no valid entry: young 31/776, mature 0/261
+- young: labelled 590/779, no_valid_entry 31/779, pending 8/779, unknown 113/779, unreliable 37/779
+- mature: labelled 239/265, pending 7/265, unknown 19/265
+- no valid entry: young 31/779, mature 0/265
 
 ## Effect (after costs; unit = scan)
 
@@ -86,6 +86,7 @@
 - 20261115T035807-7VQrzR5a: JASON (20261115T035807), penny (20261115T035807)
 - 20261115T085804-8JCsa61h: stur (20261115T085804), PAW (20261115T085804)
 - 20261115T135759-8UqE9m2r: BLG (20261115T135759), rockstar (20261115T135759)
+- 20261115T185755-vxG5ucic: ANSEM (20261115T185755), NINU (20261115T185755)
 
 ## Every pair
 
@@ -862,8 +863,11 @@
 | 20261115T155757 | RED | BUTTHOLE | 27332.28 | labelled | -36.82 |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | billy | 19515.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261115T155757 | RED | VI | 15463.05 | labelled | -77.66 |  |  |  | None | no eligible comparator |
-| 20261115T165756 | NEUTRAL | anthropig | 29769.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T165756 | NEUTRAL | anthropig | 29769.22 | labelled | -35.3 |  |  |  | None | no eligible comparator |
 | 20261115T165756 | NEUTRAL | SCRVAN | 23523.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T165756 | NEUTRAL | MIAMI | 15104.31 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261115T175755 | NEUTRAL | UDTF | 104103.18 | pending | None | swordcat | 94220.29 | pending | None |  |
 | 20261115T175755 | NEUTRAL | BEAR | 29924.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T185755 | NEUTRAL | BFS | 36064.31 | pending | None | SWJ | 57641.61 | pending | None |  |
+| 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
+| 20261115T185755 | NEUTRAL | NINU | 15831.90 | pending | None | PEPECLAUS | 15477.91 | pending | None |  |
