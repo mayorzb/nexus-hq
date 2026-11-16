@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 246 |
-| sightings | 14675 |
-| liquid sightings | 5865 |
-| first liquid sightings = unique tokens with an outcome row | 1254 |
-|   young | 877 |
-|   mature | 327 |
+| eval-2 scans | 247 |
+| sightings | 14739 |
+| liquid sightings | 5892 |
+| first liquid sightings = unique tokens with an outcome row | 1264 |
+|   young | 883 |
+|   mature | 331 |
 |   other | 50 |
-| young with a comparator (cap 2) | 155 |
-| young without a comparator | 722 |
+| young with a comparator (cap 2) | 157 |
+| young without a comparator | 726 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 57 |
-| complete pairs (both 60m outcomes labelled) | 91 |
-| scans contributing a complete pair | 58 |
+|   pairs: young or mature outcome not yet usable | 55 |
+| complete pairs (both 60m outcomes labelled) | 95 |
+| scans contributing a complete pair | 59 |
 
 ## 60m outcome status by group
 
-- young: labelled 663/877, no_valid_entry 34/877, pending 15/877, unknown 125/877, unreliable 40/877
-- mature: labelled 295/327, pending 7/327, unknown 25/327
-- no valid entry: young 34/877, mature 0/327
+- young: labelled 671/883, no_valid_entry 34/883, pending 13/883, unknown 125/883, unreliable 40/883
+- mature: labelled 299/331, pending 6/331, unknown 26/331
+- no valid entry: young 34/883, mature 0/331
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.29 points, 95% interval (-40.2, -15.3); scans with young worse 39/58
-- Pairs with young worse: 63/91 (69.2%); pair mean -25.24, median -27.29
-- Big loss (<= -20%): young 60/91, mature 20/91
+- Scan-level mean difference (young - mature): -28.01 points, 95% interval (-40.39, -15.25); scans with young worse 40/59
+- Pairs with young worse: 66/95 (69.5%); pair mean -24.66, median -27.29
+- Big loss (<= -20%): young 63/95, mature 20/95
 
 ## Comparator reuse (cap 2)
 
@@ -94,6 +94,7 @@
 - 20261116T185738-48UW5PSM: ETF (20261116T185738), DACAT (20261116T185738)
 - 20261116T195738-5tCju6YN: ROCCO (20261116T195738), ASWF (20261116T195738)
 - 20261116T195738-DnAbkueg: VICECAT (20261116T195738), Trader (20261116T195738)
+- 20261116T215738-FsFqQGxC: CHOP (20261116T215738), VICE (20261116T215738)
 
 ## Every pair
 
@@ -965,14 +966,20 @@
 | 20261116T185738 | NEUTRAL | DACAT | 32539.61 | labelled | -30.68 | SNUT | 35601.11 | labelled | -28.61 |  |
 | 20261116T185738 | NEUTRAL | COGE | 24261.35 | labelled | 36.98 |  |  |  | None | comparators used twice |
 | 20261116T185738 | NEUTRAL | TRADER | 16484.05 | labelled | -49.46 |  |  |  | None | no eligible comparator |
-| 20261116T195738 | NEUTRAL | ROCCO | 83144.46 | pending | None | swordcat | 95964.43 | pending | None |  |
-| 20261116T195738 | NEUTRAL | ASWF | 60350.55 | pending | None | swordcat | 95964.43 | pending | None |  |
-| 20261116T195738 | NEUTRAL | GTA | 56389.35 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T195738 | NEUTRAL | VICECAT | 36745.97 | pending | None | FLOTI | 24757.07 | pending | None |  |
-| 20261116T195738 | NEUTRAL | Trader | 30482.38 | pending | None | FLOTI | 24757.07 | pending | None |  |
-| 20261116T195738 | NEUTRAL | GTA | 30151.02 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T195738 | NEUTRAL | VICEDORD | 29274.01 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T195738 | NEUTRAL | BANK | 27100.72 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T195738 | NEUTRAL | ROCCO | 83144.46 | labelled | -37.02 | swordcat | 95964.43 | labelled | -5.69 |  |
+| 20261116T195738 | NEUTRAL | ASWF | 60350.55 | labelled | -35.22 | swordcat | 95964.43 | labelled | -5.69 |  |
+| 20261116T195738 | NEUTRAL | GTA | 56389.35 | labelled | 15.67 |  |  |  | None | comparators used twice |
+| 20261116T195738 | NEUTRAL | VICECAT | 36745.97 | labelled | -30.31 | FLOTI | 24757.07 | labelled | -3.72 |  |
+| 20261116T195738 | NEUTRAL | Trader | 30482.38 | labelled | 37.15 | FLOTI | 24757.07 | labelled | -3.72 |  |
+| 20261116T195738 | NEUTRAL | GTA | 30151.02 | labelled | -31.54 |  |  |  | None | comparators used twice |
+| 20261116T195738 | NEUTRAL | VICEDORD | 29274.01 | labelled | -5.31 |  |  |  | None | comparators used twice |
+| 20261116T195738 | NEUTRAL | BANK | 27100.72 | labelled | -35.05 |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | 100x | 17640.58 | pending | None |  |  |  | None | comparators used twice |
 | 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | pending | None | fone | 191673.37 | pending | None |  |
 | 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T215738 | NEUTRAL | BAWSAQ | 88473.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T215738 | NEUTRAL | BAWSAQ | 47405.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T215738 | NEUTRAL | CHOP | 27365.20 | pending | None | Lemon | 19493.89 | pending | None |  |
+| 20261116T215738 | NEUTRAL | VICE | 21872.87 | pending | None | Lemon | 19493.89 | pending | None |  |
+| 20261116T215738 | NEUTRAL | GROTTI | 18652.04 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T215738 | NEUTRAL | NINJACAT | 17230.16 | pending | None |  |  |  | None | comparators used twice |
