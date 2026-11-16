@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-16 05:05 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-16 06:10 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-16 05:05 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 62 / 23 | OK |
-| Deep-checked coins left UNVERIFIED | 44 of 104 (42%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 22 checked, 11 unverified, 0 on-chain errors | WARN |
-| Gate-passers skipped by check budget | 99 of 204 | WARN |
-| Paper candidates (last 24h) | 23 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 572 / 122 | ALERT |
+| Deep-checked coins left UNVERIFIED | 45 of 112 (40%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 20 checked, 10 unverified, 0 on-chain errors | WARN |
+| Gate-passers skipped by check budget | 109 of 222 | WARN |
+| Paper candidates (last 24h) | 25 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 577 / 120 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (16:57), CATE (17:57), swordcat (17:57), CATE (18:57), swordcat (18:57), CATE (19:57), CATE (20:57), swordcat (20:57), CATE (21:57), swordcat (21:57), CATE (22:57), CATE (23:57), CATE (00:57), swordcat (00:57), CATE (01:57), swordcat (01:57), CATE (02:57), TROLL (02:57), swordcat (02:57), CATE (03:57), swordcat (03:57), TROLL (04:57), swordcat (04:57)
+Candidates: CATE (16:57), CATE (17:57), swordcat (17:57), CATE (18:57), swordcat (18:57), CATE (19:57), CATE (20:57), swordcat (20:57), CATE (21:57), swordcat (21:57), CATE (22:57), CATE (23:57), CATE (00:57), swordcat (00:57), CATE (01:57), swordcat (01:57), CATE (02:57), TROLL (02:57), swordcat (02:57), CATE (03:57), swordcat (03:57), TROLL (04:57), swordcat (04:57), CATE (05:57), TROLL (05:57)

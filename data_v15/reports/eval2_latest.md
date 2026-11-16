@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 230 |
-| sightings | 13744 |
-| liquid sightings | 5506 |
-| first liquid sightings = unique tokens with an outcome row | 1161 |
-|   young | 825 |
-|   mature | 286 |
+| eval-2 scans | 231 |
+| sightings | 13807 |
+| liquid sightings | 5529 |
+| first liquid sightings = unique tokens with an outcome row | 1168 |
+|   young | 829 |
+|   mature | 289 |
 |   other | 50 |
-| young with a comparator (cap 2) | 140 |
-| young without a comparator | 685 |
+| young with a comparator (cap 2) | 142 |
+| young without a comparator | 687 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 49 |
+|   pairs: young or mature outcome not yet usable | 51 |
 | complete pairs (both 60m outcomes labelled) | 85 |
 | scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 628/825, no_valid_entry 33/825, pending 6/825, unknown 120/825, unreliable 38/825
-- mature: labelled 260/286, pending 4/286, unknown 22/286
-- no valid entry: young 33/825, mature 0/286
+- young: labelled 629/829, no_valid_entry 33/829, pending 9/829, unknown 120/829, unreliable 38/829
+- mature: labelled 262/289, pending 5/289, unknown 22/289
+- no valid entry: young 33/829, mature 0/289
 
 ## Effect (after costs; unit = scan)
 
@@ -89,6 +89,7 @@
 - 20261115T185755-vxG5ucic: ANSEM (20261115T185755), NINU (20261115T185755)
 - 20261115T205754-6wnMkKcJ: Jacket (20261115T205754), DYC (20261115T205754)
 - 20261115T235752-CY254o6V: VI (20261115T235752), AI (20261115T235752)
+- 20261116T055747-BARobVaV: 6STAR (20261116T055747), X Æ A-Xii (20261116T055747)
 
 ## Every pair
 
@@ -914,8 +915,12 @@
 | 20261116T025749 | NEUTRAL | NEON | 18144.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | XRL | 17594.68 | labelled | -28.36 |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | SAME | 15609.06 | labelled | -31.22 |  |  |  | None | no eligible comparator |
-| 20261116T035748 | NEUTRAL | Marvin | 23871.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T035748 | NEUTRAL | Marvin | 23871.14 | labelled | -29.14 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | VICE | 19439.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | pending | None |  |
 | 20261116T045747 | NEUTRAL | PASSED | 25321.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | pending | None | RESPECT | 24429.25 | pending | None |  |
+| 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | pending | None | RESPECT | 24429.25 | pending | None |  |
+| 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T055747 | NEUTRAL | capytrade | 17349.50 | pending | None |  |  |  | None | comparators used twice |
