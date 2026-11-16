@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 240 |
-| sightings | 14306 |
-| liquid sightings | 5707 |
-| first liquid sightings = unique tokens with an outcome row | 1204 |
-|   young | 845 |
-|   mature | 309 |
+| eval-2 scans | 241 |
+| sightings | 14362 |
+| liquid sightings | 5732 |
+| first liquid sightings = unique tokens with an outcome row | 1211 |
+|   young | 850 |
+|   mature | 311 |
 |   other | 50 |
 | young with a comparator (cap 2) | 145 |
-| young without a comparator | 700 |
+| young without a comparator | 705 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 51 |
 | complete pairs (both 60m outcomes labelled) | 87 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 645/845, no_valid_entry 34/845, pending 4/845, unknown 123/845, unreliable 39/845
-- mature: labelled 283/309, pending 3/309, unknown 23/309
-- no valid entry: young 34/845, mature 0/309
+- young: labelled 647/850, no_valid_entry 34/850, pending 7/850, unknown 123/850, unreliable 39/850
+- mature: labelled 283/311, pending 5/311, unknown 23/311
+- no valid entry: young 34/850, mature 0/311
 
 ## Effect (after costs; unit = scan)
 
@@ -937,6 +937,11 @@
 | 20261116T125742 | RED | 🌭 | 17843.55 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | WASTED6 | 17316.60 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | DOUG | 15248.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261116T135742 | RED | Stumpy | 26412.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T135742 | RED | hello | 16184.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T135742 | RED | Stumpy | 26412.31 | labelled | -42.29 |  |  |  | None | no eligible comparator |
+| 20261116T135742 | RED | hello | 16184.24 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261116T145741 | NEUTRAL | GTAVI | 32267.14 | pending | None | TURN | 17453.42 | pending | None |  |
+| 20261116T155740 | NEUTRAL | Samtit | 93105.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | LEOSTAR | 23609.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | GTAMAS | 16764.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | VI | 16440.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | 👠 | 16283.08 | pending | None |  |  |  | None | no eligible comparator |
