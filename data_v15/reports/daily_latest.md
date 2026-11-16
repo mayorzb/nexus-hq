@@ -1,18 +1,18 @@
-DAILY HEALTH 2026-11-16 13:02 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-16 14:01 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
 | Scan coverage (hours with a scan, last 24h) | 24/24 (100%) | OK |
 | Longest gap between scans | 60 min | OK |
-| Shortest gap between scans (last 24h) | 60 min (at 12:58 UTC) | OK |
+| Shortest gap between scans (last 24h) | 60 min (at 13:57 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 62 / 23 | OK |
+| Tokens seen / liquid (median per scan) | 62 / 22 | OK |
 | Deep-checked coins left UNVERIFIED | 62 of 153 (41%) | ALERT |
 | Safety canary (deep checks run when no coin reached them) | 8 checked, 3 unverified, 0 on-chain errors | WARN |
 | Gate-passers skipped by check budget | 166 of 323 | WARN |
 | Paper candidates (last 24h) | 39 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 639 / 126 | ALERT |
+| Labels finished / unknown or unreliable (last 24h) | 645 / 123 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 

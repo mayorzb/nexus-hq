@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 238 |
-| sightings | 14190 |
-| liquid sightings | 5663 |
-| first liquid sightings = unique tokens with an outcome row | 1198 |
-|   young | 842 |
+| eval-2 scans | 239 |
+| sightings | 14247 |
+| liquid sightings | 5685 |
+| first liquid sightings = unique tokens with an outcome row | 1200 |
+|   young | 844 |
 |   mature | 306 |
 |   other | 50 |
 | young with a comparator (cap 2) | 144 |
-| young without a comparator | 698 |
+| young without a comparator | 700 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 51 |
-| complete pairs (both 60m outcomes labelled) | 86 |
-| scans contributing a complete pair | 55 |
+|   pairs: young or mature outcome not yet usable | 50 |
+| complete pairs (both 60m outcomes labelled) | 87 |
+| scans contributing a complete pair | 56 |
 
 ## 60m outcome status by group
 
-- young: labelled 641/842, no_valid_entry 34/842, pending 5/842, unknown 123/842, unreliable 39/842
-- mature: labelled 279/306, pending 4/306, unknown 23/306
-- no valid entry: young 34/842, mature 0/306
+- young: labelled 642/844, no_valid_entry 34/844, pending 6/844, unknown 123/844, unreliable 39/844
+- mature: labelled 283/306, unknown 23/306
+- no valid entry: young 34/844, mature 0/306
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.28 points, 95% interval (-40.14, -14.61); scans with young worse 37/55
-- Pairs with young worse: 59/86 (68.6%); pair mean -24.3, median -27.38
-- Big loss (<= -20%): young 56/86, mature 18/86
+- Scan-level mean difference (young - mature): -26.27 points, 95% interval (-38.56, -13.15); scans with young worse 37/56
+- Pairs with young worse: 59/87 (67.8%); pair mean -23.68, median -27.29
+- Big loss (<= -20%): young 56/87, mature 18/87
 
 ## Comparator reuse (cap 2)
 
@@ -932,8 +932,10 @@
 | 20261116T105743 | NEUTRAL | 1NU | 35108.68 | labelled | -66.88 |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | 1.0 | 28055.41 | labelled | -40.07 |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | 1NU | 24981.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261116T115742 | NEUTRAL | Democat | 28828.19 | pending | None | DADDY | 17436.50 | pending | None |  |
+| 20261116T115742 | NEUTRAL | Democat | 28828.19 | labelled | 37.11 | DADDY | 17436.50 | labelled | 7.62 |  |
 | 20261116T125742 | RED | DOUG | 27927.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | 🌭 | 17843.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | WASTED6 | 17316.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | DOUG | 15248.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T135742 | RED | Stumpy | 26412.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T135742 | RED | hello | 16184.24 | pending | None |  |  |  | None | no eligible comparator |
