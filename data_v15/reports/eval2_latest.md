@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 229 |
-| sightings | 13684 |
-| liquid sightings | 5484 |
-| first liquid sightings = unique tokens with an outcome row | 1156 |
-|   young | 822 |
-|   mature | 284 |
+| eval-2 scans | 230 |
+| sightings | 13744 |
+| liquid sightings | 5506 |
+| first liquid sightings = unique tokens with an outcome row | 1161 |
+|   young | 825 |
+|   mature | 286 |
 |   other | 50 |
-| young with a comparator (cap 2) | 139 |
-| young without a comparator | 683 |
+| young with a comparator (cap 2) | 140 |
+| young without a comparator | 685 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 48 |
+|   pairs: young or mature outcome not yet usable | 49 |
 | complete pairs (both 60m outcomes labelled) | 85 |
 | scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 626/822, no_valid_entry 33/822, pending 6/822, unknown 119/822, unreliable 38/822
-- mature: labelled 258/284, pending 5/284, unknown 21/284
-- no valid entry: young 33/822, mature 0/284
+- young: labelled 628/825, no_valid_entry 33/825, pending 6/825, unknown 120/825, unreliable 38/825
+- mature: labelled 260/286, pending 4/286, unknown 22/286
+- no valid entry: young 33/825, mature 0/286
 
 ## Effect (after costs; unit = scan)
 
@@ -895,7 +895,7 @@
 | 20261115T215753 | GREEN | TITTYVERSE | 20439.05 | labelled | 36.83 |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | Retire | 32819.36 | labelled | -28.31 |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | GTAVI | 25852.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261115T225753 | GREEN | HUNDRED | 17989.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T225753 | GREEN | HUNDRED | 17989.65 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | GTA6CRAB | 17121.90 | labelled | -11.58 |  |  |  | None | no eligible comparator |
 | 20261115T235752 | GREEN | COLDRUM | 91729.63 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261115T235752 | GREEN | VI | 34195.64 | unreliable | None | BigP | 18377.64 | labelled | -28.69 |  |
@@ -912,7 +912,10 @@
 | 20261116T015750 | GREEN | Nеil | 24501.71 | labelled | -34.59 |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Nеil | 18433.69 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | NEON | 18144.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T025749 | NEUTRAL | XRL | 17594.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T025749 | NEUTRAL | SAME | 15609.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | XRL | 17594.68 | labelled | -28.36 |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | SAME | 15609.06 | labelled | -31.22 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | Marvin | 23871.14 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | VICE | 19439.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | pending | None |  |
+| 20261116T045747 | NEUTRAL | PASSED | 25321.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | pending | None |  |  |  | None | no eligible comparator |
