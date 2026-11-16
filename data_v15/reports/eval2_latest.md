@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 232 |
-| sightings | 13832 |
-| liquid sightings | 5531 |
-| first liquid sightings = unique tokens with an outcome row | 1168 |
+| eval-2 scans | 233 |
+| sightings | 13878 |
+| liquid sightings | 5550 |
+| first liquid sightings = unique tokens with an outcome row | 1171 |
 |   young | 829 |
-|   mature | 289 |
+|   mature | 292 |
 |   other | 50 |
 | young with a comparator (cap 2) | 142 |
 | young without a comparator | 687 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 631/829, no_valid_entry 33/829, pending 7/829, unknown 120/829, unreliable 38/829
-- mature: labelled 264/289, pending 3/289, unknown 22/289
-- no valid entry: young 33/829, mature 0/289
+- young: labelled 634/829, no_valid_entry 33/829, pending 4/829, unknown 120/829, unreliable 38/829
+- mature: labelled 266/292, pending 4/292, unknown 22/292
+- no valid entry: young 33/829, mature 0/292
 
 ## Effect (after costs; unit = scan)
 
@@ -920,7 +920,7 @@
 | 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | labelled | -12.17 |  |
 | 20261116T045747 | NEUTRAL | PASSED | 25321.42 | labelled | -28.83 |  |  |  | None | no eligible comparator |
 | 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | pending | None | RESPECT | 24429.25 | pending | None |  |
+| 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | labelled | -29.26 | RESPECT | 24429.25 | pending | None |  |
 | 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | pending | None | RESPECT | 24429.25 | pending | None |  |
-| 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T055747 | NEUTRAL | capytrade | 17349.50 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | labelled | -47.74 |  |  |  | None | comparators used twice |
+| 20261116T055747 | NEUTRAL | capytrade | 17349.50 | labelled | 36.65 |  |  |  | None | comparators used twice |

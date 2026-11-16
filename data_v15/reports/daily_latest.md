@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-16 07:07 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-16 08:09 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-16 07:07 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 07:58 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 62 / 23 | OK |
-| Deep-checked coins left UNVERIFIED | 46 of 113 (41%) | ALERT |
-| Safety canary (deep checks run when no coin reached them) | 18 checked, 9 unverified, 0 on-chain errors | WARN |
-| Gate-passers skipped by check budget | 109 of 223 | WARN |
-| Paper candidates (last 24h) | 25 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 581 / 112 | ALERT |
+| Tokens seen / liquid (median per scan) | 62 / 22 | OK |
+| Deep-checked coins left UNVERIFIED | 49 of 121 (40%) | ALERT |
+| Safety canary (deep checks run when no coin reached them) | 16 checked, 8 unverified, 0 on-chain errors | WARN |
+| Gate-passers skipped by check budget | 120 of 243 | WARN |
+| Paper candidates (last 24h) | 28 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 584 / 112 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (16:57), CATE (17:57), swordcat (17:57), CATE (18:57), swordcat (18:57), CATE (19:57), CATE (20:57), swordcat (20:57), CATE (21:57), swordcat (21:57), CATE (22:57), CATE (23:57), CATE (00:57), swordcat (00:57), CATE (01:57), swordcat (01:57), CATE (02:57), TROLL (02:57), swordcat (02:57), CATE (03:57), swordcat (03:57), TROLL (04:57), swordcat (04:57), CATE (05:57), TROLL (05:57)
+Candidates: CATE (16:57), CATE (17:57), swordcat (17:57), CATE (18:57), swordcat (18:57), CATE (19:57), CATE (20:57), swordcat (20:57), CATE (21:57), swordcat (21:57), CATE (22:57), CATE (23:57), CATE (00:57), swordcat (00:57), CATE (01:57), swordcat (01:57), CATE (02:57), TROLL (02:57), swordcat (02:57), CATE (03:57), swordcat (03:57), TROLL (04:57), swordcat (04:57), CATE (05:57), TROLL (05:57), CATE (07:57), TROLL (07:57), swordcat (07:57)
