@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 245 |
-| sightings | 14611 |
-| liquid sightings | 5839 |
-| first liquid sightings = unique tokens with an outcome row | 1250 |
-|   young | 875 |
-|   mature | 325 |
+| eval-2 scans | 246 |
+| sightings | 14675 |
+| liquid sightings | 5865 |
+| first liquid sightings = unique tokens with an outcome row | 1254 |
+|   young | 877 |
+|   mature | 327 |
 |   other | 50 |
-| young with a comparator (cap 2) | 154 |
-| young without a comparator | 721 |
+| young with a comparator (cap 2) | 155 |
+| young without a comparator | 722 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 59 |
-| complete pairs (both 60m outcomes labelled) | 88 |
-| scans contributing a complete pair | 57 |
+|   pairs: young or mature outcome not yet usable | 57 |
+| complete pairs (both 60m outcomes labelled) | 91 |
+| scans contributing a complete pair | 58 |
 
 ## 60m outcome status by group
 
-- young: labelled 658/875, no_valid_entry 34/875, pending 18/875, unknown 125/875, unreliable 40/875
-- mature: labelled 291/325, pending 9/325, unknown 25/325
-- no valid entry: young 34/875, mature 0/325
+- young: labelled 663/877, no_valid_entry 34/877, pending 15/877, unknown 125/877, unreliable 40/877
+- mature: labelled 295/327, pending 7/327, unknown 25/327
+- no valid entry: young 34/877, mature 0/327
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.21 points, 95% interval (-40.86, -14.75); scans with young worse 38/57
-- Pairs with young worse: 60/88 (68.2%); pair mean -24.96, median -27.38
-- Big loss (<= -20%): young 57/88, mature 18/88
+- Scan-level mean difference (young - mature): -28.29 points, 95% interval (-40.2, -15.3); scans with young worse 39/58
+- Pairs with young worse: 63/91 (69.2%); pair mean -25.24, median -27.29
+- Big loss (<= -20%): young 60/91, mature 20/91
 
 ## Comparator reuse (cap 2)
 
@@ -960,11 +960,11 @@
 | 20261116T175739 | NEUTRAL | GTAHUB | 30254.05 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | COGE | 21183.21 | labelled | -40.32 |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | ANGSTIPAN | 21057.15 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T185738 | NEUTRAL | Tgacrn | 95762.93 | pending | None | swordcat | 96998.56 | pending | None |  |
-| 20261116T185738 | NEUTRAL | ETF | 39026.90 | pending | None | SNUT | 35601.11 | pending | None |  |
-| 20261116T185738 | NEUTRAL | DACAT | 32539.61 | pending | None | SNUT | 35601.11 | pending | None |  |
-| 20261116T185738 | NEUTRAL | COGE | 24261.35 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T185738 | NEUTRAL | TRADER | 16484.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T185738 | NEUTRAL | Tgacrn | 95762.93 | labelled | -100.0 | swordcat | 96998.56 | labelled | -4.79 |  |
+| 20261116T185738 | NEUTRAL | ETF | 39026.90 | labelled | -31.19 | SNUT | 35601.11 | labelled | -28.61 |  |
+| 20261116T185738 | NEUTRAL | DACAT | 32539.61 | labelled | -30.68 | SNUT | 35601.11 | labelled | -28.61 |  |
+| 20261116T185738 | NEUTRAL | COGE | 24261.35 | labelled | 36.98 |  |  |  | None | comparators used twice |
+| 20261116T185738 | NEUTRAL | TRADER | 16484.05 | labelled | -49.46 |  |  |  | None | no eligible comparator |
 | 20261116T195738 | NEUTRAL | ROCCO | 83144.46 | pending | None | swordcat | 95964.43 | pending | None |  |
 | 20261116T195738 | NEUTRAL | ASWF | 60350.55 | pending | None | swordcat | 95964.43 | pending | None |  |
 | 20261116T195738 | NEUTRAL | GTA | 56389.35 | pending | None |  |  |  | None | comparators used twice |
@@ -974,3 +974,5 @@
 | 20261116T195738 | NEUTRAL | VICEDORD | 29274.01 | pending | None |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | BANK | 27100.72 | pending | None |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | 100x | 17640.58 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | pending | None | fone | 191673.37 | pending | None |  |
+| 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | pending | None |  |  |  | None | no eligible comparator |
