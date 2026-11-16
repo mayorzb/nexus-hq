@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 236 |
-| sightings | 14069 |
-| liquid sightings | 5617 |
-| first liquid sightings = unique tokens with an outcome row | 1189 |
-|   young | 837 |
-|   mature | 302 |
+| eval-2 scans | 237 |
+| sightings | 14132 |
+| liquid sightings | 5639 |
+| first liquid sightings = unique tokens with an outcome row | 1194 |
+|   young | 838 |
+|   mature | 306 |
 |   other | 50 |
-| young with a comparator (cap 2) | 143 |
+| young with a comparator (cap 2) | 144 |
 | young without a comparator | 694 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 51 |
+|   pairs: young or mature outcome not yet usable | 52 |
 | complete pairs (both 60m outcomes labelled) | 85 |
 | scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 634/837, no_valid_entry 34/837, pending 8/837, unknown 123/837, unreliable 38/837
-- mature: labelled 272/302, pending 8/302, unknown 22/302
-- no valid entry: young 34/837, mature 0/302
+- young: labelled 637/838, no_valid_entry 34/838, pending 5/838, unknown 123/838, unreliable 39/838
+- mature: labelled 275/306, pending 8/306, unknown 23/306
+- no valid entry: young 34/838, mature 0/306
 
 ## Effect (after costs; unit = scan)
 
@@ -920,15 +920,16 @@
 | 20261116T045747 | NEUTRAL | plumber | 81851.84 | no_valid_entry | None | swordcat | 102821.53 | labelled | -12.17 |  |
 | 20261116T045747 | NEUTRAL | PASSED | 25321.42 | labelled | -28.83 |  |  |  | None | no eligible comparator |
 | 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | labelled | -29.26 | RESPECT | 24429.25 | pending | None |  |
-| 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | unknown | None | RESPECT | 24429.25 | pending | None |  |
+| 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | labelled | -29.26 | RESPECT | 24429.25 | unknown | None |  |
+| 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | unknown | None | RESPECT | 24429.25 | unknown | None |  |
 | 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | labelled | -47.74 |  |  |  | None | comparators used twice |
 | 20261116T055747 | NEUTRAL | capytrade | 17349.50 | labelled | 36.65 |  |  |  | None | comparators used twice |
-| 20261116T095743 | NEUTRAL | mihao | 29335.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T095743 | NEUTRAL | MORNING | 29303.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T095743 | NEUTRAL | STAR | 20464.92 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T095743 | NEUTRAL | देसी | 19520.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T095743 | NEUTRAL | mihao | 29335.80 | labelled | 37.12 |  |  |  | None | no eligible comparator |
+| 20261116T095743 | NEUTRAL | MORNING | 29303.71 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261116T095743 | NEUTRAL | STAR | 20464.92 | labelled | 36.83 |  |  |  | None | no eligible comparator |
+| 20261116T095743 | NEUTRAL | देसी | 19520.51 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | Amman | 98055.56 | pending | None | swordcat | 98314.10 | pending | None |  |
 | 20261116T105743 | NEUTRAL | 1NU | 35108.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | 1.0 | 28055.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | 1NU | 24981.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T115742 | NEUTRAL | Democat | 28828.19 | pending | None | DADDY | 17436.50 | pending | None |  |
