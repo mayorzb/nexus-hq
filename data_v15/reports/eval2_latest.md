@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 224 |
-| sightings | 13364 |
-| liquid sightings | 5373 |
-| first liquid sightings = unique tokens with an outcome row | 1125 |
-|   young | 803 |
-|   mature | 272 |
+| eval-2 scans | 225 |
+| sightings | 13430 |
+| liquid sightings | 5395 |
+| first liquid sightings = unique tokens with an outcome row | 1132 |
+|   young | 807 |
+|   mature | 275 |
 |   other | 50 |
-| young with a comparator (cap 2) | 136 |
-| young without a comparator | 667 |
+| young with a comparator (cap 2) | 138 |
+| young without a comparator | 669 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 47 |
+|   pairs: young or mature outcome not yet usable | 49 |
 | complete pairs (both 60m outcomes labelled) | 83 |
 | scans contributing a complete pair | 52 |
 
 ## 60m outcome status by group
 
-- young: labelled 608/803, no_valid_entry 32/803, pending 10/803, unknown 116/803, unreliable 37/803
-- mature: labelled 249/272, pending 3/272, unknown 20/272
-- no valid entry: young 32/803, mature 0/272
+- young: labelled 611/807, no_valid_entry 33/807, pending 9/807, unknown 117/807, unreliable 37/807
+- mature: labelled 250/275, pending 4/275, unknown 21/275
+- no valid entry: young 33/807, mature 0/275
 
 ## Effect (after costs; unit = scan)
 
@@ -88,6 +88,7 @@
 - 20261115T135759-8UqE9m2r: BLG (20261115T135759), rockstar (20261115T135759)
 - 20261115T185755-vxG5ucic: ANSEM (20261115T185755), NINU (20261115T185755)
 - 20261115T205754-6wnMkKcJ: Jacket (20261115T205754), DYC (20261115T205754)
+- 20261115T235752-CY254o6V: VI (20261115T235752), AI (20261115T235752)
 
 ## Every pair
 
@@ -884,15 +885,19 @@
 | 20261115T205754 | NEUTRAL | Jacket | 31729.29 | labelled | 37.17 | paperdog | 16278.07 | labelled | -46.09 |  |
 | 20261115T205754 | NEUTRAL | DYC | 27034.93 | labelled | -36.61 | paperdog | 16278.07 | labelled | -46.09 |  |
 | 20261115T205754 | NEUTRAL | HENSEN | 24970.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261115T205754 | NEUTRAL | rockstar | 24557.21 | pending | None |  |  |  | None | comparators used twice |
+| 20261115T205754 | NEUTRAL | rockstar | 24557.21 | unknown | None |  |  |  | None | comparators used twice |
 | 20261115T205754 | NEUTRAL | VICE | 24384.17 | labelled | -32.68 |  |  |  | None | comparators used twice |
 | 20261115T205754 | NEUTRAL | GTA | 21977.43 | labelled | 36.89 |  |  |  | None | comparators used twice |
 | 20261115T205754 | NEUTRAL | FRANK | 18134.56 | labelled | -80.03 |  |  |  | None | comparators used twice |
-| 20261115T215753 | GREEN | BJB | 69644.49 | pending | None | swordcat | 94799.50 | pending | None |  |
-| 20261115T215753 | GREEN | $DILL | 37593.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T215753 | GREEN | Brian | 31578.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T215753 | GREEN | TITTYVERSE | 20439.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T215753 | GREEN | BJB | 69644.49 | labelled | -28.21 | swordcat | 94799.50 | unknown | None |  |
+| 20261115T215753 | GREEN | $DILL | 37593.68 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261115T215753 | GREEN | Brian | 31578.19 | labelled | -30.46 |  |  |  | None | no eligible comparator |
+| 20261115T215753 | GREEN | TITTYVERSE | 20439.05 | labelled | 36.83 |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | Retire | 32819.36 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | GTAVI | 25852.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | HUNDRED | 17989.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | GTA6CRAB | 17121.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T235752 | GREEN | COLDRUM | 91729.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T235752 | GREEN | VI | 34195.64 | pending | None | BigP | 18377.64 | pending | None |  |
+| 20261115T235752 | GREEN | AI | 21772.69 | pending | None | BigP | 18377.64 | pending | None |  |
+| 20261115T235752 | GREEN | ANIME | 20132.13 | pending | None |  |  |  | None | comparators used twice |
