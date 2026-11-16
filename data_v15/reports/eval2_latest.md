@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 225 |
-| sightings | 13430 |
-| liquid sightings | 5395 |
-| first liquid sightings = unique tokens with an outcome row | 1132 |
-|   young | 807 |
-|   mature | 275 |
+| eval-2 scans | 226 |
+| sightings | 13495 |
+| liquid sightings | 5418 |
+| first liquid sightings = unique tokens with an outcome row | 1140 |
+|   young | 813 |
+|   mature | 277 |
 |   other | 50 |
-| young with a comparator (cap 2) | 138 |
-| young without a comparator | 669 |
+| young with a comparator (cap 2) | 139 |
+| young without a comparator | 674 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 49 |
+|   pairs: young or mature outcome not yet usable | 50 |
 | complete pairs (both 60m outcomes labelled) | 83 |
 | scans contributing a complete pair | 52 |
 
 ## 60m outcome status by group
 
-- young: labelled 611/807, no_valid_entry 33/807, pending 9/807, unknown 117/807, unreliable 37/807
-- mature: labelled 250/275, pending 4/275, unknown 21/275
-- no valid entry: young 33/807, mature 0/275
+- young: labelled 614/813, no_valid_entry 33/813, pending 11/813, unknown 118/813, unreliable 37/813
+- mature: labelled 251/277, pending 5/277, unknown 21/277
+- no valid entry: young 33/813, mature 0/277
 
 ## Effect (after costs; unit = scan)
 
@@ -871,7 +871,7 @@
 | 20261115T175755 | NEUTRAL | UDTF | 104103.18 | labelled | 1.89 | swordcat | 94220.29 | labelled | -2.32 |  |
 | 20261115T175755 | NEUTRAL | BEAR | 29924.56 | labelled | 4.38 |  |  |  | None | no eligible comparator |
 | 20261115T185755 | NEUTRAL | BFS | 36064.31 | labelled | -30.31 | SWJ | 57641.61 | labelled | 16.46 |  |
-| 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | pending | None | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
+| 20261115T185755 | NEUTRAL | ANSEM | 18926.11 | unknown | None | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
 | 20261115T185755 | NEUTRAL | NINU | 15831.90 | labelled | -30.94 | PEPECLAUS | 15477.91 | labelled | -21.56 |  |
 | 20261115T195755 | NEUTRAL | Anthropig | 60411.93 | labelled | -12.76 |  |  |  | None | no eligible comparator |
 | 20261115T195755 | NEUTRAL | ANT | 38687.20 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -893,11 +893,17 @@
 | 20261115T215753 | GREEN | $DILL | 37593.68 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261115T215753 | GREEN | Brian | 31578.19 | labelled | -30.46 |  |  |  | None | no eligible comparator |
 | 20261115T215753 | GREEN | TITTYVERSE | 20439.05 | labelled | 36.83 |  |  |  | None | no eligible comparator |
-| 20261115T225753 | GREEN | Retire | 32819.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T225753 | GREEN | GTAVI | 25852.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T225753 | GREEN | Retire | 32819.36 | labelled | -28.31 |  |  |  | None | no eligible comparator |
+| 20261115T225753 | GREEN | GTAVI | 25852.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | HUNDRED | 17989.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261115T225753 | GREEN | GTA6CRAB | 17121.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T225753 | GREEN | GTA6CRAB | 17121.90 | labelled | -11.58 |  |  |  | None | no eligible comparator |
 | 20261115T235752 | GREEN | COLDRUM | 91729.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T235752 | GREEN | VI | 34195.64 | pending | None | BigP | 18377.64 | pending | None |  |
 | 20261115T235752 | GREEN | AI | 21772.69 | pending | None | BigP | 18377.64 | pending | None |  |
 | 20261115T235752 | GREEN | ANIME | 20132.13 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T005751 | GREEN | BAWSAQ | 59034.47 | pending | None | swordcat | 103615.05 | pending | None |  |
+| 20261116T005751 | GREEN | FiveM | 40022.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | CYBERDACITY | 25608.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | WIGGLES | 24071.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | GOAT | 17962.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | nma | 15764.20 | pending | None |  |  |  | None | no eligible comparator |
