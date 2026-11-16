@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 228 |
-| sightings | 13621 |
-| liquid sightings | 5463 |
-| first liquid sightings = unique tokens with an outcome row | 1152 |
-|   young | 820 |
-|   mature | 282 |
+| eval-2 scans | 229 |
+| sightings | 13684 |
+| liquid sightings | 5484 |
+| first liquid sightings = unique tokens with an outcome row | 1156 |
+|   young | 822 |
+|   mature | 284 |
 |   other | 50 |
 | young with a comparator (cap 2) | 139 |
-| young without a comparator | 681 |
+| young without a comparator | 683 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
 |   pairs: young or mature outcome not yet usable | 48 |
 | complete pairs (both 60m outcomes labelled) | 85 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 622/820, no_valid_entry 33/820, pending 8/820, unknown 119/820, unreliable 38/820
-- mature: labelled 256/282, pending 5/282, unknown 21/282
-- no valid entry: young 33/820, mature 0/282
+- young: labelled 626/822, no_valid_entry 33/822, pending 6/822, unknown 119/822, unreliable 38/822
+- mature: labelled 258/284, pending 5/284, unknown 21/284
+- no valid entry: young 33/822, mature 0/284
 
 ## Effect (after costs; unit = scan)
 
@@ -907,10 +907,12 @@
 | 20261116T005751 | GREEN | WIGGLES | 24071.25 | labelled | 36.97 |  |  |  | None | no eligible comparator |
 | 20261116T005751 | GREEN | GOAT | 17962.39 | labelled | -34.34 |  |  |  | None | no eligible comparator |
 | 20261116T005751 | GREEN | nma | 15764.20 | labelled | -34.92 |  |  |  | None | no eligible comparator |
-| 20261116T015750 | GREEN | CRACK | 30397.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T015750 | GREEN | Neil | 28903.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T015750 | GREEN | Nеil | 24501.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T015750 | GREEN | Nеil | 18433.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T015750 | GREEN | CRACK | 30397.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261116T015750 | GREEN | Neil | 28903.71 | labelled | -30.87 |  |  |  | None | no eligible comparator |
+| 20261116T015750 | GREEN | Nеil | 24501.71 | labelled | -34.59 |  |  |  | None | no eligible comparator |
+| 20261116T015750 | GREEN | Nеil | 18433.69 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | NEON | 18144.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | XRL | 17594.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | SAME | 15609.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T035748 | NEUTRAL | Marvin | 23871.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T035748 | NEUTRAL | VICE | 19439.85 | pending | None |  |  |  | None | no eligible comparator |
