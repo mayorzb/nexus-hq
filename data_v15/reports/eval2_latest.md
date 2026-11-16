@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 247 |
-| sightings | 14739 |
-| liquid sightings | 5892 |
-| first liquid sightings = unique tokens with an outcome row | 1264 |
+| eval-2 scans | 248 |
+| sightings | 14801 |
+| liquid sightings | 5915 |
+| first liquid sightings = unique tokens with an outcome row | 1268 |
 |   young | 883 |
-|   mature | 331 |
+|   mature | 335 |
 |   other | 50 |
 | young with a comparator (cap 2) | 157 |
 | young without a comparator | 726 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 55 |
-| complete pairs (both 60m outcomes labelled) | 95 |
-| scans contributing a complete pair | 59 |
+|   pairs: young or mature outcome not yet usable | 54 |
+| complete pairs (both 60m outcomes labelled) | 96 |
+| scans contributing a complete pair | 60 |
 
 ## 60m outcome status by group
 
-- young: labelled 671/883, no_valid_entry 34/883, pending 13/883, unknown 125/883, unreliable 40/883
-- mature: labelled 299/331, pending 6/331, unknown 26/331
-- no valid entry: young 34/883, mature 0/331
+- young: labelled 672/883, no_valid_entry 34/883, pending 8/883, unknown 128/883, unreliable 41/883
+- mature: labelled 300/335, pending 8/335, unknown 27/335
+- no valid entry: young 34/883, mature 0/335
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.01 points, 95% interval (-40.39, -15.25); scans with young worse 40/59
-- Pairs with young worse: 66/95 (69.5%); pair mean -24.66, median -27.29
-- Big loss (<= -20%): young 63/95, mature 20/95
+- Scan-level mean difference (young - mature): -28.09 points, 95% interval (-40.46, -15.63); scans with young worse 41/60
+- Pairs with young worse: 67/96 (69.8%); pair mean -24.75, median -27.38
+- Big loss (<= -20%): young 64/96, mature 20/96
 
 ## Comparator reuse (cap 2)
 
@@ -952,9 +952,9 @@
 | 20261116T155740 | NEUTRAL | 👠 | 16283.08 | labelled | -32.49 |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | VIBED | 31062.58 | labelled | -10.97 |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | SNUT | 28101.72 | labelled | -28.21 |  |  |  | None | no eligible comparator |
-| 20261116T165740 | NEUTRAL | 👠 | 23440.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T165740 | NEUTRAL | MEE | 17446.59 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T165740 | NEUTRAL | XBOX | 15632.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | 👠 | 23440.52 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | MEE | 17446.59 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | XBOX | 15632.02 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | UGOS | 120316.46 | unknown | None | swordcat | 95260.31 | unknown | None |  |
 | 20261116T175739 | NEUTRAL | MAYA | 66933.84 | labelled | -52.82 | swordcat | 95260.31 | unknown | None |  |
 | 20261116T175739 | NEUTRAL | DSP | 61525.09 | labelled | 18.49 |  |  |  | None | comparators used twice |
@@ -975,8 +975,8 @@
 | 20261116T195738 | NEUTRAL | VICEDORD | 29274.01 | labelled | -5.31 |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | BANK | 27100.72 | labelled | -35.05 |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | 100x | 17640.58 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | pending | None | fone | 191673.37 | pending | None |  |
-| 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | labelled | -34.31 | fone | 191673.37 | labelled | -1.8 |  |
+| 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261116T215738 | NEUTRAL | BAWSAQ | 88473.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T215738 | NEUTRAL | BAWSAQ | 47405.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T215738 | NEUTRAL | CHOP | 27365.20 | pending | None | Lemon | 19493.89 | pending | None |  |
