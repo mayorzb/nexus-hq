@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 227 |
-| sightings | 13559 |
-| liquid sightings | 5442 |
-| first liquid sightings = unique tokens with an outcome row | 1146 |
-|   young | 817 |
-|   mature | 279 |
+| eval-2 scans | 228 |
+| sightings | 13621 |
+| liquid sightings | 5463 |
+| first liquid sightings = unique tokens with an outcome row | 1152 |
+|   young | 820 |
+|   mature | 282 |
 |   other | 50 |
 | young with a comparator (cap 2) | 139 |
-| young without a comparator | 678 |
+| young without a comparator | 681 |
 |   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 49 |
-| complete pairs (both 60m outcomes labelled) | 84 |
-| scans contributing a complete pair | 53 |
+|   pairs: young or mature outcome not yet usable | 48 |
+| complete pairs (both 60m outcomes labelled) | 85 |
+| scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 616/817, no_valid_entry 33/817, pending 12/817, unknown 118/817, unreliable 38/817
-- mature: labelled 254/279, pending 4/279, unknown 21/279
-- no valid entry: young 33/817, mature 0/279
+- young: labelled 622/820, no_valid_entry 33/820, pending 8/820, unknown 119/820, unreliable 38/820
+- mature: labelled 256/282, pending 5/282, unknown 21/282
+- no valid entry: young 33/820, mature 0/282
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.29 points, 95% interval (-40.1, -15.0); scans with young worse 36/53
-- Pairs with young worse: 58/84 (69.0%); pair mean -24.23, median -27.38
-- Big loss (<= -20%): young 55/84, mature 18/84
+- Scan-level mean difference (young - mature): -26.02 points, 95% interval (-38.35, -13.4); scans with young worse 36/54
+- Pairs with young worse: 58/85 (68.2%); pair mean -23.46, median -27.29
+- Big loss (<= -20%): young 55/85, mature 18/85
 
 ## Comparator reuse (cap 2)
 
@@ -897,17 +897,20 @@
 | 20261115T225753 | GREEN | GTAVI | 25852.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | HUNDRED | 17989.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261115T225753 | GREEN | GTA6CRAB | 17121.90 | labelled | -11.58 |  |  |  | None | no eligible comparator |
-| 20261115T235752 | GREEN | COLDRUM | 91729.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261115T235752 | GREEN | COLDRUM | 91729.63 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261115T235752 | GREEN | VI | 34195.64 | unreliable | None | BigP | 18377.64 | labelled | -28.69 |  |
 | 20261115T235752 | GREEN | AI | 21772.69 | labelled | 36.89 | BigP | 18377.64 | labelled | -28.69 |  |
 | 20261115T235752 | GREEN | ANIME | 20132.13 | labelled | -30.61 |  |  |  | None | comparators used twice |
-| 20261116T005751 | GREEN | BAWSAQ | 59034.47 | pending | None | swordcat | 103615.05 | pending | None |  |
-| 20261116T005751 | GREEN | FiveM | 40022.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T005751 | GREEN | CYBERDACITY | 25608.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T005751 | GREEN | WIGGLES | 24071.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T005751 | GREEN | GOAT | 17962.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T005751 | GREEN | nma | 15764.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | BAWSAQ | 59034.47 | labelled | 37.46 | swordcat | 103615.05 | labelled | -3.84 |  |
+| 20261116T005751 | GREEN | FiveM | 40022.02 | labelled | 11.14 |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | CYBERDACITY | 25608.52 | labelled | -40.75 |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | WIGGLES | 24071.25 | labelled | 36.97 |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | GOAT | 17962.39 | labelled | -34.34 |  |  |  | None | no eligible comparator |
+| 20261116T005751 | GREEN | nma | 15764.20 | labelled | -34.92 |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | CRACK | 30397.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Neil | 28903.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Nеil | 24501.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Nеil | 18433.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | NEON | 18144.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | XRL | 17594.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | SAME | 15609.06 | pending | None |  |  |  | None | no eligible comparator |
