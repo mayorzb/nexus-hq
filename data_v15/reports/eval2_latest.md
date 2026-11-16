@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 235 |
-| sightings | 14006 |
-| liquid sightings | 5594 |
-| first liquid sightings = unique tokens with an outcome row | 1181 |
-|   young | 833 |
-|   mature | 298 |
+| eval-2 scans | 236 |
+| sightings | 14069 |
+| liquid sightings | 5617 |
+| first liquid sightings = unique tokens with an outcome row | 1189 |
+|   young | 837 |
+|   mature | 302 |
 |   other | 50 |
-| young with a comparator (cap 2) | 142 |
-| young without a comparator | 691 |
+| young with a comparator (cap 2) | 143 |
+| young without a comparator | 694 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 50 |
+|   pairs: young or mature outcome not yet usable | 51 |
 | complete pairs (both 60m outcomes labelled) | 85 |
 | scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 634/833, no_valid_entry 34/833, pending 4/833, unknown 123/833, unreliable 38/833
-- mature: labelled 269/298, pending 7/298, unknown 22/298
-- no valid entry: young 34/833, mature 0/298
+- young: labelled 634/837, no_valid_entry 34/837, pending 8/837, unknown 123/837, unreliable 38/837
+- mature: labelled 272/302, pending 8/302, unknown 22/302
+- no valid entry: young 34/837, mature 0/302
 
 ## Effect (after costs; unit = scan)
 
@@ -928,3 +928,7 @@
 | 20261116T095743 | NEUTRAL | MORNING | 29303.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T095743 | NEUTRAL | STAR | 20464.92 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T095743 | NEUTRAL | देसी | 19520.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T105743 | NEUTRAL | Amman | 98055.56 | pending | None | swordcat | 98314.10 | pending | None |  |
+| 20261116T105743 | NEUTRAL | 1NU | 35108.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T105743 | NEUTRAL | 1.0 | 28055.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T105743 | NEUTRAL | 1NU | 24981.93 | pending | None |  |  |  | None | no eligible comparator |
