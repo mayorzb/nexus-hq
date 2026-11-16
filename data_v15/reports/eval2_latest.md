@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 239 |
-| sightings | 14247 |
-| liquid sightings | 5685 |
-| first liquid sightings = unique tokens with an outcome row | 1200 |
-|   young | 844 |
-|   mature | 306 |
+| eval-2 scans | 240 |
+| sightings | 14306 |
+| liquid sightings | 5707 |
+| first liquid sightings = unique tokens with an outcome row | 1204 |
+|   young | 845 |
+|   mature | 309 |
 |   other | 50 |
-| young with a comparator (cap 2) | 144 |
+| young with a comparator (cap 2) | 145 |
 | young without a comparator | 700 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 50 |
+|   pairs: young or mature outcome not yet usable | 51 |
 | complete pairs (both 60m outcomes labelled) | 87 |
 | scans contributing a complete pair | 56 |
 
 ## 60m outcome status by group
 
-- young: labelled 642/844, no_valid_entry 34/844, pending 6/844, unknown 123/844, unreliable 39/844
-- mature: labelled 283/306, unknown 23/306
-- no valid entry: young 34/844, mature 0/306
+- young: labelled 645/845, no_valid_entry 34/845, pending 4/845, unknown 123/845, unreliable 39/845
+- mature: labelled 283/309, pending 3/309, unknown 23/309
+- no valid entry: young 34/845, mature 0/309
 
 ## Effect (after costs; unit = scan)
 
@@ -934,8 +934,9 @@
 | 20261116T105743 | NEUTRAL | 1NU | 24981.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T115742 | NEUTRAL | Democat | 28828.19 | labelled | 37.11 | DADDY | 17436.50 | labelled | 7.62 |  |
 | 20261116T125742 | RED | DOUG | 27927.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T125742 | RED | 🌭 | 17843.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T125742 | RED | WASTED6 | 17316.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T125742 | RED | DOUG | 15248.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T125742 | RED | 🌭 | 17843.55 | labelled | 36.69 |  |  |  | None | no eligible comparator |
+| 20261116T125742 | RED | WASTED6 | 17316.60 | labelled | 36.65 |  |  |  | None | no eligible comparator |
+| 20261116T125742 | RED | DOUG | 15248.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T135742 | RED | Stumpy | 26412.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T135742 | RED | hello | 16184.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T145741 | NEUTRAL | GTAVI | 32267.14 | pending | None | TURN | 17453.42 | pending | None |  |
