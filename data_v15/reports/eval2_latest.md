@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 242 |
-| sightings | 14424 |
-| liquid sightings | 5757 |
-| first liquid sightings = unique tokens with an outcome row | 1218 |
-|   young | 855 |
-|   mature | 313 |
+| eval-2 scans | 243 |
+| sightings | 14487 |
+| liquid sightings | 5783 |
+| first liquid sightings = unique tokens with an outcome row | 1227 |
+|   young | 861 |
+|   mature | 316 |
 |   other | 50 |
-| young with a comparator (cap 2) | 145 |
-| young without a comparator | 710 |
+| young with a comparator (cap 2) | 147 |
+| young without a comparator | 714 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 50 |
+|   pairs: young or mature outcome not yet usable | 52 |
 | complete pairs (both 60m outcomes labelled) | 88 |
 | scans contributing a complete pair | 57 |
 
 ## 60m outcome status by group
 
-- young: labelled 648/855, no_valid_entry 34/855, pending 11/855, unknown 123/855, unreliable 39/855
-- mature: labelled 286/313, pending 4/313, unknown 23/313
-- no valid entry: young 34/855, mature 0/313
+- young: labelled 652/861, no_valid_entry 34/861, pending 12/861, unknown 123/861, unreliable 40/861
+- mature: labelled 287/316, pending 5/316, unknown 24/316
+- no valid entry: young 34/861, mature 0/316
 
 ## Effect (after costs; unit = scan)
 
@@ -90,6 +90,7 @@
 - 20261115T205754-6wnMkKcJ: Jacket (20261115T205754), DYC (20261115T205754)
 - 20261115T235752-CY254o6V: VI (20261115T235752), AI (20261115T235752)
 - 20261116T055747-BARobVaV: 6STAR (20261116T055747), X Æ A-Xii (20261116T055747)
+- 20261116T175739-5tCju6YN: UGOS (20261116T175739), MAYA (20261116T175739)
 
 ## Every pair
 
@@ -940,13 +941,19 @@
 | 20261116T135742 | RED | Stumpy | 26412.31 | labelled | -42.29 |  |  |  | None | no eligible comparator |
 | 20261116T135742 | RED | hello | 16184.24 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261116T145741 | NEUTRAL | GTAVI | 32267.14 | labelled | -100.0 | TURN | 17453.42 | labelled | 36.66 |  |
-| 20261116T155740 | NEUTRAL | Samtit | 93105.57 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T155740 | NEUTRAL | LEOSTAR | 23609.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T155740 | NEUTRAL | GTAMAS | 16764.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T155740 | NEUTRAL | VI | 16440.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T155740 | NEUTRAL | 👠 | 16283.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | Samtit | 93105.57 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | LEOSTAR | 23609.18 | labelled | -39.82 |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | GTAMAS | 16764.04 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | VI | 16440.49 | labelled | -36.89 |  |  |  | None | no eligible comparator |
+| 20261116T155740 | NEUTRAL | 👠 | 16283.08 | labelled | -32.49 |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | VIBED | 31062.58 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | SNUT | 28101.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | 👠 | 23440.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | MEE | 17446.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | XBOX | 15632.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T175739 | NEUTRAL | UGOS | 120316.46 | pending | None | swordcat | 95260.31 | pending | None |  |
+| 20261116T175739 | NEUTRAL | MAYA | 66933.84 | pending | None | swordcat | 95260.31 | pending | None |  |
+| 20261116T175739 | NEUTRAL | DSP | 61525.09 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T175739 | NEUTRAL | GTAHUB | 30254.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T175739 | NEUTRAL | COGE | 21183.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T175739 | NEUTRAL | ANGSTIPAN | 21057.15 | pending | None |  |  |  | None | no eligible comparator |
