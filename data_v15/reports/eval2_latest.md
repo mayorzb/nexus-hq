@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 233 |
-| sightings | 13878 |
-| liquid sightings | 5550 |
-| first liquid sightings = unique tokens with an outcome row | 1171 |
+| eval-2 scans | 234 |
+| sightings | 13944 |
+| liquid sightings | 5571 |
+| first liquid sightings = unique tokens with an outcome row | 1174 |
 |   young | 829 |
-|   mature | 292 |
+|   mature | 295 |
 |   other | 50 |
 | young with a comparator (cap 2) | 142 |
 | young without a comparator | 687 |
-|   pairs: young had no valid entry (counted, not scored) | 6 |
-|   pairs: young or mature outcome not yet usable | 51 |
+|   pairs: young had no valid entry (counted, not scored) | 7 |
+|   pairs: young or mature outcome not yet usable | 50 |
 | complete pairs (both 60m outcomes labelled) | 85 |
 | scans contributing a complete pair | 54 |
 
 ## 60m outcome status by group
 
-- young: labelled 634/829, no_valid_entry 33/829, pending 4/829, unknown 120/829, unreliable 38/829
-- mature: labelled 266/292, pending 4/292, unknown 22/292
-- no valid entry: young 33/829, mature 0/292
+- young: labelled 634/829, no_valid_entry 34/829, pending 1/829, unknown 122/829, unreliable 38/829
+- mature: labelled 266/295, pending 7/295, unknown 22/295
+- no valid entry: young 34/829, mature 0/295
 
 ## Effect (after costs; unit = scan)
 
@@ -912,15 +912,15 @@
 | 20261116T015750 | GREEN | Neil | 28903.71 | labelled | -30.87 |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Nеil | 24501.71 | labelled | -34.59 |  |  |  | None | no eligible comparator |
 | 20261116T015750 | GREEN | Nеil | 18433.69 | labelled | 36.72 |  |  |  | None | no eligible comparator |
-| 20261116T025749 | NEUTRAL | NEON | 18144.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T025749 | NEUTRAL | NEON | 18144.38 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | XRL | 17594.68 | labelled | -28.36 |  |  |  | None | no eligible comparator |
 | 20261116T025749 | NEUTRAL | SAME | 15609.06 | labelled | -31.22 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | Marvin | 23871.14 | labelled | -29.14 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | VICE | 19439.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | labelled | -12.17 |  |
+| 20261116T045747 | NEUTRAL | plumber | 81851.84 | no_valid_entry | None | swordcat | 102821.53 | labelled | -12.17 |  |
 | 20261116T045747 | NEUTRAL | PASSED | 25321.42 | labelled | -28.83 |  |  |  | None | no eligible comparator |
 | 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | labelled | -29.26 | RESPECT | 24429.25 | pending | None |  |
-| 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | pending | None | RESPECT | 24429.25 | pending | None |  |
+| 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | unknown | None | RESPECT | 24429.25 | pending | None |  |
 | 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | labelled | -47.74 |  |  |  | None | comparators used twice |
 | 20261116T055747 | NEUTRAL | capytrade | 17349.50 | labelled | 36.65 |  |  |  | None | comparators used twice |
