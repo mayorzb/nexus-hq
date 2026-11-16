@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 241 |
-| sightings | 14362 |
-| liquid sightings | 5732 |
-| first liquid sightings = unique tokens with an outcome row | 1211 |
-|   young | 850 |
-|   mature | 311 |
+| eval-2 scans | 242 |
+| sightings | 14424 |
+| liquid sightings | 5757 |
+| first liquid sightings = unique tokens with an outcome row | 1218 |
+|   young | 855 |
+|   mature | 313 |
 |   other | 50 |
 | young with a comparator (cap 2) | 145 |
-| young without a comparator | 705 |
+| young without a comparator | 710 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 51 |
-| complete pairs (both 60m outcomes labelled) | 87 |
-| scans contributing a complete pair | 56 |
+|   pairs: young or mature outcome not yet usable | 50 |
+| complete pairs (both 60m outcomes labelled) | 88 |
+| scans contributing a complete pair | 57 |
 
 ## 60m outcome status by group
 
-- young: labelled 647/850, no_valid_entry 34/850, pending 7/850, unknown 123/850, unreliable 39/850
-- mature: labelled 283/311, pending 5/311, unknown 23/311
-- no valid entry: young 34/850, mature 0/311
+- young: labelled 648/855, no_valid_entry 34/855, pending 11/855, unknown 123/855, unreliable 39/855
+- mature: labelled 286/313, pending 4/313, unknown 23/313
+- no valid entry: young 34/855, mature 0/313
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.27 points, 95% interval (-38.56, -13.15); scans with young worse 37/56
-- Pairs with young worse: 59/87 (67.8%); pair mean -23.68, median -27.29
-- Big loss (<= -20%): young 56/87, mature 18/87
+- Scan-level mean difference (young - mature): -28.21 points, 95% interval (-40.86, -14.75); scans with young worse 38/57
+- Pairs with young worse: 60/88 (68.2%); pair mean -24.96, median -27.38
+- Big loss (<= -20%): young 57/88, mature 18/88
 
 ## Comparator reuse (cap 2)
 
@@ -939,9 +939,14 @@
 | 20261116T125742 | RED | DOUG | 15248.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T135742 | RED | Stumpy | 26412.31 | labelled | -42.29 |  |  |  | None | no eligible comparator |
 | 20261116T135742 | RED | hello | 16184.24 | labelled | 36.57 |  |  |  | None | no eligible comparator |
-| 20261116T145741 | NEUTRAL | GTAVI | 32267.14 | pending | None | TURN | 17453.42 | pending | None |  |
+| 20261116T145741 | NEUTRAL | GTAVI | 32267.14 | labelled | -100.0 | TURN | 17453.42 | labelled | 36.66 |  |
 | 20261116T155740 | NEUTRAL | Samtit | 93105.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | LEOSTAR | 23609.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | GTAMAS | 16764.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | VI | 16440.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | 👠 | 16283.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | VIBED | 31062.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | SNUT | 28101.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | 👠 | 23440.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | MEE | 17446.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | XBOX | 15632.02 | pending | None |  |  |  | None | no eligible comparator |
