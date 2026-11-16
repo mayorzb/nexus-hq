@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 231 |
-| sightings | 13807 |
-| liquid sightings | 5529 |
+| eval-2 scans | 232 |
+| sightings | 13832 |
+| liquid sightings | 5531 |
 | first liquid sightings = unique tokens with an outcome row | 1168 |
 |   young | 829 |
 |   mature | 289 |
@@ -22,8 +22,8 @@
 
 ## 60m outcome status by group
 
-- young: labelled 629/829, no_valid_entry 33/829, pending 9/829, unknown 120/829, unreliable 38/829
-- mature: labelled 262/289, pending 5/289, unknown 22/289
+- young: labelled 631/829, no_valid_entry 33/829, pending 7/829, unknown 120/829, unreliable 38/829
+- mature: labelled 264/289, pending 3/289, unknown 22/289
 - no valid entry: young 33/829, mature 0/289
 
 ## Effect (after costs; unit = scan)
@@ -917,9 +917,9 @@
 | 20261116T025749 | NEUTRAL | SAME | 15609.06 | labelled | -31.22 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | Marvin | 23871.14 | labelled | -29.14 |  |  |  | None | no eligible comparator |
 | 20261116T035748 | NEUTRAL | VICE | 19439.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | pending | None |  |
-| 20261116T045747 | NEUTRAL | PASSED | 25321.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T045747 | NEUTRAL | plumber | 81851.84 | pending | None | swordcat | 102821.53 | labelled | -12.17 |  |
+| 20261116T045747 | NEUTRAL | PASSED | 25321.42 | labelled | -28.83 |  |  |  | None | no eligible comparator |
+| 20261116T045747 | NEUTRAL | DOGEPAD | 16051.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T055747 | NEUTRAL | 6STAR | 33706.71 | pending | None | RESPECT | 24429.25 | pending | None |  |
 | 20261116T055747 | NEUTRAL | X Æ A-Xii | 20274.91 | pending | None | RESPECT | 24429.25 | pending | None |  |
 | 20261116T055747 | NEUTRAL | AxiomCoin | 18225.80 | pending | None |  |  |  | None | comparators used twice |
