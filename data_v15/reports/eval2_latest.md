@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 243 |
-| sightings | 14487 |
-| liquid sightings | 5783 |
-| first liquid sightings = unique tokens with an outcome row | 1227 |
-|   young | 861 |
-|   mature | 316 |
+| eval-2 scans | 244 |
+| sightings | 14551 |
+| liquid sightings | 5808 |
+| first liquid sightings = unique tokens with an outcome row | 1236 |
+|   young | 866 |
+|   mature | 320 |
 |   other | 50 |
-| young with a comparator (cap 2) | 147 |
-| young without a comparator | 714 |
+| young with a comparator (cap 2) | 150 |
+| young without a comparator | 716 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 52 |
+|   pairs: young or mature outcome not yet usable | 55 |
 | complete pairs (both 60m outcomes labelled) | 88 |
 | scans contributing a complete pair | 57 |
 
 ## 60m outcome status by group
 
-- young: labelled 652/861, no_valid_entry 34/861, pending 12/861, unknown 123/861, unreliable 40/861
-- mature: labelled 287/316, pending 5/316, unknown 24/316
-- no valid entry: young 34/861, mature 0/316
+- young: labelled 654/866, no_valid_entry 34/866, pending 14/866, unknown 124/866, unreliable 40/866
+- mature: labelled 289/320, pending 7/320, unknown 24/320
+- no valid entry: young 34/866, mature 0/320
 
 ## Effect (after costs; unit = scan)
 
@@ -91,6 +91,7 @@
 - 20261115T235752-CY254o6V: VI (20261115T235752), AI (20261115T235752)
 - 20261116T055747-BARobVaV: 6STAR (20261116T055747), X Æ A-Xii (20261116T055747)
 - 20261116T175739-5tCju6YN: UGOS (20261116T175739), MAYA (20261116T175739)
+- 20261116T185738-48UW5PSM: ETF (20261116T185738), DACAT (20261116T185738)
 
 ## Every pair
 
@@ -934,7 +935,7 @@
 | 20261116T105743 | NEUTRAL | 1.0 | 28055.41 | labelled | -40.07 |  |  |  | None | no eligible comparator |
 | 20261116T105743 | NEUTRAL | 1NU | 24981.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T115742 | NEUTRAL | Democat | 28828.19 | labelled | 37.11 | DADDY | 17436.50 | labelled | 7.62 |  |
-| 20261116T125742 | RED | DOUG | 27927.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T125742 | RED | DOUG | 27927.65 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | 🌭 | 17843.55 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | WASTED6 | 17316.60 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261116T125742 | RED | DOUG | 15248.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -946,8 +947,8 @@
 | 20261116T155740 | NEUTRAL | GTAMAS | 16764.04 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | VI | 16440.49 | labelled | -36.89 |  |  |  | None | no eligible comparator |
 | 20261116T155740 | NEUTRAL | 👠 | 16283.08 | labelled | -32.49 |  |  |  | None | no eligible comparator |
-| 20261116T165740 | NEUTRAL | VIBED | 31062.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T165740 | NEUTRAL | SNUT | 28101.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | VIBED | 31062.58 | labelled | -10.97 |  |  |  | None | no eligible comparator |
+| 20261116T165740 | NEUTRAL | SNUT | 28101.72 | labelled | -28.21 |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | 👠 | 23440.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | MEE | 17446.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T165740 | NEUTRAL | XBOX | 15632.02 | pending | None |  |  |  | None | no eligible comparator |
@@ -957,3 +958,8 @@
 | 20261116T175739 | NEUTRAL | GTAHUB | 30254.05 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | COGE | 21183.21 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | ANGSTIPAN | 21057.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T185738 | NEUTRAL | Tgacrn | 95762.93 | pending | None | swordcat | 96998.56 | pending | None |  |
+| 20261116T185738 | NEUTRAL | ETF | 39026.90 | pending | None | SNUT | 35601.11 | pending | None |  |
+| 20261116T185738 | NEUTRAL | DACAT | 32539.61 | pending | None | SNUT | 35601.11 | pending | None |  |
+| 20261116T185738 | NEUTRAL | COGE | 24261.35 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T185738 | NEUTRAL | TRADER | 16484.05 | pending | None |  |  |  | None | no eligible comparator |
