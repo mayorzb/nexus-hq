@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 254 |
-| sightings | 15178 |
-| liquid sightings | 6068 |
-| first liquid sightings = unique tokens with an outcome row | 1306 |
-|   young | 902 |
-|   mature | 351 |
+| eval-2 scans | 255 |
+| sightings | 15234 |
+| liquid sightings | 6092 |
+| first liquid sightings = unique tokens with an outcome row | 1311 |
+|   young | 905 |
+|   mature | 353 |
 |   other | 53 |
 | young with a comparator (cap 2) | 162 |
-| young without a comparator | 740 |
+| young without a comparator | 743 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 55 |
-| complete pairs (both 60m outcomes labelled) | 100 |
-| scans contributing a complete pair | 62 |
+|   pairs: young or mature outcome not yet usable | 54 |
+| complete pairs (both 60m outcomes labelled) | 101 |
+| scans contributing a complete pair | 63 |
 
 ## 60m outcome status by group
 
-- young: labelled 686/902, no_valid_entry 34/902, pending 9/902, unknown 132/902, unreliable 41/902
-- mature: labelled 318/351, pending 6/351, unknown 27/351
-- no valid entry: young 34/902, mature 0/351
+- young: labelled 689/905, no_valid_entry 34/905, pending 7/905, unknown 134/905, unreliable 41/905
+- mature: labelled 321/353, pending 5/353, unknown 27/353
+- no valid entry: young 34/905, mature 0/353
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.47 points, 95% interval (-37.79, -11.53); scans with young worse 41/62
-- Pairs with young worse: 67/100 (67.0%); pair mean -20.39, median -26.32
-- Big loss (<= -20%): young 65/100, mature 24/100
+- Scan-level mean difference (young - mature): -24.51 points, 95% interval (-37.25, -11.8); scans with young worse 42/63
+- Pairs with young worse: 68/101 (67.3%); pair mean -20.46, median -26.59
+- Big loss (<= -20%): young 66/101, mature 24/101
 
 ## Comparator reuse (cap 2)
 
@@ -986,9 +986,9 @@
 | 20261116T215738 | NEUTRAL | GROTTI | 18652.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261116T215738 | NEUTRAL | NINJACAT | 17230.16 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261116T235736 | NEUTRAL | LEOSTAR | 73281.66 | labelled | -1.8 |  |  |  | None | no eligible comparator |
-| 20261116T235736 | NEUTRAL | sol | 32409.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | sol | 32409.81 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | GTA | 31649.04 | labelled | -37.58 |  |  |  | None | no eligible comparator |
-| 20261116T235736 | NEUTRAL | goldie | 18870.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | goldie | 18870.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | lulu | 17511.11 | labelled | -29.45 |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | labelled | -33.11 |  |  |  | None | no eligible comparator |
@@ -999,8 +999,11 @@
 | 20261117T025733 | NEUTRAL | VIRTUAL | 21857.18 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | CHAR | 19632.86 | labelled | 36.79 |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | FLYWHEEL | 16592.68 | labelled | -51.64 |  |  |  | None | no eligible comparator |
-| 20261117T035733 | NEUTRAL | bul | 117437.80 | pending | None | swordcat | 96861.14 | pending | None |  |
-| 20261117T035733 | NEUTRAL | MELNOK | 22376.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T035733 | NEUTRAL | 岗亭悟道 | 18549.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T035733 | NEUTRAL | bul | 117437.80 | labelled | -30.52 | swordcat | 96861.14 | labelled | -3.72 |  |
+| 20261117T035733 | NEUTRAL | MELNOK | 22376.96 | labelled | -2.15 |  |  |  | None | no eligible comparator |
+| 20261117T035733 | NEUTRAL | 岗亭悟道 | 18549.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T045732 | NEUTRAL | ANIMAL | 31199.13 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T045732 | NEUTRAL | APEC | 29555.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | 现货不怕 | 29493.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | Purrcino | 21564.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | Purrcino | 18659.13 | pending | None |  |  |  | None | no eligible comparator |
