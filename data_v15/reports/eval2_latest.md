@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 252 |
-| sightings | 15054 |
-| liquid sightings | 6019 |
-| first liquid sightings = unique tokens with an outcome row | 1295 |
-|   young | 897 |
-|   mature | 345 |
+| eval-2 scans | 253 |
+| sightings | 15116 |
+| liquid sightings | 6043 |
+| first liquid sightings = unique tokens with an outcome row | 1301 |
+|   young | 900 |
+|   mature | 348 |
 |   other | 53 |
-| young with a comparator (cap 2) | 161 |
-| young without a comparator | 736 |
+| young with a comparator (cap 2) | 162 |
+| young without a comparator | 738 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 56 |
+|   pairs: young or mature outcome not yet usable | 57 |
 | complete pairs (both 60m outcomes labelled) | 98 |
 | scans contributing a complete pair | 61 |
 
 ## 60m outcome status by group
 
-- young: labelled 682/897, no_valid_entry 34/897, pending 10/897, unknown 130/897, unreliable 41/897
-- mature: labelled 313/345, pending 5/345, unknown 27/345
-- no valid entry: young 34/897, mature 0/345
+- young: labelled 682/900, no_valid_entry 34/900, pending 13/900, unknown 130/900, unreliable 41/900
+- mature: labelled 315/348, pending 6/348, unknown 27/348
+- no valid entry: young 34/900, mature 0/348
 
 ## Effect (after costs; unit = scan)
 
@@ -992,10 +992,13 @@
 | 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | lulu | 17511.11 | labelled | -29.45 |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | labelled | -33.11 |  |  |  | None | no eligible comparator |
-| 20261117T015734 | NEUTRAL | Santa | 27876.75 | pending | None | AMMU | 40473.31 | pending | None |  |
-| 20261117T015734 | NEUTRAL | SNUT | 24299.99 | pending | None | AMMU | 40473.31 | pending | None |  |
+| 20261117T015734 | NEUTRAL | Santa | 27876.75 | pending | None | AMMU | 40473.31 | labelled | 0.37 |  |
+| 20261117T015734 | NEUTRAL | SNUT | 24299.99 | pending | None | AMMU | 40473.31 | labelled | 0.37 |  |
 | 20261117T025733 | NEUTRAL | WANTED | 52663.76 | pending | None | PISS | 37395.69 | pending | None |  |
 | 20261117T025733 | NEUTRAL | Jojo | 26245.73 | pending | None | PISS | 37395.69 | pending | None |  |
 | 20261117T025733 | NEUTRAL | VIRTUAL | 21857.18 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | CHAR | 19632.86 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | FLYWHEEL | 16592.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T035733 | NEUTRAL | bul | 117437.80 | pending | None | swordcat | 96861.14 | pending | None |  |
+| 20261117T035733 | NEUTRAL | MELNOK | 22376.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T035733 | NEUTRAL | 岗亭悟道 | 18549.68 | pending | None |  |  |  | None | no eligible comparator |
