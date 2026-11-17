@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 261 |
-| sightings | 15590 |
-| liquid sightings | 6239 |
-| first liquid sightings = unique tokens with an outcome row | 1339 |
-|   young | 920 |
-|   mature | 366 |
+| eval-2 scans | 262 |
+| sightings | 15649 |
+| liquid sightings | 6259 |
+| first liquid sightings = unique tokens with an outcome row | 1341 |
+|   young | 921 |
+|   mature | 367 |
 |   other | 53 |
 | young with a comparator (cap 2) | 164 |
-| young without a comparator | 756 |
+| young without a comparator | 757 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 56 |
 | complete pairs (both 60m outcomes labelled) | 101 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 697/920, no_valid_entry 35/920, pending 8/920, unknown 136/920, unreliable 44/920
-- mature: labelled 336/366, pending 2/366, unknown 28/366
-- no valid entry: young 35/920, mature 0/366
+- young: labelled 701/921, no_valid_entry 35/921, pending 4/921, unknown 137/921, unreliable 44/921
+- mature: labelled 337/367, pending 2/367, unknown 28/367
+- no valid entry: young 35/921, mature 0/367
 
 ## Effect (after costs; unit = scan)
 
@@ -1012,13 +1012,14 @@
 | 20261117T075730 | NEUTRAL | SUPERPLUMB | 15157.98 | labelled | 26.36 |  |  |  | None | no eligible comparator |
 | 20261117T085729 | NEUTRAL | GTA | 29437.46 | unreliable | None | GTAVI | 35545.10 | labelled | -15.14 |  |
 | 20261117T095729 | NEUTRAL | Don | 30548.64 | labelled | 37.15 |  |  |  | None | no eligible comparator |
-| 20261117T095729 | NEUTRAL | KATIA | 24629.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T095729 | NEUTRAL | KATIA | 24629.29 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T095729 | NEUTRAL | JOB | 20084.59 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T095729 | NEUTRAL | TYSWAN | 15362.51 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261117T105728 | NEUTRAL | GROKIA | 31262.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T105728 | NEUTRAL | mas | 28111.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T105728 | NEUTRAL | Millionaires | 21106.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T105728 | NEUTRAL | mas | 17041.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | GROKIA | 31262.78 | labelled | 37.16 |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | mas | 28111.34 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | Millionaires | 21106.73 | labelled | -28.15 |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | mas | 17041.88 | labelled | -44.46 |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 21373.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 17409.34 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 16898.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T125726 | GREEN | SOYOUARE | 23826.84 | pending | None |  |  |  | None | no eligible comparator |
