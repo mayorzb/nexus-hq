@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 251 |
-| sightings | 14990 |
-| liquid sightings | 5991 |
-| first liquid sightings = unique tokens with an outcome row | 1287 |
-|   young | 892 |
-|   mature | 342 |
+| eval-2 scans | 252 |
+| sightings | 15054 |
+| liquid sightings | 6019 |
+| first liquid sightings = unique tokens with an outcome row | 1295 |
+|   young | 897 |
+|   mature | 345 |
 |   other | 53 |
-| young with a comparator (cap 2) | 159 |
-| young without a comparator | 733 |
+| young with a comparator (cap 2) | 161 |
+| young without a comparator | 736 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 54 |
+|   pairs: young or mature outcome not yet usable | 56 |
 | complete pairs (both 60m outcomes labelled) | 98 |
 | scans contributing a complete pair | 61 |
 
 ## 60m outcome status by group
 
-- young: labelled 680/892, no_valid_entry 34/892, pending 7/892, unknown 130/892, unreliable 41/892
-- mature: labelled 310/342, pending 5/342, unknown 27/342
-- no valid entry: young 34/892, mature 0/342
+- young: labelled 682/897, no_valid_entry 34/897, pending 10/897, unknown 130/897, unreliable 41/897
+- mature: labelled 313/345, pending 5/345, unknown 27/345
+- no valid entry: young 34/897, mature 0/345
 
 ## Effect (after costs; unit = scan)
 
@@ -96,6 +96,7 @@
 - 20261116T195738-DnAbkueg: VICECAT (20261116T195738), Trader (20261116T195738)
 - 20261116T215738-FsFqQGxC: CHOP (20261116T215738), VICE (20261116T215738)
 - 20261117T015734-8myBcnVY: Santa (20261117T015734), SNUT (20261117T015734)
+- 20261117T025733-8vDauAzN: WANTED (20261117T025733), Jojo (20261117T025733)
 
 ## Every pair
 
@@ -989,7 +990,12 @@
 | 20261116T235736 | NEUTRAL | GTA | 31649.04 | labelled | -37.58 |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | goldie | 18870.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T005735 | NEUTRAL | lulu | 17511.11 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | lulu | 17511.11 | labelled | -29.45 |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | labelled | -33.11 |  |  |  | None | no eligible comparator |
 | 20261117T015734 | NEUTRAL | Santa | 27876.75 | pending | None | AMMU | 40473.31 | pending | None |  |
 | 20261117T015734 | NEUTRAL | SNUT | 24299.99 | pending | None | AMMU | 40473.31 | pending | None |  |
+| 20261117T025733 | NEUTRAL | WANTED | 52663.76 | pending | None | PISS | 37395.69 | pending | None |  |
+| 20261117T025733 | NEUTRAL | Jojo | 26245.73 | pending | None | PISS | 37395.69 | pending | None |  |
+| 20261117T025733 | NEUTRAL | VIRTUAL | 21857.18 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T025733 | NEUTRAL | CHAR | 19632.86 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T025733 | NEUTRAL | FLYWHEEL | 16592.68 | pending | None |  |  |  | None | no eligible comparator |
