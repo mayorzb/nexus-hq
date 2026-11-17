@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 256 |
-| sightings | 15290 |
-| liquid sightings | 6116 |
-| first liquid sightings = unique tokens with an outcome row | 1316 |
-|   young | 906 |
-|   mature | 357 |
+| eval-2 scans | 257 |
+| sightings | 15344 |
+| liquid sightings | 6140 |
+| first liquid sightings = unique tokens with an outcome row | 1320 |
+|   young | 908 |
+|   mature | 359 |
 |   other | 53 |
 | young with a comparator (cap 2) | 163 |
-| young without a comparator | 743 |
+| young without a comparator | 745 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 55 |
 | complete pairs (both 60m outcomes labelled) | 101 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 690/906, no_valid_entry 34/906, pending 5/906, unknown 135/906, unreliable 42/906
-- mature: labelled 324/357, pending 6/357, unknown 27/357
-- no valid entry: young 34/906, mature 0/357
+- young: labelled 692/908, no_valid_entry 34/908, pending 4/908, unknown 135/908, unreliable 43/908
+- mature: labelled 326/359, pending 6/359, unknown 27/359
+- no valid entry: young 34/908, mature 0/359
 
 ## Effect (after costs; unit = scan)
 
@@ -1004,7 +1004,9 @@
 | 20261117T035733 | NEUTRAL | 岗亭悟道 | 18549.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T045732 | NEUTRAL | ANIMAL | 31199.13 | labelled | 37.16 |  |  |  | None | no eligible comparator |
 | 20261117T045732 | NEUTRAL | APEC | 29555.00 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261117T055731 | NEUTRAL | 现货不怕 | 29493.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T055731 | NEUTRAL | Purrcino | 21564.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T055731 | NEUTRAL | Purrcino | 18659.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | 现货不怕 | 29493.22 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | Purrcino | 21564.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261117T055731 | NEUTRAL | Purrcino | 18659.13 | labelled | 36.73 |  |  |  | None | no eligible comparator |
 | 20261117T065730 | NEUTRAL | KATIA | 26629.08 | pending | None | USEF | 17271.14 | pending | None |  |
+| 20261117T075730 | NEUTRAL | cepump | 24774.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T075730 | NEUTRAL | SUPERPLUMB | 15157.98 | pending | None |  |  |  | None | no eligible comparator |
