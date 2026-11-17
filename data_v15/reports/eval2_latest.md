@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 248 |
-| sightings | 14801 |
-| liquid sightings | 5915 |
-| first liquid sightings = unique tokens with an outcome row | 1268 |
-|   young | 883 |
-|   mature | 335 |
-|   other | 50 |
+| eval-2 scans | 249 |
+| sightings | 14867 |
+| liquid sightings | 5941 |
+| first liquid sightings = unique tokens with an outcome row | 1275 |
+|   young | 887 |
+|   mature | 337 |
+|   other | 51 |
 | young with a comparator (cap 2) | 157 |
-| young without a comparator | 726 |
+| young without a comparator | 730 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 54 |
-| complete pairs (both 60m outcomes labelled) | 96 |
-| scans contributing a complete pair | 60 |
+|   pairs: young or mature outcome not yet usable | 52 |
+| complete pairs (both 60m outcomes labelled) | 98 |
+| scans contributing a complete pair | 61 |
 
 ## 60m outcome status by group
 
-- young: labelled 672/883, no_valid_entry 34/883, pending 8/883, unknown 128/883, unreliable 41/883
-- mature: labelled 300/335, pending 8/335, unknown 27/335
-- no valid entry: young 34/883, mature 0/335
+- young: labelled 678/887, no_valid_entry 34/887, pending 5/887, unknown 129/887, unreliable 41/887
+- mature: labelled 304/337, pending 6/337, unknown 27/337
+- no valid entry: young 34/887, mature 0/337
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -28.09 points, 95% interval (-40.46, -15.63); scans with young worse 41/60
-- Pairs with young worse: 67/96 (69.8%); pair mean -24.75, median -27.38
-- Big loss (<= -20%): young 64/96, mature 20/96
+- Scan-level mean difference (young - mature): -26.55 points, 95% interval (-39.05, -14.34); scans with young worse 41/61
+- Pairs with young worse: 67/98 (68.4%); pair mean -22.9, median -26.94
+- Big loss (<= -20%): young 64/98, mature 22/98
 
 ## Comparator reuse (cap 2)
 
@@ -960,7 +960,7 @@
 | 20261116T175739 | NEUTRAL | DSP | 61525.09 | labelled | 18.49 |  |  |  | None | comparators used twice |
 | 20261116T175739 | NEUTRAL | GTAHUB | 30254.05 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261116T175739 | NEUTRAL | COGE | 21183.21 | labelled | -40.32 |  |  |  | None | no eligible comparator |
-| 20261116T175739 | NEUTRAL | ANGSTIPAN | 21057.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T175739 | NEUTRAL | ANGSTIPAN | 21057.15 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T185738 | NEUTRAL | Tgacrn | 95762.93 | labelled | -100.0 | swordcat | 96998.56 | labelled | -4.79 |  |
 | 20261116T185738 | NEUTRAL | ETF | 39026.90 | labelled | -31.19 | SNUT | 35601.11 | labelled | -28.61 |  |
 | 20261116T185738 | NEUTRAL | DACAT | 32539.61 | labelled | -30.68 | SNUT | 35601.11 | labelled | -28.61 |  |
@@ -977,9 +977,13 @@
 | 20261116T195738 | NEUTRAL | 100x | 17640.58 | pending | None |  |  |  | None | comparators used twice |
 | 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | labelled | -34.31 | fone | 191673.37 | labelled | -1.8 |  |
 | 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261116T215738 | NEUTRAL | BAWSAQ | 88473.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T215738 | NEUTRAL | BAWSAQ | 47405.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T215738 | NEUTRAL | CHOP | 27365.20 | pending | None | Lemon | 19493.89 | pending | None |  |
-| 20261116T215738 | NEUTRAL | VICE | 21872.87 | pending | None | Lemon | 19493.89 | pending | None |  |
-| 20261116T215738 | NEUTRAL | GROTTI | 18652.04 | pending | None |  |  |  | None | comparators used twice |
-| 20261116T215738 | NEUTRAL | NINJACAT | 17230.16 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T215738 | NEUTRAL | BAWSAQ | 88473.68 | labelled | 37.57 |  |  |  | None | no eligible comparator |
+| 20261116T215738 | NEUTRAL | BAWSAQ | 47405.35 | labelled | 37.38 |  |  |  | None | no eligible comparator |
+| 20261116T215738 | NEUTRAL | CHOP | 27365.20 | labelled | 37.07 | Lemon | 19493.89 | labelled | -28.8 |  |
+| 20261116T215738 | NEUTRAL | VICE | 21872.87 | labelled | 36.89 | Lemon | 19493.89 | labelled | -28.8 |  |
+| 20261116T215738 | NEUTRAL | GROTTI | 18652.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261116T215738 | NEUTRAL | NINJACAT | 17230.16 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261116T235736 | NEUTRAL | LEOSTAR | 73281.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | sol | 32409.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | GTA | 31649.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | goldie | 18870.61 | pending | None |  |  |  | None | no eligible comparator |
