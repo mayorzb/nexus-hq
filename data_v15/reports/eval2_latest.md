@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 255 |
-| sightings | 15234 |
-| liquid sightings | 6092 |
-| first liquid sightings = unique tokens with an outcome row | 1311 |
-|   young | 905 |
-|   mature | 353 |
+| eval-2 scans | 256 |
+| sightings | 15290 |
+| liquid sightings | 6116 |
+| first liquid sightings = unique tokens with an outcome row | 1316 |
+|   young | 906 |
+|   mature | 357 |
 |   other | 53 |
-| young with a comparator (cap 2) | 162 |
+| young with a comparator (cap 2) | 163 |
 | young without a comparator | 743 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 54 |
+|   pairs: young or mature outcome not yet usable | 55 |
 | complete pairs (both 60m outcomes labelled) | 101 |
 | scans contributing a complete pair | 63 |
 
 ## 60m outcome status by group
 
-- young: labelled 689/905, no_valid_entry 34/905, pending 7/905, unknown 134/905, unreliable 41/905
-- mature: labelled 321/353, pending 5/353, unknown 27/353
-- no valid entry: young 34/905, mature 0/353
+- young: labelled 690/906, no_valid_entry 34/906, pending 5/906, unknown 135/906, unreliable 42/906
+- mature: labelled 324/357, pending 6/357, unknown 27/357
+- no valid entry: young 34/906, mature 0/357
 
 ## Effect (after costs; unit = scan)
 
@@ -989,7 +989,7 @@
 | 20261116T235736 | NEUTRAL | sol | 32409.81 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | GTA | 31649.04 | labelled | -37.58 |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | goldie | 18870.61 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | lulu | 17511.11 | labelled | -29.45 |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | labelled | -33.11 |  |  |  | None | no eligible comparator |
 | 20261117T015734 | NEUTRAL | Santa | 27876.75 | unknown | None | AMMU | 40473.31 | labelled | 0.37 |  |
@@ -1002,8 +1002,9 @@
 | 20261117T035733 | NEUTRAL | bul | 117437.80 | labelled | -30.52 | swordcat | 96861.14 | labelled | -3.72 |  |
 | 20261117T035733 | NEUTRAL | MELNOK | 22376.96 | labelled | -2.15 |  |  |  | None | no eligible comparator |
 | 20261117T035733 | NEUTRAL | 岗亭悟道 | 18549.68 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261117T045732 | NEUTRAL | ANIMAL | 31199.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T045732 | NEUTRAL | APEC | 29555.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T045732 | NEUTRAL | ANIMAL | 31199.13 | labelled | 37.16 |  |  |  | None | no eligible comparator |
+| 20261117T045732 | NEUTRAL | APEC | 29555.00 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261117T055731 | NEUTRAL | 现货不怕 | 29493.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T055731 | NEUTRAL | Purrcino | 21564.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T055731 | NEUTRAL | Purrcino | 18659.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T065730 | NEUTRAL | KATIA | 26629.08 | pending | None | USEF | 17271.14 | pending | None |  |
