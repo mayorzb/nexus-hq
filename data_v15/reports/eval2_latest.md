@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 259 |
-| sightings | 15468 |
-| liquid sightings | 6190 |
-| first liquid sightings = unique tokens with an outcome row | 1330 |
-|   young | 913 |
-|   mature | 364 |
+| eval-2 scans | 260 |
+| sightings | 15529 |
+| liquid sightings | 6215 |
+| first liquid sightings = unique tokens with an outcome row | 1335 |
+|   young | 917 |
+|   mature | 365 |
 |   other | 53 |
 | young with a comparator (cap 2) | 164 |
-| young without a comparator | 749 |
+| young without a comparator | 753 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 56 |
 | complete pairs (both 60m outcomes labelled) | 101 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 695/913, no_valid_entry 34/913, pending 5/913, unknown 136/913, unreliable 43/913
-- mature: labelled 331/364, pending 5/364, unknown 28/364
-- no valid entry: young 34/913, mature 0/364
+- young: labelled 695/917, no_valid_entry 34/917, pending 8/917, unknown 136/917, unreliable 44/917
+- mature: labelled 334/365, pending 3/365, unknown 28/365
+- no valid entry: young 34/917, mature 0/365
 
 ## Effect (after costs; unit = scan)
 
@@ -1010,8 +1010,12 @@
 | 20261117T065730 | NEUTRAL | KATIA | 26629.08 | labelled | -28.77 | USEF | 17271.14 | unknown | None |  |
 | 20261117T075730 | NEUTRAL | cepump | 24774.18 | labelled | -32.26 |  |  |  | None | no eligible comparator |
 | 20261117T075730 | NEUTRAL | SUPERPLUMB | 15157.98 | labelled | 26.36 |  |  |  | None | no eligible comparator |
-| 20261117T085729 | NEUTRAL | GTA | 29437.46 | pending | None | GTAVI | 35545.10 | pending | None |  |
+| 20261117T085729 | NEUTRAL | GTA | 29437.46 | unreliable | None | GTAVI | 35545.10 | labelled | -15.14 |  |
 | 20261117T095729 | NEUTRAL | Don | 30548.64 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T095729 | NEUTRAL | KATIA | 24629.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T095729 | NEUTRAL | JOB | 20084.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T095729 | NEUTRAL | TYSWAN | 15362.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | GROKIA | 31262.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | mas | 28111.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | Millionaires | 21106.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T105728 | NEUTRAL | mas | 17041.88 | pending | None |  |  |  | None | no eligible comparator |
