@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 250 |
-| sightings | 14929 |
-| liquid sightings | 5968 |
-| first liquid sightings = unique tokens with an outcome row | 1282 |
-|   young | 890 |
-|   mature | 340 |
-|   other | 52 |
-| young with a comparator (cap 2) | 157 |
+| eval-2 scans | 251 |
+| sightings | 14990 |
+| liquid sightings | 5991 |
+| first liquid sightings = unique tokens with an outcome row | 1287 |
+|   young | 892 |
+|   mature | 342 |
+|   other | 53 |
+| young with a comparator (cap 2) | 159 |
 | young without a comparator | 733 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 52 |
+|   pairs: young or mature outcome not yet usable | 54 |
 | complete pairs (both 60m outcomes labelled) | 98 |
 | scans contributing a complete pair | 61 |
 
 ## 60m outcome status by group
 
-- young: labelled 678/890, no_valid_entry 34/890, pending 8/890, unknown 129/890, unreliable 41/890
-- mature: labelled 308/340, pending 5/340, unknown 27/340
-- no valid entry: young 34/890, mature 0/340
+- young: labelled 680/892, no_valid_entry 34/892, pending 7/892, unknown 130/892, unreliable 41/892
+- mature: labelled 310/342, pending 5/342, unknown 27/342
+- no valid entry: young 34/892, mature 0/342
 
 ## Effect (after costs; unit = scan)
 
@@ -95,6 +95,7 @@
 - 20261116T195738-5tCju6YN: ROCCO (20261116T195738), ASWF (20261116T195738)
 - 20261116T195738-DnAbkueg: VICECAT (20261116T195738), Trader (20261116T195738)
 - 20261116T215738-FsFqQGxC: CHOP (20261116T215738), VICE (20261116T215738)
+- 20261117T015734-8myBcnVY: Santa (20261117T015734), SNUT (20261117T015734)
 
 ## Every pair
 
@@ -974,7 +975,7 @@
 | 20261116T195738 | NEUTRAL | GTA | 30151.02 | labelled | -31.54 |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | VICEDORD | 29274.01 | labelled | -5.31 |  |  |  | None | comparators used twice |
 | 20261116T195738 | NEUTRAL | BANK | 27100.72 | labelled | -35.05 |  |  |  | None | comparators used twice |
-| 20261116T195738 | NEUTRAL | 100x | 17640.58 | pending | None |  |  |  | None | comparators used twice |
+| 20261116T195738 | NEUTRAL | 100x | 17640.58 | unknown | None |  |  |  | None | comparators used twice |
 | 20261116T205738 | NEUTRAL | BAWSAQ | 118995.27 | labelled | -34.31 | fone | 191673.37 | labelled | -1.8 |  |
 | 20261116T205738 | NEUTRAL | JENSEN | 29199.58 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261116T215738 | NEUTRAL | BAWSAQ | 88473.68 | labelled | 37.57 |  |  |  | None | no eligible comparator |
@@ -983,10 +984,12 @@
 | 20261116T215738 | NEUTRAL | VICE | 21872.87 | labelled | 36.89 | Lemon | 19493.89 | labelled | -28.8 |  |
 | 20261116T215738 | NEUTRAL | GROTTI | 18652.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261116T215738 | NEUTRAL | NINJACAT | 17230.16 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261116T235736 | NEUTRAL | LEOSTAR | 73281.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | LEOSTAR | 73281.66 | labelled | -1.8 |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | sol | 32409.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261116T235736 | NEUTRAL | GTA | 31649.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261116T235736 | NEUTRAL | GTA | 31649.04 | labelled | -37.58 |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | goldie | 18870.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | lulu | 17511.11 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T015734 | NEUTRAL | Santa | 27876.75 | pending | None | AMMU | 40473.31 | pending | None |  |
+| 20261117T015734 | NEUTRAL | SNUT | 24299.99 | pending | None | AMMU | 40473.31 | pending | None |  |
