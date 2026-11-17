@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 249 |
-| sightings | 14867 |
-| liquid sightings | 5941 |
-| first liquid sightings = unique tokens with an outcome row | 1275 |
-|   young | 887 |
-|   mature | 337 |
-|   other | 51 |
+| eval-2 scans | 250 |
+| sightings | 14929 |
+| liquid sightings | 5968 |
+| first liquid sightings = unique tokens with an outcome row | 1282 |
+|   young | 890 |
+|   mature | 340 |
+|   other | 52 |
 | young with a comparator (cap 2) | 157 |
-| young without a comparator | 730 |
+| young without a comparator | 733 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 52 |
 | complete pairs (both 60m outcomes labelled) | 98 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 678/887, no_valid_entry 34/887, pending 5/887, unknown 129/887, unreliable 41/887
-- mature: labelled 304/337, pending 6/337, unknown 27/337
-- no valid entry: young 34/887, mature 0/337
+- young: labelled 678/890, no_valid_entry 34/890, pending 8/890, unknown 129/890, unreliable 41/890
+- mature: labelled 308/340, pending 5/340, unknown 27/340
+- no valid entry: young 34/890, mature 0/340
 
 ## Effect (after costs; unit = scan)
 
@@ -987,3 +987,6 @@
 | 20261116T235736 | NEUTRAL | sol | 32409.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | GTA | 31649.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261116T235736 | NEUTRAL | goldie | 18870.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | NEXTTIME | 19350.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | lulu | 17511.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T005735 | NEUTRAL | OPTIMJACK | 15281.79 | pending | None |  |  |  | None | no eligible comparator |
