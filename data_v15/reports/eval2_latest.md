@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 257 |
-| sightings | 15344 |
-| liquid sightings | 6140 |
-| first liquid sightings = unique tokens with an outcome row | 1320 |
-|   young | 908 |
-|   mature | 359 |
+| eval-2 scans | 258 |
+| sightings | 15408 |
+| liquid sightings | 6165 |
+| first liquid sightings = unique tokens with an outcome row | 1324 |
+|   young | 909 |
+|   mature | 362 |
 |   other | 53 |
-| young with a comparator (cap 2) | 163 |
+| young with a comparator (cap 2) | 164 |
 | young without a comparator | 745 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 55 |
+|   pairs: young or mature outcome not yet usable | 56 |
 | complete pairs (both 60m outcomes labelled) | 101 |
 | scans contributing a complete pair | 63 |
 
 ## 60m outcome status by group
 
-- young: labelled 692/908, no_valid_entry 34/908, pending 4/908, unknown 135/908, unreliable 43/908
-- mature: labelled 326/359, pending 6/359, unknown 27/359
-- no valid entry: young 34/908, mature 0/359
+- young: labelled 693/909, no_valid_entry 34/909, pending 3/909, unknown 136/909, unreliable 43/909
+- mature: labelled 329/362, pending 5/362, unknown 28/362
+- no valid entry: young 34/909, mature 0/362
 
 ## Effect (after costs; unit = scan)
 
@@ -996,7 +996,7 @@
 | 20261117T015734 | NEUTRAL | SNUT | 24299.99 | unknown | None | AMMU | 40473.31 | labelled | 0.37 |  |
 | 20261117T025733 | NEUTRAL | WANTED | 52663.76 | labelled | 37.42 | PISS | 37395.69 | labelled | -100.0 |  |
 | 20261117T025733 | NEUTRAL | Jojo | 26245.73 | labelled | -32.63 | PISS | 37395.69 | labelled | -100.0 |  |
-| 20261117T025733 | NEUTRAL | VIRTUAL | 21857.18 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T025733 | NEUTRAL | VIRTUAL | 21857.18 | unknown | None |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | CHAR | 19632.86 | labelled | 36.79 |  |  |  | None | comparators used twice |
 | 20261117T025733 | NEUTRAL | FLYWHEEL | 16592.68 | labelled | -51.64 |  |  |  | None | no eligible comparator |
 | 20261117T035733 | NEUTRAL | bul | 117437.80 | labelled | -30.52 | swordcat | 96861.14 | labelled | -3.72 |  |
@@ -1007,6 +1007,7 @@
 | 20261117T055731 | NEUTRAL | 现货不怕 | 29493.22 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261117T055731 | NEUTRAL | Purrcino | 21564.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T055731 | NEUTRAL | Purrcino | 18659.13 | labelled | 36.73 |  |  |  | None | no eligible comparator |
-| 20261117T065730 | NEUTRAL | KATIA | 26629.08 | pending | None | USEF | 17271.14 | pending | None |  |
+| 20261117T065730 | NEUTRAL | KATIA | 26629.08 | labelled | -28.77 | USEF | 17271.14 | unknown | None |  |
 | 20261117T075730 | NEUTRAL | cepump | 24774.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T075730 | NEUTRAL | SUPERPLUMB | 15157.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T085729 | NEUTRAL | GTA | 29437.46 | pending | None | GTAVI | 35545.10 | pending | None |  |
