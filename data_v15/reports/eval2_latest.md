@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 262 |
-| sightings | 15649 |
-| liquid sightings | 6259 |
-| first liquid sightings = unique tokens with an outcome row | 1341 |
+| eval-2 scans | 263 |
+| sightings | 15710 |
+| liquid sightings | 6279 |
+| first liquid sightings = unique tokens with an outcome row | 1343 |
 |   young | 921 |
-|   mature | 367 |
+|   mature | 369 |
 |   other | 53 |
 | young with a comparator (cap 2) | 164 |
 | young without a comparator | 757 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 701/921, no_valid_entry 35/921, pending 4/921, unknown 137/921, unreliable 44/921
-- mature: labelled 337/367, pending 2/367, unknown 28/367
-- no valid entry: young 35/921, mature 0/367
+- young: labelled 704/921, no_valid_entry 35/921, pending 1/921, unknown 137/921, unreliable 44/921
+- mature: labelled 338/369, pending 3/369, unknown 28/369
+- no valid entry: young 35/921, mature 0/369
 
 ## Effect (after costs; unit = scan)
 
@@ -1019,7 +1019,7 @@
 | 20261117T105728 | NEUTRAL | mas | 28111.34 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T105728 | NEUTRAL | Millionaires | 21106.73 | labelled | -28.15 |  |  |  | None | no eligible comparator |
 | 20261117T105728 | NEUTRAL | mas | 17041.88 | labelled | -44.46 |  |  |  | None | no eligible comparator |
-| 20261117T115727 | NEUTRAL | SOYOUARE | 21373.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T115727 | NEUTRAL | SOYOUARE | 17409.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T115727 | NEUTRAL | SOYOUARE | 16898.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T115727 | NEUTRAL | SOYOUARE | 21373.30 | labelled | -35.52 |  |  |  | None | no eligible comparator |
+| 20261117T115727 | NEUTRAL | SOYOUARE | 17409.34 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261117T115727 | NEUTRAL | SOYOUARE | 16898.65 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261117T125726 | GREEN | SOYOUARE | 23826.84 | pending | None |  |  |  | None | no eligible comparator |
