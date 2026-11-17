@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 264 |
-| sightings | 15772 |
-| liquid sightings | 6304 |
-| first liquid sightings = unique tokens with an outcome row | 1350 |
-|   young | 926 |
-|   mature | 371 |
+| eval-2 scans | 265 |
+| sightings | 15830 |
+| liquid sightings | 6328 |
+| first liquid sightings = unique tokens with an outcome row | 1355 |
+|   young | 930 |
+|   mature | 372 |
 |   other | 53 |
 | young with a comparator (cap 2) | 166 |
-| young without a comparator | 760 |
+| young without a comparator | 764 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 58 |
 | complete pairs (both 60m outcomes labelled) | 101 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 705/926, no_valid_entry 35/926, pending 5/926, unknown 137/926, unreliable 44/926
-- mature: labelled 339/371, pending 4/371, unknown 28/371
-- no valid entry: young 35/926, mature 0/371
+- young: labelled 705/930, no_valid_entry 35/930, pending 9/930, unknown 137/930, unreliable 44/930
+- mature: labelled 341/372, pending 3/372, unknown 28/372
+- no valid entry: young 35/930, mature 0/372
 
 ## Effect (after costs; unit = scan)
 
@@ -1029,3 +1029,7 @@
 | 20261117T145725 | NEUTRAL | Rex | 19245.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | bandana | 17469.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | Simpsons | 28606.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | KIM | 25158.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | SIMPSONS | 16752.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | SIMPSONS | 16294.84 | pending | None |  |  |  | None | no eligible comparator |
