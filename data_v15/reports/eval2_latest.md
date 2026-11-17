@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 270 |
-| sightings | 16134 |
-| liquid sightings | 6454 |
-| first liquid sightings = unique tokens with an outcome row | 1384 |
-|   young | 950 |
-|   mature | 381 |
+| eval-2 scans | 271 |
+| sightings | 16193 |
+| liquid sightings | 6477 |
+| first liquid sightings = unique tokens with an outcome row | 1389 |
+|   young | 954 |
+|   mature | 382 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 776 |
-|   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 63 |
-| complete pairs (both 60m outcomes labelled) | 104 |
-| scans contributing a complete pair | 65 |
+| young without a comparator | 780 |
+|   pairs: young had no valid entry (counted, not scored) | 8 |
+|   pairs: young or mature outcome not yet usable | 61 |
+| complete pairs (both 60m outcomes labelled) | 105 |
+| scans contributing a complete pair | 66 |
 
 ## 60m outcome status by group
 
-- young: labelled 720/950, no_valid_entry 35/950, pending 10/950, unknown 139/950, unreliable 46/950
-- mature: labelled 348/381, pending 5/381, unknown 28/381
-- no valid entry: young 35/950, mature 0/381
+- young: labelled 724/954, no_valid_entry 36/954, pending 8/954, unknown 139/954, unreliable 47/954
+- mature: labelled 350/382, pending 3/382, unknown 29/382
+- no valid entry: young 36/954, mature 0/382
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -22.96 points, 95% interval (-36.52, -10.53); scans with young worse 43/65
-- Pairs with young worse: 70/104 (67.3%); pair mean -19.54, median -25.8
-- Big loss (<= -20%): young 68/104, mature 25/104
+- Scan-level mean difference (young - mature): -22.89 points, 95% interval (-35.95, -10.17); scans with young worse 44/66
+- Pairs with young worse: 71/105 (67.6%); pair mean -19.53, median -25.55
+- Big loss (<= -20%): young 69/105, mature 25/105
 
 ## Comparator reuse (cap 2)
 
@@ -1047,13 +1047,17 @@
 | 20261117T185722 | NEUTRAL | GTA | 29073.09 | labelled | -35.57 | RESPECT+ | 15678.80 | pending | None |  |
 | 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261117T185722 | NEUTRAL | GTA | 21337.12 | labelled | 36.87 |  |  |  | None | comparators used twice |
-| 20261117T195721 | NEUTRAL | JALU | 57836.13 | pending | None | MOONVALE | 31477.33 | pending | None |  |
-| 20261117T195721 | NEUTRAL | GTAVI | 46358.86 | pending | None | MOONVALE | 31477.33 | pending | None |  |
-| 20261117T195721 | NEUTRAL | CSI | 32380.29 | pending | None | REFU | 28365.60 | pending | None |  |
-| 20261117T195721 | NEUTRAL | gamercat | 30791.23 | pending | None | REFU | 28365.60 | pending | None |  |
+| 20261117T195721 | NEUTRAL | JALU | 57836.13 | labelled | 37.45 | MOONVALE | 31477.33 | unknown | None |  |
+| 20261117T195721 | NEUTRAL | GTAVI | 46358.86 | labelled | 37.37 | MOONVALE | 31477.33 | unknown | None |  |
+| 20261117T195721 | NEUTRAL | CSI | 32380.29 | labelled | -34.23 | REFU | 28365.60 | labelled | -15.6 |  |
+| 20261117T195721 | NEUTRAL | gamercat | 30791.23 | no_valid_entry | None | REFU | 28365.60 | labelled | -15.6 |  |
 | 20261117T195721 | NEUTRAL | WANTED  | 26483.19 | pending | None |  |  |  | None | comparators used twice |
-| 20261117T195721 | NEUTRAL | GTAVI | 22043.99 | pending | None |  |  |  | None | comparators used twice |
-| 20261117T195721 | NEUTRAL | OMNI | 20256.88 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | GTAVI | 22043.99 | unreliable | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | OMNI | 20256.88 | labelled | 36.82 |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | GTAI | 17114.00 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T205720 | NEUTRAL | LUCIASS | 25530.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T205720 | NEUTRAL | LUCIA | 22773.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T215720 | NEUTRAL | PS5 | 52423.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T215720 | NEUTRAL | LUNO | 39775.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T215720 | NEUTRAL | KATIA | 39698.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T215720 | NEUTRAL | GTAMAS | 16463.92 | pending | None |  |  |  | None | no eligible comparator |
