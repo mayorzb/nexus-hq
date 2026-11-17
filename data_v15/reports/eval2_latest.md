@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 263 |
-| sightings | 15710 |
-| liquid sightings | 6279 |
-| first liquid sightings = unique tokens with an outcome row | 1343 |
-|   young | 921 |
-|   mature | 369 |
+| eval-2 scans | 264 |
+| sightings | 15772 |
+| liquid sightings | 6304 |
+| first liquid sightings = unique tokens with an outcome row | 1350 |
+|   young | 926 |
+|   mature | 371 |
 |   other | 53 |
-| young with a comparator (cap 2) | 164 |
-| young without a comparator | 757 |
+| young with a comparator (cap 2) | 166 |
+| young without a comparator | 760 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 56 |
+|   pairs: young or mature outcome not yet usable | 58 |
 | complete pairs (both 60m outcomes labelled) | 101 |
 | scans contributing a complete pair | 63 |
 
 ## 60m outcome status by group
 
-- young: labelled 704/921, no_valid_entry 35/921, pending 1/921, unknown 137/921, unreliable 44/921
-- mature: labelled 338/369, pending 3/369, unknown 28/369
-- no valid entry: young 35/921, mature 0/369
+- young: labelled 705/926, no_valid_entry 35/926, pending 5/926, unknown 137/926, unreliable 44/926
+- mature: labelled 339/371, pending 4/371, unknown 28/371
+- no valid entry: young 35/926, mature 0/371
 
 ## Effect (after costs; unit = scan)
 
@@ -97,6 +97,7 @@
 - 20261116T215738-FsFqQGxC: CHOP (20261116T215738), VICE (20261116T215738)
 - 20261117T015734-8myBcnVY: Santa (20261117T015734), SNUT (20261117T015734)
 - 20261117T025733-8vDauAzN: WANTED (20261117T025733), Jojo (20261117T025733)
+- 20261117T145725-GYZ3toP3: BAWSAQ (20261117T145725), BRAVO (20261117T145725)
 
 ## Every pair
 
@@ -1022,4 +1023,9 @@
 | 20261117T115727 | NEUTRAL | SOYOUARE | 21373.30 | labelled | -35.52 |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 17409.34 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 16898.65 | labelled | 36.62 |  |  |  | None | no eligible comparator |
-| 20261117T125726 | GREEN | SOYOUARE | 23826.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T125726 | GREEN | SOYOUARE | 23826.84 | labelled | -35.19 |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | BAWSAQ | 34464.07 | pending | None | GEKKO | 47672.34 | pending | None |  |
+| 20261117T145725 | NEUTRAL | BRAVO | 33296.04 | pending | None | GEKKO | 47672.34 | pending | None |  |
+| 20261117T145725 | NEUTRAL | Rex | 19245.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | bandana | 17469.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | pending | None |  |  |  | None | no eligible comparator |
