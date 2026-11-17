@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 268 |
-| sightings | 16020 |
-| liquid sightings | 6399 |
-| first liquid sightings = unique tokens with an outcome row | 1370 |
-|   young | 940 |
-|   mature | 377 |
+| eval-2 scans | 269 |
+| sightings | 16080 |
+| liquid sightings | 6430 |
+| first liquid sightings = unique tokens with an outcome row | 1381 |
+|   young | 948 |
+|   mature | 380 |
 |   other | 53 |
-| young with a comparator (cap 2) | 170 |
-| young without a comparator | 770 |
+| young with a comparator (cap 2) | 174 |
+| young without a comparator | 774 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 59 |
+|   pairs: young or mature outcome not yet usable | 63 |
 | complete pairs (both 60m outcomes labelled) | 104 |
 | scans contributing a complete pair | 65 |
 
 ## 60m outcome status by group
 
-- young: labelled 714/940, no_valid_entry 35/940, pending 7/940, unknown 138/940, unreliable 46/940
-- mature: labelled 346/377, pending 3/377, unknown 28/377
-- no valid entry: young 35/940, mature 0/377
+- young: labelled 715/948, no_valid_entry 35/948, pending 14/948, unknown 138/948, unreliable 46/948
+- mature: labelled 347/380, pending 5/380, unknown 28/380
+- no valid entry: young 35/948, mature 0/380
 
 ## Effect (after costs; unit = scan)
 
@@ -100,6 +100,8 @@
 - 20261117T145725-GYZ3toP3: BAWSAQ (20261117T145725), BRAVO (20261117T145725)
 - 20261117T165724-ANt31zPF: Cyber (20261117T165724), SSB (20261117T165724)
 - 20261117T185722-AXVowhHH: GM (20261117T185722), GTA (20261117T185722)
+- 20261117T195721-5p9G6Dii: JALU (20261117T195721), GTAVI (20261117T195721)
+- 20261117T195721-4ULpYvaT: CSI (20261117T195721), gamercat (20261117T195721)
 
 ## Every pair
 
@@ -1039,9 +1041,17 @@
 | 20261117T165724 | NEUTRAL | Cyber | 21742.25 | labelled | -28.55 | Mikol | 16058.97 | labelled | -11.53 |  |
 | 20261117T165724 | NEUTRAL | SSB | 19086.62 | labelled | -29.82 | Mikol | 16058.97 | labelled | -11.53 |  |
 | 20261117T165724 | NEUTRAL | FWACK | 17920.61 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | labelled | -30.12 |  |  |  | None | no eligible comparator |
 | 20261117T185722 | NEUTRAL | Rex | 69866.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T185722 | NEUTRAL | GM | 31267.63 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
 | 20261117T185722 | NEUTRAL | GTA | 29073.09 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
 | 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T185722 | NEUTRAL | GTA | 21337.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | JALU | 57836.13 | pending | None | MOONVALE | 31477.33 | pending | None |  |
+| 20261117T195721 | NEUTRAL | GTAVI | 46358.86 | pending | None | MOONVALE | 31477.33 | pending | None |  |
+| 20261117T195721 | NEUTRAL | CSI | 32380.29 | pending | None | REFU | 28365.60 | pending | None |  |
+| 20261117T195721 | NEUTRAL | gamercat | 30791.23 | pending | None | REFU | 28365.60 | pending | None |  |
+| 20261117T195721 | NEUTRAL | WANTED  | 26483.19 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | GTAVI | 22043.99 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | OMNI | 20256.88 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | GTAI | 17114.00 | pending | None |  |  |  | None | comparators used twice |
