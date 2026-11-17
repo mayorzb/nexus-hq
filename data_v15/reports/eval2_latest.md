@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 267 |
-| sightings | 15955 |
-| liquid sightings | 6374 |
-| first liquid sightings = unique tokens with an outcome row | 1363 |
-|   young | 935 |
-|   mature | 375 |
+| eval-2 scans | 268 |
+| sightings | 16020 |
+| liquid sightings | 6399 |
+| first liquid sightings = unique tokens with an outcome row | 1370 |
+|   young | 940 |
+|   mature | 377 |
 |   other | 53 |
-| young with a comparator (cap 2) | 168 |
-| young without a comparator | 767 |
+| young with a comparator (cap 2) | 170 |
+| young without a comparator | 770 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 59 |
-| complete pairs (both 60m outcomes labelled) | 102 |
-| scans contributing a complete pair | 64 |
+| complete pairs (both 60m outcomes labelled) | 104 |
+| scans contributing a complete pair | 65 |
 
 ## 60m outcome status by group
 
-- young: labelled 710/935, no_valid_entry 35/935, pending 6/935, unknown 138/935, unreliable 46/935
-- mature: labelled 344/375, pending 3/375, unknown 28/375
-- no valid entry: young 35/935, mature 0/375
+- young: labelled 714/940, no_valid_entry 35/940, pending 7/940, unknown 138/940, unreliable 46/940
+- mature: labelled 346/377, pending 3/377, unknown 28/377
+- no valid entry: young 35/940, mature 0/377
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -23.04 points, 95% interval (-36.73, -10.24); scans with young worse 42/64
-- Pairs with young worse: 68/102 (66.7%); pair mean -19.58, median -26.32
-- Big loss (<= -20%): young 66/102, mature 25/102
+- Scan-level mean difference (young - mature): -22.96 points, 95% interval (-36.52, -10.53); scans with young worse 43/65
+- Pairs with young worse: 70/104 (67.3%); pair mean -19.54, median -25.8
+- Big loss (<= -20%): young 68/104, mature 25/104
 
 ## Comparator reuse (cap 2)
 
@@ -99,6 +99,7 @@
 - 20261117T025733-8vDauAzN: WANTED (20261117T025733), Jojo (20261117T025733)
 - 20261117T145725-GYZ3toP3: BAWSAQ (20261117T145725), BRAVO (20261117T145725)
 - 20261117T165724-ANt31zPF: Cyber (20261117T165724), SSB (20261117T165724)
+- 20261117T185722-AXVowhHH: GM (20261117T185722), GTA (20261117T185722)
 
 ## Every pair
 
@@ -1034,8 +1035,13 @@
 | 20261117T155725 | NEUTRAL | KIM | 25158.54 | labelled | -28.67 |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | SIMPSONS | 16752.76 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | SIMPSONS | 16294.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261117T165724 | NEUTRAL | JVOLT | 41832.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T165724 | NEUTRAL | Cyber | 21742.25 | pending | None | Mikol | 16058.97 | pending | None |  |
-| 20261117T165724 | NEUTRAL | SSB | 19086.62 | pending | None | Mikol | 16058.97 | pending | None |  |
-| 20261117T165724 | NEUTRAL | FWACK | 17920.61 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T165724 | NEUTRAL | JVOLT | 41832.98 | labelled | 37.32 |  |  |  | None | no eligible comparator |
+| 20261117T165724 | NEUTRAL | Cyber | 21742.25 | labelled | -28.55 | Mikol | 16058.97 | labelled | -11.53 |  |
+| 20261117T165724 | NEUTRAL | SSB | 19086.62 | labelled | -29.82 | Mikol | 16058.97 | labelled | -11.53 |  |
+| 20261117T165724 | NEUTRAL | FWACK | 17920.61 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T185722 | NEUTRAL | Rex | 69866.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T185722 | NEUTRAL | GM | 31267.63 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
+| 20261117T185722 | NEUTRAL | GTA | 29073.09 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
+| 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T185722 | NEUTRAL | GTA | 21337.12 | pending | None |  |  |  | None | comparators used twice |
