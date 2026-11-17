@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 266 |
-| sightings | 15891 |
-| liquid sightings | 6352 |
-| first liquid sightings = unique tokens with an outcome row | 1361 |
-|   young | 934 |
-|   mature | 374 |
+| eval-2 scans | 267 |
+| sightings | 15955 |
+| liquid sightings | 6374 |
+| first liquid sightings = unique tokens with an outcome row | 1363 |
+|   young | 935 |
+|   mature | 375 |
 |   other | 53 |
 | young with a comparator (cap 2) | 168 |
-| young without a comparator | 766 |
+| young without a comparator | 767 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 59 |
 | complete pairs (both 60m outcomes labelled) | 102 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 708/934, no_valid_entry 35/934, pending 9/934, unknown 138/934, unreliable 44/934
-- mature: labelled 343/374, pending 3/374, unknown 28/374
-- no valid entry: young 35/934, mature 0/374
+- young: labelled 710/935, no_valid_entry 35/935, pending 6/935, unknown 138/935, unreliable 46/935
+- mature: labelled 344/375, pending 3/375, unknown 28/375
+- no valid entry: young 35/935, mature 0/375
 
 ## Effect (after costs; unit = scan)
 
@@ -1030,11 +1030,12 @@
 | 20261117T145725 | NEUTRAL | Rex | 19245.68 | labelled | -33.51 |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | bandana | 17469.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | labelled | 36.6 |  |  |  | None | no eligible comparator |
-| 20261117T155725 | NEUTRAL | Simpsons | 28606.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T155725 | NEUTRAL | KIM | 25158.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T155725 | NEUTRAL | SIMPSONS | 16752.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T155725 | NEUTRAL | SIMPSONS | 16294.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | Simpsons | 28606.60 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | KIM | 25158.54 | labelled | -28.67 |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | SIMPSONS | 16752.76 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261117T155725 | NEUTRAL | SIMPSONS | 16294.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T165724 | NEUTRAL | JVOLT | 41832.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T165724 | NEUTRAL | Cyber | 21742.25 | pending | None | Mikol | 16058.97 | pending | None |  |
 | 20261117T165724 | NEUTRAL | SSB | 19086.62 | pending | None | Mikol | 16058.97 | pending | None |  |
 | 20261117T165724 | NEUTRAL | FWACK | 17920.61 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | pending | None |  |  |  | None | no eligible comparator |
