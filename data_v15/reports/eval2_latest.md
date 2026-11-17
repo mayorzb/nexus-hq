@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 265 |
-| sightings | 15830 |
-| liquid sightings | 6328 |
-| first liquid sightings = unique tokens with an outcome row | 1355 |
-|   young | 930 |
-|   mature | 372 |
+| eval-2 scans | 266 |
+| sightings | 15891 |
+| liquid sightings | 6352 |
+| first liquid sightings = unique tokens with an outcome row | 1361 |
+|   young | 934 |
+|   mature | 374 |
 |   other | 53 |
-| young with a comparator (cap 2) | 166 |
-| young without a comparator | 764 |
+| young with a comparator (cap 2) | 168 |
+| young without a comparator | 766 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
-|   pairs: young or mature outcome not yet usable | 58 |
-| complete pairs (both 60m outcomes labelled) | 101 |
-| scans contributing a complete pair | 63 |
+|   pairs: young or mature outcome not yet usable | 59 |
+| complete pairs (both 60m outcomes labelled) | 102 |
+| scans contributing a complete pair | 64 |
 
 ## 60m outcome status by group
 
-- young: labelled 705/930, no_valid_entry 35/930, pending 9/930, unknown 137/930, unreliable 44/930
-- mature: labelled 341/372, pending 3/372, unknown 28/372
-- no valid entry: young 35/930, mature 0/372
+- young: labelled 708/934, no_valid_entry 35/934, pending 9/934, unknown 138/934, unreliable 44/934
+- mature: labelled 343/374, pending 3/374, unknown 28/374
+- no valid entry: young 35/934, mature 0/374
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.51 points, 95% interval (-37.25, -11.8); scans with young worse 42/63
-- Pairs with young worse: 68/101 (67.3%); pair mean -20.46, median -26.59
-- Big loss (<= -20%): young 66/101, mature 24/101
+- Scan-level mean difference (young - mature): -23.04 points, 95% interval (-36.73, -10.24); scans with young worse 42/64
+- Pairs with young worse: 68/102 (66.7%); pair mean -19.58, median -26.32
+- Big loss (<= -20%): young 66/102, mature 25/102
 
 ## Comparator reuse (cap 2)
 
@@ -98,6 +98,7 @@
 - 20261117T015734-8myBcnVY: Santa (20261117T015734), SNUT (20261117T015734)
 - 20261117T025733-8vDauAzN: WANTED (20261117T025733), Jojo (20261117T025733)
 - 20261117T145725-GYZ3toP3: BAWSAQ (20261117T145725), BRAVO (20261117T145725)
+- 20261117T165724-ANt31zPF: Cyber (20261117T165724), SSB (20261117T165724)
 
 ## Every pair
 
@@ -1024,12 +1025,16 @@
 | 20261117T115727 | NEUTRAL | SOYOUARE | 17409.34 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T115727 | NEUTRAL | SOYOUARE | 16898.65 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261117T125726 | GREEN | SOYOUARE | 23826.84 | labelled | -35.19 |  |  |  | None | no eligible comparator |
-| 20261117T145725 | NEUTRAL | BAWSAQ | 34464.07 | pending | None | GEKKO | 47672.34 | pending | None |  |
-| 20261117T145725 | NEUTRAL | BRAVO | 33296.04 | pending | None | GEKKO | 47672.34 | pending | None |  |
-| 20261117T145725 | NEUTRAL | Rex | 19245.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | BAWSAQ | 34464.07 | labelled | 37.22 | GEKKO | 47672.34 | labelled | -32.07 |  |
+| 20261117T145725 | NEUTRAL | BRAVO | 33296.04 | unknown | None | GEKKO | 47672.34 | labelled | -32.07 |  |
+| 20261117T145725 | NEUTRAL | Rex | 19245.68 | labelled | -33.51 |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | bandana | 17469.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | labelled | 36.6 |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | Simpsons | 28606.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | KIM | 25158.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | SIMPSONS | 16752.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | SIMPSONS | 16294.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T165724 | NEUTRAL | JVOLT | 41832.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T165724 | NEUTRAL | Cyber | 21742.25 | pending | None | Mikol | 16058.97 | pending | None |  |
+| 20261117T165724 | NEUTRAL | SSB | 19086.62 | pending | None | Mikol | 16058.97 | pending | None |  |
+| 20261117T165724 | NEUTRAL | FWACK | 17920.61 | pending | None |  |  |  | None | comparators used twice |
