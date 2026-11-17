@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 269 |
-| sightings | 16080 |
-| liquid sightings | 6430 |
-| first liquid sightings = unique tokens with an outcome row | 1381 |
-|   young | 948 |
-|   mature | 380 |
+| eval-2 scans | 270 |
+| sightings | 16134 |
+| liquid sightings | 6454 |
+| first liquid sightings = unique tokens with an outcome row | 1384 |
+|   young | 950 |
+|   mature | 381 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 774 |
+| young without a comparator | 776 |
 |   pairs: young had no valid entry (counted, not scored) | 7 |
 |   pairs: young or mature outcome not yet usable | 63 |
 | complete pairs (both 60m outcomes labelled) | 104 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 715/948, no_valid_entry 35/948, pending 14/948, unknown 138/948, unreliable 46/948
-- mature: labelled 347/380, pending 5/380, unknown 28/380
-- no valid entry: young 35/948, mature 0/380
+- young: labelled 720/950, no_valid_entry 35/950, pending 10/950, unknown 139/950, unreliable 46/950
+- mature: labelled 348/381, pending 5/381, unknown 28/381
+- no valid entry: young 35/950, mature 0/381
 
 ## Effect (after costs; unit = scan)
 
@@ -1031,7 +1031,7 @@
 | 20261117T145725 | NEUTRAL | BAWSAQ | 34464.07 | labelled | 37.22 | GEKKO | 47672.34 | labelled | -32.07 |  |
 | 20261117T145725 | NEUTRAL | BRAVO | 33296.04 | unknown | None | GEKKO | 47672.34 | labelled | -32.07 |  |
 | 20261117T145725 | NEUTRAL | Rex | 19245.68 | labelled | -33.51 |  |  |  | None | no eligible comparator |
-| 20261117T145725 | NEUTRAL | bandana | 17469.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T145725 | NEUTRAL | bandana | 17469.02 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T145725 | NEUTRAL | SUPERPLUMB | 16568.87 | labelled | 36.6 |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | Simpsons | 28606.60 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261117T155725 | NEUTRAL | KIM | 25158.54 | labelled | -28.67 |  |  |  | None | no eligible comparator |
@@ -1042,11 +1042,11 @@
 | 20261117T165724 | NEUTRAL | SSB | 19086.62 | labelled | -29.82 | Mikol | 16058.97 | labelled | -11.53 |  |
 | 20261117T165724 | NEUTRAL | FWACK | 17920.61 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | labelled | -30.12 |  |  |  | None | no eligible comparator |
-| 20261117T185722 | NEUTRAL | Rex | 69866.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T185722 | NEUTRAL | GM | 31267.63 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
-| 20261117T185722 | NEUTRAL | GTA | 29073.09 | pending | None | RESPECT+ | 15678.80 | pending | None |  |
-| 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | pending | None |  |  |  | None | comparators used twice |
-| 20261117T185722 | NEUTRAL | GTA | 21337.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T185722 | NEUTRAL | Rex | 69866.37 | labelled | -28.36 |  |  |  | None | no eligible comparator |
+| 20261117T185722 | NEUTRAL | GM | 31267.63 | labelled | -29.95 | RESPECT+ | 15678.80 | pending | None |  |
+| 20261117T185722 | NEUTRAL | GTA | 29073.09 | labelled | -35.57 | RESPECT+ | 15678.80 | pending | None |  |
+| 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261117T185722 | NEUTRAL | GTA | 21337.12 | labelled | 36.87 |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | JALU | 57836.13 | pending | None | MOONVALE | 31477.33 | pending | None |  |
 | 20261117T195721 | NEUTRAL | GTAVI | 46358.86 | pending | None | MOONVALE | 31477.33 | pending | None |  |
 | 20261117T195721 | NEUTRAL | CSI | 32380.29 | pending | None | REFU | 28365.60 | pending | None |  |
@@ -1055,3 +1055,5 @@
 | 20261117T195721 | NEUTRAL | GTAVI | 22043.99 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | OMNI | 20256.88 | pending | None |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | GTAI | 17114.00 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T205720 | NEUTRAL | LUCIASS | 25530.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T205720 | NEUTRAL | LUCIA | 22773.39 | pending | None |  |  |  | None | no eligible comparator |
