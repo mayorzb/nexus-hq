@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 277 |
-| sightings | 16578 |
-| liquid sightings | 6620 |
-| first liquid sightings = unique tokens with an outcome row | 1423 |
-|   young | 978 |
-|   mature | 392 |
-|   other | 53 |
-| young with a comparator (cap 2) | 174 |
-| young without a comparator | 804 |
+| eval-2 scans | 278 |
+| sightings | 16638 |
+| liquid sightings | 6649 |
+| first liquid sightings = unique tokens with an outcome row | 1429 |
+|   young | 981 |
+|   mature | 394 |
+|   other | 54 |
+| young with a comparator (cap 2) | 176 |
+| young without a comparator | 805 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 61 |
+|   pairs: young or mature outcome not yet usable | 63 |
 | complete pairs (both 60m outcomes labelled) | 105 |
 | scans contributing a complete pair | 66 |
 
 ## 60m outcome status by group
 
-- young: labelled 742/978, no_valid_entry 36/978, pending 9/978, unknown 143/978, unreliable 48/978
-- mature: labelled 359/392, pending 3/392, unknown 30/392
-- no valid entry: young 36/978, mature 0/392
+- young: labelled 744/981, no_valid_entry 36/981, pending 9/981, unknown 143/981, unreliable 49/981
+- mature: labelled 361/394, pending 3/394, unknown 30/394
+- no valid entry: young 36/981, mature 0/394
 
 ## Effect (after costs; unit = scan)
 
@@ -102,6 +102,7 @@
 - 20261117T185722-AXVowhHH: GM (20261117T185722), GTA (20261117T185722)
 - 20261117T195721-5p9G6Dii: JALU (20261117T195721), GTAVI (20261117T195721)
 - 20261117T195721-4ULpYvaT: CSI (20261117T195721), gamercat (20261117T195721)
+- 20261118T045717-FG3sAP59: Elmo (20261118T045717), LONE (20261118T045717)
 
 ## Every pair
 
@@ -1076,12 +1077,15 @@
 | 20261118T015719 | NEUTRAL | GTA | 27403.42 | labelled | -46.19 |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | Spud | 19846.24 | labelled | -31.51 |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261118T025718 | NEUTRAL | GTA | 73951.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T025718 | NEUTRAL | Leonida | 59528.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | GTA | 73951.61 | labelled | -27.51 |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | Leonida | 59528.02 | labelled | -3.71 |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 33460.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T025718 | NEUTRAL | NADJA | 15650.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | NADJA | 15650.60 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | AI | 46467.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | PANDU | 31508.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | ANT | 20972.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T045717 | NEUTRAL | Elmo | 25197.48 | pending | None | Brian | 23994.18 | pending | None |  |
+| 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | pending | None |  |
+| 20261118T045717 | NEUTRAL | 67coin | 19609.68 | pending | None |  |  |  | None | comparators used twice |
