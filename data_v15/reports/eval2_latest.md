@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 280 |
-| sightings | 16765 |
-| liquid sightings | 6698 |
-| first liquid sightings = unique tokens with an outcome row | 1435 |
-|   young | 985 |
-|   mature | 396 |
-|   other | 54 |
-| young with a comparator (cap 2) | 176 |
-| young without a comparator | 809 |
+| eval-2 scans | 281 |
+| sightings | 16827 |
+| liquid sightings | 6723 |
+| first liquid sightings = unique tokens with an outcome row | 1443 |
+|   young | 987 |
+|   mature | 401 |
+|   other | 55 |
+| young with a comparator (cap 2) | 177 |
+| young without a comparator | 810 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 62 |
+|   pairs: young or mature outcome not yet usable | 63 |
 | complete pairs (both 60m outcomes labelled) | 106 |
 | scans contributing a complete pair | 67 |
 
 ## 60m outcome status by group
 
-- young: labelled 750/985, no_valid_entry 37/985, pending 6/985, unknown 143/985, unreliable 49/985
-- mature: labelled 364/396, pending 2/396, unknown 30/396
-- no valid entry: young 37/985, mature 0/396
+- young: labelled 751/987, no_valid_entry 37/987, pending 6/987, unknown 143/987, unreliable 50/987
+- mature: labelled 365/401, pending 6/401, unknown 30/401
+- no valid entry: young 37/987, mature 0/401
 
 ## Effect (after costs; unit = scan)
 
@@ -1089,7 +1089,9 @@
 | 20261118T045717 | NEUTRAL | Elmo | 25197.48 | labelled | 37.01 | Brian | 23994.18 | labelled | -9.51 |  |
 | 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | labelled | -9.51 |  |
 | 20261118T045717 | NEUTRAL | 67coin | 19609.68 | labelled | -61.1 |  |  |  | None | comparators used twice |
-| 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T055716 | NEUTRAL | Calypso | 22477.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261118T055716 | NEUTRAL | Calypso | 22477.03 | labelled | 36.91 |  |  |  | None | no eligible comparator |
 | 20261118T065716 | NEUTRAL | PRAY | 24004.17 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T065716 | NEUTRAL | CLIP | 20590.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T075715 | NEUTRAL | MAYHEM | 91626.60 | pending | None | :3 | 82684.41 | pending | None |  |
+| 20261118T075715 | NEUTRAL | controller | 16188.03 | pending | None |  |  |  | None | no eligible comparator |
