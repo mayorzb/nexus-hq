@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 276 |
-| sightings | 16516 |
-| liquid sightings | 6594 |
-| first liquid sightings = unique tokens with an outcome row | 1417 |
-|   young | 973 |
-|   mature | 391 |
+| eval-2 scans | 277 |
+| sightings | 16578 |
+| liquid sightings | 6620 |
+| first liquid sightings = unique tokens with an outcome row | 1423 |
+|   young | 978 |
+|   mature | 392 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 799 |
+| young without a comparator | 804 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 61 |
 | complete pairs (both 60m outcomes labelled) | 105 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 739/973, no_valid_entry 36/973, pending 8/973, unknown 143/973, unreliable 47/973
-- mature: labelled 357/391, pending 4/391, unknown 30/391
-- no valid entry: young 36/973, mature 0/391
+- young: labelled 742/978, no_valid_entry 36/978, pending 9/978, unknown 143/978, unreliable 48/978
+- mature: labelled 359/392, pending 3/392, unknown 30/392
+- no valid entry: young 36/978, mature 0/392
 
 ## Effect (after costs; unit = scan)
 
@@ -1072,11 +1072,16 @@
 | 20261118T005720 | NEUTRAL | U0DF | 302230.80 | labelled | -3.04 |  |  |  | None | no eligible comparator |
 | 20261118T005720 | NEUTRAL | GTAVI | 107622.03 | labelled | 11.22 |  |  |  | None | no eligible comparator |
 | 20261118T005720 | NEUTRAL | SHIT | 65372.90 | labelled | 12.37 |  |  |  | None | no eligible comparator |
-| 20261118T015719 | NEUTRAL | KATIA | 54619.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T015719 | NEUTRAL | GTA | 27403.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T015719 | NEUTRAL | Spud | 19846.24 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | KATIA | 54619.50 | labelled | 37.43 |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | GTA | 27403.42 | labelled | -46.19 |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | Spud | 19846.24 | labelled | -31.51 |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | GTA | 73951.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | Leonida | 59528.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 33460.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 15650.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | AI | 46467.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | PANDU | 31508.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | ANT | 20972.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | pending | None |  |  |  | None | no eligible comparator |
