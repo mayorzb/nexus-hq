@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 273 |
-| sightings | 16323 |
-| liquid sightings | 6523 |
-| first liquid sightings = unique tokens with an outcome row | 1400 |
-|   young | 962 |
-|   mature | 385 |
+| eval-2 scans | 274 |
+| sightings | 16387 |
+| liquid sightings | 6545 |
+| first liquid sightings = unique tokens with an outcome row | 1405 |
+|   young | 965 |
+|   mature | 387 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 788 |
+| young without a comparator | 791 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 61 |
 | complete pairs (both 60m outcomes labelled) | 105 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 729/962, no_valid_entry 36/962, pending 11/962, unknown 139/962, unreliable 47/962
-- mature: labelled 352/385, pending 4/385, unknown 29/385
-- no valid entry: young 36/962, mature 0/385
+- young: labelled 733/965, no_valid_entry 36/965, pending 10/965, unknown 139/965, unreliable 47/965
+- mature: labelled 353/387, pending 4/387, unknown 30/387
+- no valid entry: young 36/965, mature 0/387
 
 ## Effect (after costs; unit = scan)
 
@@ -1043,8 +1043,8 @@
 | 20261117T165724 | NEUTRAL | FWACK | 17920.61 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261117T175723 | NEUTRAL | ACRUX | 17665.26 | labelled | -30.12 |  |  |  | None | no eligible comparator |
 | 20261117T185722 | NEUTRAL | Rex | 69866.37 | labelled | -28.36 |  |  |  | None | no eligible comparator |
-| 20261117T185722 | NEUTRAL | GM | 31267.63 | labelled | -29.95 | RESPECT+ | 15678.80 | pending | None |  |
-| 20261117T185722 | NEUTRAL | GTA | 29073.09 | labelled | -35.57 | RESPECT+ | 15678.80 | pending | None |  |
+| 20261117T185722 | NEUTRAL | GM | 31267.63 | labelled | -29.95 | RESPECT+ | 15678.80 | unknown | None |  |
+| 20261117T185722 | NEUTRAL | GTA | 29073.09 | labelled | -35.57 | RESPECT+ | 15678.80 | unknown | None |  |
 | 20261117T185722 | NEUTRAL | BAWSAQ | 24697.17 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261117T185722 | NEUTRAL | GTA | 21337.12 | labelled | 36.87 |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | JALU | 57836.13 | labelled | 37.45 | MOONVALE | 31477.33 | unknown | None |  |
@@ -1059,13 +1059,16 @@
 | 20261117T205720 | NEUTRAL | LUCIA | 22773.39 | labelled | 36.93 |  |  |  | None | no eligible comparator |
 | 20261117T215720 | NEUTRAL | PS5 | 52423.17 | labelled | 37.42 |  |  |  | None | no eligible comparator |
 | 20261117T215720 | NEUTRAL | LUNO | 39775.89 | labelled | -32.03 |  |  |  | None | no eligible comparator |
-| 20261117T215720 | NEUTRAL | KATIA | 39698.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T215720 | NEUTRAL | KATIA | 39698.49 | labelled | -29.56 |  |  |  | None | no eligible comparator |
 | 20261117T215720 | NEUTRAL | GTAMAS | 16463.92 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261117T225720 | NEUTRAL | GTA | 32386.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T225720 | NEUTRAL | GTA | 32386.39 | labelled | -30.04 |  |  |  | None | no eligible comparator |
 | 20261117T225720 | NEUTRAL | FOMOCAT | 29925.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T225720 | NEUTRAL | LUCIA | 25375.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T225720 | NEUTRAL | BI | 21988.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T225720 | NEUTRAL | LUCIA | 25375.61 | labelled | -28.68 |  |  |  | None | no eligible comparator |
+| 20261117T225720 | NEUTRAL | BI | 21988.94 | labelled | -82.72 |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | Artbot | 92287.46 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | JENSEN | 32820.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | STEAK | 21613.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | GrokChan | 15388.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | U0DF | 302230.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | GTAVI | 107622.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | SHIT | 65372.90 | pending | None |  |  |  | None | no eligible comparator |
