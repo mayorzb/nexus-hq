@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 279 |
-| sightings | 16700 |
-| liquid sightings | 6674 |
-| first liquid sightings = unique tokens with an outcome row | 1432 |
-|   young | 983 |
-|   mature | 395 |
+| eval-2 scans | 280 |
+| sightings | 16765 |
+| liquid sightings | 6698 |
+| first liquid sightings = unique tokens with an outcome row | 1435 |
+|   young | 985 |
+|   mature | 396 |
 |   other | 54 |
 | young with a comparator (cap 2) | 176 |
-| young without a comparator | 807 |
+| young without a comparator | 809 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 63 |
-| complete pairs (both 60m outcomes labelled) | 105 |
-| scans contributing a complete pair | 66 |
+|   pairs: young or mature outcome not yet usable | 62 |
+| complete pairs (both 60m outcomes labelled) | 106 |
+| scans contributing a complete pair | 67 |
 
 ## 60m outcome status by group
 
-- young: labelled 748/983, no_valid_entry 37/983, pending 6/983, unknown 143/983, unreliable 49/983
-- mature: labelled 362/395, pending 3/395, unknown 30/395
-- no valid entry: young 37/983, mature 0/395
+- young: labelled 750/985, no_valid_entry 37/985, pending 6/985, unknown 143/985, unreliable 49/985
+- mature: labelled 364/396, pending 2/396, unknown 30/396
+- no valid entry: young 37/985, mature 0/396
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -22.89 points, 95% interval (-35.95, -10.17); scans with young worse 44/66
-- Pairs with young worse: 71/105 (67.6%); pair mean -19.53, median -25.55
-- Big loss (<= -20%): young 69/105, mature 25/105
+- Scan-level mean difference (young - mature): -21.86 points, 95% interval (-34.48, -8.96); scans with young worse 44/67
+- Pairs with young worse: 71/106 (67.0%); pair mean -18.91, median -24.93
+- Big loss (<= -20%): young 69/106, mature 25/106
 
 ## Comparator reuse (cap 2)
 
@@ -1086,8 +1086,10 @@
 | 20261118T035717 | NEUTRAL | ANT | 20972.87 | labelled | -39.95 |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | labelled | -3.72 |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | labelled | 36.71 |  |  |  | None | no eligible comparator |
-| 20261118T045717 | NEUTRAL | Elmo | 25197.48 | pending | None | Brian | 23994.18 | pending | None |  |
-| 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | pending | None |  |
-| 20261118T045717 | NEUTRAL | 67coin | 19609.68 | pending | None |  |  |  | None | comparators used twice |
+| 20261118T045717 | NEUTRAL | Elmo | 25197.48 | labelled | 37.01 | Brian | 23994.18 | labelled | -9.51 |  |
+| 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | labelled | -9.51 |  |
+| 20261118T045717 | NEUTRAL | 67coin | 19609.68 | labelled | -61.1 |  |  |  | None | comparators used twice |
 | 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T055716 | NEUTRAL | Calypso | 22477.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T065716 | NEUTRAL | PRAY | 24004.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T065716 | NEUTRAL | CLIP | 20590.35 | pending | None |  |  |  | None | no eligible comparator |
