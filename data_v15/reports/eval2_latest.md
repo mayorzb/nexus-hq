@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 288 |
-| sightings | 17258 |
-| liquid sightings | 6884 |
-| first liquid sightings = unique tokens with an outcome row | 1477 |
-|   young | 1010 |
-|   mature | 410 |
+| eval-2 scans | 289 |
+| sightings | 17322 |
+| liquid sightings | 6912 |
+| first liquid sightings = unique tokens with an outcome row | 1484 |
+|   young | 1014 |
+|   mature | 413 |
 |   other | 57 |
-| young with a comparator (cap 2) | 178 |
-| young without a comparator | 832 |
+| young with a comparator (cap 2) | 181 |
+| young without a comparator | 833 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 64 |
+|   pairs: young or mature outcome not yet usable | 67 |
 | complete pairs (both 60m outcomes labelled) | 106 |
 | scans contributing a complete pair | 67 |
 
 ## 60m outcome status by group
 
-- young: labelled 760/1010, no_valid_entry 38/1010, pending 12/1010, unknown 148/1010, unreliable 52/1010
-- mature: labelled 377/410, pending 3/410, unknown 30/410
-- no valid entry: young 38/1010, mature 0/410
+- young: labelled 760/1014, no_valid_entry 38/1014, pending 14/1014, unknown 148/1014, unreliable 54/1014
+- mature: labelled 378/413, pending 5/413, unknown 30/413
+- no valid entry: young 38/1014, mature 0/413
 
 ## Effect (after costs; unit = scan)
 
@@ -103,6 +103,7 @@
 - 20261117T195721-5p9G6Dii: JALU (20261117T195721), GTAVI (20261117T195721)
 - 20261117T195721-4ULpYvaT: CSI (20261117T195721), gamercat (20261117T195721)
 - 20261118T045717-FG3sAP59: Elmo (20261118T045717), LONE (20261118T045717)
+- 20261118T155712-DcR4Ev9E: YUKON (20261118T155712), Apocrycoin (20261118T155712)
 
 ## Every pair
 
@@ -1112,9 +1113,13 @@
 | 20261118T125713 | NEUTRAL | VI | 21643.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | BUCKZ | 20330.72 | labelled | 36.82 |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | EDDIE | 16856.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T135712 | NEUTRAL | Democat | 30940.72 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T135712 | NEUTRAL | NEX Ai | 29777.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | Democat | 30940.72 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | NEX Ai | 29777.33 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Tomás | 24443.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Pussy | 15875.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T145712 | NEUTRAL | Koda | 25131.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T145712 | NEUTRAL | Doubloon | 24864.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T155712 | NEUTRAL | Apocrycoin | 82420.61 | pending | None | DCTY | 122858.66 | pending | None |  |
+| 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | pending | None |  |
+| 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | pending | None | XTA | 21232.23 | pending | None |  |
