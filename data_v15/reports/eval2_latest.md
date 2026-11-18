@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 283 |
-| sightings | 16953 |
-| liquid sightings | 6772 |
-| first liquid sightings = unique tokens with an outcome row | 1454 |
-|   young | 995 |
-|   mature | 404 |
+| eval-2 scans | 284 |
+| sightings | 17016 |
+| liquid sightings | 6793 |
+| first liquid sightings = unique tokens with an outcome row | 1457 |
+|   young | 997 |
+|   mature | 405 |
 |   other | 55 |
 | young with a comparator (cap 2) | 178 |
-| young without a comparator | 817 |
+| young without a comparator | 819 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 64 |
 | complete pairs (both 60m outcomes labelled) | 106 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 752/995, no_valid_entry 38/995, pending 11/995, unknown 144/995, unreliable 50/995
-- mature: labelled 371/404, pending 3/404, unknown 30/404
-- no valid entry: young 38/995, mature 0/404
+- young: labelled 754/997, no_valid_entry 38/997, pending 8/997, unknown 145/997, unreliable 52/997
+- mature: labelled 373/405, pending 2/405, unknown 30/405
+- no valid entry: young 38/997, mature 0/405
 
 ## Effect (after costs; unit = scan)
 
@@ -1087,7 +1087,7 @@
 | 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | labelled | -3.72 |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | labelled | 36.71 |  |  |  | None | no eligible comparator |
 | 20261118T045717 | NEUTRAL | Elmo | 25197.48 | labelled | 37.01 | Brian | 23994.18 | labelled | -9.51 |  |
-| 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | labelled | -9.51 |  |
+| 20261118T045717 | NEUTRAL | LONE | 22001.89 | unknown | None | Brian | 23994.18 | labelled | -9.51 |  |
 | 20261118T045717 | NEUTRAL | 67coin | 19609.68 | labelled | -61.1 |  |  |  | None | comparators used twice |
 | 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T055716 | NEUTRAL | Calypso | 22477.03 | labelled | 36.91 |  |  |  | None | no eligible comparator |
@@ -1095,11 +1095,13 @@
 | 20261118T065716 | NEUTRAL | CLIP | 20590.35 | labelled | 36.83 |  |  |  | None | no eligible comparator |
 | 20261118T075715 | NEUTRAL | MAYHEM | 91626.60 | pending | None | :3 | 82684.41 | labelled | -9.08 |  |
 | 20261118T075715 | NEUTRAL | controller | 16188.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T085715 | NEUTRAL | IDRENT | 80832.04 | pending | None | :3 | 81034.54 | pending | None |  |
-| 20261118T085715 | NEUTRAL | $GOAT | 33056.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T085715 | NEUTRAL | Intel | 31902.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T085715 | NEUTRAL | GAMER | 24681.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | IDRENT | 80832.04 | unreliable | None | :3 | 81034.54 | labelled | -5.03 |  |
+| 20261118T085715 | NEUTRAL | $GOAT | 33056.54 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | Intel | 31902.46 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | GAMER | 24681.99 | labelled | -38.93 |  |  |  | None | no eligible comparator |
 | 20261118T085715 | NEUTRAL | SHARK | 17889.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | Green Cat | 31372.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | eepy | 28447.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T105715 | NEUTRAL | clipping | 26987.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T105715 | NEUTRAL | Bunk | 21110.22 | pending | None |  |  |  | None | no eligible comparator |
