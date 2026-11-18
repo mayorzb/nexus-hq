@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 286 |
-| sightings | 17134 |
-| liquid sightings | 6837 |
-| first liquid sightings = unique tokens with an outcome row | 1467 |
-|   young | 1004 |
-|   mature | 407 |
-|   other | 56 |
+| eval-2 scans | 287 |
+| sightings | 17195 |
+| liquid sightings | 6861 |
+| first liquid sightings = unique tokens with an outcome row | 1473 |
+|   young | 1008 |
+|   mature | 408 |
+|   other | 57 |
 | young with a comparator (cap 2) | 178 |
-| young without a comparator | 826 |
+| young without a comparator | 830 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 64 |
 | complete pairs (both 60m outcomes labelled) | 106 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 758/1004, no_valid_entry 38/1004, pending 11/1004, unknown 145/1004, unreliable 52/1004
-- mature: labelled 375/407, pending 2/407, unknown 30/407
-- no valid entry: young 38/1004, mature 0/407
+- young: labelled 759/1008, no_valid_entry 38/1008, pending 12/1008, unknown 147/1008, unreliable 52/1008
+- mature: labelled 376/408, pending 2/408, unknown 30/408
+- no valid entry: young 38/1008, mature 0/408
 
 ## Effect (after costs; unit = scan)
 
@@ -1093,8 +1093,8 @@
 | 20261118T055716 | NEUTRAL | Calypso | 22477.03 | labelled | 36.91 |  |  |  | None | no eligible comparator |
 | 20261118T065716 | NEUTRAL | PRAY | 24004.17 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261118T065716 | NEUTRAL | CLIP | 20590.35 | labelled | 36.83 |  |  |  | None | no eligible comparator |
-| 20261118T075715 | NEUTRAL | MAYHEM | 91626.60 | pending | None | :3 | 82684.41 | labelled | -9.08 |  |
-| 20261118T075715 | NEUTRAL | controller | 16188.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T075715 | NEUTRAL | MAYHEM | 91626.60 | unknown | None | :3 | 82684.41 | labelled | -9.08 |  |
+| 20261118T075715 | NEUTRAL | controller | 16188.03 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T085715 | NEUTRAL | IDRENT | 80832.04 | unreliable | None | :3 | 81034.54 | labelled | -5.03 |  |
 | 20261118T085715 | NEUTRAL | $GOAT | 33056.54 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T085715 | NEUTRAL | Intel | 31902.46 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1105,10 +1105,14 @@
 | 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | labelled | -38.14 |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | clipping | 26987.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | Bunk | 21110.22 | labelled | -56.59 |  |  |  | None | no eligible comparator |
-| 20261118T115714 | NEUTRAL | DACT | 73651.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T115714 | NEUTRAL | DACT | 73651.68 | labelled | -56.26 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | HUGH | 35213.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | BUCKZ | 22079.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | VI | 21643.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | BUCKZ | 20330.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | EDDIE | 16856.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | Democat | 30940.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | NEX Ai | 29777.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | Tomás | 24443.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T135712 | NEUTRAL | Pussy | 15875.65 | pending | None |  |  |  | None | no eligible comparator |
