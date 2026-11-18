@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 289 |
-| sightings | 17322 |
-| liquid sightings | 6912 |
-| first liquid sightings = unique tokens with an outcome row | 1484 |
-|   young | 1014 |
-|   mature | 413 |
+| eval-2 scans | 290 |
+| sightings | 17383 |
+| liquid sightings | 6937 |
+| first liquid sightings = unique tokens with an outcome row | 1490 |
+|   young | 1017 |
+|   mature | 416 |
 |   other | 57 |
-| young with a comparator (cap 2) | 181 |
-| young without a comparator | 833 |
+| young with a comparator (cap 2) | 183 |
+| young without a comparator | 834 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 67 |
+|   pairs: young or mature outcome not yet usable | 69 |
 | complete pairs (both 60m outcomes labelled) | 106 |
 | scans contributing a complete pair | 67 |
 
 ## 60m outcome status by group
 
-- young: labelled 760/1014, no_valid_entry 38/1014, pending 14/1014, unknown 148/1014, unreliable 54/1014
-- mature: labelled 378/413, pending 5/413, unknown 30/413
-- no valid entry: young 38/1014, mature 0/413
+- young: labelled 760/1017, no_valid_entry 38/1017, pending 16/1017, unknown 149/1017, unreliable 54/1017
+- mature: labelled 380/416, pending 6/416, unknown 30/416
+- no valid entry: young 38/1017, mature 0/416
 
 ## Effect (after costs; unit = scan)
 
@@ -104,6 +104,7 @@
 - 20261117T195721-4ULpYvaT: CSI (20261117T195721), gamercat (20261117T195721)
 - 20261118T045717-FG3sAP59: Elmo (20261118T045717), LONE (20261118T045717)
 - 20261118T155712-DcR4Ev9E: YUKON (20261118T155712), Apocrycoin (20261118T155712)
+- 20261118T165711-Q1vecEMQ: GTA (20261118T165711), GTA (20261118T165711)
 
 ## Every pair
 
@@ -1104,7 +1105,7 @@
 | 20261118T095715 | NEUTRAL | Green Cat | 31372.29 | labelled | 37.16 |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | eepy | 28447.83 | labelled | -56.04 |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | labelled | -38.14 |  |  |  | None | no eligible comparator |
-| 20261118T105715 | NEUTRAL | clipping | 26987.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T105715 | NEUTRAL | clipping | 26987.29 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | Bunk | 21110.22 | labelled | -56.59 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | DACT | 73651.68 | labelled | -56.26 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | pending | None |  |  |  | None | no eligible comparator |
@@ -1123,3 +1124,6 @@
 | 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | pending | None |  |
 | 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | pending | None | XTA | 21232.23 | pending | None |  |
+| 20261118T165711 | NEUTRAL | Apocrycoin | 40753.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T165711 | NEUTRAL | GTA | 25144.36 | pending | None | ca | 16875.01 | pending | None |  |
+| 20261118T165711 | NEUTRAL | GTA | 22453.30 | pending | None | ca | 16875.01 | pending | None |  |
