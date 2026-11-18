@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 281 |
-| sightings | 16827 |
-| liquid sightings | 6723 |
-| first liquid sightings = unique tokens with an outcome row | 1443 |
-|   young | 987 |
-|   mature | 401 |
+| eval-2 scans | 282 |
+| sightings | 16892 |
+| liquid sightings | 6749 |
+| first liquid sightings = unique tokens with an outcome row | 1450 |
+|   young | 992 |
+|   mature | 403 |
 |   other | 55 |
-| young with a comparator (cap 2) | 177 |
-| young without a comparator | 810 |
+| young with a comparator (cap 2) | 178 |
+| young without a comparator | 814 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 63 |
+|   pairs: young or mature outcome not yet usable | 64 |
 | complete pairs (both 60m outcomes labelled) | 106 |
 | scans contributing a complete pair | 67 |
 
 ## 60m outcome status by group
 
-- young: labelled 751/987, no_valid_entry 37/987, pending 6/987, unknown 143/987, unreliable 50/987
-- mature: labelled 365/401, pending 6/401, unknown 30/401
-- no valid entry: young 37/987, mature 0/401
+- young: labelled 752/992, no_valid_entry 38/992, pending 8/992, unknown 144/992, unreliable 50/992
+- mature: labelled 366/403, pending 7/403, unknown 30/403
+- no valid entry: young 38/992, mature 0/403
 
 ## Effect (after costs; unit = scan)
 
@@ -1079,7 +1079,7 @@
 | 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | GTA | 73951.61 | labelled | -27.51 |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | Leonida | 59528.02 | labelled | -3.71 |  |  |  | None | no eligible comparator |
-| 20261118T025718 | NEUTRAL | NADJA | 33460.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | NADJA | 33460.79 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 15650.60 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | AI | 46467.61 | labelled | -31.71 |  |  |  | None | no eligible comparator |
 | 20261118T035717 | NEUTRAL | PANDU | 31508.43 | no_valid_entry | None |  |  |  | None | no eligible comparator |
@@ -1091,7 +1091,12 @@
 | 20261118T045717 | NEUTRAL | 67coin | 19609.68 | labelled | -61.1 |  |  |  | None | comparators used twice |
 | 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T055716 | NEUTRAL | Calypso | 22477.03 | labelled | 36.91 |  |  |  | None | no eligible comparator |
-| 20261118T065716 | NEUTRAL | PRAY | 24004.17 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T065716 | NEUTRAL | CLIP | 20590.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T065716 | NEUTRAL | PRAY | 24004.17 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261118T065716 | NEUTRAL | CLIP | 20590.35 | labelled | 36.83 |  |  |  | None | no eligible comparator |
 | 20261118T075715 | NEUTRAL | MAYHEM | 91626.60 | pending | None | :3 | 82684.41 | pending | None |  |
 | 20261118T075715 | NEUTRAL | controller | 16188.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | IDRENT | 80832.04 | pending | None | :3 | 81034.54 | pending | None |  |
+| 20261118T085715 | NEUTRAL | $GOAT | 33056.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | Intel | 31902.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | GAMER | 24681.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T085715 | NEUTRAL | SHARK | 17889.85 | pending | None |  |  |  | None | no eligible comparator |
