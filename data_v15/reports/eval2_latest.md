@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 278 |
-| sightings | 16638 |
-| liquid sightings | 6649 |
-| first liquid sightings = unique tokens with an outcome row | 1429 |
-|   young | 981 |
-|   mature | 394 |
+| eval-2 scans | 279 |
+| sightings | 16700 |
+| liquid sightings | 6674 |
+| first liquid sightings = unique tokens with an outcome row | 1432 |
+|   young | 983 |
+|   mature | 395 |
 |   other | 54 |
 | young with a comparator (cap 2) | 176 |
-| young without a comparator | 805 |
+| young without a comparator | 807 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 63 |
 | complete pairs (both 60m outcomes labelled) | 105 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 744/981, no_valid_entry 36/981, pending 9/981, unknown 143/981, unreliable 49/981
-- mature: labelled 361/394, pending 3/394, unknown 30/394
-- no valid entry: young 36/981, mature 0/394
+- young: labelled 748/983, no_valid_entry 37/983, pending 6/983, unknown 143/983, unreliable 49/983
+- mature: labelled 362/395, pending 3/395, unknown 30/395
+- no valid entry: young 37/983, mature 0/395
 
 ## Effect (after costs; unit = scan)
 
@@ -1081,11 +1081,13 @@
 | 20261118T025718 | NEUTRAL | Leonida | 59528.02 | labelled | -3.71 |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 33460.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T025718 | NEUTRAL | NADJA | 15650.60 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261118T035717 | NEUTRAL | AI | 46467.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T035717 | NEUTRAL | PANDU | 31508.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T035717 | NEUTRAL | ANT | 20972.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | AI | 46467.61 | labelled | -31.71 |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | PANDU | 31508.43 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | ANT | 20972.87 | labelled | -39.95 |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | GTA$ | 19096.44 | labelled | -3.72 |  |  |  | None | no eligible comparator |
+| 20261118T035717 | NEUTRAL | PENGYOUHAO | 18235.46 | labelled | 36.71 |  |  |  | None | no eligible comparator |
 | 20261118T045717 | NEUTRAL | Elmo | 25197.48 | pending | None | Brian | 23994.18 | pending | None |  |
 | 20261118T045717 | NEUTRAL | LONE | 22001.89 | pending | None | Brian | 23994.18 | pending | None |  |
 | 20261118T045717 | NEUTRAL | 67coin | 19609.68 | pending | None |  |  |  | None | comparators used twice |
+| 20261118T055716 | NEUTRAL | slopaganda | 26852.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T055716 | NEUTRAL | Calypso | 22477.03 | pending | None |  |  |  | None | no eligible comparator |
