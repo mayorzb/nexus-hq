@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 290 |
-| sightings | 17383 |
-| liquid sightings | 6937 |
-| first liquid sightings = unique tokens with an outcome row | 1490 |
-|   young | 1017 |
-|   mature | 416 |
-|   other | 57 |
+| eval-2 scans | 291 |
+| sightings | 17440 |
+| liquid sightings | 6964 |
+| first liquid sightings = unique tokens with an outcome row | 1497 |
+|   young | 1021 |
+|   mature | 417 |
+|   other | 59 |
 | young with a comparator (cap 2) | 183 |
-| young without a comparator | 834 |
+| young without a comparator | 838 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 69 |
-| complete pairs (both 60m outcomes labelled) | 106 |
-| scans contributing a complete pair | 67 |
+|   pairs: young or mature outcome not yet usable | 67 |
+| complete pairs (both 60m outcomes labelled) | 108 |
+| scans contributing a complete pair | 68 |
 
 ## 60m outcome status by group
 
-- young: labelled 760/1017, no_valid_entry 38/1017, pending 16/1017, unknown 149/1017, unreliable 54/1017
-- mature: labelled 380/416, pending 6/416, unknown 30/416
-- no valid entry: young 38/1017, mature 0/416
+- young: labelled 763/1021, no_valid_entry 38/1021, pending 15/1021, unknown 151/1021, unreliable 54/1021
+- mature: labelled 383/417, pending 4/417, unknown 30/417
+- no valid entry: young 38/1021, mature 0/417
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -21.86 points, 95% interval (-34.48, -8.96); scans with young worse 44/67
-- Pairs with young worse: 71/106 (67.0%); pair mean -18.91, median -24.93
-- Big loss (<= -20%): young 69/106, mature 25/106
+- Scan-level mean difference (young - mature): -22.38 points, 95% interval (-34.76, -9.78); scans with young worse 45/68
+- Pairs with young worse: 73/108 (67.6%); pair mean -19.62, median -25.8
+- Big loss (<= -20%): young 71/108, mature 26/108
 
 ## Comparator reuse (cap 2)
 
@@ -1108,7 +1108,7 @@
 | 20261118T105715 | NEUTRAL | clipping | 26987.29 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | Bunk | 21110.22 | labelled | -56.59 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | DACT | 73651.68 | labelled | -56.26 |  |  |  | None | no eligible comparator |
-| 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | HUGH | 35213.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | BUCKZ | 22079.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | VI | 21643.57 | pending | None |  |  |  | None | no eligible comparator |
@@ -1118,12 +1118,16 @@
 | 20261118T135712 | NEUTRAL | NEX Ai | 29777.33 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Tomás | 24443.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Pussy | 15875.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T145712 | NEUTRAL | Koda | 25131.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T145712 | NEUTRAL | Koda | 25131.30 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T145712 | NEUTRAL | Doubloon | 24864.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T155712 | NEUTRAL | Apocrycoin | 82420.61 | pending | None | DCTY | 122858.66 | pending | None |  |
-| 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | pending | None |  |
-| 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | pending | None | XTA | 21232.23 | pending | None |  |
+| 20261118T155712 | NEUTRAL | Apocrycoin | 82420.61 | labelled | -100.0 | DCTY | 122858.66 | labelled | -39.77 |  |
+| 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | labelled | 17.68 |  |
+| 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | labelled | -37.13 | XTA | 21232.23 | labelled | 17.68 |  |
 | 20261118T165711 | NEUTRAL | Apocrycoin | 40753.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T165711 | NEUTRAL | GTA | 25144.36 | pending | None | ca | 16875.01 | pending | None |  |
 | 20261118T165711 | NEUTRAL | GTA | 22453.30 | pending | None | ca | 16875.01 | pending | None |  |
+| 20261118T175711 | NEUTRAL | Rocco | 61048.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T175711 | NEUTRAL | APCY | 44531.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T175711 | NEUTRAL | LastRide | 39837.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T175711 | NEUTRAL | APCY | 22680.74 | pending | None |  |  |  | None | no eligible comparator |
