@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 294 |
-| sightings | 17619 |
-| liquid sightings | 7041 |
-| first liquid sightings = unique tokens with an outcome row | 1519 |
-|   young | 1038 |
-|   mature | 420 |
+| eval-2 scans | 295 |
+| sightings | 17679 |
+| liquid sightings | 7069 |
+| first liquid sightings = unique tokens with an outcome row | 1527 |
+|   young | 1045 |
+|   mature | 421 |
 |   other | 61 |
 | young with a comparator (cap 2) | 184 |
-| young without a comparator | 854 |
+| young without a comparator | 861 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 65 |
 | complete pairs (both 60m outcomes labelled) | 111 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 773/1038, no_valid_entry 38/1038, pending 15/1038, unknown 158/1038, unreliable 54/1038
-- mature: labelled 388/420, pending 2/420, unknown 30/420
-- no valid entry: young 38/1038, mature 0/420
+- young: labelled 774/1045, no_valid_entry 38/1045, pending 20/1045, unknown 159/1045, unreliable 54/1045
+- mature: labelled 389/421, pending 2/421, unknown 30/421
+- no valid entry: young 38/1045, mature 0/421
 
 ## Effect (after costs; unit = scan)
 
@@ -1122,7 +1122,7 @@
 | 20261118T145712 | NEUTRAL | Doubloon | 24864.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T155712 | NEUTRAL | Apocrycoin | 82420.61 | labelled | -100.0 | DCTY | 122858.66 | labelled | -39.77 |  |
 | 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | labelled | 17.68 |  |
+| 20261118T155712 | NEUTRAL | YUKON | 31962.53 | unknown | None | XTA | 21232.23 | labelled | 17.68 |  |
 | 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | labelled | -37.13 | XTA | 21232.23 | labelled | 17.68 |  |
 | 20261118T165711 | NEUTRAL | Apocrycoin | 40753.77 | labelled | 37.31 |  |  |  | None | no eligible comparator |
 | 20261118T165711 | NEUTRAL | GTA | 25144.36 | labelled | -32.01 | ca | 16875.01 | labelled | 7.15 |  |
@@ -1137,7 +1137,7 @@
 | 20261118T185711 | NEUTRAL | LUCIASS | 24622.19 | labelled | -32.53 |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | labelled | -39.16 |  |  |  | None | no eligible comparator |
-| 20261118T195710 | NEUTRAL | Mabel | 33761.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T195710 | NEUTRAL | Mabel | 33761.61 | labelled | -42.21 |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | CALICO | 25932.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | QUIT | 24810.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | JIGGLE | 16217.70 | pending | None |  |  |  | None | no eligible comparator |
@@ -1148,3 +1148,10 @@
 | 20261118T205710 | NEUTRAL | Mabel | 27864.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | DCTYCAT | 20433.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | CRIME | 19972.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | GRAND | 47961.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | Games | 27324.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | AudaCity | 23327.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | FLAMINGO | 19203.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | DCTY | 17394.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | pending | None |  |  |  | None | no eligible comparator |
