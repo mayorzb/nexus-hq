@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 291 |
-| sightings | 17440 |
-| liquid sightings | 6964 |
-| first liquid sightings = unique tokens with an outcome row | 1497 |
-|   young | 1021 |
-|   mature | 417 |
+| eval-2 scans | 292 |
+| sightings | 17496 |
+| liquid sightings | 6991 |
+| first liquid sightings = unique tokens with an outcome row | 1504 |
+|   young | 1027 |
+|   mature | 418 |
 |   other | 59 |
-| young with a comparator (cap 2) | 183 |
-| young without a comparator | 838 |
+| young with a comparator (cap 2) | 184 |
+| young without a comparator | 843 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 67 |
-| complete pairs (both 60m outcomes labelled) | 108 |
-| scans contributing a complete pair | 68 |
+|   pairs: young or mature outcome not yet usable | 66 |
+| complete pairs (both 60m outcomes labelled) | 110 |
+| scans contributing a complete pair | 69 |
 
 ## 60m outcome status by group
 
-- young: labelled 763/1021, no_valid_entry 38/1021, pending 15/1021, unknown 151/1021, unreliable 54/1021
-- mature: labelled 383/417, pending 4/417, unknown 30/417
-- no valid entry: young 38/1021, mature 0/417
+- young: labelled 766/1027, no_valid_entry 38/1027, pending 14/1027, unknown 155/1027, unreliable 54/1027
+- mature: labelled 386/418, pending 2/418, unknown 30/418
+- no valid entry: young 38/1027, mature 0/418
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -22.38 points, 95% interval (-34.76, -9.78); scans with young worse 45/68
-- Pairs with young worse: 73/108 (67.6%); pair mean -19.62, median -25.8
-- Big loss (<= -20%): young 71/108, mature 26/108
+- Scan-level mean difference (young - mature): -22.61 points, 95% interval (-35.03, -10.81); scans with young worse 46/69
+- Pairs with young worse: 75/110 (68.2%); pair mean -19.96, median -26.32
+- Big loss (<= -20%): young 73/110, mature 26/110
 
 ## Comparator reuse (cap 2)
 
@@ -1109,11 +1109,11 @@
 | 20261118T105715 | NEUTRAL | Bunk | 21110.22 | labelled | -56.59 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | DACT | 73651.68 | labelled | -56.26 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261118T125713 | NEUTRAL | HUGH | 35213.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T125713 | NEUTRAL | BUCKZ | 22079.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T125713 | NEUTRAL | VI | 21643.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | HUGH | 35213.31 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | BUCKZ | 22079.27 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | VI | 21643.57 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T125713 | NEUTRAL | BUCKZ | 20330.72 | labelled | 36.82 |  |  |  | None | no eligible comparator |
-| 20261118T125713 | NEUTRAL | EDDIE | 16856.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | EDDIE | 16856.81 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Democat | 30940.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | NEX Ai | 29777.33 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Tomás | 24443.77 | pending | None |  |  |  | None | no eligible comparator |
@@ -1124,10 +1124,16 @@
 | 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | labelled | 17.68 |  |
 | 20261118T155712 | NEUTRAL | Apocrycoin | 19265.67 | labelled | -37.13 | XTA | 21232.23 | labelled | 17.68 |  |
-| 20261118T165711 | NEUTRAL | Apocrycoin | 40753.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T165711 | NEUTRAL | GTA | 25144.36 | pending | None | ca | 16875.01 | pending | None |  |
-| 20261118T165711 | NEUTRAL | GTA | 22453.30 | pending | None | ca | 16875.01 | pending | None |  |
+| 20261118T165711 | NEUTRAL | Apocrycoin | 40753.77 | labelled | 37.31 |  |  |  | None | no eligible comparator |
+| 20261118T165711 | NEUTRAL | GTA | 25144.36 | labelled | -32.01 | ca | 16875.01 | labelled | 7.15 |  |
+| 20261118T165711 | NEUTRAL | GTA | 22453.30 | labelled | -29.68 | ca | 16875.01 | labelled | 7.15 |  |
 | 20261118T175711 | NEUTRAL | Rocco | 61048.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | APCY | 44531.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | LastRide | 39837.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | APCY | 22680.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | VTC | 742400.52 | pending | None | CATE | 1338447.27 | pending | None |  |
+| 20261118T185711 | NEUTRAL | AI | 50875.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | FISH | 31083.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | LUCIASS | 24622.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | pending | None |  |  |  | None | no eligible comparator |
