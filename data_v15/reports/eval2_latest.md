@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 274 |
-| sightings | 16387 |
-| liquid sightings | 6545 |
-| first liquid sightings = unique tokens with an outcome row | 1405 |
-|   young | 965 |
-|   mature | 387 |
+| eval-2 scans | 275 |
+| sightings | 16451 |
+| liquid sightings | 6570 |
+| first liquid sightings = unique tokens with an outcome row | 1411 |
+|   young | 969 |
+|   mature | 389 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 791 |
+| young without a comparator | 795 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 61 |
 | complete pairs (both 60m outcomes labelled) | 105 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 733/965, no_valid_entry 36/965, pending 10/965, unknown 139/965, unreliable 47/965
-- mature: labelled 353/387, pending 4/387, unknown 30/387
-- no valid entry: young 36/965, mature 0/387
+- young: labelled 736/969, no_valid_entry 36/969, pending 8/969, unknown 142/969, unreliable 47/969
+- mature: labelled 355/389, pending 4/389, unknown 30/389
+- no valid entry: young 36/969, mature 0/389
 
 ## Effect (after costs; unit = scan)
 
@@ -1051,10 +1051,10 @@
 | 20261117T195721 | NEUTRAL | GTAVI | 46358.86 | labelled | 37.37 | MOONVALE | 31477.33 | unknown | None |  |
 | 20261117T195721 | NEUTRAL | CSI | 32380.29 | labelled | -34.23 | REFU | 28365.60 | labelled | -15.6 |  |
 | 20261117T195721 | NEUTRAL | gamercat | 30791.23 | no_valid_entry | None | REFU | 28365.60 | labelled | -15.6 |  |
-| 20261117T195721 | NEUTRAL | WANTED  | 26483.19 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | WANTED  | 26483.19 | unknown | None |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | GTAVI | 22043.99 | unreliable | None |  |  |  | None | comparators used twice |
 | 20261117T195721 | NEUTRAL | OMNI | 20256.88 | labelled | 36.82 |  |  |  | None | comparators used twice |
-| 20261117T195721 | NEUTRAL | GTAI | 17114.00 | pending | None |  |  |  | None | comparators used twice |
+| 20261117T195721 | NEUTRAL | GTAI | 17114.00 | unknown | None |  |  |  | None | comparators used twice |
 | 20261117T205720 | NEUTRAL | LUCIASS | 25530.67 | labelled | 37.02 |  |  |  | None | no eligible comparator |
 | 20261117T205720 | NEUTRAL | LUCIA | 22773.39 | labelled | 36.93 |  |  |  | None | no eligible comparator |
 | 20261117T215720 | NEUTRAL | PS5 | 52423.17 | labelled | 37.42 |  |  |  | None | no eligible comparator |
@@ -1062,13 +1062,17 @@
 | 20261117T215720 | NEUTRAL | KATIA | 39698.49 | labelled | -29.56 |  |  |  | None | no eligible comparator |
 | 20261117T215720 | NEUTRAL | GTAMAS | 16463.92 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T225720 | NEUTRAL | GTA | 32386.39 | labelled | -30.04 |  |  |  | None | no eligible comparator |
-| 20261117T225720 | NEUTRAL | FOMOCAT | 29925.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T225720 | NEUTRAL | FOMOCAT | 29925.18 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T225720 | NEUTRAL | LUCIA | 25375.61 | labelled | -28.68 |  |  |  | None | no eligible comparator |
 | 20261117T225720 | NEUTRAL | BI | 21988.94 | labelled | -82.72 |  |  |  | None | no eligible comparator |
-| 20261117T235720 | NEUTRAL | Artbot | 92287.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T235720 | NEUTRAL | JENSEN | 32820.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T235720 | NEUTRAL | Artbot | 92287.46 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261117T235720 | NEUTRAL | JENSEN | 32820.54 | labelled | 37.19 |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | STEAK | 21613.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261117T235720 | NEUTRAL | GrokChan | 15388.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T235720 | NEUTRAL | GrokChan | 15388.89 | labelled | -36.95 |  |  |  | None | no eligible comparator |
 | 20261118T005720 | NEUTRAL | U0DF | 302230.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T005720 | NEUTRAL | GTAVI | 107622.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T005720 | NEUTRAL | SHIT | 65372.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | KATIA | 54619.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | GTA | 27403.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | Spud | 19846.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | pending | None |  |  |  | None | no eligible comparator |
