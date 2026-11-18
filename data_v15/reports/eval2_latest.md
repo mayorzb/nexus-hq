@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 285 |
-| sightings | 17075 |
-| liquid sightings | 6813 |
-| first liquid sightings = unique tokens with an outcome row | 1460 |
-|   young | 999 |
-|   mature | 406 |
-|   other | 55 |
+| eval-2 scans | 286 |
+| sightings | 17134 |
+| liquid sightings | 6837 |
+| first liquid sightings = unique tokens with an outcome row | 1467 |
+|   young | 1004 |
+|   mature | 407 |
+|   other | 56 |
 | young with a comparator (cap 2) | 178 |
-| young without a comparator | 821 |
+| young without a comparator | 826 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 64 |
 | complete pairs (both 60m outcomes labelled) | 106 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 757/999, no_valid_entry 38/999, pending 7/999, unknown 145/999, unreliable 52/999
-- mature: labelled 374/406, pending 2/406, unknown 30/406
-- no valid entry: young 38/999, mature 0/406
+- young: labelled 758/1004, no_valid_entry 38/1004, pending 11/1004, unknown 145/1004, unreliable 52/1004
+- mature: labelled 375/407, pending 2/407, unknown 30/407
+- no valid entry: young 38/1004, mature 0/407
 
 ## Effect (after costs; unit = scan)
 
@@ -1104,6 +1104,11 @@
 | 20261118T095715 | NEUTRAL | eepy | 28447.83 | labelled | -56.04 |  |  |  | None | no eligible comparator |
 | 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | labelled | -38.14 |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | clipping | 26987.29 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T105715 | NEUTRAL | Bunk | 21110.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T105715 | NEUTRAL | Bunk | 21110.22 | labelled | -56.59 |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | DACT | 73651.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | HUGH | 35213.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | BUCKZ | 22079.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | VI | 21643.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | BUCKZ | 20330.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T125713 | NEUTRAL | EDDIE | 16856.81 | pending | None |  |  |  | None | no eligible comparator |
