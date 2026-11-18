@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 295 |
-| sightings | 17679 |
-| liquid sightings | 7069 |
-| first liquid sightings = unique tokens with an outcome row | 1527 |
-|   young | 1045 |
+| eval-2 scans | 296 |
+| sightings | 17743 |
+| liquid sightings | 7090 |
+| first liquid sightings = unique tokens with an outcome row | 1529 |
+|   young | 1047 |
 |   mature | 421 |
 |   other | 61 |
 | young with a comparator (cap 2) | 184 |
-| young without a comparator | 861 |
+| young without a comparator | 863 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 65 |
 | complete pairs (both 60m outcomes labelled) | 111 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 774/1045, no_valid_entry 38/1045, pending 20/1045, unknown 159/1045, unreliable 54/1045
-- mature: labelled 389/421, pending 2/421, unknown 30/421
-- no valid entry: young 38/1045, mature 0/421
+- young: labelled 780/1047, no_valid_entry 38/1047, pending 15/1047, unknown 160/1047, unreliable 54/1047
+- mature: labelled 390/421, pending 1/421, unknown 30/421
+- no valid entry: young 38/1047, mature 0/421
 
 ## Effect (after costs; unit = scan)
 
@@ -1141,13 +1141,13 @@
 | 20261118T195710 | NEUTRAL | CALICO | 25932.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | QUIT | 24810.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | JIGGLE | 16217.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | GTV | 84211.89 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | Founder | 36246.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | DAKITTY | 32523.97 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | DacityCoin | 30297.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | Mabel | 27864.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | DCTYCAT | 20433.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T205710 | NEUTRAL | CRIME | 19972.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | GTV | 84211.89 | labelled | -64.93 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | Founder | 36246.79 | labelled | 21.28 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DAKITTY | 32523.97 | labelled | 37.19 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DacityCoin | 30297.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | Mabel | 27864.63 | labelled | 37.08 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DCTYCAT | 20433.02 | labelled | -32.73 |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | CRIME | 19972.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | GRAND | 47961.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | Games | 27324.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | AudaCity | 23327.72 | pending | None |  |  |  | None | no eligible comparator |
@@ -1155,3 +1155,5 @@
 | 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | DCTY | 17394.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T225708 | RED | PAPA | 52193.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T225708 | RED | PolyGTA | 17984.66 | pending | None |  |  |  | None | no eligible comparator |
