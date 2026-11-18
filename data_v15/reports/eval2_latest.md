@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 284 |
-| sightings | 17016 |
-| liquid sightings | 6793 |
-| first liquid sightings = unique tokens with an outcome row | 1457 |
-|   young | 997 |
-|   mature | 405 |
+| eval-2 scans | 285 |
+| sightings | 17075 |
+| liquid sightings | 6813 |
+| first liquid sightings = unique tokens with an outcome row | 1460 |
+|   young | 999 |
+|   mature | 406 |
 |   other | 55 |
 | young with a comparator (cap 2) | 178 |
-| young without a comparator | 819 |
+| young without a comparator | 821 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 64 |
 | complete pairs (both 60m outcomes labelled) | 106 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 754/997, no_valid_entry 38/997, pending 8/997, unknown 145/997, unreliable 52/997
-- mature: labelled 373/405, pending 2/405, unknown 30/405
-- no valid entry: young 38/997, mature 0/405
+- young: labelled 757/999, no_valid_entry 38/999, pending 7/999, unknown 145/999, unreliable 52/999
+- mature: labelled 374/406, pending 2/406, unknown 30/406
+- no valid entry: young 38/999, mature 0/406
 
 ## Effect (after costs; unit = scan)
 
@@ -1100,8 +1100,10 @@
 | 20261118T085715 | NEUTRAL | Intel | 31902.46 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T085715 | NEUTRAL | GAMER | 24681.99 | labelled | -38.93 |  |  |  | None | no eligible comparator |
 | 20261118T085715 | NEUTRAL | SHARK | 17889.85 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T095715 | NEUTRAL | Green Cat | 31372.29 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T095715 | NEUTRAL | eepy | 28447.83 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T095715 | NEUTRAL | Green Cat | 31372.29 | labelled | 37.16 |  |  |  | None | no eligible comparator |
+| 20261118T095715 | NEUTRAL | eepy | 28447.83 | labelled | -56.04 |  |  |  | None | no eligible comparator |
+| 20261118T095715 | NEUTRAL | GTA6 | 22626.28 | labelled | -38.14 |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | clipping | 26987.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T105715 | NEUTRAL | Bunk | 21110.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T115714 | NEUTRAL | DACT | 73651.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T115714 | NEUTRAL | AudaCity | 16770.71 | pending | None |  |  |  | None | no eligible comparator |
