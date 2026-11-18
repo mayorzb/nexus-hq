@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 275 |
-| sightings | 16451 |
-| liquid sightings | 6570 |
-| first liquid sightings = unique tokens with an outcome row | 1411 |
-|   young | 969 |
-|   mature | 389 |
+| eval-2 scans | 276 |
+| sightings | 16516 |
+| liquid sightings | 6594 |
+| first liquid sightings = unique tokens with an outcome row | 1417 |
+|   young | 973 |
+|   mature | 391 |
 |   other | 53 |
 | young with a comparator (cap 2) | 174 |
-| young without a comparator | 795 |
+| young without a comparator | 799 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 61 |
 | complete pairs (both 60m outcomes labelled) | 105 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 736/969, no_valid_entry 36/969, pending 8/969, unknown 142/969, unreliable 47/969
-- mature: labelled 355/389, pending 4/389, unknown 30/389
-- no valid entry: young 36/969, mature 0/389
+- young: labelled 739/973, no_valid_entry 36/973, pending 8/973, unknown 143/973, unreliable 47/973
+- mature: labelled 357/391, pending 4/391, unknown 30/391
+- no valid entry: young 36/973, mature 0/391
 
 ## Effect (after costs; unit = scan)
 
@@ -1067,12 +1067,16 @@
 | 20261117T225720 | NEUTRAL | BI | 21988.94 | labelled | -82.72 |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | Artbot | 92287.46 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | JENSEN | 32820.54 | labelled | 37.19 |  |  |  | None | no eligible comparator |
-| 20261117T235720 | NEUTRAL | STEAK | 21613.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261117T235720 | NEUTRAL | STEAK | 21613.85 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261117T235720 | NEUTRAL | GrokChan | 15388.89 | labelled | -36.95 |  |  |  | None | no eligible comparator |
-| 20261118T005720 | NEUTRAL | U0DF | 302230.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T005720 | NEUTRAL | GTAVI | 107622.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T005720 | NEUTRAL | SHIT | 65372.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | U0DF | 302230.80 | labelled | -3.04 |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | GTAVI | 107622.03 | labelled | 11.22 |  |  |  | None | no eligible comparator |
+| 20261118T005720 | NEUTRAL | SHIT | 65372.90 | labelled | 12.37 |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | KATIA | 54619.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | GTA | 27403.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | Spud | 19846.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T015719 | NEUTRAL | GTAVI | 15190.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | GTA | 73951.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | Leonida | 59528.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | NADJA | 33460.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T025718 | NEUTRAL | NADJA | 15650.60 | pending | None |  |  |  | None | no eligible comparator |
