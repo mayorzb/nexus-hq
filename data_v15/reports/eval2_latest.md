@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 293 |
-| sightings | 17554 |
-| liquid sightings | 7015 |
-| first liquid sightings = unique tokens with an outcome row | 1510 |
-|   young | 1031 |
-|   mature | 419 |
-|   other | 60 |
+| eval-2 scans | 294 |
+| sightings | 17619 |
+| liquid sightings | 7041 |
+| first liquid sightings = unique tokens with an outcome row | 1519 |
+|   young | 1038 |
+|   mature | 420 |
+|   other | 61 |
 | young with a comparator (cap 2) | 184 |
-| young without a comparator | 847 |
+| young without a comparator | 854 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 66 |
-| complete pairs (both 60m outcomes labelled) | 110 |
-| scans contributing a complete pair | 69 |
+|   pairs: young or mature outcome not yet usable | 65 |
+| complete pairs (both 60m outcomes labelled) | 111 |
+| scans contributing a complete pair | 70 |
 
 ## 60m outcome status by group
 
-- young: labelled 769/1031, no_valid_entry 38/1031, pending 13/1031, unknown 157/1031, unreliable 54/1031
-- mature: labelled 387/419, pending 2/419, unknown 30/419
-- no valid entry: young 38/1031, mature 0/419
+- young: labelled 773/1038, no_valid_entry 38/1038, pending 15/1038, unknown 158/1038, unreliable 54/1038
+- mature: labelled 388/420, pending 2/420, unknown 30/420
+- no valid entry: young 38/1038, mature 0/420
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -22.61 points, 95% interval (-35.03, -10.81); scans with young worse 46/69
-- Pairs with young worse: 75/110 (68.2%); pair mean -19.96, median -26.32
-- Big loss (<= -20%): young 73/110, mature 26/110
+- Scan-level mean difference (young - mature): -23.67 points, 95% interval (-35.79, -11.26); scans with young worse 47/70
+- Pairs with young worse: 76/111 (68.5%); pair mean -20.65, median -26.59
+- Big loss (<= -20%): young 74/111, mature 26/111
 
 ## Comparator reuse (cap 2)
 
@@ -1119,7 +1119,7 @@
 | 20261118T135712 | NEUTRAL | Tomás | 24443.77 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T135712 | NEUTRAL | Pussy | 15875.65 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T145712 | NEUTRAL | Koda | 25131.30 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261118T145712 | NEUTRAL | Doubloon | 24864.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T145712 | NEUTRAL | Doubloon | 24864.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T155712 | NEUTRAL | Apocrycoin | 82420.61 | labelled | -100.0 | DCTY | 122858.66 | labelled | -39.77 |  |
 | 20261118T155712 | NEUTRAL | GTAKID | 44465.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T155712 | NEUTRAL | YUKON | 31962.53 | pending | None | XTA | 21232.23 | labelled | 17.68 |  |
@@ -1131,13 +1131,20 @@
 | 20261118T175711 | NEUTRAL | APCY | 44531.12 | labelled | -37.5 |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | LastRide | 39837.52 | labelled | -27.96 |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | APCY | 22680.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T185711 | NEUTRAL | VTC | 742400.52 | pending | None | CATE | 1338447.27 | pending | None |  |
-| 20261118T185711 | NEUTRAL | AI | 50875.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | VTC | 742400.52 | labelled | -100.0 | CATE | 1338447.27 | labelled | -2.95 |  |
+| 20261118T185711 | NEUTRAL | AI | 50875.19 | labelled | -32.59 |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | FISH | 31083.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T185711 | NEUTRAL | LUCIASS | 24622.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | LUCIASS | 24622.19 | labelled | -32.53 |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | labelled | -39.16 |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | Mabel | 33761.61 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | CALICO | 25932.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | QUIT | 24810.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | JIGGLE | 16217.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | GTV | 84211.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | Founder | 36246.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DAKITTY | 32523.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DacityCoin | 30297.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | Mabel | 27864.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | DCTYCAT | 20433.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T205710 | NEUTRAL | CRIME | 19972.96 | pending | None |  |  |  | None | no eligible comparator |
