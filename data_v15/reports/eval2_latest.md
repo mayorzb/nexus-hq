@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 300 |
-| sightings | 17975 |
-| liquid sightings | 7179 |
-| first liquid sightings = unique tokens with an outcome row | 1546 |
-|   young | 1060 |
+| eval-2 scans | 301 |
+| sightings | 18037 |
+| liquid sightings | 7206 |
+| first liquid sightings = unique tokens with an outcome row | 1551 |
+|   young | 1065 |
 |   mature | 425 |
 |   other | 61 |
 | young with a comparator (cap 2) | 188 |
-| young without a comparator | 872 |
+| young without a comparator | 877 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 69 |
 | complete pairs (both 60m outcomes labelled) | 111 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 788/1060, no_valid_entry 38/1060, pending 14/1060, unknown 166/1060, unreliable 54/1060
-- mature: labelled 391/425, pending 4/425, unknown 30/425
-- no valid entry: young 38/1060, mature 0/425
+- young: labelled 794/1065, no_valid_entry 38/1065, pending 11/1065, unknown 168/1065, unreliable 54/1065
+- mature: labelled 392/425, pending 3/425, unknown 30/425
+- no valid entry: young 38/1065, mature 0/425
 
 ## Effect (after costs; unit = scan)
 
@@ -1151,9 +1151,9 @@
 | 20261118T205710 | NEUTRAL | CRIME | 19972.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | GRAND | 47961.90 | labelled | -10.38 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | Games | 27324.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | AudaCity | 23327.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | AudaCity | 23327.72 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | FLAMINGO | 19203.17 | labelled | -41.37 |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | DCTY | 17394.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PAPA | 52193.56 | labelled | -39.44 |  |  |  | None | no eligible comparator |
@@ -1162,12 +1162,17 @@
 | 20261118T235707 | RED | DCTY | 85984.24 | labelled | 37.57 |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T005706 | RED | ADCY | 16819.90 | pending | None | Mandy | 30308.08 | pending | None |  |
-| 20261119T015705 | NEUTRAL | Oilgob | 96587.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T015705 | NEUTRAL | FNDR | 42340.62 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T015705 | NEUTRAL | Mabel | 41707.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T015705 | NEUTRAL | MORNING | 30809.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T015705 | NEUTRAL | Mabel | 25018.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T015705 | NEUTRAL | LUCIA | 21017.09 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | Oilgob | 96587.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | FNDR | 42340.62 | labelled | -35.96 |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | Mabel | 41707.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | MORNING | 30809.43 | labelled | 37.15 |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | Mabel | 25018.39 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | LUCIA | 21017.09 | labelled | -37.22 |  |  |  | None | no eligible comparator |
 | 20261119T025705 | NEUTRAL | DCTC | 35010.84 | pending | None | NASDUCK | 28107.01 | pending | None |  |
 | 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | pending | None | NASDUCK | 28107.01 | pending | None |  |
 | 20261119T025705 | NEUTRAL | DCTC | 17699.07 | pending | None | MOOHAN | 17441.07 | pending | None |  |
+| 20261119T035705 | NEUTRAL | Founder | 46479.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | BUNC | 41842.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | CHOP | 27521.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | 😘 | 23153.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | SYRUP | 19455.60 | pending | None |  |  |  | None | no eligible comparator |
