@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 308 |
-| sightings | 18459 |
-| liquid sightings | 7378 |
-| first liquid sightings = unique tokens with an outcome row | 1586 |
-|   young | 1090 |
-|   mature | 432 |
+| eval-2 scans | 309 |
+| sightings | 18517 |
+| liquid sightings | 7402 |
+| first liquid sightings = unique tokens with an outcome row | 1590 |
+|   young | 1093 |
+|   mature | 433 |
 |   other | 64 |
 | young with a comparator (cap 2) | 190 |
-| young without a comparator | 900 |
+| young without a comparator | 903 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 68 |
 | complete pairs (both 60m outcomes labelled) | 114 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 818/1090, no_valid_entry 38/1090, pending 7/1090, unknown 172/1090, unreliable 55/1090
-- mature: labelled 398/432, pending 2/432, unknown 32/432
-- no valid entry: young 38/1090, mature 0/432
+- young: labelled 820/1093, no_valid_entry 38/1093, pending 7/1093, unknown 173/1093, unreliable 55/1093
+- mature: labelled 399/433, pending 2/433, unknown 32/433
+- no valid entry: young 38/1093, mature 0/433
 
 ## Effect (after costs; unit = scan)
 
@@ -1193,12 +1193,15 @@
 | 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | labelled | -40.64 |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | airdrop | 40372.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | labelled | -36.53 | After | 17137.39 | labelled | -32.88 |  |
-| 20261119T085700 | NEUTRAL | 无为 | 21469.33 | pending | None | After | 17137.39 | labelled | -32.88 |  |
+| 20261119T085700 | NEUTRAL | 无为 | 21469.33 | unknown | None | After | 17137.39 | labelled | -32.88 |  |
 | 20261119T085700 | NEUTRAL | 无为 | 21039.18 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261119T085700 | NEUTRAL | jingyu | 19521.17 | labelled | -5.48 |  |  |  | None | comparators used twice |
 | 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | labelled | -39.13 |  |  |  | None | comparators used twice |
-| 20261119T095659 | NEUTRAL | LEOLION | 92524.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T095659 | NEUTRAL | Sloth | 23718.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T095659 | NEUTRAL | LEOLION | 92524.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T095659 | NEUTRAL | Sloth | 23718.80 | labelled | -46.53 |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T115658 | NEUTRAL | GAYTA | 23198.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T115658 | NEUTRAL | Ant | 17823.92 | pending | None |  |  |  | None | no eligible comparator |
