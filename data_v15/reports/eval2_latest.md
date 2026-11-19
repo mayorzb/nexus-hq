@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 302 |
-| sightings | 18100 |
-| liquid sightings | 7232 |
-| first liquid sightings = unique tokens with an outcome row | 1557 |
-|   young | 1070 |
+| eval-2 scans | 303 |
+| sightings | 18162 |
+| liquid sightings | 7259 |
+| first liquid sightings = unique tokens with an outcome row | 1563 |
+|   young | 1075 |
 |   mature | 426 |
-|   other | 61 |
+|   other | 62 |
 | young with a comparator (cap 2) | 188 |
-| young without a comparator | 882 |
+| young without a comparator | 887 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 67 |
 | complete pairs (both 60m outcomes labelled) | 113 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 797/1070, no_valid_entry 38/1070, pending 12/1070, unknown 169/1070, unreliable 54/1070
+- young: labelled 801/1075, no_valid_entry 38/1075, pending 12/1075, unknown 170/1075, unreliable 54/1075
 - mature: labelled 393/426, pending 2/426, unknown 31/426
-- no valid entry: young 38/1070, mature 0/426
+- no valid entry: young 38/1075, mature 0/426
 
 ## Effect (after costs; unit = scan)
 
@@ -1160,7 +1160,7 @@
 | 20261118T225708 | RED | PolyGTA | 17984.66 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | GTASZN | 86626.34 | labelled | -28.95 |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | DCTY | 85984.24 | labelled | 37.57 |  |  |  | None | no eligible comparator |
-| 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | Buck | 15179.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T005706 | RED | ADCY | 16819.90 | pending | None | Mandy | 30308.08 | pending | None |  |
 | 20261119T015705 | NEUTRAL | Oilgob | 96587.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T015705 | NEUTRAL | FNDR | 42340.62 | labelled | -35.96 |  |  |  | None | no eligible comparator |
@@ -1172,12 +1172,17 @@
 | 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | labelled | -45.09 | NASDUCK | 28107.01 | labelled | 37.09 |  |
 | 20261119T025705 | NEUTRAL | DCTC | 17699.07 | labelled | 36.68 | MOOHAN | 17441.07 | unknown | None |  |
 | 20261119T035705 | NEUTRAL | Founder | 46479.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T035705 | NEUTRAL | BUNC | 41842.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T035705 | NEUTRAL | CHOP | 27521.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T035705 | NEUTRAL | 😘 | 23153.89 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T035705 | NEUTRAL | SYRUP | 19455.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | BUNC | 41842.49 | labelled | -30.64 |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | CHOP | 27521.31 | labelled | -40.64 |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | 😘 | 23153.89 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | SYRUP | 19455.60 | labelled | -3.96 |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | BUCKME | 102212.88 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | MANDY | 66140.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | JENSEN | 32330.97 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | Tinfoil | 22552.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | GTAVI | 15068.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | GTA | 65114.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | CLAUDE | 29791.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | GTA6IRL | 21432.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | CLAUDE | 15830.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | AMAZON | 15391.57 | pending | None |  |  |  | None | no eligible comparator |
