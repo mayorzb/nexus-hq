@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 306 |
-| sightings | 18340 |
-| liquid sightings | 7333 |
-| first liquid sightings = unique tokens with an outcome row | 1577 |
-|   young | 1085 |
-|   mature | 430 |
-|   other | 62 |
+| eval-2 scans | 307 |
+| sightings | 18400 |
+| liquid sightings | 7355 |
+| first liquid sightings = unique tokens with an outcome row | 1581 |
+|   young | 1087 |
+|   mature | 431 |
+|   other | 63 |
 | young with a comparator (cap 2) | 190 |
-| young without a comparator | 895 |
+| young without a comparator | 897 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 69 |
 | complete pairs (both 60m outcomes labelled) | 113 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 812/1085, no_valid_entry 38/1085, pending 9/1085, unknown 171/1085, unreliable 55/1085
-- mature: labelled 395/430, pending 3/430, unknown 32/430
-- no valid entry: young 38/1085, mature 0/430
+- young: labelled 813/1087, no_valid_entry 38/1087, pending 9/1087, unknown 172/1087, unreliable 55/1087
+- mature: labelled 396/431, pending 3/431, unknown 32/431
+- no valid entry: young 38/1087, mature 0/431
 
 ## Effect (after costs; unit = scan)
 
@@ -1172,7 +1172,7 @@
 | 20261119T025705 | NEUTRAL | DCTC | 35010.84 | labelled | -36.05 | NASDUCK | 28107.01 | labelled | 37.09 |  |
 | 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | labelled | -45.09 | NASDUCK | 28107.01 | labelled | 37.09 |  |
 | 20261119T025705 | NEUTRAL | DCTC | 17699.07 | labelled | 36.68 | MOOHAN | 17441.07 | unknown | None |  |
-| 20261119T035705 | NEUTRAL | Founder | 46479.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T035705 | NEUTRAL | Founder | 46479.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | BUNC | 41842.49 | labelled | -30.64 |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | CHOP | 27521.31 | labelled | -40.64 |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | 😘 | 23153.89 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1190,10 +1190,12 @@
 | 20261119T065702 | NEUTRAL | MeowCity | 31928.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | labelled | -47.73 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WKTT | 16061.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | labelled | -40.64 |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | airdrop | 40372.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | pending | None | After | 17137.39 | pending | None |  |
 | 20261119T085700 | NEUTRAL | 无为 | 21469.33 | pending | None | After | 17137.39 | pending | None |  |
 | 20261119T085700 | NEUTRAL | 无为 | 21039.18 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T085700 | NEUTRAL | jingyu | 19521.17 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T095659 | NEUTRAL | LEOLION | 92524.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T095659 | NEUTRAL | Sloth | 23718.80 | pending | None |  |  |  | None | no eligible comparator |
