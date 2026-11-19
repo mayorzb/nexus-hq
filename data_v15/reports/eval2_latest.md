@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 310 |
-| sightings | 18572 |
-| liquid sightings | 7429 |
-| first liquid sightings = unique tokens with an outcome row | 1598 |
-|   young | 1099 |
-|   mature | 435 |
+| eval-2 scans | 311 |
+| sightings | 18623 |
+| liquid sightings | 7453 |
+| first liquid sightings = unique tokens with an outcome row | 1602 |
+|   young | 1102 |
+|   mature | 436 |
 |   other | 64 |
 | young with a comparator (cap 2) | 192 |
-| young without a comparator | 907 |
+| young without a comparator | 910 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 70 |
 | complete pairs (both 60m outcomes labelled) | 114 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 821/1099, no_valid_entry 38/1099, pending 10/1099, unknown 174/1099, unreliable 56/1099
-- mature: labelled 400/435, pending 3/435, unknown 32/435
-- no valid entry: young 38/1099, mature 0/435
+- young: labelled 823/1102, no_valid_entry 38/1102, pending 11/1102, unknown 174/1102, unreliable 56/1102
+- mature: labelled 401/436, pending 3/436, unknown 32/436
+- no valid entry: young 38/1102, mature 0/436
 
 ## Effect (after costs; unit = scan)
 
@@ -1203,12 +1203,15 @@
 | 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | labelled | -46.56 |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 23198.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T115658 | NEUTRAL | Ant | 17823.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T115658 | NEUTRAL | Ant | 17823.92 | labelled | -28.97 |  |  |  | None | no eligible comparator |
 | 20261119T125658 | NEUTRAL | PIPI | 57175.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T125658 | NEUTRAL | CATCOIN | 32394.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T125658 | NEUTRAL | PIPI | 24763.75 | pending | None | DCTY | 15026.33 | pending | None |  |
 | 20261119T125658 | NEUTRAL | CATCOIN | 22089.21 | pending | None | DCTY | 15026.33 | pending | None |  |
 | 20261119T125658 | NEUTRAL | SWJ | 20234.15 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T135658 | NEUTRAL | SHTRIO | 98587.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T135658 | NEUTRAL | WIF | 20157.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | pending | None |  |  |  | None | no eligible comparator |
