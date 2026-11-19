@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 298 |
-| sightings | 17858 |
-| liquid sightings | 7132 |
-| first liquid sightings = unique tokens with an outcome row | 1534 |
-|   young | 1051 |
-|   mature | 422 |
+| eval-2 scans | 299 |
+| sightings | 17916 |
+| liquid sightings | 7156 |
+| first liquid sightings = unique tokens with an outcome row | 1541 |
+|   young | 1057 |
+|   mature | 423 |
 |   other | 61 |
 | young with a comparator (cap 2) | 185 |
-| young without a comparator | 866 |
+| young without a comparator | 872 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 66 |
 | complete pairs (both 60m outcomes labelled) | 111 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 786/1051, no_valid_entry 38/1051, pending 10/1051, unknown 163/1051, unreliable 54/1051
-- mature: labelled 391/422, pending 1/422, unknown 30/422
-- no valid entry: young 38/1051, mature 0/422
+- young: labelled 788/1057, no_valid_entry 38/1057, pending 11/1057, unknown 166/1057, unreliable 54/1057
+- mature: labelled 391/423, pending 2/423, unknown 30/423
+- no valid entry: young 38/1057, mature 0/423
 
 ## Effect (after costs; unit = scan)
 
@@ -1138,9 +1138,9 @@
 | 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | labelled | -39.16 |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | Mabel | 33761.61 | labelled | -42.21 |  |  |  | None | no eligible comparator |
-| 20261118T195710 | NEUTRAL | CALICO | 25932.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T195710 | NEUTRAL | QUIT | 24810.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T195710 | NEUTRAL | JIGGLE | 16217.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T195710 | NEUTRAL | CALICO | 25932.82 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261118T195710 | NEUTRAL | QUIT | 24810.18 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261118T195710 | NEUTRAL | JIGGLE | 16217.70 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | GTV | 84211.89 | labelled | -64.93 |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | Founder | 36246.79 | labelled | 21.28 |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | DAKITTY | 32523.97 | labelled | 37.19 |  |  |  | None | no eligible comparator |
@@ -1157,7 +1157,13 @@
 | 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PAPA | 52193.56 | labelled | -39.44 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PolyGTA | 17984.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T235707 | RED | GTASZN | 86626.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T235707 | RED | DCTY | 85984.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | GTASZN | 86626.34 | labelled | -28.95 |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | DCTY | 85984.24 | labelled | 37.57 |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T005706 | RED | ADCY | 16819.90 | pending | None | Mandy | 30308.08 | pending | None |  |
+| 20261119T015705 | NEUTRAL | Oilgob | 96587.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | FNDR | 42340.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | Mabel | 41707.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | MORNING | 30809.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | Mabel | 25018.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T015705 | NEUTRAL | LUCIA | 21017.09 | pending | None |  |  |  | None | no eligible comparator |
