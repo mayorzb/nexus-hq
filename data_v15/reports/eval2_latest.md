@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 319 |
-| sightings | 19105 |
-| liquid sightings | 7644 |
-| first liquid sightings = unique tokens with an outcome row | 1645 |
-|   young | 1136 |
-|   mature | 445 |
+| eval-2 scans | 320 |
+| sightings | 19167 |
+| liquid sightings | 7668 |
+| first liquid sightings = unique tokens with an outcome row | 1649 |
+|   young | 1139 |
+|   mature | 446 |
 |   other | 64 |
-| young with a comparator (cap 2) | 196 |
-| young without a comparator | 940 |
+| young with a comparator (cap 2) | 198 |
+| young without a comparator | 941 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 72 |
+|   pairs: young or mature outcome not yet usable | 74 |
 | complete pairs (both 60m outcomes labelled) | 116 |
 | scans contributing a complete pair | 74 |
 
 ## 60m outcome status by group
 
-- young: labelled 850/1136, no_valid_entry 38/1136, pending 11/1136, unknown 179/1136, unreliable 58/1136
-- mature: labelled 411/445, pending 1/445, unknown 33/445
-- no valid entry: young 38/1136, mature 0/445
+- young: labelled 855/1139, no_valid_entry 38/1139, pending 8/1139, unknown 180/1139, unreliable 58/1139
+- mature: labelled 412/446, pending 1/446, unknown 33/446
+- no valid entry: young 38/1139, mature 0/446
 
 ## Effect (after costs; unit = scan)
 
@@ -110,6 +110,7 @@
 - 20261119T125658-GD8GhsCv: PIPI (20261119T125658), CATCOIN (20261119T125658)
 - 20261119T145657-EywjBvp6: JUMP COIN (20261119T145657), TL (20261119T145657)
 - 20261119T195652-Cc5aMEFw: \nu (20261119T195652), OGTA (20261119T195652)
+- 20261119T225650-CwnbD9Fp: FIONA (20261119T225650), INSCRIBOOR (20261119T225650)
 
 ## Every pair
 
@@ -1236,18 +1237,21 @@
 | 20261119T185653 | NEUTRAL | DATITTY | 30963.93 | labelled | -27.96 |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | SIM | 19348.54 | labelled | 3.23 |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | ANT | 16661.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261119T195652 | NEUTRAL | \nu | 107083.76 | pending | None | CATMARIO | 58144.44 | labelled | -9.0 |  |
+| 20261119T195652 | NEUTRAL | \nu | 107083.76 | unknown | None | CATMARIO | 58144.44 | labelled | -9.0 |  |
 | 20261119T195652 | NEUTRAL | OGTA | 83497.80 | labelled | -14.53 | CATMARIO | 58144.44 | labelled | -9.0 |  |
 | 20261119T195652 | NEUTRAL | CATMARIO | 46485.60 | labelled | -35.98 |  |  |  | None | comparators used twice |
 | 20261119T195652 | NEUTRAL | smol | 31809.59 | labelled | 37.17 |  |  |  | None | comparators used twice |
 | 20261119T195652 | NEUTRAL | A\ | 30350.95 | labelled | -100.0 |  |  |  | None | comparators used twice |
-| 20261119T205651 | NEUTRAL | DAINU | 63333.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T205651 | NEUTRAL | MANDY | 36304.23 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T205651 | NEUTRAL | LUCIA | 25849.48 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T205651 | NEUTRAL | LOOSY | 20943.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T205651 | NEUTRAL | ONI | 17885.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | DAINU | 63333.36 | labelled | -34.79 |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | MANDY | 36304.23 | labelled | -32.92 |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | LUCIA | 25849.48 | labelled | -53.08 |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | LOOSY | 20943.42 | labelled | -48.58 |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | ONI | 17885.82 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 74004.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 62124.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | BUNCOIN | 59404.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 30682.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 21022.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T225650 | NEUTRAL | AI | 102732.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T225650 | NEUTRAL | FIONA | 19242.60 | pending | None | RATS | 19330.17 | pending | None |  |
+| 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | pending | None |  |
