@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 296 |
-| sightings | 17743 |
-| liquid sightings | 7090 |
-| first liquid sightings = unique tokens with an outcome row | 1529 |
-|   young | 1047 |
+| eval-2 scans | 297 |
+| sightings | 17802 |
+| liquid sightings | 7111 |
+| first liquid sightings = unique tokens with an outcome row | 1532 |
+|   young | 1050 |
 |   mature | 421 |
 |   other | 61 |
 | young with a comparator (cap 2) | 184 |
-| young without a comparator | 863 |
+| young without a comparator | 866 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 65 |
 | complete pairs (both 60m outcomes labelled) | 111 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 780/1047, no_valid_entry 38/1047, pending 15/1047, unknown 160/1047, unreliable 54/1047
-- mature: labelled 390/421, pending 1/421, unknown 30/421
-- no valid entry: young 38/1047, mature 0/421
+- young: labelled 785/1050, no_valid_entry 38/1050, pending 12/1050, unknown 161/1050, unreliable 54/1050
+- mature: labelled 391/421, unknown 30/421
+- no valid entry: young 38/1050, mature 0/421
 
 ## Effect (after costs; unit = scan)
 
@@ -1130,7 +1130,7 @@
 | 20261118T175711 | NEUTRAL | Rocco | 61048.60 | labelled | -37.31 |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | APCY | 44531.12 | labelled | -37.5 |  |  |  | None | no eligible comparator |
 | 20261118T175711 | NEUTRAL | LastRide | 39837.52 | labelled | -27.96 |  |  |  | None | no eligible comparator |
-| 20261118T175711 | NEUTRAL | APCY | 22680.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T175711 | NEUTRAL | APCY | 22680.74 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | VTC | 742400.52 | labelled | -100.0 | CATE | 1338447.27 | labelled | -2.95 |  |
 | 20261118T185711 | NEUTRAL | AI | 50875.19 | labelled | -32.59 |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | FISH | 31083.68 | pending | None |  |  |  | None | no eligible comparator |
@@ -1148,12 +1148,15 @@
 | 20261118T205710 | NEUTRAL | Mabel | 27864.63 | labelled | 37.08 |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | DCTYCAT | 20433.02 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261118T205710 | NEUTRAL | CRIME | 19972.96 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | GRAND | 47961.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | Games | 27324.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | GRAND | 47961.90 | labelled | -10.38 |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | Games | 27324.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | AudaCity | 23327.72 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | FLAMINGO | 19203.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | FLAMINGO | 19203.17 | labelled | -41.37 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | DCTY | 17394.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | DCTY | 17394.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PAPA | 52193.56 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PolyGTA | 17984.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | GTASZN | 86626.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | DCTY | 85984.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
