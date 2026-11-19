@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 309 |
-| sightings | 18517 |
-| liquid sightings | 7402 |
-| first liquid sightings = unique tokens with an outcome row | 1590 |
-|   young | 1093 |
-|   mature | 433 |
+| eval-2 scans | 310 |
+| sightings | 18572 |
+| liquid sightings | 7429 |
+| first liquid sightings = unique tokens with an outcome row | 1598 |
+|   young | 1099 |
+|   mature | 435 |
 |   other | 64 |
-| young with a comparator (cap 2) | 190 |
-| young without a comparator | 903 |
+| young with a comparator (cap 2) | 192 |
+| young without a comparator | 907 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 68 |
+|   pairs: young or mature outcome not yet usable | 70 |
 | complete pairs (both 60m outcomes labelled) | 114 |
 | scans contributing a complete pair | 72 |
 
 ## 60m outcome status by group
 
-- young: labelled 820/1093, no_valid_entry 38/1093, pending 7/1093, unknown 173/1093, unreliable 55/1093
-- mature: labelled 399/433, pending 2/433, unknown 32/433
-- no valid entry: young 38/1093, mature 0/433
+- young: labelled 821/1099, no_valid_entry 38/1099, pending 10/1099, unknown 174/1099, unreliable 56/1099
+- mature: labelled 400/435, pending 3/435, unknown 32/435
+- no valid entry: young 38/1099, mature 0/435
 
 ## Effect (after costs; unit = scan)
 
@@ -107,6 +107,7 @@
 - 20261118T165711-Q1vecEMQ: GTA (20261118T165711), GTA (20261118T165711)
 - 20261119T025705-7qgvmEdQ: DCTC (20261119T025705), MAGACITY (20261119T025705)
 - 20261119T085700-Db2s6iVv: APOCRYCOIN (20261119T085700), 无为 (20261119T085700)
+- 20261119T125658-GD8GhsCv: PIPI (20261119T125658), CATCOIN (20261119T125658)
 
 ## Every pair
 
@@ -1189,7 +1190,7 @@
 | 20261119T055703 | NEUTRAL | AMAZON | 15391.57 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | MeowCity | 31928.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | labelled | -47.73 |  |  |  | None | no eligible comparator |
-| 20261119T065702 | NEUTRAL | WKTT | 16061.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T065702 | NEUTRAL | WKTT | 16061.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | labelled | -40.64 |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | airdrop | 40372.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | labelled | -36.53 | After | 17137.39 | labelled | -32.88 |  |
@@ -1199,9 +1200,15 @@
 | 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | labelled | -39.13 |  |  |  | None | comparators used twice |
 | 20261119T095659 | NEUTRAL | LEOLION | 92524.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T095659 | NEUTRAL | Sloth | 23718.80 | labelled | -46.53 |  |  |  | None | no eligible comparator |
-| 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 23198.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | Ant | 17823.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T125658 | NEUTRAL | PIPI | 57175.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T125658 | NEUTRAL | CATCOIN | 32394.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T125658 | NEUTRAL | PIPI | 24763.75 | pending | None | DCTY | 15026.33 | pending | None |  |
+| 20261119T125658 | NEUTRAL | CATCOIN | 22089.21 | pending | None | DCTY | 15026.33 | pending | None |  |
+| 20261119T125658 | NEUTRAL | SWJ | 20234.15 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | pending | None |  |  |  | None | comparators used twice |
