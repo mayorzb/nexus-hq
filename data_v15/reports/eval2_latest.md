@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 317 |
-| sightings | 18981 |
-| liquid sightings | 7594 |
-| first liquid sightings = unique tokens with an outcome row | 1634 |
-|   young | 1126 |
-|   mature | 444 |
+| eval-2 scans | 318 |
+| sightings | 19045 |
+| liquid sightings | 7618 |
+| first liquid sightings = unique tokens with an outcome row | 1640 |
+|   young | 1131 |
+|   mature | 445 |
 |   other | 64 |
 | young with a comparator (cap 2) | 196 |
-| young without a comparator | 930 |
+| young without a comparator | 935 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 73 |
 | complete pairs (both 60m outcomes labelled) | 115 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 842/1126, no_valid_entry 38/1126, pending 9/1126, unknown 179/1126, unreliable 58/1126
-- mature: labelled 408/444, pending 4/444, unknown 32/444
-- no valid entry: young 38/1126, mature 0/444
+- young: labelled 846/1131, no_valid_entry 38/1131, pending 10/1131, unknown 179/1131, unreliable 58/1131
+- mature: labelled 409/445, pending 3/445, unknown 33/445
+- no valid entry: young 38/1131, mature 0/445
 
 ## Effect (after costs; unit = scan)
 
@@ -1219,8 +1219,8 @@
 | 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T145657 | NEUTRAL | XAUT | 3683713522.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T145657 | NEUTRAL | ANT | 35984.10 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261119T145657 | NEUTRAL | JUMP COIN | 30957.78 | labelled | 37.16 | Phone | 15985.76 | pending | None |  |
-| 20261119T145657 | NEUTRAL | TL | 17766.43 | labelled | 13.03 | Phone | 15985.76 | pending | None |  |
+| 20261119T145657 | NEUTRAL | JUMP COIN | 30957.78 | labelled | 37.16 | Phone | 15985.76 | unknown | None |  |
+| 20261119T145657 | NEUTRAL | TL | 17766.43 | labelled | 13.03 | Phone | 15985.76 | unknown | None |  |
 | 20261119T145657 | NEUTRAL | JETSKI | 16596.97 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261119T155656 | NEUTRAL | AI | 123971.60 | labelled | -45.72 |  |  |  | None | no eligible comparator |
 | 20261119T155656 | NEUTRAL | LOOSY | 36803.76 | labelled | -28.01 |  |  |  | None | no eligible comparator |
@@ -1232,12 +1232,17 @@
 | 20261119T175654 | NEUTRAL | GTE | 55917.55 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T175654 | NEUTRAL | KFC | 40942.22 | labelled | -44.87 |  |  |  | None | no eligible comparator |
 | 20261119T175654 | NEUTRAL | NEX Ai | 31744.74 | labelled | 37.17 |  |  |  | None | no eligible comparator |
-| 20261119T185653 | NEUTRAL | AI | 102129.20 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T185653 | NEUTRAL | DATITTY | 30963.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T185653 | NEUTRAL | SIM | 19348.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T185653 | NEUTRAL | ANT | 16661.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | AI | 102129.20 | labelled | -40.11 |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | DATITTY | 30963.93 | labelled | -27.96 |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | SIM | 19348.54 | labelled | 3.23 |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | ANT | 16661.77 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T195652 | NEUTRAL | \nu | 107083.76 | pending | None | CATMARIO | 58144.44 | pending | None |  |
 | 20261119T195652 | NEUTRAL | OGTA | 83497.80 | pending | None | CATMARIO | 58144.44 | pending | None |  |
 | 20261119T195652 | NEUTRAL | CATMARIO | 46485.60 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T195652 | NEUTRAL | smol | 31809.59 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T195652 | NEUTRAL | A\ | 30350.95 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T205651 | NEUTRAL | DAINU | 63333.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | MANDY | 36304.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | LUCIA | 25849.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | LOOSY | 20943.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T205651 | NEUTRAL | ONI | 17885.82 | pending | None |  |  |  | None | no eligible comparator |
