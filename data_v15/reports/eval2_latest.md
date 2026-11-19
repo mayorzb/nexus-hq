@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 305 |
-| sightings | 18283 |
-| liquid sightings | 7307 |
-| first liquid sightings = unique tokens with an outcome row | 1569 |
-|   young | 1079 |
-|   mature | 428 |
+| eval-2 scans | 306 |
+| sightings | 18340 |
+| liquid sightings | 7333 |
+| first liquid sightings = unique tokens with an outcome row | 1577 |
+|   young | 1085 |
+|   mature | 430 |
 |   other | 62 |
-| young with a comparator (cap 2) | 188 |
-| young without a comparator | 891 |
+| young with a comparator (cap 2) | 190 |
+| young without a comparator | 895 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 67 |
+|   pairs: young or mature outcome not yet usable | 69 |
 | complete pairs (both 60m outcomes labelled) | 113 |
 | scans contributing a complete pair | 71 |
 
 ## 60m outcome status by group
 
-- young: labelled 810/1079, no_valid_entry 38/1079, pending 5/1079, unknown 171/1079, unreliable 55/1079
-- mature: labelled 394/428, pending 2/428, unknown 32/428
-- no valid entry: young 38/1079, mature 0/428
+- young: labelled 812/1085, no_valid_entry 38/1085, pending 9/1085, unknown 171/1085, unreliable 55/1085
+- mature: labelled 395/430, pending 3/430, unknown 32/430
+- no valid entry: young 38/1085, mature 0/430
 
 ## Effect (after costs; unit = scan)
 
@@ -106,6 +106,7 @@
 - 20261118T155712-DcR4Ev9E: YUKON (20261118T155712), Apocrycoin (20261118T155712)
 - 20261118T165711-Q1vecEMQ: GTA (20261118T165711), GTA (20261118T165711)
 - 20261119T025705-7qgvmEdQ: DCTC (20261119T025705), MAGACITY (20261119T025705)
+- 20261119T085700-Db2s6iVv: APOCRYCOIN (20261119T085700), 无为 (20261119T085700)
 
 ## Every pair
 
@@ -1186,7 +1187,13 @@
 | 20261119T055703 | NEUTRAL | GTA6IRL | 21432.22 | labelled | 36.87 |  |  |  | None | no eligible comparator |
 | 20261119T055703 | NEUTRAL | CLAUDE | 15830.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T055703 | NEUTRAL | AMAZON | 15391.57 | labelled | 36.51 |  |  |  | None | no eligible comparator |
-| 20261119T065702 | NEUTRAL | MeowCity | 31928.17 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T065702 | NEUTRAL | MeowCity | 31928.17 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | labelled | -47.73 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WKTT | 16061.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T085700 | NEUTRAL | airdrop | 40372.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | pending | None | After | 17137.39 | pending | None |  |
+| 20261119T085700 | NEUTRAL | 无为 | 21469.33 | pending | None | After | 17137.39 | pending | None |  |
+| 20261119T085700 | NEUTRAL | 无为 | 21039.18 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T085700 | NEUTRAL | jingyu | 19521.17 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | pending | None |  |  |  | None | comparators used twice |
