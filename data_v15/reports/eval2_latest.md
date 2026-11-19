@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 315 |
-| sightings | 18858 |
-| liquid sightings | 7547 |
-| first liquid sightings = unique tokens with an outcome row | 1622 |
-|   young | 1117 |
-|   mature | 441 |
+| eval-2 scans | 316 |
+| sightings | 18918 |
+| liquid sightings | 7569 |
+| first liquid sightings = unique tokens with an outcome row | 1627 |
+|   young | 1121 |
+|   mature | 442 |
 |   other | 64 |
 | young with a comparator (cap 2) | 194 |
-| young without a comparator | 923 |
+| young without a comparator | 927 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 71 |
 | complete pairs (both 60m outcomes labelled) | 115 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 836/1117, no_valid_entry 38/1117, pending 10/1117, unknown 176/1117, unreliable 57/1117
-- mature: labelled 406/441, pending 3/441, unknown 32/441
-- no valid entry: young 38/1117, mature 0/441
+- young: labelled 839/1121, no_valid_entry 38/1121, pending 8/1121, unknown 178/1121, unreliable 58/1121
+- mature: labelled 407/442, pending 3/442, unknown 32/442
+- no valid entry: young 38/1121, mature 0/442
 
 ## Effect (after costs; unit = scan)
 
@@ -1209,10 +1209,10 @@
 | 20261119T115658 | NEUTRAL | Ant | 17823.92 | labelled | -28.97 |  |  |  | None | no eligible comparator |
 | 20261119T125658 | NEUTRAL | PIPI | 57175.18 | labelled | 37.45 |  |  |  | None | no eligible comparator |
 | 20261119T125658 | NEUTRAL | CATCOIN | 32394.87 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261119T125658 | NEUTRAL | PIPI | 24763.75 | pending | None | DCTY | 15026.33 | labelled | 36.48 |  |
+| 20261119T125658 | NEUTRAL | PIPI | 24763.75 | unknown | None | DCTY | 15026.33 | labelled | 36.48 |  |
 | 20261119T125658 | NEUTRAL | CATCOIN | 22089.21 | labelled | -100.0 | DCTY | 15026.33 | labelled | 36.48 |  |
 | 20261119T125658 | NEUTRAL | SWJ | 20234.15 | labelled | -28.68 |  |  |  | None | comparators used twice |
-| 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | unknown | None |  |  |  | None | comparators used twice |
 | 20261119T135658 | NEUTRAL | SHTRIO | 98587.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | WIF | 20157.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -1224,10 +1224,14 @@
 | 20261119T155656 | NEUTRAL | AI | 123971.60 | labelled | -45.72 |  |  |  | None | no eligible comparator |
 | 20261119T155656 | NEUTRAL | LOOSY | 36803.76 | labelled | -28.01 |  |  |  | None | no eligible comparator |
 | 20261119T155656 | NEUTRAL | MORALS | 32839.74 | labelled | -28.32 |  |  |  | None | no eligible comparator |
-| 20261119T165655 | NEUTRAL | SC | 70980.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T165655 | NEUTRAL | Topstar | 48855.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T165655 | NEUTRAL | MANDY | 38406.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T165655 | NEUTRAL | BBFS | 36176.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | SC | 70980.02 | labelled | -34.48 |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | Topstar | 48855.02 | labelled | -36.3 |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | MANDY | 38406.02 | labelled | -35.1 |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | BBFS | 36176.91 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T175654 | NEUTRAL | GTE | 55917.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T175654 | NEUTRAL | KFC | 40942.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T175654 | NEUTRAL | NEX Ai | 31744.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | AI | 102129.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | DATITTY | 30963.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | SIM | 19348.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T185653 | NEUTRAL | ANT | 16661.77 | pending | None |  |  |  | None | no eligible comparator |
