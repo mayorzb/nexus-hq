@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 316 |
-| sightings | 18918 |
-| liquid sightings | 7569 |
-| first liquid sightings = unique tokens with an outcome row | 1627 |
-|   young | 1121 |
-|   mature | 442 |
+| eval-2 scans | 317 |
+| sightings | 18981 |
+| liquid sightings | 7594 |
+| first liquid sightings = unique tokens with an outcome row | 1634 |
+|   young | 1126 |
+|   mature | 444 |
 |   other | 64 |
-| young with a comparator (cap 2) | 194 |
-| young without a comparator | 927 |
+| young with a comparator (cap 2) | 196 |
+| young without a comparator | 930 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 71 |
+|   pairs: young or mature outcome not yet usable | 73 |
 | complete pairs (both 60m outcomes labelled) | 115 |
 | scans contributing a complete pair | 73 |
 
 ## 60m outcome status by group
 
-- young: labelled 839/1121, no_valid_entry 38/1121, pending 8/1121, unknown 178/1121, unreliable 58/1121
-- mature: labelled 407/442, pending 3/442, unknown 32/442
-- no valid entry: young 38/1121, mature 0/442
+- young: labelled 842/1126, no_valid_entry 38/1126, pending 9/1126, unknown 179/1126, unreliable 58/1126
+- mature: labelled 408/444, pending 4/444, unknown 32/444
+- no valid entry: young 38/1126, mature 0/444
 
 ## Effect (after costs; unit = scan)
 
@@ -109,6 +109,7 @@
 - 20261119T085700-Db2s6iVv: APOCRYCOIN (20261119T085700), 无为 (20261119T085700)
 - 20261119T125658-GD8GhsCv: PIPI (20261119T125658), CATCOIN (20261119T125658)
 - 20261119T145657-EywjBvp6: JUMP COIN (20261119T145657), TL (20261119T145657)
+- 20261119T195652-Cc5aMEFw: \nu (20261119T195652), OGTA (20261119T195652)
 
 ## Every pair
 
@@ -1214,7 +1215,7 @@
 | 20261119T125658 | NEUTRAL | SWJ | 20234.15 | labelled | -28.68 |  |  |  | None | comparators used twice |
 | 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | unknown | None |  |  |  | None | comparators used twice |
 | 20261119T135658 | NEUTRAL | SHTRIO | 98587.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261119T135658 | NEUTRAL | WIF | 20157.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T135658 | NEUTRAL | WIF | 20157.80 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T145657 | NEUTRAL | XAUT | 3683713522.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T145657 | NEUTRAL | ANT | 35984.10 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1228,10 +1229,15 @@
 | 20261119T165655 | NEUTRAL | Topstar | 48855.02 | labelled | -36.3 |  |  |  | None | no eligible comparator |
 | 20261119T165655 | NEUTRAL | MANDY | 38406.02 | labelled | -35.1 |  |  |  | None | no eligible comparator |
 | 20261119T165655 | NEUTRAL | BBFS | 36176.91 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261119T175654 | NEUTRAL | GTE | 55917.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T175654 | NEUTRAL | KFC | 40942.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T175654 | NEUTRAL | NEX Ai | 31744.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T175654 | NEUTRAL | GTE | 55917.55 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T175654 | NEUTRAL | KFC | 40942.22 | labelled | -44.87 |  |  |  | None | no eligible comparator |
+| 20261119T175654 | NEUTRAL | NEX Ai | 31744.74 | labelled | 37.17 |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | AI | 102129.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | DATITTY | 30963.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | SIM | 19348.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T185653 | NEUTRAL | ANT | 16661.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T195652 | NEUTRAL | \nu | 107083.76 | pending | None | CATMARIO | 58144.44 | pending | None |  |
+| 20261119T195652 | NEUTRAL | OGTA | 83497.80 | pending | None | CATMARIO | 58144.44 | pending | None |  |
+| 20261119T195652 | NEUTRAL | CATMARIO | 46485.60 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T195652 | NEUTRAL | smol | 31809.59 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T195652 | NEUTRAL | A\ | 30350.95 | pending | None |  |  |  | None | comparators used twice |
