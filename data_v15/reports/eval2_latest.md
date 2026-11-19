@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 301 |
-| sightings | 18037 |
-| liquid sightings | 7206 |
-| first liquid sightings = unique tokens with an outcome row | 1551 |
-|   young | 1065 |
-|   mature | 425 |
+| eval-2 scans | 302 |
+| sightings | 18100 |
+| liquid sightings | 7232 |
+| first liquid sightings = unique tokens with an outcome row | 1557 |
+|   young | 1070 |
+|   mature | 426 |
 |   other | 61 |
 | young with a comparator (cap 2) | 188 |
-| young without a comparator | 877 |
+| young without a comparator | 882 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 69 |
-| complete pairs (both 60m outcomes labelled) | 111 |
-| scans contributing a complete pair | 70 |
+|   pairs: young or mature outcome not yet usable | 67 |
+| complete pairs (both 60m outcomes labelled) | 113 |
+| scans contributing a complete pair | 71 |
 
 ## 60m outcome status by group
 
-- young: labelled 794/1065, no_valid_entry 38/1065, pending 11/1065, unknown 168/1065, unreliable 54/1065
-- mature: labelled 392/425, pending 3/425, unknown 30/425
-- no valid entry: young 38/1065, mature 0/425
+- young: labelled 797/1070, no_valid_entry 38/1070, pending 12/1070, unknown 169/1070, unreliable 54/1070
+- mature: labelled 393/426, pending 2/426, unknown 31/426
+- no valid entry: young 38/1070, mature 0/426
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -23.67 points, 95% interval (-35.79, -11.26); scans with young worse 47/70
-- Pairs with young worse: 76/111 (68.5%); pair mean -20.65, median -26.59
-- Big loss (<= -20%): young 74/111, mature 26/111
+- Scan-level mean difference (young - mature): -24.43 points, 95% interval (-36.63, -12.01); scans with young worse 48/71
+- Pairs with young worse: 78/113 (69.0%); pair mean -21.66, median -26.8
+- Big loss (<= -20%): young 76/113, mature 26/113
 
 ## Comparator reuse (cap 2)
 
@@ -1157,7 +1157,7 @@
 | 20261118T215709 | NEUTRAL | DCTY | 17394.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PAPA | 52193.56 | labelled | -39.44 |  |  |  | None | no eligible comparator |
-| 20261118T225708 | RED | PolyGTA | 17984.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T225708 | RED | PolyGTA | 17984.66 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | GTASZN | 86626.34 | labelled | -28.95 |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | DCTY | 85984.24 | labelled | 37.57 |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
@@ -1168,11 +1168,16 @@
 | 20261119T015705 | NEUTRAL | MORNING | 30809.43 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261119T015705 | NEUTRAL | Mabel | 25018.39 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T015705 | NEUTRAL | LUCIA | 21017.09 | labelled | -37.22 |  |  |  | None | no eligible comparator |
-| 20261119T025705 | NEUTRAL | DCTC | 35010.84 | pending | None | NASDUCK | 28107.01 | pending | None |  |
-| 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | pending | None | NASDUCK | 28107.01 | pending | None |  |
-| 20261119T025705 | NEUTRAL | DCTC | 17699.07 | pending | None | MOOHAN | 17441.07 | pending | None |  |
+| 20261119T025705 | NEUTRAL | DCTC | 35010.84 | labelled | -36.05 | NASDUCK | 28107.01 | labelled | 37.09 |  |
+| 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | labelled | -45.09 | NASDUCK | 28107.01 | labelled | 37.09 |  |
+| 20261119T025705 | NEUTRAL | DCTC | 17699.07 | labelled | 36.68 | MOOHAN | 17441.07 | unknown | None |  |
 | 20261119T035705 | NEUTRAL | Founder | 46479.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | BUNC | 41842.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | CHOP | 27521.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | 😘 | 23153.89 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T035705 | NEUTRAL | SYRUP | 19455.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T045704 | NEUTRAL | BUCKME | 102212.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T045704 | NEUTRAL | MANDY | 66140.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T045704 | NEUTRAL | JENSEN | 32330.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T045704 | NEUTRAL | Tinfoil | 22552.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T045704 | NEUTRAL | GTAVI | 15068.63 | pending | None |  |  |  | None | no eligible comparator |
