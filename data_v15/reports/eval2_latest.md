@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 313 |
-| sightings | 18736 |
-| liquid sightings | 7499 |
-| first liquid sightings = unique tokens with an outcome row | 1613 |
-|   young | 1110 |
-|   mature | 439 |
+| eval-2 scans | 314 |
+| sightings | 18798 |
+| liquid sightings | 7525 |
+| first liquid sightings = unique tokens with an outcome row | 1618 |
+|   young | 1114 |
+|   mature | 440 |
 |   other | 64 |
 | young with a comparator (cap 2) | 194 |
-| young without a comparator | 916 |
+| young without a comparator | 920 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 71 |
 | complete pairs (both 60m outcomes labelled) | 115 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 828/1110, no_valid_entry 38/1110, pending 13/1110, unknown 174/1110, unreliable 57/1110
-- mature: labelled 404/439, pending 3/439, unknown 32/439
-- no valid entry: young 38/1110, mature 0/439
+- young: labelled 833/1114, no_valid_entry 38/1114, pending 11/1114, unknown 175/1114, unreliable 57/1114
+- mature: labelled 405/440, pending 3/440, unknown 32/440
+- no valid entry: young 38/1114, mature 0/440
 
 ## Effect (after costs; unit = scan)
 
@@ -1203,7 +1203,7 @@
 | 20261119T095659 | NEUTRAL | Sloth | 23718.80 | labelled | -46.53 |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | labelled | -46.56 |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 23198.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | Ant | 17823.92 | labelled | -28.97 |  |  |  | None | no eligible comparator |
@@ -1216,11 +1216,15 @@
 | 20261119T135658 | NEUTRAL | SHTRIO | 98587.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | WIF | 20157.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261119T145657 | NEUTRAL | XAUT | 3683713522.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T145657 | NEUTRAL | ANT | 35984.10 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T145657 | NEUTRAL | JUMP COIN | 30957.78 | pending | None | Phone | 15985.76 | pending | None |  |
-| 20261119T145657 | NEUTRAL | TL | 17766.43 | pending | None | Phone | 15985.76 | pending | None |  |
-| 20261119T145657 | NEUTRAL | JETSKI | 16596.97 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T145657 | NEUTRAL | XAUT | 3683713522.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T145657 | NEUTRAL | ANT | 35984.10 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T145657 | NEUTRAL | JUMP COIN | 30957.78 | labelled | 37.16 | Phone | 15985.76 | pending | None |  |
+| 20261119T145657 | NEUTRAL | TL | 17766.43 | labelled | 13.03 | Phone | 15985.76 | pending | None |  |
+| 20261119T145657 | NEUTRAL | JETSKI | 16596.97 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261119T155656 | NEUTRAL | AI | 123971.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T155656 | NEUTRAL | LOOSY | 36803.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T155656 | NEUTRAL | MORALS | 32839.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | SC | 70980.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | Topstar | 48855.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | MANDY | 38406.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T165655 | NEUTRAL | BBFS | 36176.91 | pending | None |  |  |  | None | no eligible comparator |
