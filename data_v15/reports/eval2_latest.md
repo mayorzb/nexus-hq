@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 307 |
-| sightings | 18400 |
-| liquid sightings | 7355 |
-| first liquid sightings = unique tokens with an outcome row | 1581 |
-|   young | 1087 |
-|   mature | 431 |
-|   other | 63 |
+| eval-2 scans | 308 |
+| sightings | 18459 |
+| liquid sightings | 7378 |
+| first liquid sightings = unique tokens with an outcome row | 1586 |
+|   young | 1090 |
+|   mature | 432 |
+|   other | 64 |
 | young with a comparator (cap 2) | 190 |
-| young without a comparator | 897 |
+| young without a comparator | 900 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 69 |
-| complete pairs (both 60m outcomes labelled) | 113 |
-| scans contributing a complete pair | 71 |
+|   pairs: young or mature outcome not yet usable | 68 |
+| complete pairs (both 60m outcomes labelled) | 114 |
+| scans contributing a complete pair | 72 |
 
 ## 60m outcome status by group
 
-- young: labelled 813/1087, no_valid_entry 38/1087, pending 9/1087, unknown 172/1087, unreliable 55/1087
-- mature: labelled 396/431, pending 3/431, unknown 32/431
-- no valid entry: young 38/1087, mature 0/431
+- young: labelled 818/1090, no_valid_entry 38/1090, pending 7/1090, unknown 172/1090, unreliable 55/1090
+- mature: labelled 398/432, pending 2/432, unknown 32/432
+- no valid entry: young 38/1090, mature 0/432
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.43 points, 95% interval (-36.63, -12.01); scans with young worse 48/71
-- Pairs with young worse: 78/113 (69.0%); pair mean -21.66, median -26.8
-- Big loss (<= -20%): young 76/113, mature 26/113
+- Scan-level mean difference (young - mature): -24.14 points, 95% interval (-36.37, -12.49); scans with young worse 49/72
+- Pairs with young worse: 79/114 (69.3%); pair mean -21.5, median -26.7
+- Big loss (<= -20%): young 77/114, mature 27/114
 
 ## Comparator reuse (cap 2)
 
@@ -1191,11 +1191,14 @@
 | 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | labelled | -47.73 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WKTT | 16061.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | labelled | -40.64 |  |  |  | None | no eligible comparator |
-| 20261119T085700 | NEUTRAL | airdrop | 40372.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | pending | None | After | 17137.39 | pending | None |  |
-| 20261119T085700 | NEUTRAL | 无为 | 21469.33 | pending | None | After | 17137.39 | pending | None |  |
-| 20261119T085700 | NEUTRAL | 无为 | 21039.18 | pending | None |  |  |  | None | comparators used twice |
-| 20261119T085700 | NEUTRAL | jingyu | 19521.17 | pending | None |  |  |  | None | comparators used twice |
-| 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T085700 | NEUTRAL | airdrop | 40372.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T085700 | NEUTRAL | APOCRYCOIN | 28503.02 | labelled | -36.53 | After | 17137.39 | labelled | -32.88 |  |
+| 20261119T085700 | NEUTRAL | 无为 | 21469.33 | pending | None | After | 17137.39 | labelled | -32.88 |  |
+| 20261119T085700 | NEUTRAL | 无为 | 21039.18 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261119T085700 | NEUTRAL | jingyu | 19521.17 | labelled | -5.48 |  |  |  | None | comparators used twice |
+| 20261119T085700 | NEUTRAL | AIRDROP | 17169.73 | labelled | -39.13 |  |  |  | None | comparators used twice |
 | 20261119T095659 | NEUTRAL | LEOLION | 92524.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T095659 | NEUTRAL | Sloth | 23718.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | Gemneon | 100342.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | JENSEN | 32382.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T105659 | NEUTRAL | Sparrow | 23054.39 | pending | None |  |  |  | None | no eligible comparator |
