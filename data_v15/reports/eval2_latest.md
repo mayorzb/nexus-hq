@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 299 |
-| sightings | 17916 |
-| liquid sightings | 7156 |
-| first liquid sightings = unique tokens with an outcome row | 1541 |
-|   young | 1057 |
-|   mature | 423 |
+| eval-2 scans | 300 |
+| sightings | 17975 |
+| liquid sightings | 7179 |
+| first liquid sightings = unique tokens with an outcome row | 1546 |
+|   young | 1060 |
+|   mature | 425 |
 |   other | 61 |
-| young with a comparator (cap 2) | 185 |
+| young with a comparator (cap 2) | 188 |
 | young without a comparator | 872 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 66 |
+|   pairs: young or mature outcome not yet usable | 69 |
 | complete pairs (both 60m outcomes labelled) | 111 |
 | scans contributing a complete pair | 70 |
 
 ## 60m outcome status by group
 
-- young: labelled 788/1057, no_valid_entry 38/1057, pending 11/1057, unknown 166/1057, unreliable 54/1057
-- mature: labelled 391/423, pending 2/423, unknown 30/423
-- no valid entry: young 38/1057, mature 0/423
+- young: labelled 788/1060, no_valid_entry 38/1060, pending 14/1060, unknown 166/1060, unreliable 54/1060
+- mature: labelled 391/425, pending 4/425, unknown 30/425
+- no valid entry: young 38/1060, mature 0/425
 
 ## Effect (after costs; unit = scan)
 
@@ -105,6 +105,7 @@
 - 20261118T045717-FG3sAP59: Elmo (20261118T045717), LONE (20261118T045717)
 - 20261118T155712-DcR4Ev9E: YUKON (20261118T155712), Apocrycoin (20261118T155712)
 - 20261118T165711-Q1vecEMQ: GTA (20261118T165711), GTA (20261118T165711)
+- 20261119T025705-7qgvmEdQ: DCTC (20261119T025705), MAGACITY (20261119T025705)
 
 ## Every pair
 
@@ -1167,3 +1168,6 @@
 | 20261119T015705 | NEUTRAL | MORNING | 30809.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T015705 | NEUTRAL | Mabel | 25018.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T015705 | NEUTRAL | LUCIA | 21017.09 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T025705 | NEUTRAL | DCTC | 35010.84 | pending | None | NASDUCK | 28107.01 | pending | None |  |
+| 20261119T025705 | NEUTRAL | MAGACITY | 22861.04 | pending | None | NASDUCK | 28107.01 | pending | None |  |
+| 20261119T025705 | NEUTRAL | DCTC | 17699.07 | pending | None | MOOHAN | 17441.07 | pending | None |  |
