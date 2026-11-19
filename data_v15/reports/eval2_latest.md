@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 304 |
-| sightings | 18224 |
-| liquid sightings | 7284 |
-| first liquid sightings = unique tokens with an outcome row | 1567 |
-|   young | 1078 |
-|   mature | 427 |
+| eval-2 scans | 305 |
+| sightings | 18283 |
+| liquid sightings | 7307 |
+| first liquid sightings = unique tokens with an outcome row | 1569 |
+|   young | 1079 |
+|   mature | 428 |
 |   other | 62 |
 | young with a comparator (cap 2) | 188 |
-| young without a comparator | 890 |
+| young without a comparator | 891 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 67 |
 | complete pairs (both 60m outcomes labelled) | 113 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 805/1078, no_valid_entry 38/1078, pending 9/1078, unknown 171/1078, unreliable 55/1078
-- mature: labelled 394/427, pending 1/427, unknown 32/427
-- no valid entry: young 38/1078, mature 0/427
+- young: labelled 810/1079, no_valid_entry 38/1079, pending 5/1079, unknown 171/1079, unreliable 55/1079
+- mature: labelled 394/428, pending 2/428, unknown 32/428
+- no valid entry: young 38/1079, mature 0/428
 
 ## Effect (after costs; unit = scan)
 
@@ -1181,11 +1181,12 @@
 | 20261119T045704 | NEUTRAL | JENSEN | 32330.97 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | Tinfoil | 22552.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261119T045704 | NEUTRAL | GTAVI | 15068.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261119T055703 | NEUTRAL | GTA | 65114.10 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T055703 | NEUTRAL | CLAUDE | 29791.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T055703 | NEUTRAL | GTA6IRL | 21432.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T055703 | NEUTRAL | CLAUDE | 15830.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T055703 | NEUTRAL | AMAZON | 15391.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | GTA | 65114.10 | labelled | -9.09 |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | CLAUDE | 29791.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | GTA6IRL | 21432.22 | labelled | 36.87 |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | CLAUDE | 15830.22 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T055703 | NEUTRAL | AMAZON | 15391.57 | labelled | 36.51 |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | MeowCity | 31928.17 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WhatUp | 16936.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T065702 | NEUTRAL | WKTT | 16061.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T075701 | NEUTRAL | C/ACC | 34703.76 | pending | None |  |  |  | None | no eligible comparator |
