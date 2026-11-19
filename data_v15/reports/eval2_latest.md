@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 311 |
-| sightings | 18623 |
-| liquid sightings | 7453 |
-| first liquid sightings = unique tokens with an outcome row | 1602 |
-|   young | 1102 |
-|   mature | 436 |
+| eval-2 scans | 312 |
+| sightings | 18679 |
+| liquid sightings | 7477 |
+| first liquid sightings = unique tokens with an outcome row | 1609 |
+|   young | 1107 |
+|   mature | 438 |
 |   other | 64 |
-| young with a comparator (cap 2) | 192 |
-| young without a comparator | 910 |
+| young with a comparator (cap 2) | 194 |
+| young without a comparator | 913 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 70 |
-| complete pairs (both 60m outcomes labelled) | 114 |
-| scans contributing a complete pair | 72 |
+|   pairs: young or mature outcome not yet usable | 71 |
+| complete pairs (both 60m outcomes labelled) | 115 |
+| scans contributing a complete pair | 73 |
 
 ## 60m outcome status by group
 
-- young: labelled 823/1102, no_valid_entry 38/1102, pending 11/1102, unknown 174/1102, unreliable 56/1102
-- mature: labelled 401/436, pending 3/436, unknown 32/436
-- no valid entry: young 38/1102, mature 0/436
+- young: labelled 827/1107, no_valid_entry 38/1107, pending 12/1107, unknown 174/1107, unreliable 56/1107
+- mature: labelled 403/438, pending 3/438, unknown 32/438
+- no valid entry: young 38/1107, mature 0/438
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.14 points, 95% interval (-36.37, -12.49); scans with young worse 49/72
-- Pairs with young worse: 79/114 (69.3%); pair mean -21.5, median -26.7
-- Big loss (<= -20%): young 77/114, mature 27/114
+- Scan-level mean difference (young - mature): -25.68 points, 95% interval (-37.92, -13.43); scans with young worse 50/73
+- Pairs with young worse: 80/115 (69.6%); pair mean -22.5, median -26.8
+- Big loss (<= -20%): young 78/115, mature 27/115
 
 ## Comparator reuse (cap 2)
 
@@ -108,6 +108,7 @@
 - 20261119T025705-7qgvmEdQ: DCTC (20261119T025705), MAGACITY (20261119T025705)
 - 20261119T085700-Db2s6iVv: APOCRYCOIN (20261119T085700), 无为 (20261119T085700)
 - 20261119T125658-GD8GhsCv: PIPI (20261119T125658), CATCOIN (20261119T125658)
+- 20261119T145657-EywjBvp6: JUMP COIN (20261119T145657), TL (20261119T145657)
 
 ## Every pair
 
@@ -1206,12 +1207,17 @@
 | 20261119T115658 | NEUTRAL | GAYTA | 25426.93 | labelled | -46.56 |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | GAYTA | 23198.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T115658 | NEUTRAL | Ant | 17823.92 | labelled | -28.97 |  |  |  | None | no eligible comparator |
-| 20261119T125658 | NEUTRAL | PIPI | 57175.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T125658 | NEUTRAL | CATCOIN | 32394.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T125658 | NEUTRAL | PIPI | 24763.75 | pending | None | DCTY | 15026.33 | pending | None |  |
-| 20261119T125658 | NEUTRAL | CATCOIN | 22089.21 | pending | None | DCTY | 15026.33 | pending | None |  |
-| 20261119T125658 | NEUTRAL | SWJ | 20234.15 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T125658 | NEUTRAL | PIPI | 57175.18 | labelled | 37.45 |  |  |  | None | no eligible comparator |
+| 20261119T125658 | NEUTRAL | CATCOIN | 32394.87 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261119T125658 | NEUTRAL | PIPI | 24763.75 | pending | None | DCTY | 15026.33 | labelled | 36.48 |  |
+| 20261119T125658 | NEUTRAL | CATCOIN | 22089.21 | labelled | -100.0 | DCTY | 15026.33 | labelled | 36.48 |  |
+| 20261119T125658 | NEUTRAL | SWJ | 20234.15 | labelled | -28.68 |  |  |  | None | comparators used twice |
 | 20261119T125658 | NEUTRAL | ANTGENT | 15304.12 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T135658 | NEUTRAL | SHTRIO | 98587.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | WIF | 20157.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T135658 | NEUTRAL | CLAWD | 20143.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T145657 | NEUTRAL | XAUT | 3683713522.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T145657 | NEUTRAL | ANT | 35984.10 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T145657 | NEUTRAL | JUMP COIN | 30957.78 | pending | None | Phone | 15985.76 | pending | None |  |
+| 20261119T145657 | NEUTRAL | TL | 17766.43 | pending | None | Phone | 15985.76 | pending | None |  |
+| 20261119T145657 | NEUTRAL | JETSKI | 16596.97 | pending | None |  |  |  | None | comparators used twice |
