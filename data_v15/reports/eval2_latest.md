@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 297 |
-| sightings | 17802 |
-| liquid sightings | 7111 |
-| first liquid sightings = unique tokens with an outcome row | 1532 |
-|   young | 1050 |
-|   mature | 421 |
+| eval-2 scans | 298 |
+| sightings | 17858 |
+| liquid sightings | 7132 |
+| first liquid sightings = unique tokens with an outcome row | 1534 |
+|   young | 1051 |
+|   mature | 422 |
 |   other | 61 |
-| young with a comparator (cap 2) | 184 |
+| young with a comparator (cap 2) | 185 |
 | young without a comparator | 866 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 65 |
+|   pairs: young or mature outcome not yet usable | 66 |
 | complete pairs (both 60m outcomes labelled) | 111 |
 | scans contributing a complete pair | 70 |
 
 ## 60m outcome status by group
 
-- young: labelled 785/1050, no_valid_entry 38/1050, pending 12/1050, unknown 161/1050, unreliable 54/1050
-- mature: labelled 391/421, unknown 30/421
-- no valid entry: young 38/1050, mature 0/421
+- young: labelled 786/1051, no_valid_entry 38/1051, pending 10/1051, unknown 163/1051, unreliable 54/1051
+- mature: labelled 391/422, pending 1/422, unknown 30/422
+- no valid entry: young 38/1051, mature 0/422
 
 ## Effect (after costs; unit = scan)
 
@@ -1133,9 +1133,9 @@
 | 20261118T175711 | NEUTRAL | APCY | 22680.74 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | VTC | 742400.52 | labelled | -100.0 | CATE | 1338447.27 | labelled | -2.95 |  |
 | 20261118T185711 | NEUTRAL | AI | 50875.19 | labelled | -32.59 |  |  |  | None | no eligible comparator |
-| 20261118T185711 | NEUTRAL | FISH | 31083.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | FISH | 31083.68 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | LUCIASS | 24622.19 | labelled | -32.53 |  |  |  | None | no eligible comparator |
-| 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T185711 | NEUTRAL | BOOTYBANG | 20181.61 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261118T185711 | NEUTRAL | NGA6 | 15036.50 | labelled | -39.16 |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | Mabel | 33761.61 | labelled | -42.21 |  |  |  | None | no eligible comparator |
 | 20261118T195710 | NEUTRAL | CALICO | 25932.82 | pending | None |  |  |  | None | no eligible comparator |
@@ -1155,8 +1155,9 @@
 | 20261118T215709 | NEUTRAL | Buncoin | 18241.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | DCTY | 17394.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261118T215709 | NEUTRAL | SHERRICK | 17148.36 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261118T225708 | RED | PAPA | 52193.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261118T225708 | RED | PAPA | 52193.56 | labelled | -39.44 |  |  |  | None | no eligible comparator |
 | 20261118T225708 | RED | PolyGTA | 17984.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | GTASZN | 86626.34 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | DCTY | 85984.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261118T235707 | RED | Buck | 15179.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T005706 | RED | ADCY | 16819.90 | pending | None | Mandy | 30308.08 | pending | None |  |
