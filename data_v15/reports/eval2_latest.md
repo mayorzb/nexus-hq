@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 339 |
-| sightings | 20319 |
-| liquid sightings | 8106 |
-| first liquid sightings = unique tokens with an outcome row | 1721 |
-|   young | 1195 |
+| eval-2 scans | 340 |
+| sightings | 20381 |
+| liquid sightings | 8132 |
+| first liquid sightings = unique tokens with an outcome row | 1727 |
+|   young | 1201 |
 |   mature | 461 |
 |   other | 65 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 985 |
+| young without a comparator | 991 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 898/1195, no_valid_entry 40/1195, pending 8/1195, unknown 188/1195, unreliable 61/1195
+- young: labelled 900/1201, no_valid_entry 40/1201, pending 11/1201, unknown 189/1201, unreliable 61/1201
 - mature: labelled 426/461, unknown 35/461
-- no valid entry: young 40/1195, mature 0/461
+- no valid entry: young 40/1201, mature 0/461
 
 ## Effect (after costs; unit = scan)
 
@@ -1303,16 +1303,22 @@
 | 20261120T115640 | RED | Anton | 26981.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T115640 | RED | PASSTHEHAT | 16180.72 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261120T125640 | RED | RUDY | 44578.07 | labelled | -28.45 | SWJ | 63158.96 | labelled | -14.36 |  |
-| 20261120T125640 | RED | SNAPMATIC  | 18873.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T125640 | RED | SNAPMATIC  | 18873.74 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | CAT | 28629.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | PUMPKIN | 23063.77 | labelled | 36.94 |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | Raja | 20920.76 | labelled | -45.08 |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | BEKKA | 15614.84 | labelled | -32.15 |  |  |  | None | no eligible comparator |
 | 20261120T155639 | DEEP_RED | ALON | 19282.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T165638 | DEEP_RED | H4CK | 24101.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | H4CK | 24101.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T165638 | DEEP_RED | Móm | 19334.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T165638 | DEEP_RED | HUSS | 18475.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | HUSS | 18475.38 | labelled | -32.6 |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | CLAUDIA | 55768.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | CATPOOP | 31204.51 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | AMC | 20641.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | h◡shippo | 15158.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | DYSON | 38767.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | BTC | 33864.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | FIONAWIF | 21383.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | BIGFOOT | 18181.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | MATHISOVER | 17400.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | MIC | 17284.59 | pending | None |  |  |  | None | no eligible comparator |
