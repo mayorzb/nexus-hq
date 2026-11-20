@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 320 |
-| sightings | 19167 |
-| liquid sightings | 7668 |
-| first liquid sightings = unique tokens with an outcome row | 1649 |
-|   young | 1139 |
-|   mature | 446 |
+| eval-2 scans | 321 |
+| sightings | 19230 |
+| liquid sightings | 7695 |
+| first liquid sightings = unique tokens with an outcome row | 1657 |
+|   young | 1146 |
+|   mature | 447 |
 |   other | 64 |
-| young with a comparator (cap 2) | 198 |
-| young without a comparator | 941 |
+| young with a comparator (cap 2) | 200 |
+| young without a comparator | 946 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 74 |
+|   pairs: young or mature outcome not yet usable | 76 |
 | complete pairs (both 60m outcomes labelled) | 116 |
 | scans contributing a complete pair | 74 |
 
 ## 60m outcome status by group
 
-- young: labelled 855/1139, no_valid_entry 38/1139, pending 8/1139, unknown 180/1139, unreliable 58/1139
-- mature: labelled 412/446, pending 1/446, unknown 33/446
-- no valid entry: young 38/1139, mature 0/446
+- young: labelled 859/1146, no_valid_entry 38/1146, pending 11/1146, unknown 180/1146, unreliable 58/1146
+- mature: labelled 412/447, pending 2/447, unknown 33/447
+- no valid entry: young 38/1146, mature 0/447
 
 ## Effect (after costs; unit = scan)
 
@@ -111,6 +111,7 @@
 - 20261119T145657-EywjBvp6: JUMP COIN (20261119T145657), TL (20261119T145657)
 - 20261119T195652-Cc5aMEFw: \nu (20261119T195652), OGTA (20261119T195652)
 - 20261119T225650-CwnbD9Fp: FIONA (20261119T225650), INSCRIBOOR (20261119T225650)
+- 20261119T235649-JA1QWKi6: COOKIE (20261119T235649), AI (20261119T235649)
 
 ## Every pair
 
@@ -1247,11 +1248,18 @@
 | 20261119T205651 | NEUTRAL | LUCIA | 25849.48 | labelled | -53.08 |  |  |  | None | no eligible comparator |
 | 20261119T205651 | NEUTRAL | LOOSY | 20943.42 | labelled | -48.58 |  |  |  | None | no eligible comparator |
 | 20261119T205651 | NEUTRAL | ONI | 17885.82 | labelled | 36.69 |  |  |  | None | no eligible comparator |
-| 20261119T215650 | NEUTRAL | FIONA | 74004.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T215650 | NEUTRAL | FIONA | 74004.66 | labelled | 37.53 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 62124.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T215650 | NEUTRAL | BUNCOIN | 59404.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T215650 | NEUTRAL | FIONA | 30682.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T215650 | NEUTRAL | FIONA | 21022.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T215650 | NEUTRAL | BUNCOIN | 59404.32 | labelled | -27.85 |  |  |  | None | no eligible comparator |
+| 20261119T215650 | NEUTRAL | FIONA | 30682.54 | labelled | -40.77 |  |  |  | None | no eligible comparator |
+| 20261119T215650 | NEUTRAL | FIONA | 21022.39 | labelled | 36.85 |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | AI | 102732.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | FIONA | 19242.60 | pending | None | RATS | 19330.17 | pending | None |  |
 | 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | pending | None |  |
+| 20261119T235649 | NEUTRAL | AI | 58313.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T235649 | NEUTRAL | COOKIE | 22265.34 | pending | None | DOOM | 19974.13 | pending | None |  |
+| 20261119T235649 | NEUTRAL | AI | 18371.09 | pending | None | DOOM | 19974.13 | pending | None |  |
+| 20261119T235649 | NEUTRAL | FIONA | 16580.18 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | AUDACITY | 16499.36 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | FIONA | 15916.86 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | AI | 15848.86 | pending | None |  |  |  | None | comparators used twice |
