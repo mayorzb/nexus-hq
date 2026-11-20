@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 327 |
-| sightings | 19604 |
-| liquid sightings | 7848 |
-| first liquid sightings = unique tokens with an outcome row | 1690 |
-|   young | 1170 |
+| eval-2 scans | 328 |
+| sightings | 19667 |
+| liquid sightings | 7870 |
+| first liquid sightings = unique tokens with an outcome row | 1693 |
+|   young | 1173 |
 |   mature | 455 |
 |   other | 65 |
 | young with a comparator (cap 2) | 207 |
-| young without a comparator | 963 |
+| young without a comparator | 966 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 76 |
 | complete pairs (both 60m outcomes labelled) | 123 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 880/1170, no_valid_entry 39/1170, pending 9/1170, unknown 184/1170, unreliable 58/1170
+- young: labelled 882/1173, no_valid_entry 40/1173, pending 8/1173, unknown 185/1173, unreliable 58/1173
 - mature: labelled 420/455, unknown 35/455
-- no valid entry: young 39/1170, mature 0/455
+- no valid entry: young 40/1173, mature 0/455
 
 ## Effect (after costs; unit = scan)
 
@@ -1281,12 +1281,15 @@
 | 20261120T035647 | NEUTRAL | NeonCrime | 22246.06 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261120T035647 | NEUTRAL | SULLY | 19863.12 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261120T035647 | NEUTRAL | BTC | 17528.24 | labelled | 36.67 |  |  |  | None | comparators used twice |
-| 20261120T045646 | RED | apocry  | 29791.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T045646 | RED | iCat | 27713.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | apocry  | 29791.95 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | iCat | 27713.89 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261120T045646 | RED | JLONG | 24366.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T045646 | RED | Apocry | 16716.11 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T045646 | RED | APOCRY | 16423.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | Apocry | 16716.11 | labelled | -90.65 |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | APOCRY | 16423.99 | labelled | -28.86 |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | Isaac | 33428.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | APCY | 32659.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | Green Cat | 31186.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | ANTCAP | 17393.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | Green Cat | 29746.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | LOAF | 22997.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | ZOL | 21833.98 | pending | None |  |  |  | None | no eligible comparator |
