@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 343 |
-| sightings | 20574 |
-| liquid sightings | 8204 |
-| first liquid sightings = unique tokens with an outcome row | 1738 |
-|   young | 1211 |
+| eval-2 scans | 344 |
+| sightings | 20636 |
+| liquid sightings | 8231 |
+| first liquid sightings = unique tokens with an outcome row | 1742 |
+|   young | 1215 |
 |   mature | 461 |
 |   other | 66 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 1001 |
+| young without a comparator | 1005 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 912/1211, no_valid_entry 40/1211, pending 9/1211, unknown 189/1211, unreliable 61/1211
+- young: labelled 915/1215, no_valid_entry 40/1215, pending 7/1215, unknown 190/1215, unreliable 63/1215
 - mature: labelled 426/461, unknown 35/461
-- no valid entry: young 40/1211, mature 0/461
+- no valid entry: young 40/1215, mature 0/461
 
 ## Effect (after costs; unit = scan)
 
@@ -1310,7 +1310,7 @@
 | 20261120T135640 | RED | BEKKA | 15614.84 | labelled | -32.15 |  |  |  | None | no eligible comparator |
 | 20261120T155639 | DEEP_RED | ALON | 19282.64 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T165638 | DEEP_RED | H4CK | 24101.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T165638 | DEEP_RED | Móm | 19334.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | Móm | 19334.71 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T165638 | DEEP_RED | HUSS | 18475.38 | labelled | -32.6 |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | CLAUDIA | 55768.70 | labelled | 37.44 |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | CATPOOP | 31204.51 | labelled | -32.52 |  |  |  | None | no eligible comparator |
@@ -1325,10 +1325,14 @@
 | 20261120T195636 | DEEP_RED | DCTY | 92837.87 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | Lil XACoin | 27628.79 | labelled | 37.08 |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | AsianPUSSY | 26234.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T205636 | DEEP_RED | Trader | 62290.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T205636 | DEEP_RED | Anthropic | 30285.53 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T205636 | DEEP_RED | Singularity | 28657.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T205636 | DEEP_RED | WASTED | 27505.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T205636 | DEEP_RED | RAMEN | 21341.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Trader | 62290.75 | labelled | -42.89 |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Anthropic | 30285.53 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Singularity | 28657.19 | labelled | -29.63 |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | WASTED | 27505.19 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | RAMEN | 21341.46 | labelled | 36.87 |  |  |  | None | no eligible comparator |
 | 20261120T215635 | DEEP_RED | BTC | 69350.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T215635 | DEEP_RED | AMC | 31957.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Antcnd | 84824.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Bust | 23088.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Rasonque | 22132.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | MONKE | 20029.83 | pending | None |  |  |  | None | no eligible comparator |
