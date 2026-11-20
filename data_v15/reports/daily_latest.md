@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-20 11:59 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-20 12:58 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-20 11:59 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 62 / 24 | OK |
-| Deep-checked coins left UNVERIFIED | 31 of 128 (24%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 16 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 155 of 284 | WARN |
-| Paper candidates (last 24h) | 13 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 584 / 134 | ALERT |
+| Deep-checked coins left UNVERIFIED | 30 of 120 (25%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 18 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 145 of 266 | WARN |
+| Paper candidates (last 24h) | 12 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 580 / 132 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (12:56), CATE (13:56), CATE (14:56), CATE (15:56), CATE (16:56), CATE (17:56), CATE (18:56), CATE (19:56), CATE (20:56), CATE (00:56), CATE (01:56), CATE (02:56), CATE (03:56)
+Candidates: CATE (13:56), CATE (14:56), CATE (15:56), CATE (16:56), CATE (17:56), CATE (18:56), CATE (19:56), CATE (20:56), CATE (00:56), CATE (01:56), CATE (02:56), CATE (03:56)

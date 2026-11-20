@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 333 |
-| sightings | 19966 |
-| liquid sightings | 7970 |
-| first liquid sightings = unique tokens with an outcome row | 1704 |
-|   young | 1181 |
-|   mature | 458 |
+| eval-2 scans | 334 |
+| sightings | 20023 |
+| liquid sightings | 7992 |
+| first liquid sightings = unique tokens with an outcome row | 1707 |
+|   young | 1183 |
+|   mature | 459 |
 |   other | 65 |
-| young with a comparator (cap 2) | 209 |
-| young without a comparator | 972 |
+| young with a comparator (cap 2) | 210 |
+| young without a comparator | 973 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 124 |
 | scans contributing a complete pair | 79 |
 
 ## 60m outcome status by group
 
-- young: labelled 889/1181, no_valid_entry 40/1181, pending 4/1181, unknown 187/1181, unreliable 61/1181
-- mature: labelled 422/458, pending 1/458, unknown 35/458
-- no valid entry: young 40/1181, mature 0/458
+- young: labelled 890/1183, no_valid_entry 40/1183, pending 4/1183, unknown 188/1183, unreliable 61/1183
+- mature: labelled 422/459, pending 2/459, unknown 35/459
+- no valid entry: young 40/1183, mature 0/459
 
 ## Effect (after costs; unit = scan)
 
@@ -1293,12 +1293,14 @@
 | 20261120T055645 | RED | ANTCAP | 17393.31 | labelled | 36.66 |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | Green Cat | 29746.02 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | LOAF | 22997.89 | labelled | -32.22 |  |  |  | None | no eligible comparator |
-| 20261120T065644 | RED | ZOL | 21833.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | ZOL | 21833.98 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T075643 | RED | MACWIZ | 98551.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | Cowboy Cat | 29751.19 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | FORKD | 29447.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T095642 | RED | AMC  | 30830.13 | unknown | None | PATRICK | 18611.75 | labelled | -40.02 |  |
 | 20261120T095642 | RED | AMC | 17493.45 | labelled | -100.0 | PATRICK | 18611.75 | labelled | -40.02 |  |
-| 20261120T105641 | RED | Yoko | 24416.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T105641 | RED | Yoko | 24416.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T115640 | RED | Anton | 26981.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T115640 | RED | PASSTHEHAT | 16180.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T125640 | RED | RUDY | 44578.07 | pending | None | SWJ | 63158.96 | pending | None |  |
+| 20261120T125640 | RED | SNAPMATIC  | 18873.74 | pending | None |  |  |  | None | no eligible comparator |
