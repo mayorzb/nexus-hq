@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 321 |
-| sightings | 19230 |
-| liquid sightings | 7695 |
-| first liquid sightings = unique tokens with an outcome row | 1657 |
-|   young | 1146 |
-|   mature | 447 |
+| eval-2 scans | 322 |
+| sightings | 19290 |
+| liquid sightings | 7721 |
+| first liquid sightings = unique tokens with an outcome row | 1661 |
+|   young | 1149 |
+|   mature | 448 |
 |   other | 64 |
 | young with a comparator (cap 2) | 200 |
-| young without a comparator | 946 |
+| young without a comparator | 949 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 76 |
-| complete pairs (both 60m outcomes labelled) | 116 |
-| scans contributing a complete pair | 74 |
+|   pairs: young or mature outcome not yet usable | 75 |
+| complete pairs (both 60m outcomes labelled) | 117 |
+| scans contributing a complete pair | 75 |
 
 ## 60m outcome status by group
 
-- young: labelled 859/1146, no_valid_entry 38/1146, pending 11/1146, unknown 180/1146, unreliable 58/1146
-- mature: labelled 412/447, pending 2/447, unknown 33/447
-- no valid entry: young 38/1146, mature 0/447
+- young: labelled 860/1149, no_valid_entry 38/1149, pending 12/1149, unknown 181/1149, unreliable 58/1149
+- mature: labelled 413/448, pending 2/448, unknown 33/448
+- no valid entry: young 38/1149, mature 0/448
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.41 points, 95% interval (-37.53, -13.49); scans with young worse 51/74
-- Pairs with young worse: 81/116 (69.8%); pair mean -22.36, median -26.7
-- Big loss (<= -20%): young 78/116, mature 27/116
+- Scan-level mean difference (young - mature): -25.46 points, 95% interval (-37.35, -13.68); scans with young worse 52/75
+- Pairs with young worse: 82/117 (70.1%); pair mean -22.42, median -26.8
+- Big loss (<= -20%): young 79/117, mature 27/117
 
 ## Comparator reuse (cap 2)
 
@@ -1249,13 +1249,13 @@
 | 20261119T205651 | NEUTRAL | LOOSY | 20943.42 | labelled | -48.58 |  |  |  | None | no eligible comparator |
 | 20261119T205651 | NEUTRAL | ONI | 17885.82 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 74004.66 | labelled | 37.53 |  |  |  | None | no eligible comparator |
-| 20261119T215650 | NEUTRAL | FIONA | 62124.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T215650 | NEUTRAL | FIONA | 62124.26 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | BUNCOIN | 59404.32 | labelled | -27.85 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 30682.54 | labelled | -40.77 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 21022.39 | labelled | 36.85 |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | AI | 102732.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T225650 | NEUTRAL | FIONA | 19242.60 | pending | None | RATS | 19330.17 | pending | None |  |
-| 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | pending | None |  |
+| 20261119T225650 | NEUTRAL | FIONA | 19242.60 | labelled | -29.75 | RATS | 19330.17 | labelled | -0.19 |  |
+| 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | labelled | -0.19 |  |
 | 20261119T235649 | NEUTRAL | AI | 58313.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261119T235649 | NEUTRAL | COOKIE | 22265.34 | pending | None | DOOM | 19974.13 | pending | None |  |
 | 20261119T235649 | NEUTRAL | AI | 18371.09 | pending | None | DOOM | 19974.13 | pending | None |  |
@@ -1263,3 +1263,6 @@
 | 20261119T235649 | NEUTRAL | AUDACITY | 16499.36 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T235649 | NEUTRAL | FIONA | 15916.86 | pending | None |  |  |  | None | comparators used twice |
 | 20261119T235649 | NEUTRAL | AI | 15848.86 | pending | None |  |  |  | None | comparators used twice |
+| 20261120T005649 | NEUTRAL | CI | 25101.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T005649 | NEUTRAL | COOKIE | 19263.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T005649 | NEUTRAL | SOL | 18178.50 | pending | None |  |  |  | None | no eligible comparator |
