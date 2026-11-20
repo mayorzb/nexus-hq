@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 329 |
-| sightings | 19730 |
-| liquid sightings | 7891 |
-| first liquid sightings = unique tokens with an outcome row | 1695 |
-|   young | 1174 |
+| eval-2 scans | 330 |
+| sightings | 19791 |
+| liquid sightings | 7910 |
+| first liquid sightings = unique tokens with an outcome row | 1697 |
+|   young | 1176 |
 |   mature | 456 |
 |   other | 65 |
 | young with a comparator (cap 2) | 207 |
-| young without a comparator | 967 |
+| young without a comparator | 969 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 76 |
 | complete pairs (both 60m outcomes labelled) | 123 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 885/1174, no_valid_entry 40/1174, pending 5/1174, unknown 185/1174, unreliable 59/1174
+- young: labelled 886/1176, no_valid_entry 40/1176, pending 5/1176, unknown 185/1176, unreliable 60/1176
 - mature: labelled 420/456, pending 1/456, unknown 35/456
-- no valid entry: young 40/1174, mature 0/456
+- no valid entry: young 40/1176, mature 0/456
 
 ## Effect (after costs; unit = scan)
 
@@ -1290,7 +1290,9 @@
 | 20261120T055645 | RED | APCY | 32659.98 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | Green Cat | 31186.22 | labelled | 37.16 |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | ANTCAP | 17393.31 | labelled | 36.66 |  |  |  | None | no eligible comparator |
-| 20261120T065644 | RED | Green Cat | 29746.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T065644 | RED | LOAF | 22997.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | Green Cat | 29746.02 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261120T065644 | RED | LOAF | 22997.89 | labelled | -32.22 |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | ZOL | 21833.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T075643 | RED | MACWIZ | 98551.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T085642 | RED | Cowboy Cat | 29751.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T085642 | RED | FORKD | 29447.25 | pending | None |  |  |  | None | no eligible comparator |
