@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 325 |
-| sightings | 19477 |
-| liquid sightings | 7799 |
-| first liquid sightings = unique tokens with an outcome row | 1681 |
-|   young | 1161 |
+| eval-2 scans | 326 |
+| sightings | 19540 |
+| liquid sightings | 7824 |
+| first liquid sightings = unique tokens with an outcome row | 1686 |
+|   young | 1166 |
 |   mature | 455 |
 |   other | 65 |
 | young with a comparator (cap 2) | 207 |
-| young without a comparator | 954 |
+| young without a comparator | 959 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 80 |
-| complete pairs (both 60m outcomes labelled) | 119 |
-| scans contributing a complete pair | 76 |
+|   pairs: young or mature outcome not yet usable | 78 |
+| complete pairs (both 60m outcomes labelled) | 121 |
+| scans contributing a complete pair | 77 |
 
 ## 60m outcome status by group
 
-- young: labelled 872/1161, no_valid_entry 39/1161, pending 9/1161, unknown 183/1161, unreliable 58/1161
-- mature: labelled 416/455, pending 6/455, unknown 33/455
-- no valid entry: young 39/1161, mature 0/455
+- young: labelled 875/1166, no_valid_entry 39/1166, pending 10/1166, unknown 184/1166, unreliable 58/1166
+- mature: labelled 418/455, pending 3/455, unknown 34/455
+- no valid entry: young 39/1166, mature 0/455
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.72 points, 95% interval (-36.74, -12.85); scans with young worse 52/76
-- Pairs with young worse: 83/119 (69.7%); pair mean -21.51, median -26.59
-- Big loss (<= -20%): young 80/119, mature 29/119
+- Scan-level mean difference (young - mature): -24.82 points, 95% interval (-36.69, -13.46); scans with young worse 53/77
+- Pairs with young worse: 85/121 (70.2%); pair mean -21.71, median -26.59
+- Big loss (<= -20%): young 81/121, mature 29/121
 
 ## Comparator reuse (cap 2)
 
@@ -1258,7 +1258,7 @@
 | 20261119T215650 | NEUTRAL | FIONA | 21022.39 | labelled | 36.85 |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | AI | 102732.01 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | FIONA | 19242.60 | labelled | -29.75 | RATS | 19330.17 | labelled | -0.19 |  |
-| 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | labelled | -0.19 |  |
+| 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | unknown | None | RATS | 19330.17 | labelled | -0.19 |  |
 | 20261119T235649 | NEUTRAL | AI | 58313.84 | labelled | -31.73 |  |  |  | None | no eligible comparator |
 | 20261119T235649 | NEUTRAL | COOKIE | 22265.34 | unknown | None | DOOM | 19974.13 | pending | None |  |
 | 20261119T235649 | NEUTRAL | AI | 18371.09 | labelled | 36.72 | DOOM | 19974.13 | pending | None |  |
@@ -1273,11 +1273,16 @@
 | 20261120T015648 | NEUTRAL | LOOSY | 75269.16 | labelled | 37.53 |  |  |  | None | no eligible comparator |
 | 20261120T015648 | NEUTRAL | RUGGED | 43440.10 | labelled | 37.34 | MACCA | 32870.34 | labelled | -28.29 |  |
 | 20261120T015648 | NEUTRAL | LUCIA | 28277.03 | labelled | -31.28 | MACCA | 32870.34 | labelled | -28.29 |  |
-| 20261120T025647 | NEUTRAL | HNYDRIP | 36219.16 | pending | None | XMAS | 26934.09 | pending | None |  |
-| 20261120T025647 | NEUTRAL | MISU | 21293.59 | pending | None | CATMARIO | 17652.87 | pending | None |  |
-| 20261120T025647 | NEUTRAL | MF | 15183.82 | pending | None | CATMARIO | 17652.87 | pending | None |  |
+| 20261120T025647 | NEUTRAL | HNYDRIP | 36219.16 | labelled | -28.99 | XMAS | 26934.09 | unknown | None |  |
+| 20261120T025647 | NEUTRAL | MISU | 21293.59 | labelled | -29.31 | CATMARIO | 17652.87 | labelled | 36.67 |  |
+| 20261120T025647 | NEUTRAL | MF | 15183.82 | labelled | 36.49 | CATMARIO | 17652.87 | labelled | 36.67 |  |
 | 20261120T035647 | NEUTRAL | BTC | 30517.38 | pending | None | GIGAPIG | 16900.89 | pending | None |  |
 | 20261120T035647 | NEUTRAL | SWRDXSTFF | 23949.30 | pending | None | GIGAPIG | 16900.89 | pending | None |  |
 | 20261120T035647 | NEUTRAL | NeonCrime | 22246.06 | pending | None |  |  |  | None | comparators used twice |
 | 20261120T035647 | NEUTRAL | SULLY | 19863.12 | pending | None |  |  |  | None | comparators used twice |
 | 20261120T035647 | NEUTRAL | BTC | 17528.24 | pending | None |  |  |  | None | comparators used twice |
+| 20261120T045646 | RED | apocry  | 29791.95 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | iCat | 27713.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | JLONG | 24366.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | Apocry | 16716.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | APOCRY | 16423.99 | pending | None |  |  |  | None | no eligible comparator |
