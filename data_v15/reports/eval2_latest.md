@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 337 |
-| sightings | 20199 |
-| liquid sightings | 8060 |
-| first liquid sightings = unique tokens with an outcome row | 1714 |
-|   young | 1188 |
+| eval-2 scans | 338 |
+| sightings | 20259 |
+| liquid sightings | 8082 |
+| first liquid sightings = unique tokens with an outcome row | 1717 |
+|   young | 1191 |
 |   mature | 461 |
 |   other | 65 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 978 |
+| young without a comparator | 981 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 897/1188, no_valid_entry 40/1188, pending 2/1188, unknown 188/1188, unreliable 61/1188
+- young: labelled 897/1191, no_valid_entry 40/1191, pending 5/1191, unknown 188/1191, unreliable 61/1191
 - mature: labelled 424/461, pending 2/461, unknown 35/461
-- no valid entry: young 40/1188, mature 0/461
+- no valid entry: young 40/1191, mature 0/461
 
 ## Effect (after costs; unit = scan)
 
@@ -1309,3 +1309,6 @@
 | 20261120T135640 | RED | Raja | 20920.76 | labelled | -45.08 |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | BEKKA | 15614.84 | labelled | -32.15 |  |  |  | None | no eligible comparator |
 | 20261120T155639 | DEEP_RED | ALON | 19282.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | H4CK | 24101.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | Móm | 19334.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T165638 | DEEP_RED | HUSS | 18475.38 | pending | None |  |  |  | None | no eligible comparator |
