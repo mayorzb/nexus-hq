@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 322 |
-| sightings | 19290 |
-| liquid sightings | 7721 |
-| first liquid sightings = unique tokens with an outcome row | 1661 |
-|   young | 1149 |
-|   mature | 448 |
-|   other | 64 |
-| young with a comparator (cap 2) | 200 |
-| young without a comparator | 949 |
+| eval-2 scans | 323 |
+| sightings | 19353 |
+| liquid sightings | 7747 |
+| first liquid sightings = unique tokens with an outcome row | 1668 |
+|   young | 1153 |
+|   mature | 450 |
+|   other | 65 |
+| young with a comparator (cap 2) | 202 |
+| young without a comparator | 951 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 75 |
+|   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 117 |
 | scans contributing a complete pair | 75 |
 
 ## 60m outcome status by group
 
-- young: labelled 860/1149, no_valid_entry 38/1149, pending 12/1149, unknown 181/1149, unreliable 58/1149
-- mature: labelled 413/448, pending 2/448, unknown 33/448
-- no valid entry: young 38/1149, mature 0/448
+- young: labelled 866/1153, no_valid_entry 38/1153, pending 8/1153, unknown 183/1153, unreliable 58/1153
+- mature: labelled 413/450, pending 4/450, unknown 33/450
+- no valid entry: young 38/1153, mature 0/450
 
 ## Effect (after costs; unit = scan)
 
@@ -112,6 +112,7 @@
 - 20261119T195652-Cc5aMEFw: \nu (20261119T195652), OGTA (20261119T195652)
 - 20261119T225650-CwnbD9Fp: FIONA (20261119T225650), INSCRIBOOR (20261119T225650)
 - 20261119T235649-JA1QWKi6: COOKIE (20261119T235649), AI (20261119T235649)
+- 20261120T015648-C5eGEXJZ: RUGGED (20261120T015648), LUCIA (20261120T015648)
 
 ## Every pair
 
@@ -1253,16 +1254,20 @@
 | 20261119T215650 | NEUTRAL | BUNCOIN | 59404.32 | labelled | -27.85 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 30682.54 | labelled | -40.77 |  |  |  | None | no eligible comparator |
 | 20261119T215650 | NEUTRAL | FIONA | 21022.39 | labelled | 36.85 |  |  |  | None | no eligible comparator |
-| 20261119T225650 | NEUTRAL | AI | 102732.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261119T225650 | NEUTRAL | AI | 102732.01 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261119T225650 | NEUTRAL | FIONA | 19242.60 | labelled | -29.75 | RATS | 19330.17 | labelled | -0.19 |  |
 | 20261119T225650 | NEUTRAL | INSCRIBOOR | 15669.38 | pending | None | RATS | 19330.17 | labelled | -0.19 |  |
-| 20261119T235649 | NEUTRAL | AI | 58313.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261119T235649 | NEUTRAL | COOKIE | 22265.34 | pending | None | DOOM | 19974.13 | pending | None |  |
-| 20261119T235649 | NEUTRAL | AI | 18371.09 | pending | None | DOOM | 19974.13 | pending | None |  |
-| 20261119T235649 | NEUTRAL | FIONA | 16580.18 | pending | None |  |  |  | None | comparators used twice |
-| 20261119T235649 | NEUTRAL | AUDACITY | 16499.36 | pending | None |  |  |  | None | comparators used twice |
-| 20261119T235649 | NEUTRAL | FIONA | 15916.86 | pending | None |  |  |  | None | comparators used twice |
-| 20261119T235649 | NEUTRAL | AI | 15848.86 | pending | None |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | AI | 58313.84 | labelled | -31.73 |  |  |  | None | no eligible comparator |
+| 20261119T235649 | NEUTRAL | COOKIE | 22265.34 | unknown | None | DOOM | 19974.13 | pending | None |  |
+| 20261119T235649 | NEUTRAL | AI | 18371.09 | labelled | 36.72 | DOOM | 19974.13 | pending | None |  |
+| 20261119T235649 | NEUTRAL | FIONA | 16580.18 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | AUDACITY | 16499.36 | labelled | 36.6 |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | FIONA | 15916.86 | labelled | -29.38 |  |  |  | None | comparators used twice |
+| 20261119T235649 | NEUTRAL | AI | 15848.86 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261120T005649 | NEUTRAL | CI | 25101.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T005649 | NEUTRAL | COOKIE | 19263.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T005649 | NEUTRAL | SOL | 18178.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T015648 | NEUTRAL | iAgent | 103207.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T015648 | NEUTRAL | LOOSY | 75269.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T015648 | NEUTRAL | RUGGED | 43440.10 | pending | None | MACCA | 32870.34 | pending | None |  |
+| 20261120T015648 | NEUTRAL | LUCIA | 28277.03 | pending | None | MACCA | 32870.34 | pending | None |  |
