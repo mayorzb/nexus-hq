@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 336 |
-| sightings | 20139 |
-| liquid sightings | 8040 |
-| first liquid sightings = unique tokens with an outcome row | 1712 |
-|   young | 1187 |
-|   mature | 460 |
+| eval-2 scans | 337 |
+| sightings | 20199 |
+| liquid sightings | 8060 |
+| first liquid sightings = unique tokens with an outcome row | 1714 |
+|   young | 1188 |
+|   mature | 461 |
 |   other | 65 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 977 |
+| young without a comparator | 978 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 893/1187, no_valid_entry 40/1187, pending 5/1187, unknown 188/1187, unreliable 61/1187
-- mature: labelled 424/460, pending 1/460, unknown 35/460
-- no valid entry: young 40/1187, mature 0/460
+- young: labelled 897/1188, no_valid_entry 40/1188, pending 2/1188, unknown 188/1188, unreliable 61/1188
+- mature: labelled 424/461, pending 2/461, unknown 35/461
+- no valid entry: young 40/1188, mature 0/461
 
 ## Effect (after costs; unit = scan)
 
@@ -1304,7 +1304,8 @@
 | 20261120T115640 | RED | PASSTHEHAT | 16180.72 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261120T125640 | RED | RUDY | 44578.07 | labelled | -28.45 | SWJ | 63158.96 | labelled | -14.36 |  |
 | 20261120T125640 | RED | SNAPMATIC  | 18873.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T135640 | RED | CAT | 28629.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T135640 | RED | PUMPKIN | 23063.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T135640 | RED | Raja | 20920.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T135640 | RED | BEKKA | 15614.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | CAT | 28629.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | PUMPKIN | 23063.77 | labelled | 36.94 |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | Raja | 20920.76 | labelled | -45.08 |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | BEKKA | 15614.84 | labelled | -32.15 |  |  |  | None | no eligible comparator |
+| 20261120T155639 | DEEP_RED | ALON | 19282.64 | pending | None |  |  |  | None | no eligible comparator |
