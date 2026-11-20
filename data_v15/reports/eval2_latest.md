@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 330 |
-| sightings | 19791 |
-| liquid sightings | 7910 |
-| first liquid sightings = unique tokens with an outcome row | 1697 |
-|   young | 1176 |
-|   mature | 456 |
+| eval-2 scans | 331 |
+| sightings | 19850 |
+| liquid sightings | 7930 |
+| first liquid sightings = unique tokens with an outcome row | 1700 |
+|   young | 1178 |
+|   mature | 457 |
 |   other | 65 |
-| young with a comparator (cap 2) | 207 |
+| young with a comparator (cap 2) | 209 |
 | young without a comparator | 969 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 76 |
+|   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 123 |
 | scans contributing a complete pair | 78 |
 
 ## 60m outcome status by group
 
-- young: labelled 886/1176, no_valid_entry 40/1176, pending 5/1176, unknown 185/1176, unreliable 60/1176
-- mature: labelled 420/456, pending 1/456, unknown 35/456
-- no valid entry: young 40/1176, mature 0/456
+- young: labelled 887/1178, no_valid_entry 40/1178, pending 6/1178, unknown 185/1178, unreliable 60/1178
+- mature: labelled 421/457, pending 1/457, unknown 35/457
+- no valid entry: young 40/1178, mature 0/457
 
 ## Effect (after costs; unit = scan)
 
@@ -115,6 +115,7 @@
 - 20261120T015648-C5eGEXJZ: RUGGED (20261120T015648), LUCIA (20261120T015648)
 - 20261120T025647-Axkd2GMC: MISU (20261120T025647), MF (20261120T025647)
 - 20261120T035647-ELbCDkRu: BTC (20261120T035647), SWRDXSTFF (20261120T035647)
+- 20261120T095642-8mnJZnxa: AMC  (20261120T095642), AMC (20261120T095642)
 
 ## Every pair
 
@@ -1293,6 +1294,8 @@
 | 20261120T065644 | RED | Green Cat | 29746.02 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | LOAF | 22997.89 | labelled | -32.22 |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | ZOL | 21833.98 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T075643 | RED | MACWIZ | 98551.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T075643 | RED | MACWIZ | 98551.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | Cowboy Cat | 29751.19 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | FORKD | 29447.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T095642 | RED | AMC  | 30830.13 | pending | None | PATRICK | 18611.75 | pending | None |  |
+| 20261120T095642 | RED | AMC | 17493.45 | pending | None | PATRICK | 18611.75 | pending | None |  |
