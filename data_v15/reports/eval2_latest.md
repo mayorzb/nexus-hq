@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 334 |
-| sightings | 20023 |
-| liquid sightings | 7992 |
-| first liquid sightings = unique tokens with an outcome row | 1707 |
-|   young | 1183 |
+| eval-2 scans | 335 |
+| sightings | 20081 |
+| liquid sightings | 8018 |
+| first liquid sightings = unique tokens with an outcome row | 1711 |
+|   young | 1187 |
 |   mature | 459 |
 |   other | 65 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 973 |
+| young without a comparator | 977 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 124 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 890/1183, no_valid_entry 40/1183, pending 4/1183, unknown 188/1183, unreliable 61/1183
-- mature: labelled 422/459, pending 2/459, unknown 35/459
-- no valid entry: young 40/1183, mature 0/459
+- young: labelled 892/1187, no_valid_entry 40/1187, pending 6/1187, unknown 188/1187, unreliable 61/1187
+- mature: labelled 423/459, pending 1/459, unknown 35/459
+- no valid entry: young 40/1187, mature 0/459
 
 ## Effect (after costs; unit = scan)
 
@@ -1300,7 +1300,11 @@
 | 20261120T095642 | RED | AMC  | 30830.13 | unknown | None | PATRICK | 18611.75 | labelled | -40.02 |  |
 | 20261120T095642 | RED | AMC | 17493.45 | labelled | -100.0 | PATRICK | 18611.75 | labelled | -40.02 |  |
 | 20261120T105641 | RED | Yoko | 24416.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T115640 | RED | Anton | 26981.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T115640 | RED | PASSTHEHAT | 16180.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T115640 | RED | Anton | 26981.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T115640 | RED | PASSTHEHAT | 16180.72 | labelled | 36.57 |  |  |  | None | no eligible comparator |
 | 20261120T125640 | RED | RUDY | 44578.07 | pending | None | SWJ | 63158.96 | pending | None |  |
 | 20261120T125640 | RED | SNAPMATIC  | 18873.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | CAT | 28629.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | PUMPKIN | 23063.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | Raja | 20920.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T135640 | RED | BEKKA | 15614.84 | pending | None |  |  |  | None | no eligible comparator |
