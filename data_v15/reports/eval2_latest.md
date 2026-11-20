@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 335 |
-| sightings | 20081 |
-| liquid sightings | 8018 |
-| first liquid sightings = unique tokens with an outcome row | 1711 |
+| eval-2 scans | 336 |
+| sightings | 20139 |
+| liquid sightings | 8040 |
+| first liquid sightings = unique tokens with an outcome row | 1712 |
 |   young | 1187 |
-|   mature | 459 |
+|   mature | 460 |
 |   other | 65 |
 | young with a comparator (cap 2) | 210 |
 | young without a comparator | 977 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 78 |
-| complete pairs (both 60m outcomes labelled) | 124 |
-| scans contributing a complete pair | 79 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 125 |
+| scans contributing a complete pair | 80 |
 
 ## 60m outcome status by group
 
-- young: labelled 892/1187, no_valid_entry 40/1187, pending 6/1187, unknown 188/1187, unreliable 61/1187
-- mature: labelled 423/459, pending 1/459, unknown 35/459
-- no valid entry: young 40/1187, mature 0/459
+- young: labelled 893/1187, no_valid_entry 40/1187, pending 5/1187, unknown 188/1187, unreliable 61/1187
+- mature: labelled 424/460, pending 1/460, unknown 35/460
+- no valid entry: young 40/1187, mature 0/460
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.39 points, 95% interval (-37.14, -14.35); scans with young worse 55/79
-- Pairs with young worse: 88/124 (71.0%); pair mean -22.22, median -26.7
-- Big loss (<= -20%): young 84/124, mature 32/124
+- Scan-level mean difference (young - mature): -25.25 points, 95% interval (-36.78, -13.83); scans with young worse 56/80
+- Pairs with young worse: 89/125 (71.2%); pair mean -22.15, median -26.59
+- Big loss (<= -20%): young 85/125, mature 32/125
 
 ## Comparator reuse (cap 2)
 
@@ -1302,7 +1302,7 @@
 | 20261120T105641 | RED | Yoko | 24416.49 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T115640 | RED | Anton | 26981.00 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T115640 | RED | PASSTHEHAT | 16180.72 | labelled | 36.57 |  |  |  | None | no eligible comparator |
-| 20261120T125640 | RED | RUDY | 44578.07 | pending | None | SWJ | 63158.96 | pending | None |  |
+| 20261120T125640 | RED | RUDY | 44578.07 | labelled | -28.45 | SWJ | 63158.96 | labelled | -14.36 |  |
 | 20261120T125640 | RED | SNAPMATIC  | 18873.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | CAT | 28629.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T135640 | RED | PUMPKIN | 23063.77 | pending | None |  |  |  | None | no eligible comparator |
