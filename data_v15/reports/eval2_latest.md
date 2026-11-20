@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 332 |
-| sightings | 19909 |
-| liquid sightings | 7950 |
-| first liquid sightings = unique tokens with an outcome row | 1701 |
-|   young | 1179 |
-|   mature | 457 |
+| eval-2 scans | 333 |
+| sightings | 19966 |
+| liquid sightings | 7970 |
+| first liquid sightings = unique tokens with an outcome row | 1704 |
+|   young | 1181 |
+|   mature | 458 |
 |   other | 65 |
 | young with a comparator (cap 2) | 209 |
-| young without a comparator | 970 |
+| young without a comparator | 972 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 78 |
-| complete pairs (both 60m outcomes labelled) | 123 |
-| scans contributing a complete pair | 78 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 124 |
+| scans contributing a complete pair | 79 |
 
 ## 60m outcome status by group
 
-- young: labelled 888/1179, no_valid_entry 40/1179, pending 4/1179, unknown 186/1179, unreliable 61/1179
-- mature: labelled 421/457, pending 1/457, unknown 35/457
-- no valid entry: young 40/1179, mature 0/457
+- young: labelled 889/1181, no_valid_entry 40/1181, pending 4/1181, unknown 187/1181, unreliable 61/1181
+- mature: labelled 422/458, pending 1/458, unknown 35/458
+- no valid entry: young 40/1181, mature 0/458
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.94 points, 95% interval (-36.6, -13.81); scans with young worse 54/78
-- Pairs with young worse: 87/123 (70.7%); pair mean -21.91, median -26.59
-- Big loss (<= -20%): young 83/123, mature 31/123
+- Scan-level mean difference (young - mature): -25.39 points, 95% interval (-37.14, -14.35); scans with young worse 55/79
+- Pairs with young worse: 88/124 (71.0%); pair mean -22.22, median -26.7
+- Big loss (<= -20%): young 84/124, mature 32/124
 
 ## Comparator reuse (cap 2)
 
@@ -1297,6 +1297,8 @@
 | 20261120T075643 | RED | MACWIZ | 98551.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | Cowboy Cat | 29751.19 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T085642 | RED | FORKD | 29447.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T095642 | RED | AMC  | 30830.13 | pending | None | PATRICK | 18611.75 | pending | None |  |
-| 20261120T095642 | RED | AMC | 17493.45 | pending | None | PATRICK | 18611.75 | pending | None |  |
+| 20261120T095642 | RED | AMC  | 30830.13 | unknown | None | PATRICK | 18611.75 | labelled | -40.02 |  |
+| 20261120T095642 | RED | AMC | 17493.45 | labelled | -100.0 | PATRICK | 18611.75 | labelled | -40.02 |  |
 | 20261120T105641 | RED | Yoko | 24416.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T115640 | RED | Anton | 26981.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T115640 | RED | PASSTHEHAT | 16180.72 | pending | None |  |  |  | None | no eligible comparator |
