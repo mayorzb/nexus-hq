@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 341 |
-| sightings | 20445 |
-| liquid sightings | 8155 |
-| first liquid sightings = unique tokens with an outcome row | 1730 |
-|   young | 1204 |
+| eval-2 scans | 342 |
+| sightings | 20508 |
+| liquid sightings | 8180 |
+| first liquid sightings = unique tokens with an outcome row | 1736 |
+|   young | 1209 |
 |   mature | 461 |
-|   other | 65 |
+|   other | 66 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 994 |
+| young without a comparator | 999 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 904/1204, no_valid_entry 40/1204, pending 10/1204, unknown 189/1204, unreliable 61/1204
+- young: labelled 910/1209, no_valid_entry 40/1209, pending 9/1209, unknown 189/1209, unreliable 61/1209
 - mature: labelled 426/461, unknown 35/461
-- no valid entry: young 40/1204, mature 0/461
+- no valid entry: young 40/1209, mature 0/461
 
 ## Effect (after costs; unit = scan)
 
@@ -1316,12 +1316,17 @@
 | 20261120T175637 | DEEP_RED | CATPOOP | 31204.51 | labelled | -32.52 |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | AMC | 20641.01 | labelled | -37.87 |  |  |  | None | no eligible comparator |
 | 20261120T175637 | DEEP_RED | h◡shippo | 15158.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | DYSON | 38767.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | BTC | 33864.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | FIONAWIF | 21383.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | BIGFOOT | 18181.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | MATHISOVER | 17400.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T185637 | DEEP_RED | MIC | 17284.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | DYSON | 38767.00 | labelled | -33.14 |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | BTC | 33864.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | FIONAWIF | 21383.54 | labelled | -31.01 |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | BIGFOOT | 18181.84 | labelled | -33.12 |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | MATHISOVER | 17400.69 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T185637 | DEEP_RED | MIC | 17284.59 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | DCTY | 92837.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | Lil XACoin | 27628.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | AsianPUSSY | 26234.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Trader | 62290.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Anthropic | 30285.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | Singularity | 28657.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | WASTED | 27505.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T205636 | DEEP_RED | RAMEN | 21341.46 | pending | None |  |  |  | None | no eligible comparator |
