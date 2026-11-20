@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 331 |
-| sightings | 19850 |
-| liquid sightings | 7930 |
-| first liquid sightings = unique tokens with an outcome row | 1700 |
-|   young | 1178 |
+| eval-2 scans | 332 |
+| sightings | 19909 |
+| liquid sightings | 7950 |
+| first liquid sightings = unique tokens with an outcome row | 1701 |
+|   young | 1179 |
 |   mature | 457 |
 |   other | 65 |
 | young with a comparator (cap 2) | 209 |
-| young without a comparator | 969 |
+| young without a comparator | 970 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 123 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 887/1178, no_valid_entry 40/1178, pending 6/1178, unknown 185/1178, unreliable 60/1178
+- young: labelled 888/1179, no_valid_entry 40/1179, pending 4/1179, unknown 186/1179, unreliable 61/1179
 - mature: labelled 421/457, pending 1/457, unknown 35/457
-- no valid entry: young 40/1178, mature 0/457
+- no valid entry: young 40/1179, mature 0/457
 
 ## Effect (after costs; unit = scan)
 
@@ -1284,7 +1284,7 @@
 | 20261120T035647 | NEUTRAL | BTC | 17528.24 | labelled | 36.67 |  |  |  | None | comparators used twice |
 | 20261120T045646 | RED | apocry  | 29791.95 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T045646 | RED | iCat | 27713.89 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261120T045646 | RED | JLONG | 24366.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T045646 | RED | JLONG | 24366.54 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T045646 | RED | Apocry | 16716.11 | labelled | -90.65 |  |  |  | None | no eligible comparator |
 | 20261120T045646 | RED | APOCRY | 16423.99 | labelled | -28.86 |  |  |  | None | no eligible comparator |
 | 20261120T055645 | RED | Isaac | 33428.83 | labelled | 37.2 |  |  |  | None | no eligible comparator |
@@ -1295,7 +1295,8 @@
 | 20261120T065644 | RED | LOAF | 22997.89 | labelled | -32.22 |  |  |  | None | no eligible comparator |
 | 20261120T065644 | RED | ZOL | 21833.98 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T075643 | RED | MACWIZ | 98551.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T085642 | RED | Cowboy Cat | 29751.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T085642 | RED | FORKD | 29447.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T085642 | RED | Cowboy Cat | 29751.19 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261120T085642 | RED | FORKD | 29447.25 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T095642 | RED | AMC  | 30830.13 | pending | None | PATRICK | 18611.75 | pending | None |  |
 | 20261120T095642 | RED | AMC | 17493.45 | pending | None | PATRICK | 18611.75 | pending | None |  |
+| 20261120T105641 | RED | Yoko | 24416.49 | pending | None |  |  |  | None | no eligible comparator |
