@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 348 |
-| sightings | 20893 |
-| liquid sightings | 8331 |
-| first liquid sightings = unique tokens with an outcome row | 1756 |
-|   young | 1228 |
-|   mature | 462 |
+| eval-2 scans | 349 |
+| sightings | 20956 |
+| liquid sightings | 8352 |
+| first liquid sightings = unique tokens with an outcome row | 1759 |
+|   young | 1229 |
+|   mature | 464 |
 |   other | 66 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 1018 |
+| young without a comparator | 1019 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 927/1228, no_valid_entry 40/1228, pending 5/1228, unknown 192/1228, unreliable 64/1228
-- mature: labelled 427/462, unknown 35/462
-- no valid entry: young 40/1228, mature 0/462
+- young: labelled 929/1229, no_valid_entry 40/1229, pending 4/1229, unknown 192/1229, unreliable 64/1229
+- mature: labelled 427/464, pending 2/464, unknown 35/464
+- no valid entry: young 40/1229, mature 0/464
 
 ## Effect (after costs; unit = scan)
 
@@ -1345,7 +1345,8 @@
 | 20261120T235634 | DEEP_RED | SBS | 15449.03 | labelled | -3.63 |  |  |  | None | no eligible comparator |
 | 20261121T005633 | DEEP_RED | JENSEN | 103695.48 | labelled | -27.41 |  |  |  | None | no eligible comparator |
 | 20261121T005633 | DEEP_RED | Gestalt | 80615.70 | labelled | 37.55 |  |  |  | None | no eligible comparator |
-| 20261121T015632 | DEEP_RED | GTACAT | 29371.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T015632 | DEEP_RED | 孙宇晨VVU | 25941.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T015632 | DEEP_RED | GTACAT | 29371.71 | labelled | 37.12 |  |  |  | None | no eligible comparator |
+| 20261121T015632 | DEEP_RED | 孙宇晨VVU | 25941.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T025631 | DEEP_RED | RUDY | 30795.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T025631 | DEEP_RED | SPONGEBOB | 17491.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T035630 | DEEP_RED | BEAR | 21443.87 | pending | None |  |  |  | None | no eligible comparator |
