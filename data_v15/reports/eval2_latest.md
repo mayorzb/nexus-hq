@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 349 |
-| sightings | 20956 |
-| liquid sightings | 8352 |
-| first liquid sightings = unique tokens with an outcome row | 1759 |
-|   young | 1229 |
-|   mature | 464 |
+| eval-2 scans | 350 |
+| sightings | 21019 |
+| liquid sightings | 8379 |
+| first liquid sightings = unique tokens with an outcome row | 1766 |
+|   young | 1235 |
+|   mature | 465 |
 |   other | 66 |
-| young with a comparator (cap 2) | 210 |
-| young without a comparator | 1019 |
+| young with a comparator (cap 2) | 212 |
+| young without a comparator | 1023 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 125 |
 | scans contributing a complete pair | 80 |
 
 ## 60m outcome status by group
 
-- young: labelled 929/1229, no_valid_entry 40/1229, pending 4/1229, unknown 192/1229, unreliable 64/1229
-- mature: labelled 427/464, pending 2/464, unknown 35/464
-- no valid entry: young 40/1229, mature 0/464
+- young: labelled 929/1235, no_valid_entry 42/1235, pending 7/1235, unknown 193/1235, unreliable 64/1235
+- mature: labelled 427/465, pending 3/465, unknown 35/465
+- no valid entry: young 42/1235, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
@@ -116,6 +116,7 @@
 - 20261120T025647-Axkd2GMC: MISU (20261120T025647), MF (20261120T025647)
 - 20261120T035647-ELbCDkRu: BTC (20261120T035647), SWRDXSTFF (20261120T035647)
 - 20261120T095642-8mnJZnxa: AMC  (20261120T095642), AMC (20261120T095642)
+- 20261121T045629-GKFSuSc9: PENNY (20261121T045629), DOOMER (20261121T045629)
 
 ## Every pair
 
@@ -1333,7 +1334,7 @@
 | 20261120T215635 | DEEP_RED | BTC | 69350.96 | labelled | 8.16 |  |  |  | None | no eligible comparator |
 | 20261120T215635 | DEEP_RED | AMC | 31957.18 | labelled | 37.18 |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Antcnd | 84824.39 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261120T225635 | DEEP_RED | Bust | 23088.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Bust | 23088.41 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Rasonque | 22132.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | MONKE | 20029.83 | labelled | 36.81 |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | BANDANA | 40302.59 | labelled | -2.64 |  |  |  | None | no eligible comparator |
@@ -1347,6 +1348,12 @@
 | 20261121T005633 | DEEP_RED | Gestalt | 80615.70 | labelled | 37.55 |  |  |  | None | no eligible comparator |
 | 20261121T015632 | DEEP_RED | GTACAT | 29371.71 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261121T015632 | DEEP_RED | 孙宇晨VVU | 25941.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261121T025631 | DEEP_RED | RUDY | 30795.08 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T025631 | DEEP_RED | SPONGEBOB | 17491.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T025631 | DEEP_RED | RUDY | 30795.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261121T025631 | DEEP_RED | SPONGEBOB | 17491.21 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261121T035630 | DEEP_RED | BEAR | 21443.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T045629 | DEEP_RED | Eupass | 83049.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T045629 | DEEP_RED | PUNANI | 62467.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T045629 | DEEP_RED | PENNY | 39217.17 | pending | None | CC131 | 20846.30 | pending | None |  |
+| 20261121T045629 | DEEP_RED | DOOMER | 30723.73 | pending | None | CC131 | 20846.30 | pending | None |  |
+| 20261121T045629 | DEEP_RED | BTC | 21672.04 | pending | None |  |  |  | None | comparators used twice |
+| 20261121T045629 | DEEP_RED | PENNY | 18789.22 | pending | None |  |  |  | None | comparators used twice |
