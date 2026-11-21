@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 366 |
-| sightings | 22023 |
-| liquid sightings | 8779 |
-| first liquid sightings = unique tokens with an outcome row | 1821 |
-|   young | 1274 |
-|   mature | 479 |
+| eval-2 scans | 367 |
+| sightings | 22086 |
+| liquid sightings | 8805 |
+| first liquid sightings = unique tokens with an outcome row | 1827 |
+|   young | 1277 |
+|   mature | 482 |
 |   other | 68 |
-| young with a comparator (cap 2) | 216 |
-| young without a comparator | 1058 |
+| young with a comparator (cap 2) | 218 |
+| young without a comparator | 1059 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
-| complete pairs (both 60m outcomes labelled) | 129 |
-| scans contributing a complete pair | 82 |
+| complete pairs (both 60m outcomes labelled) | 131 |
+| scans contributing a complete pair | 83 |
 
 ## 60m outcome status by group
 
-- young: labelled 961/1274, no_valid_entry 42/1274, pending 7/1274, unknown 198/1274, unreliable 66/1274
-- mature: labelled 440/479, pending 4/479, unknown 35/479
-- no valid entry: young 42/1274, mature 0/479
+- young: labelled 965/1277, no_valid_entry 42/1277, pending 6/1277, unknown 198/1277, unreliable 66/1277
+- mature: labelled 442/482, pending 5/482, unknown 35/482
+- no valid entry: young 42/1277, mature 0/482
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.29 points, 95% interval (-36.42, -14.13); scans with young worse 57/82
-- Pairs with young worse: 91/129 (70.5%); pair mean -22.3, median -26.59
-- Big loss (<= -20%): young 88/129, mature 34/129
+- Scan-level mean difference (young - mature): -25.78 points, 95% interval (-37.26, -14.42); scans with young worse 58/83
+- Pairs with young worse: 93/131 (71.0%); pair mean -22.97, median -26.8
+- Big loss (<= -20%): young 90/131, mature 34/131
 
 ## Comparator reuse (cap 2)
 
@@ -119,6 +119,7 @@
 - 20261121T045629-GKFSuSc9: PENNY (20261121T045629), DOOMER (20261121T045629)
 - 20261121T155622-dkpuQdje: NOHR (20261121T155622), COVID (20261121T155622)
 - 20261121T195620-EV7J2QaP: HOUSE (20261121T195620), pointy hat (20261121T195620)
+- 20261121T215618-14coJKKE: FINGERS (20261121T215618), UrAnus (20261121T215618)
 
 ## Every pair
 
@@ -1392,9 +1393,12 @@
 | 20261121T175620 | GREEN | CLAUDIA | 74942.50 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | BOTTOM | 29647.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T185620 | GREEN | UGOS | 25592.60 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261121T195620 | GREEN | HOUSE | 72469.94 | pending | None | chud | 46974.65 | pending | None |  |
-| 20261121T195620 | GREEN | pointy hat | 29470.87 | pending | None | chud | 46974.65 | pending | None |  |
-| 20261121T195620 | GREEN | TA | 18347.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T195620 | GREEN | ILY | 16111.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T195620 | GREEN | HOUSE | 72469.94 | labelled | -28.11 | chud | 46974.65 | labelled | 1.9 |  |
+| 20261121T195620 | GREEN | pointy hat | 29470.87 | labelled | -100.0 | chud | 46974.65 | labelled | 1.9 |  |
+| 20261121T195620 | GREEN | TA | 18347.74 | labelled | -49.61 |  |  |  | None | no eligible comparator |
+| 20261121T195620 | GREEN | ILY | 16111.92 | labelled | -28.85 |  |  |  | None | no eligible comparator |
 | 20261121T205619 | GREEN | SIDOOR | 21240.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T205619 | GREEN | CLAWDIA | 19969.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T215618 | GREEN | FINGERS | 36004.37 | pending | None | HODL | 28512.71 | pending | None |  |
+| 20261121T215618 | GREEN | UrAnus | 32677.42 | pending | None | HODL | 28512.71 | pending | None |  |
+| 20261121T215618 | GREEN | BTC | 31219.61 | pending | None |  |  |  | None | comparators used twice |
