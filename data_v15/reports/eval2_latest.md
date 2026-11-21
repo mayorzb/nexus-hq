@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 346 |
-| sightings | 20766 |
-| liquid sightings | 8283 |
-| first liquid sightings = unique tokens with an outcome row | 1752 |
-|   young | 1224 |
+| eval-2 scans | 347 |
+| sightings | 20831 |
+| liquid sightings | 8307 |
+| first liquid sightings = unique tokens with an outcome row | 1754 |
+|   young | 1226 |
 |   mature | 462 |
 |   other | 66 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 1014 |
+| young without a comparator | 1016 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 919/1224, no_valid_entry 40/1224, pending 12/1224, unknown 190/1224, unreliable 63/1224
-- mature: labelled 426/462, pending 1/462, unknown 35/462
-- no valid entry: young 40/1224, mature 0/462
+- young: labelled 925/1226, no_valid_entry 40/1226, pending 5/1226, unknown 192/1226, unreliable 64/1226
+- mature: labelled 427/462, unknown 35/462
+- no valid entry: young 40/1226, mature 0/462
 
 ## Effect (after costs; unit = scan)
 
@@ -1324,7 +1324,7 @@
 | 20261120T185637 | DEEP_RED | MIC | 17284.59 | labelled | 36.65 |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | DCTY | 92837.87 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261120T195636 | DEEP_RED | Lil XACoin | 27628.79 | labelled | 37.08 |  |  |  | None | no eligible comparator |
-| 20261120T195636 | DEEP_RED | AsianPUSSY | 26234.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T195636 | DEEP_RED | AsianPUSSY | 26234.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T205636 | DEEP_RED | Trader | 62290.75 | labelled | -42.89 |  |  |  | None | no eligible comparator |
 | 20261120T205636 | DEEP_RED | Anthropic | 30285.53 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261120T205636 | DEEP_RED | Singularity | 28657.19 | labelled | -29.63 |  |  |  | None | no eligible comparator |
@@ -1334,14 +1334,16 @@
 | 20261120T215635 | DEEP_RED | AMC | 31957.18 | labelled | 37.18 |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Antcnd | 84824.39 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Bust | 23088.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T225635 | DEEP_RED | Rasonque | 22132.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Rasonque | 22132.84 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | MONKE | 20029.83 | labelled | 36.81 |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | BANDANA | 40302.59 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | LRS | 33039.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | MedTech | 27760.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | Meteora | 26048.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | VI | 17655.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | FARM | 15625.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T235634 | DEEP_RED | SBS | 15449.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | BANDANA | 40302.59 | labelled | -2.64 |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | LRS | 33039.35 | labelled | -9.92 |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | MedTech | 27760.64 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | Meteora | 26048.69 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | VI | 17655.41 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | FARM | 15625.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261120T235634 | DEEP_RED | SBS | 15449.03 | labelled | -3.63 |  |  |  | None | no eligible comparator |
 | 20261121T005633 | DEEP_RED | JENSEN | 103695.48 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T005633 | DEEP_RED | Gestalt | 80615.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T015632 | DEEP_RED | GTACAT | 29371.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T015632 | DEEP_RED | 孙宇晨VVU | 25941.42 | pending | None |  |  |  | None | no eligible comparator |
