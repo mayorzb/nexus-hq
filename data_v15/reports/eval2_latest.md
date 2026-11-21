@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 360 |
-| sightings | 21663 |
-| liquid sightings | 8632 |
-| first liquid sightings = unique tokens with an outcome row | 1795 |
-|   young | 1262 |
-|   mature | 467 |
-|   other | 66 |
-| young with a comparator (cap 2) | 212 |
+| eval-2 scans | 361 |
+| sightings | 21722 |
+| liquid sightings | 8658 |
+| first liquid sightings = unique tokens with an outcome row | 1801 |
+|   young | 1264 |
+|   mature | 470 |
+|   other | 67 |
+| young with a comparator (cap 2) | 214 |
 | young without a comparator | 1050 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 127 |
 | scans contributing a complete pair | 81 |
 
 ## 60m outcome status by group
 
-- young: labelled 954/1262, no_valid_entry 42/1262, pending 6/1262, unknown 195/1262, unreliable 65/1262
-- mature: labelled 430/467, pending 2/467, unknown 35/467
-- no valid entry: young 42/1262, mature 0/467
+- young: labelled 956/1264, no_valid_entry 42/1264, pending 6/1264, unknown 195/1264, unreliable 65/1264
+- mature: labelled 431/470, pending 4/470, unknown 35/470
+- no valid entry: young 42/1264, mature 0/470
 
 ## Effect (after costs; unit = scan)
 
@@ -117,6 +117,7 @@
 - 20261120T035647-ELbCDkRu: BTC (20261120T035647), SWRDXSTFF (20261120T035647)
 - 20261120T095642-8mnJZnxa: AMC  (20261120T095642), AMC (20261120T095642)
 - 20261121T045629-GKFSuSc9: PENNY (20261121T045629), DOOMER (20261121T045629)
+- 20261121T155622-dkpuQdje: NOHR (20261121T155622), COVID (20261121T155622)
 
 ## Every pair
 
@@ -1379,8 +1380,10 @@
 | 20261121T125624 | RED | Lucia | 27830.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T125624 | RED | Emily | 16868.76 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Emily | 94401.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T135623 | NEUTRAL | Spyrav | 86550.09 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T135623 | NEUTRAL | Bigfoot | 15212.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T135623 | NEUTRAL | Spyrav | 86550.09 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T135623 | NEUTRAL | Bigfoot | 15212.04 | labelled | 36.49 |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | SGREM | 31372.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | SAKURA | 29350.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | nudes | 22510.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T155622 | NEUTRAL | NOHR | 63697.96 | pending | None | RIEMANN | 54501.79 | pending | None |  |
+| 20261121T155622 | NEUTRAL | COVID | 30962.86 | pending | None | RIEMANN | 54501.79 | pending | None |  |
