@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 350 |
-| sightings | 21019 |
-| liquid sightings | 8379 |
-| first liquid sightings = unique tokens with an outcome row | 1766 |
-|   young | 1235 |
+| eval-2 scans | 351 |
+| sightings | 21084 |
+| liquid sightings | 8409 |
+| first liquid sightings = unique tokens with an outcome row | 1773 |
+|   young | 1242 |
 |   mature | 465 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1023 |
+| young without a comparator | 1030 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 929/1235, no_valid_entry 42/1235, pending 7/1235, unknown 193/1235, unreliable 64/1235
-- mature: labelled 427/465, pending 3/465, unknown 35/465
-- no valid entry: young 42/1235, mature 0/465
+- young: labelled 930/1242, no_valid_entry 42/1242, pending 13/1242, unknown 193/1242, unreliable 64/1242
+- mature: labelled 429/465, pending 1/465, unknown 35/465
+- no valid entry: young 42/1242, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
@@ -1350,10 +1350,17 @@
 | 20261121T015632 | DEEP_RED | 孙宇晨VVU | 25941.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T025631 | DEEP_RED | RUDY | 30795.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261121T025631 | DEEP_RED | SPONGEBOB | 17491.21 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261121T035630 | DEEP_RED | BEAR | 21443.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T035630 | DEEP_RED | BEAR | 21443.87 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T045629 | DEEP_RED | Eupass | 83049.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T045629 | DEEP_RED | PUNANI | 62467.32 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T045629 | DEEP_RED | PENNY | 39217.17 | pending | None | CC131 | 20846.30 | pending | None |  |
 | 20261121T045629 | DEEP_RED | DOOMER | 30723.73 | pending | None | CC131 | 20846.30 | pending | None |  |
 | 20261121T045629 | DEEP_RED | BTC | 21672.04 | pending | None |  |  |  | None | comparators used twice |
 | 20261121T045629 | DEEP_RED | PENNY | 18789.22 | pending | None |  |  |  | None | comparators used twice |
+| 20261121T055628 | DEEP_RED | PESSI | 130035.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MAYA | 110073.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MARS | 68531.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | SI | 29959.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | tittcoin | 26571.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MARS | 26324.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | VAREXON | 15727.24 | pending | None |  |  |  | None | no eligible comparator |
