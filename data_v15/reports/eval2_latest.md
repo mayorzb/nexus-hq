@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 363 |
-| sightings | 21837 |
-| liquid sightings | 8708 |
-| first liquid sightings = unique tokens with an outcome row | 1810 |
-|   young | 1267 |
-|   mature | 475 |
+| eval-2 scans | 364 |
+| sightings | 21899 |
+| liquid sightings | 8730 |
+| first liquid sightings = unique tokens with an outcome row | 1812 |
+|   young | 1268 |
+|   mature | 476 |
 |   other | 68 |
 | young with a comparator (cap 2) | 214 |
-| young without a comparator | 1053 |
+| young without a comparator | 1054 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 129 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 959/1267, no_valid_entry 42/1267, pending 3/1267, unknown 197/1267, unreliable 66/1267
-- mature: labelled 435/475, pending 5/475, unknown 35/475
-- no valid entry: young 42/1267, mature 0/475
+- young: labelled 959/1268, no_valid_entry 42/1268, pending 4/1268, unknown 197/1268, unreliable 66/1268
+- mature: labelled 437/476, pending 4/476, unknown 35/476
+- no valid entry: young 42/1268, mature 0/476
 
 ## Effect (after costs; unit = scan)
 
@@ -1390,3 +1390,4 @@
 | 20261121T165621 | NEUTRAL | Air | 19879.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | CLAUDIA | 74942.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | BOTTOM | 29647.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T185620 | GREEN | UGOS | 25592.60 | pending | None |  |  |  | None | no eligible comparator |
