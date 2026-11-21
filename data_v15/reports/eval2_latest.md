@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 345 |
-| sightings | 20701 |
-| liquid sightings | 8259 |
-| first liquid sightings = unique tokens with an outcome row | 1750 |
-|   young | 1222 |
+| eval-2 scans | 346 |
+| sightings | 20766 |
+| liquid sightings | 8283 |
+| first liquid sightings = unique tokens with an outcome row | 1752 |
+|   young | 1224 |
 |   mature | 462 |
 |   other | 66 |
 | young with a comparator (cap 2) | 210 |
-| young without a comparator | 1012 |
+| young without a comparator | 1014 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 125 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 917/1222, no_valid_entry 40/1222, pending 12/1222, unknown 190/1222, unreliable 63/1222
+- young: labelled 919/1224, no_valid_entry 40/1224, pending 12/1224, unknown 190/1224, unreliable 63/1224
 - mature: labelled 426/462, pending 1/462, unknown 35/462
-- no valid entry: young 40/1222, mature 0/462
+- no valid entry: young 40/1224, mature 0/462
 
 ## Effect (after costs; unit = scan)
 
@@ -1332,10 +1332,10 @@
 | 20261120T205636 | DEEP_RED | RAMEN | 21341.46 | labelled | 36.87 |  |  |  | None | no eligible comparator |
 | 20261120T215635 | DEEP_RED | BTC | 69350.96 | labelled | 8.16 |  |  |  | None | no eligible comparator |
 | 20261120T215635 | DEEP_RED | AMC | 31957.18 | labelled | 37.18 |  |  |  | None | no eligible comparator |
-| 20261120T225635 | DEEP_RED | Antcnd | 84824.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | Antcnd | 84824.39 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Bust | 23088.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T225635 | DEEP_RED | Rasonque | 22132.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261120T225635 | DEEP_RED | MONKE | 20029.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261120T225635 | DEEP_RED | MONKE | 20029.83 | labelled | 36.81 |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | BANDANA | 40302.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | LRS | 33039.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | MedTech | 27760.64 | pending | None |  |  |  | None | no eligible comparator |
@@ -1343,3 +1343,5 @@
 | 20261120T235634 | DEEP_RED | VI | 17655.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | FARM | 15625.16 | pending | None |  |  |  | None | no eligible comparator |
 | 20261120T235634 | DEEP_RED | SBS | 15449.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T005633 | DEEP_RED | JENSEN | 103695.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T005633 | DEEP_RED | Gestalt | 80615.70 | pending | None |  |  |  | None | no eligible comparator |
