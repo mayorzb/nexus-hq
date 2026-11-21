@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 367 |
-| sightings | 22086 |
-| liquid sightings | 8805 |
-| first liquid sightings = unique tokens with an outcome row | 1827 |
-|   young | 1277 |
-|   mature | 482 |
+| eval-2 scans | 368 |
+| sightings | 22151 |
+| liquid sightings | 8831 |
+| first liquid sightings = unique tokens with an outcome row | 1832 |
+|   young | 1279 |
+|   mature | 485 |
 |   other | 68 |
 | young with a comparator (cap 2) | 218 |
-| young without a comparator | 1059 |
+| young without a comparator | 1061 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 131 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 965/1277, no_valid_entry 42/1277, pending 6/1277, unknown 198/1277, unreliable 66/1277
-- mature: labelled 442/482, pending 5/482, unknown 35/482
-- no valid entry: young 42/1277, mature 0/482
+- young: labelled 967/1279, no_valid_entry 42/1279, pending 5/1279, unknown 199/1279, unreliable 66/1279
+- mature: labelled 443/485, pending 6/485, unknown 36/485
+- no valid entry: young 42/1279, mature 0/485
 
 ## Effect (after costs; unit = scan)
 
@@ -1389,7 +1389,7 @@
 | 20261121T145622 | NEUTRAL | nudes | 22510.31 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T155622 | NEUTRAL | NOHR | 63697.96 | labelled | -28.35 | RIEMANN | 54501.79 | labelled | 37.43 |  |
 | 20261121T155622 | NEUTRAL | COVID | 30962.86 | labelled | -100.0 | RIEMANN | 54501.79 | labelled | 37.43 |  |
-| 20261121T165621 | NEUTRAL | Air | 19879.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T165621 | NEUTRAL | Air | 19879.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | CLAUDIA | 74942.50 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | BOTTOM | 29647.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T185620 | GREEN | UGOS | 25592.60 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1397,8 +1397,10 @@
 | 20261121T195620 | GREEN | pointy hat | 29470.87 | labelled | -100.0 | chud | 46974.65 | labelled | 1.9 |  |
 | 20261121T195620 | GREEN | TA | 18347.74 | labelled | -49.61 |  |  |  | None | no eligible comparator |
 | 20261121T195620 | GREEN | ILY | 16111.92 | labelled | -28.85 |  |  |  | None | no eligible comparator |
-| 20261121T205619 | GREEN | SIDOOR | 21240.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T205619 | GREEN | CLAWDIA | 19969.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T205619 | GREEN | SIDOOR | 21240.55 | labelled | 36.86 |  |  |  | None | no eligible comparator |
+| 20261121T205619 | GREEN | CLAWDIA | 19969.35 | labelled | -58.8 |  |  |  | None | no eligible comparator |
 | 20261121T215618 | GREEN | FINGERS | 36004.37 | pending | None | HODL | 28512.71 | pending | None |  |
 | 20261121T215618 | GREEN | UrAnus | 32677.42 | pending | None | HODL | 28512.71 | pending | None |  |
 | 20261121T215618 | GREEN | BTC | 31219.61 | pending | None |  |  |  | None | comparators used twice |
+| 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T225618 | GREEN | Mfer | 21698.63 | pending | None |  |  |  | None | no eligible comparator |
