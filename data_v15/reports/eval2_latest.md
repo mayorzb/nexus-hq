@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 354 |
-| sightings | 21287 |
-| liquid sightings | 8487 |
-| first liquid sightings = unique tokens with an outcome row | 1777 |
-|   young | 1246 |
+| eval-2 scans | 355 |
+| sightings | 21354 |
+| liquid sightings | 8512 |
+| first liquid sightings = unique tokens with an outcome row | 1780 |
+|   young | 1249 |
 |   mature | 465 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1034 |
+| young without a comparator | 1037 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 127 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 943/1246, no_valid_entry 42/1246, pending 3/1246, unknown 193/1246, unreliable 65/1246
+- young: labelled 943/1249, no_valid_entry 42/1249, pending 6/1249, unknown 193/1249, unreliable 65/1249
 - mature: labelled 430/465, unknown 35/465
-- no valid entry: young 42/1246, mature 0/465
+- no valid entry: young 42/1249, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
@@ -1368,3 +1368,6 @@
 | 20261121T065627 | DEEP_RED | win | 25718.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T085626 | DEEP_RED | 丑狐 | 26310.05 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T085626 | DEEP_RED | 67mas | 16081.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T095625 | DEEP_RED | Cowboy Cat | 28146.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T095625 | DEEP_RED | SIRI | 27736.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T095625 | DEEP_RED | 大当り | 17869.99 | pending | None |  |  |  | None | no eligible comparator |
