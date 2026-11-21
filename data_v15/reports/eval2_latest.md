@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 352 |
-| sightings | 21151 |
-| liquid sightings | 8437 |
+| eval-2 scans | 353 |
+| sightings | 21218 |
+| liquid sightings | 8461 |
 | first liquid sightings = unique tokens with an outcome row | 1775 |
 |   young | 1244 |
 |   mature | 465 |
@@ -22,7 +22,7 @@
 
 ## 60m outcome status by group
 
-- young: labelled 936/1244, no_valid_entry 42/1244, pending 9/1244, unknown 193/1244, unreliable 64/1244
+- young: labelled 942/1244, no_valid_entry 42/1244, pending 3/1244, unknown 193/1244, unreliable 64/1244
 - mature: labelled 430/465, unknown 35/465
 - no valid entry: young 42/1244, mature 0/465
 
@@ -1358,11 +1358,11 @@
 | 20261121T045629 | DEEP_RED | BTC | 21672.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261121T045629 | DEEP_RED | PENNY | 18789.22 | labelled | -33.65 |  |  |  | None | comparators used twice |
 | 20261121T055628 | DEEP_RED | PESSI | 130035.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | MAYA | 110073.28 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | MARS | 68531.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | SI | 29959.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | tittcoin | 26571.35 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | MARS | 26324.20 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T055628 | DEEP_RED | VAREXON | 15727.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MAYA | 110073.28 | labelled | 10.01 |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MARS | 68531.36 | labelled | 37.51 |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | SI | 29959.43 | labelled | -34.04 |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | tittcoin | 26571.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | MARS | 26324.20 | labelled | -59.27 |  |  |  | None | no eligible comparator |
+| 20261121T055628 | DEEP_RED | VAREXON | 15727.24 | labelled | -38.64 |  |  |  | None | no eligible comparator |
 | 20261121T065627 | DEEP_RED | MARS | 31059.82 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T065627 | DEEP_RED | win | 25718.12 | pending | None |  |  |  | None | no eligible comparator |
