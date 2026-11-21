@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 351 |
-| sightings | 21084 |
-| liquid sightings | 8409 |
-| first liquid sightings = unique tokens with an outcome row | 1773 |
-|   young | 1242 |
+| eval-2 scans | 352 |
+| sightings | 21151 |
+| liquid sightings | 8437 |
+| first liquid sightings = unique tokens with an outcome row | 1775 |
+|   young | 1244 |
 |   mature | 465 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1030 |
+| young without a comparator | 1032 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
-| complete pairs (both 60m outcomes labelled) | 125 |
-| scans contributing a complete pair | 80 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 127 |
+| scans contributing a complete pair | 81 |
 
 ## 60m outcome status by group
 
-- young: labelled 930/1242, no_valid_entry 42/1242, pending 13/1242, unknown 193/1242, unreliable 64/1242
-- mature: labelled 429/465, pending 1/465, unknown 35/465
-- no valid entry: young 42/1242, mature 0/465
+- young: labelled 936/1244, no_valid_entry 42/1244, pending 9/1244, unknown 193/1244, unreliable 64/1244
+- mature: labelled 430/465, unknown 35/465
+- no valid entry: young 42/1244, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.25 points, 95% interval (-36.78, -13.83); scans with young worse 56/80
-- Pairs with young worse: 89/125 (71.2%); pair mean -22.15, median -26.59
-- Big loss (<= -20%): young 85/125, mature 32/125
+- Scan-level mean difference (young - mature): -24.35 points, 95% interval (-36.12, -13.25); scans with young worse 56/81
+- Pairs with young worse: 89/127 (70.1%); pair mean -21.05, median -26.05
+- Big loss (<= -20%): young 86/127, mature 34/127
 
 ## Comparator reuse (cap 2)
 
@@ -1351,12 +1351,12 @@
 | 20261121T025631 | DEEP_RED | RUDY | 30795.08 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261121T025631 | DEEP_RED | SPONGEBOB | 17491.21 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261121T035630 | DEEP_RED | BEAR | 21443.87 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261121T045629 | DEEP_RED | Eupass | 83049.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T045629 | DEEP_RED | PUNANI | 62467.32 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T045629 | DEEP_RED | PENNY | 39217.17 | pending | None | CC131 | 20846.30 | pending | None |  |
-| 20261121T045629 | DEEP_RED | DOOMER | 30723.73 | pending | None | CC131 | 20846.30 | pending | None |  |
-| 20261121T045629 | DEEP_RED | BTC | 21672.04 | pending | None |  |  |  | None | comparators used twice |
-| 20261121T045629 | DEEP_RED | PENNY | 18789.22 | pending | None |  |  |  | None | comparators used twice |
+| 20261121T045629 | DEEP_RED | Eupass | 83049.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T045629 | DEEP_RED | PUNANI | 62467.32 | labelled | -34.54 |  |  |  | None | no eligible comparator |
+| 20261121T045629 | DEEP_RED | PENNY | 39217.17 | labelled | -30.4 | CC131 | 20846.30 | labelled | -44.3 |  |
+| 20261121T045629 | DEEP_RED | DOOMER | 30723.73 | labelled | 37.15 | CC131 | 20846.30 | labelled | -44.3 |  |
+| 20261121T045629 | DEEP_RED | BTC | 21672.04 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261121T045629 | DEEP_RED | PENNY | 18789.22 | labelled | -33.65 |  |  |  | None | comparators used twice |
 | 20261121T055628 | DEEP_RED | PESSI | 130035.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | MAYA | 110073.28 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | MARS | 68531.36 | pending | None |  |  |  | None | no eligible comparator |
@@ -1364,3 +1364,5 @@
 | 20261121T055628 | DEEP_RED | tittcoin | 26571.35 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | MARS | 26324.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | VAREXON | 15727.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T065627 | DEEP_RED | MARS | 31059.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T065627 | DEEP_RED | win | 25718.12 | pending | None |  |  |  | None | no eligible comparator |
