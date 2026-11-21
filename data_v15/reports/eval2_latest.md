@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 362 |
-| sightings | 21781 |
-| liquid sightings | 8683 |
-| first liquid sightings = unique tokens with an outcome row | 1805 |
-|   young | 1265 |
-|   mature | 473 |
-|   other | 67 |
+| eval-2 scans | 363 |
+| sightings | 21837 |
+| liquid sightings | 8708 |
+| first liquid sightings = unique tokens with an outcome row | 1810 |
+|   young | 1267 |
+|   mature | 475 |
+|   other | 68 |
 | young with a comparator (cap 2) | 214 |
-| young without a comparator | 1051 |
+| young without a comparator | 1053 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
-| complete pairs (both 60m outcomes labelled) | 127 |
-| scans contributing a complete pair | 81 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 129 |
+| scans contributing a complete pair | 82 |
 
 ## 60m outcome status by group
 
-- young: labelled 957/1265, no_valid_entry 42/1265, pending 4/1265, unknown 196/1265, unreliable 66/1265
-- mature: labelled 432/473, pending 6/473, unknown 35/473
-- no valid entry: young 42/1265, mature 0/473
+- young: labelled 959/1267, no_valid_entry 42/1267, pending 3/1267, unknown 197/1267, unreliable 66/1267
+- mature: labelled 435/475, pending 5/475, unknown 35/475
+- no valid entry: young 42/1267, mature 0/475
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -24.35 points, 95% interval (-36.12, -13.25); scans with young worse 56/81
-- Pairs with young worse: 89/127 (70.1%); pair mean -21.05, median -26.05
-- Big loss (<= -20%): young 86/127, mature 34/127
+- Scan-level mean difference (young - mature): -25.29 points, 95% interval (-36.42, -14.13); scans with young worse 57/82
+- Pairs with young worse: 91/129 (70.5%); pair mean -22.3, median -26.59
+- Big loss (<= -20%): young 88/129, mature 34/129
 
 ## Comparator reuse (cap 2)
 
@@ -1384,7 +1384,9 @@
 | 20261121T135623 | NEUTRAL | Bigfoot | 15212.04 | labelled | 36.49 |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | SGREM | 31372.96 | labelled | 37.16 |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | SAKURA | 29350.37 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261121T145622 | NEUTRAL | nudes | 22510.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T155622 | NEUTRAL | NOHR | 63697.96 | pending | None | RIEMANN | 54501.79 | pending | None |  |
-| 20261121T155622 | NEUTRAL | COVID | 30962.86 | pending | None | RIEMANN | 54501.79 | pending | None |  |
+| 20261121T145622 | NEUTRAL | nudes | 22510.31 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261121T155622 | NEUTRAL | NOHR | 63697.96 | labelled | -28.35 | RIEMANN | 54501.79 | labelled | 37.43 |  |
+| 20261121T155622 | NEUTRAL | COVID | 30962.86 | labelled | -100.0 | RIEMANN | 54501.79 | labelled | 37.43 |  |
 | 20261121T165621 | NEUTRAL | Air | 19879.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T175620 | GREEN | CLAUDIA | 74942.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T175620 | GREEN | BOTTOM | 29647.50 | pending | None |  |  |  | None | no eligible comparator |
