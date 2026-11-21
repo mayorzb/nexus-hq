@@ -2,15 +2,15 @@ RESULT BOUNDS (review-1.4) - net % after costs; pending labels excluded
 
 | Group | Horizon | Scored | Dead or unreliable | Other unknown | Mean as reported | Mean, dead as -100 | Mean, all unscored as -100 | Median as reported |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| B0 liquid baseline | 5 | 1513 | 116 | 272 | -11.8% | -18.1% | -29.8% | -4.7% |
-| B0 liquid baseline | 15 | 1478 | 177 | 246 | -11.4% | -20.9% | -31.1% | -4.8% |
-| B0 liquid baseline | 30 | 1449 | 221 | 231 | -11.8% | -23.4% | -32.7% | -5.4% |
-| B0 liquid baseline | 60 | 1551 | 117 | 232 | -20.8% | -26.3% | -35.3% | -11.8% |
+| B0 liquid baseline | 5 | 1514 | 116 | 272 | -11.8% | -18.1% | -29.8% | -4.7% |
+| B0 liquid baseline | 15 | 1479 | 177 | 246 | -11.4% | -20.9% | -31.1% | -4.9% |
+| B0 liquid baseline | 30 | 1450 | 221 | 231 | -11.8% | -23.5% | -32.7% | -5.4% |
+| B0 liquid baseline | 60 | 1552 | 117 | 232 | -20.8% | -26.4% | -35.3% | -11.8% |
 | B0 liquid baseline | 240 | 1522 | 136 | 236 | -25.8% | -31.9% | -40.4% | -43.5% |
 | Legacy v1.4.2 gate | 5 | 821 | 3 | 138 | -10.0% | -10.3% | -23.2% | -3.8% |
 | Legacy v1.4.2 gate | 15 | 841 | 3 | 118 | -10.1% | -10.4% | -21.4% | -4.6% |
 | Legacy v1.4.2 gate | 30 | 846 | 3 | 113 | -10.8% | -11.1% | -21.5% | -4.9% |
-| Legacy v1.4.2 gate | 60 | 852 | 0 | 109 | -11.4% | -11.4% | -21.4% | -5.4% |
+| Legacy v1.4.2 gate | 60 | 853 | 0 | 109 | -11.4% | -11.4% | -21.4% | -5.4% |
 | Legacy v1.4.2 gate | 240 | 847 | 0 | 114 | -14.5% | -14.5% | -24.6% | -9.3% |
 | H1 mature (>=3h) liquid | 5 | 463 | 2 | 67 | -3.9% | -4.3% | -16.4% | -2.6% |
 | H1 mature (>=3h) liquid | 15 | 482 | 2 | 48 | -4.0% | -4.4% | -13.1% | -2.8% |

@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 357 |
-| sightings | 21481 |
-| liquid sightings | 8557 |
-| first liquid sightings = unique tokens with an outcome row | 1783 |
-|   young | 1252 |
+| eval-2 scans | 358 |
+| sightings | 21541 |
+| liquid sightings | 8582 |
+| first liquid sightings = unique tokens with an outcome row | 1787 |
+|   young | 1256 |
 |   mature | 465 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1040 |
+| young without a comparator | 1044 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 127 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 947/1252, no_valid_entry 42/1252, pending 3/1252, unknown 195/1252, unreliable 65/1252
+- young: labelled 948/1256, no_valid_entry 42/1256, pending 6/1256, unknown 195/1256, unreliable 65/1256
 - mature: labelled 430/465, unknown 35/465
-- no valid entry: young 42/1252, mature 0/465
+- no valid entry: young 42/1256, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
@@ -1371,6 +1371,10 @@
 | 20261121T095625 | DEEP_RED | Cowboy Cat | 28146.49 | labelled | 37.09 |  |  |  | None | no eligible comparator |
 | 20261121T095625 | DEEP_RED | SIRI | 27736.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T095625 | DEEP_RED | 大当り | 17869.99 | labelled | -3.32 |  |  |  | None | no eligible comparator |
-| 20261121T105625 | DEEP_RED | XV | 41733.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T105625 | DEEP_RED | XV | 41733.54 | labelled | -42.91 |  |  |  | None | no eligible comparator |
 | 20261121T115624 | DEEP_RED | WILL | 15370.94 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T115624 | DEEP_RED | WILL | 15021.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | USDBURN | 90089.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | LIFE | 29227.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | Lucia | 27830.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | Emily | 16868.76 | pending | None |  |  |  | None | no eligible comparator |
