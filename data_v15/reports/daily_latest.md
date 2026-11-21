@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-21 20:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-21 21:04 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-21 20:03 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 63 / 25 | OK |
-| Deep-checked coins left UNVERIFIED | 16 of 56 (29%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 34 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 90 of 146 | WARN |
-| Paper candidates (last 24h) | 10 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 408 / 90 | ALERT |
+| Deep-checked coins left UNVERIFIED | 18 of 64 (28%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 32 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 103 of 167 | WARN |
+| Paper candidates (last 24h) | 11 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 424 / 95 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (13:56), CATE (14:56), CATE (15:56), TROLL (15:56), CATE (16:56), TROLL (16:56), CATE (17:56), TROLL (17:56), CATE (18:56), TROLL (19:56)
+Candidates: CATE (13:56), CATE (14:56), CATE (15:56), TROLL (15:56), CATE (16:56), TROLL (16:56), CATE (17:56), TROLL (17:56), CATE (18:56), TROLL (19:56), TROLL (20:56)
