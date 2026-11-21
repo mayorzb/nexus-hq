@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 353 |
-| sightings | 21218 |
-| liquid sightings | 8461 |
-| first liquid sightings = unique tokens with an outcome row | 1775 |
-|   young | 1244 |
+| eval-2 scans | 354 |
+| sightings | 21287 |
+| liquid sightings | 8487 |
+| first liquid sightings = unique tokens with an outcome row | 1777 |
+|   young | 1246 |
 |   mature | 465 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1032 |
+| young without a comparator | 1034 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 127 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 942/1244, no_valid_entry 42/1244, pending 3/1244, unknown 193/1244, unreliable 64/1244
+- young: labelled 943/1246, no_valid_entry 42/1246, pending 3/1246, unknown 193/1246, unreliable 65/1246
 - mature: labelled 430/465, unknown 35/465
-- no valid entry: young 42/1244, mature 0/465
+- no valid entry: young 42/1246, mature 0/465
 
 ## Effect (after costs; unit = scan)
 
@@ -1364,5 +1364,7 @@
 | 20261121T055628 | DEEP_RED | tittcoin | 26571.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | MARS | 26324.20 | labelled | -59.27 |  |  |  | None | no eligible comparator |
 | 20261121T055628 | DEEP_RED | VAREXON | 15727.24 | labelled | -38.64 |  |  |  | None | no eligible comparator |
-| 20261121T065627 | DEEP_RED | MARS | 31059.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T065627 | DEEP_RED | win | 25718.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T065627 | DEEP_RED | MARS | 31059.82 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261121T065627 | DEEP_RED | win | 25718.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T085626 | DEEP_RED | 丑狐 | 26310.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T085626 | DEEP_RED | 67mas | 16081.57 | pending | None |  |  |  | None | no eligible comparator |
