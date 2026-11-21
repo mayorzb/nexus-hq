@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 361 |
-| sightings | 21722 |
-| liquid sightings | 8658 |
-| first liquid sightings = unique tokens with an outcome row | 1801 |
-|   young | 1264 |
-|   mature | 470 |
+| eval-2 scans | 362 |
+| sightings | 21781 |
+| liquid sightings | 8683 |
+| first liquid sightings = unique tokens with an outcome row | 1805 |
+|   young | 1265 |
+|   mature | 473 |
 |   other | 67 |
 | young with a comparator (cap 2) | 214 |
-| young without a comparator | 1050 |
+| young without a comparator | 1051 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 127 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 956/1264, no_valid_entry 42/1264, pending 6/1264, unknown 195/1264, unreliable 65/1264
-- mature: labelled 431/470, pending 4/470, unknown 35/470
-- no valid entry: young 42/1264, mature 0/470
+- young: labelled 957/1265, no_valid_entry 42/1265, pending 4/1265, unknown 196/1265, unreliable 66/1265
+- mature: labelled 432/473, pending 6/473, unknown 35/473
+- no valid entry: young 42/1265, mature 0/473
 
 ## Effect (after costs; unit = scan)
 
@@ -1379,11 +1379,12 @@
 | 20261121T125624 | RED | LIFE | 29227.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T125624 | RED | Lucia | 27830.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T125624 | RED | Emily | 16868.76 | labelled | 36.62 |  |  |  | None | no eligible comparator |
-| 20261121T135623 | NEUTRAL | Emily | 94401.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T135623 | NEUTRAL | Emily | 94401.70 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Spyrav | 86550.09 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Bigfoot | 15212.04 | labelled | 36.49 |  |  |  | None | no eligible comparator |
-| 20261121T145622 | NEUTRAL | SGREM | 31372.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T145622 | NEUTRAL | SAKURA | 29350.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T145622 | NEUTRAL | SGREM | 31372.96 | labelled | 37.16 |  |  |  | None | no eligible comparator |
+| 20261121T145622 | NEUTRAL | SAKURA | 29350.37 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261121T145622 | NEUTRAL | nudes | 22510.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T155622 | NEUTRAL | NOHR | 63697.96 | pending | None | RIEMANN | 54501.79 | pending | None |  |
 | 20261121T155622 | NEUTRAL | COVID | 30962.86 | pending | None | RIEMANN | 54501.79 | pending | None |  |
+| 20261121T165621 | NEUTRAL | Air | 19879.22 | pending | None |  |  |  | None | no eligible comparator |
