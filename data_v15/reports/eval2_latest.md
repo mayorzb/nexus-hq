@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 364 |
-| sightings | 21899 |
-| liquid sightings | 8730 |
-| first liquid sightings = unique tokens with an outcome row | 1812 |
-|   young | 1268 |
-|   mature | 476 |
+| eval-2 scans | 365 |
+| sightings | 21959 |
+| liquid sightings | 8755 |
+| first liquid sightings = unique tokens with an outcome row | 1818 |
+|   young | 1272 |
+|   mature | 478 |
 |   other | 68 |
-| young with a comparator (cap 2) | 214 |
-| young without a comparator | 1054 |
+| young with a comparator (cap 2) | 216 |
+| young without a comparator | 1056 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 129 |
 | scans contributing a complete pair | 82 |
 
 ## 60m outcome status by group
 
-- young: labelled 959/1268, no_valid_entry 42/1268, pending 4/1268, unknown 197/1268, unreliable 66/1268
-- mature: labelled 437/476, pending 4/476, unknown 35/476
-- no valid entry: young 42/1268, mature 0/476
+- young: labelled 960/1272, no_valid_entry 42/1272, pending 7/1272, unknown 197/1272, unreliable 66/1272
+- mature: labelled 439/478, pending 4/478, unknown 35/478
+- no valid entry: young 42/1272, mature 0/478
 
 ## Effect (after costs; unit = scan)
 
@@ -118,6 +118,7 @@
 - 20261120T095642-8mnJZnxa: AMC  (20261120T095642), AMC (20261120T095642)
 - 20261121T045629-GKFSuSc9: PENNY (20261121T045629), DOOMER (20261121T045629)
 - 20261121T155622-dkpuQdje: NOHR (20261121T155622), COVID (20261121T155622)
+- 20261121T195620-EV7J2QaP: HOUSE (20261121T195620), pointy hat (20261121T195620)
 
 ## Every pair
 
@@ -1389,5 +1390,9 @@
 | 20261121T155622 | NEUTRAL | COVID | 30962.86 | labelled | -100.0 | RIEMANN | 54501.79 | labelled | 37.43 |  |
 | 20261121T165621 | NEUTRAL | Air | 19879.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T175620 | GREEN | CLAUDIA | 74942.50 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T175620 | GREEN | BOTTOM | 29647.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T175620 | GREEN | BOTTOM | 29647.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261121T185620 | GREEN | UGOS | 25592.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T195620 | GREEN | HOUSE | 72469.94 | pending | None | chud | 46974.65 | pending | None |  |
+| 20261121T195620 | GREEN | pointy hat | 29470.87 | pending | None | chud | 46974.65 | pending | None |  |
+| 20261121T195620 | GREEN | TA | 18347.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T195620 | GREEN | ILY | 16111.92 | pending | None |  |  |  | None | no eligible comparator |
