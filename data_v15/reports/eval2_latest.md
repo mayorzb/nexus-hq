@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 359 |
-| sightings | 21602 |
-| liquid sightings | 8607 |
-| first liquid sightings = unique tokens with an outcome row | 1791 |
-|   young | 1259 |
-|   mature | 466 |
+| eval-2 scans | 360 |
+| sightings | 21663 |
+| liquid sightings | 8632 |
+| first liquid sightings = unique tokens with an outcome row | 1795 |
+|   young | 1262 |
+|   mature | 467 |
 |   other | 66 |
 | young with a comparator (cap 2) | 212 |
-| young without a comparator | 1047 |
+| young without a comparator | 1050 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 127 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 950/1259, no_valid_entry 42/1259, pending 7/1259, unknown 195/1259, unreliable 65/1259
-- mature: labelled 430/466, pending 1/466, unknown 35/466
-- no valid entry: young 42/1259, mature 0/466
+- young: labelled 954/1262, no_valid_entry 42/1262, pending 6/1262, unknown 195/1262, unreliable 65/1262
+- mature: labelled 430/467, pending 2/467, unknown 35/467
+- no valid entry: young 42/1262, mature 0/467
 
 ## Effect (after costs; unit = scan)
 
@@ -1374,10 +1374,13 @@
 | 20261121T105625 | DEEP_RED | XV | 41733.54 | labelled | -42.91 |  |  |  | None | no eligible comparator |
 | 20261121T115624 | DEEP_RED | WILL | 15370.94 | labelled | -57.59 |  |  |  | None | no eligible comparator |
 | 20261121T115624 | DEEP_RED | WILL | 15021.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261121T125624 | RED | USDBURN | 90089.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T125624 | RED | LIFE | 29227.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T125624 | RED | Lucia | 27830.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T125624 | RED | Emily | 16868.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | USDBURN | 90089.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | LIFE | 29227.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | Lucia | 27830.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261121T125624 | RED | Emily | 16868.76 | labelled | 36.62 |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Emily | 94401.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Spyrav | 86550.09 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T135623 | NEUTRAL | Bigfoot | 15212.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T145622 | NEUTRAL | SGREM | 31372.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T145622 | NEUTRAL | SAKURA | 29350.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T145622 | NEUTRAL | nudes | 22510.31 | pending | None |  |  |  | None | no eligible comparator |
