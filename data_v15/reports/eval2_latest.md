@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 387 |
-| sightings | 23333 |
-| liquid sightings | 9305 |
-| first liquid sightings = unique tokens with an outcome row | 1918 |
-|   young | 1329 |
-|   mature | 519 |
-|   other | 70 |
+| eval-2 scans | 388 |
+| sightings | 23392 |
+| liquid sightings | 9329 |
+| first liquid sightings = unique tokens with an outcome row | 1922 |
+|   young | 1331 |
+|   mature | 520 |
+|   other | 71 |
 | young with a comparator (cap 2) | 225 |
-| young without a comparator | 1104 |
+| young without a comparator | 1106 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 81 |
-| complete pairs (both 60m outcomes labelled) | 136 |
-| scans contributing a complete pair | 86 |
+|   pairs: young or mature outcome not yet usable | 79 |
+| complete pairs (both 60m outcomes labelled) | 138 |
+| scans contributing a complete pair | 87 |
 
 ## 60m outcome status by group
 
-- young: labelled 1007/1329, no_valid_entry 43/1329, pending 8/1329, unknown 204/1329, unreliable 67/1329
-- mature: labelled 478/519, pending 2/519, unknown 39/519
-- no valid entry: young 43/1329, mature 0/519
+- young: labelled 1009/1331, no_valid_entry 43/1331, pending 8/1331, unknown 204/1331, unreliable 67/1331
+- mature: labelled 479/520, pending 2/520, unknown 39/520
+- no valid entry: young 43/1331, mature 0/520
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.96 points, 95% interval (-37.9, -16.22); scans with young worse 61/86
-- Pairs with young worse: 98/136 (72.1%); pair mean -24.24, median -27.38
-- Big loss (<= -20%): young 95/136, mature 35/136
+- Scan-level mean difference (young - mature): -27.14 points, 95% interval (-37.73, -16.24); scans with young worse 62/87
+- Pairs with young worse: 100/138 (72.5%); pair mean -24.5, median -27.38
+- Big loss (<= -20%): young 97/138, mature 37/138
 
 ## Comparator reuse (cap 2)
 
@@ -1449,11 +1449,13 @@
 | 20261122T135607 | NEUTRAL | MCAT | 23431.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T145606 | NEUTRAL | MIKEDYSON | 30407.88 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T155606 | NEUTRAL | MIKEDYSON | 22745.85 | labelled | -36.54 |  |  |  | None | no eligible comparator |
-| 20261122T165605 | NEUTRAL | GIB | 31497.16 | pending | None | MCAT | 33494.23 | pending | None |  |
-| 20261122T165605 | NEUTRAL | dolph | 30122.09 | pending | None | MCAT | 33494.23 | pending | None |  |
+| 20261122T165605 | NEUTRAL | GIB | 31497.16 | labelled | -100.0 | MCAT | 33494.23 | labelled | -29.35 |  |
+| 20261122T165605 | NEUTRAL | dolph | 30122.09 | labelled | -43.81 | MCAT | 33494.23 | labelled | -29.35 |  |
 | 20261122T165605 | NEUTRAL | FOAM | 17331.07 | pending | None |  |  |  | None | comparators used twice |
 | 20261122T175604 | NEUTRAL | Lucky | 22088.62 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | OMGAI | 17003.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | Inu | 15547.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T185604 | NEUTRAL | SINGULARTY | 16098.26 | pending | None |  |  |  | None | no eligible comparator |
