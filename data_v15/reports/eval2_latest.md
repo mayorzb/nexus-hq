@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 369 |
-| sightings | 22216 |
-| liquid sightings | 8854 |
-| first liquid sightings = unique tokens with an outcome row | 1834 |
-|   young | 1280 |
-|   mature | 485 |
+| eval-2 scans | 370 |
+| sightings | 22281 |
+| liquid sightings | 8882 |
+| first liquid sightings = unique tokens with an outcome row | 1843 |
+|   young | 1287 |
+|   mature | 487 |
 |   other | 69 |
 | young with a comparator (cap 2) | 218 |
-| young without a comparator | 1062 |
+| young without a comparator | 1069 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 133 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 970/1280, no_valid_entry 42/1280, pending 3/1280, unknown 199/1280, unreliable 66/1280
-- mature: labelled 446/485, pending 3/485, unknown 36/485
-- no valid entry: young 42/1280, mature 0/485
+- young: labelled 971/1287, no_valid_entry 42/1287, pending 9/1287, unknown 199/1287, unreliable 66/1287
+- mature: labelled 449/487, pending 2/487, unknown 36/487
+- no valid entry: young 42/1287, mature 0/487
 
 ## Effect (after costs; unit = scan)
 
@@ -1403,5 +1403,12 @@
 | 20261121T215618 | GREEN | UrAnus | 32677.42 | labelled | -43.99 | HODL | 28512.71 | labelled | 37.1 |  |
 | 20261121T215618 | GREEN | BTC | 31219.61 | labelled | -37.23 |  |  |  | None | comparators used twice |
 | 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261121T225618 | GREEN | Mfer | 21698.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T225618 | GREEN | Mfer | 21698.63 | labelled | -45.57 |  |  |  | None | no eligible comparator |
 | 20261121T235617 | GREEN | BIGFOOT | 41124.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | STREETS | 56642.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | RIZZMAS3 | 28729.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | Doritos | 28202.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | time | 27038.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | VICE | 20222.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | MANEKI | 20051.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | BOOBILLIONS | 18350.84 | pending | None |  |  |  | None | no eligible comparator |
