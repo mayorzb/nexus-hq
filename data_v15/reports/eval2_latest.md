@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 379 |
-| sightings | 22857 |
-| liquid sightings | 9115 |
-| first liquid sightings = unique tokens with an outcome row | 1886 |
-|   young | 1310 |
-|   mature | 506 |
+| eval-2 scans | 380 |
+| sightings | 22918 |
+| liquid sightings | 9138 |
+| first liquid sightings = unique tokens with an outcome row | 1890 |
+|   young | 1312 |
+|   mature | 508 |
 |   other | 70 |
 | young with a comparator (cap 2) | 221 |
-| young without a comparator | 1089 |
+| young without a comparator | 1091 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 993/1310, no_valid_entry 43/1310, pending 6/1310, unknown 202/1310, unreliable 66/1310
-- mature: labelled 465/506, pending 5/506, unknown 36/506
-- no valid entry: young 43/1310, mature 0/506
+- young: labelled 994/1312, no_valid_entry 43/1312, pending 6/1312, unknown 203/1312, unreliable 66/1312
+- mature: labelled 467/508, pending 5/508, unknown 36/508
+- no valid entry: young 43/1312, mature 0/508
 
 ## Effect (after costs; unit = scan)
 
@@ -1422,7 +1422,7 @@
 | 20261122T035615 | GREEN | SI | 28932.59 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | GTL | 21367.55 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | SI | 15098.75 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261122T045614 | GREEN | TOAD | 38943.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | TOAD | 38943.87 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T045614 | GREEN | Snowball | 26278.97 | labelled | -31.62 |  |  |  | None | no eligible comparator |
 | 20261122T045614 | GREEN | SNOWPAD | 17904.31 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T055613 | GREEN | snowball | 23345.99 | labelled | -29.9 |  |  |  | None | no eligible comparator |
@@ -1432,7 +1432,9 @@
 | 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | Fosghost | 88962.67 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | 超级社区 | 15251.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T085611 | GREEN | Snowballs | 21165.92 | pending | None | RGB | 17949.17 | pending | None |  |
+| 20261122T085611 | GREEN | Snowballs | 21165.92 | labelled | -100.0 | RGB | 17949.17 | pending | None |  |
 | 20261122T095610 | GREEN | Helio | 27305.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | Helio | 15530.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | FIREBALL | 15296.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T105609 | GREEN | HIPPO | 21316.42 | pending | None |  |  |  | None | no eligible comparator |
