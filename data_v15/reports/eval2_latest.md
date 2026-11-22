@@ -6,13 +6,13 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 388 |
-| sightings | 23392 |
-| liquid sightings | 9329 |
-| first liquid sightings = unique tokens with an outcome row | 1922 |
+| eval-2 scans | 389 |
+| sightings | 23452 |
+| liquid sightings | 9352 |
+| first liquid sightings = unique tokens with an outcome row | 1926 |
 |   young | 1331 |
-|   mature | 520 |
-|   other | 71 |
+|   mature | 523 |
+|   other | 72 |
 | young with a comparator (cap 2) | 225 |
 | young without a comparator | 1106 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1009/1331, no_valid_entry 43/1331, pending 8/1331, unknown 204/1331, unreliable 67/1331
-- mature: labelled 479/520, pending 2/520, unknown 39/520
-- no valid entry: young 43/1331, mature 0/520
+- young: labelled 1012/1331, no_valid_entry 43/1331, pending 4/1331, unknown 204/1331, unreliable 68/1331
+- mature: labelled 480/523, pending 4/523, unknown 39/523
+- no valid entry: young 43/1331, mature 0/523
 
 ## Effect (after costs; unit = scan)
 
@@ -1452,10 +1452,10 @@
 | 20261122T165605 | NEUTRAL | GIB | 31497.16 | labelled | -100.0 | MCAT | 33494.23 | labelled | -29.35 |  |
 | 20261122T165605 | NEUTRAL | dolph | 30122.09 | labelled | -43.81 | MCAT | 33494.23 | labelled | -29.35 |  |
 | 20261122T165605 | NEUTRAL | FOAM | 17331.07 | pending | None |  |  |  | None | comparators used twice |
-| 20261122T175604 | NEUTRAL | Lucky | 22088.62 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T175604 | NEUTRAL | OMGAI | 17003.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T175604 | NEUTRAL | Lucky | 22088.62 | labelled | -37.84 |  |  |  | None | no eligible comparator |
+| 20261122T175604 | NEUTRAL | OMGAI | 17003.42 | labelled | -31.88 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T175604 | NEUTRAL | Inu | 15547.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T175604 | NEUTRAL | Inu | 15547.03 | labelled | -43.34 |  |  |  | None | no eligible comparator |
+| 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T185604 | NEUTRAL | SINGULARTY | 16098.26 | pending | None |  |  |  | None | no eligible comparator |
