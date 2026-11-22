@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 375 |
-| sightings | 22606 |
-| liquid sightings | 9014 |
-| first liquid sightings = unique tokens with an outcome row | 1868 |
-|   young | 1301 |
-|   mature | 497 |
+| eval-2 scans | 376 |
+| sightings | 22670 |
+| liquid sightings | 9040 |
+| first liquid sightings = unique tokens with an outcome row | 1873 |
+|   young | 1304 |
+|   mature | 499 |
 |   other | 70 |
 | young with a comparator (cap 2) | 220 |
-| young without a comparator | 1081 |
+| young without a comparator | 1084 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 985/1301, no_valid_entry 43/1301, pending 7/1301, unknown 200/1301, unreliable 66/1301
-- mature: labelled 457/497, pending 4/497, unknown 36/497
-- no valid entry: young 43/1301, mature 0/497
+- young: labelled 987/1304, no_valid_entry 43/1304, pending 7/1304, unknown 201/1304, unreliable 66/1304
+- mature: labelled 459/499, pending 4/499, unknown 36/499
+- no valid entry: young 43/1304, mature 0/499
 
 ## Effect (after costs; unit = scan)
 
@@ -1421,9 +1421,12 @@
 | 20261122T025616 | GREEN | Livestream | 21444.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | SI | 28932.59 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | GTL | 21367.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T035615 | GREEN | SI | 15098.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T035615 | GREEN | SI | 15098.75 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T045614 | GREEN | TOAD | 38943.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T045614 | GREEN | Snowball | 26278.97 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T045614 | GREEN | SNOWPAD | 17904.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | Snowball | 26278.97 | labelled | -31.62 |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | SNOWPAD | 17904.31 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T055613 | GREEN | snowball | 23345.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T055613 | GREEN | CORONA | 17345.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | Draspl | 89969.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | TC | 18942.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | pending | None |  |  |  | None | no eligible comparator |
