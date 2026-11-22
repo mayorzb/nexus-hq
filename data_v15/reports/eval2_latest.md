@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 381 |
-| sightings | 22977 |
-| liquid sightings | 9160 |
-| first liquid sightings = unique tokens with an outcome row | 1892 |
-|   young | 1313 |
-|   mature | 509 |
+| eval-2 scans | 382 |
+| sightings | 23037 |
+| liquid sightings | 9185 |
+| first liquid sightings = unique tokens with an outcome row | 1898 |
+|   young | 1316 |
+|   mature | 512 |
 |   other | 70 |
-| young with a comparator (cap 2) | 221 |
-| young without a comparator | 1092 |
+| young with a comparator (cap 2) | 223 |
+| young without a comparator | 1093 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 78 |
+|   pairs: young or mature outcome not yet usable | 80 |
 | complete pairs (both 60m outcomes labelled) | 135 |
 | scans contributing a complete pair | 85 |
 
 ## 60m outcome status by group
 
-- young: labelled 997/1313, no_valid_entry 43/1313, pending 4/1313, unknown 203/1313, unreliable 66/1313
-- mature: labelled 469/509, pending 4/509, unknown 36/509
-- no valid entry: young 43/1313, mature 0/509
+- young: labelled 999/1316, no_valid_entry 43/1316, pending 4/1316, unknown 204/1316, unreliable 66/1316
+- mature: labelled 470/512, pending 5/512, unknown 37/512
+- no valid entry: young 43/1316, mature 0/512
 
 ## Effect (after costs; unit = scan)
 
@@ -121,6 +121,7 @@
 - 20261121T195620-EV7J2QaP: HOUSE (20261121T195620), pointy hat (20261121T195620)
 - 20261121T215618-14coJKKE: FINGERS (20261121T215618), UrAnus (20261121T215618)
 - 20261122T015616-9msk9ehE: MANDY (20261122T015616), GRAUDIA (20261122T015616)
+- 20261122T125608-3K6EUFoA: USOI (20261122T125608), MCAT (20261122T125608)
 
 ## Every pair
 
@@ -1429,13 +1430,16 @@
 | 20261122T055613 | GREEN | CORONA | 17345.45 | labelled | -33.66 |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | Draspl | 89969.01 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | TC | 18942.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | Fosghost | 88962.67 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | 超级社区 | 15251.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T085611 | GREEN | Snowballs | 21165.92 | labelled | -100.0 | RGB | 17949.17 | pending | None |  |
 | 20261122T095610 | GREEN | Helio | 27305.57 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | Helio | 15530.52 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | FIREBALL | 15296.27 | labelled | -31.0 |  |  |  | None | no eligible comparator |
-| 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T105609 | GREEN | HIPPO | 21316.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T105609 | GREEN | HIPPO | 21316.42 | labelled | -29.56 |  |  |  | None | no eligible comparator |
 | 20261122T115608 | GREEN | AIRBALL | 17160.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T125608 | GREEN | USOI | 29600.02 | pending | None | GIFTER | 15569.81 | pending | None |  |
+| 20261122T125608 | GREEN | MCAT | 22457.63 | pending | None | GIFTER | 15569.81 | pending | None |  |
+| 20261122T125608 | GREEN | testicles | 17134.88 | pending | None |  |  |  | None | comparators used twice |
