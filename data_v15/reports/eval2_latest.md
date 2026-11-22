@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 377 |
-| sightings | 22732 |
-| liquid sightings | 9065 |
-| first liquid sightings = unique tokens with an outcome row | 1877 |
-|   young | 1306 |
-|   mature | 501 |
+| eval-2 scans | 378 |
+| sightings | 22795 |
+| liquid sightings | 9090 |
+| first liquid sightings = unique tokens with an outcome row | 1881 |
+|   young | 1307 |
+|   mature | 504 |
 |   other | 70 |
-| young with a comparator (cap 2) | 220 |
+| young with a comparator (cap 2) | 221 |
 | young without a comparator | 1086 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 135 |
 | scans contributing a complete pair | 85 |
 
 ## 60m outcome status by group
 
-- young: labelled 989/1306, no_valid_entry 43/1306, pending 7/1306, unknown 201/1306, unreliable 66/1306
-- mature: labelled 461/501, pending 4/501, unknown 36/501
-- no valid entry: young 43/1306, mature 0/501
+- young: labelled 991/1307, no_valid_entry 43/1307, pending 6/1307, unknown 201/1307, unreliable 66/1307
+- mature: labelled 463/504, pending 5/504, unknown 36/504
+- no valid entry: young 43/1307, mature 0/504
 
 ## Effect (after costs; unit = scan)
 
@@ -1427,8 +1427,9 @@
 | 20261122T045614 | GREEN | SNOWPAD | 17904.31 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T055613 | GREEN | snowball | 23345.99 | labelled | -29.9 |  |  |  | None | no eligible comparator |
 | 20261122T055613 | GREEN | CORONA | 17345.45 | labelled | -33.66 |  |  |  | None | no eligible comparator |
-| 20261122T065612 | NEUTRAL | Draspl | 89969.01 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T065612 | NEUTRAL | TC | 18942.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | Draspl | 89969.01 | labelled | 37.58 |  |  |  | None | no eligible comparator |
+| 20261122T065612 | NEUTRAL | TC | 18942.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | Fosghost | 88962.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | 超级社区 | 15251.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T085611 | GREEN | Snowballs | 21165.92 | pending | None | RGB | 17949.17 | pending | None |  |

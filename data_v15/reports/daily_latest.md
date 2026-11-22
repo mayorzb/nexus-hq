@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-22 08:04 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-22 09:03 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-22 08:04 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 08:56 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 64 / 25 | OK |
-| Deep-checked coins left UNVERIFIED | 33 of 152 (22%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 10 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 249 of 401 | WARN |
-| Paper candidates (last 24h) | 32 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 474 / 86 | ALERT |
+| Tokens seen / liquid (median per scan) | 63 / 25 | OK |
+| Deep-checked coins left UNVERIFIED | 34 of 160 (21%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 8 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 265 of 425 | WARN |
+| Paper candidates (last 24h) | 34 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 488 / 89 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (13:56), CATE (14:56), CATE (15:56), TROLL (15:56), CATE (16:56), TROLL (16:56), CATE (17:56), TROLL (17:56), CATE (18:56), TROLL (19:56), TROLL (20:56), HODL (21:56), CATE (21:56), TROLL (21:56), HODL (22:56), CATE (22:56), TROLL (22:56), TROLL (00:56), CATE (00:56), TROLL (01:56), CATE (01:56), CATE (02:56), TROLL (02:56), TROLL (03:56), CATE (04:56), TROLL (04:56), CATE (05:56), TROLL (05:56), CATE (06:56), TROLL (06:56), CATE (07:56), TROLL (07:56)
+Candidates: CATE (13:56), CATE (14:56), CATE (15:56), TROLL (15:56), CATE (16:56), TROLL (16:56), CATE (17:56), TROLL (17:56), CATE (18:56), TROLL (19:56), TROLL (20:56), HODL (21:56), CATE (21:56), TROLL (21:56), HODL (22:56), CATE (22:56), TROLL (22:56), TROLL (00:56), CATE (00:56), TROLL (01:56), CATE (01:56), CATE (02:56), TROLL (02:56), TROLL (03:56), CATE (04:56), TROLL (04:56), CATE (05:56), TROLL (05:56), CATE (06:56), TROLL (06:56), CATE (07:56), TROLL (07:56), CATE (08:56), TROLL (08:56)
