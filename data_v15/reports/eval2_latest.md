@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 391 |
-| sightings | 23576 |
-| liquid sightings | 9400 |
-| first liquid sightings = unique tokens with an outcome row | 1937 |
-|   young | 1337 |
-|   mature | 528 |
-|   other | 72 |
-| young with a comparator (cap 2) | 226 |
-| young without a comparator | 1111 |
+| eval-2 scans | 392 |
+| sightings | 23637 |
+| liquid sightings | 9427 |
+| first liquid sightings = unique tokens with an outcome row | 1942 |
+|   young | 1339 |
+|   mature | 530 |
+|   other | 73 |
+| young with a comparator (cap 2) | 227 |
+| young without a comparator | 1112 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 80 |
+|   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 138 |
 | scans contributing a complete pair | 87 |
 
 ## 60m outcome status by group
 
-- young: labelled 1014/1337, no_valid_entry 43/1337, pending 8/1337, unknown 204/1337, unreliable 68/1337
-- mature: labelled 484/528, pending 5/528, unknown 39/528
-- no valid entry: young 43/1337, mature 0/528
+- young: labelled 1015/1339, no_valid_entry 43/1339, pending 7/1339, unknown 205/1339, unreliable 69/1339
+- mature: labelled 485/530, pending 6/530, unknown 39/530
+- no valid entry: young 43/1339, mature 0/530
 
 ## Effect (after costs; unit = scan)
 
@@ -1451,7 +1451,7 @@
 | 20261122T155606 | NEUTRAL | MIKEDYSON | 22745.85 | labelled | -36.54 |  |  |  | None | no eligible comparator |
 | 20261122T165605 | NEUTRAL | GIB | 31497.16 | labelled | -100.0 | MCAT | 33494.23 | labelled | -29.35 |  |
 | 20261122T165605 | NEUTRAL | dolph | 30122.09 | labelled | -43.81 | MCAT | 33494.23 | labelled | -29.35 |  |
-| 20261122T165605 | NEUTRAL | FOAM | 17331.07 | pending | None |  |  |  | None | comparators used twice |
+| 20261122T165605 | NEUTRAL | FOAM | 17331.07 | unknown | None |  |  |  | None | comparators used twice |
 | 20261122T175604 | NEUTRAL | Lucky | 22088.62 | labelled | -37.84 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | OMGAI | 17003.42 | labelled | -31.88 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | pending | None |  |  |  | None | no eligible comparator |
@@ -1459,9 +1459,11 @@
 | 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T185604 | NEUTRAL | SINGULARTY | 16098.26 | labelled | -41.85 |  |  |  | None | no eligible comparator |
-| 20261122T205603 | NEUTRAL | USOI | 28646.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T205603 | NEUTRAL | USOI | 28646.66 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261122T205603 | NEUTRAL | ASS | 20656.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T205603 | NEUTRAL | IF | 18336.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T205603 | NEUTRAL | IF | 18336.66 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261122T215603 | NEUTRAL | MINELIUS | 125140.49 | pending | None | MCAT | 113861.66 | pending | None |  |
 | 20261122T215603 | NEUTRAL | FSDV15 | 39893.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T215603 | NEUTRAL | Wojak | 22285.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T225602 | NEUTRAL | COPIUM | 52481.57 | pending | None | UCASH | 77940.85 | pending | None |  |
+| 20261122T225602 | NEUTRAL | XMAS | 24613.24 | pending | None |  |  |  | None | no eligible comparator |
