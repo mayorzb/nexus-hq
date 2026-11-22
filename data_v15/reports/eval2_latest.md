@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 385 |
-| sightings | 23214 |
-| liquid sightings | 9254 |
-| first liquid sightings = unique tokens with an outcome row | 1908 |
-|   young | 1321 |
-|   mature | 517 |
+| eval-2 scans | 386 |
+| sightings | 23273 |
+| liquid sightings | 9278 |
+| first liquid sightings = unique tokens with an outcome row | 1912 |
+|   young | 1324 |
+|   mature | 518 |
 |   other | 70 |
-| young with a comparator (cap 2) | 223 |
-| young without a comparator | 1098 |
+| young with a comparator (cap 2) | 225 |
+| young without a comparator | 1099 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
+|   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 136 |
 | scans contributing a complete pair | 86 |
 
 ## 60m outcome status by group
 
-- young: labelled 1005/1321, no_valid_entry 43/1321, pending 2/1321, unknown 204/1321, unreliable 67/1321
-- mature: labelled 476/517, pending 3/517, unknown 38/517
-- no valid entry: young 43/1321, mature 0/517
+- young: labelled 1006/1324, no_valid_entry 43/1324, pending 4/1324, unknown 204/1324, unreliable 67/1324
+- mature: labelled 477/518, pending 2/518, unknown 39/518
+- no valid entry: young 43/1324, mature 0/518
 
 ## Effect (after costs; unit = scan)
 
@@ -122,6 +122,7 @@
 - 20261121T215618-14coJKKE: FINGERS (20261121T215618), UrAnus (20261121T215618)
 - 20261122T015616-9msk9ehE: MANDY (20261122T015616), GRAUDIA (20261122T015616)
 - 20261122T125608-3K6EUFoA: USOI (20261122T125608), MCAT (20261122T125608)
+- 20261122T165605-v4GK8f24: GIB (20261122T165605), dolph (20261122T165605)
 
 ## Every pair
 
@@ -1446,5 +1447,8 @@
 | 20261122T135607 | NEUTRAL | 大胆币 | 28911.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T135607 | NEUTRAL | three | 26484.26 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T135607 | NEUTRAL | MCAT | 23431.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T145606 | NEUTRAL | MIKEDYSON | 30407.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T145606 | NEUTRAL | MIKEDYSON | 30407.88 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T155606 | NEUTRAL | MIKEDYSON | 22745.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T165605 | NEUTRAL | GIB | 31497.16 | pending | None | MCAT | 33494.23 | pending | None |  |
+| 20261122T165605 | NEUTRAL | dolph | 30122.09 | pending | None | MCAT | 33494.23 | pending | None |  |
+| 20261122T165605 | NEUTRAL | FOAM | 17331.07 | pending | None |  |  |  | None | comparators used twice |
