@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 382 |
-| sightings | 23037 |
-| liquid sightings | 9185 |
-| first liquid sightings = unique tokens with an outcome row | 1898 |
-|   young | 1316 |
-|   mature | 512 |
+| eval-2 scans | 383 |
+| sightings | 23098 |
+| liquid sightings | 9211 |
+| first liquid sightings = unique tokens with an outcome row | 1903 |
+|   young | 1319 |
+|   mature | 514 |
 |   other | 70 |
 | young with a comparator (cap 2) | 223 |
-| young without a comparator | 1093 |
+| young without a comparator | 1096 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 80 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 999/1316, no_valid_entry 43/1316, pending 4/1316, unknown 204/1316, unreliable 66/1316
-- mature: labelled 470/512, pending 5/512, unknown 37/512
-- no valid entry: young 43/1316, mature 0/512
+- young: labelled 1000/1319, no_valid_entry 43/1319, pending 6/1319, unknown 204/1319, unreliable 66/1319
+- mature: labelled 471/514, pending 6/514, unknown 37/514
+- no valid entry: young 43/1319, mature 0/514
 
 ## Effect (after costs; unit = scan)
 
@@ -1439,7 +1439,10 @@
 | 20261122T095610 | GREEN | FIREBALL | 15296.27 | labelled | -31.0 |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | HIPPO | 21316.42 | labelled | -29.56 |  |  |  | None | no eligible comparator |
-| 20261122T115608 | GREEN | AIRBALL | 17160.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T115608 | GREEN | AIRBALL | 17160.15 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T125608 | GREEN | USOI | 29600.02 | pending | None | GIFTER | 15569.81 | pending | None |  |
 | 20261122T125608 | GREEN | MCAT | 22457.63 | pending | None | GIFTER | 15569.81 | pending | None |  |
 | 20261122T125608 | GREEN | testicles | 17134.88 | pending | None |  |  |  | None | comparators used twice |
+| 20261122T135607 | NEUTRAL | 大胆币 | 28911.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T135607 | NEUTRAL | three | 26484.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T135607 | NEUTRAL | MCAT | 23431.04 | pending | None |  |  |  | None | no eligible comparator |
