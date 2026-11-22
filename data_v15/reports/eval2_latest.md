@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 368 |
-| sightings | 22151 |
-| liquid sightings | 8831 |
-| first liquid sightings = unique tokens with an outcome row | 1832 |
-|   young | 1279 |
+| eval-2 scans | 369 |
+| sightings | 22216 |
+| liquid sightings | 8854 |
+| first liquid sightings = unique tokens with an outcome row | 1834 |
+|   young | 1280 |
 |   mature | 485 |
-|   other | 68 |
+|   other | 69 |
 | young with a comparator (cap 2) | 218 |
-| young without a comparator | 1061 |
+| young without a comparator | 1062 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
-| complete pairs (both 60m outcomes labelled) | 131 |
-| scans contributing a complete pair | 83 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 133 |
+| scans contributing a complete pair | 84 |
 
 ## 60m outcome status by group
 
-- young: labelled 967/1279, no_valid_entry 42/1279, pending 5/1279, unknown 199/1279, unreliable 66/1279
-- mature: labelled 443/485, pending 6/485, unknown 36/485
-- no valid entry: young 42/1279, mature 0/485
+- young: labelled 970/1280, no_valid_entry 42/1280, pending 3/1280, unknown 199/1280, unreliable 66/1280
+- mature: labelled 446/485, pending 3/485, unknown 36/485
+- no valid entry: young 42/1280, mature 0/485
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.78 points, 95% interval (-37.26, -14.42); scans with young worse 58/83
-- Pairs with young worse: 93/131 (71.0%); pair mean -22.97, median -26.8
-- Big loss (<= -20%): young 90/131, mature 34/131
+- Scan-level mean difference (young - mature): -26.38 points, 95% interval (-37.33, -15.4); scans with young worse 59/84
+- Pairs with young worse: 95/133 (71.4%); pair mean -23.77, median -27.29
+- Big loss (<= -20%): young 92/133, mature 34/133
 
 ## Comparator reuse (cap 2)
 
@@ -1399,8 +1399,9 @@
 | 20261121T195620 | GREEN | ILY | 16111.92 | labelled | -28.85 |  |  |  | None | no eligible comparator |
 | 20261121T205619 | GREEN | SIDOOR | 21240.55 | labelled | 36.86 |  |  |  | None | no eligible comparator |
 | 20261121T205619 | GREEN | CLAWDIA | 19969.35 | labelled | -58.8 |  |  |  | None | no eligible comparator |
-| 20261121T215618 | GREEN | FINGERS | 36004.37 | pending | None | HODL | 28512.71 | pending | None |  |
-| 20261121T215618 | GREEN | UrAnus | 32677.42 | pending | None | HODL | 28512.71 | pending | None |  |
-| 20261121T215618 | GREEN | BTC | 31219.61 | pending | None |  |  |  | None | comparators used twice |
+| 20261121T215618 | GREEN | FINGERS | 36004.37 | labelled | -34.77 | HODL | 28512.71 | labelled | 37.1 |  |
+| 20261121T215618 | GREEN | UrAnus | 32677.42 | labelled | -43.99 | HODL | 28512.71 | labelled | 37.1 |  |
+| 20261121T215618 | GREEN | BTC | 31219.61 | labelled | -37.23 |  |  |  | None | comparators used twice |
 | 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T225618 | GREEN | Mfer | 21698.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T235617 | GREEN | BIGFOOT | 41124.73 | pending | None |  |  |  | None | no eligible comparator |
