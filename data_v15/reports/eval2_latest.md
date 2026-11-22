@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 383 |
-| sightings | 23098 |
-| liquid sightings | 9211 |
-| first liquid sightings = unique tokens with an outcome row | 1903 |
-|   young | 1319 |
-|   mature | 514 |
+| eval-2 scans | 384 |
+| sightings | 23156 |
+| liquid sightings | 9233 |
+| first liquid sightings = unique tokens with an outcome row | 1906 |
+|   young | 1320 |
+|   mature | 516 |
 |   other | 70 |
 | young with a comparator (cap 2) | 223 |
-| young without a comparator | 1096 |
+| young without a comparator | 1097 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 80 |
-| complete pairs (both 60m outcomes labelled) | 135 |
-| scans contributing a complete pair | 85 |
+|   pairs: young or mature outcome not yet usable | 79 |
+| complete pairs (both 60m outcomes labelled) | 136 |
+| scans contributing a complete pair | 86 |
 
 ## 60m outcome status by group
 
-- young: labelled 1000/1319, no_valid_entry 43/1319, pending 6/1319, unknown 204/1319, unreliable 66/1319
-- mature: labelled 471/514, pending 6/514, unknown 37/514
-- no valid entry: young 43/1319, mature 0/514
+- young: labelled 1002/1320, no_valid_entry 43/1320, pending 4/1320, unknown 204/1320, unreliable 67/1320
+- mature: labelled 474/516, pending 4/516, unknown 38/516
+- no valid entry: young 43/1320, mature 0/516
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.46 points, 95% interval (-37.34, -15.51); scans with young worse 60/85
-- Pairs with young worse: 97/135 (71.9%); pair mean -23.9, median -27.29
-- Big loss (<= -20%): young 94/135, mature 34/135
+- Scan-level mean difference (young - mature): -26.96 points, 95% interval (-37.9, -16.22); scans with young worse 61/86
+- Pairs with young worse: 98/136 (72.1%); pair mean -24.24, median -27.38
+- Big loss (<= -20%): young 95/136, mature 35/136
 
 ## Comparator reuse (cap 2)
 
@@ -1433,16 +1433,17 @@
 | 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | Fosghost | 88962.67 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | 超级社区 | 15251.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T085611 | GREEN | Snowballs | 21165.92 | labelled | -100.0 | RGB | 17949.17 | pending | None |  |
+| 20261122T085611 | GREEN | Snowballs | 21165.92 | labelled | -100.0 | RGB | 17949.17 | unknown | None |  |
 | 20261122T095610 | GREEN | Helio | 27305.57 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | Helio | 15530.52 | labelled | 36.52 |  |  |  | None | no eligible comparator |
 | 20261122T095610 | GREEN | FIREBALL | 15296.27 | labelled | -31.0 |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | HIPPO | 21316.42 | labelled | -29.56 |  |  |  | None | no eligible comparator |
 | 20261122T115608 | GREEN | AIRBALL | 17160.15 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T125608 | GREEN | USOI | 29600.02 | pending | None | GIFTER | 15569.81 | pending | None |  |
-| 20261122T125608 | GREEN | MCAT | 22457.63 | pending | None | GIFTER | 15569.81 | pending | None |  |
-| 20261122T125608 | GREEN | testicles | 17134.88 | pending | None |  |  |  | None | comparators used twice |
+| 20261122T125608 | GREEN | USOI | 29600.02 | unreliable | None | GIFTER | 15569.81 | labelled | -30.39 |  |
+| 20261122T125608 | GREEN | MCAT | 22457.63 | labelled | -100.0 | GIFTER | 15569.81 | labelled | -30.39 |  |
+| 20261122T125608 | GREEN | testicles | 17134.88 | labelled | 36.64 |  |  |  | None | comparators used twice |
 | 20261122T135607 | NEUTRAL | 大胆币 | 28911.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T135607 | NEUTRAL | three | 26484.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T135607 | NEUTRAL | MCAT | 23431.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T145606 | NEUTRAL | MIKEDYSON | 30407.88 | pending | None |  |  |  | None | no eligible comparator |
