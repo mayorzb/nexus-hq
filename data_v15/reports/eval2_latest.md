@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 390 |
-| sightings | 23512 |
-| liquid sightings | 9375 |
-| first liquid sightings = unique tokens with an outcome row | 1930 |
-|   young | 1334 |
-|   mature | 524 |
+| eval-2 scans | 391 |
+| sightings | 23576 |
+| liquid sightings | 9400 |
+| first liquid sightings = unique tokens with an outcome row | 1937 |
+|   young | 1337 |
+|   mature | 528 |
 |   other | 72 |
-| young with a comparator (cap 2) | 225 |
-| young without a comparator | 1109 |
+| young with a comparator (cap 2) | 226 |
+| young without a comparator | 1111 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
+|   pairs: young or mature outcome not yet usable | 80 |
 | complete pairs (both 60m outcomes labelled) | 138 |
 | scans contributing a complete pair | 87 |
 
 ## 60m outcome status by group
 
-- young: labelled 1014/1334, no_valid_entry 43/1334, pending 5/1334, unknown 204/1334, unreliable 68/1334
-- mature: labelled 481/524, pending 4/524, unknown 39/524
-- no valid entry: young 43/1334, mature 0/524
+- young: labelled 1014/1337, no_valid_entry 43/1337, pending 8/1337, unknown 204/1337, unreliable 68/1337
+- mature: labelled 484/528, pending 5/528, unknown 39/528
+- no valid entry: young 43/1337, mature 0/528
 
 ## Effect (after costs; unit = scan)
 
@@ -1462,3 +1462,6 @@
 | 20261122T205603 | NEUTRAL | USOI | 28646.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T205603 | NEUTRAL | ASS | 20656.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T205603 | NEUTRAL | IF | 18336.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T215603 | NEUTRAL | MINELIUS | 125140.49 | pending | None | MCAT | 113861.66 | pending | None |  |
+| 20261122T215603 | NEUTRAL | FSDV15 | 39893.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T215603 | NEUTRAL | Wojak | 22285.54 | pending | None |  |  |  | None | no eligible comparator |
