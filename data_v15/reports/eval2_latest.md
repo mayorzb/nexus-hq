@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 380 |
-| sightings | 22918 |
-| liquid sightings | 9138 |
-| first liquid sightings = unique tokens with an outcome row | 1890 |
-|   young | 1312 |
-|   mature | 508 |
+| eval-2 scans | 381 |
+| sightings | 22977 |
+| liquid sightings | 9160 |
+| first liquid sightings = unique tokens with an outcome row | 1892 |
+|   young | 1313 |
+|   mature | 509 |
 |   other | 70 |
 | young with a comparator (cap 2) | 221 |
-| young without a comparator | 1091 |
+| young without a comparator | 1092 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 78 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 994/1312, no_valid_entry 43/1312, pending 6/1312, unknown 203/1312, unreliable 66/1312
-- mature: labelled 467/508, pending 5/508, unknown 36/508
-- no valid entry: young 43/1312, mature 0/508
+- young: labelled 997/1313, no_valid_entry 43/1313, pending 4/1313, unknown 203/1313, unreliable 66/1313
+- mature: labelled 469/509, pending 4/509, unknown 36/509
+- no valid entry: young 43/1313, mature 0/509
 
 ## Effect (after costs; unit = scan)
 
@@ -1433,8 +1433,9 @@
 | 20261122T075611 | GREEN | Fosghost | 88962.67 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261122T075611 | GREEN | 超级社区 | 15251.21 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T085611 | GREEN | Snowballs | 21165.92 | labelled | -100.0 | RGB | 17949.17 | pending | None |  |
-| 20261122T095610 | GREEN | Helio | 27305.57 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T095610 | GREEN | Helio | 15530.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T095610 | GREEN | FIREBALL | 15296.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T095610 | GREEN | Helio | 27305.57 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T095610 | GREEN | Helio | 15530.52 | labelled | 36.52 |  |  |  | None | no eligible comparator |
+| 20261122T095610 | GREEN | FIREBALL | 15296.27 | labelled | -31.0 |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | BUTTHOLE | 22733.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T105609 | GREEN | HIPPO | 21316.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T115608 | GREEN | AIRBALL | 17160.15 | pending | None |  |  |  | None | no eligible comparator |
