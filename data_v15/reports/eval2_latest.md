@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 389 |
-| sightings | 23452 |
-| liquid sightings | 9352 |
-| first liquid sightings = unique tokens with an outcome row | 1926 |
-|   young | 1331 |
-|   mature | 523 |
+| eval-2 scans | 390 |
+| sightings | 23512 |
+| liquid sightings | 9375 |
+| first liquid sightings = unique tokens with an outcome row | 1930 |
+|   young | 1334 |
+|   mature | 524 |
 |   other | 72 |
 | young with a comparator (cap 2) | 225 |
-| young without a comparator | 1106 |
+| young without a comparator | 1109 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 138 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1012/1331, no_valid_entry 43/1331, pending 4/1331, unknown 204/1331, unreliable 68/1331
-- mature: labelled 480/523, pending 4/523, unknown 39/523
-- no valid entry: young 43/1331, mature 0/523
+- young: labelled 1014/1334, no_valid_entry 43/1334, pending 5/1334, unknown 204/1334, unreliable 68/1334
+- mature: labelled 481/524, pending 4/524, unknown 39/524
+- no valid entry: young 43/1334, mature 0/524
 
 ## Effect (after costs; unit = scan)
 
@@ -1457,5 +1457,8 @@
 | 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | Inu | 15547.03 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T185604 | NEUTRAL | SINGULARTY | 16098.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T185604 | NEUTRAL | SINGULARTY | 16098.26 | labelled | -41.85 |  |  |  | None | no eligible comparator |
+| 20261122T205603 | NEUTRAL | USOI | 28646.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T205603 | NEUTRAL | ASS | 20656.39 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T205603 | NEUTRAL | IF | 18336.66 | pending | None |  |  |  | None | no eligible comparator |
