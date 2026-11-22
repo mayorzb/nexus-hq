@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 376 |
-| sightings | 22670 |
-| liquid sightings | 9040 |
-| first liquid sightings = unique tokens with an outcome row | 1873 |
-|   young | 1304 |
-|   mature | 499 |
+| eval-2 scans | 377 |
+| sightings | 22732 |
+| liquid sightings | 9065 |
+| first liquid sightings = unique tokens with an outcome row | 1877 |
+|   young | 1306 |
+|   mature | 501 |
 |   other | 70 |
 | young with a comparator (cap 2) | 220 |
-| young without a comparator | 1084 |
+| young without a comparator | 1086 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 987/1304, no_valid_entry 43/1304, pending 7/1304, unknown 201/1304, unreliable 66/1304
-- mature: labelled 459/499, pending 4/499, unknown 36/499
-- no valid entry: young 43/1304, mature 0/499
+- young: labelled 989/1306, no_valid_entry 43/1306, pending 7/1306, unknown 201/1306, unreliable 66/1306
+- mature: labelled 461/501, pending 4/501, unknown 36/501
+- no valid entry: young 43/1306, mature 0/501
 
 ## Effect (after costs; unit = scan)
 
@@ -1425,8 +1425,10 @@
 | 20261122T045614 | GREEN | TOAD | 38943.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T045614 | GREEN | Snowball | 26278.97 | labelled | -31.62 |  |  |  | None | no eligible comparator |
 | 20261122T045614 | GREEN | SNOWPAD | 17904.31 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261122T055613 | GREEN | snowball | 23345.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T055613 | GREEN | CORONA | 17345.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T055613 | GREEN | snowball | 23345.99 | labelled | -29.9 |  |  |  | None | no eligible comparator |
+| 20261122T055613 | GREEN | CORONA | 17345.45 | labelled | -33.66 |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | Draspl | 89969.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | TC | 18942.19 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T065612 | NEUTRAL | MIHAOMAS | 17795.47 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T075611 | GREEN | Fosghost | 88962.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T075611 | GREEN | 超级社区 | 15251.21 | pending | None |  |  |  | None | no eligible comparator |
