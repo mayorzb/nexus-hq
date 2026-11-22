@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 384 |
-| sightings | 23156 |
-| liquid sightings | 9233 |
-| first liquid sightings = unique tokens with an outcome row | 1906 |
-|   young | 1320 |
-|   mature | 516 |
+| eval-2 scans | 385 |
+| sightings | 23214 |
+| liquid sightings | 9254 |
+| first liquid sightings = unique tokens with an outcome row | 1908 |
+|   young | 1321 |
+|   mature | 517 |
 |   other | 70 |
 | young with a comparator (cap 2) | 223 |
-| young without a comparator | 1097 |
+| young without a comparator | 1098 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 136 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1002/1320, no_valid_entry 43/1320, pending 4/1320, unknown 204/1320, unreliable 67/1320
-- mature: labelled 474/516, pending 4/516, unknown 38/516
-- no valid entry: young 43/1320, mature 0/516
+- young: labelled 1005/1321, no_valid_entry 43/1321, pending 2/1321, unknown 204/1321, unreliable 67/1321
+- mature: labelled 476/517, pending 3/517, unknown 38/517
+- no valid entry: young 43/1321, mature 0/517
 
 ## Effect (after costs; unit = scan)
 
@@ -1443,7 +1443,8 @@
 | 20261122T125608 | GREEN | USOI | 29600.02 | unreliable | None | GIFTER | 15569.81 | labelled | -30.39 |  |
 | 20261122T125608 | GREEN | MCAT | 22457.63 | labelled | -100.0 | GIFTER | 15569.81 | labelled | -30.39 |  |
 | 20261122T125608 | GREEN | testicles | 17134.88 | labelled | 36.64 |  |  |  | None | comparators used twice |
-| 20261122T135607 | NEUTRAL | 大胆币 | 28911.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T135607 | NEUTRAL | three | 26484.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T135607 | NEUTRAL | MCAT | 23431.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T135607 | NEUTRAL | 大胆币 | 28911.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T135607 | NEUTRAL | three | 26484.26 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T135607 | NEUTRAL | MCAT | 23431.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T145606 | NEUTRAL | MIKEDYSON | 30407.88 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T155606 | NEUTRAL | MIKEDYSON | 22745.85 | pending | None |  |  |  | None | no eligible comparator |
