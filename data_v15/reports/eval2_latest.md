@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 372 |
-| sightings | 22409 |
-| liquid sightings | 8935 |
-| first liquid sightings = unique tokens with an outcome row | 1854 |
-|   young | 1293 |
-|   mature | 492 |
+| eval-2 scans | 373 |
+| sightings | 22474 |
+| liquid sightings | 8962 |
+| first liquid sightings = unique tokens with an outcome row | 1858 |
+|   young | 1296 |
+|   mature | 493 |
 |   other | 69 |
 | young with a comparator (cap 2) | 220 |
-| young without a comparator | 1073 |
+| young without a comparator | 1076 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
-| complete pairs (both 60m outcomes labelled) | 133 |
-| scans contributing a complete pair | 84 |
+|   pairs: young or mature outcome not yet usable | 77 |
+| complete pairs (both 60m outcomes labelled) | 135 |
+| scans contributing a complete pair | 85 |
 
 ## 60m outcome status by group
 
-- young: labelled 978/1293, no_valid_entry 43/1293, pending 7/1293, unknown 199/1293, unreliable 66/1293
-- mature: labelled 451/492, pending 5/492, unknown 36/492
-- no valid entry: young 43/1293, mature 0/492
+- young: labelled 981/1296, no_valid_entry 43/1296, pending 7/1296, unknown 199/1296, unreliable 66/1296
+- mature: labelled 454/493, pending 3/493, unknown 36/493
+- no valid entry: young 43/1296, mature 0/493
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.38 points, 95% interval (-37.33, -15.4); scans with young worse 59/84
-- Pairs with young worse: 95/133 (71.4%); pair mean -23.77, median -27.29
-- Big loss (<= -20%): young 92/133, mature 34/133
+- Scan-level mean difference (young - mature): -26.46 points, 95% interval (-37.34, -15.51); scans with young worse 60/85
+- Pairs with young worse: 97/135 (71.9%); pair mean -23.9, median -27.29
+- Big loss (<= -20%): young 94/135, mature 34/135
 
 ## Comparator reuse (cap 2)
 
@@ -1413,9 +1413,12 @@
 | 20261122T005616 | GREEN | VICE | 20222.38 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | MANEKI | 20051.67 | labelled | -22.58 |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | BOOBILLIONS | 18350.84 | labelled | 36.72 |  |  |  | None | no eligible comparator |
-| 20261122T015616 | GREEN | MANDY | 36626.56 | pending | None | win | 25652.76 | pending | None |  |
-| 20261122T015616 | GREEN | GRAUDIA | 25906.49 | pending | None | win | 25652.76 | pending | None |  |
-| 20261122T015616 | GREEN | RIZZMAS | 19235.27 | pending | None |  |  |  | None | comparators used twice |
+| 20261122T015616 | GREEN | MANDY | 36626.56 | labelled | -58.95 | win | 25652.76 | labelled | -17.64 |  |
+| 20261122T015616 | GREEN | GRAUDIA | 25906.49 | labelled | -41.7 | win | 25652.76 | labelled | -17.64 |  |
+| 20261122T015616 | GREEN | RIZZMAS | 19235.27 | labelled | -35.96 |  |  |  | None | comparators used twice |
 | 20261122T025616 | GREEN | PushCoin | 84325.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T025616 | GREEN | SAM | 30320.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T025616 | GREEN | Livestream | 21444.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T035615 | GREEN | SI | 28932.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T035615 | GREEN | GTL | 21367.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T035615 | GREEN | SI | 15098.75 | pending | None |  |  |  | None | no eligible comparator |
