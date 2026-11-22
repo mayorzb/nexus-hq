@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 370 |
-| sightings | 22281 |
-| liquid sightings | 8882 |
-| first liquid sightings = unique tokens with an outcome row | 1843 |
-|   young | 1287 |
-|   mature | 487 |
+| eval-2 scans | 371 |
+| sightings | 22344 |
+| liquid sightings | 8908 |
+| first liquid sightings = unique tokens with an outcome row | 1849 |
+|   young | 1290 |
+|   mature | 490 |
 |   other | 69 |
-| young with a comparator (cap 2) | 218 |
-| young without a comparator | 1069 |
+| young with a comparator (cap 2) | 220 |
+| young without a comparator | 1070 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 77 |
+|   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 133 |
 | scans contributing a complete pair | 84 |
 
 ## 60m outcome status by group
 
-- young: labelled 971/1287, no_valid_entry 42/1287, pending 9/1287, unknown 199/1287, unreliable 66/1287
-- mature: labelled 449/487, pending 2/487, unknown 36/487
-- no valid entry: young 42/1287, mature 0/487
+- young: labelled 971/1290, no_valid_entry 43/1290, pending 11/1290, unknown 199/1290, unreliable 66/1290
+- mature: labelled 449/490, pending 5/490, unknown 36/490
+- no valid entry: young 43/1290, mature 0/490
 
 ## Effect (after costs; unit = scan)
 
@@ -120,6 +120,7 @@
 - 20261121T155622-dkpuQdje: NOHR (20261121T155622), COVID (20261121T155622)
 - 20261121T195620-EV7J2QaP: HOUSE (20261121T195620), pointy hat (20261121T195620)
 - 20261121T215618-14coJKKE: FINGERS (20261121T215618), UrAnus (20261121T215618)
+- 20261122T015616-9msk9ehE: MANDY (20261122T015616), GRAUDIA (20261122T015616)
 
 ## Every pair
 
@@ -1404,7 +1405,7 @@
 | 20261121T215618 | GREEN | BTC | 31219.61 | labelled | -37.23 |  |  |  | None | comparators used twice |
 | 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T225618 | GREEN | Mfer | 21698.63 | labelled | -45.57 |  |  |  | None | no eligible comparator |
-| 20261121T235617 | GREEN | BIGFOOT | 41124.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T235617 | GREEN | BIGFOOT | 41124.73 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | STREETS | 56642.19 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | RIZZMAS3 | 28729.92 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | Doritos | 28202.19 | pending | None |  |  |  | None | no eligible comparator |
@@ -1412,3 +1413,6 @@
 | 20261122T005616 | GREEN | VICE | 20222.38 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | MANEKI | 20051.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | BOOBILLIONS | 18350.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T015616 | GREEN | MANDY | 36626.56 | pending | None | win | 25652.76 | pending | None |  |
+| 20261122T015616 | GREEN | GRAUDIA | 25906.49 | pending | None | win | 25652.76 | pending | None |  |
+| 20261122T015616 | GREEN | RIZZMAS | 19235.27 | pending | None |  |  |  | None | comparators used twice |
