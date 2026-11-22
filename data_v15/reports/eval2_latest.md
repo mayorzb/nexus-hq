@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 373 |
-| sightings | 22474 |
-| liquid sightings | 8962 |
-| first liquid sightings = unique tokens with an outcome row | 1858 |
-|   young | 1296 |
-|   mature | 493 |
-|   other | 69 |
+| eval-2 scans | 374 |
+| sightings | 22540 |
+| liquid sightings | 8990 |
+| first liquid sightings = unique tokens with an outcome row | 1864 |
+|   young | 1299 |
+|   mature | 495 |
+|   other | 70 |
 | young with a comparator (cap 2) | 220 |
-| young without a comparator | 1076 |
+| young without a comparator | 1079 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 77 |
 | complete pairs (both 60m outcomes labelled) | 135 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 981/1296, no_valid_entry 43/1296, pending 7/1296, unknown 199/1296, unreliable 66/1296
-- mature: labelled 454/493, pending 3/493, unknown 36/493
-- no valid entry: young 43/1296, mature 0/493
+- young: labelled 984/1299, no_valid_entry 43/1299, pending 6/1299, unknown 200/1299, unreliable 66/1299
+- mature: labelled 456/495, pending 3/495, unknown 36/495
+- no valid entry: young 43/1299, mature 0/495
 
 ## Effect (after costs; unit = scan)
 
@@ -1403,7 +1403,7 @@
 | 20261121T215618 | GREEN | FINGERS | 36004.37 | labelled | -34.77 | HODL | 28512.71 | labelled | 37.1 |  |
 | 20261121T215618 | GREEN | UrAnus | 32677.42 | labelled | -43.99 | HODL | 28512.71 | labelled | 37.1 |  |
 | 20261121T215618 | GREEN | BTC | 31219.61 | labelled | -37.23 |  |  |  | None | comparators used twice |
-| 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261121T225618 | GREEN | URANUS | 21725.00 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261121T225618 | GREEN | Mfer | 21698.63 | labelled | -45.57 |  |  |  | None | no eligible comparator |
 | 20261121T235617 | GREEN | BIGFOOT | 41124.73 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261122T005616 | GREEN | STREETS | 56642.19 | labelled | -0.59 |  |  |  | None | no eligible comparator |
@@ -1416,9 +1416,12 @@
 | 20261122T015616 | GREEN | MANDY | 36626.56 | labelled | -58.95 | win | 25652.76 | labelled | -17.64 |  |
 | 20261122T015616 | GREEN | GRAUDIA | 25906.49 | labelled | -41.7 | win | 25652.76 | labelled | -17.64 |  |
 | 20261122T015616 | GREEN | RIZZMAS | 19235.27 | labelled | -35.96 |  |  |  | None | comparators used twice |
-| 20261122T025616 | GREEN | PushCoin | 84325.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T025616 | GREEN | SAM | 30320.12 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T025616 | GREEN | Livestream | 21444.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T025616 | GREEN | PushCoin | 84325.67 | labelled | 5.11 |  |  |  | None | no eligible comparator |
+| 20261122T025616 | GREEN | SAM | 30320.12 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T025616 | GREEN | Livestream | 21444.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | SI | 28932.59 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | GTL | 21367.55 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T035615 | GREEN | SI | 15098.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | TOAD | 38943.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | Snowball | 26278.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T045614 | GREEN | SNOWPAD | 17904.31 | pending | None |  |  |  | None | no eligible comparator |
