@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 371 |
-| sightings | 22344 |
-| liquid sightings | 8908 |
-| first liquid sightings = unique tokens with an outcome row | 1849 |
-|   young | 1290 |
-|   mature | 490 |
+| eval-2 scans | 372 |
+| sightings | 22409 |
+| liquid sightings | 8935 |
+| first liquid sightings = unique tokens with an outcome row | 1854 |
+|   young | 1293 |
+|   mature | 492 |
 |   other | 69 |
 | young with a comparator (cap 2) | 220 |
-| young without a comparator | 1070 |
+| young without a comparator | 1073 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 79 |
 | complete pairs (both 60m outcomes labelled) | 133 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 971/1290, no_valid_entry 43/1290, pending 11/1290, unknown 199/1290, unreliable 66/1290
-- mature: labelled 449/490, pending 5/490, unknown 36/490
-- no valid entry: young 43/1290, mature 0/490
+- young: labelled 978/1293, no_valid_entry 43/1293, pending 7/1293, unknown 199/1293, unreliable 66/1293
+- mature: labelled 451/492, pending 5/492, unknown 36/492
+- no valid entry: young 43/1293, mature 0/492
 
 ## Effect (after costs; unit = scan)
 
@@ -1406,13 +1406,16 @@
 | 20261121T225618 | GREEN | URANUS | 21725.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261121T225618 | GREEN | Mfer | 21698.63 | labelled | -45.57 |  |  |  | None | no eligible comparator |
 | 20261121T235617 | GREEN | BIGFOOT | 41124.73 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | STREETS | 56642.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | RIZZMAS3 | 28729.92 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | Doritos | 28202.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | time | 27038.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | VICE | 20222.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | MANEKI | 20051.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T005616 | GREEN | BOOBILLIONS | 18350.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | STREETS | 56642.19 | labelled | -0.59 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | RIZZMAS3 | 28729.92 | labelled | 37.11 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | Doritos | 28202.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | time | 27038.06 | labelled | 37.06 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | VICE | 20222.38 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | MANEKI | 20051.67 | labelled | -22.58 |  |  |  | None | no eligible comparator |
+| 20261122T005616 | GREEN | BOOBILLIONS | 18350.84 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261122T015616 | GREEN | MANDY | 36626.56 | pending | None | win | 25652.76 | pending | None |  |
 | 20261122T015616 | GREEN | GRAUDIA | 25906.49 | pending | None | win | 25652.76 | pending | None |  |
 | 20261122T015616 | GREEN | RIZZMAS | 19235.27 | pending | None |  |  |  | None | comparators used twice |
+| 20261122T025616 | GREEN | PushCoin | 84325.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T025616 | GREEN | SAM | 30320.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T025616 | GREEN | Livestream | 21444.73 | pending | None |  |  |  | None | no eligible comparator |
