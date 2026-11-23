@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 408 |
-| sightings | 24616 |
-| liquid sightings | 9819 |
-| first liquid sightings = unique tokens with an outcome row | 2023 |
-|   young | 1388 |
-|   mature | 562 |
+| eval-2 scans | 409 |
+| sightings | 24675 |
+| liquid sightings | 9840 |
+| first liquid sightings = unique tokens with an outcome row | 2026 |
+|   young | 1390 |
+|   mature | 563 |
 |   other | 73 |
 | young with a comparator (cap 2) | 231 |
-| young without a comparator | 1157 |
+| young without a comparator | 1159 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 83 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1057/1388, no_valid_entry 43/1388, pending 5/1388, unknown 211/1388, unreliable 72/1388
-- mature: labelled 516/562, pending 5/562, unknown 41/562
-- no valid entry: young 43/1388, mature 0/562
+- young: labelled 1058/1390, no_valid_entry 43/1390, pending 5/1390, unknown 212/1390, unreliable 72/1390
+- mature: labelled 518/563, pending 4/563, unknown 41/563
+- no valid entry: young 43/1390, mature 0/563
 
 ## Effect (after costs; unit = scan)
 
@@ -1504,7 +1504,7 @@
 | 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | TOGI | 15270.13 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261123T085557 | GREEN | GORP | 31274.18 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261123T105555 | NEUTRAL | Annie | 30857.02 | labelled | -100.0 | DISC | 17124.91 | unknown | None |  |
 | 20261123T105555 | NEUTRAL | HOLD | 21636.71 | labelled | 36.88 | DISC | 17124.91 | unknown | None |  |
@@ -1516,5 +1516,7 @@
 | 20261123T125554 | NEUTRAL | Lotus Cat | 29488.46 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | JENSEN | 23195.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T135553 | NEUTRAL | DCTY | 24581.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T135553 | NEUTRAL | TREMP | 20270.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T135553 | NEUTRAL | TREMP | 20270.64 | labelled | -47.27 |  |  |  | None | no eligible comparator |
 | 20261123T145552 | GREEN | JACKET | 41287.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T155551 | GREEN | Zmolly | 20871.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T155551 | GREEN | SI | 16782.41 | pending | None |  |  |  | None | no eligible comparator |
