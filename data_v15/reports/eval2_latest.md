@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 402 |
-| sightings | 24255 |
-| liquid sightings | 9683 |
-| first liquid sightings = unique tokens with an outcome row | 1996 |
-|   young | 1374 |
-|   mature | 549 |
+| eval-2 scans | 403 |
+| sightings | 24319 |
+| liquid sightings | 9706 |
+| first liquid sightings = unique tokens with an outcome row | 1999 |
+|   young | 1376 |
+|   mature | 550 |
 |   other | 73 |
 | young with a comparator (cap 2) | 229 |
-| young without a comparator | 1145 |
+| young without a comparator | 1147 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1045/1374, no_valid_entry 43/1374, pending 6/1374, unknown 209/1374, unreliable 71/1374
-- mature: labelled 506/549, pending 3/549, unknown 40/549
-- no valid entry: young 43/1374, mature 0/549
+- young: labelled 1049/1376, no_valid_entry 43/1376, pending 4/1376, unknown 209/1376, unreliable 71/1376
+- mature: labelled 508/550, pending 2/550, unknown 40/550
+- no valid entry: young 43/1376, mature 0/550
 
 ## Effect (after costs; unit = scan)
 
@@ -1498,8 +1498,10 @@
 | 20261123T055558 | GREEN | SEELE | 16448.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T065557 | GREEN | 牛牛 | 18117.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | LUCKY | 21165.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T075557 | GREEN | TOGI | 18608.72 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T075557 | GREEN | MI6900 | 17967.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T075557 | GREEN | TOGI | 15270.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T075557 | GREEN | TOGI | 18608.72 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T075557 | GREEN | MI6900 | 17967.93 | labelled | 36.69 |  |  |  | None | no eligible comparator |
+| 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T075557 | GREEN | TOGI | 15270.13 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261123T085557 | GREEN | GORP | 31274.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | pending | None |  |  |  | None | no eligible comparator |
