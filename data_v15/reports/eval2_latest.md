@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 401 |
-| sightings | 24189 |
-| liquid sightings | 9661 |
-| first liquid sightings = unique tokens with an outcome row | 1994 |
-|   young | 1373 |
-|   mature | 548 |
+| eval-2 scans | 402 |
+| sightings | 24255 |
+| liquid sightings | 9683 |
+| first liquid sightings = unique tokens with an outcome row | 1996 |
+|   young | 1374 |
+|   mature | 549 |
 |   other | 73 |
 | young with a comparator (cap 2) | 229 |
-| young without a comparator | 1144 |
+| young without a comparator | 1145 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1044/1373, no_valid_entry 43/1373, pending 6/1373, unknown 209/1373, unreliable 71/1373
-- mature: labelled 504/548, pending 4/548, unknown 40/548
-- no valid entry: young 43/1373, mature 0/548
+- young: labelled 1045/1374, no_valid_entry 43/1374, pending 6/1374, unknown 209/1374, unreliable 71/1374
+- mature: labelled 506/549, pending 3/549, unknown 40/549
+- no valid entry: young 43/1374, mature 0/549
 
 ## Effect (after costs; unit = scan)
 
@@ -1496,9 +1496,10 @@
 | 20261123T055558 | GREEN | PumpMeme | 69844.22 | labelled | -27.67 |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | Cowboy Cat | 28861.12 | labelled | 37.11 |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | SEELE | 16448.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261123T065557 | GREEN | 牛牛 | 18117.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T065557 | GREEN | 牛牛 | 18117.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | LUCKY | 21165.34 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | TOGI | 18608.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | MI6900 | 17967.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | TOGI | 15270.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T085557 | GREEN | GORP | 31274.18 | pending | None |  |  |  | None | no eligible comparator |
