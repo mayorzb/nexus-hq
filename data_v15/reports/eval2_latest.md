@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 396 |
-| sightings | 23879 |
-| liquid sightings | 9538 |
-| first liquid sightings = unique tokens with an outcome row | 1968 |
-|   young | 1357 |
-|   mature | 538 |
+| eval-2 scans | 397 |
+| sightings | 23938 |
+| liquid sightings | 9564 |
+| first liquid sightings = unique tokens with an outcome row | 1974 |
+|   young | 1361 |
+|   mature | 540 |
 |   other | 73 |
 | young with a comparator (cap 2) | 229 |
-| young without a comparator | 1128 |
+| young without a comparator | 1132 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1028/1357, no_valid_entry 43/1357, pending 9/1357, unknown 207/1357, unreliable 70/1357
-- mature: labelled 494/538, pending 5/538, unknown 39/538
-- no valid entry: young 43/1357, mature 0/538
+- young: labelled 1030/1361, no_valid_entry 43/1361, pending 10/1361, unknown 207/1361, unreliable 71/1361
+- mature: labelled 496/540, pending 5/540, unknown 39/540
+- no valid entry: young 43/1361, mature 0/540
 
 ## Effect (after costs; unit = scan)
 
@@ -1479,10 +1479,14 @@
 | 20261123T005601 | NEUTRAL | RECEIPTS | 19220.83 | labelled | -31.87 |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | CATEGIVING | 16961.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T015600 | NEUTRAL | Hedge | 38765.40 | pending | None | NPR | 36574.52 | pending | None |  |
-| 20261123T015600 | NEUTRAL | OTR | 22338.26 | pending | None | NPR | 36574.52 | pending | None |  |
-| 20261123T015600 | NEUTRAL | Hedge | 17395.92 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T015600 | NEUTRAL | Bunkercoin | 17071.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T015600 | NEUTRAL | OTR | 22338.26 | labelled | -100.0 | NPR | 36574.52 | pending | None |  |
+| 20261123T015600 | NEUTRAL | Hedge | 17395.92 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261123T015600 | NEUTRAL | Bunkercoin | 17071.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T025600 | NEUTRAL | BIRDMAGA | 31947.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T025600 | NEUTRAL | LEONIDA | 23116.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T025600 | NEUTRAL | ZCRYPT | 17290.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T025600 | NEUTRAL | FOXE | 16940.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T035600 | GREEN | EUBAL | 90805.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T035600 | GREEN | PEACH | 46072.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T035600 | GREEN | Fly | 34408.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T035600 | GREEN | hCAT | 23036.68 | pending | None |  |  |  | None | no eligible comparator |
