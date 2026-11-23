@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 404 |
-| sightings | 24381 |
-| liquid sightings | 9729 |
-| first liquid sightings = unique tokens with an outcome row | 2004 |
-|   young | 1378 |
-|   mature | 553 |
+| eval-2 scans | 405 |
+| sightings | 24444 |
+| liquid sightings | 9753 |
+| first liquid sightings = unique tokens with an outcome row | 2010 |
+|   young | 1382 |
+|   mature | 555 |
 |   other | 73 |
 | young with a comparator (cap 2) | 231 |
-| young without a comparator | 1147 |
+| young without a comparator | 1151 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 83 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1049/1378, no_valid_entry 43/1378, pending 5/1378, unknown 209/1378, unreliable 72/1378
-- mature: labelled 509/553, pending 4/553, unknown 40/553
-- no valid entry: young 43/1378, mature 0/553
+- young: labelled 1050/1382, no_valid_entry 43/1382, pending 8/1382, unknown 209/1382, unreliable 72/1382
+- mature: labelled 510/555, pending 5/555, unknown 40/555
+- no valid entry: young 43/1382, mature 0/555
 
 ## Effect (after costs; unit = scan)
 
@@ -1505,6 +1505,10 @@
 | 20261123T075557 | GREEN | TOGI | 15270.13 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261123T085557 | GREEN | GORP | 31274.18 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | labelled | 36.72 |  |  |  | None | no eligible comparator |
 | 20261123T105555 | NEUTRAL | Annie | 30857.02 | pending | None | DISC | 17124.91 | pending | None |  |
 | 20261123T105555 | NEUTRAL | HOLD | 21636.71 | pending | None | DISC | 17124.91 | pending | None |  |
+| 20261123T115554 | NEUTRAL | cCAT | 85727.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | USPR | 29368.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | Tremp | 27874.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | PRV | 27379.71 | pending | None |  |  |  | None | no eligible comparator |
