@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 392 |
-| sightings | 23637 |
-| liquid sightings | 9427 |
-| first liquid sightings = unique tokens with an outcome row | 1942 |
-|   young | 1339 |
-|   mature | 530 |
+| eval-2 scans | 393 |
+| sightings | 23697 |
+| liquid sightings | 9456 |
+| first liquid sightings = unique tokens with an outcome row | 1947 |
+|   young | 1342 |
+|   mature | 532 |
 |   other | 73 |
 | young with a comparator (cap 2) | 227 |
-| young without a comparator | 1112 |
+| young without a comparator | 1115 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 81 |
-| complete pairs (both 60m outcomes labelled) | 138 |
-| scans contributing a complete pair | 87 |
+|   pairs: young or mature outcome not yet usable | 80 |
+| complete pairs (both 60m outcomes labelled) | 139 |
+| scans contributing a complete pair | 88 |
 
 ## 60m outcome status by group
 
-- young: labelled 1015/1339, no_valid_entry 43/1339, pending 7/1339, unknown 205/1339, unreliable 69/1339
-- mature: labelled 485/530, pending 6/530, unknown 39/530
-- no valid entry: young 43/1339, mature 0/530
+- young: labelled 1018/1342, no_valid_entry 43/1342, pending 6/1342, unknown 206/1342, unreliable 69/1342
+- mature: labelled 489/532, pending 4/532, unknown 39/532
+- no valid entry: young 43/1342, mature 0/532
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -27.14 points, 95% interval (-37.73, -16.24); scans with young worse 62/87
-- Pairs with young worse: 100/138 (72.5%); pair mean -24.5, median -27.38
-- Big loss (<= -20%): young 97/138, mature 37/138
+- Scan-level mean difference (young - mature): -26.19 points, 95% interval (-36.95, -15.58); scans with young worse 62/88
+- Pairs with young worse: 100/139 (71.9%); pair mean -23.92, median -27.29
+- Big loss (<= -20%): young 97/139, mature 37/139
 
 ## Comparator reuse (cap 2)
 
@@ -1454,7 +1454,7 @@
 | 20261122T165605 | NEUTRAL | FOAM | 17331.07 | unknown | None |  |  |  | None | comparators used twice |
 | 20261122T175604 | NEUTRAL | Lucky | 22088.62 | labelled | -37.84 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | OMGAI | 17003.42 | labelled | -31.88 |  |  |  | None | no eligible comparator |
-| 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T175604 | NEUTRAL | HUSSMAS | 16191.27 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | Inu | 15547.03 | labelled | -43.34 |  |  |  | None | no eligible comparator |
 | 20261122T175604 | NEUTRAL | LUCKY | 15074.81 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261122T185604 | NEUTRAL | NORMIE | 16288.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1462,8 +1462,11 @@
 | 20261122T205603 | NEUTRAL | USOI | 28646.66 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261122T205603 | NEUTRAL | ASS | 20656.39 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T205603 | NEUTRAL | IF | 18336.66 | labelled | 36.72 |  |  |  | None | no eligible comparator |
-| 20261122T215603 | NEUTRAL | MINELIUS | 125140.49 | pending | None | MCAT | 113861.66 | pending | None |  |
-| 20261122T215603 | NEUTRAL | FSDV15 | 39893.39 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T215603 | NEUTRAL | Wojak | 22285.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T215603 | NEUTRAL | MINELIUS | 125140.49 | labelled | 37.64 | MCAT | 113861.66 | labelled | -19.01 |  |
+| 20261122T215603 | NEUTRAL | FSDV15 | 39893.39 | labelled | -29.03 |  |  |  | None | no eligible comparator |
+| 20261122T215603 | NEUTRAL | Wojak | 22285.54 | labelled | -29.78 |  |  |  | None | no eligible comparator |
 | 20261122T225602 | NEUTRAL | COPIUM | 52481.57 | pending | None | UCASH | 77940.85 | pending | None |  |
 | 20261122T225602 | NEUTRAL | XMAS | 24613.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | ZOL | 24137.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | ZOL | 19111.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | PRIVI | 18413.17 | pending | None |  |  |  | None | no eligible comparator |
