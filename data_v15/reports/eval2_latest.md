@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 403 |
-| sightings | 24319 |
-| liquid sightings | 9706 |
-| first liquid sightings = unique tokens with an outcome row | 1999 |
-|   young | 1376 |
-|   mature | 550 |
+| eval-2 scans | 404 |
+| sightings | 24381 |
+| liquid sightings | 9729 |
+| first liquid sightings = unique tokens with an outcome row | 2004 |
+|   young | 1378 |
+|   mature | 553 |
 |   other | 73 |
-| young with a comparator (cap 2) | 229 |
+| young with a comparator (cap 2) | 231 |
 | young without a comparator | 1147 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 81 |
+|   pairs: young or mature outcome not yet usable | 83 |
 | complete pairs (both 60m outcomes labelled) | 140 |
 | scans contributing a complete pair | 89 |
 
 ## 60m outcome status by group
 
-- young: labelled 1049/1376, no_valid_entry 43/1376, pending 4/1376, unknown 209/1376, unreliable 71/1376
-- mature: labelled 508/550, pending 2/550, unknown 40/550
-- no valid entry: young 43/1376, mature 0/550
+- young: labelled 1049/1378, no_valid_entry 43/1378, pending 5/1378, unknown 209/1378, unreliable 72/1378
+- mature: labelled 509/553, pending 4/553, unknown 40/553
+- no valid entry: young 43/1378, mature 0/553
 
 ## Effect (after costs; unit = scan)
 
@@ -124,6 +124,7 @@
 - 20261122T125608-3K6EUFoA: USOI (20261122T125608), MCAT (20261122T125608)
 - 20261122T165605-v4GK8f24: GIB (20261122T165605), dolph (20261122T165605)
 - 20261123T015600-NPRY8f8y: Hedge (20261123T015600), OTR (20261123T015600)
+- 20261123T105555-Goei8BRx: Annie (20261123T105555), HOLD (20261123T105555)
 
 ## Every pair
 
@@ -1502,6 +1503,8 @@
 | 20261123T075557 | GREEN | MI6900 | 17967.93 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | TOGI | 15270.13 | labelled | 36.5 |  |  |  | None | no eligible comparator |
-| 20261123T085557 | GREEN | GORP | 31274.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T085557 | GREEN | GORP | 31274.18 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T105555 | NEUTRAL | Annie | 30857.02 | pending | None | DISC | 17124.91 | pending | None |  |
+| 20261123T105555 | NEUTRAL | HOLD | 21636.71 | pending | None | DISC | 17124.91 | pending | None |  |
