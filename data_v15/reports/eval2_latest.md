@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 414 |
-| sightings | 24986 |
-| liquid sightings | 9970 |
-| first liquid sightings = unique tokens with an outcome row | 2061 |
-|   young | 1410 |
-|   mature | 576 |
+| eval-2 scans | 415 |
+| sightings | 25054 |
+| liquid sightings | 9996 |
+| first liquid sightings = unique tokens with an outcome row | 2069 |
+|   young | 1415 |
+|   mature | 579 |
 |   other | 75 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1178 |
+| young without a comparator | 1183 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1076/1410, no_valid_entry 43/1410, pending 4/1410, unknown 215/1410, unreliable 72/1410
-- mature: labelled 529/576, pending 4/576, unknown 43/576
-- no valid entry: young 43/1410, mature 0/576
+- young: labelled 1078/1415, no_valid_entry 43/1415, pending 7/1415, unknown 215/1415, unreliable 72/1415
+- mature: labelled 531/579, pending 5/579, unknown 43/579
+- no valid entry: young 43/1415, mature 0/579
 
 ## Effect (after costs; unit = scan)
 
@@ -1536,7 +1536,12 @@
 | 20261123T185551 | GREEN | Galord | 91152.33 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T185551 | GREEN | Jensen | 31532.86 | labelled | 37.17 |  |  |  | None | no eligible comparator |
 | 20261123T185551 | GREEN | SCINU | 19085.04 | labelled | 36.76 |  |  |  | None | no eligible comparator |
-| 20261123T195550 | NEUTRAL | 来根华子 | 26698.82 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T195550 | NEUTRAL | HI | 17634.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T195550 | NEUTRAL | 来根华子 | 26698.82 | labelled | -28.91 |  |  |  | None | no eligible comparator |
+| 20261123T195550 | NEUTRAL | HI | 17634.48 | labelled | -36.63 |  |  |  | None | no eligible comparator |
 | 20261123T205549 | NEUTRAL | Democat | 29274.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T205549 | NEUTRAL | FOMOMAS | 15675.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | ChristmASS | 41574.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | MOOT | 37798.06 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | nothing | 30443.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | JENSEN | 27087.00 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | NCSP | 20453.22 | pending | None |  |  |  | None | no eligible comparator |
