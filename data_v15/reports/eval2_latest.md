@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 406 |
-| sightings | 24503 |
-| liquid sightings | 9777 |
-| first liquid sightings = unique tokens with an outcome row | 2015 |
-|   young | 1385 |
-|   mature | 557 |
+| eval-2 scans | 407 |
+| sightings | 24558 |
+| liquid sightings | 9798 |
+| first liquid sightings = unique tokens with an outcome row | 2019 |
+|   young | 1387 |
+|   mature | 559 |
 |   other | 73 |
 | young with a comparator (cap 2) | 231 |
-| young without a comparator | 1154 |
+| young without a comparator | 1156 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 83 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1052/1385, no_valid_entry 43/1385, pending 9/1385, unknown 209/1385, unreliable 72/1385
-- mature: labelled 512/557, pending 5/557, unknown 40/557
-- no valid entry: young 43/1385, mature 0/557
+- young: labelled 1054/1387, no_valid_entry 43/1387, pending 8/1387, unknown 210/1387, unreliable 72/1387
+- mature: labelled 514/559, pending 5/559, unknown 40/559
+- no valid entry: young 43/1387, mature 0/559
 
 ## Effect (after costs; unit = scan)
 
@@ -1498,7 +1498,7 @@
 | 20261123T055558 | GREEN | Cowboy Cat | 28861.12 | labelled | 37.11 |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | SEELE | 16448.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T065557 | GREEN | 牛牛 | 18117.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261123T075557 | GREEN | LUCKY | 21165.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T075557 | GREEN | LUCKY | 21165.34 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | TOGI | 18608.72 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | MI6900 | 17967.93 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261123T075557 | GREEN | WALLSTFLY | 16364.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1509,9 +1509,11 @@
 | 20261123T105555 | NEUTRAL | Annie | 30857.02 | labelled | -100.0 | DISC | 17124.91 | pending | None |  |
 | 20261123T105555 | NEUTRAL | HOLD | 21636.71 | labelled | 36.88 | DISC | 17124.91 | pending | None |  |
 | 20261123T115554 | NEUTRAL | cCAT | 85727.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T115554 | NEUTRAL | USPR | 29368.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T115554 | NEUTRAL | Tremp | 27874.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | USPR | 29368.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | Tremp | 27874.93 | labelled | 37.09 |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | PRV | 27379.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | Arileo | 94615.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | Lotus Cat | 29488.46 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | JENSEN | 23195.35 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T135553 | NEUTRAL | DCTY | 24581.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T135553 | NEUTRAL | TREMP | 20270.64 | pending | None |  |  |  | None | no eligible comparator |
