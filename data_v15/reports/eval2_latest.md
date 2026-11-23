@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 405 |
-| sightings | 24444 |
-| liquid sightings | 9753 |
-| first liquid sightings = unique tokens with an outcome row | 2010 |
-|   young | 1382 |
-|   mature | 555 |
+| eval-2 scans | 406 |
+| sightings | 24503 |
+| liquid sightings | 9777 |
+| first liquid sightings = unique tokens with an outcome row | 2015 |
+|   young | 1385 |
+|   mature | 557 |
 |   other | 73 |
 | young with a comparator (cap 2) | 231 |
-| young without a comparator | 1151 |
+| young without a comparator | 1154 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 83 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1050/1382, no_valid_entry 43/1382, pending 8/1382, unknown 209/1382, unreliable 72/1382
-- mature: labelled 510/555, pending 5/555, unknown 40/555
-- no valid entry: young 43/1382, mature 0/555
+- young: labelled 1052/1385, no_valid_entry 43/1385, pending 9/1385, unknown 209/1385, unreliable 72/1385
+- mature: labelled 512/557, pending 5/557, unknown 40/557
+- no valid entry: young 43/1385, mature 0/557
 
 ## Effect (after costs; unit = scan)
 
@@ -1506,9 +1506,12 @@
 | 20261123T085557 | GREEN | GORP | 31274.18 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | $JUSSY | 22674.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T095556 | NEUTRAL | ELPEPE | 18348.19 | labelled | 36.72 |  |  |  | None | no eligible comparator |
-| 20261123T105555 | NEUTRAL | Annie | 30857.02 | pending | None | DISC | 17124.91 | pending | None |  |
-| 20261123T105555 | NEUTRAL | HOLD | 21636.71 | pending | None | DISC | 17124.91 | pending | None |  |
+| 20261123T105555 | NEUTRAL | Annie | 30857.02 | labelled | -100.0 | DISC | 17124.91 | pending | None |  |
+| 20261123T105555 | NEUTRAL | HOLD | 21636.71 | labelled | 36.88 | DISC | 17124.91 | pending | None |  |
 | 20261123T115554 | NEUTRAL | cCAT | 85727.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | USPR | 29368.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | Tremp | 27874.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | PRV | 27379.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T125554 | NEUTRAL | Arileo | 94615.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T125554 | NEUTRAL | Lotus Cat | 29488.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T125554 | NEUTRAL | JENSEN | 23195.35 | pending | None |  |  |  | None | no eligible comparator |
