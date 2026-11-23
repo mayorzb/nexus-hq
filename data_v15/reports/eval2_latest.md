@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 394 |
-| sightings | 23757 |
-| liquid sightings | 9484 |
-| first liquid sightings = unique tokens with an outcome row | 1955 |
-|   young | 1349 |
-|   mature | 533 |
+| eval-2 scans | 395 |
+| sightings | 23818 |
+| liquid sightings | 9511 |
+| first liquid sightings = unique tokens with an outcome row | 1962 |
+|   young | 1353 |
+|   mature | 536 |
 |   other | 73 |
-| young with a comparator (cap 2) | 227 |
-| young without a comparator | 1122 |
+| young with a comparator (cap 2) | 229 |
+| young without a comparator | 1124 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 79 |
+|   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 140 |
 | scans contributing a complete pair | 89 |
 
 ## 60m outcome status by group
 
-- young: labelled 1020/1349, no_valid_entry 43/1349, pending 11/1349, unknown 206/1349, unreliable 69/1349
-- mature: labelled 491/533, pending 3/533, unknown 39/533
-- no valid entry: young 43/1349, mature 0/533
+- young: labelled 1023/1353, no_valid_entry 43/1353, pending 12/1353, unknown 206/1353, unreliable 69/1353
+- mature: labelled 493/536, pending 4/536, unknown 39/536
+- no valid entry: young 43/1353, mature 0/536
 
 ## Effect (after costs; unit = scan)
 
@@ -123,6 +123,7 @@
 - 20261122T015616-9msk9ehE: MANDY (20261122T015616), GRAUDIA (20261122T015616)
 - 20261122T125608-3K6EUFoA: USOI (20261122T125608), MCAT (20261122T125608)
 - 20261122T165605-v4GK8f24: GIB (20261122T165605), dolph (20261122T165605)
+- 20261123T015600-NPRY8f8y: Hedge (20261123T015600), OTR (20261123T015600)
 
 ## Every pair
 
@@ -1467,9 +1468,9 @@
 | 20261122T215603 | NEUTRAL | Wojak | 22285.54 | labelled | -29.78 |  |  |  | None | no eligible comparator |
 | 20261122T225602 | NEUTRAL | COPIUM | 52481.57 | labelled | 17.29 | UCASH | 77940.85 | labelled | -8.09 |  |
 | 20261122T225602 | NEUTRAL | XMAS | 24613.24 | labelled | 36.99 |  |  |  | None | no eligible comparator |
-| 20261122T235601 | NEUTRAL | ZOL | 24137.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T235601 | NEUTRAL | ZOL | 19111.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261122T235601 | NEUTRAL | PRIVI | 18413.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | ZOL | 24137.49 | labelled | -29.2 |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | ZOL | 19111.03 | labelled | -33.29 |  |  |  | None | no eligible comparator |
+| 20261122T235601 | NEUTRAL | PRIVI | 18413.17 | labelled | -30.59 |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | CATE | 132319.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | cCAT | 29406.62 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | ZOL | 29374.85 | pending | None |  |  |  | None | no eligible comparator |
@@ -1477,3 +1478,7 @@
 | 20261123T005601 | NEUTRAL | ALONE | 22498.33 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | RECEIPTS | 19220.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | CATEGIVING | 16961.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T015600 | NEUTRAL | Hedge | 38765.40 | pending | None | NPR | 36574.52 | pending | None |  |
+| 20261123T015600 | NEUTRAL | OTR | 22338.26 | pending | None | NPR | 36574.52 | pending | None |  |
+| 20261123T015600 | NEUTRAL | Hedge | 17395.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T015600 | NEUTRAL | Bunkercoin | 17071.63 | pending | None |  |  |  | None | no eligible comparator |
