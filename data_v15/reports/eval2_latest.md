@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 399 |
-| sightings | 24062 |
-| liquid sightings | 9613 |
-| first liquid sightings = unique tokens with an outcome row | 1984 |
-|   young | 1367 |
-|   mature | 544 |
+| eval-2 scans | 400 |
+| sightings | 24126 |
+| liquid sightings | 9635 |
+| first liquid sightings = unique tokens with an outcome row | 1987 |
+|   young | 1368 |
+|   mature | 546 |
 |   other | 73 |
 | young with a comparator (cap 2) | 229 |
-| young without a comparator | 1138 |
+| young without a comparator | 1139 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 81 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1038/1367, no_valid_entry 43/1367, pending 8/1367, unknown 207/1367, unreliable 71/1367
-- mature: labelled 500/544, pending 4/544, unknown 40/544
-- no valid entry: young 43/1367, mature 0/544
+- young: labelled 1040/1368, no_valid_entry 43/1368, pending 6/1368, unknown 208/1368, unreliable 71/1368
+- mature: labelled 503/546, pending 3/546, unknown 40/546
+- no valid entry: young 43/1368, mature 0/546
 
 ## Effect (after costs; unit = scan)
 
@@ -1477,7 +1477,7 @@
 | 20261123T005601 | NEUTRAL | cCAT | 24174.40 | labelled | -30.94 |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | ALONE | 22498.33 | labelled | -34.43 |  |  |  | None | no eligible comparator |
 | 20261123T005601 | NEUTRAL | RECEIPTS | 19220.83 | labelled | -31.87 |  |  |  | None | no eligible comparator |
-| 20261123T005601 | NEUTRAL | CATEGIVING | 16961.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | CATEGIVING | 16961.53 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T015600 | NEUTRAL | Hedge | 38765.40 | pending | None | NPR | 36574.52 | unknown | None |  |
 | 20261123T015600 | NEUTRAL | OTR | 22338.26 | labelled | -100.0 | NPR | 36574.52 | unknown | None |  |
 | 20261123T015600 | NEUTRAL | Hedge | 17395.92 | unreliable | None |  |  |  | None | no eligible comparator |
@@ -1490,9 +1490,10 @@
 | 20261123T035600 | GREEN | PEACH | 46072.76 | labelled | -35.47 |  |  |  | None | no eligible comparator |
 | 20261123T035600 | GREEN | Fly | 34408.83 | labelled | -30.37 |  |  |  | None | no eligible comparator |
 | 20261123T035600 | GREEN | hCAT | 23036.68 | labelled | -5.19 |  |  |  | None | no eligible comparator |
-| 20261123T045559 | GREEN | SAKURA | 30583.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T045559 | GREEN | COPY | 22859.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T045559 | GREEN | SAKURA | 30583.99 | labelled | 37.15 |  |  |  | None | no eligible comparator |
+| 20261123T045559 | GREEN | COPY | 22859.52 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | Ateez | 89787.85 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | PumpMeme | 69844.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | Cowboy Cat | 28861.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T055558 | GREEN | SEELE | 16448.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T065557 | GREEN | 牛牛 | 18117.61 | pending | None |  |  |  | None | no eligible comparator |
