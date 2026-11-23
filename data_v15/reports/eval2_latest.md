@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 415 |
-| sightings | 25054 |
-| liquid sightings | 9996 |
-| first liquid sightings = unique tokens with an outcome row | 2069 |
-|   young | 1415 |
-|   mature | 579 |
-|   other | 75 |
+| eval-2 scans | 416 |
+| sightings | 25119 |
+| liquid sightings | 10023 |
+| first liquid sightings = unique tokens with an outcome row | 2076 |
+|   young | 1419 |
+|   mature | 581 |
+|   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1183 |
+| young without a comparator | 1187 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1078/1415, no_valid_entry 43/1415, pending 7/1415, unknown 215/1415, unreliable 72/1415
-- mature: labelled 531/579, pending 5/579, unknown 43/579
-- no valid entry: young 43/1415, mature 0/579
+- young: labelled 1079/1419, no_valid_entry 43/1419, pending 9/1419, unknown 215/1419, unreliable 73/1419
+- mature: labelled 533/581, pending 5/581, unknown 43/581
+- no valid entry: young 43/1419, mature 0/581
 
 ## Effect (after costs; unit = scan)
 
@@ -1538,10 +1538,14 @@
 | 20261123T185551 | GREEN | SCINU | 19085.04 | labelled | 36.76 |  |  |  | None | no eligible comparator |
 | 20261123T195550 | NEUTRAL | 来根华子 | 26698.82 | labelled | -28.91 |  |  |  | None | no eligible comparator |
 | 20261123T195550 | NEUTRAL | HI | 17634.48 | labelled | -36.63 |  |  |  | None | no eligible comparator |
-| 20261123T205549 | NEUTRAL | Democat | 29274.57 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T205549 | NEUTRAL | FOMOMAS | 15675.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T205549 | NEUTRAL | Democat | 29274.57 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261123T205549 | NEUTRAL | FOMOMAS | 15675.44 | labelled | 36.53 |  |  |  | None | no eligible comparator |
 | 20261123T215548 | NEUTRAL | ChristmASS | 41574.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T215548 | NEUTRAL | MOOT | 37798.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T215548 | NEUTRAL | nothing | 30443.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T215548 | NEUTRAL | JENSEN | 27087.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T215548 | NEUTRAL | NCSP | 20453.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T225547 | NEUTRAL | JIMMY | 39096.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T225547 | NEUTRAL | PONK | 31572.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T225547 | NEUTRAL | BLOOM | 17853.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T225547 | NEUTRAL | THANKS | 16064.33 | pending | None |  |  |  | None | no eligible comparator |
