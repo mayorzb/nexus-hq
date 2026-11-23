@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 410 |
-| sightings | 24736 |
-| liquid sightings | 9867 |
-| first liquid sightings = unique tokens with an outcome row | 2036 |
-|   young | 1395 |
-|   mature | 568 |
-|   other | 73 |
+| eval-2 scans | 411 |
+| sightings | 24797 |
+| liquid sightings | 9896 |
+| first liquid sightings = unique tokens with an outcome row | 2048 |
+|   young | 1403 |
+|   mature | 570 |
+|   other | 75 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1163 |
+| young without a comparator | 1171 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1059/1395, no_valid_entry 43/1395, pending 8/1395, unknown 213/1395, unreliable 72/1395
-- mature: labelled 521/568, pending 6/568, unknown 41/568
-- no valid entry: young 43/1395, mature 0/568
+- young: labelled 1061/1403, no_valid_entry 43/1403, pending 13/1403, unknown 214/1403, unreliable 72/1403
+- mature: labelled 522/570, pending 7/570, unknown 41/570
+- no valid entry: young 43/1403, mature 0/570
 
 ## Effect (after costs; unit = scan)
 
@@ -1511,17 +1511,25 @@
 | 20261123T115554 | NEUTRAL | cCAT | 85727.70 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | USPR | 29368.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T115554 | NEUTRAL | Tremp | 27874.93 | labelled | 37.09 |  |  |  | None | no eligible comparator |
-| 20261123T115554 | NEUTRAL | PRV | 27379.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T115554 | NEUTRAL | PRV | 27379.71 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | Arileo | 94615.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | Lotus Cat | 29488.46 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | JENSEN | 23195.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T135553 | NEUTRAL | DCTY | 24581.07 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T135553 | NEUTRAL | TREMP | 20270.64 | labelled | -47.27 |  |  |  | None | no eligible comparator |
 | 20261123T145552 | GREEN | JACKET | 41287.01 | labelled | 37.32 |  |  |  | None | no eligible comparator |
-| 20261123T155551 | GREEN | Zmolly | 20871.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T155551 | GREEN | SI | 16782.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T155551 | GREEN | Zmolly | 20871.25 | labelled | 36.85 |  |  |  | None | no eligible comparator |
+| 20261123T155551 | GREEN | SI | 16782.41 | labelled | -31.02 |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | Solana | 1558697896.58 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | Jensen | 38584.43 | pending | None | HCUP | 63178.04 | pending | None |  |
 | 20261123T165551 | GREEN | JENSEN | 26609.36 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | JENSEN | 18741.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | TUGI | 15336.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | AI | 192930.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | HUANG | 68582.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | JENSEN | 54501.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | sexcoin | 45082.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | JENSEN | 32224.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | CHIP | 29945.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | NVDA | 29224.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | NBI | 28739.99 | pending | None |  |  |  | None | no eligible comparator |
