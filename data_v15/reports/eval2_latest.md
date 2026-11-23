@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 409 |
-| sightings | 24675 |
-| liquid sightings | 9840 |
-| first liquid sightings = unique tokens with an outcome row | 2026 |
-|   young | 1390 |
-|   mature | 563 |
+| eval-2 scans | 410 |
+| sightings | 24736 |
+| liquid sightings | 9867 |
+| first liquid sightings = unique tokens with an outcome row | 2036 |
+|   young | 1395 |
+|   mature | 568 |
 |   other | 73 |
-| young with a comparator (cap 2) | 231 |
-| young without a comparator | 1159 |
+| young with a comparator (cap 2) | 232 |
+| young without a comparator | 1163 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 83 |
+|   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
 | scans contributing a complete pair | 89 |
 
 ## 60m outcome status by group
 
-- young: labelled 1058/1390, no_valid_entry 43/1390, pending 5/1390, unknown 212/1390, unreliable 72/1390
-- mature: labelled 518/563, pending 4/563, unknown 41/563
-- no valid entry: young 43/1390, mature 0/563
+- young: labelled 1059/1395, no_valid_entry 43/1395, pending 8/1395, unknown 213/1395, unreliable 72/1395
+- mature: labelled 521/568, pending 6/568, unknown 41/568
+- no valid entry: young 43/1395, mature 0/568
 
 ## Effect (after costs; unit = scan)
 
@@ -1515,8 +1515,13 @@
 | 20261123T125554 | NEUTRAL | Arileo | 94615.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | Lotus Cat | 29488.46 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261123T125554 | NEUTRAL | JENSEN | 23195.35 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261123T135553 | NEUTRAL | DCTY | 24581.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T135553 | NEUTRAL | DCTY | 24581.07 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261123T135553 | NEUTRAL | TREMP | 20270.64 | labelled | -47.27 |  |  |  | None | no eligible comparator |
-| 20261123T145552 | GREEN | JACKET | 41287.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T145552 | GREEN | JACKET | 41287.01 | labelled | 37.32 |  |  |  | None | no eligible comparator |
 | 20261123T155551 | GREEN | Zmolly | 20871.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T155551 | GREEN | SI | 16782.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | Solana | 1558697896.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | Jensen | 38584.43 | pending | None | HCUP | 63178.04 | pending | None |  |
+| 20261123T165551 | GREEN | JENSEN | 26609.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | JENSEN | 18741.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | TUGI | 15336.23 | pending | None |  |  |  | None | no eligible comparator |
