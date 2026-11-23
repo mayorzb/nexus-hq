@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 411 |
-| sightings | 24797 |
-| liquid sightings | 9896 |
-| first liquid sightings = unique tokens with an outcome row | 2048 |
-|   young | 1403 |
-|   mature | 570 |
+| eval-2 scans | 412 |
+| sightings | 24854 |
+| liquid sightings | 9925 |
+| first liquid sightings = unique tokens with an outcome row | 2053 |
+|   young | 1406 |
+|   mature | 572 |
 |   other | 75 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1171 |
+| young without a comparator | 1174 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1061/1403, no_valid_entry 43/1403, pending 13/1403, unknown 214/1403, unreliable 72/1403
-- mature: labelled 522/570, pending 7/570, unknown 41/570
-- no valid entry: young 43/1403, mature 0/570
+- young: labelled 1065/1406, no_valid_entry 43/1406, pending 11/1406, unknown 215/1406, unreliable 72/1406
+- mature: labelled 525/572, pending 5/572, unknown 42/572
+- no valid entry: young 43/1406, mature 0/572
 
 ## Effect (after costs; unit = scan)
 
@@ -1520,11 +1520,11 @@
 | 20261123T145552 | GREEN | JACKET | 41287.01 | labelled | 37.32 |  |  |  | None | no eligible comparator |
 | 20261123T155551 | GREEN | Zmolly | 20871.25 | labelled | 36.85 |  |  |  | None | no eligible comparator |
 | 20261123T155551 | GREEN | SI | 16782.41 | labelled | -31.02 |  |  |  | None | no eligible comparator |
-| 20261123T165551 | GREEN | Solana | 1558697896.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T165551 | GREEN | Jensen | 38584.43 | pending | None | HCUP | 63178.04 | pending | None |  |
-| 20261123T165551 | GREEN | JENSEN | 26609.36 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T165551 | GREEN | JENSEN | 18741.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T165551 | GREEN | TUGI | 15336.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | Solana | 1558697896.58 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | Jensen | 38584.43 | labelled | -71.81 | HCUP | 63178.04 | pending | None |  |
+| 20261123T165551 | GREEN | JENSEN | 26609.36 | labelled | -34.69 |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | JENSEN | 18741.43 | labelled | 36.74 |  |  |  | None | no eligible comparator |
+| 20261123T165551 | GREEN | TUGI | 15336.23 | labelled | -29.3 |  |  |  | None | no eligible comparator |
 | 20261123T175551 | GREEN | AI | 192930.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T175551 | GREEN | HUANG | 68582.25 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T175551 | GREEN | JENSEN | 54501.33 | pending | None |  |  |  | None | no eligible comparator |
@@ -1533,3 +1533,6 @@
 | 20261123T175551 | GREEN | CHIP | 29945.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T175551 | GREEN | NVDA | 29224.19 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T175551 | GREEN | NBI | 28739.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T185551 | GREEN | Galord | 91152.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T185551 | GREEN | Jensen | 31532.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T185551 | GREEN | SCINU | 19085.04 | pending | None |  |  |  | None | no eligible comparator |
