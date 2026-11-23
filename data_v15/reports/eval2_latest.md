@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 412 |
-| sightings | 24854 |
-| liquid sightings | 9925 |
-| first liquid sightings = unique tokens with an outcome row | 2053 |
-|   young | 1406 |
-|   mature | 572 |
+| eval-2 scans | 413 |
+| sightings | 24918 |
+| liquid sightings | 9948 |
+| first liquid sightings = unique tokens with an outcome row | 2057 |
+|   young | 1408 |
+|   mature | 574 |
 |   other | 75 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1174 |
+| young without a comparator | 1176 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1065/1406, no_valid_entry 43/1406, pending 11/1406, unknown 215/1406, unreliable 72/1406
-- mature: labelled 525/572, pending 5/572, unknown 42/572
-- no valid entry: young 43/1406, mature 0/572
+- young: labelled 1073/1408, no_valid_entry 43/1408, pending 5/1408, unknown 215/1408, unreliable 72/1408
+- mature: labelled 527/574, pending 5/574, unknown 42/574
+- no valid entry: young 43/1408, mature 0/574
 
 ## Effect (after costs; unit = scan)
 
@@ -1525,14 +1525,16 @@
 | 20261123T165551 | GREEN | JENSEN | 26609.36 | labelled | -34.69 |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | JENSEN | 18741.43 | labelled | 36.74 |  |  |  | None | no eligible comparator |
 | 20261123T165551 | GREEN | TUGI | 15336.23 | labelled | -29.3 |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | AI | 192930.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | HUANG | 68582.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | JENSEN | 54501.33 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | sexcoin | 45082.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | JENSEN | 32224.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | CHIP | 29945.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | NVDA | 29224.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T175551 | GREEN | NBI | 28739.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | AI | 192930.04 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | HUANG | 68582.25 | labelled | -32.35 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | JENSEN | 54501.33 | labelled | -28.45 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | sexcoin | 45082.69 | labelled | -49.62 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | JENSEN | 32224.52 | labelled | 37.18 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | CHIP | 29945.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | NVDA | 29224.19 | labelled | -29.47 |  |  |  | None | no eligible comparator |
+| 20261123T175551 | GREEN | NBI | 28739.99 | labelled | -40.16 |  |  |  | None | no eligible comparator |
 | 20261123T185551 | GREEN | Galord | 91152.33 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T185551 | GREEN | Jensen | 31532.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T185551 | GREEN | SCINU | 19085.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T195550 | NEUTRAL | 来根华子 | 26698.82 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T195550 | NEUTRAL | HI | 17634.48 | pending | None |  |  |  | None | no eligible comparator |
