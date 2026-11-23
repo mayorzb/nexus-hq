@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 393 |
-| sightings | 23697 |
-| liquid sightings | 9456 |
-| first liquid sightings = unique tokens with an outcome row | 1947 |
-|   young | 1342 |
-|   mature | 532 |
+| eval-2 scans | 394 |
+| sightings | 23757 |
+| liquid sightings | 9484 |
+| first liquid sightings = unique tokens with an outcome row | 1955 |
+|   young | 1349 |
+|   mature | 533 |
 |   other | 73 |
 | young with a comparator (cap 2) | 227 |
-| young without a comparator | 1115 |
+| young without a comparator | 1122 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 80 |
-| complete pairs (both 60m outcomes labelled) | 139 |
-| scans contributing a complete pair | 88 |
+|   pairs: young or mature outcome not yet usable | 79 |
+| complete pairs (both 60m outcomes labelled) | 140 |
+| scans contributing a complete pair | 89 |
 
 ## 60m outcome status by group
 
-- young: labelled 1018/1342, no_valid_entry 43/1342, pending 6/1342, unknown 206/1342, unreliable 69/1342
-- mature: labelled 489/532, pending 4/532, unknown 39/532
-- no valid entry: young 43/1342, mature 0/532
+- young: labelled 1020/1349, no_valid_entry 43/1349, pending 11/1349, unknown 206/1349, unreliable 69/1349
+- mature: labelled 491/533, pending 3/533, unknown 39/533
+- no valid entry: young 43/1349, mature 0/533
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.19 points, 95% interval (-36.95, -15.58); scans with young worse 62/88
-- Pairs with young worse: 100/139 (71.9%); pair mean -23.92, median -27.29
-- Big loss (<= -20%): young 97/139, mature 37/139
+- Scan-level mean difference (young - mature): -25.61 points, 95% interval (-36.79, -14.97); scans with young worse 62/89
+- Pairs with young worse: 100/140 (71.4%); pair mean -23.57, median -27.05
+- Big loss (<= -20%): young 97/140, mature 37/140
 
 ## Comparator reuse (cap 2)
 
@@ -1465,8 +1465,15 @@
 | 20261122T215603 | NEUTRAL | MINELIUS | 125140.49 | labelled | 37.64 | MCAT | 113861.66 | labelled | -19.01 |  |
 | 20261122T215603 | NEUTRAL | FSDV15 | 39893.39 | labelled | -29.03 |  |  |  | None | no eligible comparator |
 | 20261122T215603 | NEUTRAL | Wojak | 22285.54 | labelled | -29.78 |  |  |  | None | no eligible comparator |
-| 20261122T225602 | NEUTRAL | COPIUM | 52481.57 | pending | None | UCASH | 77940.85 | pending | None |  |
-| 20261122T225602 | NEUTRAL | XMAS | 24613.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261122T225602 | NEUTRAL | COPIUM | 52481.57 | labelled | 17.29 | UCASH | 77940.85 | labelled | -8.09 |  |
+| 20261122T225602 | NEUTRAL | XMAS | 24613.24 | labelled | 36.99 |  |  |  | None | no eligible comparator |
 | 20261122T235601 | NEUTRAL | ZOL | 24137.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T235601 | NEUTRAL | ZOL | 19111.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261122T235601 | NEUTRAL | PRIVI | 18413.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | CATE | 132319.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | cCAT | 29406.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | ZOL | 29374.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | cCAT | 24174.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | ALONE | 22498.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | RECEIPTS | 19220.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T005601 | NEUTRAL | CATEGIVING | 16961.53 | pending | None |  |  |  | None | no eligible comparator |
