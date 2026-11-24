@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 425 |
-| sightings | 25698 |
-| liquid sightings | 10250 |
-| first liquid sightings = unique tokens with an outcome row | 2119 |
-|   young | 1447 |
-|   mature | 595 |
+| eval-2 scans | 426 |
+| sightings | 25757 |
+| liquid sightings | 10273 |
+| first liquid sightings = unique tokens with an outcome row | 2123 |
+|   young | 1449 |
+|   mature | 597 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1215 |
+| young without a comparator | 1217 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1107/1447, no_valid_entry 43/1447, pending 7/1447, unknown 216/1447, unreliable 74/1447
-- mature: labelled 548/595, pending 4/595, unknown 43/595
-- no valid entry: young 43/1447, mature 0/595
+- young: labelled 1110/1449, no_valid_entry 43/1449, pending 6/1449, unknown 216/1449, unreliable 74/1449
+- mature: labelled 550/597, pending 4/597, unknown 43/597
+- no valid entry: young 43/1449, mature 0/597
 
 ## Effect (after costs; unit = scan)
 
@@ -1570,10 +1570,12 @@
 | 20261124T045542 | NEUTRAL | Spidercow | 22062.97 | labelled | -38.73 |  |  |  | None | no eligible comparator |
 | 20261124T055541 | NEUTRAL | Europa | 30673.11 | labelled | 37.15 |  |  |  | None | no eligible comparator |
 | 20261124T055541 | NEUTRAL | ORBLUX | 19430.87 | labelled | 36.78 |  |  |  | None | no eligible comparator |
-| 20261124T065540 | NEUTRAL | UGLYMIR | 92712.33 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T065540 | NEUTRAL | R | 31277.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T065540 | NEUTRAL | JENSEN | 27223.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | UGLYMIR | 92712.33 | labelled | 37.58 |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | R | 31277.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | JENSEN | 27223.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T065540 | NEUTRAL | $GYMP | 21448.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | TSLA | 107566.06 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Rubdad | 89713.58 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T085539 | NEUTRAL | JENSEN | 32278.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T085539 | NEUTRAL | GUEST | 18206.74 | pending | None |  |  |  | None | no eligible comparator |
