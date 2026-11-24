@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 432 |
-| sightings | 26119 |
-| liquid sightings | 10419 |
-| first liquid sightings = unique tokens with an outcome row | 2145 |
-|   young | 1466 |
-|   mature | 602 |
+| eval-2 scans | 433 |
+| sightings | 26178 |
+| liquid sightings | 10445 |
+| first liquid sightings = unique tokens with an outcome row | 2149 |
+|   young | 1469 |
+|   mature | 603 |
 |   other | 77 |
-| young with a comparator (cap 2) | 232 |
-| young without a comparator | 1234 |
+| young with a comparator (cap 2) | 234 |
+| young without a comparator | 1235 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 84 |
+|   pairs: young or mature outcome not yet usable | 86 |
 | complete pairs (both 60m outcomes labelled) | 140 |
 | scans contributing a complete pair | 89 |
 
 ## 60m outcome status by group
 
-- young: labelled 1121/1466, no_valid_entry 44/1466, pending 8/1466, unknown 217/1466, unreliable 76/1466
-- mature: labelled 558/602, pending 1/602, unknown 43/602
-- no valid entry: young 44/1466, mature 0/602
+- young: labelled 1122/1469, no_valid_entry 45/1469, pending 8/1469, unknown 217/1469, unreliable 77/1469
+- mature: labelled 558/603, pending 2/603, unknown 43/603
+- no valid entry: young 45/1469, mature 0/603
 
 ## Effect (after costs; unit = scan)
 
@@ -125,6 +125,7 @@
 - 20261122T165605-v4GK8f24: GIB (20261122T165605), dolph (20261122T165605)
 - 20261123T015600-NPRY8f8y: Hedge (20261123T015600), OTR (20261123T015600)
 - 20261123T105555-Goei8BRx: Annie (20261123T105555), HOLD (20261123T105555)
+- 20261124T155533-GtDfJKk6: wif (20261124T155533), WORTHLESS (20261124T155533)
 
 ## Every pair
 
@@ -1591,8 +1592,11 @@
 | 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | labelled | -30.98 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | Slingoor | 30794.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T135535 | RED | b | 28002.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T135535 | RED | GPUBREAK | 24365.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | b | 28002.60 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | GPUBREAK | 24365.01 | labelled | 36.98 |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | Memeployed | 22258.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T135535 | RED | PI | 16978.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | PI | 16978.55 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T155533 | DEEP_RED | wif | 36221.95 | pending | None | SIMPS | 18492.00 | pending | None |  |
+| 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | pending | None |  |
+| 20261124T155533 | DEEP_RED | WIF | 15734.62 | pending | None |  |  |  | None | comparators used twice |
