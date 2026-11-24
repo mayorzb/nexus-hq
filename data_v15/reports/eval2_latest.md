@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 421 |
-| sightings | 25438 |
-| liquid sightings | 10154 |
-| first liquid sightings = unique tokens with an outcome row | 2100 |
-|   young | 1435 |
-|   mature | 589 |
+| eval-2 scans | 422 |
+| sightings | 25502 |
+| liquid sightings | 10179 |
+| first liquid sightings = unique tokens with an outcome row | 2104 |
+|   young | 1438 |
+|   mature | 590 |
 |   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1203 |
+| young without a comparator | 1206 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1099/1435, no_valid_entry 43/1435, pending 4/1435, unknown 216/1435, unreliable 73/1435
-- mature: labelled 544/589, pending 2/589, unknown 43/589
-- no valid entry: young 43/1435, mature 0/589
+- young: labelled 1102/1438, no_valid_entry 43/1438, pending 4/1438, unknown 216/1438, unreliable 73/1438
+- mature: labelled 545/590, pending 2/590, unknown 43/590
+- no valid entry: young 43/1438, mature 0/590
 
 ## Effect (after costs; unit = scan)
 
@@ -1561,7 +1561,10 @@
 | 20261124T015545 | NEUTRAL | GTS1 | 21071.12 | labelled | -53.17 |  |  |  | None | no eligible comparator |
 | 20261124T015545 | NEUTRAL | CHIBI | 20813.08 | labelled | -29.3 |  |  |  | None | no eligible comparator |
 | 20261124T015545 | NEUTRAL | STACK | 19553.88 | labelled | -29.54 |  |  |  | None | no eligible comparator |
-| 20261124T025544 | NEUTRAL | GROKIA | 78666.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T025544 | NEUTRAL | DONJENSEN | 66810.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T025544 | NEUTRAL | cig | 24707.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T025544 | NEUTRAL | GROKIA | 78666.54 | labelled | -28.73 |  |  |  | None | no eligible comparator |
+| 20261124T025544 | NEUTRAL | DONJENSEN | 66810.05 | labelled | 37.5 |  |  |  | None | no eligible comparator |
+| 20261124T025544 | NEUTRAL | cig | 24707.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T035543 | NEUTRAL | MOTH | 23389.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | 英伟达 | 29172.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | SUMMITPRO | 22334.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | Spidercow | 22062.97 | pending | None |  |  |  | None | no eligible comparator |
