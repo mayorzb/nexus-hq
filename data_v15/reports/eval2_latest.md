@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 430 |
-| sightings | 25999 |
-| liquid sightings | 10368 |
-| first liquid sightings = unique tokens with an outcome row | 2138 |
-|   young | 1460 |
+| eval-2 scans | 431 |
+| sightings | 26060 |
+| liquid sightings | 10395 |
+| first liquid sightings = unique tokens with an outcome row | 2143 |
+|   young | 1465 |
 |   mature | 601 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1228 |
+| young without a comparator | 1233 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1116/1460, no_valid_entry 44/1460, pending 7/1460, unknown 217/1460, unreliable 76/1460
-- mature: labelled 554/601, pending 4/601, unknown 43/601
-- no valid entry: young 44/1460, mature 0/601
+- young: labelled 1118/1465, no_valid_entry 44/1465, pending 10/1465, unknown 217/1465, unreliable 76/1465
+- mature: labelled 556/601, pending 2/601, unknown 43/601
+- no valid entry: young 44/1465, mature 0/601
 
 ## Effect (after costs; unit = scan)
 
@@ -1584,9 +1584,14 @@
 | 20261124T105537 | RED | BRA | 21855.83 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | INUX | 18372.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | UNIPCS | 16740.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261124T115536 | NEUTRAL | JACKET | 29782.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T115536 | NEUTRAL | JACKET | 29782.03 | labelled | 37.13 |  |  |  | None | no eligible comparator |
+| 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | labelled | -52.43 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | DUVAL | 41793.21 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | Slingoor | 30794.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | b | 28002.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | GPUBREAK | 24365.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | Memeployed | 22258.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | PI | 16978.55 | pending | None |  |  |  | None | no eligible comparator |
