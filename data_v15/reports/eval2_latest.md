@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 429 |
-| sightings | 25941 |
-| liquid sightings | 10342 |
-| first liquid sightings = unique tokens with an outcome row | 2132 |
-|   young | 1456 |
-|   mature | 599 |
+| eval-2 scans | 430 |
+| sightings | 25999 |
+| liquid sightings | 10368 |
+| first liquid sightings = unique tokens with an outcome row | 2138 |
+|   young | 1460 |
+|   mature | 601 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1224 |
+| young without a comparator | 1228 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1115/1456, no_valid_entry 44/1456, pending 6/1456, unknown 216/1456, unreliable 75/1456
-- mature: labelled 554/599, pending 2/599, unknown 43/599
-- no valid entry: young 44/1456, mature 0/599
+- young: labelled 1116/1460, no_valid_entry 44/1460, pending 7/1460, unknown 217/1460, unreliable 76/1460
+- mature: labelled 554/601, pending 4/601, unknown 43/601
+- no valid entry: young 44/1460, mature 0/601
 
 ## Effect (after costs; unit = scan)
 
@@ -1573,7 +1573,7 @@
 | 20261124T065540 | NEUTRAL | UGLYMIR | 92712.33 | labelled | 37.58 |  |  |  | None | no eligible comparator |
 | 20261124T065540 | NEUTRAL | R | 31277.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T065540 | NEUTRAL | JENSEN | 27223.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261124T065540 | NEUTRAL | $GYMP | 21448.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | $GYMP | 21448.90 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | TSLA | 107566.06 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Rubdad | 89713.58 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | labelled | -39.69 |  |  |  | None | no eligible comparator |
@@ -1581,8 +1581,12 @@
 | 20261124T085539 | NEUTRAL | GUEST | 18206.74 | labelled | -40.39 |  |  |  | None | no eligible comparator |
 | 20261124T095538 | RED | Scamsem | 53889.21 | labelled | -27.82 |  |  |  | None | no eligible comparator |
 | 20261124T095538 | RED | scamsem | 28839.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261124T105537 | RED | BRA | 21855.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | BRA | 21855.83 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | INUX | 18372.49 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T105537 | RED | UNIPCS | 16740.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | UNIPCS | 16740.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | JACKET | 29782.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | DUVAL | 41793.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
