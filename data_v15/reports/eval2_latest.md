@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 431 |
-| sightings | 26060 |
-| liquid sightings | 10395 |
-| first liquid sightings = unique tokens with an outcome row | 2143 |
-|   young | 1465 |
-|   mature | 601 |
+| eval-2 scans | 432 |
+| sightings | 26119 |
+| liquid sightings | 10419 |
+| first liquid sightings = unique tokens with an outcome row | 2145 |
+|   young | 1466 |
+|   mature | 602 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1233 |
+| young without a comparator | 1234 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1118/1465, no_valid_entry 44/1465, pending 10/1465, unknown 217/1465, unreliable 76/1465
-- mature: labelled 556/601, pending 2/601, unknown 43/601
-- no valid entry: young 44/1465, mature 0/601
+- young: labelled 1121/1466, no_valid_entry 44/1466, pending 8/1466, unknown 217/1466, unreliable 76/1466
+- mature: labelled 558/602, pending 1/602, unknown 43/602
+- no valid entry: young 44/1466, mature 0/602
 
 ## Effect (after costs; unit = scan)
 
@@ -1586,12 +1586,13 @@
 | 20261124T105537 | RED | UNIPCS | 16740.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | JACKET | 29782.03 | labelled | 37.13 |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | labelled | -52.43 |  |  |  | None | no eligible comparator |
-| 20261124T125535 | NEUTRAL | DUVAL | 41793.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | DUVAL | 41793.21 | labelled | 37.32 |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | labelled | -30.98 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | Slingoor | 30794.58 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | b | 28002.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | GPUBREAK | 24365.01 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | Memeployed | 22258.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | PI | 16978.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | pending | None |  |  |  | None | no eligible comparator |
