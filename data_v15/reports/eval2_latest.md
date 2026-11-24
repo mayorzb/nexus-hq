@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 436 |
-| sightings | 26360 |
-| liquid sightings | 10519 |
-| first liquid sightings = unique tokens with an outcome row | 2162 |
-|   young | 1480 |
+| eval-2 scans | 437 |
+| sightings | 26421 |
+| liquid sightings | 10541 |
+| first liquid sightings = unique tokens with an outcome row | 2164 |
+|   young | 1482 |
 |   mature | 605 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1242 |
+| young without a comparator | 1244 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 89 |
-| complete pairs (both 60m outcomes labelled) | 141 |
-| scans contributing a complete pair | 90 |
+|   pairs: young or mature outcome not yet usable | 87 |
+| complete pairs (both 60m outcomes labelled) | 143 |
+| scans contributing a complete pair | 91 |
 
 ## 60m outcome status by group
 
-- young: labelled 1128/1480, no_valid_entry 45/1480, pending 9/1480, unknown 221/1480, unreliable 77/1480
-- mature: labelled 560/605, pending 2/605, unknown 43/605
-- no valid entry: young 45/1480, mature 0/605
+- young: labelled 1131/1482, no_valid_entry 45/1482, pending 7/1482, unknown 221/1482, unreliable 78/1482
+- mature: labelled 561/605, pending 1/605, unknown 43/605
+- no valid entry: young 45/1482, mature 0/605
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.37 points, 95% interval (-37.43, -15.41); scans with young worse 63/90
-- Pairs with young worse: 101/141 (71.6%); pair mean -24.07, median -27.29
-- Big loss (<= -20%): young 98/141, mature 37/141
+- Scan-level mean difference (young - mature): -26.41 points, 95% interval (-36.97, -15.76); scans with young worse 64/91
+- Pairs with young worse: 103/143 (72.0%); pair mean -24.15, median -27.29
+- Big loss (<= -20%): young 100/143, mature 37/143
 
 ## Comparator reuse (cap 2)
 
@@ -1605,11 +1605,13 @@
 | 20261124T165532 | DEEP_RED | Wanted | 39079.53 | labelled | 37.29 |  |  |  | None | no eligible comparator |
 | 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | labelled | -31.11 |  |  |  | None | no eligible comparator |
 | 20261124T165532 | DEEP_RED | poor dog | 18156.16 | labelled | -36.25 |  |  |  | None | no eligible comparator |
-| 20261124T175531 | RED | Optimus | 104519.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T175531 | RED | CHARITY | 30818.85 | pending | None | P | 18931.37 | pending | None |  |
-| 20261124T175531 | RED | XDOG | 20276.03 | pending | None | P | 18931.37 | pending | None |  |
-| 20261124T175531 | RED | Holders | 18920.68 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T175531 | RED | Optimus | 104519.66 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261124T175531 | RED | CHARITY | 30818.85 | labelled | -35.84 | P | 18931.37 | labelled | -18.32 |  |
+| 20261124T175531 | RED | XDOG | 20276.03 | labelled | -59.9 | P | 18931.37 | labelled | -18.32 |  |
+| 20261124T175531 | RED | Holders | 18920.68 | labelled | -37.75 |  |  |  | None | comparators used twice |
 | 20261124T185531 | RED | CHRISTMAS | 31222.49 | pending | None | Slingoor | 18342.74 | pending | None |  |
 | 20261124T185531 | RED | ELMO | 30639.37 | pending | None | Slingoor | 18342.74 | pending | None |  |
 | 20261124T185531 | RED | SANTIA | 26918.12 | pending | None |  |  |  | None | comparators used twice |
 | 20261124T185531 | RED | Slingoor | 20464.60 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T195530 | RED | CIA | 80380.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T195530 | RED | PumpBull | 32738.54 | pending | None |  |  |  | None | no eligible comparator |
