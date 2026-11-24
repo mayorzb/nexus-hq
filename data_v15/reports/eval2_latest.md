@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 427 |
-| sightings | 25820 |
-| liquid sightings | 10295 |
-| first liquid sightings = unique tokens with an outcome row | 2125 |
-|   young | 1451 |
+| eval-2 scans | 428 |
+| sightings | 25880 |
+| liquid sightings | 10319 |
+| first liquid sightings = unique tokens with an outcome row | 2128 |
+|   young | 1454 |
 |   mature | 597 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1219 |
+| young without a comparator | 1222 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1112/1451, no_valid_entry 43/1451, pending 5/1451, unknown 216/1451, unreliable 75/1451
-- mature: labelled 552/597, pending 2/597, unknown 43/597
-- no valid entry: young 43/1451, mature 0/597
+- young: labelled 1113/1454, no_valid_entry 44/1454, pending 6/1454, unknown 216/1454, unreliable 75/1454
+- mature: labelled 554/597, unknown 43/597
+- no valid entry: young 44/1454, mature 0/597
 
 ## Effect (after costs; unit = scan)
 
@@ -1577,7 +1577,10 @@
 | 20261124T075539 | NEUTRAL | TSLA | 107566.06 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Rubdad | 89713.58 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | labelled | -39.69 |  |  |  | None | no eligible comparator |
-| 20261124T085539 | NEUTRAL | JENSEN | 32278.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T085539 | NEUTRAL | GUEST | 18206.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T085539 | NEUTRAL | JENSEN | 32278.18 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261124T085539 | NEUTRAL | GUEST | 18206.74 | labelled | -40.39 |  |  |  | None | no eligible comparator |
 | 20261124T095538 | RED | Scamsem | 53889.21 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T095538 | RED | scamsem | 28839.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | BRA | 21855.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | INUX | 18372.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | UNIPCS | 16740.74 | pending | None |  |  |  | None | no eligible comparator |
