@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 433 |
-| sightings | 26178 |
-| liquid sightings | 10445 |
-| first liquid sightings = unique tokens with an outcome row | 2149 |
-|   young | 1469 |
+| eval-2 scans | 434 |
+| sightings | 26239 |
+| liquid sightings | 10468 |
+| first liquid sightings = unique tokens with an outcome row | 2152 |
+|   young | 1472 |
 |   mature | 603 |
 |   other | 77 |
 | young with a comparator (cap 2) | 234 |
-| young without a comparator | 1235 |
+| young without a comparator | 1238 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 86 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1122/1469, no_valid_entry 45/1469, pending 8/1469, unknown 217/1469, unreliable 77/1469
-- mature: labelled 558/603, pending 2/603, unknown 43/603
-- no valid entry: young 45/1469, mature 0/603
+- young: labelled 1123/1472, no_valid_entry 45/1472, pending 7/1472, unknown 220/1472, unreliable 77/1472
+- mature: labelled 559/603, pending 1/603, unknown 43/603
+- no valid entry: young 45/1472, mature 0/603
 
 ## Effect (after costs; unit = scan)
 
@@ -1583,7 +1583,7 @@
 | 20261124T095538 | RED | Scamsem | 53889.21 | labelled | -27.82 |  |  |  | None | no eligible comparator |
 | 20261124T095538 | RED | scamsem | 28839.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | BRA | 21855.83 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261124T105537 | RED | INUX | 18372.49 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T105537 | RED | INUX | 18372.49 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | UNIPCS | 16740.74 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | JACKET | 29782.03 | labelled | 37.13 |  |  |  | None | no eligible comparator |
 | 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | labelled | -52.43 |  |  |  | None | no eligible comparator |
@@ -1591,12 +1591,15 @@
 | 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | labelled | -30.98 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T135535 | RED | Slingoor | 30794.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | Slingoor | 30794.58 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | b | 28002.60 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | GPUBREAK | 24365.01 | labelled | 36.98 |  |  |  | None | no eligible comparator |
-| 20261124T135535 | RED | Memeployed | 22258.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T135535 | RED | Memeployed | 22258.74 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | PI | 16978.55 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | labelled | 36.86 |  |  |  | None | no eligible comparator |
 | 20261124T155533 | DEEP_RED | wif | 36221.95 | pending | None | SIMPS | 18492.00 | pending | None |  |
 | 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | pending | None |  |
 | 20261124T155533 | DEEP_RED | WIF | 15734.62 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T165532 | DEEP_RED | Wanted | 39079.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T165532 | DEEP_RED | poor dog | 18156.16 | pending | None |  |  |  | None | no eligible comparator |
