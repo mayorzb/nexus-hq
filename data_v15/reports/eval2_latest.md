@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 438 |
-| sightings | 26485 |
-| liquid sightings | 10562 |
-| first liquid sightings = unique tokens with an outcome row | 2165 |
-|   young | 1483 |
+| eval-2 scans | 439 |
+| sightings | 26549 |
+| liquid sightings | 10586 |
+| first liquid sightings = unique tokens with an outcome row | 2170 |
+|   young | 1488 |
 |   mature | 605 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1245 |
+| young without a comparator | 1250 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1135/1483, no_valid_entry 45/1483, pending 4/1483, unknown 221/1483, unreliable 78/1483
+- young: labelled 1136/1488, no_valid_entry 45/1488, pending 7/1488, unknown 222/1488, unreliable 78/1488
 - mature: labelled 562/605, unknown 43/605
-- no valid entry: young 45/1483, mature 0/605
+- no valid entry: young 45/1488, mature 0/605
 
 ## Effect (after costs; unit = scan)
 
@@ -1600,7 +1600,7 @@
 | 20261124T135535 | RED | PI | 16978.55 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | labelled | 36.86 |  |  |  | None | no eligible comparator |
 | 20261124T155533 | DEEP_RED | wif | 36221.95 | labelled | -57.95 | SIMPS | 18492.00 | labelled | 36.72 |  |
-| 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | labelled | 36.72 |  |
+| 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | unknown | None | SIMPS | 18492.00 | labelled | 36.72 |  |
 | 20261124T155533 | DEEP_RED | WIF | 15734.62 | labelled | -37.19 |  |  |  | None | comparators used twice |
 | 20261124T165532 | DEEP_RED | Wanted | 39079.53 | labelled | 37.29 |  |  |  | None | no eligible comparator |
 | 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | labelled | -31.11 |  |  |  | None | no eligible comparator |
@@ -1614,5 +1614,10 @@
 | 20261124T185531 | RED | SANTIA | 26918.12 | labelled | 37.06 |  |  |  | None | comparators used twice |
 | 20261124T185531 | RED | Slingoor | 20464.60 | labelled | -33.46 |  |  |  | None | comparators used twice |
 | 20261124T195530 | RED | CIA | 80380.55 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T195530 | RED | PumpBull | 32738.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T195530 | RED | PumpBull | 32738.54 | labelled | -29.34 |  |  |  | None | no eligible comparator |
 | 20261124T205530 | RED | DUMBMONEY | 68894.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | Retail | 38924.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | Squirrel | 33628.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | PEPE | 29678.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | Firefly | 25115.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | ANSEM | 21603.22 | pending | None |  |  |  | None | no eligible comparator |
