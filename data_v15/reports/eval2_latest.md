@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 428 |
-| sightings | 25880 |
-| liquid sightings | 10319 |
-| first liquid sightings = unique tokens with an outcome row | 2128 |
-|   young | 1454 |
-|   mature | 597 |
+| eval-2 scans | 429 |
+| sightings | 25941 |
+| liquid sightings | 10342 |
+| first liquid sightings = unique tokens with an outcome row | 2132 |
+|   young | 1456 |
+|   mature | 599 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1222 |
+| young without a comparator | 1224 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1113/1454, no_valid_entry 44/1454, pending 6/1454, unknown 216/1454, unreliable 75/1454
-- mature: labelled 554/597, unknown 43/597
-- no valid entry: young 44/1454, mature 0/597
+- young: labelled 1115/1456, no_valid_entry 44/1456, pending 6/1456, unknown 216/1456, unreliable 75/1456
+- mature: labelled 554/599, pending 2/599, unknown 43/599
+- no valid entry: young 44/1456, mature 0/599
 
 ## Effect (after costs; unit = scan)
 
@@ -1579,8 +1579,10 @@
 | 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | labelled | -39.69 |  |  |  | None | no eligible comparator |
 | 20261124T085539 | NEUTRAL | JENSEN | 32278.18 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261124T085539 | NEUTRAL | GUEST | 18206.74 | labelled | -40.39 |  |  |  | None | no eligible comparator |
-| 20261124T095538 | RED | Scamsem | 53889.21 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T095538 | RED | scamsem | 28839.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T095538 | RED | Scamsem | 53889.21 | labelled | -27.82 |  |  |  | None | no eligible comparator |
+| 20261124T095538 | RED | scamsem | 28839.29 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | BRA | 21855.83 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | INUX | 18372.49 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T105537 | RED | UNIPCS | 16740.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T115536 | NEUTRAL | JACKET | 29782.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T115536 | NEUTRAL | SHHFT | 24636.08 | pending | None |  |  |  | None | no eligible comparator |
