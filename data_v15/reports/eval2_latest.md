@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 423 |
-| sightings | 25569 |
-| liquid sightings | 10203 |
-| first liquid sightings = unique tokens with an outcome row | 2107 |
-|   young | 1440 |
-|   mature | 591 |
+| eval-2 scans | 424 |
+| sightings | 25634 |
+| liquid sightings | 10227 |
+| first liquid sightings = unique tokens with an outcome row | 2113 |
+|   young | 1444 |
+|   mature | 593 |
 |   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1208 |
+| young without a comparator | 1212 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1103/1440, no_valid_entry 43/1440, pending 5/1440, unknown 216/1440, unreliable 73/1440
-- mature: labelled 546/591, pending 2/591, unknown 43/591
-- no valid entry: young 43/1440, mature 0/591
+- young: labelled 1105/1444, no_valid_entry 43/1444, pending 6/1444, unknown 216/1444, unreliable 74/1444
+- mature: labelled 547/593, pending 3/593, unknown 43/593
+- no valid entry: young 43/1444, mature 0/593
 
 ## Effect (after costs; unit = scan)
 
@@ -1565,8 +1565,12 @@
 | 20261124T025544 | NEUTRAL | DONJENSEN | 66810.05 | labelled | 37.5 |  |  |  | None | no eligible comparator |
 | 20261124T025544 | NEUTRAL | cig | 24707.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T035543 | NEUTRAL | MOTH | 23389.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261124T045542 | NEUTRAL | 英伟达 | 29172.02 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T045542 | NEUTRAL | SUMMITPRO | 22334.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T045542 | NEUTRAL | Spidercow | 22062.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | 英伟达 | 29172.02 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | SUMMITPRO | 22334.77 | labelled | -46.74 |  |  |  | None | no eligible comparator |
+| 20261124T045542 | NEUTRAL | Spidercow | 22062.97 | labelled | -38.73 |  |  |  | None | no eligible comparator |
 | 20261124T055541 | NEUTRAL | Europa | 30673.11 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T055541 | NEUTRAL | ORBLUX | 19430.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | UGLYMIR | 92712.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | R | 31277.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | JENSEN | 27223.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T065540 | NEUTRAL | $GYMP | 21448.90 | pending | None |  |  |  | None | no eligible comparator |
