@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 416 |
-| sightings | 25119 |
-| liquid sightings | 10023 |
-| first liquid sightings = unique tokens with an outcome row | 2076 |
-|   young | 1419 |
-|   mature | 581 |
+| eval-2 scans | 417 |
+| sightings | 25185 |
+| liquid sightings | 10049 |
+| first liquid sightings = unique tokens with an outcome row | 2082 |
+|   young | 1423 |
+|   mature | 583 |
 |   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1187 |
+| young without a comparator | 1191 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1079/1419, no_valid_entry 43/1419, pending 9/1419, unknown 215/1419, unreliable 73/1419
-- mature: labelled 533/581, pending 5/581, unknown 43/581
-- no valid entry: young 43/1419, mature 0/581
+- young: labelled 1084/1423, no_valid_entry 43/1423, pending 8/1423, unknown 215/1423, unreliable 73/1423
+- mature: labelled 536/583, pending 4/583, unknown 43/583
+- no valid entry: young 43/1423, mature 0/583
 
 ## Effect (after costs; unit = scan)
 
@@ -1540,12 +1540,16 @@
 | 20261123T195550 | NEUTRAL | HI | 17634.48 | labelled | -36.63 |  |  |  | None | no eligible comparator |
 | 20261123T205549 | NEUTRAL | Democat | 29274.57 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261123T205549 | NEUTRAL | FOMOMAS | 15675.44 | labelled | 36.53 |  |  |  | None | no eligible comparator |
-| 20261123T215548 | NEUTRAL | ChristmASS | 41574.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T215548 | NEUTRAL | MOOT | 37798.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T215548 | NEUTRAL | nothing | 30443.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T215548 | NEUTRAL | JENSEN | 27087.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T215548 | NEUTRAL | NCSP | 20453.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | ChristmASS | 41574.65 | labelled | -42.67 |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | MOOT | 37798.06 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | nothing | 30443.84 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | JENSEN | 27087.00 | labelled | 16.47 |  |  |  | None | no eligible comparator |
+| 20261123T215548 | NEUTRAL | NCSP | 20453.22 | labelled | -5.16 |  |  |  | None | no eligible comparator |
 | 20261123T225547 | NEUTRAL | JIMMY | 39096.37 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T225547 | NEUTRAL | PONK | 31572.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T225547 | NEUTRAL | BLOOM | 17853.48 | pending | None |  |  |  | None | no eligible comparator |
 | 20261123T225547 | NEUTRAL | THANKS | 16064.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | pepe | 33300.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | hamster | 32998.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | JENPE | 28357.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | VRAM | 23416.05 | pending | None |  |  |  | None | no eligible comparator |
