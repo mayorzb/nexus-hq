@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 422 |
-| sightings | 25502 |
-| liquid sightings | 10179 |
-| first liquid sightings = unique tokens with an outcome row | 2104 |
-|   young | 1438 |
-|   mature | 590 |
+| eval-2 scans | 423 |
+| sightings | 25569 |
+| liquid sightings | 10203 |
+| first liquid sightings = unique tokens with an outcome row | 2107 |
+|   young | 1440 |
+|   mature | 591 |
 |   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1206 |
+| young without a comparator | 1208 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1102/1438, no_valid_entry 43/1438, pending 4/1438, unknown 216/1438, unreliable 73/1438
-- mature: labelled 545/590, pending 2/590, unknown 43/590
-- no valid entry: young 43/1438, mature 0/590
+- young: labelled 1103/1440, no_valid_entry 43/1440, pending 5/1440, unknown 216/1440, unreliable 73/1440
+- mature: labelled 546/591, pending 2/591, unknown 43/591
+- no valid entry: young 43/1440, mature 0/591
 
 ## Effect (after costs; unit = scan)
 
@@ -1564,7 +1564,9 @@
 | 20261124T025544 | NEUTRAL | GROKIA | 78666.54 | labelled | -28.73 |  |  |  | None | no eligible comparator |
 | 20261124T025544 | NEUTRAL | DONJENSEN | 66810.05 | labelled | 37.5 |  |  |  | None | no eligible comparator |
 | 20261124T025544 | NEUTRAL | cig | 24707.28 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261124T035543 | NEUTRAL | MOTH | 23389.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T035543 | NEUTRAL | MOTH | 23389.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T045542 | NEUTRAL | 英伟达 | 29172.02 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T045542 | NEUTRAL | SUMMITPRO | 22334.77 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T045542 | NEUTRAL | Spidercow | 22062.97 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T055541 | NEUTRAL | Europa | 30673.11 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T055541 | NEUTRAL | ORBLUX | 19430.87 | pending | None |  |  |  | None | no eligible comparator |
