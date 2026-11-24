@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 418 |
-| sightings | 25250 |
-| liquid sightings | 10072 |
-| first liquid sightings = unique tokens with an outcome row | 2086 |
-|   young | 1425 |
-|   mature | 585 |
+| eval-2 scans | 419 |
+| sightings | 25311 |
+| liquid sightings | 10100 |
+| first liquid sightings = unique tokens with an outcome row | 2094 |
+|   young | 1431 |
+|   mature | 587 |
 |   other | 76 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1193 |
+| young without a comparator | 1199 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1088/1425, no_valid_entry 43/1425, pending 6/1425, unknown 215/1425, unreliable 73/1425
-- mature: labelled 538/585, pending 4/585, unknown 43/585
-- no valid entry: young 43/1425, mature 0/585
+- young: labelled 1091/1431, no_valid_entry 43/1431, pending 9/1431, unknown 215/1431, unreliable 73/1431
+- mature: labelled 540/587, pending 4/587, unknown 43/587
+- no valid entry: young 43/1431, mature 0/587
 
 ## Effect (after costs; unit = scan)
 
@@ -1550,8 +1550,14 @@
 | 20261123T225547 | NEUTRAL | BLOOM | 17853.48 | labelled | 36.69 |  |  |  | None | no eligible comparator |
 | 20261123T225547 | NEUTRAL | THANKS | 16064.33 | labelled | 36.56 |  |  |  | None | no eligible comparator |
 | 20261123T235547 | NEUTRAL | pepe | 33300.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T235547 | NEUTRAL | hamster | 32998.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T235547 | NEUTRAL | JENPE | 28357.56 | pending | None |  |  |  | None | no eligible comparator |
-| 20261123T235547 | NEUTRAL | VRAM | 23416.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | hamster | 32998.05 | labelled | 37.2 |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | JENPE | 28357.56 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261123T235547 | NEUTRAL | VRAM | 23416.05 | labelled | -28.58 |  |  |  | None | no eligible comparator |
 | 20261124T005546 | NEUTRAL | CLAUDIO | 63525.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T005546 | NEUTRAL | Jesus | 30442.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | Flatulence | 34578.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | Flatulence | 26517.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | JENSEN | 21403.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | GTS1 | 21071.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | CHIBI | 20813.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T015545 | NEUTRAL | STACK | 19553.88 | pending | None |  |  |  | None | no eligible comparator |
