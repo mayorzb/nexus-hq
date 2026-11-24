@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 426 |
-| sightings | 25757 |
-| liquid sightings | 10273 |
-| first liquid sightings = unique tokens with an outcome row | 2123 |
-|   young | 1449 |
+| eval-2 scans | 427 |
+| sightings | 25820 |
+| liquid sightings | 10295 |
+| first liquid sightings = unique tokens with an outcome row | 2125 |
+|   young | 1451 |
 |   mature | 597 |
 |   other | 77 |
 | young with a comparator (cap 2) | 232 |
-| young without a comparator | 1217 |
+| young without a comparator | 1219 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 84 |
 | complete pairs (both 60m outcomes labelled) | 140 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1110/1449, no_valid_entry 43/1449, pending 6/1449, unknown 216/1449, unreliable 74/1449
-- mature: labelled 550/597, pending 4/597, unknown 43/597
-- no valid entry: young 43/1449, mature 0/597
+- young: labelled 1112/1451, no_valid_entry 43/1451, pending 5/1451, unknown 216/1451, unreliable 75/1451
+- mature: labelled 552/597, pending 2/597, unknown 43/597
+- no valid entry: young 43/1451, mature 0/597
 
 ## Effect (after costs; unit = scan)
 
@@ -1574,8 +1574,10 @@
 | 20261124T065540 | NEUTRAL | R | 31277.93 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T065540 | NEUTRAL | JENSEN | 27223.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T065540 | NEUTRAL | $GYMP | 21448.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T075539 | NEUTRAL | TSLA | 107566.06 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T075539 | NEUTRAL | Rubdad | 89713.58 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T075539 | NEUTRAL | TSLA | 107566.06 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261124T075539 | NEUTRAL | Rubdad | 89713.58 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261124T075539 | NEUTRAL | Satoshi | 21449.57 | labelled | -39.69 |  |  |  | None | no eligible comparator |
 | 20261124T085539 | NEUTRAL | JENSEN | 32278.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T085539 | NEUTRAL | GUEST | 18206.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T095538 | RED | Scamsem | 53889.21 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T095538 | RED | scamsem | 28839.29 | pending | None |  |  |  | None | no eligible comparator |
