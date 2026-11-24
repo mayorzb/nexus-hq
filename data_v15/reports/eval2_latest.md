@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 434 |
-| sightings | 26239 |
-| liquid sightings | 10468 |
-| first liquid sightings = unique tokens with an outcome row | 2152 |
-|   young | 1472 |
-|   mature | 603 |
+| eval-2 scans | 435 |
+| sightings | 26303 |
+| liquid sightings | 10494 |
+| first liquid sightings = unique tokens with an outcome row | 2157 |
+|   young | 1476 |
+|   mature | 604 |
 |   other | 77 |
-| young with a comparator (cap 2) | 234 |
-| young without a comparator | 1238 |
+| young with a comparator (cap 2) | 236 |
+| young without a comparator | 1240 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 86 |
-| complete pairs (both 60m outcomes labelled) | 140 |
-| scans contributing a complete pair | 89 |
+|   pairs: young or mature outcome not yet usable | 87 |
+| complete pairs (both 60m outcomes labelled) | 141 |
+| scans contributing a complete pair | 90 |
 
 ## 60m outcome status by group
 
-- young: labelled 1123/1472, no_valid_entry 45/1472, pending 7/1472, unknown 220/1472, unreliable 77/1472
-- mature: labelled 559/603, pending 1/603, unknown 43/603
-- no valid entry: young 45/1472, mature 0/603
+- young: labelled 1125/1476, no_valid_entry 45/1476, pending 9/1476, unknown 220/1476, unreliable 77/1476
+- mature: labelled 560/604, pending 1/604, unknown 43/604
+- no valid entry: young 45/1476, mature 0/604
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.61 points, 95% interval (-36.79, -14.97); scans with young worse 62/89
-- Pairs with young worse: 100/140 (71.4%); pair mean -23.57, median -27.05
-- Big loss (<= -20%): young 97/140, mature 37/140
+- Scan-level mean difference (young - mature): -26.37 points, 95% interval (-37.43, -15.41); scans with young worse 63/90
+- Pairs with young worse: 101/141 (71.6%); pair mean -24.07, median -27.29
+- Big loss (<= -20%): young 98/141, mature 37/141
 
 ## Comparator reuse (cap 2)
 
@@ -126,6 +126,7 @@
 - 20261123T015600-NPRY8f8y: Hedge (20261123T015600), OTR (20261123T015600)
 - 20261123T105555-Goei8BRx: Annie (20261123T105555), HOLD (20261123T105555)
 - 20261124T155533-GtDfJKk6: wif (20261124T155533), WORTHLESS (20261124T155533)
+- 20261124T175531-7Kn92xBn: CHARITY (20261124T175531), XDOG (20261124T175531)
 
 ## Every pair
 
@@ -1597,9 +1598,13 @@
 | 20261124T135535 | RED | Memeployed | 22258.74 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | PI | 16978.55 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261124T145534 | DEEP_RED | SCAMSEM | 21148.54 | labelled | 36.86 |  |  |  | None | no eligible comparator |
-| 20261124T155533 | DEEP_RED | wif | 36221.95 | pending | None | SIMPS | 18492.00 | pending | None |  |
-| 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | pending | None |  |
-| 20261124T155533 | DEEP_RED | WIF | 15734.62 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T155533 | DEEP_RED | wif | 36221.95 | labelled | -57.95 | SIMPS | 18492.00 | labelled | 36.72 |  |
+| 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | labelled | 36.72 |  |
+| 20261124T155533 | DEEP_RED | WIF | 15734.62 | labelled | -37.19 |  |  |  | None | comparators used twice |
 | 20261124T165532 | DEEP_RED | Wanted | 39079.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T165532 | DEEP_RED | poor dog | 18156.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T175531 | RED | Optimus | 104519.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T175531 | RED | CHARITY | 30818.85 | pending | None | P | 18931.37 | pending | None |  |
+| 20261124T175531 | RED | XDOG | 20276.03 | pending | None | P | 18931.37 | pending | None |  |
+| 20261124T175531 | RED | Holders | 18920.68 | pending | None |  |  |  | None | comparators used twice |
