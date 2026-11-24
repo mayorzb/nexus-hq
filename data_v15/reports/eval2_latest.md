@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 435 |
-| sightings | 26303 |
-| liquid sightings | 10494 |
-| first liquid sightings = unique tokens with an outcome row | 2157 |
-|   young | 1476 |
-|   mature | 604 |
+| eval-2 scans | 436 |
+| sightings | 26360 |
+| liquid sightings | 10519 |
+| first liquid sightings = unique tokens with an outcome row | 2162 |
+|   young | 1480 |
+|   mature | 605 |
 |   other | 77 |
-| young with a comparator (cap 2) | 236 |
-| young without a comparator | 1240 |
+| young with a comparator (cap 2) | 238 |
+| young without a comparator | 1242 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 87 |
+|   pairs: young or mature outcome not yet usable | 89 |
 | complete pairs (both 60m outcomes labelled) | 141 |
 | scans contributing a complete pair | 90 |
 
 ## 60m outcome status by group
 
-- young: labelled 1125/1476, no_valid_entry 45/1476, pending 9/1476, unknown 220/1476, unreliable 77/1476
-- mature: labelled 560/604, pending 1/604, unknown 43/604
-- no valid entry: young 45/1476, mature 0/604
+- young: labelled 1128/1480, no_valid_entry 45/1480, pending 9/1480, unknown 221/1480, unreliable 77/1480
+- mature: labelled 560/605, pending 2/605, unknown 43/605
+- no valid entry: young 45/1480, mature 0/605
 
 ## Effect (after costs; unit = scan)
 
@@ -127,6 +127,7 @@
 - 20261123T105555-Goei8BRx: Annie (20261123T105555), HOLD (20261123T105555)
 - 20261124T155533-GtDfJKk6: wif (20261124T155533), WORTHLESS (20261124T155533)
 - 20261124T175531-7Kn92xBn: CHARITY (20261124T175531), XDOG (20261124T175531)
+- 20261124T185531-ANvsL4A6: CHRISTMAS (20261124T185531), ELMO (20261124T185531)
 
 ## Every pair
 
@@ -1591,7 +1592,7 @@
 | 20261124T125535 | NEUTRAL | DUVAL | 41793.21 | labelled | 37.32 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | KuroCat | 37716.73 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261124T125535 | NEUTRAL | Unemployed | 27527.40 | labelled | -30.98 |  |  |  | None | no eligible comparator |
-| 20261124T125535 | NEUTRAL | song | 17457.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T125535 | NEUTRAL | song | 17457.71 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | Slingoor | 30794.58 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | b | 28002.60 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T135535 | RED | GPUBREAK | 24365.01 | labelled | 36.98 |  |  |  | None | no eligible comparator |
@@ -1601,10 +1602,14 @@
 | 20261124T155533 | DEEP_RED | wif | 36221.95 | labelled | -57.95 | SIMPS | 18492.00 | labelled | 36.72 |  |
 | 20261124T155533 | DEEP_RED | WORTHLESS | 22204.80 | pending | None | SIMPS | 18492.00 | labelled | 36.72 |  |
 | 20261124T155533 | DEEP_RED | WIF | 15734.62 | labelled | -37.19 |  |  |  | None | comparators used twice |
-| 20261124T165532 | DEEP_RED | Wanted | 39079.53 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T165532 | DEEP_RED | poor dog | 18156.16 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T165532 | DEEP_RED | Wanted | 39079.53 | labelled | 37.29 |  |  |  | None | no eligible comparator |
+| 20261124T165532 | DEEP_RED | CHUCHU | 19510.34 | labelled | -31.11 |  |  |  | None | no eligible comparator |
+| 20261124T165532 | DEEP_RED | poor dog | 18156.16 | labelled | -36.25 |  |  |  | None | no eligible comparator |
 | 20261124T175531 | RED | Optimus | 104519.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T175531 | RED | CHARITY | 30818.85 | pending | None | P | 18931.37 | pending | None |  |
 | 20261124T175531 | RED | XDOG | 20276.03 | pending | None | P | 18931.37 | pending | None |  |
 | 20261124T175531 | RED | Holders | 18920.68 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T185531 | RED | CHRISTMAS | 31222.49 | pending | None | Slingoor | 18342.74 | pending | None |  |
+| 20261124T185531 | RED | ELMO | 30639.37 | pending | None | Slingoor | 18342.74 | pending | None |  |
+| 20261124T185531 | RED | SANTIA | 26918.12 | pending | None |  |  |  | None | comparators used twice |
+| 20261124T185531 | RED | Slingoor | 20464.60 | pending | None |  |  |  | None | comparators used twice |
