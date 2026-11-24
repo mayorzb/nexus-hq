@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 439 |
-| sightings | 26549 |
-| liquid sightings | 10586 |
-| first liquid sightings = unique tokens with an outcome row | 2170 |
-|   young | 1488 |
-|   mature | 605 |
+| eval-2 scans | 440 |
+| sightings | 26612 |
+| liquid sightings | 10608 |
+| first liquid sightings = unique tokens with an outcome row | 2173 |
+|   young | 1490 |
+|   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1250 |
+| young without a comparator | 1252 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1136/1488, no_valid_entry 45/1488, pending 7/1488, unknown 222/1488, unreliable 78/1488
-- mature: labelled 562/605, unknown 43/605
-- no valid entry: young 45/1488, mature 0/605
+- young: labelled 1136/1490, no_valid_entry 45/1490, pending 7/1490, unknown 223/1490, unreliable 79/1490
+- mature: labelled 562/606, pending 1/606, unknown 43/606
+- no valid entry: young 45/1490, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1613,11 +1613,13 @@
 | 20261124T185531 | RED | ELMO | 30639.37 | labelled | 37.15 | Slingoor | 18342.74 | labelled | -33.0 |  |
 | 20261124T185531 | RED | SANTIA | 26918.12 | labelled | 37.06 |  |  |  | None | comparators used twice |
 | 20261124T185531 | RED | Slingoor | 20464.60 | labelled | -33.46 |  |  |  | None | comparators used twice |
-| 20261124T195530 | RED | CIA | 80380.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T195530 | RED | CIA | 80380.55 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T195530 | RED | PumpBull | 32738.54 | labelled | -29.34 |  |  |  | None | no eligible comparator |
-| 20261124T205530 | RED | DUMBMONEY | 68894.02 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T205530 | RED | DUMBMONEY | 68894.02 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Retail | 38924.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Squirrel | 33628.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | PEPE | 29678.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Firefly | 25115.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | ANSEM | 21603.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T225529 | NEUTRAL | BTC | 26036.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T225529 | NEUTRAL | goldcoin | 23975.25 | pending | None |  |  |  | None | no eligible comparator |
