@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 451 |
-| sightings | 27289 |
-| liquid sightings | 10873 |
+| eval-2 scans | 452 |
+| sightings | 27350 |
+| liquid sightings | 10893 |
 | first liquid sightings = unique tokens with an outcome row | 2207 |
 |   young | 1524 |
 |   mature | 606 |
@@ -22,7 +22,7 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1163/1524, no_valid_entry 45/1524, pending 7/1524, unknown 229/1524, unreliable 80/1524
+- young: labelled 1167/1524, no_valid_entry 45/1524, pending 3/1524, unknown 229/1524, unreliable 80/1524
 - mature: labelled 563/606, unknown 43/606
 - no valid entry: young 45/1524, mature 0/606
 
@@ -1651,9 +1651,9 @@
 | 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | FUCKCANCER | 18535.73 | labelled | -33.34 |  |  |  | None | no eligible comparator |
 | 20261125T065522 | RED | MONKE | 16879.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261125T085521 | RED | JaoJiu | 33535.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T085521 | RED | HELIORA | 23913.15 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T085521 | RED | MooHan | 22409.13 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T085521 | RED | 保密 | 19163.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | JaoJiu | 33535.87 | labelled | -28.44 |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | HELIORA | 23913.15 | labelled | -41.23 |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | MooHan | 22409.13 | labelled | 36.91 |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | 保密 | 19163.12 | labelled | -35.23 |  |  |  | None | no eligible comparator |
 | 20261125T095521 | RED | GORP | 31074.33 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T095521 | RED | SOLCHAN | 18203.52 | pending | None |  |  |  | None | no eligible comparator |
