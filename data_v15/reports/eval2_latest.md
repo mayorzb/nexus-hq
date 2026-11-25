@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 455 |
-| sightings | 27547 |
-| liquid sightings | 10963 |
-| first liquid sightings = unique tokens with an outcome row | 2216 |
-|   young | 1532 |
+| eval-2 scans | 456 |
+| sightings | 27610 |
+| liquid sightings | 10986 |
+| first liquid sightings = unique tokens with an outcome row | 2220 |
+|   young | 1536 |
 |   mature | 607 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1294 |
+| young without a comparator | 1298 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1169/1532, no_valid_entry 45/1532, pending 7/1532, unknown 230/1532, unreliable 81/1532
-- mature: labelled 563/607, pending 1/607, unknown 43/607
-- no valid entry: young 45/1532, mature 0/607
+- young: labelled 1169/1536, no_valid_entry 45/1536, pending 11/1536, unknown 230/1536, unreliable 81/1536
+- mature: labelled 563/607, unknown 44/607
+- no valid entry: young 45/1536, mature 0/607
 
 ## Effect (after costs; unit = scan)
 
@@ -1665,3 +1665,7 @@
 | 20261125T135518 | RED | Ukrainu | 15443.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | OUROBOROS | 15269.72 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | TANGENT | 15010.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | MONEYGO | 22632.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | ATX | 20372.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | JOE | 17876.38 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | FRANK | 17663.46 | pending | None |  |  |  | None | no eligible comparator |
