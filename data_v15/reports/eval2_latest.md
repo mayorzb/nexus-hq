@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 463 |
-| sightings | 28046 |
-| liquid sightings | 11148 |
-| first liquid sightings = unique tokens with an outcome row | 2262 |
-|   young | 1563 |
-|   mature | 622 |
+| eval-2 scans | 464 |
+| sightings | 28110 |
+| liquid sightings | 11170 |
+| first liquid sightings = unique tokens with an outcome row | 2265 |
+|   young | 1564 |
+|   mature | 624 |
 |   other | 77 |
 | young with a comparator (cap 2) | 243 |
-| young without a comparator | 1320 |
+| young without a comparator | 1321 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 87 |
 | complete pairs (both 60m outcomes labelled) | 148 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1187/1563, no_valid_entry 47/1563, pending 14/1563, unknown 232/1563, unreliable 83/1563
-- mature: labelled 574/622, pending 4/622, unknown 44/622
-- no valid entry: young 47/1563, mature 0/622
+- young: labelled 1193/1564, no_valid_entry 47/1564, pending 9/1564, unknown 232/1564, unreliable 83/1564
+- mature: labelled 575/624, pending 5/624, unknown 44/624
+- no valid entry: young 47/1564, mature 0/624
 
 ## Effect (after costs; unit = scan)
 
@@ -1684,12 +1684,12 @@
 | 20261125T185513 | NEUTRAL | 4CHAN | 24371.33 | labelled | -34.06 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | SI | 18509.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T195512 | NEUTRAL | GRAVY | 15543.81 | labelled | -46.74 |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | OnlyUp | 41935.23 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | NVIDIA | 34769.00 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | Pompompurin | 34001.04 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | Pnut | 29231.53 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | POMBAO | 25747.46 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | Paulie | 24494.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | OnlyUp | 41935.23 | labelled | -31.15 |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | NVIDIA | 34769.00 | labelled | 37.23 |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | Pompompurin | 34001.04 | labelled | 37.21 |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | Pnut | 29231.53 | labelled | -34.65 |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | POMBAO | 25747.46 | labelled | -33.87 |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | Paulie | 24494.43 | labelled | 36.99 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | BEASTGAMES | 21924.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | PTO | 20724.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | UBI | 18132.92 | pending | None |  |  |  | None | no eligible comparator |
@@ -1697,3 +1697,4 @@
 | 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T225510 | NEUTRAL | Grodia | 78588.85 | pending | None |  |  |  | None | no eligible comparator |
