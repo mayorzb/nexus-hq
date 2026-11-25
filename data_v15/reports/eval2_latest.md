@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 447 |
-| sightings | 27055 |
-| liquid sightings | 10783 |
-| first liquid sightings = unique tokens with an outcome row | 2200 |
-|   young | 1517 |
+| eval-2 scans | 448 |
+| sightings | 27117 |
+| liquid sightings | 10805 |
+| first liquid sightings = unique tokens with an outcome row | 2201 |
+|   young | 1518 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1279 |
+| young without a comparator | 1280 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1157/1517, no_valid_entry 45/1517, pending 10/1517, unknown 225/1517, unreliable 80/1517
+- young: labelled 1159/1518, no_valid_entry 45/1518, pending 8/1518, unknown 226/1518, unreliable 80/1518
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1517, mature 0/606
+- no valid entry: young 45/1518, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1629,7 +1629,7 @@
 | 20261124T235528 | RED | MARS | 19114.33 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261125T005527 | RED | BOOBS | 42442.40 | labelled | -46.43 |  |  |  | None | no eligible comparator |
 | 20261125T005527 | RED | WIKI | 32764.96 | labelled | -38.03 |  |  |  | None | no eligible comparator |
-| 20261125T005527 | RED | Pumpcar | 15817.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | Pumpcar | 15817.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | DongCoin | 44946.67 | labelled | -28.43 |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | ChristmASS | 31547.70 | labelled | 37.17 |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | 雪球 | 20619.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1644,9 +1644,10 @@
 | 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 19531.80 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | YUMA | 19137.56 | labelled | 36.76 |  |  |  | None | no eligible comparator |
-| 20261125T045524 | RED | BASKET | 79009.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T045524 | RED | Mokhtar | 26559.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T045524 | RED | BASKET | 79009.05 | labelled | -33.42 |  |  |  | None | no eligible comparator |
+| 20261125T045524 | RED | Mokhtar | 26559.18 | labelled | 37.05 |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | ATX | 170928.07 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | JENSEN | 29268.51 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | FUCKCANCER | 18535.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T065522 | RED | MONKE | 16879.67 | pending | None |  |  |  | None | no eligible comparator |
