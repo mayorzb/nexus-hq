@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 445 |
-| sightings | 26930 |
-| liquid sightings | 10733 |
-| first liquid sightings = unique tokens with an outcome row | 2194 |
-|   young | 1511 |
+| eval-2 scans | 446 |
+| sightings | 26993 |
+| liquid sightings | 10757 |
+| first liquid sightings = unique tokens with an outcome row | 2196 |
+|   young | 1513 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1273 |
+| young without a comparator | 1275 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1152/1511, no_valid_entry 45/1511, pending 9/1511, unknown 225/1511, unreliable 80/1511
+- young: labelled 1155/1513, no_valid_entry 45/1513, pending 8/1513, unknown 225/1513, unreliable 80/1513
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1511, mature 0/606
+- no valid entry: young 45/1513, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1636,11 +1636,13 @@
 | 20261125T015526 | RED | PERRO | 18580.27 | labelled | -45.87 |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | Amend | 17641.56 | labelled | -32.52 |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | PERRO | 17262.26 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261125T025525 | RED | Caiolo | 20807.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T025525 | RED | MANLET | 17083.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | Caiolo | 20807.73 | labelled | -29.56 |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | MANLET | 17083.67 | labelled | 36.64 |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TOUCAN | 16618.12 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T025525 | RED | TELEDROID | 15258.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | TELEDROID | 15258.51 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 47155.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 19531.80 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | YUMA | 19137.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T045524 | RED | BASKET | 79009.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T045524 | RED | Mokhtar | 26559.18 | pending | None |  |  |  | None | no eligible comparator |
