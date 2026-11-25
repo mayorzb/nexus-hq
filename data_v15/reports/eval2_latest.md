@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 457 |
-| sightings | 27670 |
-| liquid sightings | 11008 |
-| first liquid sightings = unique tokens with an outcome row | 2223 |
-|   young | 1538 |
+| eval-2 scans | 458 |
+| sightings | 27729 |
+| liquid sightings | 11030 |
+| first liquid sightings = unique tokens with an outcome row | 2225 |
+|   young | 1540 |
 |   mature | 608 |
 |   other | 77 |
 | young with a comparator (cap 2) | 239 |
-| young without a comparator | 1299 |
+| young without a comparator | 1301 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 86 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1174/1538, no_valid_entry 46/1538, pending 7/1538, unknown 230/1538, unreliable 81/1538
+- young: labelled 1177/1540, no_valid_entry 46/1540, pending 4/1540, unknown 231/1540, unreliable 82/1540
 - mature: labelled 563/608, pending 1/608, unknown 44/608
-- no valid entry: young 46/1538, mature 0/608
+- no valid entry: young 46/1540, mature 0/608
 
 ## Effect (after costs; unit = scan)
 
@@ -1662,12 +1662,14 @@
 | 20261125T135518 | RED | GEMIDIA | 32790.50 | labelled | 37.19 |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | MEME | 22067.92 | labelled | 36.9 |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | Tariff | 18690.61 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261125T135518 | RED | Ukrainu | 15443.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | Ukrainu | 15443.08 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | OUROBOROS | 15269.72 | labelled | -4.87 |  |  |  | None | no eligible comparator |
 | 20261125T135518 | RED | TANGENT | 15010.01 | labelled | -31.24 |  |  |  | None | no eligible comparator |
-| 20261125T145517 | RED | MONEYGO | 22632.91 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T145517 | RED | ATX | 20372.72 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T145517 | RED | JOE | 17876.38 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T145517 | RED | FRANK | 17663.46 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | MONEYGO | 22632.91 | labelled | 36.92 |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | ATX | 20372.72 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | JOE | 17876.38 | labelled | -32.86 |  |  |  | None | no eligible comparator |
+| 20261125T145517 | RED | FRANK | 17663.46 | labelled | -41.97 |  |  |  | None | no eligible comparator |
 | 20261125T155516 | RED | 蚁巢 | 42030.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T155516 | RED | BIAO | 29306.74 | pending | None | Santa | 18410.92 | pending | None |  |
+| 20261125T165515 | RED | MONEY | 26169.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T165515 | RED | GOLDILOCKS | 25848.32 | pending | None |  |  |  | None | no eligible comparator |
