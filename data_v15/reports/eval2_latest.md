@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 460 |
-| sightings | 27852 |
-| liquid sightings | 11076 |
-| first liquid sightings = unique tokens with an outcome row | 2240 |
-|   young | 1549 |
-|   mature | 614 |
+| eval-2 scans | 461 |
+| sightings | 27917 |
+| liquid sightings | 11096 |
+| first liquid sightings = unique tokens with an outcome row | 2245 |
+|   young | 1550 |
+|   mature | 618 |
 |   other | 77 |
 | young with a comparator (cap 2) | 242 |
-| young without a comparator | 1307 |
+| young without a comparator | 1308 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 88 |
-| complete pairs (both 60m outcomes labelled) | 146 |
-| scans contributing a complete pair | 93 |
+|   pairs: young or mature outcome not yet usable | 86 |
+| complete pairs (both 60m outcomes labelled) | 148 |
+| scans contributing a complete pair | 94 |
 
 ## 60m outcome status by group
 
-- young: labelled 1180/1549, no_valid_entry 46/1549, pending 9/1549, unknown 232/1549, unreliable 82/1549
-- mature: labelled 564/614, pending 6/614, unknown 44/614
-- no valid entry: young 46/1549, mature 0/614
+- young: labelled 1183/1550, no_valid_entry 47/1550, pending 6/1550, unknown 232/1550, unreliable 82/1550
+- mature: labelled 567/618, pending 7/618, unknown 44/618
+- no valid entry: young 47/1550, mature 0/618
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.73 points, 95% interval (-35.75, -15.17); scans with young worse 65/93
-- Pairs with young worse: 104/146 (71.2%); pair mean -23.33, median -26.7
-- Big loss (<= -20%): young 102/146, mature 39/146
+- Scan-level mean difference (young - mature): -25.92 points, 95% interval (-36.34, -15.84); scans with young worse 66/94
+- Pairs with young worse: 106/148 (71.6%); pair mean -23.6, median -27.05
+- Big loss (<= -20%): young 104/148, mature 39/148
 
 ## Comparator reuse (cap 2)
 
@@ -1674,12 +1674,13 @@
 | 20261125T155516 | RED | BIAO | 29306.74 | labelled | -29.17 | Santa | 18410.92 | labelled | -2.68 |  |
 | 20261125T165515 | RED | MONEY | 26169.41 | labelled | -35.27 |  |  |  | None | no eligible comparator |
 | 20261125T165515 | RED | GOLDILOCKS | 25848.32 | labelled | -58.07 |  |  |  | None | no eligible comparator |
-| 20261125T175514 | NEUTRAL | LENDR | 60691.26 | pending | None | swordcat | 90346.18 | pending | None |  |
-| 20261125T175514 | NEUTRAL | MIM | 55009.42 | pending | None | swordcat | 90346.18 | pending | None |  |
-| 20261125T175514 | NEUTRAL | SOL2 | 32739.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T175514 | NEUTRAL | CI | 21762.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T175514 | NEUTRAL | LENDR | 60691.26 | labelled | -28.78 | swordcat | 90346.18 | labelled | 0.5 |  |
+| 20261125T175514 | NEUTRAL | MIM | 55009.42 | labelled | -56.58 | swordcat | 90346.18 | labelled | 0.5 |  |
+| 20261125T175514 | NEUTRAL | SOL2 | 32739.63 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261125T175514 | NEUTRAL | CI | 21762.36 | labelled | -37.57 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | SOL2 | 46675.82 | pending | None | swordcat | 92162.63 | pending | None |  |
 | 20261125T185513 | NEUTRAL | RECORDEGG | 31438.36 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | GRAUDIA | 26837.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | 4CHAN | 24371.33 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | SI | 18509.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T195512 | NEUTRAL | GRAVY | 15543.81 | pending | None |  |  |  | None | no eligible comparator |
