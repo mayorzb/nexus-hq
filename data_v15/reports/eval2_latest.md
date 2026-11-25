@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 452 |
-| sightings | 27350 |
-| liquid sightings | 10893 |
-| first liquid sightings = unique tokens with an outcome row | 2207 |
-|   young | 1524 |
+| eval-2 scans | 453 |
+| sightings | 27415 |
+| liquid sightings | 10914 |
+| first liquid sightings = unique tokens with an outcome row | 2208 |
+|   young | 1525 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1286 |
+| young without a comparator | 1287 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1167/1524, no_valid_entry 45/1524, pending 3/1524, unknown 229/1524, unreliable 80/1524
+- young: labelled 1168/1525, no_valid_entry 45/1525, pending 1/1525, unknown 230/1525, unreliable 81/1525
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1524, mature 0/606
+- no valid entry: young 45/1525, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1648,12 +1648,13 @@
 | 20261125T045524 | RED | Mokhtar | 26559.18 | labelled | 37.05 |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | ATX | 170928.07 | labelled | -2.6 |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | JENSEN | 29268.51 | labelled | 37.12 |  |  |  | None | no eligible comparator |
-| 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | do | 22233.75 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | FUCKCANCER | 18535.73 | labelled | -33.34 |  |  |  | None | no eligible comparator |
 | 20261125T065522 | RED | MONKE | 16879.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | JaoJiu | 33535.87 | labelled | -28.44 |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | HELIORA | 23913.15 | labelled | -41.23 |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | MooHan | 22409.13 | labelled | 36.91 |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | 保密 | 19163.12 | labelled | -35.23 |  |  |  | None | no eligible comparator |
-| 20261125T095521 | RED | GORP | 31074.33 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T095521 | RED | SOLCHAN | 18203.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T095521 | RED | GORP | 31074.33 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261125T095521 | RED | SOLCHAN | 18203.52 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261125T115519 | RED | Pompom | 20311.37 | pending | None |  |  |  | None | no eligible comparator |
