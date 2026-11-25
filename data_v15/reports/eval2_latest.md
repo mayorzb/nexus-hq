@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 441 |
-| sightings | 26675 |
-| liquid sightings | 10632 |
-| first liquid sightings = unique tokens with an outcome row | 2177 |
-|   young | 1494 |
+| eval-2 scans | 442 |
+| sightings | 26739 |
+| liquid sightings | 10656 |
+| first liquid sightings = unique tokens with an outcome row | 2180 |
+|   young | 1497 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1256 |
+| young without a comparator | 1259 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1139/1494, no_valid_entry 45/1494, pending 8/1494, unknown 223/1494, unreliable 79/1494
-- mature: labelled 562/606, pending 1/606, unknown 43/606
-- no valid entry: young 45/1494, mature 0/606
+- young: labelled 1141/1497, no_valid_entry 45/1497, pending 8/1497, unknown 224/1497, unreliable 79/1497
+- mature: labelled 563/606, unknown 43/606
+- no valid entry: young 45/1497, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1616,14 +1616,17 @@
 | 20261124T195530 | RED | CIA | 80380.55 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T195530 | RED | PumpBull | 32738.54 | labelled | -29.34 |  |  |  | None | no eligible comparator |
 | 20261124T205530 | RED | DUMBMONEY | 68894.02 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261124T215529 | RED | Retail | 38924.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | Retail | 38924.91 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Squirrel | 33628.91 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | PEPE | 29678.53 | labelled | 37.13 |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Firefly | 25115.18 | labelled | -39.04 |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | ANSEM | 21603.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T225529 | NEUTRAL | BTC | 26036.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261124T225529 | NEUTRAL | goldcoin | 23975.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T225529 | NEUTRAL | BTC | 26036.30 | labelled | -31.66 |  |  |  | None | no eligible comparator |
+| 20261124T225529 | NEUTRAL | goldcoin | 23975.25 | labelled | 36.97 |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | CARTZ | 86265.50 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | 4CHAN | 35070.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | Jimmies | 28077.74 | pending | None |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | MARS | 19114.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | BOOBS | 42442.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | WIKI | 32764.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | Pumpcar | 15817.22 | pending | None |  |  |  | None | no eligible comparator |
