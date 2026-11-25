@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 449 |
-| sightings | 27177 |
-| liquid sightings | 10826 |
-| first liquid sightings = unique tokens with an outcome row | 2201 |
-|   young | 1518 |
+| eval-2 scans | 450 |
+| sightings | 27235 |
+| liquid sightings | 10850 |
+| first liquid sightings = unique tokens with an outcome row | 2205 |
+|   young | 1522 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1280 |
+| young without a comparator | 1284 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1162/1518, no_valid_entry 45/1518, pending 5/1518, unknown 226/1518, unreliable 80/1518
+- young: labelled 1163/1522, no_valid_entry 45/1522, pending 7/1522, unknown 227/1522, unreliable 80/1522
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1518, mature 0/606
+- no valid entry: young 45/1522, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1638,7 +1638,7 @@
 | 20261125T015526 | RED | PERRO | 17262.26 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | Caiolo | 20807.73 | labelled | -29.56 |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | MANLET | 17083.67 | labelled | 36.64 |  |  |  | None | no eligible comparator |
-| 20261125T025525 | RED | TOUCAN | 16618.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | TOUCAN | 16618.12 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TELEDROID | 15258.51 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 47155.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
@@ -1650,4 +1650,8 @@
 | 20261125T055523 | RED | JENSEN | 29268.51 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | FUCKCANCER | 18535.73 | labelled | -33.34 |  |  |  | None | no eligible comparator |
-| 20261125T065522 | RED | MONKE | 16879.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T065522 | RED | MONKE | 16879.67 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | JaoJiu | 33535.87 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | HELIORA | 23913.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | MooHan | 22409.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T085521 | RED | 保密 | 19163.12 | pending | None |  |  |  | None | no eligible comparator |
