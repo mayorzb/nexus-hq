@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-25 20:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-25 21:02 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-25 20:03 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 63 / 23 | OK |
-| Deep-checked coins left UNVERIFIED | 6 of 32 (19%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 40 checked, 1 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 40 of 72 | WARN |
-| Paper candidates (last 24h) | 9 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 377 / 77 | ALERT |
+| Deep-checked coins left UNVERIFIED | 8 of 40 (20%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 38 checked, 1 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 48 of 88 | WARN |
+| Paper candidates (last 24h) | 10 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 386 / 75 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (22:55), mihao (17:55), CATE (17:55), swordcat (17:55), mihao (18:55), CATE (18:55), swordcat (18:55), mihao (19:55), CATE (19:55)
+Candidates: CATE (22:55), mihao (17:55), CATE (17:55), swordcat (17:55), mihao (18:55), CATE (18:55), swordcat (18:55), mihao (19:55), CATE (19:55), CATE (20:55)
