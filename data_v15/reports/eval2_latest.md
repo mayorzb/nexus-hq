@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 450 |
-| sightings | 27235 |
-| liquid sightings | 10850 |
-| first liquid sightings = unique tokens with an outcome row | 2205 |
-|   young | 1522 |
+| eval-2 scans | 451 |
+| sightings | 27289 |
+| liquid sightings | 10873 |
+| first liquid sightings = unique tokens with an outcome row | 2207 |
+|   young | 1524 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1284 |
+| young without a comparator | 1286 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1163/1522, no_valid_entry 45/1522, pending 7/1522, unknown 227/1522, unreliable 80/1522
+- young: labelled 1163/1524, no_valid_entry 45/1524, pending 7/1524, unknown 229/1524, unreliable 80/1524
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1522, mature 0/606
+- no valid entry: young 45/1524, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1640,8 +1640,8 @@
 | 20261125T025525 | RED | MANLET | 17083.67 | labelled | 36.64 |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TOUCAN | 16618.12 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TELEDROID | 15258.51 | labelled | 36.5 |  |  |  | None | no eligible comparator |
-| 20261125T035524 | RED | Manlet | 47155.54 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | Manlet | 47155.54 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | 1 | 20430.80 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 19531.80 | labelled | -32.73 |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | YUMA | 19137.56 | labelled | 36.76 |  |  |  | None | no eligible comparator |
 | 20261125T045524 | RED | BASKET | 79009.05 | labelled | -33.42 |  |  |  | None | no eligible comparator |
@@ -1655,3 +1655,5 @@
 | 20261125T085521 | RED | HELIORA | 23913.15 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | MooHan | 22409.13 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T085521 | RED | 保密 | 19163.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T095521 | RED | GORP | 31074.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T095521 | RED | SOLCHAN | 18203.52 | pending | None |  |  |  | None | no eligible comparator |
