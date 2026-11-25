@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 446 |
-| sightings | 26993 |
-| liquid sightings | 10757 |
-| first liquid sightings = unique tokens with an outcome row | 2196 |
-|   young | 1513 |
+| eval-2 scans | 447 |
+| sightings | 27055 |
+| liquid sightings | 10783 |
+| first liquid sightings = unique tokens with an outcome row | 2200 |
+|   young | 1517 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1275 |
+| young without a comparator | 1279 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1155/1513, no_valid_entry 45/1513, pending 8/1513, unknown 225/1513, unreliable 80/1513
+- young: labelled 1157/1517, no_valid_entry 45/1517, pending 10/1517, unknown 225/1517, unreliable 80/1517
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1513, mature 0/606
+- no valid entry: young 45/1517, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1642,7 +1642,11 @@
 | 20261125T025525 | RED | TELEDROID | 15258.51 | labelled | 36.5 |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | Manlet | 47155.54 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T035524 | RED | Manlet | 19531.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T035524 | RED | YUMA | 19137.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | Manlet | 19531.80 | labelled | -32.73 |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | YUMA | 19137.56 | labelled | 36.76 |  |  |  | None | no eligible comparator |
 | 20261125T045524 | RED | BASKET | 79009.05 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T045524 | RED | Mokhtar | 26559.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | ATX | 170928.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | JENSEN | 29268.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | FUCKCANCER | 18535.73 | pending | None |  |  |  | None | no eligible comparator |
