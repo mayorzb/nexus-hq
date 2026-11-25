@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 448 |
-| sightings | 27117 |
-| liquid sightings | 10805 |
+| eval-2 scans | 449 |
+| sightings | 27177 |
+| liquid sightings | 10826 |
 | first liquid sightings = unique tokens with an outcome row | 2201 |
 |   young | 1518 |
 |   mature | 606 |
@@ -22,7 +22,7 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1159/1518, no_valid_entry 45/1518, pending 8/1518, unknown 226/1518, unreliable 80/1518
+- young: labelled 1162/1518, no_valid_entry 45/1518, pending 5/1518, unknown 226/1518, unreliable 80/1518
 - mature: labelled 563/606, unknown 43/606
 - no valid entry: young 45/1518, mature 0/606
 
@@ -1646,8 +1646,8 @@
 | 20261125T035524 | RED | YUMA | 19137.56 | labelled | 36.76 |  |  |  | None | no eligible comparator |
 | 20261125T045524 | RED | BASKET | 79009.05 | labelled | -33.42 |  |  |  | None | no eligible comparator |
 | 20261125T045524 | RED | Mokhtar | 26559.18 | labelled | 37.05 |  |  |  | None | no eligible comparator |
-| 20261125T055523 | RED | ATX | 170928.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T055523 | RED | JENSEN | 29268.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | ATX | 170928.07 | labelled | -2.6 |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | JENSEN | 29268.51 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261125T055523 | RED | do | 22233.75 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T055523 | RED | FUCKCANCER | 18535.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T055523 | RED | FUCKCANCER | 18535.73 | labelled | -33.34 |  |  |  | None | no eligible comparator |
 | 20261125T065522 | RED | MONKE | 16879.67 | pending | None |  |  |  | None | no eligible comparator |
