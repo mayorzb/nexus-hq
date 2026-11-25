@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 454 |
-| sightings | 27481 |
-| liquid sightings | 10935 |
-| first liquid sightings = unique tokens with an outcome row | 2209 |
-|   young | 1525 |
+| eval-2 scans | 455 |
+| sightings | 27547 |
+| liquid sightings | 10963 |
+| first liquid sightings = unique tokens with an outcome row | 2216 |
+|   young | 1532 |
 |   mature | 607 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1287 |
+| young without a comparator | 1294 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1168/1525, no_valid_entry 45/1525, pending 1/1525, unknown 230/1525, unreliable 81/1525
+- young: labelled 1169/1532, no_valid_entry 45/1532, pending 7/1532, unknown 230/1532, unreliable 81/1532
 - mature: labelled 563/607, pending 1/607, unknown 43/607
-- no valid entry: young 45/1525, mature 0/607
+- no valid entry: young 45/1532, mature 0/607
 
 ## Effect (after costs; unit = scan)
 
@@ -1657,4 +1657,11 @@
 | 20261125T085521 | RED | 保密 | 19163.12 | labelled | -35.23 |  |  |  | None | no eligible comparator |
 | 20261125T095521 | RED | GORP | 31074.33 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261125T095521 | RED | SOLCHAN | 18203.52 | unreliable | None |  |  |  | None | no eligible comparator |
-| 20261125T115519 | RED | Pompom | 20311.37 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T115519 | RED | Pompom | 20311.37 | labelled | -34.58 |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | BOOSTER | 34341.01 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | GEMIDIA | 32790.50 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | MEME | 22067.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | Tariff | 18690.61 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | Ukrainu | 15443.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | OUROBOROS | 15269.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T135518 | RED | TANGENT | 15010.01 | pending | None |  |  |  | None | no eligible comparator |
