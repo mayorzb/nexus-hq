@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 444 |
-| sightings | 26866 |
-| liquid sightings | 10710 |
-| first liquid sightings = unique tokens with an outcome row | 2190 |
-|   young | 1507 |
+| eval-2 scans | 445 |
+| sightings | 26930 |
+| liquid sightings | 10733 |
+| first liquid sightings = unique tokens with an outcome row | 2194 |
+|   young | 1511 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1269 |
+| young without a comparator | 1273 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1147/1507, no_valid_entry 45/1507, pending 12/1507, unknown 224/1507, unreliable 79/1507
+- young: labelled 1152/1511, no_valid_entry 45/1511, pending 9/1511, unknown 225/1511, unreliable 80/1511
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1507, mature 0/606
+- no valid entry: young 45/1511, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1620,7 +1620,7 @@
 | 20261124T215529 | RED | Squirrel | 33628.91 | labelled | 37.21 |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | PEPE | 29678.53 | labelled | 37.13 |  |  |  | None | no eligible comparator |
 | 20261124T215529 | RED | Firefly | 25115.18 | labelled | -39.04 |  |  |  | None | no eligible comparator |
-| 20261124T215529 | RED | ANSEM | 21603.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261124T215529 | RED | ANSEM | 21603.22 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261124T225529 | NEUTRAL | BTC | 26036.30 | labelled | -31.66 |  |  |  | None | no eligible comparator |
 | 20261124T225529 | NEUTRAL | goldcoin | 23975.25 | labelled | 36.97 |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | CARTZ | 86265.50 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1630,13 +1630,17 @@
 | 20261125T005527 | RED | BOOBS | 42442.40 | labelled | -46.43 |  |  |  | None | no eligible comparator |
 | 20261125T005527 | RED | WIKI | 32764.96 | labelled | -38.03 |  |  |  | None | no eligible comparator |
 | 20261125T005527 | RED | Pumpcar | 15817.22 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | DongCoin | 44946.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | ChristmASS | 31547.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | 雪球 | 20619.80 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | PERRO | 18580.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | Amend | 17641.56 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T015526 | RED | PERRO | 17262.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | DongCoin | 44946.67 | labelled | -28.43 |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | ChristmASS | 31547.70 | labelled | 37.17 |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | 雪球 | 20619.80 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | PERRO | 18580.27 | labelled | -45.87 |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | Amend | 17641.56 | labelled | -32.52 |  |  |  | None | no eligible comparator |
+| 20261125T015526 | RED | PERRO | 17262.26 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | Caiolo | 20807.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | MANLET | 17083.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TOUCAN | 16618.12 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T025525 | RED | TELEDROID | 15258.51 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | Manlet | 47155.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | 1 | 20430.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | Manlet | 19531.80 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T035524 | RED | YUMA | 19137.56 | pending | None |  |  |  | None | no eligible comparator |
