@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 453 |
-| sightings | 27415 |
-| liquid sightings | 10914 |
-| first liquid sightings = unique tokens with an outcome row | 2208 |
+| eval-2 scans | 454 |
+| sightings | 27481 |
+| liquid sightings | 10935 |
+| first liquid sightings = unique tokens with an outcome row | 2209 |
 |   young | 1525 |
-|   mature | 606 |
+|   mature | 607 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
 | young without a comparator | 1287 |
@@ -23,8 +23,8 @@
 ## 60m outcome status by group
 
 - young: labelled 1168/1525, no_valid_entry 45/1525, pending 1/1525, unknown 230/1525, unreliable 81/1525
-- mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1525, mature 0/606
+- mature: labelled 563/607, pending 1/607, unknown 43/607
+- no valid entry: young 45/1525, mature 0/607
 
 ## Effect (after costs; unit = scan)
 
