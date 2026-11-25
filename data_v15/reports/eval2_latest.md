@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 459 |
-| sightings | 27787 |
-| liquid sightings | 11052 |
-| first liquid sightings = unique tokens with an outcome row | 2232 |
-|   young | 1544 |
-|   mature | 611 |
+| eval-2 scans | 460 |
+| sightings | 27852 |
+| liquid sightings | 11076 |
+| first liquid sightings = unique tokens with an outcome row | 2240 |
+|   young | 1549 |
+|   mature | 614 |
 |   other | 77 |
-| young with a comparator (cap 2) | 241 |
-| young without a comparator | 1303 |
+| young with a comparator (cap 2) | 242 |
+| young without a comparator | 1307 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 87 |
+|   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 146 |
 | scans contributing a complete pair | 93 |
 
 ## 60m outcome status by group
 
-- young: labelled 1178/1544, no_valid_entry 46/1544, pending 7/1544, unknown 231/1544, unreliable 82/1544
-- mature: labelled 564/611, pending 3/611, unknown 44/611
-- no valid entry: young 46/1544, mature 0/611
+- young: labelled 1180/1549, no_valid_entry 46/1549, pending 9/1549, unknown 232/1549, unreliable 82/1549
+- mature: labelled 564/614, pending 6/614, unknown 44/614
+- no valid entry: young 46/1549, mature 0/614
 
 ## Effect (after costs; unit = scan)
 
@@ -1670,11 +1670,16 @@
 | 20261125T145517 | RED | ATX | 20372.72 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261125T145517 | RED | JOE | 17876.38 | labelled | -32.86 |  |  |  | None | no eligible comparator |
 | 20261125T145517 | RED | FRANK | 17663.46 | labelled | -41.97 |  |  |  | None | no eligible comparator |
-| 20261125T155516 | RED | 蚁巢 | 42030.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T155516 | RED | 蚁巢 | 42030.68 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T155516 | RED | BIAO | 29306.74 | labelled | -29.17 | Santa | 18410.92 | labelled | -2.68 |  |
-| 20261125T165515 | RED | MONEY | 26169.41 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T165515 | RED | GOLDILOCKS | 25848.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T165515 | RED | MONEY | 26169.41 | labelled | -35.27 |  |  |  | None | no eligible comparator |
+| 20261125T165515 | RED | GOLDILOCKS | 25848.32 | labelled | -58.07 |  |  |  | None | no eligible comparator |
 | 20261125T175514 | NEUTRAL | LENDR | 60691.26 | pending | None | swordcat | 90346.18 | pending | None |  |
 | 20261125T175514 | NEUTRAL | MIM | 55009.42 | pending | None | swordcat | 90346.18 | pending | None |  |
 | 20261125T175514 | NEUTRAL | SOL2 | 32739.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T175514 | NEUTRAL | CI | 21762.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T185513 | NEUTRAL | SOL2 | 46675.82 | pending | None | swordcat | 92162.63 | pending | None |  |
+| 20261125T185513 | NEUTRAL | RECORDEGG | 31438.36 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T185513 | NEUTRAL | GRAUDIA | 26837.54 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T185513 | NEUTRAL | 4CHAN | 24371.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T185513 | NEUTRAL | SI | 18509.07 | pending | None |  |  |  | None | no eligible comparator |
