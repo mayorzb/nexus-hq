@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 443 |
-| sightings | 26803 |
-| liquid sightings | 10683 |
-| first liquid sightings = unique tokens with an outcome row | 2186 |
-|   young | 1503 |
+| eval-2 scans | 444 |
+| sightings | 26866 |
+| liquid sightings | 10710 |
+| first liquid sightings = unique tokens with an outcome row | 2190 |
+|   young | 1507 |
 |   mature | 606 |
 |   other | 77 |
 | young with a comparator (cap 2) | 238 |
-| young without a comparator | 1265 |
+| young without a comparator | 1269 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 85 |
 | complete pairs (both 60m outcomes labelled) | 145 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1145/1503, no_valid_entry 45/1503, pending 10/1503, unknown 224/1503, unreliable 79/1503
+- young: labelled 1147/1507, no_valid_entry 45/1507, pending 12/1507, unknown 224/1507, unreliable 79/1507
 - mature: labelled 563/606, unknown 43/606
-- no valid entry: young 45/1503, mature 0/606
+- no valid entry: young 45/1507, mature 0/606
 
 ## Effect (after costs; unit = scan)
 
@@ -1627,8 +1627,8 @@
 | 20261124T235528 | RED | 4CHAN | 35070.84 | labelled | -47.17 |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | Jimmies | 28077.74 | labelled | 37.09 |  |  |  | None | no eligible comparator |
 | 20261124T235528 | RED | MARS | 19114.33 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261125T005527 | RED | BOOBS | 42442.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T005527 | RED | WIKI | 32764.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | BOOBS | 42442.40 | labelled | -46.43 |  |  |  | None | no eligible comparator |
+| 20261125T005527 | RED | WIKI | 32764.96 | labelled | -38.03 |  |  |  | None | no eligible comparator |
 | 20261125T005527 | RED | Pumpcar | 15817.22 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | DongCoin | 44946.67 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | ChristmASS | 31547.70 | pending | None |  |  |  | None | no eligible comparator |
@@ -1636,3 +1636,7 @@
 | 20261125T015526 | RED | PERRO | 18580.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | Amend | 17641.56 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T015526 | RED | PERRO | 17262.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | Caiolo | 20807.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | MANLET | 17083.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | TOUCAN | 16618.12 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T025525 | RED | TELEDROID | 15258.51 | pending | None |  |  |  | None | no eligible comparator |
