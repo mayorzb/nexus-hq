@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 462 |
-| sightings | 27983 |
-| liquid sightings | 11123 |
-| first liquid sightings = unique tokens with an outcome row | 2255 |
-|   young | 1559 |
-|   mature | 619 |
+| eval-2 scans | 463 |
+| sightings | 28046 |
+| liquid sightings | 11148 |
+| first liquid sightings = unique tokens with an outcome row | 2262 |
+|   young | 1563 |
+|   mature | 622 |
 |   other | 77 |
-| young with a comparator (cap 2) | 242 |
-| young without a comparator | 1317 |
+| young with a comparator (cap 2) | 243 |
+| young without a comparator | 1320 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 86 |
+|   pairs: young or mature outcome not yet usable | 87 |
 | complete pairs (both 60m outcomes labelled) | 148 |
 | scans contributing a complete pair | 94 |
 
 ## 60m outcome status by group
 
-- young: labelled 1186/1559, no_valid_entry 47/1559, pending 11/1559, unknown 232/1559, unreliable 83/1559
-- mature: labelled 570/619, pending 5/619, unknown 44/619
-- no valid entry: young 47/1559, mature 0/619
+- young: labelled 1187/1563, no_valid_entry 47/1563, pending 14/1563, unknown 232/1563, unreliable 83/1563
+- mature: labelled 574/622, pending 4/622, unknown 44/622
+- no valid entry: young 47/1563, mature 0/622
 
 ## Effect (after costs; unit = scan)
 
@@ -1683,7 +1683,7 @@
 | 20261125T185513 | NEUTRAL | GRAUDIA | 26837.54 | labelled | -28.61 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | 4CHAN | 24371.33 | labelled | -34.06 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | SI | 18509.07 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T195512 | NEUTRAL | GRAVY | 15543.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T195512 | NEUTRAL | GRAVY | 15543.81 | labelled | -46.74 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | OnlyUp | 41935.23 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | NVIDIA | 34769.00 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | Pompompurin | 34001.04 | pending | None |  |  |  | None | no eligible comparator |
@@ -1693,3 +1693,7 @@
 | 20261125T205511 | NEUTRAL | BEASTGAMES | 21924.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | PTO | 20724.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | UBI | 18132.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | MONEY | 59190.33 | pending | None | swordcat | 91259.61 | pending | None |  |
+| 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | pending | None |  |  |  | None | no eligible comparator |
