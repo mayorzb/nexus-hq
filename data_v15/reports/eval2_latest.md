@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 473 |
-| sightings | 28686 |
-| liquid sightings | 11364 |
-| first liquid sightings = unique tokens with an outcome row | 2304 |
-|   young | 1587 |
-|   mature | 639 |
+| eval-2 scans | 474 |
+| sightings | 28745 |
+| liquid sightings | 11386 |
+| first liquid sightings = unique tokens with an outcome row | 2307 |
+|   young | 1589 |
+|   mature | 640 |
 |   other | 78 |
 | young with a comparator (cap 2) | 247 |
-| young without a comparator | 1340 |
+| young without a comparator | 1342 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1215/1587, no_valid_entry 48/1587, pending 4/1587, unknown 237/1587, unreliable 83/1587
-- mature: labelled 591/639, pending 4/639, unknown 44/639
-- no valid entry: young 48/1587, mature 0/639
+- young: labelled 1219/1589, no_valid_entry 48/1589, pending 2/1589, unknown 237/1589, unreliable 83/1589
+- mature: labelled 593/640, pending 3/640, unknown 44/640
+- no valid entry: young 48/1589, mature 0/640
 
 ## Effect (after costs; unit = scan)
 
@@ -1719,7 +1719,9 @@
 | 20261126T045506 | GREEN | call.fun | 18648.80 | labelled | 36.73 | ccat | 15023.41 | pending | None |  |
 | 20261126T055506 | GREEN | BLOCK0 | 42558.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T055506 | GREEN | Elonmas | 24577.69 | labelled | -30.26 |  |  |  | None | no eligible comparator |
-| 20261126T065506 | GREEN | Marvin | 29362.70 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T065506 | GREEN | Elonmas | 25852.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T065506 | GREEN | ELONCOIN | 19927.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T065506 | GREEN | PCB | 16182.83 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T065506 | GREEN | Marvin | 29362.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T065506 | GREEN | Elonmas | 25852.65 | labelled | -33.37 |  |  |  | None | no eligible comparator |
+| 20261126T065506 | GREEN | ELONCOIN | 19927.26 | labelled | -65.13 |  |  |  | None | no eligible comparator |
+| 20261126T065506 | GREEN | PCB | 16182.83 | labelled | -3.45 |  |  |  | None | no eligible comparator |
+| 20261126T085504 | GREEN | capmas | 37171.23 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T085504 | GREEN | KATHERINE | 17912.13 | pending | None |  |  |  | None | no eligible comparator |
