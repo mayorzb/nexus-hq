@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-26 22:03 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-26 23:03 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -10,10 +10,10 @@ DAILY HEALTH 2026-11-26 22:03 UTC (review-1.4) - overall: ALERT
 | Tokens seen / liquid (median per scan) | 62 / 22 | OK |
 | Deep-checked coins left UNVERIFIED | 28 of 192 (15%) | OK |
 | Safety canary (deep checks run when no coin reached them) | 0 checked, 0 unverified, 0 on-chain errors | INFO |
-| Gate-passers skipped by check budget | 245 of 438 | WARN |
-| Paper candidates (last 24h) | 29 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 490 / 79 | ALERT |
+| Gate-passers skipped by check budget | 247 of 440 | WARN |
+| Paper candidates (last 24h) | 28 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 490 / 86 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: mihao (22:55), CATE (22:55), CATE (23:55), swordcat (23:55), CATE (00:55), CATE (01:55), CATE (02:55), TROLL (02:55), CATE (03:55), TROLL (03:55), CATE (04:55), TROLL (04:55), CATE (05:55), CATE (06:55), TROLL (06:55), TROLL (07:55), CATE (08:55), CATE (09:55), CATE (10:55), CATE (12:55), TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54)
+Candidates: CATE (23:55), swordcat (23:55), CATE (00:55), CATE (01:55), CATE (02:55), TROLL (02:55), CATE (03:55), TROLL (03:55), CATE (04:55), TROLL (04:55), CATE (05:55), CATE (06:55), TROLL (06:55), TROLL (07:55), CATE (08:55), CATE (09:55), CATE (10:55), CATE (12:55), TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54), CATE (22:54)

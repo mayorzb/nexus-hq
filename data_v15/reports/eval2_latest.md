@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 487 |
-| sightings | 29523 |
-| liquid sightings | 11675 |
-| first liquid sightings = unique tokens with an outcome row | 2357 |
-|   young | 1622 |
-|   mature | 656 |
+| eval-2 scans | 488 |
+| sightings | 29583 |
+| liquid sightings | 11700 |
+| first liquid sightings = unique tokens with an outcome row | 2363 |
+|   young | 1627 |
+|   mature | 657 |
 |   other | 79 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1367 |
+| young without a comparator | 1372 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 92 |
 | complete pairs (both 60m outcomes labelled) | 155 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1244/1622, no_valid_entry 48/1622, pending 10/1622, unknown 237/1622, unreliable 83/1622
-- mature: labelled 603/656, pending 5/656, unknown 48/656
-- no valid entry: young 48/1622, mature 0/656
+- young: labelled 1250/1627, no_valid_entry 48/1627, pending 9/1627, unknown 237/1627, unreliable 83/1627
+- mature: labelled 604/657, pending 4/657, unknown 49/657
+- no valid entry: young 48/1627, mature 0/657
 
 ## Effect (after costs; unit = scan)
 
@@ -1752,11 +1752,16 @@
 | 20261126T195457 | NEUTRAL | George | 41101.77 | labelled | -55.77 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | 1T | 27347.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | mmrich | 15368.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | Hoppy | 38173.90 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | Elonmas | 32293.34 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | PI | 25853.16 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | ZINU | 23992.03 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | BARRON | 17932.09 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T205456 | NEUTRAL | ZCOIN | 17417.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | Hoppy | 38173.90 | labelled | -35.22 |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | Elonmas | 32293.34 | labelled | -28.97 |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | PI | 25853.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | ZINU | 23992.03 | labelled | -34.98 |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | BARRON | 17932.09 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T205456 | NEUTRAL | ZCOIN | 17417.22 | labelled | -45.37 |  |  |  | None | no eligible comparator |
 | 20261126T215455 | NEUTRAL | Cateball | 71806.59 | pending | None | Snowball | 58323.54 | pending | None |  |
 | 20261126T215455 | NEUTRAL | HOLD | 17083.72 | pending | None | Investor | 20075.37 | pending | None |  |
+| 20261126T225454 | NEUTRAL | Gemma | 27461.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | CINU | 23569.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | Gemma | 23311.52 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | COIN | 20133.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | McRib | 18345.93 | pending | None |  |  |  | None | no eligible comparator |
