@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 464 |
-| sightings | 28110 |
-| liquid sightings | 11170 |
-| first liquid sightings = unique tokens with an outcome row | 2265 |
-|   young | 1564 |
-|   mature | 624 |
+| eval-2 scans | 465 |
+| sightings | 28175 |
+| liquid sightings | 11192 |
+| first liquid sightings = unique tokens with an outcome row | 2271 |
+|   young | 1568 |
+|   mature | 626 |
 |   other | 77 |
-| young with a comparator (cap 2) | 243 |
-| young without a comparator | 1321 |
+| young with a comparator (cap 2) | 245 |
+| young without a comparator | 1323 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 87 |
-| complete pairs (both 60m outcomes labelled) | 148 |
-| scans contributing a complete pair | 94 |
+|   pairs: young or mature outcome not yet usable | 88 |
+| complete pairs (both 60m outcomes labelled) | 149 |
+| scans contributing a complete pair | 95 |
 
 ## 60m outcome status by group
 
-- young: labelled 1193/1564, no_valid_entry 47/1564, pending 9/1564, unknown 232/1564, unreliable 83/1564
-- mature: labelled 575/624, pending 5/624, unknown 44/624
-- no valid entry: young 47/1564, mature 0/624
+- young: labelled 1197/1568, no_valid_entry 47/1568, pending 9/1568, unknown 232/1568, unreliable 83/1568
+- mature: labelled 578/626, pending 4/626, unknown 44/626
+- no valid entry: young 47/1568, mature 0/626
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.92 points, 95% interval (-36.34, -15.84); scans with young worse 66/94
-- Pairs with young worse: 106/148 (71.6%); pair mean -23.6, median -27.05
-- Big loss (<= -20%): young 104/148, mature 39/148
+- Scan-level mean difference (young - mature): -25.2 points, 95% interval (-35.86, -15.09); scans with young worse 66/95
+- Pairs with young worse: 106/149 (71.1%); pair mean -23.16, median -26.8
+- Big loss (<= -20%): young 104/149, mature 39/149
 
 ## Comparator reuse (cap 2)
 
@@ -129,6 +129,7 @@
 - 20261124T175531-7Kn92xBn: CHARITY (20261124T175531), XDOG (20261124T175531)
 - 20261124T185531-ANvsL4A6: CHRISTMAS (20261124T185531), ELMO (20261124T185531)
 - 20261125T175514-5tCju6YN: LENDR (20261125T175514), MIM (20261125T175514)
+- 20261125T235509-5tCju6YN: AMD (20261125T235509), PVE (20261125T235509)
 
 ## Every pair
 
@@ -1693,8 +1694,12 @@
 | 20261125T205511 | NEUTRAL | BEASTGAMES | 21924.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | PTO | 20724.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | UBI | 18132.92 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T215510 | NEUTRAL | MONEY | 59190.33 | pending | None | swordcat | 91259.61 | pending | None |  |
-| 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | MONEY | 59190.33 | labelled | 37.46 | swordcat | 91259.61 | labelled | -4.34 |  |
+| 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | labelled | 37.31 |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | labelled | -51.97 |  |  |  | None | no eligible comparator |
+| 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | labelled | -48.15 |  |  |  | None | no eligible comparator |
 | 20261125T225510 | NEUTRAL | Grodia | 78588.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T235509 | NEUTRAL | AMD | 52708.15 | pending | None | swordcat | 91585.45 | pending | None |  |
+| 20261125T235509 | NEUTRAL | PVE | 49538.23 | pending | None | swordcat | 91585.45 | pending | None |  |
+| 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | pending | None |  |  |  | None | no eligible comparator |
