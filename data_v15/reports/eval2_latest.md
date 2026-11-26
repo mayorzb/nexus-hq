@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 484 |
-| sightings | 29353 |
-| liquid sightings | 11607 |
-| first liquid sightings = unique tokens with an outcome row | 2339 |
-|   young | 1611 |
-|   mature | 649 |
+| eval-2 scans | 485 |
+| sightings | 29408 |
+| liquid sightings | 11629 |
+| first liquid sightings = unique tokens with an outcome row | 2344 |
+|   young | 1614 |
+|   mature | 651 |
 |   other | 79 |
 | young with a comparator (cap 2) | 253 |
-| young without a comparator | 1358 |
+| young without a comparator | 1361 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 92 |
-| complete pairs (both 60m outcomes labelled) | 153 |
-| scans contributing a complete pair | 97 |
+|   pairs: young or mature outcome not yet usable | 90 |
+| complete pairs (both 60m outcomes labelled) | 155 |
+| scans contributing a complete pair | 98 |
 
 ## 60m outcome status by group
 
-- young: labelled 1238/1611, no_valid_entry 48/1611, pending 5/1611, unknown 237/1611, unreliable 83/1611
-- mature: labelled 599/649, pending 3/649, unknown 47/649
-- no valid entry: young 48/1611, mature 0/649
+- young: labelled 1242/1614, no_valid_entry 48/1614, pending 4/1614, unknown 237/1614, unreliable 83/1614
+- mature: labelled 601/651, pending 3/651, unknown 47/651
+- no valid entry: young 48/1614, mature 0/651
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.57 points, 95% interval (-35.37, -15.41); scans with young worse 68/97
-- Pairs with young worse: 110/153 (71.9%); pair mean -23.68, median -27.29
-- Big loss (<= -20%): young 108/153, mature 41/153
+- Scan-level mean difference (young - mature): -25.71 points, 95% interval (-35.77, -15.49); scans with young worse 69/98
+- Pairs with young worse: 112/155 (72.3%); pair mean -23.87, median -27.47
+- Big loss (<= -20%): young 110/155, mature 41/155
 
 ## Comparator reuse (cap 2)
 
@@ -1744,8 +1744,11 @@
 | 20261126T165457 | GREEN | MSTR | 45714.08 | labelled | -58.88 |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | KURO | 19872.30 | labelled | -29.74 |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | X | 16314.74 | labelled | -30.29 |  |  |  | None | no eligible comparator |
-| 20261126T175457 | NEUTRAL | KURO | 78951.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T175457 | NEUTRAL | JANTA | 43122.25 | pending | None | WOOPY | 31378.98 | pending | None |  |
-| 20261126T175457 | NEUTRAL | SOUP | 23933.79 | pending | None | WOOPY | 31378.98 | pending | None |  |
-| 20261126T175457 | NEUTRAL | Kuro | 21401.17 | pending | None |  |  |  | None | comparators used twice |
+| 20261126T175457 | NEUTRAL | KURO | 78951.96 | labelled | 37.55 |  |  |  | None | no eligible comparator |
+| 20261126T175457 | NEUTRAL | JANTA | 43122.25 | labelled | -38.19 | WOOPY | 31378.98 | labelled | 2.0 |  |
+| 20261126T175457 | NEUTRAL | SOUP | 23933.79 | labelled | -36.03 | WOOPY | 31378.98 | labelled | 2.0 |  |
+| 20261126T175457 | NEUTRAL | Kuro | 21401.17 | labelled | -29.7 |  |  |  | None | comparators used twice |
 | 20261126T185457 | NEUTRAL | Criminul | 22694.91 | pending | None | WOOPY | 31530.63 | pending | None |  |
+| 20261126T195457 | NEUTRAL | George | 41101.77 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T195457 | NEUTRAL | 1T | 27347.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T195457 | NEUTRAL | mmrich | 15368.96 | pending | None |  |  |  | None | no eligible comparator |
