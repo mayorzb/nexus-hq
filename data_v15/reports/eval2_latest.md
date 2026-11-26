@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 481 |
-| sightings | 29167 |
-| liquid sightings | 11537 |
-| first liquid sightings = unique tokens with an outcome row | 2326 |
-|   young | 1602 |
-|   mature | 645 |
+| eval-2 scans | 482 |
+| sightings | 29229 |
+| liquid sightings | 11561 |
+| first liquid sightings = unique tokens with an outcome row | 2331 |
+|   young | 1606 |
+|   mature | 646 |
 |   other | 79 |
 | young with a comparator (cap 2) | 250 |
-| young without a comparator | 1352 |
+| young without a comparator | 1356 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 89 |
 | complete pairs (both 60m outcomes labelled) | 153 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1229/1602, no_valid_entry 48/1602, pending 5/1602, unknown 237/1602, unreliable 83/1602
-- mature: labelled 598/645, unknown 47/645
-- no valid entry: young 48/1602, mature 0/645
+- young: labelled 1232/1606, no_valid_entry 48/1606, pending 6/1606, unknown 237/1606, unreliable 83/1606
+- mature: labelled 598/646, pending 1/646, unknown 47/646
+- no valid entry: young 48/1606, mature 0/646
 
 ## Effect (after costs; unit = scan)
 
@@ -1734,8 +1734,12 @@
 | 20261126T125501 | GREEN | Pair | 17903.90 | labelled | -81.58 | SEXYANIMAL | 24241.82 | labelled | -20.35 |  |
 | 20261126T135500 | GREEN | HERADUST | 89701.94 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T135500 | GREEN | PAIR | 21968.08 | labelled | -29.21 | AMAZONCAT | 28750.67 | unknown | None |  |
-| 20261126T145459 | GREEN | MDAQ | 39465.61 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T145459 | GREEN | MDAQ | 21245.95 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T145459 | GREEN | Irochan | 18414.65 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T145459 | GREEN | MDAQ | 39465.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T145459 | GREEN | MDAQ | 21245.95 | labelled | -40.52 |  |  |  | None | no eligible comparator |
+| 20261126T145459 | GREEN | Irochan | 18414.65 | labelled | -34.08 |  |  |  | None | no eligible comparator |
 | 20261126T155458 | GREEN | Boy | 21936.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T155458 | GREEN | DUO | 21376.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | Optimus | 107639.42 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | MSTR | 45714.08 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | KURO | 19872.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | X | 16314.74 | pending | None |  |  |  | None | no eligible comparator |
