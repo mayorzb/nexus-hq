@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 486 |
-| sightings | 29463 |
-| liquid sightings | 11653 |
-| first liquid sightings = unique tokens with an outcome row | 2352 |
-|   young | 1620 |
-|   mature | 653 |
+| eval-2 scans | 487 |
+| sightings | 29523 |
+| liquid sightings | 11675 |
+| first liquid sightings = unique tokens with an outcome row | 2357 |
+|   young | 1622 |
+|   mature | 656 |
 |   other | 79 |
-| young with a comparator (cap 2) | 253 |
+| young with a comparator (cap 2) | 255 |
 | young without a comparator | 1367 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 90 |
+|   pairs: young or mature outcome not yet usable | 92 |
 | complete pairs (both 60m outcomes labelled) | 155 |
 | scans contributing a complete pair | 98 |
 
 ## 60m outcome status by group
 
-- young: labelled 1242/1620, no_valid_entry 48/1620, pending 10/1620, unknown 237/1620, unreliable 83/1620
-- mature: labelled 601/653, pending 5/653, unknown 47/653
-- no valid entry: young 48/1620, mature 0/653
+- young: labelled 1244/1622, no_valid_entry 48/1622, pending 10/1622, unknown 237/1622, unreliable 83/1622
+- mature: labelled 603/656, pending 5/656, unknown 48/656
+- no valid entry: young 48/1622, mature 0/656
 
 ## Effect (after costs; unit = scan)
 
@@ -1748,9 +1748,9 @@
 | 20261126T175457 | NEUTRAL | JANTA | 43122.25 | labelled | -38.19 | WOOPY | 31378.98 | labelled | 2.0 |  |
 | 20261126T175457 | NEUTRAL | SOUP | 23933.79 | labelled | -36.03 | WOOPY | 31378.98 | labelled | 2.0 |  |
 | 20261126T175457 | NEUTRAL | Kuro | 21401.17 | labelled | -29.7 |  |  |  | None | comparators used twice |
-| 20261126T185457 | NEUTRAL | Criminul | 22694.91 | pending | None | WOOPY | 31530.63 | pending | None |  |
-| 20261126T195457 | NEUTRAL | George | 41101.77 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T195457 | NEUTRAL | 1T | 27347.14 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T185457 | NEUTRAL | Criminul | 22694.91 | pending | None | WOOPY | 31530.63 | unknown | None |  |
+| 20261126T195457 | NEUTRAL | George | 41101.77 | labelled | -55.77 |  |  |  | None | no eligible comparator |
+| 20261126T195457 | NEUTRAL | 1T | 27347.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | mmrich | 15368.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | Hoppy | 38173.90 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | Elonmas | 32293.34 | pending | None |  |  |  | None | no eligible comparator |
@@ -1758,3 +1758,5 @@
 | 20261126T205456 | NEUTRAL | ZINU | 23992.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | BARRON | 17932.09 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | ZCOIN | 17417.22 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T215455 | NEUTRAL | Cateball | 71806.59 | pending | None | Snowball | 58323.54 | pending | None |  |
+| 20261126T215455 | NEUTRAL | HOLD | 17083.72 | pending | None | Investor | 20075.37 | pending | None |  |
