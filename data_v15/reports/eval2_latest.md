@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 475 |
-| sightings | 28805 |
-| liquid sightings | 11406 |
-| first liquid sightings = unique tokens with an outcome row | 2309 |
-|   young | 1590 |
-|   mature | 641 |
+| eval-2 scans | 476 |
+| sightings | 28867 |
+| liquid sightings | 11428 |
+| first liquid sightings = unique tokens with an outcome row | 2313 |
+|   young | 1593 |
+|   mature | 642 |
 |   other | 78 |
 | young with a comparator (cap 2) | 247 |
-| young without a comparator | 1343 |
+| young without a comparator | 1346 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1219/1590, no_valid_entry 48/1590, pending 3/1590, unknown 237/1590, unreliable 83/1590
-- mature: labelled 593/641, pending 3/641, unknown 45/641
-- no valid entry: young 48/1590, mature 0/641
+- young: labelled 1221/1593, no_valid_entry 48/1593, pending 4/1593, unknown 237/1593, unreliable 83/1593
+- mature: labelled 594/642, pending 2/642, unknown 46/642
+- no valid entry: young 48/1593, mature 0/642
 
 ## Effect (after costs; unit = scan)
 
@@ -1715,14 +1715,17 @@
 | 20261126T025507 | GREEN | STUDS | 15584.07 | labelled | -49.94 |  |  |  | None | no eligible comparator |
 | 20261126T035506 | GREEN | coin | 17689.60 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261126T045506 | GREEN | GOTF | 31638.69 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261126T045506 | GREEN | TEEETHY | 21887.75 | labelled | -39.97 | ccat | 15023.41 | pending | None |  |
-| 20261126T045506 | GREEN | call.fun | 18648.80 | labelled | 36.73 | ccat | 15023.41 | pending | None |  |
+| 20261126T045506 | GREEN | TEEETHY | 21887.75 | labelled | -39.97 | ccat | 15023.41 | unknown | None |  |
+| 20261126T045506 | GREEN | call.fun | 18648.80 | labelled | 36.73 | ccat | 15023.41 | unknown | None |  |
 | 20261126T055506 | GREEN | BLOCK0 | 42558.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T055506 | GREEN | Elonmas | 24577.69 | labelled | -30.26 |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | Marvin | 29362.70 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | Elonmas | 25852.65 | labelled | -33.37 |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | ELONCOIN | 19927.26 | labelled | -65.13 |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | PCB | 16182.83 | labelled | -3.45 |  |  |  | None | no eligible comparator |
-| 20261126T085504 | GREEN | capmas | 37171.23 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T085504 | GREEN | KATHERINE | 17912.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T085504 | GREEN | capmas | 37171.23 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T085504 | GREEN | KATHERINE | 17912.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T095503 | GREEN | Carl | 29436.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | MINU | 33859.71 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | ATX | 28598.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | konnichiwa | 19449.17 | pending | None |  |  |  | None | no eligible comparator |
