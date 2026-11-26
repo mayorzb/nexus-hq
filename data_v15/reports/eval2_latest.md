@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 469 |
-| sightings | 28428 |
-| liquid sightings | 11278 |
-| first liquid sightings = unique tokens with an outcome row | 2287 |
-|   young | 1578 |
-|   mature | 632 |
+| eval-2 scans | 470 |
+| sightings | 28494 |
+| liquid sightings | 11299 |
+| first liquid sightings = unique tokens with an outcome row | 2293 |
+|   young | 1581 |
+|   mature | 635 |
 |   other | 77 |
-| young with a comparator (cap 2) | 245 |
-| young without a comparator | 1333 |
+| young with a comparator (cap 2) | 247 |
+| young without a comparator | 1334 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 86 |
+|   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 151 |
 | scans contributing a complete pair | 96 |
 
 ## 60m outcome status by group
 
-- young: labelled 1209/1578, no_valid_entry 47/1578, pending 3/1578, unknown 236/1578, unreliable 83/1578
-- mature: labelled 584/632, pending 4/632, unknown 44/632
-- no valid entry: young 47/1578, mature 0/632
+- young: labelled 1210/1581, no_valid_entry 47/1581, pending 5/1581, unknown 236/1581, unreliable 83/1581
+- mature: labelled 586/635, pending 5/635, unknown 44/635
+- no valid entry: young 47/1581, mature 0/635
 
 ## Effect (after costs; unit = scan)
 
@@ -130,6 +130,7 @@
 - 20261124T185531-ANvsL4A6: CHRISTMAS (20261124T185531), ELMO (20261124T185531)
 - 20261125T175514-5tCju6YN: LENDR (20261125T175514), MIM (20261125T175514)
 - 20261125T235509-5tCju6YN: AMD (20261125T235509), PVE (20261125T235509)
+- 20261126T045506-3jAB5ksB: TEEETHY (20261126T045506), call.fun (20261126T045506)
 
 ## Every pair
 
@@ -1711,5 +1712,8 @@
 | 20261126T015508 | GREEN | PUMPCHAN | 43218.20 | labelled | 37.34 |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | MemeStonks | 30101.27 | labelled | -48.41 |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | TAXMAN | 17252.62 | labelled | -32.64 |  |  |  | None | no eligible comparator |
-| 20261126T025507 | GREEN | STUDS | 15584.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T025507 | GREEN | STUDS | 15584.07 | labelled | -49.94 |  |  |  | None | no eligible comparator |
 | 20261126T035506 | GREEN | coin | 17689.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T045506 | GREEN | GOTF | 31638.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T045506 | GREEN | TEEETHY | 21887.75 | pending | None | ccat | 15023.41 | pending | None |  |
+| 20261126T045506 | GREEN | call.fun | 18648.80 | pending | None | ccat | 15023.41 | pending | None |  |
