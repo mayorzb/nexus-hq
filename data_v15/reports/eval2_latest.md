@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 483 |
-| sightings | 29292 |
-| liquid sightings | 11585 |
-| first liquid sightings = unique tokens with an outcome row | 2337 |
-|   young | 1610 |
-|   mature | 648 |
+| eval-2 scans | 484 |
+| sightings | 29353 |
+| liquid sightings | 11607 |
+| first liquid sightings = unique tokens with an outcome row | 2339 |
+|   young | 1611 |
+|   mature | 649 |
 |   other | 79 |
-| young with a comparator (cap 2) | 252 |
+| young with a comparator (cap 2) | 253 |
 | young without a comparator | 1358 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 91 |
+|   pairs: young or mature outcome not yet usable | 92 |
 | complete pairs (both 60m outcomes labelled) | 153 |
 | scans contributing a complete pair | 97 |
 
 ## 60m outcome status by group
 
-- young: labelled 1234/1610, no_valid_entry 48/1610, pending 8/1610, unknown 237/1610, unreliable 83/1610
-- mature: labelled 598/648, pending 3/648, unknown 47/648
-- no valid entry: young 48/1610, mature 0/648
+- young: labelled 1238/1611, no_valid_entry 48/1611, pending 5/1611, unknown 237/1611, unreliable 83/1611
+- mature: labelled 599/649, pending 3/649, unknown 47/649
+- no valid entry: young 48/1611, mature 0/649
 
 ## Effect (after costs; unit = scan)
 
@@ -1740,11 +1740,12 @@
 | 20261126T145459 | GREEN | Irochan | 18414.65 | labelled | -34.08 |  |  |  | None | no eligible comparator |
 | 20261126T155458 | GREEN | Boy | 21936.73 | labelled | -28.65 |  |  |  | None | no eligible comparator |
 | 20261126T155458 | GREEN | DUO | 21376.74 | labelled | 36.87 |  |  |  | None | no eligible comparator |
-| 20261126T165457 | GREEN | Optimus | 107639.42 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T165457 | GREEN | MSTR | 45714.08 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T165457 | GREEN | KURO | 19872.30 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T165457 | GREEN | X | 16314.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | Optimus | 107639.42 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | MSTR | 45714.08 | labelled | -58.88 |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | KURO | 19872.30 | labelled | -29.74 |  |  |  | None | no eligible comparator |
+| 20261126T165457 | GREEN | X | 16314.74 | labelled | -30.29 |  |  |  | None | no eligible comparator |
 | 20261126T175457 | NEUTRAL | KURO | 78951.96 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T175457 | NEUTRAL | JANTA | 43122.25 | pending | None | WOOPY | 31378.98 | pending | None |  |
 | 20261126T175457 | NEUTRAL | SOUP | 23933.79 | pending | None | WOOPY | 31378.98 | pending | None |  |
 | 20261126T175457 | NEUTRAL | Kuro | 21401.17 | pending | None |  |  |  | None | comparators used twice |
+| 20261126T185457 | NEUTRAL | Criminul | 22694.91 | pending | None | WOOPY | 31530.63 | pending | None |  |
