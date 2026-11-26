@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 477 |
-| sightings | 28929 |
-| liquid sightings | 11447 |
-| first liquid sightings = unique tokens with an outcome row | 2313 |
-|   young | 1593 |
-|   mature | 642 |
+| eval-2 scans | 478 |
+| sightings | 28990 |
+| liquid sightings | 11468 |
+| first liquid sightings = unique tokens with an outcome row | 2317 |
+|   young | 1595 |
+|   mature | 644 |
 |   other | 78 |
-| young with a comparator (cap 2) | 247 |
+| young with a comparator (cap 2) | 249 |
 | young without a comparator | 1346 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 88 |
+|   pairs: young or mature outcome not yet usable | 90 |
 | complete pairs (both 60m outcomes labelled) | 151 |
 | scans contributing a complete pair | 96 |
 
 ## 60m outcome status by group
 
-- young: labelled 1222/1593, no_valid_entry 48/1593, pending 3/1593, unknown 237/1593, unreliable 83/1593
-- mature: labelled 595/642, pending 1/642, unknown 46/642
-- no valid entry: young 48/1593, mature 0/642
+- young: labelled 1225/1595, no_valid_entry 48/1595, pending 2/1595, unknown 237/1595, unreliable 83/1595
+- mature: labelled 596/644, pending 2/644, unknown 46/644
+- no valid entry: young 48/1595, mature 0/644
 
 ## Effect (after costs; unit = scan)
 
@@ -131,6 +131,7 @@
 - 20261125T175514-5tCju6YN: LENDR (20261125T175514), MIM (20261125T175514)
 - 20261125T235509-5tCju6YN: AMD (20261125T235509), PVE (20261125T235509)
 - 20261126T045506-3jAB5ksB: TEEETHY (20261126T045506), call.fun (20261126T045506)
+- 20261126T125501-9hTjkeV6: FourLife (20261126T125501), Pair (20261126T125501)
 
 ## Every pair
 
@@ -1726,6 +1727,8 @@
 | 20261126T085504 | GREEN | capmas | 37171.23 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T085504 | GREEN | KATHERINE | 17912.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T095503 | GREEN | Carl | 29436.15 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261126T105502 | GREEN | MINU | 33859.71 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T105502 | GREEN | ATX | 28598.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T105502 | GREEN | konnichiwa | 19449.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | MINU | 33859.71 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | ATX | 28598.79 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T105502 | GREEN | konnichiwa | 19449.17 | labelled | 36.78 |  |  |  | None | no eligible comparator |
+| 20261126T125501 | GREEN | FourLife | 24504.58 | pending | None | SEXYANIMAL | 24241.82 | pending | None |  |
+| 20261126T125501 | GREEN | Pair | 17903.90 | pending | None | SEXYANIMAL | 24241.82 | pending | None |  |
