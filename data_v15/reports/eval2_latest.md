@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 466 |
-| sightings | 28241 |
-| liquid sightings | 11215 |
-| first liquid sightings = unique tokens with an outcome row | 2276 |
-|   young | 1572 |
-|   mature | 627 |
+| eval-2 scans | 467 |
+| sightings | 28304 |
+| liquid sightings | 11239 |
+| first liquid sightings = unique tokens with an outcome row | 2281 |
+|   young | 1576 |
+|   mature | 628 |
 |   other | 77 |
 | young with a comparator (cap 2) | 245 |
-| young without a comparator | 1327 |
+| young without a comparator | 1331 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 88 |
-| complete pairs (both 60m outcomes labelled) | 149 |
-| scans contributing a complete pair | 95 |
+|   pairs: young or mature outcome not yet usable | 86 |
+| complete pairs (both 60m outcomes labelled) | 151 |
+| scans contributing a complete pair | 96 |
 
 ## 60m outcome status by group
 
-- young: labelled 1198/1572, no_valid_entry 47/1572, pending 11/1572, unknown 233/1572, unreliable 83/1572
-- mature: labelled 580/627, pending 3/627, unknown 44/627
-- no valid entry: young 47/1572, mature 0/627
+- young: labelled 1201/1576, no_valid_entry 47/1576, pending 12/1576, unknown 233/1576, unreliable 83/1576
+- mature: labelled 582/628, pending 2/628, unknown 44/628
+- no valid entry: young 47/1576, mature 0/628
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.2 points, 95% interval (-35.86, -15.09); scans with young worse 66/95
-- Pairs with young worse: 106/149 (71.1%); pair mean -23.16, median -26.8
-- Big loss (<= -20%): young 104/149, mature 39/149
+- Scan-level mean difference (young - mature): -25.47 points, 95% interval (-35.39, -15.32); scans with young worse 67/96
+- Pairs with young worse: 108/151 (71.5%); pair mean -23.53, median -27.29
+- Big loss (<= -20%): young 106/151, mature 39/151
 
 ## Comparator reuse (cap 2)
 
@@ -1699,11 +1699,15 @@
 | 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | labelled | -51.97 |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | labelled | -48.15 |  |  |  | None | no eligible comparator |
 | 20261125T225510 | NEUTRAL | Grodia | 78588.85 | labelled | -27.69 |  |  |  | None | no eligible comparator |
-| 20261125T235509 | NEUTRAL | AMD | 52708.15 | pending | None | swordcat | 91585.45 | pending | None |  |
-| 20261125T235509 | NEUTRAL | PVE | 49538.23 | pending | None | swordcat | 91585.45 | pending | None |  |
-| 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T235509 | NEUTRAL | AMD | 52708.15 | labelled | -68.37 | swordcat | 91585.45 | labelled | 2.31 |  |
+| 20261125T235509 | NEUTRAL | PVE | 49538.23 | labelled | -28.37 | swordcat | 91585.45 | labelled | 2.31 |  |
+| 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | labelled | -44.92 |  |  |  | None | no eligible comparator |
 | 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | UHI | 52741.84 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | Zero | 38691.18 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | PUMPDOG | 35858.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | MONEY | 61647.29 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | PUMPCHAN | 43218.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | MemeStonks | 30101.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | TAXMAN | 17252.62 | pending | None |  |  |  | None | no eligible comparator |
