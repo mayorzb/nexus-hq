@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 467 |
-| sightings | 28304 |
-| liquid sightings | 11239 |
-| first liquid sightings = unique tokens with an outcome row | 2281 |
-|   young | 1576 |
-|   mature | 628 |
+| eval-2 scans | 468 |
+| sightings | 28366 |
+| liquid sightings | 11259 |
+| first liquid sightings = unique tokens with an outcome row | 2284 |
+|   young | 1577 |
+|   mature | 630 |
 |   other | 77 |
 | young with a comparator (cap 2) | 245 |
-| young without a comparator | 1331 |
+| young without a comparator | 1332 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 86 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1201/1576, no_valid_entry 47/1576, pending 12/1576, unknown 233/1576, unreliable 83/1576
-- mature: labelled 582/628, pending 2/628, unknown 44/628
-- no valid entry: young 47/1576, mature 0/628
+- young: labelled 1205/1577, no_valid_entry 47/1577, pending 6/1577, unknown 236/1577, unreliable 83/1577
+- mature: labelled 583/630, pending 3/630, unknown 44/630
+- no valid entry: young 47/1577, mature 0/630
 
 ## Effect (after costs; unit = scan)
 
@@ -1691,9 +1691,9 @@
 | 20261125T205511 | NEUTRAL | Pnut | 29231.53 | labelled | -34.65 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | POMBAO | 25747.46 | labelled | -33.87 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | Paulie | 24494.43 | labelled | 36.99 |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | BEASTGAMES | 21924.65 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | PTO | 20724.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261125T205511 | NEUTRAL | UBI | 18132.92 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | BEASTGAMES | 21924.65 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | PTO | 20724.84 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261125T205511 | NEUTRAL | UBI | 18132.92 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | MONEY | 59190.33 | labelled | 37.46 | swordcat | 91259.61 | labelled | -4.34 |  |
 | 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | labelled | 37.31 |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | labelled | -51.97 |  |  |  | None | no eligible comparator |
@@ -1703,11 +1703,12 @@
 | 20261125T235509 | NEUTRAL | PVE | 49538.23 | labelled | -28.37 | swordcat | 91585.45 | labelled | 2.31 |  |
 | 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | labelled | -44.92 |  |  |  | None | no eligible comparator |
 | 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T005509 | NEUTRAL | UHI | 52741.84 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T005509 | NEUTRAL | Zero | 38691.18 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T005509 | NEUTRAL | PUMPDOG | 35858.89 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | UHI | 52741.84 | labelled | 37.42 |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | labelled | 4.13 |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | Zero | 38691.18 | labelled | 37.28 |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | PUMPDOG | 35858.89 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | MONEY | 61647.29 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | PUMPCHAN | 43218.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | MemeStonks | 30101.27 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | TAXMAN | 17252.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T025507 | GREEN | STUDS | 15584.07 | pending | None |  |  |  | None | no eligible comparator |
