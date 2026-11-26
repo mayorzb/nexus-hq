@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 468 |
-| sightings | 28366 |
-| liquid sightings | 11259 |
-| first liquid sightings = unique tokens with an outcome row | 2284 |
-|   young | 1577 |
-|   mature | 630 |
+| eval-2 scans | 469 |
+| sightings | 28428 |
+| liquid sightings | 11278 |
+| first liquid sightings = unique tokens with an outcome row | 2287 |
+|   young | 1578 |
+|   mature | 632 |
 |   other | 77 |
 | young with a comparator (cap 2) | 245 |
-| young without a comparator | 1332 |
+| young without a comparator | 1333 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 86 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1205/1577, no_valid_entry 47/1577, pending 6/1577, unknown 236/1577, unreliable 83/1577
-- mature: labelled 583/630, pending 3/630, unknown 44/630
-- no valid entry: young 47/1577, mature 0/630
+- young: labelled 1209/1578, no_valid_entry 47/1578, pending 3/1578, unknown 236/1578, unreliable 83/1578
+- mature: labelled 584/632, pending 4/632, unknown 44/632
+- no valid entry: young 47/1578, mature 0/632
 
 ## Effect (after costs; unit = scan)
 
@@ -1707,8 +1707,9 @@
 | 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | labelled | 4.13 |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | Zero | 38691.18 | labelled | 37.28 |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | PUMPDOG | 35858.89 | labelled | 37.24 |  |  |  | None | no eligible comparator |
-| 20261126T015508 | GREEN | MONEY | 61647.29 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T015508 | GREEN | PUMPCHAN | 43218.20 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T015508 | GREEN | MemeStonks | 30101.27 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T015508 | GREEN | TAXMAN | 17252.62 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | MONEY | 61647.29 | labelled | 37.48 |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | PUMPCHAN | 43218.20 | labelled | 37.34 |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | MemeStonks | 30101.27 | labelled | -48.41 |  |  |  | None | no eligible comparator |
+| 20261126T015508 | GREEN | TAXMAN | 17252.62 | labelled | -32.64 |  |  |  | None | no eligible comparator |
 | 20261126T025507 | GREEN | STUDS | 15584.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T035506 | GREEN | coin | 17689.60 | pending | None |  |  |  | None | no eligible comparator |
