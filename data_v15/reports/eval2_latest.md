@@ -6,9 +6,9 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 476 |
-| sightings | 28867 |
-| liquid sightings | 11428 |
+| eval-2 scans | 477 |
+| sightings | 28929 |
+| liquid sightings | 11447 |
 | first liquid sightings = unique tokens with an outcome row | 2313 |
 |   young | 1593 |
 |   mature | 642 |
@@ -22,8 +22,8 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1221/1593, no_valid_entry 48/1593, pending 4/1593, unknown 237/1593, unreliable 83/1593
-- mature: labelled 594/642, pending 2/642, unknown 46/642
+- young: labelled 1222/1593, no_valid_entry 48/1593, pending 3/1593, unknown 237/1593, unreliable 83/1593
+- mature: labelled 595/642, pending 1/642, unknown 46/642
 - no valid entry: young 48/1593, mature 0/642
 
 ## Effect (after costs; unit = scan)
@@ -1725,7 +1725,7 @@
 | 20261126T065506 | GREEN | PCB | 16182.83 | labelled | -3.45 |  |  |  | None | no eligible comparator |
 | 20261126T085504 | GREEN | capmas | 37171.23 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T085504 | GREEN | KATHERINE | 17912.13 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261126T095503 | GREEN | Carl | 29436.15 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T095503 | GREEN | Carl | 29436.15 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T105502 | GREEN | MINU | 33859.71 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T105502 | GREEN | ATX | 28598.79 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T105502 | GREEN | konnichiwa | 19449.17 | pending | None |  |  |  | None | no eligible comparator |
