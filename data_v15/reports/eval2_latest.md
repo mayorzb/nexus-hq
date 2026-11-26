@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 482 |
-| sightings | 29229 |
-| liquid sightings | 11561 |
-| first liquid sightings = unique tokens with an outcome row | 2331 |
-|   young | 1606 |
-|   mature | 646 |
+| eval-2 scans | 483 |
+| sightings | 29292 |
+| liquid sightings | 11585 |
+| first liquid sightings = unique tokens with an outcome row | 2337 |
+|   young | 1610 |
+|   mature | 648 |
 |   other | 79 |
-| young with a comparator (cap 2) | 250 |
-| young without a comparator | 1356 |
+| young with a comparator (cap 2) | 252 |
+| young without a comparator | 1358 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 89 |
+|   pairs: young or mature outcome not yet usable | 91 |
 | complete pairs (both 60m outcomes labelled) | 153 |
 | scans contributing a complete pair | 97 |
 
 ## 60m outcome status by group
 
-- young: labelled 1232/1606, no_valid_entry 48/1606, pending 6/1606, unknown 237/1606, unreliable 83/1606
-- mature: labelled 598/646, pending 1/646, unknown 47/646
-- no valid entry: young 48/1606, mature 0/646
+- young: labelled 1234/1610, no_valid_entry 48/1610, pending 8/1610, unknown 237/1610, unreliable 83/1610
+- mature: labelled 598/648, pending 3/648, unknown 47/648
+- no valid entry: young 48/1610, mature 0/648
 
 ## Effect (after costs; unit = scan)
 
@@ -132,6 +132,7 @@
 - 20261125T235509-5tCju6YN: AMD (20261125T235509), PVE (20261125T235509)
 - 20261126T045506-3jAB5ksB: TEEETHY (20261126T045506), call.fun (20261126T045506)
 - 20261126T125501-9hTjkeV6: FourLife (20261126T125501), Pair (20261126T125501)
+- 20261126T175457-2va3NUJt: JANTA (20261126T175457), SOUP (20261126T175457)
 
 ## Every pair
 
@@ -1737,9 +1738,13 @@
 | 20261126T145459 | GREEN | MDAQ | 39465.61 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T145459 | GREEN | MDAQ | 21245.95 | labelled | -40.52 |  |  |  | None | no eligible comparator |
 | 20261126T145459 | GREEN | Irochan | 18414.65 | labelled | -34.08 |  |  |  | None | no eligible comparator |
-| 20261126T155458 | GREEN | Boy | 21936.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T155458 | GREEN | DUO | 21376.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T155458 | GREEN | Boy | 21936.73 | labelled | -28.65 |  |  |  | None | no eligible comparator |
+| 20261126T155458 | GREEN | DUO | 21376.74 | labelled | 36.87 |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | Optimus | 107639.42 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | MSTR | 45714.08 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | KURO | 19872.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T165457 | GREEN | X | 16314.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T175457 | NEUTRAL | KURO | 78951.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T175457 | NEUTRAL | JANTA | 43122.25 | pending | None | WOOPY | 31378.98 | pending | None |  |
+| 20261126T175457 | NEUTRAL | SOUP | 23933.79 | pending | None | WOOPY | 31378.98 | pending | None |  |
+| 20261126T175457 | NEUTRAL | Kuro | 21401.17 | pending | None |  |  |  | None | comparators used twice |
