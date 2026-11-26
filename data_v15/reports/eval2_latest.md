@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 470 |
-| sightings | 28494 |
-| liquid sightings | 11299 |
-| first liquid sightings = unique tokens with an outcome row | 2293 |
-|   young | 1581 |
-|   mature | 635 |
-|   other | 77 |
+| eval-2 scans | 471 |
+| sightings | 28560 |
+| liquid sightings | 11321 |
+| first liquid sightings = unique tokens with an outcome row | 2297 |
+|   young | 1583 |
+|   mature | 636 |
+|   other | 78 |
 | young with a comparator (cap 2) | 247 |
-| young without a comparator | 1334 |
+| young without a comparator | 1336 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1210/1581, no_valid_entry 47/1581, pending 5/1581, unknown 236/1581, unreliable 83/1581
-- mature: labelled 586/635, pending 5/635, unknown 44/635
-- no valid entry: young 47/1581, mature 0/635
+- young: labelled 1210/1583, no_valid_entry 48/1583, pending 5/1583, unknown 237/1583, unreliable 83/1583
+- mature: labelled 588/636, pending 4/636, unknown 44/636
+- no valid entry: young 48/1583, mature 0/636
 
 ## Effect (after costs; unit = scan)
 
@@ -1703,7 +1703,7 @@
 | 20261125T235509 | NEUTRAL | AMD | 52708.15 | labelled | -68.37 | swordcat | 91585.45 | labelled | 2.31 |  |
 | 20261125T235509 | NEUTRAL | PVE | 49538.23 | labelled | -28.37 | swordcat | 91585.45 | labelled | 2.31 |  |
 | 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | labelled | -44.92 |  |  |  | None | no eligible comparator |
-| 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | UHI | 52741.84 | labelled | 37.42 |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | labelled | 4.13 |  |  |  | None | no eligible comparator |
 | 20261126T005509 | NEUTRAL | Zero | 38691.18 | labelled | 37.28 |  |  |  | None | no eligible comparator |
@@ -1713,7 +1713,9 @@
 | 20261126T015508 | GREEN | MemeStonks | 30101.27 | labelled | -48.41 |  |  |  | None | no eligible comparator |
 | 20261126T015508 | GREEN | TAXMAN | 17252.62 | labelled | -32.64 |  |  |  | None | no eligible comparator |
 | 20261126T025507 | GREEN | STUDS | 15584.07 | labelled | -49.94 |  |  |  | None | no eligible comparator |
-| 20261126T035506 | GREEN | coin | 17689.60 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T035506 | GREEN | coin | 17689.60 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261126T045506 | GREEN | GOTF | 31638.69 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T045506 | GREEN | TEEETHY | 21887.75 | pending | None | ccat | 15023.41 | pending | None |  |
 | 20261126T045506 | GREEN | call.fun | 18648.80 | pending | None | ccat | 15023.41 | pending | None |  |
+| 20261126T055506 | GREEN | BLOCK0 | 42558.19 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T055506 | GREEN | Elonmas | 24577.69 | pending | None |  |  |  | None | no eligible comparator |
