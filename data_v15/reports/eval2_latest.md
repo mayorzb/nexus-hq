@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 465 |
-| sightings | 28175 |
-| liquid sightings | 11192 |
-| first liquid sightings = unique tokens with an outcome row | 2271 |
-|   young | 1568 |
-|   mature | 626 |
+| eval-2 scans | 466 |
+| sightings | 28241 |
+| liquid sightings | 11215 |
+| first liquid sightings = unique tokens with an outcome row | 2276 |
+|   young | 1572 |
+|   mature | 627 |
 |   other | 77 |
 | young with a comparator (cap 2) | 245 |
-| young without a comparator | 1323 |
+| young without a comparator | 1327 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 149 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1197/1568, no_valid_entry 47/1568, pending 9/1568, unknown 232/1568, unreliable 83/1568
-- mature: labelled 578/626, pending 4/626, unknown 44/626
-- no valid entry: young 47/1568, mature 0/626
+- young: labelled 1198/1572, no_valid_entry 47/1572, pending 11/1572, unknown 233/1572, unreliable 83/1572
+- mature: labelled 580/627, pending 3/627, unknown 44/627
+- no valid entry: young 47/1572, mature 0/627
 
 ## Effect (after costs; unit = scan)
 
@@ -1683,7 +1683,7 @@
 | 20261125T185513 | NEUTRAL | RECORDEGG | 31438.36 | labelled | -44.27 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | GRAUDIA | 26837.54 | labelled | -28.61 |  |  |  | None | no eligible comparator |
 | 20261125T185513 | NEUTRAL | 4CHAN | 24371.33 | labelled | -34.06 |  |  |  | None | no eligible comparator |
-| 20261125T185513 | NEUTRAL | SI | 18509.07 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T185513 | NEUTRAL | SI | 18509.07 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261125T195512 | NEUTRAL | GRAVY | 15543.81 | labelled | -46.74 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | OnlyUp | 41935.23 | labelled | -31.15 |  |  |  | None | no eligible comparator |
 | 20261125T205511 | NEUTRAL | NVIDIA | 34769.00 | labelled | 37.23 |  |  |  | None | no eligible comparator |
@@ -1698,8 +1698,12 @@
 | 20261125T215510 | NEUTRAL | NORFEATH | 41117.76 | labelled | 37.31 |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | 4chanpump | 34302.81 | labelled | -51.97 |  |  |  | None | no eligible comparator |
 | 20261125T215510 | NEUTRAL | Squirrel | 18166.65 | labelled | -48.15 |  |  |  | None | no eligible comparator |
-| 20261125T225510 | NEUTRAL | Grodia | 78588.85 | pending | None |  |  |  | None | no eligible comparator |
+| 20261125T225510 | NEUTRAL | Grodia | 78588.85 | labelled | -27.69 |  |  |  | None | no eligible comparator |
 | 20261125T235509 | NEUTRAL | AMD | 52708.15 | pending | None | swordcat | 91585.45 | pending | None |  |
 | 20261125T235509 | NEUTRAL | PVE | 49538.23 | pending | None | swordcat | 91585.45 | pending | None |  |
 | 20261125T235509 | NEUTRAL | PLAZA | 18996.57 | pending | None |  |  |  | None | no eligible comparator |
 | 20261125T235509 | NEUTRAL | Copyinu | 16718.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | UHI | 52741.84 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | Pumpcat | 41255.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | Zero | 38691.18 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T005509 | NEUTRAL | PUMPDOG | 35858.89 | pending | None |  |  |  | None | no eligible comparator |
