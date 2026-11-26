@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-26 09:01 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-26 10:01 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -8,12 +8,12 @@ DAILY HEALTH 2026-11-26 09:01 UTC (review-1.4) - overall: ALERT
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 64 / 22 | OK |
-| Deep-checked coins left UNVERIFIED | 26 of 128 (20%) | OK |
-| Safety canary (deep checks run when no coin reached them) | 16 checked, 0 unverified, 0 on-chain errors | OK |
-| Gate-passers skipped by check budget | 152 of 280 | WARN |
-| Paper candidates (last 24h) | 28 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 494 / 64 | ALERT |
+| Deep-checked coins left UNVERIFIED | 27 of 136 (20%) | OK |
+| Safety canary (deep checks run when no coin reached them) | 14 checked, 0 unverified, 0 on-chain errors | OK |
+| Gate-passers skipped by check budget | 162 of 298 | WARN |
+| Paper candidates (last 24h) | 29 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 492 / 66 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: mihao (17:55), CATE (17:55), swordcat (17:55), mihao (18:55), CATE (18:55), swordcat (18:55), mihao (19:55), CATE (19:55), CATE (20:55), CATE (21:55), swordcat (21:55), mihao (22:55), CATE (22:55), CATE (23:55), swordcat (23:55), CATE (00:55), CATE (01:55), CATE (02:55), TROLL (02:55), CATE (03:55), TROLL (03:55), CATE (04:55), TROLL (04:55), CATE (05:55), CATE (06:55), TROLL (06:55), TROLL (07:55), CATE (08:55)
+Candidates: mihao (17:55), CATE (17:55), swordcat (17:55), mihao (18:55), CATE (18:55), swordcat (18:55), mihao (19:55), CATE (19:55), CATE (20:55), CATE (21:55), swordcat (21:55), mihao (22:55), CATE (22:55), CATE (23:55), swordcat (23:55), CATE (00:55), CATE (01:55), CATE (02:55), TROLL (02:55), CATE (03:55), TROLL (03:55), CATE (04:55), TROLL (04:55), CATE (05:55), CATE (06:55), TROLL (06:55), TROLL (07:55), CATE (08:55), CATE (09:55)

@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 474 |
-| sightings | 28745 |
-| liquid sightings | 11386 |
-| first liquid sightings = unique tokens with an outcome row | 2307 |
-|   young | 1589 |
-|   mature | 640 |
+| eval-2 scans | 475 |
+| sightings | 28805 |
+| liquid sightings | 11406 |
+| first liquid sightings = unique tokens with an outcome row | 2309 |
+|   young | 1590 |
+|   mature | 641 |
 |   other | 78 |
 | young with a comparator (cap 2) | 247 |
-| young without a comparator | 1342 |
+| young without a comparator | 1343 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 88 |
 | complete pairs (both 60m outcomes labelled) | 151 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1219/1589, no_valid_entry 48/1589, pending 2/1589, unknown 237/1589, unreliable 83/1589
-- mature: labelled 593/640, pending 3/640, unknown 44/640
-- no valid entry: young 48/1589, mature 0/640
+- young: labelled 1219/1590, no_valid_entry 48/1590, pending 3/1590, unknown 237/1590, unreliable 83/1590
+- mature: labelled 593/641, pending 3/641, unknown 45/641
+- no valid entry: young 48/1590, mature 0/641
 
 ## Effect (after costs; unit = scan)
 
@@ -1725,3 +1725,4 @@
 | 20261126T065506 | GREEN | PCB | 16182.83 | labelled | -3.45 |  |  |  | None | no eligible comparator |
 | 20261126T085504 | GREEN | capmas | 37171.23 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T085504 | GREEN | KATHERINE | 17912.13 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T095503 | GREEN | Carl | 29436.15 | pending | None |  |  |  | None | no eligible comparator |
