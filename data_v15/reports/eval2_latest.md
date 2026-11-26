@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 472 |
-| sightings | 28624 |
-| liquid sightings | 11344 |
-| first liquid sightings = unique tokens with an outcome row | 2303 |
+| eval-2 scans | 473 |
+| sightings | 28686 |
+| liquid sightings | 11364 |
+| first liquid sightings = unique tokens with an outcome row | 2304 |
 |   young | 1587 |
-|   mature | 638 |
+|   mature | 639 |
 |   other | 78 |
 | young with a comparator (cap 2) | 247 |
 | young without a comparator | 1340 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1213/1587, no_valid_entry 48/1587, pending 6/1587, unknown 237/1587, unreliable 83/1587
-- mature: labelled 590/638, pending 4/638, unknown 44/638
-- no valid entry: young 48/1587, mature 0/638
+- young: labelled 1215/1587, no_valid_entry 48/1587, pending 4/1587, unknown 237/1587, unreliable 83/1587
+- mature: labelled 591/639, pending 4/639, unknown 44/639
+- no valid entry: young 48/1587, mature 0/639
 
 ## Effect (after costs; unit = scan)
 
@@ -1717,8 +1717,8 @@
 | 20261126T045506 | GREEN | GOTF | 31638.69 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T045506 | GREEN | TEEETHY | 21887.75 | labelled | -39.97 | ccat | 15023.41 | pending | None |  |
 | 20261126T045506 | GREEN | call.fun | 18648.80 | labelled | 36.73 | ccat | 15023.41 | pending | None |  |
-| 20261126T055506 | GREEN | BLOCK0 | 42558.19 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T055506 | GREEN | Elonmas | 24577.69 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T055506 | GREEN | BLOCK0 | 42558.19 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T055506 | GREEN | Elonmas | 24577.69 | labelled | -30.26 |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | Marvin | 29362.70 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | Elonmas | 25852.65 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T065506 | GREEN | ELONCOIN | 19927.26 | pending | None |  |  |  | None | no eligible comparator |
