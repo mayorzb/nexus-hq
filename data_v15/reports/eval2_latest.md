@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 478 |
-| sightings | 28990 |
-| liquid sightings | 11468 |
-| first liquid sightings = unique tokens with an outcome row | 2317 |
-|   young | 1595 |
-|   mature | 644 |
-|   other | 78 |
-| young with a comparator (cap 2) | 249 |
-| young without a comparator | 1346 |
+| eval-2 scans | 479 |
+| sightings | 29050 |
+| liquid sightings | 11492 |
+| first liquid sightings = unique tokens with an outcome row | 2321 |
+|   young | 1597 |
+|   mature | 645 |
+|   other | 79 |
+| young with a comparator (cap 2) | 250 |
+| young without a comparator | 1347 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 90 |
+|   pairs: young or mature outcome not yet usable | 91 |
 | complete pairs (both 60m outcomes labelled) | 151 |
 | scans contributing a complete pair | 96 |
 
 ## 60m outcome status by group
 
-- young: labelled 1225/1595, no_valid_entry 48/1595, pending 2/1595, unknown 237/1595, unreliable 83/1595
-- mature: labelled 596/644, pending 2/644, unknown 46/644
-- no valid entry: young 48/1595, mature 0/644
+- young: labelled 1225/1597, no_valid_entry 48/1597, pending 4/1597, unknown 237/1597, unreliable 83/1597
+- mature: labelled 596/645, pending 3/645, unknown 46/645
+- no valid entry: young 48/1597, mature 0/645
 
 ## Effect (after costs; unit = scan)
 
@@ -1732,3 +1732,5 @@
 | 20261126T105502 | GREEN | konnichiwa | 19449.17 | labelled | 36.78 |  |  |  | None | no eligible comparator |
 | 20261126T125501 | GREEN | FourLife | 24504.58 | pending | None | SEXYANIMAL | 24241.82 | pending | None |  |
 | 20261126T125501 | GREEN | Pair | 17903.90 | pending | None | SEXYANIMAL | 24241.82 | pending | None |  |
+| 20261126T135500 | GREEN | HERADUST | 89701.94 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T135500 | GREEN | PAIR | 21968.08 | pending | None | AMAZONCAT | 28750.67 | pending | None |  |
