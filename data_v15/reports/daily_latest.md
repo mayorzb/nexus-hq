@@ -1,19 +1,19 @@
-DAILY HEALTH 2026-11-27 13:02 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-27 14:02 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
 | Scan coverage (hours with a scan, last 24h) | 24/24 (100%) | OK |
 | Longest gap between scans | 60 min | OK |
-| Shortest gap between scans (last 24h) | 60 min (at 12:55 UTC) | OK |
+| Shortest gap between scans (last 24h) | 60 min (at 13:55 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
 | Tokens seen / liquid (median per scan) | 60 / 24 | OK |
-| Deep-checked coins left UNVERIFIED | 33 of 192 (17%) | OK |
+| Deep-checked coins left UNVERIFIED | 35 of 192 (18%) | OK |
 | Safety canary (deep checks run when no coin reached them) | 0 checked, 0 unverified, 0 on-chain errors | INFO |
 | Gate-passers skipped by check budget | 278 of 472 | WARN |
-| Paper candidates (last 24h) | 29 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 527 / 96 | ALERT |
+| Paper candidates (last 24h) | 32 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 539 / 103 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54), CATE (22:54), CATE (00:54), CATE (01:54), CATE (02:54), TROLL (02:54), CATE (03:54), TROLL (03:54), CATE (04:54), TROLL (04:54), CATE (05:54), CATE (06:54), CATE (07:54), CATE (08:54), TROLL (08:54), CATE (09:54), CATE (10:54), mihao (10:54), baton (10:54), baton (11:54), CATE (12:54)
+Candidates: TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54), CATE (22:54), CATE (00:54), CATE (01:54), CATE (02:54), TROLL (02:54), CATE (03:54), TROLL (03:54), CATE (04:54), TROLL (04:54), CATE (05:54), CATE (06:54), CATE (07:54), CATE (08:54), TROLL (08:54), CATE (09:54), CATE (10:54), mihao (10:54), baton (10:54), baton (11:54), CATE (12:54), CATE (13:54), TROLL (13:54), Rizzmas (13:54)

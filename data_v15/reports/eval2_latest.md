@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 502 |
-| sightings | 30420 |
-| liquid sightings | 12046 |
-| first liquid sightings = unique tokens with an outcome row | 2432 |
-|   young | 1669 |
-|   mature | 680 |
+| eval-2 scans | 503 |
+| sightings | 30473 |
+| liquid sightings | 12070 |
+| first liquid sightings = unique tokens with an outcome row | 2439 |
+|   young | 1673 |
+|   mature | 683 |
 |   other | 83 |
 | young with a comparator (cap 2) | 260 |
-| young without a comparator | 1409 |
+| young without a comparator | 1413 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 94 |
 | complete pairs (both 60m outcomes labelled) | 158 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1284/1669, no_valid_entry 50/1669, pending 9/1669, unknown 242/1669, unreliable 84/1669
-- mature: labelled 627/680, pending 3/680, unknown 50/680
-- no valid entry: young 50/1669, mature 0/680
+- young: labelled 1286/1673, no_valid_entry 50/1673, pending 11/1673, unknown 242/1673, unreliable 84/1673
+- mature: labelled 628/683, pending 5/683, unknown 50/683
+- no valid entry: young 50/1673, mature 0/683
 
 ## Effect (after costs; unit = scan)
 
@@ -1803,9 +1803,13 @@
 | 20261127T105444 | GREEN | GTA6 | 35317.44 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261127T105444 | GREEN | POLO | 18958.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T115443 | NEUTRAL | VAULT | 24821.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T115443 | NEUTRAL | 牛蛙 | 22054.96 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T115443 | NEUTRAL | CC | 21969.91 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | 牛蛙 | 22054.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | CC | 21969.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | RHINODINOS | 80914.51 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | BLOCK0 | 31145.03 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | ChokingCat | 21244.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | MUMU | 16287.03 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | TWORBIT | 41547.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | WINSTON | 28088.64 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | TOGI | 22038.79 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | XMAS | 16810.40 | pending | None |  |  |  | None | no eligible comparator |
