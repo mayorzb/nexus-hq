@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 508 |
-| sightings | 30751 |
-| liquid sightings | 12184 |
-| first liquid sightings = unique tokens with an outcome row | 2477 |
-|   young | 1693 |
-|   mature | 701 |
+| eval-2 scans | 509 |
+| sightings | 30808 |
+| liquid sightings | 12204 |
+| first liquid sightings = unique tokens with an outcome row | 2480 |
+|   young | 1694 |
+|   mature | 703 |
 |   other | 83 |
 | young with a comparator (cap 2) | 264 |
-| young without a comparator | 1429 |
+| young without a comparator | 1430 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 97 |
-| complete pairs (both 60m outcomes labelled) | 159 |
-| scans contributing a complete pair | 101 |
+|   pairs: young or mature outcome not yet usable | 95 |
+| complete pairs (both 60m outcomes labelled) | 161 |
+| scans contributing a complete pair | 102 |
 
 ## 60m outcome status by group
 
-- young: labelled 1307/1693, no_valid_entry 50/1693, pending 7/1693, unknown 245/1693, unreliable 84/1693
-- mature: labelled 643/701, pending 7/701, unknown 51/701
-- no valid entry: young 50/1693, mature 0/701
+- young: labelled 1313/1694, no_valid_entry 50/1694, pending 2/1694, unknown 245/1694, unreliable 84/1694
+- mature: labelled 647/703, pending 5/703, unknown 51/703
+- no valid entry: young 50/1694, mature 0/703
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.8 points, 95% interval (-37.15, -16.77); scans with young worse 71/101
-- Pairs with young worse: 115/159 (72.3%); pair mean -24.29, median -27.47
-- Big loss (<= -20%): young 113/159, mature 43/159
+- Scan-level mean difference (young - mature): -27.44 points, 95% interval (-37.76, -17.13); scans with young worse 72/102
+- Pairs with young worse: 117/161 (72.7%); pair mean -25.14, median -27.66
+- Big loss (<= -20%): young 115/161, mature 43/161
 
 ## Comparator reuse (cap 2)
 
@@ -1827,10 +1827,11 @@
 | 20261127T165439 | NEUTRAL | DIHBALL | 29342.26 | labelled | 37.12 |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | OVER | 28834.78 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | 67 | 28703.27 | labelled | -28.83 |  |  |  | None | no eligible comparator |
-| 20261127T175438 | NEUTRAL | MEMECARD | 78550.48 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T175438 | NEUTRAL | Gǒu | 29433.90 | pending | None | COMPUTE | 22426.50 | pending | None |  |
-| 20261127T175438 | NEUTRAL | Gǒu | 26733.07 | pending | None | COMPUTE | 22426.50 | pending | None |  |
-| 20261127T175438 | NEUTRAL | rice | 24912.91 | pending | None |  |  |  | None | comparators used twice |
-| 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | pending | None |  |  |  | None | comparators used twice |
-| 20261127T175438 | NEUTRAL | Split | 19117.77 | pending | None |  |  |  | None | comparators used twice |
+| 20261127T175438 | NEUTRAL | MEMECARD | 78550.48 | labelled | -34.26 |  |  |  | None | no eligible comparator |
+| 20261127T175438 | NEUTRAL | Gǒu | 29433.90 | labelled | -100.0 | COMPUTE | 22426.50 | labelled | -7.59 |  |
+| 20261127T175438 | NEUTRAL | Gǒu | 26733.07 | labelled | -100.0 | COMPUTE | 22426.50 | labelled | -7.59 |  |
+| 20261127T175438 | NEUTRAL | rice | 24912.91 | labelled | -29.23 |  |  |  | None | comparators used twice |
+| 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | labelled | -100.0 |  |  |  | None | comparators used twice |
+| 20261127T175438 | NEUTRAL | Split | 19117.77 | labelled | 36.76 |  |  |  | None | comparators used twice |
 | 20261127T185437 | NEUTRAL | VICAT | 28115.67 | pending | None | reee | 15552.38 | pending | None |  |
+| 20261127T195436 | NEUTRAL | Sally | 28866.30 | pending | None |  |  |  | None | no eligible comparator |
