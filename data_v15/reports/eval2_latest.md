@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 507 |
-| sightings | 30697 |
-| liquid sightings | 12165 |
-| first liquid sightings = unique tokens with an outcome row | 2473 |
-|   young | 1692 |
-|   mature | 698 |
+| eval-2 scans | 508 |
+| sightings | 30751 |
+| liquid sightings | 12184 |
+| first liquid sightings = unique tokens with an outcome row | 2477 |
+|   young | 1693 |
+|   mature | 701 |
 |   other | 83 |
-| young with a comparator (cap 2) | 263 |
+| young with a comparator (cap 2) | 264 |
 | young without a comparator | 1429 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 96 |
+|   pairs: young or mature outcome not yet usable | 97 |
 | complete pairs (both 60m outcomes labelled) | 159 |
 | scans contributing a complete pair | 101 |
 
 ## 60m outcome status by group
 
-- young: labelled 1299/1692, no_valid_entry 50/1692, pending 14/1692, unknown 245/1692, unreliable 84/1692
-- mature: labelled 639/698, pending 8/698, unknown 51/698
-- no valid entry: young 50/1692, mature 0/698
+- young: labelled 1307/1693, no_valid_entry 50/1693, pending 7/1693, unknown 245/1693, unreliable 84/1693
+- mature: labelled 643/701, pending 7/701, unknown 51/701
+- no valid entry: young 50/1693, mature 0/701
 
 ## Effect (after costs; unit = scan)
 
@@ -1819,17 +1819,18 @@
 | 20261127T145441 | NEUTRAL | KITT | 16949.10 | labelled | -51.51 |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | Amazon | 15529.55 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T155440 | NEUTRAL | COMPUTE | 18521.51 | labelled | -100.0 | MEOWI | 27830.83 | labelled | -24.55 |  |
-| 20261127T165439 | NEUTRAL | Meme | 68108.99 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | Fireball | 66692.68 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | NBA | 51222.74 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | Elfball | 43477.67 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | REVINU | 31935.25 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | DIHBALL | 29342.26 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | OVER | 28834.78 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T165439 | NEUTRAL | 67 | 28703.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | Meme | 68108.99 | labelled | -35.22 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | Fireball | 66692.68 | labelled | 37.5 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | NBA | 51222.74 | labelled | -32.58 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | Elfball | 43477.67 | labelled | -29.41 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | REVINU | 31935.25 | labelled | -33.62 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | DIHBALL | 29342.26 | labelled | 37.12 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | OVER | 28834.78 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | 67 | 28703.27 | labelled | -28.83 |  |  |  | None | no eligible comparator |
 | 20261127T175438 | NEUTRAL | MEMECARD | 78550.48 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T175438 | NEUTRAL | Gǒu | 29433.90 | pending | None | COMPUTE | 22426.50 | pending | None |  |
 | 20261127T175438 | NEUTRAL | Gǒu | 26733.07 | pending | None | COMPUTE | 22426.50 | pending | None |  |
 | 20261127T175438 | NEUTRAL | rice | 24912.91 | pending | None |  |  |  | None | comparators used twice |
 | 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | pending | None |  |  |  | None | comparators used twice |
 | 20261127T175438 | NEUTRAL | Split | 19117.77 | pending | None |  |  |  | None | comparators used twice |
+| 20261127T185437 | NEUTRAL | VICAT | 28115.67 | pending | None | reee | 15552.38 | pending | None |  |
