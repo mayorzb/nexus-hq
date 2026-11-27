@@ -6,12 +6,12 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 495 |
-| sightings | 30011 |
-| liquid sightings | 11885 |
-| first liquid sightings = unique tokens with an outcome row | 2403 |
+| eval-2 scans | 496 |
+| sightings | 30075 |
+| liquid sightings | 11907 |
+| first liquid sightings = unique tokens with an outcome row | 2404 |
 |   young | 1653 |
-|   mature | 668 |
+|   mature | 669 |
 |   other | 82 |
 | young with a comparator (cap 2) | 257 |
 | young without a comparator | 1396 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1272/1653, no_valid_entry 50/1653, pending 5/1653, unknown 242/1653, unreliable 84/1653
-- mature: labelled 615/668, pending 4/668, unknown 49/668
-- no valid entry: young 50/1653, mature 0/668
+- young: labelled 1273/1653, no_valid_entry 50/1653, pending 4/1653, unknown 242/1653, unreliable 84/1653
+- mature: labelled 617/669, pending 3/669, unknown 49/669
+- no valid entry: young 50/1653, mature 0/669
 
 ## Effect (after costs; unit = scan)
 
@@ -1787,7 +1787,7 @@
 | 20261127T035450 | NEUTRAL | ANGEL | 27330.56 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Dragon | 16812.86 | labelled | -32.43 |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Scat | 15918.58 | labelled | -29.36 |  |  |  | None | no eligible comparator |
-| 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T055449 | GREEN | VOLALITY | 24176.49 | pending | None | GIGACATE | 33443.67 | pending | None |  |
 | 20261127T055449 | GREEN | THUMPER | 19828.83 | pending | None | GIGACATE | 33443.67 | pending | None |  |
 | 20261127T055449 | GREEN | CaveBaby | 16318.53 | pending | None |  |  |  | None | no eligible comparator |
