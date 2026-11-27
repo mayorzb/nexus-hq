@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 499 |
-| sightings | 30256 |
-| liquid sightings | 11978 |
-| first liquid sightings = unique tokens with an outcome row | 2418 |
-|   young | 1660 |
-|   mature | 675 |
+| eval-2 scans | 500 |
+| sightings | 30316 |
+| liquid sightings | 12000 |
+| first liquid sightings = unique tokens with an outcome row | 2423 |
+|   young | 1662 |
+|   mature | 678 |
 |   other | 83 |
 | young with a comparator (cap 2) | 260 |
-| young without a comparator | 1400 |
+| young without a comparator | 1402 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 94 |
 | complete pairs (both 60m outcomes labelled) | 158 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1279/1660, no_valid_entry 50/1660, pending 5/1660, unknown 242/1660, unreliable 84/1660
-- mature: labelled 621/675, pending 5/675, unknown 49/675
-- no valid entry: young 50/1660, mature 0/675
+- young: labelled 1280/1662, no_valid_entry 50/1662, pending 6/1662, unknown 242/1662, unreliable 84/1662
+- mature: labelled 623/678, pending 6/678, unknown 49/678
+- no valid entry: young 50/1662, mature 0/678
 
 ## Effect (after costs; unit = scan)
 
@@ -1795,8 +1795,10 @@
 | 20261127T055449 | GREEN | Kibo | 15848.28 | labelled | -58.05 |  |  |  | None | no eligible comparator |
 | 20261127T075447 | GREEN | TRUMP | 20966.35 | labelled | -100.0 | DEXDATA | 37743.93 | labelled | 37.27 |  |
 | 20261127T075447 | GREEN | PETER | 18322.98 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T085446 | GREEN | pear | 27885.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T085446 | GREEN | pear | 27885.30 | labelled | -81.07 |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | $PILLY | 19565.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | NIW | 15511.48 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T095445 | GREEN | Jensen | 32058.33 | pending | None | duk | 28620.52 | pending | None |  |
 | 20261127T095445 | GREEN | NVIDIA | 15204.99 | pending | None | duk | 28620.52 | pending | None |  |
+| 20261127T105444 | GREEN | GTA6 | 35317.44 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T105444 | GREEN | POLO | 18958.66 | pending | None |  |  |  | None | no eligible comparator |
