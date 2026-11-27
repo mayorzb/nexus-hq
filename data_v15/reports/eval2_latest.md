@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 498 |
-| sightings | 30197 |
-| liquid sightings | 11954 |
-| first liquid sightings = unique tokens with an outcome row | 2413 |
-|   young | 1658 |
-|   mature | 673 |
-|   other | 82 |
-| young with a comparator (cap 2) | 258 |
+| eval-2 scans | 499 |
+| sightings | 30256 |
+| liquid sightings | 11978 |
+| first liquid sightings = unique tokens with an outcome row | 2418 |
+|   young | 1660 |
+|   mature | 675 |
+|   other | 83 |
+| young with a comparator (cap 2) | 260 |
 | young without a comparator | 1400 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 93 |
-| complete pairs (both 60m outcomes labelled) | 157 |
-| scans contributing a complete pair | 99 |
+|   pairs: young or mature outcome not yet usable | 94 |
+| complete pairs (both 60m outcomes labelled) | 158 |
+| scans contributing a complete pair | 100 |
 
 ## 60m outcome status by group
 
-- young: labelled 1277/1658, no_valid_entry 50/1658, pending 5/1658, unknown 242/1658, unreliable 84/1658
-- mature: labelled 619/673, pending 5/673, unknown 49/673
-- no valid entry: young 50/1658, mature 0/673
+- young: labelled 1279/1660, no_valid_entry 50/1660, pending 5/1660, unknown 242/1660, unreliable 84/1660
+- mature: labelled 621/675, pending 5/675, unknown 49/675
+- no valid entry: young 50/1660, mature 0/675
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.19 points, 95% interval (-34.75, -15.19); scans with young worse 69/99
-- Pairs with young worse: 113/157 (72.0%); pair mean -23.25, median -27.29
-- Big loss (<= -20%): young 111/157, mature 42/157
+- Scan-level mean difference (young - mature): -26.31 points, 95% interval (-36.08, -16.18); scans with young worse 70/100
+- Pairs with young worse: 114/158 (72.2%); pair mean -23.97, median -27.38
+- Big loss (<= -20%): young 112/158, mature 42/158
 
 ## Comparator reuse (cap 2)
 
@@ -134,6 +134,7 @@
 - 20261126T125501-9hTjkeV6: FourLife (20261126T125501), Pair (20261126T125501)
 - 20261126T175457-2va3NUJt: JANTA (20261126T175457), SOUP (20261126T175457)
 - 20261127T055449-7EWDjow5: VOLALITY (20261127T055449), THUMPER (20261127T055449)
+- 20261127T095445-DG2EJSEt: Jensen (20261127T095445), NVIDIA (20261127T095445)
 
 ## Every pair
 
@@ -1792,8 +1793,10 @@
 | 20261127T055449 | GREEN | THUMPER | 19828.83 | labelled | -100.0 | GIGACATE | 33443.67 | pending | None |  |
 | 20261127T055449 | GREEN | CaveBaby | 16318.53 | labelled | -33.64 |  |  |  | None | no eligible comparator |
 | 20261127T055449 | GREEN | Kibo | 15848.28 | labelled | -58.05 |  |  |  | None | no eligible comparator |
-| 20261127T075447 | GREEN | TRUMP | 20966.35 | pending | None | DEXDATA | 37743.93 | pending | None |  |
-| 20261127T075447 | GREEN | PETER | 18322.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T075447 | GREEN | TRUMP | 20966.35 | labelled | -100.0 | DEXDATA | 37743.93 | labelled | 37.27 |  |
+| 20261127T075447 | GREEN | PETER | 18322.98 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | pear | 27885.30 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | $PILLY | 19565.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | NIW | 15511.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T095445 | GREEN | Jensen | 32058.33 | pending | None | duk | 28620.52 | pending | None |  |
+| 20261127T095445 | GREEN | NVIDIA | 15204.99 | pending | None | duk | 28620.52 | pending | None |  |
