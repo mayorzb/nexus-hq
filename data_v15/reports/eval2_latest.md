@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 506 |
-| sightings | 30638 |
-| liquid sightings | 12140 |
-| first liquid sightings = unique tokens with an outcome row | 2463 |
-|   young | 1686 |
-|   mature | 694 |
+| eval-2 scans | 507 |
+| sightings | 30697 |
+| liquid sightings | 12165 |
+| first liquid sightings = unique tokens with an outcome row | 2473 |
+|   young | 1692 |
+|   mature | 698 |
 |   other | 83 |
-| young with a comparator (cap 2) | 261 |
-| young without a comparator | 1425 |
+| young with a comparator (cap 2) | 263 |
+| young without a comparator | 1429 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 95 |
-| complete pairs (both 60m outcomes labelled) | 158 |
-| scans contributing a complete pair | 100 |
+|   pairs: young or mature outcome not yet usable | 96 |
+| complete pairs (both 60m outcomes labelled) | 159 |
+| scans contributing a complete pair | 101 |
 
 ## 60m outcome status by group
 
-- young: labelled 1298/1686, no_valid_entry 50/1686, pending 10/1686, unknown 244/1686, unreliable 84/1686
-- mature: labelled 635/694, pending 8/694, unknown 51/694
-- no valid entry: young 50/1686, mature 0/694
+- young: labelled 1299/1692, no_valid_entry 50/1692, pending 14/1692, unknown 245/1692, unreliable 84/1692
+- mature: labelled 639/698, pending 8/698, unknown 51/698
+- no valid entry: young 50/1692, mature 0/698
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -26.31 points, 95% interval (-36.08, -16.18); scans with young worse 70/100
-- Pairs with young worse: 114/158 (72.2%); pair mean -23.97, median -27.38
-- Big loss (<= -20%): young 112/158, mature 42/158
+- Scan-level mean difference (young - mature): -26.8 points, 95% interval (-37.15, -16.77); scans with young worse 71/101
+- Pairs with young worse: 115/159 (72.3%); pair mean -24.29, median -27.47
+- Big loss (<= -20%): young 113/159, mature 43/159
 
 ## Comparator reuse (cap 2)
 
@@ -135,6 +135,7 @@
 - 20261126T175457-2va3NUJt: JANTA (20261126T175457), SOUP (20261126T175457)
 - 20261127T055449-7EWDjow5: VOLALITY (20261127T055449), THUMPER (20261127T055449)
 - 20261127T095445-DG2EJSEt: Jensen (20261127T095445), NVIDIA (20261127T095445)
+- 20261127T175438-39nuVgw8: Gǒu (20261127T175438), Gǒu (20261127T175438)
 
 ## Every pair
 
@@ -1802,7 +1803,7 @@
 | 20261127T095445 | GREEN | NVIDIA | 15204.99 | labelled | -100.0 | duk | 28620.52 | unknown | None |  |
 | 20261127T105444 | GREEN | GTA6 | 35317.44 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261127T105444 | GREEN | POLO | 18958.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T115443 | NEUTRAL | VAULT | 24821.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | VAULT | 24821.05 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261127T115443 | NEUTRAL | 牛蛙 | 22054.96 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T115443 | NEUTRAL | CC | 21969.91 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | RHINODINOS | 80914.51 | labelled | 37.55 |  |  |  | None | no eligible comparator |
@@ -1817,7 +1818,7 @@
 | 20261127T145441 | NEUTRAL | FRGST | 19201.23 | labelled | 36.76 |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | KITT | 16949.10 | labelled | -51.51 |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | Amazon | 15529.55 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T155440 | NEUTRAL | COMPUTE | 18521.51 | pending | None | MEOWI | 27830.83 | pending | None |  |
+| 20261127T155440 | NEUTRAL | COMPUTE | 18521.51 | labelled | -100.0 | MEOWI | 27830.83 | labelled | -24.55 |  |
 | 20261127T165439 | NEUTRAL | Meme | 68108.99 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | Fireball | 66692.68 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | NBA | 51222.74 | pending | None |  |  |  | None | no eligible comparator |
@@ -1826,3 +1827,9 @@
 | 20261127T165439 | NEUTRAL | DIHBALL | 29342.26 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | OVER | 28834.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T165439 | NEUTRAL | 67 | 28703.27 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T175438 | NEUTRAL | MEMECARD | 78550.48 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T175438 | NEUTRAL | Gǒu | 29433.90 | pending | None | COMPUTE | 22426.50 | pending | None |  |
+| 20261127T175438 | NEUTRAL | Gǒu | 26733.07 | pending | None | COMPUTE | 22426.50 | pending | None |  |
+| 20261127T175438 | NEUTRAL | rice | 24912.91 | pending | None |  |  |  | None | comparators used twice |
+| 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | pending | None |  |  |  | None | comparators used twice |
+| 20261127T175438 | NEUTRAL | Split | 19117.77 | pending | None |  |  |  | None | comparators used twice |
