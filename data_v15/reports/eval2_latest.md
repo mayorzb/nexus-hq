@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 504 |
-| sightings | 30525 |
-| liquid sightings | 12094 |
-| first liquid sightings = unique tokens with an outcome row | 2446 |
-|   young | 1677 |
-|   mature | 686 |
+| eval-2 scans | 505 |
+| sightings | 30579 |
+| liquid sightings | 12115 |
+| first liquid sightings = unique tokens with an outcome row | 2451 |
+|   young | 1678 |
+|   mature | 690 |
 |   other | 83 |
-| young with a comparator (cap 2) | 260 |
+| young with a comparator (cap 2) | 261 |
 | young without a comparator | 1417 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 94 |
+|   pairs: young or mature outcome not yet usable | 95 |
 | complete pairs (both 60m outcomes labelled) | 158 |
 | scans contributing a complete pair | 100 |
 
 ## 60m outcome status by group
 
-- young: labelled 1290/1677, no_valid_entry 50/1677, pending 9/1677, unknown 244/1677, unreliable 84/1677
-- mature: labelled 629/686, pending 7/686, unknown 50/686
-- no valid entry: young 50/1677, mature 0/686
+- young: labelled 1294/1678, no_valid_entry 50/1678, pending 6/1678, unknown 244/1678, unreliable 84/1678
+- mature: labelled 632/690, pending 7/690, unknown 51/690
+- no valid entry: young 50/1678, mature 0/690
 
 ## Effect (after costs; unit = scan)
 
@@ -1798,8 +1798,8 @@
 | 20261127T085446 | GREEN | pear | 27885.30 | labelled | -81.07 |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | $PILLY | 19565.53 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | NIW | 15511.48 | unknown | None |  |  |  | None | no eligible comparator |
-| 20261127T095445 | GREEN | Jensen | 32058.33 | labelled | 37.18 | duk | 28620.52 | pending | None |  |
-| 20261127T095445 | GREEN | NVIDIA | 15204.99 | labelled | -100.0 | duk | 28620.52 | pending | None |  |
+| 20261127T095445 | GREEN | Jensen | 32058.33 | labelled | 37.18 | duk | 28620.52 | unknown | None |  |
+| 20261127T095445 | GREEN | NVIDIA | 15204.99 | labelled | -100.0 | duk | 28620.52 | unknown | None |  |
 | 20261127T105444 | GREEN | GTA6 | 35317.44 | labelled | 37.24 |  |  |  | None | no eligible comparator |
 | 20261127T105444 | GREEN | POLO | 18958.66 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T115443 | NEUTRAL | VAULT | 24821.05 | pending | None |  |  |  | None | no eligible comparator |
@@ -1809,11 +1809,12 @@
 | 20261127T125442 | NEUTRAL | BLOCK0 | 31145.03 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | ChokingCat | 21244.24 | labelled | 36.86 |  |  |  | None | no eligible comparator |
 | 20261127T125442 | NEUTRAL | MUMU | 16287.03 | labelled | -34.81 |  |  |  | None | no eligible comparator |
-| 20261127T135441 | NEUTRAL | TWORBIT | 41547.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T135441 | NEUTRAL | WINSTON | 28088.64 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T135441 | NEUTRAL | TOGI | 22038.79 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T135441 | NEUTRAL | XMAS | 16810.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | TWORBIT | 41547.40 | labelled | 37.32 |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | WINSTON | 28088.64 | labelled | -29.01 |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | TOGI | 22038.79 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261127T135441 | NEUTRAL | XMAS | 16810.40 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | FULLPORT | 20574.93 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | FRGST | 19201.23 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | KITT | 16949.10 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T145441 | NEUTRAL | Amazon | 15529.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T155440 | NEUTRAL | COMPUTE | 18521.51 | pending | None | MEOWI | 27830.83 | pending | None |  |
