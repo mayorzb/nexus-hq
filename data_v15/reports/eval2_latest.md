@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 510 |
-| sightings | 30872 |
-| liquid sightings | 12225 |
-| first liquid sightings = unique tokens with an outcome row | 2487 |
-|   young | 1698 |
-|   mature | 706 |
-|   other | 83 |
+| eval-2 scans | 511 |
+| sightings | 30931 |
+| liquid sightings | 12251 |
+| first liquid sightings = unique tokens with an outcome row | 2497 |
+|   young | 1703 |
+|   mature | 710 |
+|   other | 84 |
 | young with a comparator (cap 2) | 264 |
-| young without a comparator | 1434 |
+| young without a comparator | 1439 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 95 |
 | complete pairs (both 60m outcomes labelled) | 161 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1314/1698, no_valid_entry 50/1698, pending 5/1698, unknown 245/1698, unreliable 84/1698
-- mature: labelled 649/706, pending 5/706, unknown 52/706
-- no valid entry: young 50/1698, mature 0/706
+- young: labelled 1315/1703, no_valid_entry 50/1703, pending 9/1703, unknown 245/1703, unreliable 84/1703
+- mature: labelled 651/710, pending 7/710, unknown 52/710
+- no valid entry: young 50/1703, mature 0/710
 
 ## Effect (after costs; unit = scan)
 
@@ -1834,8 +1834,13 @@
 | 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261127T175438 | NEUTRAL | Split | 19117.77 | labelled | 36.76 |  |  |  | None | comparators used twice |
 | 20261127T185437 | NEUTRAL | VICAT | 28115.67 | labelled | -28.04 | reee | 15552.38 | unknown | None |  |
-| 20261127T195436 | NEUTRAL | Sally | 28866.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T195436 | NEUTRAL | Sally | 28866.30 | labelled | 37.11 |  |  |  | None | no eligible comparator |
 | 20261127T205435 | NEUTRAL | ZERO | 59580.24 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T205435 | NEUTRAL | Fullball | 22956.78 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T205435 | NEUTRAL | WINTER | 20730.04 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T205435 | NEUTRAL | PILLAR | 15057.20 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T215435 | NEUTRAL | TAURID | 87814.32 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T215435 | NEUTRAL | MAYA | 76386.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T215435 | NEUTRAL | MoonBoy | 71182.31 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T215435 | NEUTRAL | BLR | 59462.90 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T215435 | NEUTRAL | CM | 30010.72 | pending | None |  |  |  | None | no eligible comparator |
