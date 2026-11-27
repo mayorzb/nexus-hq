@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 509 |
-| sightings | 30808 |
-| liquid sightings | 12204 |
-| first liquid sightings = unique tokens with an outcome row | 2480 |
-|   young | 1694 |
-|   mature | 703 |
+| eval-2 scans | 510 |
+| sightings | 30872 |
+| liquid sightings | 12225 |
+| first liquid sightings = unique tokens with an outcome row | 2487 |
+|   young | 1698 |
+|   mature | 706 |
 |   other | 83 |
 | young with a comparator (cap 2) | 264 |
-| young without a comparator | 1430 |
+| young without a comparator | 1434 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 95 |
 | complete pairs (both 60m outcomes labelled) | 161 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1313/1694, no_valid_entry 50/1694, pending 2/1694, unknown 245/1694, unreliable 84/1694
-- mature: labelled 647/703, pending 5/703, unknown 51/703
-- no valid entry: young 50/1694, mature 0/703
+- young: labelled 1314/1698, no_valid_entry 50/1698, pending 5/1698, unknown 245/1698, unreliable 84/1698
+- mature: labelled 649/706, pending 5/706, unknown 52/706
+- no valid entry: young 50/1698, mature 0/706
 
 ## Effect (after costs; unit = scan)
 
@@ -1833,5 +1833,9 @@
 | 20261127T175438 | NEUTRAL | rice | 24912.91 | labelled | -29.23 |  |  |  | None | comparators used twice |
 | 20261127T175438 | NEUTRAL | Gǒu | 21894.31 | labelled | -100.0 |  |  |  | None | comparators used twice |
 | 20261127T175438 | NEUTRAL | Split | 19117.77 | labelled | 36.76 |  |  |  | None | comparators used twice |
-| 20261127T185437 | NEUTRAL | VICAT | 28115.67 | pending | None | reee | 15552.38 | pending | None |  |
+| 20261127T185437 | NEUTRAL | VICAT | 28115.67 | labelled | -28.04 | reee | 15552.38 | unknown | None |  |
 | 20261127T195436 | NEUTRAL | Sally | 28866.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T205435 | NEUTRAL | ZERO | 59580.24 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T205435 | NEUTRAL | Fullball | 22956.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T205435 | NEUTRAL | WINTER | 20730.04 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T205435 | NEUTRAL | PILLAR | 15057.20 | pending | None |  |  |  | None | no eligible comparator |
