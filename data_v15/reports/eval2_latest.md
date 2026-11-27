@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 505 |
-| sightings | 30579 |
-| liquid sightings | 12115 |
-| first liquid sightings = unique tokens with an outcome row | 2451 |
-|   young | 1678 |
-|   mature | 690 |
+| eval-2 scans | 506 |
+| sightings | 30638 |
+| liquid sightings | 12140 |
+| first liquid sightings = unique tokens with an outcome row | 2463 |
+|   young | 1686 |
+|   mature | 694 |
 |   other | 83 |
 | young with a comparator (cap 2) | 261 |
-| young without a comparator | 1417 |
+| young without a comparator | 1425 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 95 |
 | complete pairs (both 60m outcomes labelled) | 158 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1294/1678, no_valid_entry 50/1678, pending 6/1678, unknown 244/1678, unreliable 84/1678
-- mature: labelled 632/690, pending 7/690, unknown 51/690
-- no valid entry: young 50/1678, mature 0/690
+- young: labelled 1298/1686, no_valid_entry 50/1686, pending 10/1686, unknown 244/1686, unreliable 84/1686
+- mature: labelled 635/694, pending 8/694, unknown 51/694
+- no valid entry: young 50/1686, mature 0/694
 
 ## Effect (after costs; unit = scan)
 
@@ -1813,8 +1813,16 @@
 | 20261127T135441 | NEUTRAL | WINSTON | 28088.64 | labelled | -29.01 |  |  |  | None | no eligible comparator |
 | 20261127T135441 | NEUTRAL | TOGI | 22038.79 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T135441 | NEUTRAL | XMAS | 16810.40 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T145441 | NEUTRAL | FULLPORT | 20574.93 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T145441 | NEUTRAL | FRGST | 19201.23 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T145441 | NEUTRAL | KITT | 16949.10 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T145441 | NEUTRAL | Amazon | 15529.55 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T145441 | NEUTRAL | FULLPORT | 20574.93 | labelled | -29.74 |  |  |  | None | no eligible comparator |
+| 20261127T145441 | NEUTRAL | FRGST | 19201.23 | labelled | 36.76 |  |  |  | None | no eligible comparator |
+| 20261127T145441 | NEUTRAL | KITT | 16949.10 | labelled | -51.51 |  |  |  | None | no eligible comparator |
+| 20261127T145441 | NEUTRAL | Amazon | 15529.55 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261127T155440 | NEUTRAL | COMPUTE | 18521.51 | pending | None | MEOWI | 27830.83 | pending | None |  |
+| 20261127T165439 | NEUTRAL | Meme | 68108.99 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | Fireball | 66692.68 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | NBA | 51222.74 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | Elfball | 43477.67 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | REVINU | 31935.25 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | DIHBALL | 29342.26 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | OVER | 28834.78 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T165439 | NEUTRAL | 67 | 28703.27 | pending | None |  |  |  | None | no eligible comparator |
