@@ -6,31 +6,31 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 488 |
-| sightings | 29583 |
-| liquid sightings | 11700 |
-| first liquid sightings = unique tokens with an outcome row | 2363 |
-|   young | 1627 |
+| eval-2 scans | 489 |
+| sightings | 29640 |
+| liquid sightings | 11727 |
+| first liquid sightings = unique tokens with an outcome row | 2370 |
+|   young | 1634 |
 |   mature | 657 |
 |   other | 79 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1372 |
+| young without a comparator | 1379 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 92 |
-| complete pairs (both 60m outcomes labelled) | 155 |
-| scans contributing a complete pair | 98 |
+|   pairs: young or mature outcome not yet usable | 90 |
+| complete pairs (both 60m outcomes labelled) | 157 |
+| scans contributing a complete pair | 99 |
 
 ## 60m outcome status by group
 
-- young: labelled 1250/1627, no_valid_entry 48/1627, pending 9/1627, unknown 237/1627, unreliable 83/1627
-- mature: labelled 604/657, pending 4/657, unknown 49/657
-- no valid entry: young 48/1627, mature 0/657
+- young: labelled 1252/1634, no_valid_entry 48/1634, pending 14/1634, unknown 237/1634, unreliable 83/1634
+- mature: labelled 607/657, pending 1/657, unknown 49/657
+- no valid entry: young 48/1634, mature 0/657
 
 ## Effect (after costs; unit = scan)
 
-- Scan-level mean difference (young - mature): -25.71 points, 95% interval (-35.77, -15.49); scans with young worse 69/98
-- Pairs with young worse: 112/155 (72.3%); pair mean -23.87, median -27.47
-- Big loss (<= -20%): young 110/155, mature 41/155
+- Scan-level mean difference (young - mature): -25.19 points, 95% interval (-34.75, -15.19); scans with young worse 69/99
+- Pairs with young worse: 113/157 (72.0%); pair mean -23.25, median -27.29
+- Big loss (<= -20%): young 111/157, mature 42/157
 
 ## Comparator reuse (cap 2)
 
@@ -1758,10 +1758,17 @@
 | 20261126T205456 | NEUTRAL | ZINU | 23992.03 | labelled | -34.98 |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | BARRON | 17932.09 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | ZCOIN | 17417.22 | labelled | -45.37 |  |  |  | None | no eligible comparator |
-| 20261126T215455 | NEUTRAL | Cateball | 71806.59 | pending | None | Snowball | 58323.54 | pending | None |  |
-| 20261126T215455 | NEUTRAL | HOLD | 17083.72 | pending | None | Investor | 20075.37 | pending | None |  |
+| 20261126T215455 | NEUTRAL | Cateball | 71806.59 | labelled | -29.78 | Snowball | 58323.54 | labelled | -13.56 |  |
+| 20261126T215455 | NEUTRAL | HOLD | 17083.72 | labelled | 36.64 | Investor | 20075.37 | labelled | -30.42 |  |
 | 20261126T225454 | NEUTRAL | Gemma | 27461.41 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | CINU | 23569.05 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | Gemma | 23311.52 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | COIN | 20133.60 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | McRib | 18345.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | VIDA | 92830.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | att | 41655.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | Vetocat | 33941.73 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | AntiTrump | 25670.59 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | POPBALL | 24989.40 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | FF | 17979.43 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | FLOW | 15485.17 | pending | None |  |  |  | None | no eligible comparator |
