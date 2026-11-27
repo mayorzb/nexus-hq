@@ -1,4 +1,4 @@
-DAILY HEALTH 2026-11-27 11:01 UTC (review-1.4) - overall: ALERT
+DAILY HEALTH 2026-11-27 12:01 UTC (review-1.4) - overall: ALERT
 
 | Check | Value | Status |
 | --- | --- | --- |
@@ -7,13 +7,13 @@ DAILY HEALTH 2026-11-27 11:01 UTC (review-1.4) - overall: ALERT
 | Shortest gap between scans (last 24h) | 60 min (at 11:55 UTC) | OK |
 | Scans tagged with a data-only or missing code commit | 0 of 24 | OK |
 | Scans with errors | 0 of 24 | OK |
-| Tokens seen / liquid (median per scan) | 61 / 24 | OK |
+| Tokens seen / liquid (median per scan) | 60 / 24 | OK |
 | Deep-checked coins left UNVERIFIED | 32 of 192 (17%) | OK |
 | Safety canary (deep checks run when no coin reached them) | 0 checked, 0 unverified, 0 on-chain errors | INFO |
-| Gate-passers skipped by check budget | 275 of 469 | WARN |
-| Paper candidates (last 24h) | 28 | INFO |
-| Labels finished / unknown or unreliable (last 24h) | 519 / 99 | ALERT |
+| Gate-passers skipped by check budget | 276 of 470 | WARN |
+| Paper candidates (last 24h) | 29 | INFO |
+| Labels finished / unknown or unreliable (last 24h) | 521 / 98 | ALERT |
 | Labels overdue (> 6h past due) | 0 | OK |
 | Rules versions in use | 1.5.3-e42f07 (24) | OK |
 
-Candidates: CATE (12:55), TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54), CATE (22:54), CATE (00:54), CATE (01:54), CATE (02:54), TROLL (02:54), CATE (03:54), TROLL (03:54), CATE (04:54), TROLL (04:54), CATE (05:54), CATE (06:54), CATE (07:54), CATE (08:54), TROLL (08:54), CATE (09:54), CATE (10:54), mihao (10:54), baton (10:54)
+Candidates: CATE (12:55), TROLL (16:54), WOOPY (17:54), TROLL (17:54), WOOPY (18:54), CATE (19:54), TROLL (19:54), CATE (20:54), TROLL (20:54), CATE (21:54), CATE (22:54), CATE (00:54), CATE (01:54), CATE (02:54), TROLL (02:54), CATE (03:54), TROLL (03:54), CATE (04:54), TROLL (04:54), CATE (05:54), CATE (06:54), CATE (07:54), CATE (08:54), TROLL (08:54), CATE (09:54), CATE (10:54), mihao (10:54), baton (10:54), baton (11:54)

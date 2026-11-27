@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 500 |
-| sightings | 30316 |
-| liquid sightings | 12000 |
-| first liquid sightings = unique tokens with an outcome row | 2423 |
-|   young | 1662 |
-|   mature | 678 |
+| eval-2 scans | 501 |
+| sightings | 30368 |
+| liquid sightings | 12022 |
+| first liquid sightings = unique tokens with an outcome row | 2427 |
+|   young | 1665 |
+|   mature | 679 |
 |   other | 83 |
 | young with a comparator (cap 2) | 260 |
-| young without a comparator | 1402 |
+| young without a comparator | 1405 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 94 |
 | complete pairs (both 60m outcomes labelled) | 158 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1280/1662, no_valid_entry 50/1662, pending 6/1662, unknown 242/1662, unreliable 84/1662
-- mature: labelled 623/678, pending 6/678, unknown 49/678
-- no valid entry: young 50/1662, mature 0/678
+- young: labelled 1282/1665, no_valid_entry 50/1665, pending 7/1665, unknown 242/1665, unreliable 84/1665
+- mature: labelled 624/679, pending 5/679, unknown 50/679
+- no valid entry: young 50/1665, mature 0/679
 
 ## Effect (after costs; unit = scan)
 
@@ -1789,8 +1789,8 @@
 | 20261127T035450 | NEUTRAL | Dragon | 16812.86 | labelled | -32.43 |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Scat | 15918.58 | labelled | -29.36 |  |  |  | None | no eligible comparator |
 | 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T055449 | GREEN | VOLALITY | 24176.49 | labelled | -29.9 | GIGACATE | 33443.67 | pending | None |  |
-| 20261127T055449 | GREEN | THUMPER | 19828.83 | labelled | -100.0 | GIGACATE | 33443.67 | pending | None |  |
+| 20261127T055449 | GREEN | VOLALITY | 24176.49 | labelled | -29.9 | GIGACATE | 33443.67 | unknown | None |  |
+| 20261127T055449 | GREEN | THUMPER | 19828.83 | labelled | -100.0 | GIGACATE | 33443.67 | unknown | None |  |
 | 20261127T055449 | GREEN | CaveBaby | 16318.53 | labelled | -33.64 |  |  |  | None | no eligible comparator |
 | 20261127T055449 | GREEN | Kibo | 15848.28 | labelled | -58.05 |  |  |  | None | no eligible comparator |
 | 20261127T075447 | GREEN | TRUMP | 20966.35 | labelled | -100.0 | DEXDATA | 37743.93 | labelled | 37.27 |  |
@@ -1798,7 +1798,10 @@
 | 20261127T085446 | GREEN | pear | 27885.30 | labelled | -81.07 |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | $PILLY | 19565.53 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T085446 | GREEN | NIW | 15511.48 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T095445 | GREEN | Jensen | 32058.33 | pending | None | duk | 28620.52 | pending | None |  |
-| 20261127T095445 | GREEN | NVIDIA | 15204.99 | pending | None | duk | 28620.52 | pending | None |  |
+| 20261127T095445 | GREEN | Jensen | 32058.33 | labelled | 37.18 | duk | 28620.52 | pending | None |  |
+| 20261127T095445 | GREEN | NVIDIA | 15204.99 | labelled | -100.0 | duk | 28620.52 | pending | None |  |
 | 20261127T105444 | GREEN | GTA6 | 35317.44 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T105444 | GREEN | POLO | 18958.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | VAULT | 24821.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | 牛蛙 | 22054.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T115443 | NEUTRAL | CC | 21969.91 | pending | None |  |  |  | None | no eligible comparator |
