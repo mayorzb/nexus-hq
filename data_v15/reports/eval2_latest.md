@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 494 |
-| sightings | 29944 |
-| liquid sightings | 11860 |
-| first liquid sightings = unique tokens with an outcome row | 2397 |
-|   young | 1649 |
-|   mature | 666 |
+| eval-2 scans | 495 |
+| sightings | 30011 |
+| liquid sightings | 11885 |
+| first liquid sightings = unique tokens with an outcome row | 2403 |
+|   young | 1653 |
+|   mature | 668 |
 |   other | 82 |
-| young with a comparator (cap 2) | 255 |
-| young without a comparator | 1394 |
+| young with a comparator (cap 2) | 257 |
+| young without a comparator | 1396 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 90 |
+|   pairs: young or mature outcome not yet usable | 92 |
 | complete pairs (both 60m outcomes labelled) | 157 |
 | scans contributing a complete pair | 99 |
 
 ## 60m outcome status by group
 
-- young: labelled 1269/1649, no_valid_entry 50/1649, pending 5/1649, unknown 241/1649, unreliable 84/1649
-- mature: labelled 613/666, pending 4/666, unknown 49/666
-- no valid entry: young 50/1649, mature 0/666
+- young: labelled 1272/1653, no_valid_entry 50/1653, pending 5/1653, unknown 242/1653, unreliable 84/1653
+- mature: labelled 615/668, pending 4/668, unknown 49/668
+- no valid entry: young 50/1653, mature 0/668
 
 ## Effect (after costs; unit = scan)
 
@@ -133,6 +133,7 @@
 - 20261126T045506-3jAB5ksB: TEEETHY (20261126T045506), call.fun (20261126T045506)
 - 20261126T125501-9hTjkeV6: FourLife (20261126T125501), Pair (20261126T125501)
 - 20261126T175457-2va3NUJt: JANTA (20261126T175457), SOUP (20261126T175457)
+- 20261127T055449-7EWDjow5: VOLALITY (20261127T055449), THUMPER (20261127T055449)
 
 ## Every pair
 
@@ -1782,8 +1783,12 @@
 | 20261127T025451 | NEUTRAL | fomoDay | 30712.37 | labelled | -58.54 |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | DragonRiders | 30279.31 | labelled | 37.14 |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | 530A | 22674.75 | labelled | -36.72 |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | LARPMAS | 15859.66 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T035450 | NEUTRAL | ANGEL | 27330.56 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T035450 | NEUTRAL | Dragon | 16812.86 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T035450 | NEUTRAL | Scat | 15918.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | LARPMAS | 15859.66 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | ANGEL | 27330.56 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | Dragon | 16812.86 | labelled | -32.43 |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | Scat | 15918.58 | labelled | -29.36 |  |  |  | None | no eligible comparator |
 | 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T055449 | GREEN | VOLALITY | 24176.49 | pending | None | GIGACATE | 33443.67 | pending | None |  |
+| 20261127T055449 | GREEN | THUMPER | 19828.83 | pending | None | GIGACATE | 33443.67 | pending | None |  |
+| 20261127T055449 | GREEN | CaveBaby | 16318.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T055449 | GREEN | Kibo | 15848.28 | pending | None |  |  |  | None | no eligible comparator |
