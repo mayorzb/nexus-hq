@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 497 |
-| sightings | 30136 |
-| liquid sightings | 11931 |
-| first liquid sightings = unique tokens with an outcome row | 2408 |
-|   young | 1655 |
-|   mature | 671 |
+| eval-2 scans | 498 |
+| sightings | 30197 |
+| liquid sightings | 11954 |
+| first liquid sightings = unique tokens with an outcome row | 2413 |
+|   young | 1658 |
+|   mature | 673 |
 |   other | 82 |
 | young with a comparator (cap 2) | 258 |
-| young without a comparator | 1397 |
+| young without a comparator | 1400 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 93 |
 | complete pairs (both 60m outcomes labelled) | 157 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1277/1655, no_valid_entry 50/1655, pending 2/1655, unknown 242/1655, unreliable 84/1655
-- mature: labelled 618/671, pending 4/671, unknown 49/671
-- no valid entry: young 50/1655, mature 0/671
+- young: labelled 1277/1658, no_valid_entry 50/1658, pending 5/1658, unknown 242/1658, unreliable 84/1658
+- mature: labelled 619/673, pending 5/673, unknown 49/673
+- no valid entry: young 50/1658, mature 0/673
 
 ## Effect (after costs; unit = scan)
 
@@ -1794,3 +1794,6 @@
 | 20261127T055449 | GREEN | Kibo | 15848.28 | labelled | -58.05 |  |  |  | None | no eligible comparator |
 | 20261127T075447 | GREEN | TRUMP | 20966.35 | pending | None | DEXDATA | 37743.93 | pending | None |  |
 | 20261127T075447 | GREEN | PETER | 18322.98 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T085446 | GREEN | pear | 27885.30 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T085446 | GREEN | $PILLY | 19565.53 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T085446 | GREEN | NIW | 15511.48 | pending | None |  |  |  | None | no eligible comparator |
