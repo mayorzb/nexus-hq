@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 493 |
-| sightings | 29882 |
-| liquid sightings | 11835 |
-| first liquid sightings = unique tokens with an outcome row | 2392 |
-|   young | 1648 |
-|   mature | 664 |
-|   other | 80 |
+| eval-2 scans | 494 |
+| sightings | 29944 |
+| liquid sightings | 11860 |
+| first liquid sightings = unique tokens with an outcome row | 2397 |
+|   young | 1649 |
+|   mature | 666 |
+|   other | 82 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1393 |
+| young without a comparator | 1394 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 90 |
 | complete pairs (both 60m outcomes labelled) | 157 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1263/1648, no_valid_entry 50/1648, pending 11/1648, unknown 240/1648, unreliable 84/1648
-- mature: labelled 611/664, pending 4/664, unknown 49/664
-- no valid entry: young 50/1648, mature 0/664
+- young: labelled 1269/1649, no_valid_entry 50/1649, pending 5/1649, unknown 241/1649, unreliable 84/1649
+- mature: labelled 613/666, pending 4/666, unknown 49/666
+- no valid entry: young 50/1649, mature 0/666
 
 ## Effect (after costs; unit = scan)
 
@@ -1761,7 +1761,7 @@
 | 20261126T215455 | NEUTRAL | Cateball | 71806.59 | labelled | -29.78 | Snowball | 58323.54 | labelled | -13.56 |  |
 | 20261126T215455 | NEUTRAL | HOLD | 17083.72 | labelled | 36.64 | Investor | 20075.37 | labelled | -30.42 |  |
 | 20261126T225454 | NEUTRAL | Gemma | 27461.41 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261126T225454 | NEUTRAL | CINU | 23569.05 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | CINU | 23569.05 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | Gemma | 23311.52 | labelled | -53.36 |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | COIN | 20133.60 | labelled | -49.65 |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | McRib | 18345.93 | no_valid_entry | None |  |  |  | None | no eligible comparator |
@@ -1776,13 +1776,14 @@
 | 20261127T015452 | NEUTRAL | TOGO | 29728.33 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261127T015452 | NEUTRAL | Kuro | 29373.45 | unreliable | None |  |  |  | None | no eligible comparator |
 | 20261127T015452 | NEUTRAL | USOF | 16675.72 | labelled | -0.85 |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | Thanksgivi | 108431.20 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | Santaball | 69349.87 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | SpaceXCoin | 35914.09 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | fomoDay | 30712.37 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | DragonRiders | 30279.31 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T025451 | NEUTRAL | 530A | 22674.75 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | Thanksgivi | 108431.20 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | Santaball | 69349.87 | labelled | -28.41 |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | SpaceXCoin | 35914.09 | labelled | 37.24 |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | fomoDay | 30712.37 | labelled | -58.54 |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | DragonRiders | 30279.31 | labelled | 37.14 |  |  |  | None | no eligible comparator |
+| 20261127T025451 | NEUTRAL | 530A | 22674.75 | labelled | -36.72 |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | LARPMAS | 15859.66 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | ANGEL | 27330.56 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Dragon | 16812.86 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Scat | 15918.58 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | pending | None |  |  |  | None | no eligible comparator |
