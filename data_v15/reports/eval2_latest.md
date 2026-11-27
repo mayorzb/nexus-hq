@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 490 |
-| sightings | 29700 |
-| liquid sightings | 11754 |
-| first liquid sightings = unique tokens with an outcome row | 2374 |
-|   young | 1635 |
-|   mature | 659 |
+| eval-2 scans | 491 |
+| sightings | 29761 |
+| liquid sightings | 11780 |
+| first liquid sightings = unique tokens with an outcome row | 2378 |
+|   young | 1638 |
+|   mature | 660 |
 |   other | 80 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1380 |
+| young without a comparator | 1383 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 90 |
 | complete pairs (both 60m outcomes labelled) | 157 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1255/1635, no_valid_entry 49/1635, pending 10/1635, unknown 238/1635, unreliable 83/1635
-- mature: labelled 608/659, pending 2/659, unknown 49/659
-- no valid entry: young 49/1635, mature 0/659
+- young: labelled 1261/1638, no_valid_entry 49/1638, pending 5/1638, unknown 240/1638, unreliable 83/1638
+- mature: labelled 608/660, pending 3/660, unknown 49/660
+- no valid entry: young 49/1638, mature 0/660
 
 ## Effect (after costs; unit = scan)
 
@@ -1751,7 +1751,7 @@
 | 20261126T185457 | NEUTRAL | Criminul | 22694.91 | unknown | None | WOOPY | 31530.63 | unknown | None |  |
 | 20261126T195457 | NEUTRAL | George | 41101.77 | labelled | -55.77 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | 1T | 27347.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261126T195457 | NEUTRAL | mmrich | 15368.96 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T195457 | NEUTRAL | mmrich | 15368.96 | unknown | None |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | Hoppy | 38173.90 | labelled | -35.22 |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | Elonmas | 32293.34 | labelled | -28.97 |  |  |  | None | no eligible comparator |
 | 20261126T205456 | NEUTRAL | PI | 25853.16 | labelled | -100.0 |  |  |  | None | no eligible comparator |
@@ -1765,11 +1765,14 @@
 | 20261126T225454 | NEUTRAL | Gemma | 23311.52 | labelled | -53.36 |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | COIN | 20133.60 | labelled | -49.65 |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | McRib | 18345.93 | no_valid_entry | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | VIDA | 92830.63 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | att | 41655.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | Vetocat | 33941.73 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | AntiTrump | 25670.59 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | POPBALL | 24989.40 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | FF | 17979.43 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T235453 | NEUTRAL | FLOW | 15485.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | VIDA | 92830.63 | labelled | -4.16 |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | att | 41655.73 | unknown | None |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | Vetocat | 33941.73 | labelled | 37.21 |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | AntiTrump | 25670.59 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | POPBALL | 24989.40 | labelled | -30.43 |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | FF | 17979.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
+| 20261126T235453 | NEUTRAL | FLOW | 15485.17 | labelled | -55.15 |  |  |  | None | no eligible comparator |
 | 20261127T005452 | NEUTRAL | KAI | 60171.70 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | TOGO | 29728.33 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | Kuro | 29373.45 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | USOF | 16675.72 | pending | None |  |  |  | None | no eligible comparator |
