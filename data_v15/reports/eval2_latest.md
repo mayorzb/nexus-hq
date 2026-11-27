@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 492 |
-| sightings | 29821 |
-| liquid sightings | 11809 |
-| first liquid sightings = unique tokens with an outcome row | 2387 |
-|   young | 1645 |
-|   mature | 662 |
+| eval-2 scans | 493 |
+| sightings | 29882 |
+| liquid sightings | 11835 |
+| first liquid sightings = unique tokens with an outcome row | 2392 |
+|   young | 1648 |
+|   mature | 664 |
 |   other | 80 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1390 |
+| young without a comparator | 1393 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 90 |
 | complete pairs (both 60m outcomes labelled) | 157 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1262/1645, no_valid_entry 49/1645, pending 11/1645, unknown 240/1645, unreliable 83/1645
-- mature: labelled 610/662, pending 3/662, unknown 49/662
-- no valid entry: young 49/1645, mature 0/662
+- young: labelled 1263/1648, no_valid_entry 50/1648, pending 11/1648, unknown 240/1648, unreliable 84/1648
+- mature: labelled 611/664, pending 4/664, unknown 49/664
+- no valid entry: young 50/1648, mature 0/664
 
 ## Effect (after costs; unit = scan)
 
@@ -1773,9 +1773,9 @@
 | 20261126T235453 | NEUTRAL | FF | 17979.43 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | FLOW | 15485.17 | labelled | -55.15 |  |  |  | None | no eligible comparator |
 | 20261127T005452 | NEUTRAL | KAI | 60171.70 | labelled | -28.29 |  |  |  | None | no eligible comparator |
-| 20261127T015452 | NEUTRAL | TOGO | 29728.33 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T015452 | NEUTRAL | Kuro | 29373.45 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T015452 | NEUTRAL | USOF | 16675.72 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | TOGO | 29728.33 | no_valid_entry | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | Kuro | 29373.45 | unreliable | None |  |  |  | None | no eligible comparator |
+| 20261127T015452 | NEUTRAL | USOF | 16675.72 | labelled | -0.85 |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | Thanksgivi | 108431.20 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | Santaball | 69349.87 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | SpaceXCoin | 35914.09 | pending | None |  |  |  | None | no eligible comparator |
@@ -1783,3 +1783,6 @@
 | 20261127T025451 | NEUTRAL | DragonRiders | 30279.31 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | 530A | 22674.75 | pending | None |  |  |  | None | no eligible comparator |
 | 20261127T025451 | NEUTRAL | LARPMAS | 15859.66 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | ANGEL | 27330.56 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | Dragon | 16812.86 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T035450 | NEUTRAL | Scat | 15918.58 | pending | None |  |  |  | None | no eligible comparator |
