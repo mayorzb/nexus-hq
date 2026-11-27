@@ -6,15 +6,15 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 489 |
-| sightings | 29640 |
-| liquid sightings | 11727 |
-| first liquid sightings = unique tokens with an outcome row | 2370 |
-|   young | 1634 |
-|   mature | 657 |
-|   other | 79 |
+| eval-2 scans | 490 |
+| sightings | 29700 |
+| liquid sightings | 11754 |
+| first liquid sightings = unique tokens with an outcome row | 2374 |
+|   young | 1635 |
+|   mature | 659 |
+|   other | 80 |
 | young with a comparator (cap 2) | 255 |
-| young without a comparator | 1379 |
+| young without a comparator | 1380 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
 |   pairs: young or mature outcome not yet usable | 90 |
 | complete pairs (both 60m outcomes labelled) | 157 |
@@ -22,9 +22,9 @@
 
 ## 60m outcome status by group
 
-- young: labelled 1252/1634, no_valid_entry 48/1634, pending 14/1634, unknown 237/1634, unreliable 83/1634
-- mature: labelled 607/657, pending 1/657, unknown 49/657
-- no valid entry: young 48/1634, mature 0/657
+- young: labelled 1255/1635, no_valid_entry 49/1635, pending 10/1635, unknown 238/1635, unreliable 83/1635
+- mature: labelled 608/659, pending 2/659, unknown 49/659
+- no valid entry: young 49/1635, mature 0/659
 
 ## Effect (after costs; unit = scan)
 
@@ -1748,7 +1748,7 @@
 | 20261126T175457 | NEUTRAL | JANTA | 43122.25 | labelled | -38.19 | WOOPY | 31378.98 | labelled | 2.0 |  |
 | 20261126T175457 | NEUTRAL | SOUP | 23933.79 | labelled | -36.03 | WOOPY | 31378.98 | labelled | 2.0 |  |
 | 20261126T175457 | NEUTRAL | Kuro | 21401.17 | labelled | -29.7 |  |  |  | None | comparators used twice |
-| 20261126T185457 | NEUTRAL | Criminul | 22694.91 | pending | None | WOOPY | 31530.63 | unknown | None |  |
+| 20261126T185457 | NEUTRAL | Criminul | 22694.91 | unknown | None | WOOPY | 31530.63 | unknown | None |  |
 | 20261126T195457 | NEUTRAL | George | 41101.77 | labelled | -55.77 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | 1T | 27347.14 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T195457 | NEUTRAL | mmrich | 15368.96 | pending | None |  |  |  | None | no eligible comparator |
@@ -1760,11 +1760,11 @@
 | 20261126T205456 | NEUTRAL | ZCOIN | 17417.22 | labelled | -45.37 |  |  |  | None | no eligible comparator |
 | 20261126T215455 | NEUTRAL | Cateball | 71806.59 | labelled | -29.78 | Snowball | 58323.54 | labelled | -13.56 |  |
 | 20261126T215455 | NEUTRAL | HOLD | 17083.72 | labelled | 36.64 | Investor | 20075.37 | labelled | -30.42 |  |
-| 20261126T225454 | NEUTRAL | Gemma | 27461.41 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | Gemma | 27461.41 | labelled | -100.0 |  |  |  | None | no eligible comparator |
 | 20261126T225454 | NEUTRAL | CINU | 23569.05 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T225454 | NEUTRAL | Gemma | 23311.52 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T225454 | NEUTRAL | COIN | 20133.60 | pending | None |  |  |  | None | no eligible comparator |
-| 20261126T225454 | NEUTRAL | McRib | 18345.93 | pending | None |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | Gemma | 23311.52 | labelled | -53.36 |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | COIN | 20133.60 | labelled | -49.65 |  |  |  | None | no eligible comparator |
+| 20261126T225454 | NEUTRAL | McRib | 18345.93 | no_valid_entry | None |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | VIDA | 92830.63 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | att | 41655.73 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | Vetocat | 33941.73 | pending | None |  |  |  | None | no eligible comparator |
@@ -1772,3 +1772,4 @@
 | 20261126T235453 | NEUTRAL | POPBALL | 24989.40 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | FF | 17979.43 | pending | None |  |  |  | None | no eligible comparator |
 | 20261126T235453 | NEUTRAL | FLOW | 15485.17 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T005452 | NEUTRAL | KAI | 60171.70 | pending | None |  |  |  | None | no eligible comparator |
