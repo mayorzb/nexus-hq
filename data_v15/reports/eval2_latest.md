@@ -6,25 +6,25 @@
 
 | stage | count |
 |---|---|
-| eval-2 scans | 496 |
-| sightings | 30075 |
-| liquid sightings | 11907 |
-| first liquid sightings = unique tokens with an outcome row | 2404 |
-|   young | 1653 |
-|   mature | 669 |
+| eval-2 scans | 497 |
+| sightings | 30136 |
+| liquid sightings | 11931 |
+| first liquid sightings = unique tokens with an outcome row | 2408 |
+|   young | 1655 |
+|   mature | 671 |
 |   other | 82 |
-| young with a comparator (cap 2) | 257 |
-| young without a comparator | 1396 |
+| young with a comparator (cap 2) | 258 |
+| young without a comparator | 1397 |
 |   pairs: young had no valid entry (counted, not scored) | 8 |
-|   pairs: young or mature outcome not yet usable | 92 |
+|   pairs: young or mature outcome not yet usable | 93 |
 | complete pairs (both 60m outcomes labelled) | 157 |
 | scans contributing a complete pair | 99 |
 
 ## 60m outcome status by group
 
-- young: labelled 1273/1653, no_valid_entry 50/1653, pending 4/1653, unknown 242/1653, unreliable 84/1653
-- mature: labelled 617/669, pending 3/669, unknown 49/669
-- no valid entry: young 50/1653, mature 0/669
+- young: labelled 1277/1655, no_valid_entry 50/1655, pending 2/1655, unknown 242/1655, unreliable 84/1655
+- mature: labelled 618/671, pending 4/671, unknown 49/671
+- no valid entry: young 50/1655, mature 0/671
 
 ## Effect (after costs; unit = scan)
 
@@ -1788,7 +1788,9 @@
 | 20261127T035450 | NEUTRAL | Dragon | 16812.86 | labelled | -32.43 |  |  |  | None | no eligible comparator |
 | 20261127T035450 | NEUTRAL | Scat | 15918.58 | labelled | -29.36 |  |  |  | None | no eligible comparator |
 | 20261127T045450 | NEUTRAL | CaveBaby | 39229.63 | labelled | -100.0 |  |  |  | None | no eligible comparator |
-| 20261127T055449 | GREEN | VOLALITY | 24176.49 | pending | None | GIGACATE | 33443.67 | pending | None |  |
-| 20261127T055449 | GREEN | THUMPER | 19828.83 | pending | None | GIGACATE | 33443.67 | pending | None |  |
-| 20261127T055449 | GREEN | CaveBaby | 16318.53 | pending | None |  |  |  | None | no eligible comparator |
-| 20261127T055449 | GREEN | Kibo | 15848.28 | pending | None |  |  |  | None | no eligible comparator |
+| 20261127T055449 | GREEN | VOLALITY | 24176.49 | labelled | -29.9 | GIGACATE | 33443.67 | pending | None |  |
+| 20261127T055449 | GREEN | THUMPER | 19828.83 | labelled | -100.0 | GIGACATE | 33443.67 | pending | None |  |
+| 20261127T055449 | GREEN | CaveBaby | 16318.53 | labelled | -33.64 |  |  |  | None | no eligible comparator |
+| 20261127T055449 | GREEN | Kibo | 15848.28 | labelled | -58.05 |  |  |  | None | no eligible comparator |
+| 20261127T075447 | GREEN | TRUMP | 20966.35 | pending | None | DEXDATA | 37743.93 | pending | None |  |
+| 20261127T075447 | GREEN | PETER | 18322.98 | pending | None |  |  |  | None | no eligible comparator |
