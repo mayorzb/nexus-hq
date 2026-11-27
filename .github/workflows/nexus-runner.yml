@@ -1,0 +1,71 @@
+name: Nexus Runner Track (paper)
+
+# PAPER ONLY: no wallet, no keys, no trading.
+# One session = 34 scans, 10 minutes apart (about 5h40m). The hourly schedule queues the next session, and the
+# concurrency group lets only one run at a time with at most one waiting, so sessions follow on from each other.
+# Scheduled runs only start once this file is on main (GitHub rule). Data is saved to the "runner-data" branch,
+# never to main.
+on:
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "scan (normal) or test (tests only, nothing saved)"
+        type: choice
+        default: scan
+        options: [scan, test]
+      scans:
+        description: "Scans in this session (10 minutes apart)"
+        default: "34"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nexus-runner
+  cancel-in-progress: false
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      MODE: ${{ github.event.inputs.mode || 'scan' }}
+      SCANS: ${{ github.event.inputs.scans || '34' }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+      RUGCHECK_API_KEY: ${{ secrets.RUGCHECK_API_KEY }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        if: env.MODE == 'scan'
+        with:
+          ref: runner-data
+          path: data_runner
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 1. Tests (stop here if anything fails)
+        run: python -m unittest test_nexus_runner -v
+
+      - name: 2. Telegram test (manual runs only)
+        if: github.event_name == 'workflow_dispatch' && env.MODE == 'scan'
+        run: python nexus_runner.py --telegram-test
+
+      - name: 3. Paper scans, saved to runner-data after each
+        if: env.MODE == 'scan'
+        run: |
+          [ -n "$SOLANA_RPC_URL" ] || unset SOLANA_RPC_URL
+          [ -n "$RUGCHECK_API_KEY" ] || unset RUGCHECK_API_KEY
+          bash scripts/runner_session.sh "$SCANS"
+
+      - name: 4. Alert on failure (Telegram)
+        if: failure()
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ] || exit 0
+          msg="Nexus RUNNER ALERT: run ${{ github.run_number }} failed. ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -sS -m 20 -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" --data-urlencode "text=${msg}" || true
